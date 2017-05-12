@@ -1,20 +1,20 @@
 import {Injectable} from "@angular/core";
-import {Player} from "./player";
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import {FirebaseObjectObservable} from "angularfire2/database/firebase_object_observable";
+import {Race} from "./race";
 
 @Injectable()
-export class PlayerService {
+export class RaceService {
 
-  path = 'players';
+  path = 'races';
 
   constructor(private db: AngularFireDatabase) {}
 
-  getPlayers(): FirebaseListObservable<any[]> {
+  getRaces(): FirebaseListObservable<any[]> {
     return this.db.list(this.path);
   }
 
-  getPlayer(name: string): FirebaseObjectObservable<Player> {
+  getRace(name: string): FirebaseObjectObservable<Race> {
     return this.db.object(this.path + '/' + name);
   }
 }

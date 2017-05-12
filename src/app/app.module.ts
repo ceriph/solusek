@@ -10,6 +10,8 @@ import {PlayerDetailComponent} from "./players/player-detail.component";
 import {AngularFireModule} from "angularfire2";
 import {AngularFireDatabaseModule} from "angularfire2/database/database.module";
 import {environment} from "../environments/environment";
+import {RacesComponent} from "./character/races/races.component";
+import {RaceService} from "./character/races/race.service";
 
 @NgModule({
   imports: [
@@ -22,9 +24,13 @@ import {environment} from "../environments/environment";
   declarations: [
     AppComponent,
     PlayersComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    RacesComponent
   ],
-  providers: [PlayerService],
+  providers: [
+    PlayerService,
+    RaceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

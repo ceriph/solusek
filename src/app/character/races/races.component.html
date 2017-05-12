@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<div>
+  <div class="race-icon" *ngFor="let race of races | async" [class.selected]="race === selectedRace"
+       (click)="select(race)">
+    <img src="/assets/races/icon-{{race.name.toLowerCase()}}.png">
+    <p>{{race.label}}</p>
+  </div>
+</div>
+<div class="race-detail" *ngIf="selectedRace">
+  <h2>{{selectedRace.label}}</h2>
+</div>
+

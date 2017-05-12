@@ -26,6 +26,6 @@ export class PlayersComponent implements OnInit {
   }
 
   goToDetail(player: Player): void {
-    this.router.navigate(['/players', player.name]);
+    this.router.navigate(['/' + this.playerService.path, player.name]);
   }
 }
