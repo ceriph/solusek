@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/players" routerLinkActive="active">Players</a>
+  <a routerLink="/world" routerLinkActive="active">World</a>
+  <a routerLink="/rules" routerLinkActive="active">Rules</a>
+</nav>
+<router-outlet></router-outlet>
