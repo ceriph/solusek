@@ -1,0 +1,7 @@
+<h1>Welcome, {{player.name}}</h1>
+<div *ngIf="player.character.name">
+  <p>Character detail here</p>
+</div>
+<div *ngIf="!player.character.name">
+  <p>It appears you do not currently have a character</p>
+</div>

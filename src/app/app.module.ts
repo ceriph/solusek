@@ -1,8 +1,8 @@
-import {NgModule}      from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {FormsModule}   from '@angular/forms';
+import {NgModule} from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
 
-import {AppComponent}  from './app.component';
+import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {PlayerService} from "./players/player.service";
 import {PlayersComponent} from "./players/players.component";
@@ -12,6 +12,10 @@ import {AngularFireDatabaseModule} from "angularfire2/database/database.module";
 import {environment} from "../environments/environment";
 import {RacesComponent} from "./character/races/races.component";
 import {RaceService} from "./character/races/race.service";
+import {LoginComponent} from "./login/login.component";
+import { RulesComponent } from './rules/rules.component';
+import { LoreComponent } from './lore/lore.component';
+import { CharacterComponent } from './character/character.component';
 
 @NgModule({
   imports: [
@@ -25,7 +29,11 @@ import {RaceService} from "./character/races/race.service";
     AppComponent,
     PlayersComponent,
     PlayerDetailComponent,
-    RacesComponent
+    RacesComponent,
+    LoginComponent,
+    RulesComponent,
+    LoreComponent,
+    CharacterComponent
   ],
   providers: [
     PlayerService,

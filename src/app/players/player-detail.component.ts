@@ -14,7 +14,6 @@ import 'rxjs/add/operator/switchMap';
   `
 })
 export class PlayerDetailComponent implements OnInit {
-  // players: FirebaseListObservable<any[]>;
   player: Player;
 
   constructor(private route: ActivatedRoute,

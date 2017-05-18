@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #DDD;
+  color: #111;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+.box {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+
+  float: left;
+  position: relative;
+}
