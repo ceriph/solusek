@@ -1,8 +1,9 @@
 <h1>{{title}}</h1>
-<nav>
+<nav *ngIf="(user | async)?.uid">
   <a routerLink="/character" routerLinkActive="active">My Character</a>
   <a routerLink="/players" routerLinkActive="active">Players</a>
   <a routerLink="/rules" routerLinkActive="active">Rules</a>
   <a routerLink="/lore" routerLinkActive="active">Lore</a>
+  <button (click)="logout()">Logout</button>
 </nav>
 <router-outlet></router-outlet>

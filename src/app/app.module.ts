@@ -16,6 +16,8 @@ import {LoginComponent} from "./login/login.component";
 import { RulesComponent } from './rules/rules.component';
 import { LoreComponent } from './lore/lore.component';
 import { CharacterComponent } from './character/character.component';
+import {AngularFireAuth} from "angularfire2/auth/auth";
+import {LoginService} from "./login/login.service";
 
 @NgModule({
   imports: [
@@ -37,7 +39,9 @@ import { CharacterComponent } from './character/character.component';
   ],
   providers: [
     PlayerService,
-    RaceService
+    RaceService,
+    AngularFireAuth,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

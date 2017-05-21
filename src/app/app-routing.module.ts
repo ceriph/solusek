@@ -2,7 +2,6 @@ import {Routes, RouterModule} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {PlayerDetailComponent} from "./players/player-detail.component";
 import {PlayersComponent} from "./players/players.component";
-import {RacesComponent} from "./character/races/races.component";
 import {LoginComponent} from "./login/login.component";
 import {RulesComponent} from "./rules/rules.component";
 import {LoreComponent} from "./lore/lore.component";

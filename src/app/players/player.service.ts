@@ -14,7 +14,7 @@ export class PlayerService {
     return this.db.list(this.path);
   }
 
-  getPlayer(name: string): FirebaseObjectObservable<Player> {
-    return this.db.object(this.path + '/' + name);
+  getPlayer(uid: string): FirebaseObjectObservable<Player> {
+    return this.db.object(this.path + '/' + uid);
   }
 }
