@@ -10,6 +10,8 @@ import * as firebase from "firebase/app";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = "Solusek";
+
   user: Observable<firebase.User>;
 
   constructor(public afAuth: AngularFireAuth, private loginService: LoginService) {
