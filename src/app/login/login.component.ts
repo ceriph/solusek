@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.loginService.login(this.email, this.password)
       .catch(response => this.error = response.message)
-      .then(response => {
+      .then(() => {
         this.user.subscribe(user => {
           if(user && user.uid) {
             this.router.navigate(['/players']);
