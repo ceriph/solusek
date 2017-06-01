@@ -19,7 +19,7 @@ export class RacesComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.races = this.raceService.getRaces();
+    this.races = this.raceService.list();
   }
 
   select(race: Race): void {
