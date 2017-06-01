@@ -14,6 +14,9 @@ export class Character {
     int: number;
     spi: number;
     cha: number;
+  };
+  abilities: {
+
   }
 
 }

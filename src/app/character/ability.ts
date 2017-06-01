@@ -1,4 +1,4 @@
-export class Modifier {
+export class Ability {
   name: string;
   label: string;
   desc: string;

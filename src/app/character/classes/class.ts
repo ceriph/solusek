@@ -1,7 +1,7 @@
-import {Modifier} from "../modifier";
+import {Ability} from "../ability";
 export class Class {
   name: string;
   label: string;
   desc: string;
-  modifiers: Modifier[];
+  modifiers: Ability[];
 }

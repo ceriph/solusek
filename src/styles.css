@@ -1,15 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #DDD;
-  color: #111;
-  font-family: "Arial Rounded MT Bold", sans-serif;
+  background-color: white;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .box {
-  background-color: white;
   padding: 10px;
   margin: 10px;
 
   float: left;
   position: relative;
+  width: 100%;
 }
+
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+a {
+  color: #01A7C2;
+}
+
+a:visited {
+  color: #01A7C2;
+}
+
+a:hover {
+  color: #01161E;
+}
+
