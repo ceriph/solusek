@@ -4,6 +4,7 @@
     <p>Character detail here</p>
   </div>
   <div *ngIf="!player.character.name">
-    <p>It appears you do not currently have a character</p>
+    <p>It appears you do not currently have a character...</p>
+    <button (click)="createCharacter()">CREATE</button>
   </div>
 </div>

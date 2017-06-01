@@ -4,6 +4,7 @@ import {PlayerService} from "../players/player.service";
 import {AngularFireAuth} from "angularfire2/auth/auth";
 import {Observable} from "rxjs";
 import * as firebase from "firebase/app";
+import {Character} from "./character";
 
 @Component({
   selector: 'character',
@@ -26,5 +27,10 @@ export class CharacterComponent implements OnInit {
         this.playerService.getPlayer(user.uid).subscribe(player => this.player = player)
       }
     });
+  }
+
+  createCharacter() {
+    this.player.character = new Character;
+
   }
 }

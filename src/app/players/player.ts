@@ -1,4 +1,4 @@
-import {Character} from "./character";
+import {Character} from "../character/character";
 
 export class Player {
   name: string;
