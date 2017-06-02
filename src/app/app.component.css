@@ -1,0 +1,14 @@
+nav {
+  height: 40px;
+  padding: 5px;
+  text-align: right;
+}
+
+nav a {
+  line-height: 40px;
+  padding-right: 10px;
+}
+
+.content {
+  padding: 10px;
+}

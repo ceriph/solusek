@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: white;
-  color: #555;
+  background-color: #F5F1E3;
+  color: #3C5863;
   font-family: 'Roboto', sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
+}
+
+.container p {
+  text-align: justify;
 }
 
 .box {
@@ -21,8 +25,21 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4 {
-  color: #333;
+.header {
+  background-color: #DDDBCB;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #3C5863;
+  text-transform: uppercase;
+}
+
+h4 {
+  -webkit-margin-before: 2em;
+}
+
+h5 {
+  -webkit-margin-after: 0;
 }
 
 a {
@@ -35,5 +52,17 @@ a:visited {
 
 a:hover {
   color: #01161E;
+}
+
+button {
+  background-color: #01A7C2;
+  border: 0;
+  color: #F5F1E3;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #02CBEA;
 }
 

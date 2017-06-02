@@ -7,15 +7,8 @@ import {Router} from "@angular/router";
 
 @Component({
   selector: 'login',
-  template: `
-  <div> {{ (user | async)?.uid }} </div>
-  <form>
-    <input type="text" name="username" placeholder="email" [(ngModel)]="email">
-    <input type="password" name="password" placeholder="password" [(ngModel)]="password">
-    <button (click)="login()">Login</button>
-    <p>{{error}}</p>
-  </form>
-  `,
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
 
@@ -34,7 +27,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.user.subscribe(user => {
       if(user && user.uid) {
-        this.router.navigate(['/players']);
+        this.router.navigate(['/character']);
       }
     });
   }

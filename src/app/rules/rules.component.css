@@ -1,0 +1,12 @@
+table {
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+td {
+  padding: 5px 20px 5px 5px;
+  border-top: 1px solid #CCC;
+
+}
+
+

@@ -5,6 +5,7 @@ import {AngularFireAuth} from "angularfire2/auth/auth";
 import {Observable} from "rxjs";
 import * as firebase from "firebase/app";
 import {Character} from "./character";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'character',
@@ -17,7 +18,8 @@ export class CharacterComponent implements OnInit {
   user: Observable<firebase.User>;
 
   constructor(private afAuth: AngularFireAuth,
-              private playerService: PlayerService) {
+              private playerService: PlayerService,
+              private router: Router) {
     this.user = afAuth.authState;
   }
 
@@ -31,6 +33,6 @@ export class CharacterComponent implements OnInit {
 
   createCharacter() {
     this.player.character = new Character;
-
+    this.router.navigate(['/races']);
   }
 }

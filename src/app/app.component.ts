@@ -10,10 +10,9 @@ import {Router} from "@angular/router";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = "Solusek";
-
+export class AppComponent implements OnInit {
   user: Observable<firebase.User>;
+  routeName: string;
 
   constructor(public afAuth: AngularFireAuth,
               private loginService: LoginService,
@@ -21,13 +20,13 @@ export class AppComponent {
     this.user = afAuth.authState;
   }
 
+  ngOnInit(): void {
+    this.routeName = this.router.url;
+  }
+
   logout() {
     this.loginService.logout().then(() => {
-      this.user.subscribe(user => {
-        if(user && user.uid) {
           this.router.navigate(['/']);
-        }
-      });
-    });
+        });
   }
 }
