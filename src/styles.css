@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #F5F1E3;
+  background-color: #EEE;
   color: #3C5863;
   font-family: 'Roboto', sans-serif;
   padding: 0;
@@ -22,11 +22,11 @@ body {
 
   float: left;
   position: relative;
-  width: 100%;
+  background-color: white;
 }
 
 .header {
-  background-color: #DDDBCB;
+  background-color: #01A7C2;
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,15 +43,15 @@ h5 {
 }
 
 a {
-  color: #01A7C2;
+  color: #F5F1E3;
 }
 
 a:visited {
-  color: #01A7C2;
+  color: #F5F1E3;
 }
 
 a:hover {
-  color: #01161E;
+  color: #DDDBCB;
 }
 
 button {
