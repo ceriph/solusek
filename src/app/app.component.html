@@ -1,6 +1,4 @@
-
 <nav *ngIf="(user | async)?.uid" class="header">
-  {{routeName}}
   <a routerLink="/character" routerLinkActive="active">My Character</a>
   <a routerLink="/players" routerLinkActive="active">Players</a>
   <a routerLink="/rules" routerLinkActive="active">Rules</a>

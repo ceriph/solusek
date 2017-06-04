@@ -19,6 +19,27 @@ import { CharacterComponent } from './character/character.component';
 import {AngularFireAuth} from "angularfire2/auth/auth";
 import {LoginService} from "./login/login.service";
 import { ClassesComponent } from './character/classes/classes.component';
+import { WarriorComponent } from './character/classes/warrior/warrior.component';
+import { PaladinComponent } from './character/classes/paladin/paladin.component';
+import { ReaverComponent } from './character/classes/reaver/reaver.component';
+import { ClericComponent } from './character/classes/cleric/cleric.component';
+import { ShamanComponent } from './character/classes/shaman/shaman.component';
+import { MonkComponent } from './character/classes/monk/monk.component';
+import { RogueComponent } from './character/classes/rogue/rogue.component';
+import { BardComponent } from './character/classes/bard/bard.component';
+import { RangerComponent } from './character/classes/ranger/ranger.component';
+import { WizardComponent } from './character/classes/wizard/wizard.component';
+import { EnchanterComponent } from './character/classes/enchanter/enchanter.component';
+import { NecromancerComponent } from './character/classes/necromancer/necromancer.component';
+import { HumanComponent } from './character/races/human/human.component';
+import { HighelfComponent } from './character/races/highelf/highelf.component';
+import { WoodelfComponent } from './character/races/woodelf/woodelf.component';
+import { DarkelfComponent } from './character/races/darkelf/darkelf.component';
+import { DwarfComponent } from './character/races/dwarf/dwarf.component';
+import { HalflingComponent } from './character/races/halfling/halfling.component';
+import { OgreComponent } from './character/races/ogre/ogre.component';
+import { TrollComponent } from './character/races/troll/troll.component';
+import { IksarComponent } from './character/races/iksar/iksar.component';
 
 @NgModule({
   imports: [
@@ -37,7 +58,28 @@ import { ClassesComponent } from './character/classes/classes.component';
     RulesComponent,
     LoreComponent,
     CharacterComponent,
-    ClassesComponent
+    ClassesComponent,
+    WarriorComponent,
+    PaladinComponent,
+    ReaverComponent,
+    ClericComponent,
+    ShamanComponent,
+    MonkComponent,
+    RogueComponent,
+    BardComponent,
+    RangerComponent,
+    WizardComponent,
+    EnchanterComponent,
+    NecromancerComponent,
+    HumanComponent,
+    HighelfComponent,
+    WoodelfComponent,
+    DarkelfComponent,
+    DwarfComponent,
+    HalflingComponent,
+    OgreComponent,
+    TrollComponent,
+    IksarComponent
   ],
   providers: [
     PlayerService,

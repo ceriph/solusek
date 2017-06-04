@@ -13,8 +13,35 @@
     </li>
     <li><a href="rules#CharacterCreation">Character Creation</a>
       <ul>
-        <li><a href="rules#Races">Races</a></li>
-        <li><a href="rules#Classes">Classes</a></li>
+        <li><a href="rules#Races">Races</a>
+          <ul>
+            <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
+            <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
+            <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
+            <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
+            <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
+            <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
+            <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
+            <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
+            <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
+          </ul>
+        </li>
+        <li><a href="rules#Classes">Classes</a>
+          <ul>
+            <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
+            <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
+            <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
+            <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
+            <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
+            <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
+            <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
+            <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
+            <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
+            <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
+            <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
+            <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
+          </ul>
+        </li>
         <li><a href="rules#Stats">Stats</a>
           <ul>
             <li><a href="rules#Primary">Primary</a></li>
@@ -25,41 +52,47 @@
       </ul>
     </li>
     <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>
+    <li><a href="rules#Combat">Combat</a>
+      <ul>
+        <li><a href="rules#Suprise">Surprise</a></li>
+      </ul>
+    </li>
+    <li><a href="rules#Conditions">Conditions</a></li>
+    <li><a href="rules#Resting">Resting</a></li>
+    <li><a href="rules#Equipment">Equipment</a>
+      <ul>
+        <li><a href="rules#Weapons">Weapons</a></li>
+        <li><a href="rules#Armour">Armour</a></li>
+        <li><a href="rules#Tools">Tools</a></li>
+      </ul>
+    </li>
   </ul>
 
   <h2 id="Basics">BASICS</h2>
 
-  <h3 id="Transparency">TRANSPARENCY</h3>
-  <p>
-    In order to emphasise a consistent set of rules the GM will make an effort to be as transparent as possible when
-    it comes to mechanics.
-  </p>
-  <p>
-    An example of this is <b>checks</b>; you will always know the general difficulty of a check
-    before rolling, so you can be confident the GM isn’t just fiddling the number to get the result <i>they</i> want.
-  </p>
-
   <h3 id="Dice">DICE</h3>
   <p>
-    Dice are a huge part of roleplaying, introducing an element of randomness and excitement. The dice used will be
+    Dice are a large part of roleplaying, introducing an element of randomness and excitement. The dice used will be
     standard DnD dice: d4, d6, d8, d10, d12, d20, d100. The most common usages of which are:
   </p>
 
   <ul>
     <li>
-      d4 - timers - sometimes the DM will roll a d4 to decide how long the players have before something happens, e.g.
+      <b>d4</b> - timers - sometimes the DM will roll a d4 to decide how long the players have before something happens,
+      e.g.
       how many combat rounds before another horde of zombies breaks through a barricade.
     </li>
     <li>
-      d4-d12 - damage - these dice will be used for most damage rolls to add a level of variance to the damage being
+      <b>d4-d12</b> - damage - these dice will be used for most damage rolls to add a level of variance to the damage
+      being
       done
       by characters and is dependant on the weapon/ability being used.
     </li>
     <li>
-      d20 - Checks/saving throws
+      <b>d20</b> - Checks/saving throws
     </li>
     <li>
-      D100 - percentile checks for certain conditions (such as madness)
+      <b>D100</b> - percentile checks for certain conditions (such as madness)
     </li>
   </ul>
 
@@ -76,12 +109,12 @@
   <p>
     A check tests a character’s or monster’s innate talent and training in an effort to overcome a challenge. The GM
     calls for an ability check when a character or monster attempts an action (other than an attack) that has a chance
-    of
-    failure. When the outcome is uncertain, the dice determine the results.
+    of failure. When the outcome is uncertain, the dice determine the results.
   </p>
   <p>
     For every ability check, the GM decides which of the six stats is relevant to the task at hand and the difficulty
-    of the task, represented by a Difficulty Class. The more difficult a task, the higher its DC:
+    of the task, represented by a Difficulty Class. You will be informed of the general difficulty of the task before
+    attempting to do it. The more difficult a task, the higher its DC:
   </p>
 
   <table>
@@ -191,325 +224,52 @@
   <h3 id="Races">RACES</h3>
   <p>
     Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each
-    race
-    also has an additional unique passive ability.
+    race also has an additional unique passive ability.
   </p>
-
-  <h4>Human</h4>
   <p>
-    The most abundant race in the world of Solusek, humans are incredibly varied and flexible. They stand on average
-    between 5'
-    and 6'6" tall.
+    Some races will be slightly better suited to certain classes at the beginning, however there are no restrictions
+    on this choice.
   </p>
-
-  <h5>Stat Bonuses</h5>
   <p>
-    None
+    More detail on each race can be found here:
   </p>
-
-  <h5>Flexible</h5>
-  <p>
-    Humans start with an additional 5 stat points to spend at creation
-  </p>
-
-  <h4>High Elf</h4>
-  <p>
-    The proudest and most beautiful of all the elven races, high elves are a usually good-natured and caring, though do
-    quite often see themselves as a superior race. They are generally pale-skinned and stand on average between 5'5"
-    and 6'6" tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Intelligence, +2 to Spirit, +1 to Charisma, -1 to Strength
-  </p>
-
-  <h5>Meditation</h5>
-  <p>
-    When taking a <b>short rest</b>, the high elf may refresh one 'once per day' ability.
-  </p>
-
-  <h4>Wood Elf</h4>
-  <p>
-    The most neutral of the three elven races, wood elves like to keep to themselves and are most happy when at one with
-    nature. They tend to have tanned skin and stand on average between 4'5" and 5'9" tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Agility, +1 to Constitution, +1 to Spirit
-  </p>
-
-  <h5>Quickstep</h5>
-  <p>
-    +2 to <b>movement</b>
-  </p>
-
-  <h4>Dark Elf</h4>
-  <p>
-    Often considered to be selfish and malicious, Dark elves are not well liked by the other elves. They have dark
-    blue/black
-    skin and stand on average between 4'5" and 5'9" tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Agility, +2 to Intelligence
-  </p>
-
-  <h5>Merciless</h5>
-  <p>
-    +1 on all attack rolls against <b>wounded targets</b> (increases to +2 at level 5, +3 at level 10, +4 at level 11
-    and +5 at level 20)
-  </p>
-
-  <h4>Halfling</h4>
-  <p>
-    The smallest people with the biggest personalities, halflings are generally friendly and optimistic. They stand on
-    average
-    between 3' and 4'5" tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Agility, +1 to Constitution, +1 to Charisma
-  </p>
-
-  <h5>Tiny</h5>
-  <p>
-    +1 to all <b>dodge</b> rolls (increases to +2 at level 5, +3 at level 10, +4 at level 15, +5 at level 20)
-  </p>
-
-  <h4>Dwarf</h4>
-  <p>
-    Dwarves are known for their love of treasure, beer and facial hair. The are only slightly taller than halflings on
-    average but
-    are generally much stockier.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Constitution, +1 to Strength, +1 to Spirit
-  </p>
-
-  <h5>Limitless</h5>
-  <p>
-    +5 to <b>health</b> <i>per level</i>
-  </p>
-
-  <h4>Ogre</h4>
-  <p>
-    The largest (and heaviest) of the races, ogres typically posses great strength and not-so-great intellect. They are
-    generally
-    hairless and stand between 7'5 and 9' tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +3 to Strength, +2 to Constitution, -1 to Intelligence
-  </p>
-
-  <h5>Big Boned</h5>
-  <p>
-    Immune to physical <b>stun</b> and <b>knockdown</b>
-  </p>
-
-  <h4>Troll</h4>
-  <p>
-    The green and slender cousin to the ogres, trolls are feared for their ability to regenerate quickly in combat.
-    They stand between 7'5 and 9' tall.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Strength, +2 to Constitution, -1 to Intelligence, -1 to Charisma
-  </p>
-
-  <h5>Regenerate</h5>
-  <p>
-    Regenerate 1 <b>health</b> at the end of each combat round (increases to 2 at level 3, 3 at level 6,
-    4 at level 9, 5 at level 12, 6 at level 15, and 7 at level 18)
-  </p>
-
-  <h4>Iksar</h4>
-  <p>
-    The most hated race in Solusek for their part in starting The Great War, Iksar are easily recognisable by their
-    scaled, lizard-like
-    skin. Said to be descended from the mating between ancient dragons and humans.
-  </p>
-
-  <h5>Stat Bonuses</h5>
-  <p>
-    +2 to Strength, +2 to Constitution, -1 to Intelligence, -1 to Charisma
-  </p>
-
-  <h5>Scaled</h5>
-  <p>
-    +1 to <b>armour</b> (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)
-  </p>
-
+  <ul>
+    <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
+    <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
+    <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
+    <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
+    <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
+    <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
+    <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
+    <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
+    <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
+  </ul>
 
   <h3 id="Classes">CLASSES</h3>
   <p>
     Your class defines how you operate in combat, giving you access to a specific set of equipment and abilities. Each
-    class also has a <b>Hit Die</b>, which controls how much <b>health</b> they have per level.
+    class has a <b>Hit Die</b>, this controls how much <b>health</b> they both start with, and gain for each level.
   </p>
   <p>
-    The class abilities are still under construction, however what is displayed here should give you a feel for how the
-    class is played.
+    The full set of class abilities are incomplete and will be discovered as you progress, however what is displayed
+    should
+    give you a feel for how the class is played.
   </p>
-
-  <h4>Warrior</h4>
-  <p>
-    The masters of arms, warriors are commonly found at the front of battle clad in heavy armour. They have a wide
-    variety
-    of available weapons, shields and armour. The main roles as a warrior is to take and dish out physical damage.
-  </p>
-  <h5>Hit Die</h5>
-  <p>d12</p>
-  <h5>Important stats</h5>
-  <p>Constitution, Strength, Agility</p>
-  <h5>Starting equipment</h5>
-  <p>Damaged Chain Armour, Damaged Short Sword, Damaged Wooden Shield</p>
-  <h5>Proficiencies</h5>
-  <p>
-    Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small
-    Shields,
-    Medium Shields, Large Shields
-  </p>
-  <h5>Abilities</h5>
-  <table>
-    <tr class="header">
-      <td>Level</td>
-      <td>Name</td>
-      <td>Description</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Frenzy</td>
-      <td>Passive - +1d4 damage on all attacks when <b>wounded</b></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Taunt</td>
-      <td>Action - Spend an action to force an opponent to make a CHA saving throw, or they will be forced to attack the
-        character next round
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Shield Block</td>
-      <td>Instant - once per round, when a friendly ally within 2m is being attacked, you may take the attack in their
-        place
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Dual Wield</td>
-      <td>Passive - The character may now equip a small weapon in their off-hand, and can make an additional attack with
-        that weapon once per round
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Intimidate</td>
-      <td>Passive - The character can perform a <b>Persuasion</b> check using their<b>Strength</b> rather than <b>Charisma</b>
-      </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Extra Attack</td>
-      <td>Passive - Once per round, the character can perform an addition attack with their main weapon</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Berserk</td>
-      <td>+2d4 damage on all attacks when <b>wounded</b></td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>War Cry</td>
-      <td>Action - Give all allies within earshot a +3 to their next attack roll</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-  </table>
-
-  <h4>Paladin</h4>
-  <p>
-    A cross between a Warrior and a Cleric, Paladins combine their fighting abilities with healing spells as well as a
-    hatred for undead. The main roles as a Paladin is to tank as well as heal.
-  </p>
-  <h5>Hit Die</h5>
-  <p>d10</p>
-  <h5>Important stats</h5>
-  <p>Constitution, Spirit, Strength</p>
-  <h5>Starting equipment</h5>
-  <p>Damaged Chain Armour, Rusty Bastard Sword</p>
-  <h5>Proficiencies</h5>
-  <p>
-    Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small
-    Shields, Medium Shields
-  </p>
-  <h5>Abilities</h5>
-  <table>
-    <tr class="header">
-      <td>Level</td>
-      <td>Name</td>
-      <td>Description</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Lay on hands</td>
-      <td>
-        Action - once per day, the character can touch (*wink*) a friendly target including themselves, healing the target to full health
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Courage</td>
-      <td>
-        Action - bless an ally with courage, giving them 1d6+SPI temporary hit points
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Turn undead</td>
-      <td>
-        Action -
-      </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Intimidate</td>
-      <td>Passive - The character can perform a <b>Persuasion</b> check using their<b>Strength</b> rather than <b>Charisma</b>
-      </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Extra Attack</td>
-      <td>Passive - Once per round, the character can perform an addition attack with their main weapon</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Berserk</td>
-      <td>+2d4 damage on all attacks when <b>wounded</b></td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>War Cry</td>
-      <td>Action - Give all allies within earshot a +3 to their next attack roll</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-  </table>
-
+  <p>Individual classes details can be found here:</p>
+  <ul>
+    <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
+    <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
+    <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
+    <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
+    <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
+    <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
+    <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
+    <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
+    <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
+    <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
+    <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
+    <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
+  </ul>
 
   <h3 id="Stats">STATS</h3>
   <h4 id="Primary">PRIMARY</h4>
