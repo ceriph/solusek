@@ -23,6 +23,8 @@ body {
   float: left;
   position: relative;
   background-color: white;
+
+  max-width: 90%;
 }
 
 .header {
@@ -66,3 +68,7 @@ button:hover {
   background-color: #02CBEA;
 }
 
+
+img {
+  max-width: 90%;
+}
