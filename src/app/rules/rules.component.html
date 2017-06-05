@@ -1,292 +1,740 @@
 <div class="container">
-  <h1>Rules</h1>
-
-  <ul>
-    <li><a href="rules#Basics">Basics</a>
+  <div class="box">
+    <h1>Rules</h1>
+    <div class="left">
       <ul>
-        <li><a href="rules#Transparency">Transparency</a></li>
-        <li><a href="rules#Dice">Dice</a></li>
-        <li><a href="rules#Rounding">Rounding</a></li>
-        <li><a href="rules#Checks">Checks</a></li>
-        <li><a href="rules#Death">Death</a></li>
-      </ul>
-    </li>
-    <li><a href="rules#CharacterCreation">Character Creation</a>
-      <ul>
-        <li><a href="rules#Races">Races</a>
+        <li><a href="rules#Basics">Basics</a>
           <ul>
-            <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
-            <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
-            <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
-            <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
-            <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
-            <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
-            <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
-            <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
-            <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
+            <li><a href="rules#Dice">Dice</a></li>
+            <li><a href="rules#Rounding">Rounding</a></li>
+            <li><a href="rules#Checks">Checks</a></li>
           </ul>
         </li>
-        <li><a href="rules#Classes">Classes</a>
+        <li><a href="rules#Resting">Resting</a>
           <ul>
-            <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
-            <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
-            <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
-            <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
-            <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
-            <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
-            <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
-            <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
-            <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
-            <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
-            <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
-            <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
+            <li><a href="rules#ShortRest">Short Rest</a></li>
+            <li><a href="rules#LongRest">Long Rest</a></li>
           </ul>
         </li>
-        <li><a href="rules#Stats">Stats</a>
+        <li><a href="rules#Combat">Combat</a>
           <ul>
-            <li><a href="rules#Primary">Primary</a></li>
-            <li><a href="rules#Secondary">Secondary</a></li>
+            <li><a href="rules#Setup">Setup</a>
+              <ul>
+                <li><a href="rules#Suprise">Surprise</a></li>
+                <li><a href="rules#Initative">Initiative</a></li>
+                <li><a href="rules#Position">Position</a></li>
+              </ul>
+            </li>
+            <li><a href="rules#Turns">Turns</a>
+              <ul>
+                <li><a href="rules#Movement">Movement</a></li>
+                <li><a href="rules#Action">Action</a></li>
+                <li><a href="rules#Instant">Instant</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="rules#Additional">Additional Info</a></li>
+        <li><a href="rules#Death">Death</a>
+        <ul>
+          <li><a href="rules#SavingThrows">Saving Throws</a></li>
+          <li><a href="rules#InstantDeath">InstantDeath</a></li>
+          <li><a href="rules#Stablizing">Stabilizing</a></li>
+        </ul>
+        </li>
+        <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>
       </ul>
-    </li>
-    <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>
-    <li><a href="rules#Combat">Combat</a>
+    </div>
+    <div class="left">
       <ul>
-        <li><a href="rules#Suprise">Surprise</a></li>
+        <li><a href="rules#CharacterCreation">Character Creation</a>
+          <ul>
+            <li><a href="rules#Races">Races</a>
+              <ul>
+                <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
+                <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
+                <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
+                <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
+                <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
+                <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
+                <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
+                <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
+                <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
+              </ul>
+            </li>
+            <li><a href="rules#Classes">Classes</a>
+              <ul>
+                <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
+                <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
+                <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
+                <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
+                <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
+                <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
+                <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
+                <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
+                <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
+                <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
+                <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
+                <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
+              </ul>
+            </li>
+            <li><a href="rules#Stats">Stats</a>
+              <ul>
+                <li><a href="rules#Primary">Primary</a></li>
+                <li><a href="rules#Secondary">Secondary</a></li>
+              </ul>
+            </li>
+            <li><a href="rules#Additional">Additional Info</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li><a href="rules#Conditions">Conditions</a></li>
-    <li><a href="rules#Resting">Resting</a></li>
-    <li><a href="rules#Equipment">Equipment</a>
+    </div>
+    <div class="left">
       <ul>
-        <li><a href="rules#Weapons">Weapons</a></li>
-        <li><a href="rules#Armour">Armour</a></li>
-        <li><a href="rules#Tools">Tools</a></li>
+        <li><a href="rules#Conditions">Conditions</a>
+        <ul>
+          <li><a href="rules#Charmed">Charmed</a></li>
+          <li><a href="rules#Dead">Dead</a></li>
+          <li><a href="rules#Dying">Dying</a></li>
+          <li><a href="rules#Diseased">Diseased</a></li>
+          <li><a href="rules#Exhausted">Exhausted</a></li>
+          <li><a href="rules#KnockedDown">Knocked Down</a></li>
+          <li><a href="rules#Mad">Mad</a></li>
+          <li><a href="rules#Rooted">Rooted</a></li>
+          <li><a href="rules#Stabilized">Stabilized</a></li>
+          <li><a href="rules#Stunned">Stunned</a></li>
+          <li><a href="rules#Poisoned">Poisoned</a></li>
+          <li><a href="rules#Wounded">Wounded</a></li>
+          <li><a href="rules#Unconscious">Unconscious</a></li>
+        </ul></li>
+        <li><a href="rules#Equipment">Equipment</a>
+          <ul>
+            <li><a href="rules#Weapons">Weapons</a></li>
+            <li><a href="rules#Armour">Armour</a></li>
+            <li><a href="rules#Tools">Tools</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 
-  <h2 id="Basics">BASICS</h2>
+  <div class="box">
+    <h2 id="Basics">Basics</h2>
 
-  <h3 id="Dice">DICE</h3>
-  <p>
-    Dice are a large part of roleplaying, introducing an element of randomness and excitement. The dice used will be
-    standard DnD dice: d4, d6, d8, d10, d12, d20, d100. The most common usages of which are:
-  </p>
+    <h3 id="Dice">Dice</h3>
+    <p>
+      Dice are a large part of roleplaying, introducing an element of randomness and excitement. The dice used will be
+      standard DnD dice: d4, d6, d8, d10, d12, d20, d100. The most common usages of which are:
+    </p>
 
-  <ul>
-    <li>
-      <b>d4</b> - timers - sometimes the DM will roll a d4 to decide how long the players have before something happens,
-      e.g.
-      how many combat rounds before another horde of zombies breaks through a barricade.
-    </li>
-    <li>
-      <b>d4-d12</b> - damage - these dice will be used for most damage rolls to add a level of variance to the damage
-      being
-      done
-      by characters and is dependant on the weapon/ability being used.
-    </li>
-    <li>
-      <b>d20</b> - Checks/saving throws
-    </li>
-    <li>
-      <b>D100</b> - percentile checks for certain conditions (such as madness)
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <b>d4</b> - timers - sometimes the DM will roll a d4 to decide how long before something happens
+      </li>
+      <li>
+        <b>d4-d12</b> - damage - used for damage rolls
+      </li>
+      <li>
+        <b>d20</b> - checks/saving throws
+      </li>
+      <li>
+        <b>D100</b> - percentile checks for certain conditions such as madness
+      </li>
+    </ul>
 
-  <h3 id="Rounding">ROUNDING</h3>
-  <p>
-    When calculating a result that ends up not being a whole number, you should always round down. For example if
-    you’re doing 11 fire damage to something with 50% fire reduction, the result would be 5 damage.
-  </p>
+    <h3 id="Rounding">ROUNDING</h3>
+    <p>
+      When calculating a result that ends up not being a whole number, you should always round down.
+    </p>
 
-  <h3 id="Checks">CHECKS</h3>
-  <p>
-    When performing an arbitrary action, the character may be asked to perform a check.
-  </p>
-  <p>
-    A check tests a character’s or monster’s innate talent and training in an effort to overcome a challenge. The GM
-    calls for an ability check when a character or monster attempts an action (other than an attack) that has a chance
-    of failure. When the outcome is uncertain, the dice determine the results.
-  </p>
-  <p>
-    For every ability check, the GM decides which of the six stats is relevant to the task at hand and the difficulty
-    of the task, represented by a Difficulty Class. You will be informed of the general difficulty of the task before
-    attempting to do it. The more difficult a task, the higher its DC:
-  </p>
+    <h3 id="Checks">CHECKS</h3>
+    <p>
+      When performing an arbitrary action, the character may be asked to perform a check.
+    </p>
+    <p>
+      A check tests a character’s innate talent and training in an effort to overcome a challenge. The GM
+      calls for an ability check when a character attempts an action (other than an attack) that has a chance
+      of failure. When the outcome is uncertain, the dice determine the results.
+    </p>
+    <p>
+      For every ability check, the GM decides which of the six stats is relevant to the task at hand and the difficulty
+      of the task, represented by a Difficulty Class. You will be informed of the general difficulty of the task before
+      attempting to do it. The more difficult a task, the higher its DC:
+    </p>
 
-  <table>
-    <tr class="header">
-      <td><b>Difficulty</b></td>
-      <td><b>DC</b></td>
-    </tr>
-    <tr>
-      <td>Trivial</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Easy</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>Medium</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <td>Hard</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td>Very hard</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <td>Nearly impossible</td>
-      <td>50+</td>
-    </tr>
-  </table>
-  <p>
-    To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses
-    and
-    penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a
-    success—the
-    creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no
-    progress toward the objective or makes progress combined with a setback determined by the GM.
+    <table>
+      <tr class="header">
+        <td><b>Difficulty</b></td>
+        <td><b>DC</b></td>
+      </tr>
+      <tr>
+        <td>Trivial</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Easy</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Hard</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Very hard</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Nearly impossible</td>
+        <td>50+</td>
+      </tr>
+    </table>
+    <p>
+      To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses
+      and
+      penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a
+      success—the
+      creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no
+      progress toward the objective or makes progress combined with a setback determined by the GM.
 
-    Some checks may require teamwork (for example pushing a very large object), in this case, players can roll
-    together to combine into a stronger check.
-  </p>
+      Some checks may require teamwork (for example pushing a very large object), in this case, players can roll
+      together to combine into a stronger check.
+    </p>
+  </div>
 
-  <h3 id="Death">DEATH</h3>
-  <p>
-    It will be possible to die. It is your responsibility as players (as you do in real life) to try and avoid getting
-    into situations where death is likely.
-  </p>
-  <p>
-    There are ways to recover from death however these will only be available to a limited degree at higher levels (such
-    as rare magical artifacts or high level cleric spells). If a character dies without a way to recover, they are gone
-    for good and the player will need to start a fresh character.
-  </p>
-  <p>
-    Whenever you start your turn with 0 health, you must make a special check, called a death saving throw, to
-    determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to
-    any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of
-    succeeding on a saving throw.
-  </p>
-  <p>
-    Roll a d20: If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by
-    itself. On your third success, you become stable (see below). On your third failure, you die. The successes and
-    failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is
-    reset to zero when you regain any hit points or become stable.
-  </p>
-  <p>
-    Rolling 1 or 20: When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you
-    roll a 20 on the d20, you regain 1 hit point.
-  </p>
-  <p>
-    Damage at 0 Hit Points: If you take any damage while you have 0 hit points, you suffer a death saving throw
-    failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your
-    hit point maximum, you suffer instant death.
-  </p>
-  <p>
-    A character who is healed above 0 health is considered immediately conscious and no longer dying.
-  </p>
+  <div class="box">
+    <h2 id="Resting">Resting</h2>
+    <p>Characters can rest out of combat to gain health and refresh certain abilities. There are two types of rests:</p>
 
-  <h4>Instant Death</h4>
-  <p>
-    Instant death can occur when a player takes damage equal to 100% of their health below 0. For example if a
-    character
-    with 20 max health gets hit for 40 damage, they would instantly be dead.
-  </p>
+    <h3 id="ShortRest">Short Rest</h3>
+    <p>
+      A short rest is considered a 1 hour break that the characters can use after combat to recover health. Shorts rests
+      should only be taken when the characters are not currently in any immediate danger.
+    </p>
+    <p>
+      If the characters are not <b>exhausted</b>, they gain health equal to their rolled <b>hit die</b> + <b>constitution</b>
+      + <b>level</b>
+      and refresh all 'once per encounter' abilities.
+    </p>
+    <p>
+      Characters can take 3 short rests per day before becoming <b>exhausted</b>.
+    </p>
 
-  <h4>Stabilizing</h4>
-  <p>
-    When a character is stable, they are still considered unconscious and at 0 health, however they are no longer
-    dying.
-    Characters can be stabilised by other players through the use of bandages, and in some cases resourceful role play
-    actions such as putting pressure on blood flow etc.
-  </p>
+    <h3 id="LongRest">Long Rest</h3>
+    <p>
+      A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Characters regain all
+      hit points, refresh all abilities and remove any existing <b>exhausted</b> conditions.
+    </p>
+  </div>
 
+  <div class="box">
+    <h2 id="Combat">Combat</h2>
+    <p>
+      Combat consists of the <b>Setup</b> phase, and the <b>Turns</b> phase.
+    </p>
+    <h3 id="Setup">Setup</h3>
+    <p>
+      During setup, the players and DM determine <b>surprise</b>, <b>positions</b> and <b>initiative</b>.
+    </p>
+    <h4 id="Surprise">Surprise</h4>
+    <p>
 
-  <h2 id="CharacterCreation">CHARACTER CREATION</h2>
-  <p>
-    Creating a character consists of the following steps:
-  </p>
-  <ul>
-    <li>Select a <b>Race</b></li>
-    <li>Select a <b>Class</b></li>
-    <li>Allocate your <b>Primary Stats</b></li>
-    <li>Enter additional detail such as: name, age, appearance, personality, background, aims</li>
-  </ul>
+    </p>
+  </div>
 
-  <h3 id="Races">RACES</h3>
-  <p>
-    Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each
-    race also has an additional unique passive ability.
-  </p>
-  <p>
-    Some races will be slightly better suited to certain classes at the beginning, however there are no restrictions
-    on this choice.
-  </p>
-  <p>
-    More detail on each race can be found here:
-  </p>
-  <ul>
-    <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
-    <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
-    <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
-    <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
-    <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
-    <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
-    <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
-    <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
-    <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
-  </ul>
+  <div class="box">
+    <h2 id="Death">DEATH</h2>
+    <p>
+      It <i>will</i> be possible to die, as a player it is your responsibility as players to avoid putting your
+      characters in situations where death is likely. It is possible to recover from death through rare magical
+      equipment or high level <b>Cleric</b> spells, but these will be unavailable for some time.
+    </p>
 
-  <h3 id="Classes">CLASSES</h3>
-  <p>
-    Your class defines how you operate in combat, giving you access to a specific set of equipment and abilities. Each
-    class has a <b>Hit Die</b>, this controls how much <b>health</b> they both start with, and gain for each level.
-  </p>
-  <p>
-    The full set of class abilities are incomplete and will be discovered as you progress, however what is displayed
-    should
-    give you a feel for how the class is played.
-  </p>
-  <p>Individual classes details can be found here:</p>
-  <ul>
-    <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
-    <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
-    <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
-    <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
-    <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
-    <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
-    <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
-    <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
-    <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
-    <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
-    <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
-    <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
-  </ul>
+    <h4>Dying</h4>
+    <p>
+      Whenever you start your turn with 0 health, you must make a special check, called a <b>death saving throw</b>, to
+      determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to
+      any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances
+      of succeeding on a saving throw.
+    </p>
+    <p>
+      <b>Roll a d20:</b> If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no
+      effect by
+      itself. On your third success, you become stable (see below). On your <b>third</b> failure, you die. The successes
+      and
+      failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is
+      reset to zero when you regain any hit points or become stable.
+    </p>
+    <p>
+      <b>Rolling 1 or 20:</b> When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If
+      you
+      roll a 20 on the d20, you regain 1 hit point.
+    </p>
+    <p>
+      <b>Damage at 0 Hit Points</b>: If you take any damage while you have 0 hit points, you suffer a death saving throw
+      failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds
+      your hit point maximum, you suffer instant death.
+    </p>
+    <p>
+      A character who is healed above 0 health is considered immediately conscious and no longer dying.
+    </p>
 
-  <h3 id="Stats">STATS</h3>
-  <h4 id="Primary">PRIMARY</h4>
-  <h4 id="Secondary">SECONDARY</h4>
+    <h4>Instant Death</h4>
+    <p>
+      Instant death can occur when a player takes damage which would reduce them to their maximum health below 0. This
+      can
+      occur on any player regardless of whether they are already dying, for example if a character with 20/20 max health
+      gets hit for 40 damage, they would instantly be dead.
+    </p>
+    <p>
+      For this reason extra care should be taken with characters or creatures that are far more powerful than you.
+      Provoking an attack from them would not be wise!
+    </p>
 
-  <h3 id="Additional">ADDITIONAL INFO</h3>
+    <h4>Stabilizing</h4>
+    <p>
+      When a character is stable, they are still considered unconscious and at 0 health, however they are no longer
+      dying.
+      Characters can be stabilised by other players through the use of bandages, and in some cases resourceful role play
+      actions such as putting pressure on blood flow etc.
+    </p>
+  </div>
 
-  <h2 id="CharacterAdvancement">Character Advancement</h2>
+  <div class="box">
+    <h2 id="CharacterAdvancement">Character Advancement</h2>
+    <p>
+      Characters advance in level by earning experience points. These are awarded for various actions such as defeating
+      enemies in combat, completing a quest, or exceptional feats of roleplaying.
+    </p>
+    <p>
+      When advancing in level, characters will improve their stats and unlock abilities dependant on their class. The
+      general
+      rule is that on even levels, the character gains a bonus stat, and on odd levels they gain a new ability.
+    </p>
+    <p>
+      The requirements for each level are as follows:
+    </p>
+    <table>
+      <tr class="header">
+        <td><b>Character Level</b></td>
+        <td><b>Total Experience Required</b></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>2700</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6500</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>14000</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>23000</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>34000</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>48000</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>64000</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>85000</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>100000</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>120000</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>140000</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>165000</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>195000</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>225000</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>265000</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>305000</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>355000</td>
+      </tr>
+    </table>
+  </div>
 
-  <h2 id="Combat">Combat</h2>
+  <div class="box">
+    <h2 id="CharacterCreation">CHARACTER CREATION</h2>
+    <p>
+      Creating a character consists of the following steps:
+    </p>
+    <ul>
+      <li>Select a <b>Race</b></li>
+      <li>Select a <b>Class</b></li>
+      <li>Allocate your <b>Primary Stats</b></li>
+      <li>Enter additional detail such as: name, age, appearance, personality, background, aims</li>
+    </ul>
 
-  <h2 id="Conditions">Conditions</h2>
+    <h3 id="Races">RACES</h3>
+    <p>
+      Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each
+      race also has an additional unique passive ability.
+    </p>
+    <p>
+      Some races will be slightly better suited to certain classes at the beginning, however there are no restrictions
+      on this choice.
+    </p>
+    <p>
+      More detail on each race can be found here:
+    </p>
+    <ul>
+      <li><a routerLink="/races/human" routerLinkActive="active">Human</a></li>
+      <li><a routerLink="/races/highelf" routerLinkActive="active">High Elf</a></li>
+      <li><a routerLink="/races/woodelf" routerLinkActive="active">Wood Elf</a></li>
+      <li><a routerLink="/races/darkelf" routerLinkActive="active">Dark Elf</a></li>
+      <li><a routerLink="/races/halfling" routerLinkActive="active">Halfling</a></li>
+      <li><a routerLink="/races/dwarf" routerLinkActive="active">Dwarf</a></li>
+      <li><a routerLink="/races/ogre" routerLinkActive="active">Ogre</a></li>
+      <li><a routerLink="/races/troll" routerLinkActive="active">Troll</a></li>
+      <li><a routerLink="/races/iksar" routerLinkActive="active">Iksar</a></li>
+    </ul>
 
-  <h2 id="Resting">Resting</h2>
-  <h2 id="Equipment">Equipment</h2>
-  <h3 id="Weapons">Weapons</h3>
-  <h3 id="Armour">Armour</h3>
-  <h3 id="Tools">Tools</h3>
+    <h3 id="Classes">CLASSES</h3>
+    <p>
+      Your class defines how you operate in combat, giving you access to a specific set of equipment and abilities. Each
+      class has a <b>Hit Die</b>, this controls how much <b>health</b> they both start with and gain each level.
+    </p>
+    <p>
+      Please note the full set of class abilities is currently incomplete and will be discovered as you progress, what
+      is
+      displayed should however give you a feel for how the class is played.
+    </p>
+    <p>Individual classes details can be found here:</p>
+    <ul>
+      <li><a routerLink="/classes/warrior" routerLinkActive="active">Warrior</a></li>
+      <li><a routerLink="/classes/paladin" routerLinkActive="active">Paladin</a></li>
+      <li><a routerLink="/classes/reaver" routerLinkActive="active">Reaver</a></li>
+      <li><a routerLink="/classes/cleric" routerLinkActive="active">Cleric</a></li>
+      <li><a routerLink="/classes/shaman" routerLinkActive="active">Shaman</a></li>
+      <li><a routerLink="/classes/monk" routerLinkActive="active">Monk</a></li>
+      <li><a routerLink="/classes/rogue" routerLinkActive="active">Rogue</a></li>
+      <li><a routerLink="/classes/bard" routerLinkActive="active">Bard</a></li>
+      <li><a routerLink="/classes/ranger" routerLinkActive="active">Ranger</a></li>
+      <li><a routerLink="/classes/wizard" routerLinkActive="active">Wizard</a></li>
+      <li><a routerLink="/classes/enchanter" routerLinkActive="active">Enchanter</a></li>
+      <li><a routerLink="/classes/necromancer" routerLinkActive="active">Necromancer</a></li>
+    </ul>
 
+    <h3 id="Stats">STATS</h3>
+    <p>
+      Stats are the numbers which make up a character's ability to excel (or not) at certain things. This is split up
+      into <b>primary</b> stats and <b>secondary</b> stats.
+    </p>
+
+    <h4 id="Primary">PRIMARY</h4>
+    <p>
+      Primary stats are the building blocks of your character. At creation you will receive some base stats dependant on
+      the selected <b>race</b>, and additionally you will receive 5 points (10 for humans) to spend as you like.
+    </p>
+    <p>
+      The class you choose should guide you in which stats to allocate points in, however no matter what class you
+      choose
+      it is recommended to place a point or two in <b>Constitution</b> for health and <b>Agility</b> for movement.
+    </p>
+
+    <h5>Strength</h5>
+    <p>
+      How physically strong the character is. Allows the character to flex and lift heavy objects, as well as do more
+      melee damage in combat.
+    </p>
+
+    <h5>Constitution</h5>
+    <p>
+      How healthy and fit the character is. Directly affects the <b>health</b> of a character as well as
+      resistance to <b>poison</b> and <b>disease</b>.
+    </p>
+
+    <h5>Agility</h5>
+    <p>
+      How fast and coordinated the character is. Directly affects the <b>movement</b> and <b>dodge</b> ratings of a
+      character.
+      It also affects damage done using ranged weapons.
+    </p>
+
+    <h5>Intelligence</h5>
+    <p>
+      How witty and educated the character is. Directly affects the power of most <b>arcane</b>, <b>fire</b>, <b>ice</b>
+      and <b>dark</b> based magic, as well as <b>resistance</b> to those.
+    </p>
+
+    <h5>Spirit</h5>
+    <p>
+      How in tune a character is with either their inner spirit or their god. Directly affects to power of most
+      <b>light</b> and <b>energy</b> magic, as well as resistance to those.
+    </p>
+
+    <h5>Charisma</h5>
+    <p>
+      How charming and persuasive a character is. Directly affects the power of most <b>mind</b> magic as well as
+      resistance to
+      it. Also useful when trying to pick up girls.
+    </p>
+
+    <h4 id="Secondary">SECONDARY</h4>
+    <p>
+      Secondary stats are calculated from both the characters primary stats, level, and any item enhancements. They
+      cannot be
+      directly modified in the same way that the primary stats are.
+    </p>
+
+    <h5>Health</h5>
+    <p>
+      The general well-being of a character, health is used as an indicator of how close a character is to dieing. It is
+      based
+      on <b>constitution</b>, <b>level</b>, and the <b>class</b>. All characters start with health equal to:
+    </p>
+    <p class="code">
+      Max Health = Hit Die Max + Constitution
+    </p>
+    <p>
+      Character gain health each level based on the average of their <b>class hit die</b>. An easy way to calculate how
+      much
+      maximum health a character currently has is:
+    </p>
+    <p class="code">
+      Max Health = Hit Die Max + ((Hit Die Average + Constitution) * Level)
+    </p>
+    <p>
+      For example a level 5 Warrior (class hit die d12) with 5 Constitution, and a level 5 Wizard (class hit die d6)
+      with
+      3 Constitution would have:
+    </p>
+    <p class="code">
+      Warrior = 12 + ((6 + 5) * 5) = 67 <br/>
+      Wizard = 6 + ((3 + 3) * 5) = 36
+    </p>
+    <p>
+      When a character is below 50% of their maximum health, they are considered <b>wounded</b>.
+    </p>
+    <p>
+      When a character is at 0 health or below, they are considered incapacitated and dying. For more detail see
+      the section on <a href="rules#Death">Death</a>.
+    </p>
+
+    <h5>Temporary Health</h5>
+    <p>
+      Some spells and abilities grant a character temporary health, which acts as a temporary buffer against damage.
+      Characters with full health can be given additional health via temporary health.
+    </p>
+    <p>
+      When a character with temporary health takes damage, the damage is first taken from temporary health and if any is
+      leftover
+      it is then taken on actual health.
+    </p>
+    <p>
+      Once temporary health is removed, it cannot be regained via healing. If a character with temporary health is
+      granted
+      more temporary health, they are not combined, the character must chose whether to keep their existing pool or to
+      take the new one.
+    </p>
+    <p>
+      When a character takes any sort of rest, temporary hit points are removed.
+    </p>
+
+    <h5>Movement</h5>
+    <p>
+      This is the characters ability to move around the battlefield in combat. Units are generally considered to be in
+      meters, so a character with 5 movement is able to move 5 meters per round.
+    </p>
+    <p>
+      Characters have movement equal to their <b>Agility</b> stat plus any modifiers. It should be noted that heavy
+      armour
+      and shields negatively affect a characters movement. A character will always have a minimum of 1 movement
+      regardless of modifiers.
+    </p>
+    <p>
+      Movement is also used to decide combat turn order during the <b>Initiative</b> phase.
+    </p>
+
+    <h5>Avoidance</h5>
+    <p>
+      The characters ability to avoid attacks, and comes in two categories: <b>dodge</b> and <b>resistance</b>.
+    </p>
+    <p>
+      <b>Dodge</b> affects the characters ability to avoid physical attacks as well as some projectile based magic. To
+      calculate
+      a characters <b>Dodge Rating</b>, take 10 and add their <b>Agility</b>, then any other modifiers. Similar to <b>movement</b>,
+      <b>dodge</b> is negatively affected by heavy armour and shields.
+    </p>
+    <p>
+      <b>Resistance</b> affects the characters ability to avoid poison, disease and magical attacks. The stat used
+      depends type of magic being
+      employed and will be described on the ability/weapon.
+    </p>
+
+    <h5>Mitigation</h5>
+    <p>
+      The characters ability to reduce damage they taken from hits. Like avoidance this comes in two categories: <b>armour</b>
+      and <b>magic reduction</b>.
+    </p>
+    <p>
+      <b>Armour</b> reduces the amount of physical damage taken and is generally improved by wearing better and heavier
+      armour.
+    </p>
+    <p>
+      <b>Magic Reduction</b> reduces the amount of magical damage taken and can only be improved through certain
+      abilities
+      and magical items. Note that if something states 'Magic reduction', it applies to all types of magical damage,
+      however some
+      abilities and items may only apply to certain types of magic, in this case it will be specific, such as 'Fire
+      reduction'.
+    </p>
+
+    <h3 id="Additional">ADDITIONAL INFO</h3>
+    <p>
+      To finalise your character, you should give them some general details such as name, age, appearance, personality,
+      background, and life goals.
+    </p>
+    <p>
+      For the background and life goals you can be an in depth of as mysteriously vague as you wish. You do not need
+      to disclose all these details with the other players, however being open with the DM allows them to mould the
+      story
+      to the characters.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2 id="Conditions">Conditions</h2>
+    <p>
+      There are many conditions throughout the world which each affect characters in a different way. When a character
+      is
+      inflicted with a condition, they must take the effect described until either the condition is cured, or it reaches
+      the end of its lifespan.
+    </p>
+
+    <h3 id="Charmed">Charmed</h3>
+    <p>
+      Charmed characters have had their mind enslaved and must obey the wishes of their master for the duration.
+    </p>
+
+    <h3 id="Dead">Dead</h3>
+    <p>
+      Characters are dead when they either fail 3 <b>death saving throws</b> or suffer <b>instant death</b>. Dead
+      characters are gone, however there are some magical artifacts and spells which can bring dead characters back to life
+      within a short duration of their death.
+    </p>
+
+    <h3 id="Dying">Dying</h3>
+    <p>
+      Characters at 0 health which have not yet been <b>stabilized</b> are considered to be dying, and must make a
+      <b>death saving throw</b> each turn. Dying characters are always considered <b>unconscious</b>.
+    </p>
+
+    <h3 id="Diseased">Diseased</h3>
+    <p>
+      Diseases come in many forms, all of which have negative effects, weakening the character in some way.
+    </p>
+
+    <h3 id="Exhausted">Exhausted</h3>
+    <p>
+      A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b>
+      in order to recover from the condition.
+    </p>
+
+    <h3 id="KnockedDown">Knocked down</h3>
+    <p>
+      Characters who are knocked down receive a -5 modifier to their <b>dodge</b> rating and their next movement
+      must be spent getting back up, after which they can continue to perform an action as normal.
+    </p>
+
+    <h3 id="Mad">Mad</h3>
+    <p>
+      Madness can affect characters in many ways, from a minor form of OCD to mistaking teammates for enemies in battle.
+      The type and duration of madness will be defined as and when it occurs.
+    </p>
+
+    <h3 id="Rooted">Rooted</h3>
+    <p>
+      Rooted characters are held in place by some force and cannot move for the duration. They can still perform
+      other actions as normal.
+    </p>
+
+    <h3 id="Stabilized">Stabilized</h3>
+    <p>
+      Characters are considered stabilized if there are at 0 health but have been stabilized, so they are still
+      <b>unconscious</b> but no longer <b>dying</b>.
+    </p>
+
+    <h3 id="Stunned">Stunned</h3>
+    <p>
+      Stunned characters suffer a -5 modifier to their <b>dodge</b> rating and cannot move or perform any actions
+      on their turn.
+    </p>
+
+    <h3 id="Poisoned">Poisoned</h3>
+    <p>
+      Poisoned characters take damage at the end of each turn for the duration. The damage taken depends on the type
+      of the poison and will be detailed.
+    </p>
+
+    <h3 id="Wounded">Wounded</h3>
+    <p>
+      Characters are considered wounded when they are at less than 50% of their maximum health. Some abilities will
+      only be in effect when a character or target is wounded.
+    </p>
+
+    <h3 id="Unconscious">Unconscious</h3>
+    <p>
+      Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b> rating.
+      Unconscious characters cannot move or take any actions on their turn.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2 id="Equipment">Equipment</h2>
+    <h3 id="Weapons">Weapons</h3>
+    <h3 id="Armour">Armour</h3>
+    <h3 id="Tools">Tools</h3>
+  </div>
 </div>

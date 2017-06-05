@@ -7,53 +7,120 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 95%;
+/*.container {*/
+  /*width: 95%;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+/*.container p {*/
+  /*text-align: justify;*/
+/*}*/
+
+.content {
+  margin: 0 auto;
+
+  -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+  -moz-columns: 100px 2; /* Firefox */
+  columns: 100px 2;
+
+  -webkit-column-width: 300px;
+  -moz-column-width: 300px;
+  column-width: 300px;
+
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.content p, .content ul, .content table {
+  text-align: justify;
   margin: 0 auto;
 }
 
-.container p {
-  text-align: justify;
+.content p {
+  width: 95%;
+}
+
+.content ul {
+  width: 80%;
+}
+
+.content table {
+  width: 50%;
 }
 
 .box {
-  padding: 10px;
-  margin: 10px;
+  padding: 2%;
+  margin: 2%;
 
   float: left;
-  position: relative;
+  width: 92%;
+
   background-color: white;
 
-  max-width: 90%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.box img {
+  float: left;
+  margin-right: 20px;
+}
+
+.box .info {
+  float: left;
+}
+
+.fill {
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  float: none !important;
 }
 
 .header {
   background-color: #01A7C2;
 }
 
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+}
+
 h1, h2, h3, h4, h5 {
   color: #3C5863;
   text-transform: uppercase;
+  -webkit-column-span: all;
+  column-span: all;
+
+  text-align: justify;
+  margin: 0 auto;
+  width: 95%;
+
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 h4 {
-  -webkit-margin-before: 2em;
+  -webkit-margin-before: 1.6em;
 }
 
 h5 {
+  -webkit-margin-before: 1em;
   -webkit-margin-after: 0;
 }
 
 a {
-  color: #F5F1E3;
+  color: #01A7C2;
 }
 
 a:visited {
-  color: #F5F1E3;
+  color: #01A7C2;
 }
 
 a:hover {
-  color: #DDDBCB;
+  color: #3C5863;
 }
 
 button {
@@ -68,7 +135,10 @@ button:hover {
   background-color: #02CBEA;
 }
 
-
 img {
   max-width: 90%;
+}
+
+.code {
+  font-family: "Courier New", serif;
 }

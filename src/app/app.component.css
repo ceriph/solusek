@@ -7,6 +7,11 @@ nav {
 nav a {
   line-height: 40px;
   padding-right: 10px;
+  color: #F5F1E3;
+}
+
+nav a:visited {
+  color: #F5F1E3;
 }
 
 .content {

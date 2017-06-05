@@ -6,7 +6,11 @@ table {
 td {
   padding: 5px 20px 5px 5px;
   border-top: 1px solid #CCC;
+}
 
+.left {
+  float: left;
+  padding: 10px;
 }
 
 
