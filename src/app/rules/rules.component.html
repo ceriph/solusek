@@ -32,14 +32,15 @@
                 <li><a href="rules#Instant">Instant</a></li>
               </ul>
             </li>
+            <li><a href="rules#CriticalHits">Critical Hits</a></li>
           </ul>
         </li>
         <li><a href="rules#Death">Death</a>
-        <ul>
-          <li><a href="rules#SavingThrows">Saving Throws</a></li>
-          <li><a href="rules#InstantDeath">InstantDeath</a></li>
-          <li><a href="rules#Stablizing">Stabilizing</a></li>
-        </ul>
+          <ul>
+            <li><a href="rules#SavingThrows">Saving Throws</a></li>
+            <li><a href="rules#InstantDeath">Instant Death</a></li>
+            <li><a href="rules#Stablizing">Stabilizing</a></li>
+          </ul>
         </li>
         <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>
       </ul>
@@ -91,26 +92,30 @@
     <div class="left">
       <ul>
         <li><a href="rules#Conditions">Conditions</a>
-        <ul>
-          <li><a href="rules#Charmed">Charmed</a></li>
-          <li><a href="rules#Dead">Dead</a></li>
-          <li><a href="rules#Dying">Dying</a></li>
-          <li><a href="rules#Diseased">Diseased</a></li>
-          <li><a href="rules#Exhausted">Exhausted</a></li>
-          <li><a href="rules#KnockedDown">Knocked Down</a></li>
-          <li><a href="rules#Mad">Mad</a></li>
-          <li><a href="rules#Rooted">Rooted</a></li>
-          <li><a href="rules#Stabilized">Stabilized</a></li>
-          <li><a href="rules#Stunned">Stunned</a></li>
-          <li><a href="rules#Poisoned">Poisoned</a></li>
-          <li><a href="rules#Wounded">Wounded</a></li>
-          <li><a href="rules#Unconscious">Unconscious</a></li>
-        </ul></li>
+          <ul>
+            <li><a href="rules#Charmed">Charmed</a></li>
+            <li><a href="rules#Dead">Dead</a></li>
+            <li><a href="rules#Dying">Dying</a></li>
+            <li><a href="rules#Diseased">Diseased</a></li>
+            <li><a href="rules#Exhausted">Exhausted</a></li>
+            <li><a href="rules#Invisible">Invisible</a></li>
+            <li><a href="rules#KnockedDown">Knocked Down</a></li>
+            <li><a href="rules#Mad">Mad</a></li>
+            <li><a href="rules#Rooted">Rooted</a></li>
+            <li><a href="rules#Stabilized">Stabilized</a></li>
+            <li><a href="rules#Stunned">Stunned</a></li>
+            <li><a href="rules#Poisoned">Poisoned</a></li>
+            <li><a href="rules#Wounded">Wounded</a></li>
+            <li><a href="rules#Unconscious">Unconscious</a></li>
+          </ul>
+        </li>
         <li><a href="rules#Equipment">Equipment</a>
           <ul>
+            <li><a href="rules#Currency">Currency</a></li>
+            <li><a href="rules#Quality">Quality</a></li>
             <li><a href="rules#Weapons">Weapons</a></li>
             <li><a href="rules#Armour">Armour</a></li>
-            <li><a href="rules#Tools">Tools</a></li>
+            <li><a href="rules#Other">Other</a></li>
           </ul>
         </li>
       </ul>
@@ -214,9 +219,9 @@
       should only be taken when the characters are not currently in any immediate danger.
     </p>
     <p>
-      If the characters are not <b>exhausted</b>, they gain health equal to their rolled <b>hit die</b> + <b>constitution</b>
-      + <b>level</b>
-      and refresh all 'once per encounter' abilities.
+      If the characters are not <b>exhausted</b> and have food and water, they roll their class <b>hit die</b> and gain
+      health
+      equal to the result + their <b>constitution</b> + their <b>level</b>.
     </p>
     <p>
       Characters can take 3 short rests per day before becoming <b>exhausted</b>.
@@ -224,8 +229,9 @@
 
     <h3 id="LongRest">Long Rest</h3>
     <p>
-      A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Characters regain all
-      hit points, refresh all abilities and remove any existing <b>exhausted</b> conditions.
+      A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Provided the characters
+      have access to food and water, they regain all hit points, refresh all abilities and remove any existing
+      <b>exhausted</b> conditions.
     </p>
   </div>
 
@@ -241,6 +247,25 @@
     <h4 id="Surprise">Surprise</h4>
     <p>
 
+    </p>
+    <h4 id="Initiative">Initiative</h4>
+    <p>
+
+    </p>
+    <h4 id="Position">Position</h4>
+    <p>
+
+    </p>
+
+    <h3 id="Turns">Position</h3>
+    <h4 id="Movement">Movement</h4>
+    <h4 id="Action">Action</h4>
+    <h4 id="Instant">Instant</h4>
+
+    <h3 id="CriticalHits">Critical Hits</h3>
+    <p>
+      When a character rolls a <b>natural</b> 20, as in their d20 roll with modifiers is 20, they score a hit regardless
+      of the targets <b>avoidance</b> rating. They also do not need to roll any damage dice, assuming full damage.
     </p>
   </div>
 
@@ -474,8 +499,11 @@
 
     <h4 id="Primary">PRIMARY</h4>
     <p>
-      Primary stats are the building blocks of your character. At creation you will receive some base stats dependant on
-      the selected <b>race</b>, and additionally you will receive 5 points (10 for humans) to spend as you like.
+      Primary stats are the building blocks of your character. All characters start with 1 in each stat, adjusted by
+      your selected <b>race</b>, plus 5 points (10 for humans) to spend as you like.
+    </p>
+    <p>
+      At creation only, no individual base stat (not including racial bonuses) can be raised above 5.
     </p>
     <p>
       The class you choose should guide you in which stats to allocate points in, however no matter what class you
@@ -538,28 +566,32 @@
       Max Health = Hit Die Max + Constitution
     </p>
     <p>
-      Character gain health each level based on the average of their <b>class hit die</b>. An easy way to calculate how
-      much
-      maximum health a character currently has is:
+      Each level characters gain health equal to the average of their <b>class hit die</b> plus <b>constitution</b>:
     </p>
     <p class="code">
-      Max Health = Hit Die Max + ((Hit Die Average + Constitution) * Level)
+      Bonus Health = Hit Die Average + Constitution
+    </p>
+    <p>
+      Note than any increases in <b>Constitution</b> are applied retroactively, so the full formula to calculate how
+      much maximum health a character currently has is:
+    </p>
+    <p class="code">
+      Max Health = Hit Die Max + Constitution + ((Hit Die Average + Constitution) * (Level - 1))
     </p>
     <p>
       For example a level 5 Warrior (class hit die d12) with 5 Constitution, and a level 5 Wizard (class hit die d6)
-      with
-      3 Constitution would have:
+      with 3 Constitution would have:
     </p>
     <p class="code">
-      Warrior = 12 + ((6 + 5) * 5) = 67 <br/>
-      Wizard = 6 + ((3 + 3) * 5) = 36
+      Warrior = 12 + ((6 + 5) * 4) = 56 <br/>
+      Wizard = 6 + ((3 + 3) * 4) = 30
     </p>
     <p>
       When a character is below 50% of their maximum health, they are considered <b>wounded</b>.
     </p>
     <p>
-      When a character is at 0 health or below, they are considered incapacitated and dying. For more detail see
-      the section on <a href="rules#Death">Death</a>.
+      When a character is at 0 health, they are considered <b>unconscious</b> and <b>dying</b> (unless
+      <b>stabilized</b>). For more detail see the section on <a href="rules#Death">Death</a>.
     </p>
 
     <h5>Temporary Health</h5>
@@ -647,10 +679,8 @@
   <div class="box">
     <h2 id="Conditions">Conditions</h2>
     <p>
-      There are many conditions throughout the world which each affect characters in a different way. When a character
-      is
-      inflicted with a condition, they must take the effect described until either the condition is cured, or it reaches
-      the end of its lifespan.
+      There are many conditions throughout the world which can have both positive and negative effects for a given
+      duration.
     </p>
 
     <h3 id="Charmed">Charmed</h3>
@@ -661,7 +691,8 @@
     <h3 id="Dead">Dead</h3>
     <p>
       Characters are dead when they either fail 3 <b>death saving throws</b> or suffer <b>instant death</b>. Dead
-      characters are gone, however there are some magical artifacts and spells which can bring dead characters back to life
+      characters are gone, however there are some magical artifacts and spells which can bring dead characters back to
+      life
       within a short duration of their death.
     </p>
 
@@ -678,8 +709,14 @@
 
     <h3 id="Exhausted">Exhausted</h3>
     <p>
-      A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b>
+      A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long
+      rest</b>
       in order to recover from the condition.
+    </p>
+
+    <h3 id="Invisible">Invisible</h3>
+    <p>
+      Invisible characters cannot be seen or attacked, except by characters with the <b>See Invisible</b> trait.
     </p>
 
     <h3 id="KnockedDown">Knocked down</h3>
@@ -726,15 +763,77 @@
 
     <h3 id="Unconscious">Unconscious</h3>
     <p>
-      Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b> rating.
+      Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b>
+      rating.
       Unconscious characters cannot move or take any actions on their turn.
     </p>
   </div>
 
   <div class="box">
     <h2 id="Equipment">Equipment</h2>
+    <p>
+      This section contains details on all the basic equipment available to the characters. In addition to the
+      equipment stated on their selected <b>class</b>, all characters start with a set of <b>bandages</b> each, as well
+      as 5 units of food and water each.
+    </p>
+    <p>
+      Equipment can be bought, acquired via gifts for completed quests, or hunting treasure.
+    </p>
+
+    <h3 id="Currency">Currency</h3>
+    <p>
+      The unit of currency in Solusek is gold coins. For this campaign, the characters always start with no gold coins,
+      so it is in their interest to pursue avenues of income.
+    </p>
+    <p>
+      Gold can be obtained by completing quests, stealing, killing, or hunting and selling treasure.
+    </p>
+
+    <h3 id="Quality">Quality</h3>
+    <p>
+      All <b>weapons</b> and <b>armour</b> come in a specific range of qualities which affect the <b>modifier</b> on the
+      item, for weapons this effects the attack and damage rolls, for armour it affects the armour it provides.
+    </p>
+    <p>The available qualities are:</p>
+
+    <ul>
+      <li><b>Damaged</b> - the item is damaged and suffers a -2 modifier</li>
+      <li><b>Weathered</b> - the item has seen some use and suffers a -1 modifier</li>
+      <li><b>Fine</b> - the item is of acceptable quality, and has no modifiers</li>
+      <li><b>Imbued</b> - the item has been imbued with magic, it has a +1 modifier and another magical effect</li>
+      <li><b>Legendary</b> - the item is a unique artifact, it has a +2 modifier and multiple magical effects</li>
+    </ul>
+
+    <p>
+      Higher quality items are harder to obtain and cost more money to buy.
+    </p>
+
     <h3 id="Weapons">Weapons</h3>
+    <p>
+      Weapons are used to perform attack actions and must be equipped. Each weapon has a <b>proficiency</b> requirement
+      which must be met in order to wield it.
+    </p>
+
+
+
     <h3 id="Armour">Armour</h3>
-    <h3 id="Tools">Tools</h3>
+    <p>
+      Armour is used to protect the body from physical damage and comes in the following forms:
+    </p>
+    <table>
+      <tr class="header">
+        <td><b>Difficulty</b></td>
+        <td><b>DC</b></td>
+      </tr>
+
+    </table>
+
+
+
+    <h3 id="Other">Other</h3>
+    <p>
+      Other items can be acquired, such as magical gloves, amulets, rings etc. These will become available as you progress
+      and the benefits will be detailed on a case by case basis.
+    </p>
   </div>
 </div>

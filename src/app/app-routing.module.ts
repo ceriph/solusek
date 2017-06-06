@@ -20,6 +20,10 @@ import {DwarfComponent} from "./character/races/dwarf/dwarf.component";
 import {OgreComponent} from "./character/races/ogre/ogre.component";
 import {TrollComponent} from "./character/races/troll/troll.component";
 import {IksarComponent} from "./character/races/iksar/iksar.component";
+import {MonkComponent} from "./character/classes/monk/monk.component";
+import {BardComponent} from "./character/classes/bard/bard.component";
+import {RangerComponent} from "./character/classes/ranger/ranger.component";
+import {RogueComponent} from "./character/classes/rogue/rogue.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -42,7 +46,11 @@ const routes: Routes = [
   { path: 'classes/paladin', component: PaladinComponent },
   { path: 'classes/reaver', component: ReaverComponent },
   { path: 'classes/cleric', component: ClericComponent },
-  { path: 'classes/shaman', component: ShamanComponent }
+  { path: 'classes/shaman', component: ShamanComponent },
+  { path: 'classes/monk', component: MonkComponent },
+  { path: 'classes/bard', component: BardComponent },
+  { path: 'classes/ranger', component: RangerComponent },
+  { path: 'classes/rogue', component: RogueComponent }
 ];
 
 @NgModule({

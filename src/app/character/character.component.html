@@ -1,10 +1,15 @@
-<div *ngIf="player">
-  <h1>Welcome, {{player.name}}</h1>
-  <div *ngIf="player.character.name">
-    <p>Character detail here</p>
-  </div>
-  <div *ngIf="!player.character.name">
-    <p>It appears you do not currently have a character...</p>
-    <button (click)="createCharacter()">CREATE</button>
+<div class="box">
+  <div *ngIf="player">
+    <h1>Welcome, {{player.name}}</h1>
+    <div *ngIf="player.character.name">
+      <p>Character detail here</p>
+    </div>
+    <div *ngIf="!player.character.name">
+      <p>It appears you do not currently have a character, however the creator is not yet fully working.</p>
+      <p>
+        Feel free to read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
+        Creation Rules</a> in the meantime, so you're ready to go once it is complete.
+      </p>
+    </div>
   </div>
 </div>

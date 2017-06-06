@@ -80,6 +80,26 @@ body {
 
 .header {
   background-color: #01A7C2;
+  color: white;
+}
+
+table {
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+td {
+  padding: 5px 20px 5px 5px;
+  border-top: 1px solid #CCC;
+}
+
+.left {
+  float: left;
+  padding: 10px;
+}
+
+.wide {
+  width: 80% !important;
 }
 
 p {
@@ -141,4 +161,11 @@ img {
 
 .code {
   font-family: "Courier New", serif;
+}
+
+:target:before {
+  content:"";
+  display:block;
+  height: 40px; /* fixed header height*/
+  margin: -40px 0 0; /* negative fixed header height */
 }

@@ -1,72 +1,113 @@
-<h1>Reaver</h1>
-<p>
-  Known as 'dark paladins', Reavers are a cross between a Warrior and a Necromancer, employing a mix of physical
-  abilities and dark magic in combat. Reavers can focus on tanking or damage roles.
-</p>
-<h3>Hit Die</h3>
-<p>d10</p>
-<h3>Important stats</h3>
-<p>Constitution, Strength, Intelligence</p>
-<h3>Starting equipment</h3>
-<p>Damaged Chain Armour, Rusty Bastard Sword</p>
-<h3>Proficiencies</h3>
-<p>
-  Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small
-  Shields, Medium Shields
-</p>
-<h3>Abilities</h3>
-<table>
-  <tr class="header">
-    <td>Level</td>
-    <td>Name</td>
-    <td>Description</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Harm touch</td>
-    <td>
-      Action - once per day - attack vs INT on an enemy within melee range, causing 1d4 (per level) + INT <b>dark</b>
-      damage
-    </td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Boil blood</td>
-    <td>
-      Instant - once per round - enrage a friendly character, giving them an extra 1d6 damage on the next attack
-      they make, as well as the next attack they receive
-    </td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Animate bones</td>
-    <td>
-      Action - once per encounter - raise a skeleton from the dead under the characters control. It has <1d4 * level + CON> health,
-      4 movement, and does <1d4 + level> damage
-    </td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Shield Block</td>
-    <td>
-      Instant - once per round - when a friendly ally within 2m is being attacked, you may take the attack in their
-      place
-    </td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Life tap</td>
-    <td>Action - once per encounter - attack vs INT on an enemy within 10m dealing 2d6+INT <b>dark</b> damage</td>, the character
+<div class="box fill">
+  <h1>Reaver</h1>
+  <p>
+    Known as 'dark paladins', Reavers are a cross between a Warrior and a Necromancer, employing a mix of physical
+    abilities and dark magic in combat. Reavers can focus on tanking or damage roles.
+  </p>
+  <h3>Hit Die</h3>
+  <p>d10</p>
+  <h3>Important stats</h3>
+  <p>Constitution, Strength, Intelligence</p>
+  <h3>Starting equipment</h3>
+  <p>Damaged Chain Armour, Rusty Bastard Sword</p>
+  <h3>Proficiencies</h3>
+  <p>
+    Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small
+    Shields, Medium Shields
+  </p>
+
+  <h2>Progression</h2>
+  <table class="wide">
+    <tr class="header">
+      <td>Level</td>
+      <td>Unlocks</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Skill - Harm Touch</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Additional stat point</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Skill - Boil Blood</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Skill - Animate bones</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Additional stat point</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Skill - Shield Block</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Additional stat point</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Skill - Life Tap</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Additional stat point</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Skill - Extra Attack</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Additional stat point</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>TODO</td>
+    </tr>
+  </table>
+
+  <h2>Skills</h2>
+
+  <h3>Harm Touch</h3>
+  <p>
+    Action - once per day - when the Reaver is not <b>exhausted</b>, make an attack vs INT on an enemy within melee
+    range,
+    causing 1d4 (per level) + INT <b>dark</b> damage, the Reaver then becomes <b>exhausted</b>
+  </p>
+
+  <h3>Boil Blood</h3>
+  <p>
+    Instant - once per round - enrage a friendly character, giving them an extra 1d6 damage on the next attack
+    they make, as well as the next attack they receive
+  </p>
+
+  <h3>Animate bones</h3>
+  <p>
+    Action - once per encounter - raise a skeleton from the dead under the characters control. It has <1d4 * level +
+    CON> health,
+    4 movement, and does <1d4 + level> damage
+  </p>
+
+  <h3>Shield Block</h3>
+  <p>
+    Instant - once per round - when a friendly character within 1m is being attacked, before dice are rolled you may
+    choose to take the attack instead. Shield must be equipped.
+  </p>
+
+  <h3>Life Tap</h3>
+  <p>
+    Action - once per encounter - attack vs INT on an enemy within 10m dealing 1d6+INT <b>dark</b> damage, the reaver
     gains health equal to the damage done
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Extra Attack</td>
-    <td>Passive - once per round - the character can perform an additional attack with their main weapon</td>
-  </tr>
-  <tr>
-    <td>...</td>
-    <td>...</td>
-    <td>...</td>
-  </tr>
-</table>
+  </p>
+
+  <h3>Extra Attack</h3>
+  <p>
+    Passive - once per round - the character can perform an additional basic attack with their main weapon
+  </p>
+</div>
