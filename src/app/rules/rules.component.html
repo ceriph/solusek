@@ -124,10 +124,14 @@
 
   <div class="box">
     <h2 id="Basics">Basics</h2>
+    <p>
+      This custom rule set is based on DnD 5th Edition with some alterations. The alterations are based around theming,
+      simplicity, and slightly less randomness.
+    </p>
 
     <h3 id="Dice">Dice</h3>
     <p>
-      Dice are a large part of roleplaying, introducing an element of randomness and excitement. The dice used will be
+      Dice are a large part of DnD, introducing an element of randomness and excitement. The dice used will be
       standard DnD dice: d4, d6, d8, d10, d12, d20, d100. The most common usages of which are:
     </p>
 
@@ -246,25 +250,91 @@
     </p>
     <h4 id="Surprise">Surprise</h4>
     <p>
-
+      The GM will decide if either side is surprised, in which case the other side gets a free round of turns before the
+      next phase begins. An example would be sneaking up on a camp of sleeping goblins.
     </p>
     <h4 id="Initiative">Initiative</h4>
     <p>
-
+      All characters must roll initiative. To do this they roll 1d20 and add their <b>movement</b> stat. The turn order is then
+      determined starting with highest initiative down to lowest.
     </p>
     <h4 id="Position">Position</h4>
     <p>
-
+      Position on the battlefield is then determined if necessary, dependant on situation. In some cases position may
+      already be evident.
     </p>
 
-    <h3 id="Turns">Position</h3>
+    <h3 id="Turns">Turns</h3>
+    <p>
+      Once setup is completes the turns phase begins. Each character, in order of initiative, takes their turn. When the last
+      character has taken their turn the round is over and a new one begins back with highest initiative character.
+      This process repeats until the battle is over.
+    </p>
+    <p>
+      On a characters turn, they may perform one <b>movement</b>, and one <b>action</b>. These can be in any order, so the character
+      may make their attack then retreat if they wish.
+    </p>
+
     <h4 id="Movement">Movement</h4>
+    <p>
+      When performing their movement, they may move the number of squares (meters) equal to their <b>movement</b> stat.
+      Diagonal movement is allowed. Friendly figures do not block movement, however enemy figures do block movement.
+    </p>
+
     <h4 id="Action">Action</h4>
+    <p>
+      For their action, characters have the choice of <b>attack</b>, <b>skill</b>, <b>stabilize</b> and <b>equip</b>.
+    </p>
+
+    <h5>Attack</h5>
+    <p>
+      The character can make a basic attack with their main weapon. This consists of the steps <b>roll attack</b>,
+      <b>compare to avoidance rating</b>, if the attack is equal to or higher than avoidance then the character also
+      <b>rolls for damage</b>, <b>subtracts the targets mitigation</b>, then if any damage is left over <b>health is removed
+      from the target</b>.
+    </p>
+    <p>
+      Take for example Dave the quiet warrior, he is level 1, has 3 agility and 2 strength wielding a damaged short sword,
+      and is attacking a level 1 goblin with 12 dodge, 1 armour and and 8 health:
+    </p>
+    <p class="code">
+      Attack Roll .. 1d20 + AGI .. 1d20 + 3 .. 11 + 3 .. 14<br/>
+      Compare to dodge rating .. 14 vs 12 .. hit!<br/>
+      Damage Roll .. 1d6 - 2 + 2 .. 3 - 2 + 2 .. 3<br/>
+      Subtract Armour .. 3 - 1 .. 2<br/>
+      Remove health .. 8 - 2 .. 6<br/>
+    </p>
+    <p>
+      Remember to use the correct types of <b>avoidance</b> and <b>mitigation</b> for the attack type!
+    </p>
+
+    <h5>Skill</h5>
+    <p>
+      The character can choose to use a skill of type 'action'. These will have varying effects which will be
+      described within the skill text. Many skills are also <b>attacks</b> and will follow the same process above.
+    </p>
+
+    <h5>Equip</h5>
+    <p>
+      The character can unequip or equip something from their inventory, such as swapping out a shield for another
+      weapon.
+    </p>
+
+    <h5>Stabilize</h5>
+    <p>
+      The character can use bandages to attempt to stabilize a dying character. They must roll a 1d20 and on 11 or above,
+      the target is considered <b>stabilized</b>.
+    </p>
+
     <h4 id="Instant">Instant</h4>
+    <p>
+      At any time during the Turns phase (not only on their own turn) characters may interrupt to perform any skills they
+      have with the type 'instant'.
+    </p>
 
     <h3 id="CriticalHits">Critical Hits</h3>
     <p>
-      When a character rolls a <b>natural</b> 20, as in their d20 roll with modifiers is 20, they score a hit regardless
+      When a character rolls a <b>natural</b> 20, as in their d20 roll without modifiers is 20, they score a hit regardless
       of the targets <b>avoidance</b> rating. They also do not need to roll any damage dice, assuming full damage.
     </p>
   </div>
@@ -635,14 +705,12 @@
     </p>
     <p>
       <b>Dodge</b> affects the characters ability to avoid physical attacks as well as some projectile based magic. To
-      calculate
-      a characters <b>Dodge Rating</b>, take 10 and add their <b>Agility</b>, then any other modifiers. Similar to <b>movement</b>,
+      calculate a characters <b>Dodge Rating</b>, take 10 and add their <b>Agility</b>, then any other modifiers. Similar to <b>movement</b>,
       <b>dodge</b> is negatively affected by heavy armour and shields.
     </p>
     <p>
-      <b>Resistance</b> affects the characters ability to avoid poison, disease and magical attacks. The stat used
-      depends type of magic being
-      employed and will be described on the ability/weapon.
+      <b>Resistance</b> is a general term that affects the characters ability to avoid poison, disease and magical attacks.
+      The specific stat used depends type of magic being employed and will be described on the ability/weapon.
     </p>
 
     <h5>Mitigation</h5>
@@ -651,16 +719,18 @@
       and <b>magic reduction</b>.
     </p>
     <p>
-      <b>Armour</b> reduces the amount of physical damage taken and is generally improved by wearing better and heavier
+      <b>Armour</b> reduces the amount of <b>physical</b> damage taken and is generally improved by wearing better and heavier
       armour.
     </p>
     <p>
-      <b>Magic Reduction</b> reduces the amount of magical damage taken and can only be improved through certain
-      abilities
-      and magical items. Note that if something states 'Magic reduction', it applies to all types of magical damage,
-      however some
+      <b>Magic Reduction</b> reduces the amount of <b>magical</b> damage taken and can only be improved through certain
+      abilities and magical items. Magic damage can come in many different subtypes: fire, ice, arcane, dark, light and energy.
+      Note that if something states 'Magic Reduction', it applies to all types of magical damage, however some
       abilities and items may only apply to certain types of magic, in this case it will be specific, such as 'Fire
-      reduction'.
+      Reduction'.
+    </p>
+    <p>
+      Damage from poison and disease cannot be mitigated.
     </p>
 
     <h3 id="Additional">ADDITIONAL INFO</h3>

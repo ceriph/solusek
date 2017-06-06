@@ -24,6 +24,9 @@ import {MonkComponent} from "./character/classes/monk/monk.component";
 import {BardComponent} from "./character/classes/bard/bard.component";
 import {RangerComponent} from "./character/classes/ranger/ranger.component";
 import {RogueComponent} from "./character/classes/rogue/rogue.component";
+import {EnchanterComponent} from "./character/classes/enchanter/enchanter.component";
+import {NecromancerComponent} from "./character/classes/necromancer/necromancer.component";
+import {WizardComponent} from "./character/classes/wizard/wizard.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -50,7 +53,10 @@ const routes: Routes = [
   { path: 'classes/monk', component: MonkComponent },
   { path: 'classes/bard', component: BardComponent },
   { path: 'classes/ranger', component: RangerComponent },
-  { path: 'classes/rogue', component: RogueComponent }
+  { path: 'classes/rogue', component: RogueComponent },
+  { path: 'classes/wizard', component: WizardComponent },
+  { path: 'classes/enchanter', component: EnchanterComponent },
+  { path: 'classes/necromancer', component: NecromancerComponent }
 ];
 
 @NgModule({

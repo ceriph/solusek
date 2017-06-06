@@ -1,9 +1,10 @@
-<h1>Welcome</h1>
-<p>Please login using your email and provided password</p>
-<form>
-  <input type="text" name="username" placeholder="email" [(ngModel)]="email">
-  <input type="password" name="password" placeholder="password" [(ngModel)]="password">
-  <button (click)="login()">Login</button>
-  <p>{{error}}</p>
-</form>
-
+<div class="box login fill">
+  <h1>Welcome</h1>
+  <p>Please login using your email and provided password</p>
+  <form>
+    <input type="text" name="username" placeholder="email" [(ngModel)]="email">
+    <input type="password" name="password" placeholder="password" [(ngModel)]="password">
+    <button (click)="login()">Login</button>
+    <p>{{error}}</p>
+  </form>
+</div>

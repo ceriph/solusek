@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
       .then(() => {
         this.user.subscribe(user => {
           if(user && user.uid) {
-            this.router.navigate(['/players']);
+            this.router.navigate(['/character']);
           }
         });
       });

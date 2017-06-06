@@ -2,9 +2,6 @@ nav {
   height: 40px;
   padding: 5px;
   text-align: right;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 nav a {
@@ -16,9 +13,3 @@ nav a {
 nav a:visited {
   color: #F5F1E3;
 }
-
-.content {
-  padding: 10px;
-  margin-top: 45px;
-}
-

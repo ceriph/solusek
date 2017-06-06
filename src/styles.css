@@ -7,17 +7,9 @@ body {
   margin: 0;
 }
 
-/*.container {*/
-  /*width: 95%;*/
-  /*margin: 0 auto;*/
-/*}*/
-
-/*.container p {*/
-  /*text-align: justify;*/
-/*}*/
-
 .content {
   margin: 0 auto;
+  padding: 10px;
 
   -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
   -moz-columns: 100px 2; /* Firefox */
@@ -161,11 +153,6 @@ img {
 
 .code {
   font-family: "Courier New", serif;
-}
-
-:target:before {
-  content:"";
-  display:block;
-  height: 40px; /* fixed header height*/
-  margin: -40px 0 0; /* negative fixed header height */
+  background-color: #F1F1F1;
+  padding-left: 10px;
 }

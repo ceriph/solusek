@@ -1,1 +1,10 @@
+.login {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
 
+.login p, .login h1 {
+  text-align: center;
+}
