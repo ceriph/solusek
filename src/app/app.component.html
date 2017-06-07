@@ -2,6 +2,7 @@
   <a routerLink="/character" routerLinkActive="active">Character</a>
   <a routerLink="/rules" routerLinkActive="active">Rules</a>
   <a routerLink="/lore" routerLinkActive="active">Lore</a>
+  <a *ngIf="(user | async)?.uid == 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'" routerLink="/dm" routerLinkActive="active">DM</a>
   <button (click)="logout()">Logout</button>
 </nav>
 <div class="content">

@@ -24,7 +24,6 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      console.log(this.router.url);
       if(this.router.url.indexOf("#") == -1) {
         window.scrollTo(0, 0)
       }

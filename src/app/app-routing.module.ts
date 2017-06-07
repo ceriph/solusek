@@ -27,6 +27,7 @@ import {RogueComponent} from "./character/classes/rogue/rogue.component";
 import {EnchanterComponent} from "./character/classes/enchanter/enchanter.component";
 import {NecromancerComponent} from "./character/classes/necromancer/necromancer.component";
 import {WizardComponent} from "./character/classes/wizard/wizard.component";
+import {DmComponent} from "./dm/dm.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -56,7 +57,8 @@ const routes: Routes = [
   { path: 'classes/rogue', component: RogueComponent },
   { path: 'classes/wizard', component: WizardComponent },
   { path: 'classes/enchanter', component: EnchanterComponent },
-  { path: 'classes/necromancer', component: NecromancerComponent }
+  { path: 'classes/necromancer', component: NecromancerComponent },
+  { path: 'dm', component: DmComponent }
 ];
 
 @NgModule({
