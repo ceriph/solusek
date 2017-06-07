@@ -146,7 +146,7 @@
         <b>d20</b> - checks/saving throws
       </li>
       <li>
-        <b>D100</b> - percentile checks for certain conditions such as madness
+        <b>d100</b> - percentile checks for certain conditions such as madness
       </li>
     </ul>
 
@@ -772,7 +772,9 @@
 
     <h3 id="Diseased">Diseased</h3>
     <p>
-      Diseases come in many forms, all of which have negative effects, weakening the character in some way.
+      Diseases come in many forms, all of which have negative effects, weakening the character in some way. While diseased,
+      the character must make a CON saving throw at the start of each turn against the DC described, if they succeed
+      they are no longer diseased, if they fail the disease continues and they must take the effects described.
     </p>
 
     <h3 id="Exhausted">Exhausted</h3>
@@ -820,7 +822,9 @@
     <h3 id="Poisoned">Poisoned</h3>
     <p>
       Poisoned characters take damage at the end of each turn for the duration. The damage taken depends on the type
-      of the poison and will be detailed.
+      of the poison and will be detailed. While poisoned,
+      the character must make a CON saving throw at the start of each turn against the DC described, if they succeed
+      they are no longer poisoned, if they fail the poison continues and they must take the damage described.
     </p>
 
     <h3 id="Wounded">Wounded</h3>
@@ -881,7 +885,128 @@
       Weapons are used to perform attack actions and must be equipped. Each weapon has a <b>proficiency</b> requirement
       which must be met in order to wield it.
     </p>
-
+    <table>
+      <tr class="header">
+        <td>Name</td>
+        <td>Base Damage</td>
+        <td>Hands Required</td>
+        <td>Range</td>
+        <td>Damage Type</td>
+        <td>Proficiency Req.</td>
+      </tr>
+      <tr>
+        <td>Dagger</td>
+        <td>1d4+STR</td>
+        <td>1</td>
+        <td>Melee</td>
+        <td>Physical, Piercing</td>
+        <td>Simple Weapons</td>
+      </tr>
+      <tr>
+        <td>Wooden Staff</td>
+        <td>1d8+STR</td>
+        <td>2</td>
+        <td>Melee</td>
+        <td>Physical, Blunt</td>
+        <td>Simple Weapons</td>
+      </tr>
+      <tr>
+        <td>Rapier</td>
+        <td>1d6+STR</td>
+        <td>1</td>
+        <td>Melee</td>
+        <td>Physical, Piercing</td>
+        <td>Small Weapons</td>
+      </tr>
+      <tr>
+        <td>Short Sword</td>
+        <td>1d6+STR</td>
+        <td>1</td>
+        <td>Melee</td>
+        <td>Physical, Slashing</td>
+        <td>Small Weapons</td>
+      </tr>
+      <tr>
+        <td>Long Sword</td>
+        <td>1d8+STR</td>
+        <td>1</td>
+        <td>Melee</td>
+        <td>Physical, Slashing</td>
+        <td>Medium Weapons</td>
+      </tr>
+      <tr>
+        <td>Mace</td>
+        <td>1d8+STR</td>
+        <td>1</td>
+        <td>Melee</td>
+        <td>Physical, Blunt</td>
+        <td>Medium Weapons</td>
+      </tr>
+      <tr>
+        <td>Spear</td>
+        <td>1d6+STR</td>
+        <td>1</td>
+        <td>1m</td>
+        <td>Physical, Piercing</td>
+        <td>Medium Weapons</td>
+      </tr>
+      <tr>
+        <td>Bastard Sword</td>
+        <td>1d10+STR</td>
+        <td>2</td>
+        <td>Melee</td>
+        <td>Physical, Slashing</td>
+        <td>Large Weapons</td>
+      </tr>
+      <tr>
+        <td>Great Axe</td>
+        <td>1d12+STR</td>
+        <td>2</td>
+        <td>Melee</td>
+        <td>Physical, Slashing</td>
+        <td>Large Weapons</td>
+      </tr>
+      <tr>
+        <td>Great Mace</td>
+        <td>1d12+STR</td>
+        <td>2</td>
+        <td>Melee</td>
+        <td>Physical, Blunt</td>
+        <td>Large Weapons</td>
+      </tr>
+      <tr>
+        <td>Short bow</td>
+        <td>1d6+((STR+AGI)/2)</td>
+        <td>2</td>
+        <td>2m-10m</td>
+        <td>Physical, Piercing</td>
+        <td>Ranged Weapons</td>
+      </tr>
+      <tr>
+        <td>Long bow</td>
+        <td>1d10+((STR+AGI)/2)</td>
+        <td>2</td>
+        <td>5m-15m</td>
+        <td>Physical, Piercing</td>
+        <td>Ranged Weapons</td>
+      </tr>
+      <tr>
+        <td>Wand</td>
+        <td>1d4+(INT)</td>
+        <td>1</td>
+        <td>1m-5m</td>
+        <td>Magic, As Specified</td>
+        <td>Magic Weapons</td>
+      </tr>
+      <tr>
+        <td>Magic Staff</td>
+        <td>1d8+(INT)</td>
+        <td>2</td>
+        <td>2m-10m</td>
+        <td>Magic, As Specified</td>
+        <td>Magic Weapons</td>
+      </tr>
+    </table>
 
     <h3 id="Armour">Armour</h3>
     <p>
@@ -889,18 +1014,47 @@
     </p>
     <table>
       <tr class="header">
-        <td><b>Difficulty</b></td>
-        <td><b>DC</b></td>
+        <td>Name</td>
+        <td>Base Armour</td>
+        <td>Dodge Modifier</td>
+        <td>Movement Modifier</td>
+        <td>Proficiency Req.</td>
+      </tr>
+      <tr>
+        <td>Cloth</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Leather</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>Light Armour</td>
+      </tr>
+      <tr>
+        <td>Chain</td>
+        <td>4</td>
+        <td>-1</td>
+        <td>0</td>
+        <td>Medium Armour</td>
+      </tr>
+      <tr>
+        <td>Plate</td>
+        <td>5</td>
+        <td>-2</td>
+        <td>-1</td>
+        <td>Heavy Armour</td>
       </tr>
 
     </table>
 
-
-
     <h3 id="Other">Other</h3>
     <p>
-      Other items can be acquired, such as magical gloves, amulets, rings etc. These will become available as you progress
-      and the benefits will be detailed on a case by case basis.
+      Other items can be acquired, such as bandagesm, lockpicks, magical clothing, amulets, rings etc. These will become
+      available as you progress and the benefits will be detailed on a case by case basis.
     </p>
   </div>
 </div>
