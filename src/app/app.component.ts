@@ -3,7 +3,7 @@ import {Observable} from "rxjs";
 import {AngularFireAuth} from "angularfire2/auth/auth";
 import {LoginService} from "./login/login.service";
 import * as firebase from "firebase/app";
-import {Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,6 @@ import {Router} from "@angular/router";
 })
 export class AppComponent implements OnInit {
   user: Observable<firebase.User>;
-  routeName: string;
 
   constructor(public afAuth: AngularFireAuth,
               private loginService: LoginService,
@@ -21,7 +20,15 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.routeName = this.router.url;
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      console.log(this.router.url);
+      if(this.router.url.indexOf("#") == -1) {
+        window.scrollTo(0, 0)
+      }
+    });
   }
 
   logout() {
