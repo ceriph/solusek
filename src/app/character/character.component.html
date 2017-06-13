@@ -1,15 +1,21 @@
-<div class="box">
-  <div *ngIf="player">
-    <h1>Welcome, {{player.name}}</h1>
-    <div *ngIf="player.character.name">
-      <p>Character detail here</p>
-    </div>
-    <div *ngIf="!player.character.name">
-      <p>It appears you do not currently have a character, however the creator is not yet fully working.</p>
-      <p>
-        Feel free to read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
-        Creation Rules</a> in the meantime, so you're ready to go once it is complete.
-      </p>
-    </div>
+<div class="box fill">
+  <h1>Welcome, {{player.name}}</h1>
+  <div *ngIf="!player.character.race">
+    <p>It appears you do not currently have a character, however the creator is not yet fully working.</p>
+    <p>
+      Feel free to read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
+      Creation Rules</a> in the meantime, so you're ready to go once it is complete.
+    </p>
   </div>
+
+</div>
+
+<div class="box fill">
+  <div class="tabs">
+    <a class="tab" routerLink="races" routerLinkActive="active">Race</a>
+    <a class="tab" routerLink="classes" routerLinkActive="active">Class</a>
+    <a class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
+    <a class="tab" routerLink="info" routerLinkActive="active">Info</a>
+  </div>
+  <router-outlet></router-outlet>
 </div>

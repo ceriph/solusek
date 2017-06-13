@@ -28,37 +28,48 @@ import {EnchanterComponent} from "./character/classes/enchanter/enchanter.compon
 import {NecromancerComponent} from "./character/classes/necromancer/necromancer.component";
 import {WizardComponent} from "./character/classes/wizard/wizard.component";
 import {DmComponent} from "./dm/dm.component";
+import {RacesComponent} from "./character/races/races.component";
+import {ClassesComponent} from "./character/classes/classes.component";
+import {StatsComponent} from "./character/stats/stats.component";
+import {InfoComponent} from "./character/info/info.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'character', component: CharacterComponent },
-  { path: 'players', component: PlayersComponent },
-  { path: 'players/:name', component: PlayerDetailComponent },
-  { path: 'rules', component: RulesComponent },
-  { path: 'lore', component: LoreComponent },
-  { path: 'races/human', component: HumanComponent },
-  { path: 'races/highelf', component: HighelfComponent },
-  { path: 'races/woodelf', component: WoodelfComponent },
-  { path: 'races/darkelf', component: DarkelfComponent },
-  { path: 'races/dwarf', component: DwarfComponent },
-  { path: 'races/halfling', component: HalflingComponent },
-  { path: 'races/ogre', component: OgreComponent },
-  { path: 'races/troll', component: TrollComponent },
-  { path: 'races/iksar', component: IksarComponent },
-  { path: 'classes/warrior', component: WarriorComponent },
-  { path: 'classes/paladin', component: PaladinComponent },
-  { path: 'classes/reaver', component: ReaverComponent },
-  { path: 'classes/cleric', component: ClericComponent },
-  { path: 'classes/shaman', component: ShamanComponent },
-  { path: 'classes/monk', component: MonkComponent },
-  { path: 'classes/bard', component: BardComponent },
-  { path: 'classes/ranger', component: RangerComponent },
-  { path: 'classes/rogue', component: RogueComponent },
-  { path: 'classes/wizard', component: WizardComponent },
-  { path: 'classes/enchanter', component: EnchanterComponent },
-  { path: 'classes/necromancer', component: NecromancerComponent },
-  { path: 'dm', component: DmComponent }
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
+  {
+    path: 'character', component: CharacterComponent, children: [
+    {path: 'races', component: RacesComponent},
+    {path: 'classes', component: ClassesComponent},
+    {path: 'stats', component: StatsComponent},
+    {path: 'info', component: InfoComponent}
+  ]
+  },
+  {path: 'players', component: PlayersComponent},
+  {path: 'players/:name', component: PlayerDetailComponent},
+  {path: 'rules', component: RulesComponent},
+  {path: 'lore', component: LoreComponent},
+  {path: 'races/human', component: HumanComponent},
+  {path: 'races/highelf', component: HighelfComponent},
+  {path: 'races/woodelf', component: WoodelfComponent},
+  {path: 'races/darkelf', component: DarkelfComponent},
+  {path: 'races/dwarf', component: DwarfComponent},
+  {path: 'races/halfling', component: HalflingComponent},
+  {path: 'races/ogre', component: OgreComponent},
+  {path: 'races/troll', component: TrollComponent},
+  {path: 'races/iksar', component: IksarComponent},
+  {path: 'classes/warrior', component: WarriorComponent},
+  {path: 'classes/paladin', component: PaladinComponent},
+  {path: 'classes/reaver', component: ReaverComponent},
+  {path: 'classes/cleric', component: ClericComponent},
+  {path: 'classes/shaman', component: ShamanComponent},
+  {path: 'classes/monk', component: MonkComponent},
+  {path: 'classes/bard', component: BardComponent},
+  {path: 'classes/ranger', component: RangerComponent},
+  {path: 'classes/rogue', component: RogueComponent},
+  {path: 'classes/wizard', component: WizardComponent},
+  {path: 'classes/enchanter', component: EnchanterComponent},
+  {path: 'classes/necromancer', component: NecromancerComponent},
+  {path: 'dm', component: DmComponent}
 ];
 
 @NgModule({
@@ -69,4 +80,5 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

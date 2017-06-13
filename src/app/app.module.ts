@@ -41,6 +41,8 @@ import {OgreComponent} from "./character/races/ogre/ogre.component";
 import {TrollComponent} from "./character/races/troll/troll.component";
 import {IksarComponent} from "./character/races/iksar/iksar.component";
 import {DmComponent} from "./dm/dm.component";
+import { StatsComponent } from './character/stats/stats.component';
+import { InfoComponent } from './character/info/info.component';
 
 @NgModule({
   imports: [
@@ -81,7 +83,9 @@ import {DmComponent} from "./dm/dm.component";
     OgreComponent,
     TrollComponent,
     IksarComponent,
-    DmComponent
+    DmComponent,
+    StatsComponent,
+    InfoComponent
   ],
   providers: [
     PlayerService,
