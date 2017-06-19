@@ -25,17 +25,17 @@ export class CharacterComponent implements OnInit {
 
   ngOnInit() {
     this.user.subscribe(user => {
-      if(user && user.uid) {
+      if (user && user.uid) {
         this.playerService.getPlayer(user.uid).subscribe(player => {
           this.player = player
-          if(!this.player.character.race) {
-            this.router.navigate(['/character/race'])
-          } else if(!this.player.character.class) {
-            this.router.navigate(['/character/class'])
-          } else if(!this.player.character.stats) {
-            this.router.navigate(['/character/stats'])
-          } else if(!this.player.character.info) {
-            this.router.navigate(['/character/info'])
+          if (!this.player.character.race) {
+            this.router.navigate(['/character/races']);
+          } else if (!this.player.character.class) {
+            this.router.navigate(['/character/classes']);
+          } else if (!this.player.character.stats) {
+            this.router.navigate(['/character/stats']);
+          } else if (!this.player.character.info) {
+            this.router.navigate(['/character/info']);
           }
         })
       }
