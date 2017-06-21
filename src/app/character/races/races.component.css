@@ -33,3 +33,9 @@
   width: 120px;
   height: 120px;
 }
+
+.detail {
+  float: left;
+  width: 100%;
+  max-width: 500px;
+}

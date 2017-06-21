@@ -79,7 +79,7 @@ export class StatsComponent implements OnInit {
       if (!player.character.info) {
         this.router.navigate(['/character/info']);
       } else {
-        alert("Stats Updated")
+        alert("Stats Updated");
       }
     });
   }

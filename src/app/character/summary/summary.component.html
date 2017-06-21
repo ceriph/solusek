@@ -1,3 +1,36 @@
-<p>
-  summary works!
-</p>
+<div class="box fill" *ngIf="player">
+  <h1>Summary</h1>
+  <p><b>Name:</b> {{player.character.info.name}}</p>
+  <p><b>Level:</b> {{player.character.level}}</p>
+  <p><b>Age:</b> {{player.character.info.age}}</p>
+  <p *ngIf="race"><b>Race:</b> {{race.label}}</p>
+  <p *ngIf="clazz"><b>Class:</b> {{clazz.label}}</p>
+  <div *ngIf="stats">
+    <h2>Primary Stats</h2>
+    <table>
+      <tr><td>Strength</td><td>{{stats.str}}</td></tr>
+      <tr><td>Constitution</td><td>{{stats.con}}</td></tr>
+      <tr><td>Agility</td><td>{{stats.agi}}</td></tr>
+      <tr><td>Intelligence</td><td>{{stats.int}}</td></tr>
+      <tr><td>Spirit</td><td>{{stats.spi}}</td></tr>
+      <tr><td>Charisma</td><td>{{stats.cha}}</td></tr>
+    </table>
+  </div>
+  <div *ngIf="secondaryStats">
+    <h2>Secondary Stats</h2>
+    <table>
+      <tr><td>Health</td><td>{{secondaryStats.health}}</td></tr>
+      <tr><td>Movement</td><td>{{secondaryStats.movement}}</td></tr>
+      <tr><td>Dodge</td><td>{{secondaryStats.dodge}}</td></tr>
+      <tr><td>Armour</td><td>{{secondaryStats.armour}}</td></tr>
+    </table>
+  </div>
+  <h2>Skills</h2>
+  <p>todo</p>
+  <h2>Bio</h2>
+  <p><b>Appearance:</b> {{player.character.info.appearance}}</p>
+  <p><b>Personality:</b> {{player.character.info.personality}}</p>
+  <p><b>Background:</b> {{player.character.info.background}}</p>
+  <p><b>Motivation:</b> {{player.character.info.motivation}}</p>
+
+</div>

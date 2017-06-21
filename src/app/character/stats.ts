@@ -8,5 +8,8 @@ export class Stats {
 }
 
 export class SecondaryStats {
-  // todo
+  health: number = 0;
+  dodge: number = 0;
+  armour: number = 0;
+  movement: number = 0;
 }
