@@ -1,0 +1,39 @@
+.class-icon {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid #CCC;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.class-icon p {
+  position: absolute;
+  bottom: -10px;
+  right: 5px;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  width: auto;
+}
+
+.class-icon.selected {
+  border: 1px solid #CC3;
+}
+
+.class-icon img {
+  margin: 0;
+  padding: 5px;
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+}
+
+.footer button {
+  margin-left: 2.5%;
+}

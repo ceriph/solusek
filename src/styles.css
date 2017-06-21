@@ -58,6 +58,7 @@ body {
 .box img {
   float: left;
   margin-right: 20px;
+  max-width: 90%;
 }
 
 .box .info {
@@ -87,7 +88,7 @@ td {
 
 .left {
   float: left;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .wide {
@@ -98,6 +99,11 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   word-wrap: break-word;
+}
+
+form {
+  width: 95%;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -147,12 +153,16 @@ button:hover {
   background-color: #02CBEA;
 }
 
-img {
-  max-width: 90%;
+button:disabled {
+  background-color: #CCC;
 }
 
 .code {
   font-family: "Courier New", serif;
   background-color: #F1F1F1;
   padding-left: 10px;
+}
+
+.footer {
+  padding-top: 30px;
 }

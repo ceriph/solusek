@@ -1,7 +1,7 @@
-import {Ability} from "../ability";
+import {Skill} from "../skill";
 export class Class {
   name: string;
   label: string;
   desc: string;
-  modifiers: Ability[];
+  skills: Skill[];
 }

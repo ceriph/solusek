@@ -1,3 +1,71 @@
-<p>
-  stats works!
-</p>
+<div class="box fill">
+  <h1>Distribute Stats</h1>
+  <p>
+    You start with 5 primary stat points to spend as you wish (humans get an extra 5). Your selected class should
+    guide which stats will be most useful, however all characters will get some use from constitution (for health)
+    and agility (for dodge and movement).
+  </p>
+  <p>
+    All stats start at a minimum of 1 and can be increased to a maximum of 4 at creation (not including racial modifiers).
+  </p>
+
+  <p class="center"><b>AVAILABLE POINTS:</b> {{availablePoints}}</p>
+
+  <div *ngIf="this.stats">
+    <table>
+      <tr class="header">
+        <td>Stat</td>
+        <td>Value</td>
+      </tr>
+      <tr>
+        <td>Strength:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.str)}}" [(ngModel)]="stats.str" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.str"><div class="left" *ngIf="modifiers.str > 0">+</div>{{modifiers.str}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Constitution:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.con)}}" [(ngModel)]="stats.con" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.con"><div class="left" *ngIf="modifiers.con > 0">+</div>{{modifiers.con}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Agility:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.agi)}}" [(ngModel)]="stats.agi" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.agi"><div class="left" *ngIf="modifiers.agi > 0">+</div>{{modifiers.agi}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Intelligence:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.int)}}" [(ngModel)]="stats.int" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.int"><div class="left" *ngIf="modifiers.int > 0">+</div>{{modifiers.int}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Spirit:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.spi)}}" [(ngModel)]="stats.spi" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.spi"><div class="left" *ngIf="modifiers.spi > 0">+</div>{{modifiers.spi}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Charisma:</td>
+        <td>
+          <input class="left" type="number" min="1" max="{{getMax(stats.cha)}}" [(ngModel)]="stats.cha" (ngModelChange)="setAvailablePoints()">
+          <div class="left left-padding" *ngIf="modifiers && modifiers.cha"><div class="left" *ngIf="modifiers.cha > 0">+</div>{{modifiers.cha}}</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    <p *ngIf="availablePoints < 0"><i>Too many stats allocated, stop trying to cheat!</i></p>
+    <button [disabled]="availablePoints != 0" (click)="save()">SAVE</button>
+  </div>
+</div>
+
+

@@ -32,6 +32,7 @@ import {RacesComponent} from "./character/races/races.component";
 import {ClassesComponent} from "./character/classes/classes.component";
 import {StatsComponent} from "./character/stats/stats.component";
 import {InfoComponent} from "./character/info/info.component";
+import {SummaryComponent} from "./character/summary/summary.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -41,7 +42,8 @@ const routes: Routes = [
     {path: 'races', component: RacesComponent},
     {path: 'classes', component: ClassesComponent},
     {path: 'stats', component: StatsComponent},
-    {path: 'info', component: InfoComponent}
+    {path: 'info', component: InfoComponent},
+    {path: 'summary', component: SummaryComponent}
   ]
   },
   {path: 'players', component: PlayersComponent},

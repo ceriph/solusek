@@ -1,14 +1,33 @@
-<h1>{{title}}</h1>
-<div class="box">
-  <div class="race-icon" *ngFor="let race of races | async" [class.selected]="race === selectedRace"
-       (click)="select(race)">
-    <img src="/assets/races/icon-{{race.name.toLowerCase()}}.png">
+<div class="box fill" *ngIf="selectedRace">
+  <img src="/assets/races/avatar-{{selectedRace.name}}.png">
+  <h1>{{selectedRace.label}}</h1>
+  <p>{{selectedRace.desc}}</p>
+  <h3>Stat Modifiers</h3>
+  <p *ngIf="!selectedRace.modifiers">None</p>
+  <div *ngFor="let modifier of selectedRace.modifiers | keys">
+    <p>{{modifier.value.label}}: {{modifier.value.modifier}}</p>
+  </div>
+  <div *ngFor="let skill of selectedRace.skills | keys">
+    <h3>{{skill.value.label}}</h3>
+    <p>{{skill.value.desc}}</p>
+  </div>
+  <div class="footer" *ngIf="(player | async).character.race && (player | async).character.race !== selectedRace.name">
+    <button (click)="save()">UPDATE</button>
+    <p><i>Changing your race will reset any previously made class/stat choices</i></p>
+  </div>
+  <div class="footer" *ngIf="!(player | async).character.race">
+    <button (click)="save()">SAVE</button>
+  </div>
+</div>
+
+<div class="box fill">
+  <h1>Select Race</h1>
+  <p>Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each
+    race also has an additional unique passive ability.</p>
+  <p>Some races will be slightly better suited to certain classes initially, however <b>don't let this deter you from being creative</b></p>
+  <div class="race-icon" *ngFor="let race of races | async" [class.selected]="selectedRace != null && race.name === selectedRace.name" (click)="select(race)">
+    <img src="/assets/races/icon-{{race.name}}.png">
     <p>{{race.label}}</p>
   </div>
 </div>
-<div class="box race-detail" *ngIf="selectedRace">
-  <h2>{{selectedRace.label}}</h2>
-  <img src="/assets/races/avatar-{{selectedRace.name.toLowerCase()}}.png">
-  <p>{{selectedRace.desc}}</p>
-</div>
-<button (click)="save()">Save</button>
+

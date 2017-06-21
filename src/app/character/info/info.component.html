@@ -1,3 +1,14 @@
-<p>
-  info works!
-</p>
+<div class="box fill" *ngIf="info">
+  <h1>Character Info</h1>
+  <form>
+    <label for="name">Name:</label> <input type="text" id="name" name="name" [(ngModel)]="info.name"><br/><br/>
+    <label for="age">Age:</label> <input type="number" id="age" name="age" [(ngModel)]="info.age"><br/><br/>
+    <label for="appearance">Appearance:</label> <textarea type="text" id="appearance" name="appearance" [(ngModel)]="info.appearance" placeholder="Height, skin/hair colour etc."></textarea><br/><br/>
+    <label for="personality">Personality:</label> <textarea type="text" id="personality" name="personality" [(ngModel)]="info.personality" placeholder="Are you kind, generous, serious, mean etc."></textarea><br/><br/>
+    <label for="background">Background:</label> <textarea type="text" id="background" name="background" [(ngModel)]="info.background" placeholder="Where dod you come from, what was your childhood like etc."></textarea><br/><br/>
+    <label for="motivation">Motivation:</label> <textarea type="text" id="motivation" name="motivation" [(ngModel)]="info.motivation" placeholder="Money, fame, bitches"></textarea><br/><br/>
+  </form>
+  <div class="footer" *ngIf="info.name">
+    <button (click)="save()">SAVE</button>
+  </div>
+</div>

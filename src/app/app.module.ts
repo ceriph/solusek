@@ -43,6 +43,10 @@ import {IksarComponent} from "./character/races/iksar/iksar.component";
 import {DmComponent} from "./dm/dm.component";
 import { StatsComponent } from './character/stats/stats.component';
 import { InfoComponent } from './character/info/info.component';
+import {KeysPipe} from "./keys-pipe";
+import {ClassService} from "./character/classes/classes.service";
+import {StatService} from "./character/stats/stat.service";
+import { SummaryComponent } from './character/summary/summary.component';
 
 @NgModule({
   imports: [
@@ -85,11 +89,15 @@ import { InfoComponent } from './character/info/info.component';
     IksarComponent,
     DmComponent,
     StatsComponent,
-    InfoComponent
+    InfoComponent,
+    KeysPipe,
+    SummaryComponent
   ],
   providers: [
     PlayerService,
     RaceService,
+    ClassService,
+    StatService,
     AngularFireAuth,
     LoginService
   ],

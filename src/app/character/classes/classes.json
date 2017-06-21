@@ -1,0 +1,39 @@
+{
+  "warrior": {
+    "desc": "The masters of arms, warriors are commonly found at the front of battle clad in heavy armour. They have a wide variety of available weapons, shields and armour. Warriors are one of the few classes to not directly employ magic in any way, and generally do not trust it.",
+    "equipment": "Damaged Chain Armour, Damaged Short Sword, Damaged Wooden Shield",
+    "hit": 12,
+    "label": "Warrior",
+    "name": "warrior",
+    "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Ranged Weapons, Small Shields, Medium Shields, Large Shields",
+    "recommendations": "Constitution, Strength, Agility",
+    "skills": [
+      {
+        "name": "berserk",
+        "label": "Berserk",
+        "desc": "Passive - The character enters a state of rage when wounded, dealing +1d6 damage on all attacks (increases to +2d6 at level 7, +3d6 at level 13, and +4d6 at level 19)"
+      },
+      {
+        "name": "tauntingstrike",
+        "label": "Taunting Strike",
+        "desc": "Action - attack vs dodge, if it hits deal weapon damage and the target must attack you on their next turn"
+      }
+    ]
+  },
+  "wizard": {
+    "desc": "Harnessing the arcane and the elements of fire and ice, wizards unleash fury upon their foes. Their main role in combat is damage dealing.",
+    "equipment": "Damaged Cloth Robe, Damaged Magic Staff (Arcane)",
+    "hit": 6,
+    "label": "Wizard",
+    "name": "wizard",
+    "proficiencies": "Simple Weapons, Magic Weapons",
+    "recommendations": "Intelligence, Agility, Constitution",
+    "skills": [
+      {
+        "name": "arcanemissiles",
+        "label": "Arcane Missiles",
+        "desc": "Action - attack INT vs INT on an enemy target within 10m, if it hits it does +1d4 + weapon <b>arcane</b> damage. Requires a magic weapon."
+      }
+    ]
+  }
+}

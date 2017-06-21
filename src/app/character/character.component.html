@@ -1,21 +1,25 @@
-<div class="box fill">
-  <h1>Welcome, {{player.name}}</h1>
-  <div *ngIf="!player.character.race">
-    <p>It appears you do not currently have a character, however the creator is not yet fully working.</p>
-    <p>
-      Feel free to read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
-      Creation Rules</a> in the meantime, so you're ready to go once it is complete.
-    </p>
+<div *ngIf="player">
+  <div class="box fill">
+    <h1>Welcome, {{player.name}}</h1>
+    <div *ngIf="!player.character.info">
+      <p>Your character is incomplete, please follow the steps below to create your character</p>
+      <p>
+        Additionally you can also read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
+        Creation Rules</a> if anything doesn't make sense.
+      </p>
+    </div>
+    <div *ngIf="player.character.info">
+      <p>Your character is complete, however you may still make changes if you wish.</p>
+    </div>
   </div>
-
-</div>
-
-<div class="box fill">
-  <div class="tabs">
-    <a class="tab" routerLink="races" routerLinkActive="active">Race</a>
-    <a class="tab" routerLink="classes" routerLinkActive="active">Class</a>
-    <a class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
-    <a class="tab" routerLink="info" routerLinkActive="active">Info</a>
+  <div class="box fill">
+    <div class="tabs">
+      <a class="tab" routerLink="races" routerLinkActive="active">Race</a>
+      <a [hidden]="!player.character.race" class="tab" routerLink="classes" routerLinkActive="active">Class</a>
+      <a [hidden]="!player.character.class" class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
+      <a [hidden]="!player.character.stats" class="tab" routerLink="info" routerLinkActive="active">Info</a>
+      <a [hidden]="!player.character.info" class="tab" routerLink="summary" routerLinkActive="active">Summary</a>
+    </div>
   </div>
-  <router-outlet></router-outlet>
 </div>
+<router-outlet></router-outlet>

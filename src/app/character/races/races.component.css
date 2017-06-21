@@ -1,25 +1,35 @@
 .race-icon {
   float: left;
   margin-right: 10px;
+  margin-bottom: 10px;
 
   border: 1px solid #CCC;
   position: relative;
+
+  cursor: pointer;
 }
 
 .race-icon p {
   position: absolute;
-  right: 10px;
-  bottom: 0;
+  bottom: -10px;
+  right: 5px;
 
   color: white;
   font-size: 24px;
   font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  width: auto;
 }
 
 .race-icon.selected {
   border: 1px solid #CC3;
 }
 
-.race-detail {
-  clear: both;
+.race-icon img {
+  margin: 0;
+  padding: 5px;
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
 }

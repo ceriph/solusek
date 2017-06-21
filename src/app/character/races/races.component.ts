@@ -16,12 +16,10 @@ import * as firebase from "firebase/app";
   styleUrls: ['./races.component.css']
 })
 export class RacesComponent implements OnInit {
-  title = 'Races';
-
   player: FirebaseObjectObservable<Player>;
   user: Observable<firebase.User>;
 
-  races: FirebaseListObservable<any[]>;
+  races: FirebaseListObservable<Race[]>;
   selectedRace: Race;
 
   constructor(private afAuth: AngularFireAuth,
@@ -33,10 +31,16 @@ export class RacesComponent implements OnInit {
 
   ngOnInit() {
     this.races = this.raceService.list();
-
     this.user.subscribe(user => {
       if (user && user.uid) {
         this.player = this.playerService.getPlayer(user.uid);
+        this.player.subscribe(player => {
+          if (player.character && player.character.race) {
+            this.raceService.get(player.character.race).subscribe(race => {
+              this.selectedRace = race;
+            });
+          }
+        })
       }
     });
   }
@@ -47,10 +51,15 @@ export class RacesComponent implements OnInit {
 
   save(): void {
     this.player.subscribe(player => {
-      player.character.race = this.selectedRace;
+      player.character.race = this.selectedRace.name;
+      if(player.character.class) {
+        player.character.class = null;
+      }
       this.player.update({character: player.character});
       if (!player.character.class) {
-        this.router.navigate(['/character/class']);
+        this.router.navigate(['/character/classes']);
+      } else {
+        alert("Character Updated"); // todo urgggghhh
       }
     });
   }

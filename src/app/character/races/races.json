@@ -1,0 +1,262 @@
+{
+  "darkelf": {
+    "name": "darkelf",
+    "label": "Dark Elf",
+    "desc": "Often considered to be selfish and malicious, Dark elves are not well liked by the other elves. They have dark blue/black skin and stand on average between 4'5\" and 5'9\" tall.",
+    "modifiers": [
+      {
+        "name": "agi",
+        "label": "Agility",
+        "modifier": 2
+      },
+      {
+        "name": "int",
+        "label": "Intelligence",
+        "modifier": 2
+      }
+    ],
+    "skills": [
+      {
+        "name": "merciless",
+        "label": "Merciless",
+        "desc": "Passive - +1 on all attack rolls against wounded targets (increases to +2 at level 5, +3 at level 10, +4 at level 11 and +5 at level 20)"
+      }
+    ]
+  },
+  "dwarf": {
+    "name": "dwarf",
+    "label": "Dwarf",
+    "desc": "Dwarves are known for their love of treasure, beer and facial hair. They are only slightly taller than halflings on average but are generally much stockier.",
+    "modifiers": [
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 2
+      },
+      {
+        "name": "spi",
+        "label": "Spirit",
+        "modifier": 1
+      },
+      {
+        "name": "str",
+        "label": "Strength",
+        "modifier": 1
+      }
+    ],
+    "skills": [
+      {
+        "name": "limitless",
+        "label": "Limitless",
+        "desc": "Passive - +5 to health per level"
+      }
+    ]
+  },
+  "halfling": {
+    "name": "halfling",
+    "label": "Halfling",
+    "desc": "Though small in stature halflings tend to have big personalities and are generally friendly and optimistic. They stand on average between 3' and 4'5\" tall.",
+    "modifiers": [
+      {
+        "name": "agi",
+        "label": "Agility",
+        "modifier": 2
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 1
+      },
+      {
+        "name": "cha",
+        "label": "Charisma",
+        "modifier": 1
+      }
+    ],
+    "skills": [
+      {
+        "name": "tiny",
+        "label": "Tiny",
+        "desc": "Passive - +1 to all dodge rolls (increases to +2 at level 5, +3 at level 10, +4 at level 15, +5 at level 20)"
+      }
+    ]
+  },
+  "highelf": {
+    "name": "highelf",
+    "label": "High Elf",
+    "desc": "The proudest and most beautiful of all the elven races, high elves are a usually good-natured and caring, though do quite often see themselves as a superior race.",
+    "modifiers": [
+      {
+        "name": "int",
+        "label": "Intelligence",
+        "modifier": 2
+      },
+      {
+        "name": "spi",
+        "label": "Spirit",
+        "modifier": 2
+      },
+      {
+        "name": "cha",
+        "label": "Charisma",
+        "modifier": 1
+      },
+      {
+        "name": "str",
+        "label": "Strength",
+        "modifier": -1
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": -1
+      }
+    ],
+    "skills": [
+      {
+        "name": "meditate",
+        "label": "Meditate",
+        "desc": "Passive - When taking a short rest, the high elf may refresh one 'once per day' ability. They then become exhausted."
+      }
+    ]
+  },
+  "human": {
+    "name": "human",
+    "label": "Human",
+    "desc": "The most abundant race in the world of Solusek, humans are incredibly varied and flexible. They stand on average between 5' and 6'6\" tall.",
+    "modifiers": [],
+    "skills": [
+      {
+        "name": "flexible",
+        "label": "Flexible",
+        "desc": "Passive - humans receive 5 additional stat points to distribute at the start"
+      }
+    ]
+  },
+  "iksar": {
+    "name": "iksar",
+    "label": "Iksar",
+    "desc": "Said to be descended from the mating between ancient dragons and humans, Iksar are easily recognisable by their scaled, lizard-like skin. Iksar tend to be of similar stature to humans.",
+    "modifiers": [
+      {
+        "name": "str",
+        "label": "Strength",
+        "modifier": 2
+      },
+      {
+        "name": "agi",
+        "label": "Agility",
+        "modifier": 2
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 1
+      },
+      {
+        "name": "int",
+        "label": "Intelligence",
+        "modifier": -1
+      },
+      {
+        "name": "cha",
+        "label": "Charisma",
+        "modifier": -1
+      }
+    ],
+    "skills": [
+      {
+        "name": "scaled",
+        "label": "Scaled",
+        "desc": "Passive - +1 to armour (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
+      }
+    ]
+  },
+  "ogre": {
+    "name": "ogre",
+    "label": "Ogre",
+    "desc": "The largest (and heaviest) of the races, ogres typically posses great strength and not-so-great intellect. They stand between 8'0 and 9'5 tall.",
+    "modifiers": [
+      {
+        "name": "str",
+        "label": "Strength",
+        "modifier": 3
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 1
+      },
+      {
+        "name": "int",
+        "label": "Intelligence",
+        "modifier": -1
+      }
+    ],
+    "skills": [
+      {
+        "name": "bigboned",
+        "label": "Big-boned",
+        "desc": "Passive - +5 to any saving throws vs stun or knockdown"
+      }
+    ]
+  },
+  "troll": {
+    "name": "troll",
+    "label": "Troll",
+    "desc": "The green and slender cousin to the ogres, trolls are feared for their ability to regenerate quickly in combat. They stand between 7'5 and 9' tall.",
+    "modifiers": [
+      {
+        "name": "str",
+        "label": "Strength",
+        "modifier": 2
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 2
+      },
+      {
+        "name": "int",
+        "label": "Intelligence",
+        "modifier": -1
+      }
+    ],
+    "skills": [
+      {
+        "name": "regeneration",
+        "label": "Regeneration",
+        "desc": "Passive - Regenerate 1 health at the end of each combat round (increases to 2 at level 3, 3 at level 6, 4 at level 9, 5 at level 12, 6 at level 15, and 7 at level 18)"
+      }
+    ]
+  },
+  "woodelf": {
+    "name": "woodelf",
+    "label": "Wood Elf",
+    "desc": "The most neutral of the three elven races, wood elves like to keep to themselves and are most happy when at one with nature.",
+    "modifiers": [
+      {
+        "name": "agi",
+        "label": "Agility",
+        "modifier": 2
+      },
+      {
+        "name": "con",
+        "label": "Constitution",
+        "modifier": 1
+      },
+      {
+        "name": "spi",
+        "label": "Spirit",
+        "modifier": 1
+      }
+    ],
+    "skills": [
+      {
+        "name": "quickstep",
+        "label": "Quickstep",
+        "desc": "Passive - +2 to movement"
+      }
+    ]
+  }
+}

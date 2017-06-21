@@ -4,7 +4,6 @@ import {PlayerService} from "../players/player.service";
 import {AngularFireAuth} from "angularfire2/auth/auth";
 import {Observable} from "rxjs";
 import * as firebase from "firebase/app";
-import {Character} from "./character";
 import {Router} from "@angular/router";
 
 @Component({
@@ -17,6 +16,8 @@ export class CharacterComponent implements OnInit {
   player: Player;
   user: Observable<firebase.User>;
 
+  complete: boolean;
+
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
               private router: Router) {
@@ -27,8 +28,8 @@ export class CharacterComponent implements OnInit {
     this.user.subscribe(user => {
       if (user && user.uid) {
         this.playerService.getPlayer(user.uid).subscribe(player => {
-          this.player = player
-          if (!this.player.character.race) {
+          this.player = player;
+          if (!this.player.character || !this.player.character.race) {
             this.router.navigate(['/character/races']);
           } else if (!this.player.character.class) {
             this.router.navigate(['/character/classes']);
@@ -36,14 +37,12 @@ export class CharacterComponent implements OnInit {
             this.router.navigate(['/character/stats']);
           } else if (!this.player.character.info) {
             this.router.navigate(['/character/info']);
+          } else {
+            this.complete = true;
+            this.router.navigate(['/character/summary']);
           }
         })
       }
     });
-  }
-
-  createCharacter() {
-    this.player.character = new Character;
-    this.router.navigate(['/races']);
   }
 }

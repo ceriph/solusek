@@ -10,7 +10,7 @@ export class RaceService {
 
   constructor(private db: AngularFireDatabase) {}
 
-  list(): FirebaseListObservable<any[]> {
+  list(): FirebaseListObservable<Race[]> {
     return this.db.list(this.path);
   }
 
