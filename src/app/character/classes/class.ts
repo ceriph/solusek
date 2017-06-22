@@ -1,4 +1,5 @@
 import {Skill} from "../skill";
+import {Equipment} from "../equipment";
 
 export class Class {
   name: string;
@@ -7,4 +8,5 @@ export class Class {
   hit: number;
   proficiencies: string;
   skills: Skill[];
+  equipment: Equipment[];
 }

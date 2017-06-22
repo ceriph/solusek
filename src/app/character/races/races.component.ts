@@ -47,20 +47,18 @@ export class RacesComponent implements OnInit {
 
   select(race: Race): void {
     this.selectedRace = race;
+    window.scrollTo(0, 0);
   }
 
   save(): void {
     this.player.subscribe(player => {
       player.character.race = this.selectedRace.name;
-      if(player.character.class) {
+      if (player.character.class) {
         player.character.class = null;
+        player.character.stats = null;
       }
-      this.player.update({character: player.character});
-      if (!player.character.class) {
-        this.router.navigate(['/character/classes']);
-      } else {
-        alert("Character Updated"); // todo urgggghhh
-      }
+      this.player.set(player);
+      this.router.navigate(['/character/classes']);
     });
   }
 }

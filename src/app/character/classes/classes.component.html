@@ -1,12 +1,17 @@
-<div class="box fill" *ngIf="selectedClass">
+<div id="selection" class="box fill" *ngIf="selectedClass">
   <img src="/assets/classes/{{selectedClass.name}}.png">
   <h1>{{selectedClass.label}}</h1>
   <p>{{selectedClass.desc}}</p>
   <h2>Hit Die</h2>
   <p>{{selectedClass.hit}}</p>
-  <h2>Starting Skills</h2>
+  <h2>Equipment</h2>
+  <div *ngFor="let item of selectedClass.equipment">
+    <p>{{item.label}}</p>
+  </div>
+  <h2>Skills</h2>
   <div *ngFor="let skill of selectedClass.skills | keys">
     <h3>{{skill.value.label}}</h3>
+    <p><b>Level</b>: {{skill.value.level}}</p>
     <p>{{skill.value.desc}}</p>
   </div>
   <div class="footer" *ngIf="(player | async).character.class && (player | async).character.class !== selectedClass.name">
@@ -21,7 +26,7 @@
 <div class="box fill">
   <h1>Select Class</h1>
   <p>Your class defines how you operate in combat, giving you access to a specific set of equipment and abilities. Each
-    class has a Hit Die<, this controls how much health they start with as well as how much they gain each level.</p>
+    class has a Hit Die, this controls how much health they start with as well as how much they gain each level.</p>
   <div class="class-icon" *ngFor="let clazz of classes | async" [class.selected]="selectedClass != null && clazz.name === selectedClass.name"
        (click)="select(clazz)">
     <img src="/assets/classes/{{clazz.name}}.png">

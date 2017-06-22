@@ -10,6 +10,8 @@ import {RaceService} from "../races/race.service";
 import {ClassService} from "../classes/classes.service";
 import {Class} from "../classes/class";
 import {Race} from "../races/race";
+import {Skill} from "../skill";
+import {CharacterService} from "../character.service";
 
 @Component({
   selector: 'app-summary',
@@ -24,11 +26,13 @@ export class SummaryComponent implements OnInit {
   secondaryStats: SecondaryStats;
 
   race: Race;
-  clazz: Class
+  clazz: Class;
+  skills: Skill[];
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
               private raceService: RaceService,
+              private statService: StatService,
               private classService: ClassService) {
     this.user = afAuth.authState;
   }
@@ -40,9 +44,10 @@ export class SummaryComponent implements OnInit {
           this.player = player;
           this.raceService.get(player.character.race).subscribe(race => {
             this.race = race;
-            this.stats = StatService.calculatePrimaryStats(player.character, race);
+            this.stats = this.statService.calculatePrimaryStats(player.character, race);
             this.classService.get(player.character.class).subscribe(clazz => {
-              this.secondaryStats = StatService.calculateSecondaryStats(player.character, race, clazz);
+              this.secondaryStats = this.statService.calculateSecondaryStats(player.character, race, clazz);
+              this.skills = CharacterService.getSkills(player.character, clazz);
               this.clazz = clazz;
             });
           });

@@ -1,0 +1,17 @@
+.tab {
+  border-right: 1px solid #ccc;
+  padding-right: 5px;
+}
+
+.right {
+  border: 0 !important;
+}
+
+.tabs {
+  margin-bottom: 0;
+  margin-left: 2.5%;
+}
+
+.nobottom {
+  margin-bottom: 0;
+}

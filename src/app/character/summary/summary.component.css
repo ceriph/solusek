@@ -3,3 +3,11 @@ table {
   width: 100%;
   max-width: 400px;
 }
+
+td {
+  width: 50%;
+}
+
+.top {
+  border: none;
+}

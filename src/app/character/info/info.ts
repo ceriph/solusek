@@ -5,4 +5,5 @@ export class Info {
   personality: string;
   background: string;
   motivation: string;
+  introduction: string;
 }

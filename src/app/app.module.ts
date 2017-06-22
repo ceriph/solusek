@@ -47,6 +47,8 @@ import {KeysPipe} from "./keys-pipe";
 import {ClassService} from "./character/classes/classes.service";
 import {StatService} from "./character/stats/stat.service";
 import { SummaryComponent } from './character/summary/summary.component';
+import {CharacterService} from "./character/character.service";
+import {EquipmentService} from "./character/equipment.service";
 
 @NgModule({
   imports: [
@@ -98,6 +100,8 @@ import { SummaryComponent } from './character/summary/summary.component';
     RaceService,
     ClassService,
     StatService,
+    CharacterService,
+    EquipmentService,
     AngularFireAuth,
     LoginService
   ],

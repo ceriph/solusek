@@ -1,0 +1,19 @@
+{
+  "armour": {
+    "cloth": {
+      "base": 2
+    },
+    "leather": {
+      "base": 3,
+      "proficiency": "lightarmour"
+    },
+    "chain": {
+      "base": 4,
+      "proficiency": "mediumarmour"
+    },
+    "plate": {
+      "base": 5,
+      "proficiency": "platearmour"
+    }
+  }
+}

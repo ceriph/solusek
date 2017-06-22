@@ -2,6 +2,7 @@ import {Skill} from "./skill";
 import {Modifier} from "./modifier";
 import {Stats} from "./stats";
 import {Info} from "./info/info";
+import {Equipment} from "./equipment";
 
 export class Character {
   level: number;
@@ -12,4 +13,5 @@ export class Character {
   info: Info;
   modifiers: Modifier[];
   skills: Skill[];
+  equipment: Equipment[];
 }

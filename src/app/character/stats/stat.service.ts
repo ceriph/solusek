@@ -3,14 +3,16 @@ import {SecondaryStats, Stats} from "../stats";
 import {Character} from "../character";
 import {Race} from "../races/race";
 import {Class} from "../classes/class";
+import {Modifier} from "../modifier";
+import {EquipmentService} from "../equipment.service";
 
 @Injectable()
 export class StatService {
 
-  constructor() {
+  constructor(private equipmentService: EquipmentService) {
   }
 
-  static calculateAvailable(character: Character, stats: Stats): number {
+  calculateAvailable(character: Character, stats: Stats): number {
     let initial = 5;
     if (character.race === "human") {
       initial = 10;
@@ -19,7 +21,7 @@ export class StatService {
     return initial - (current - 6) + (character.level - 1);
   }
 
-  static calculatePrimaryStats(character: Character, race: Race): Stats {
+  calculatePrimaryStats(character: Character, race: Race): Stats {
     let base = new Stats();
     base.str = character.stats.str;
     base.con = character.stats.con;
@@ -28,20 +30,26 @@ export class StatService {
     base.spi = character.stats.spi;
     base.cha = character.stats.cha;
 
-    let modifiers = race.modifiers;
+    let modifiers: Modifier[];
 
-    console.log(modifiers)
-    for (let modifier of modifiers) {
-      if (modifier) {
-        console.log("calculating for", modifier)
-        base[modifier.name] += modifier.modifier;
+    if (race.modifiers) {
+      modifiers = race.modifiers.concat(character.modifiers);
+    } else {
+      modifiers = character.modifiers
+    }
+
+    if (modifiers) {
+      for (let modifier of modifiers) {
+        if (modifier) {
+          base[modifier.name] += modifier.modifier;
+        }
       }
     }
 
     return base;
   }
 
-  static calculateModifiers(character: Character, race: Race): Stats {
+  calculateModifiers(character: Character, race: Race): Stats {
     let base = {
       str: 0,
       con: 0,
@@ -51,18 +59,20 @@ export class StatService {
       cha: 0
     };
 
-    let modifiers = race.modifiers.concat(character.modifiers);
+    if (race.modifiers) {
+      let modifiers = race.modifiers.concat(character.modifiers);
 
-    for (let modifier of modifiers) {
-      if (modifier)
-        base[modifier.name] += modifier.modifier;
+      for (let modifier of modifiers) {
+        if (modifier)
+          base[modifier.name] += modifier.modifier;
+      }
     }
 
     return base;
   }
 
-  static calculateSecondaryStats(character: Character, race: Race, clazz: Class): SecondaryStats {
-    let base = new SecondaryStats()
+  calculateSecondaryStats(character: Character, race: Race, clazz: Class): SecondaryStats {
+    let base = new SecondaryStats();
 
     if (character.race === "woodelf") {
       base.movement += 2;
@@ -83,8 +93,18 @@ export class StatService {
     let primary = this.calculatePrimaryStats(character, race);
 
     base.health += (primary.con + clazz.hit) + ((character.level - 1) * (primary.con + Math.floor(clazz.hit / 2)));
-    base.dodge += primary.agi;
+    base.dodge += 10 + primary.agi;
     base.movement += primary.agi + 1;
+
+    if(character.equipment) {
+      for(let item of character.equipment) {
+        if(item.type === "armour") {
+          this.equipmentService.getArmour(item.subtype).subscribe(armour => {
+            base.armour += armour.base + item.bonus;
+          })
+        }
+      }
+    }
 
     return base;
   }

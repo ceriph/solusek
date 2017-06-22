@@ -31,6 +31,7 @@ export class StatsComponent implements OnInit {
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
               private raceService: RaceService,
+              private statService: StatService,
               private router: Router) {
     this.user = afAuth.authState;
   }
@@ -43,7 +44,7 @@ export class StatsComponent implements OnInit {
           if (player.character && player.character.race) {
             this.raceService.get(player.character.race).subscribe(race => {
               this.selectedRace = race;
-              this.modifiers = StatService.calculateModifiers(player.character, race);
+              this.modifiers = this.statService.calculateModifiers(player.character, race);
             });
           }
           if (player.character.stats) {
@@ -59,13 +60,13 @@ export class StatsComponent implements OnInit {
   }
 
   getMax(stat): number {
-    return Math.min(4, stat + this.availablePoints);
+    return Math.min(5, stat + this.availablePoints);
   }
 
   setAvailablePoints(): void {
     this.player.subscribe(player => {
       if (player.character.race) {
-        this.availablePoints = StatService.calculateAvailable(player.character, this.stats);
+        this.availablePoints = this.statService.calculateAvailable(player.character, this.stats);
       } else {
         this.availablePoints = 0;
       }
@@ -76,11 +77,7 @@ export class StatsComponent implements OnInit {
     this.player.subscribe(player => {
       player.character.stats = this.stats;
       this.player.update({character: player.character});
-      if (!player.character.info) {
-        this.router.navigate(['/character/info']);
-      } else {
-        alert("Stats Updated");
-      }
+      this.router.navigate(['/character/info']);
     });
   }
 }

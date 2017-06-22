@@ -1,24 +1,13 @@
 <div *ngIf="player">
-  <div class="box fill">
+  <div class="box fill nobottom">
     <h1>Welcome, {{player.name}}</h1>
-    <div *ngIf="!player.character.info">
-      <p>Your character is incomplete, please follow the steps below to create your character</p>
-      <p>
-        Additionally you can also read up on the <a routerLink="/rules" fragment="CharacterCreation" routerLinkActive="active">Character
-        Creation Rules</a> if anything doesn't make sense.
-      </p>
-    </div>
-    <div *ngIf="player.character.info">
-      <p>Your character is complete, however you may still make changes if you wish.</p>
-    </div>
-  </div>
-  <div class="box fill">
+    <p>Character status: {{status}}</p>
     <div class="tabs">
       <a class="tab" routerLink="races" routerLinkActive="active">Race</a>
       <a [hidden]="!player.character.race" class="tab" routerLink="classes" routerLinkActive="active">Class</a>
       <a [hidden]="!player.character.class" class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
       <a [hidden]="!player.character.stats" class="tab" routerLink="info" routerLinkActive="active">Info</a>
-      <a [hidden]="!player.character.info" class="tab" routerLink="summary" routerLinkActive="active">Summary</a>
+      <a [hidden]="!player.character.info || !player.character.stats" class="tab right" routerLink="summary" routerLinkActive="active">Summary</a>
     </div>
   </div>
 </div>

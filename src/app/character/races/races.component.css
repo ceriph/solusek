@@ -39,3 +39,7 @@
   width: 100%;
   max-width: 500px;
 }
+
+.footer button {
+  margin-left: 2.5%;
+}

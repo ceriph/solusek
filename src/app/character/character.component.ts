@@ -16,7 +16,7 @@ export class CharacterComponent implements OnInit {
   player: Player;
   user: Observable<firebase.User>;
 
-  complete: boolean;
+  status = "INCOMPLETE";
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
@@ -38,7 +38,7 @@ export class CharacterComponent implements OnInit {
           } else if (!this.player.character.info) {
             this.router.navigate(['/character/info']);
           } else {
-            this.complete = true;
+            this.status = "COMPLETE";
             this.router.navigate(['/character/summary']);
           }
         })

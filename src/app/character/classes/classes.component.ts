@@ -47,20 +47,18 @@ export class ClassesComponent implements OnInit {
 
   select(clazz: Class): void {
     this.selectedClass = clazz;
+    window.scrollTo(0, 0);
   }
 
   save(): void {
     this.player.subscribe(player => {
       player.character.class = this.selectedClass.name;
+      player.character.equipment = this.selectedClass.equipment;
       if(player.character.stats) {
         player.character.stats = null;
       }
-      this.player.update({character: player.character});
-      if (!player.character.stats) {
-        this.router.navigate(['/character/stats']);
-      } else {
-        alert("Character Updated!"); // todo urgggghhh
-      }
+      this.player.set(player);
+      this.router.navigate(['/character/stats']);
     });
   }
 }
