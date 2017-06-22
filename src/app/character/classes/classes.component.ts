@@ -8,6 +8,8 @@ import {PlayerService} from "../../players/player.service";
 import {ClassService} from "./classes.service";
 import {Router} from "@angular/router";
 import * as firebase from "firebase/app";
+import {CharacterService} from "../character.service";
+import {Character} from "../character";
 
 @Component({
   selector: 'app-classes',
@@ -15,14 +17,14 @@ import * as firebase from "firebase/app";
   styleUrls: ['./classes.component.css']
 })
 export class ClassesComponent implements OnInit {
-  player: FirebaseObjectObservable<Player>;
+  character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;
 
   classes: FirebaseListObservable<Class[]>;
   selectedClass: Class;
 
   constructor(private afAuth: AngularFireAuth,
-              private playerService: PlayerService,
+              private characterService: CharacterService,
               private classService: ClassService,
               private router: Router) {
     this.user = afAuth.authState;
@@ -33,10 +35,10 @@ export class ClassesComponent implements OnInit {
 
     this.user.subscribe(user => {
       if (user && user.uid) {
-        this.player = this.playerService.getPlayer(user.uid);
-        this.player.subscribe(player => {
-          if (player.character && player.character.class) {
-            this.classService.get(player.character.class).subscribe(clazz => {
+        this.character = this.characterService.get(user.uid);
+        this.character.subscribe(character => {
+          if (character.class) {
+            this.classService.get(character.class).subscribe(clazz => {
               this.selectedClass = clazz;
             });
           }
@@ -51,15 +53,10 @@ export class ClassesComponent implements OnInit {
   }
 
   save(): void {
-    this.player.subscribe(player => {
-      player.character.class = this.selectedClass.name;
-      player.character.equipment = this.selectedClass.equipment;
-      if(player.character.stats) {
-        player.character.stats = null;
-      }
-      this.player.set(player).then(() => {
-        this.router.navigate(['/character/stats']);
-      });
-    });
+    this.character.update({
+      "class": this.selectedClass.name,
+      equipment: this.selectedClass.equipment,
+      stats: null
+    }).then(() => this.router.navigate(['/character/stats']));
   }
 }

@@ -1,15 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {PlayerService} from "../../players/player.service";
+import {Component, OnInit} from "@angular/core";
 import {AngularFireAuth} from "angularfire2/auth";
 import {Router} from "@angular/router";
 import {Observable} from "rxjs/Observable";
-import {Player} from "../../players/player";
 import {FirebaseObjectObservable} from "angularfire2/database";
 import * as firebase from "firebase/app";
 import {RaceService} from "../races/race.service";
 import {Race} from "../races/race";
 import {Stats} from "../stats";
 import {StatService} from "./stat.service";
+import {CharacterService} from "../character.service";
+import {Character} from "../character";
 
 @Component({
   selector: 'app-stats',
@@ -18,7 +18,7 @@ import {StatService} from "./stat.service";
 })
 export class StatsComponent implements OnInit {
 
-  player: FirebaseObjectObservable<Player>;
+  character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;
 
   selectedRace: Race;
@@ -29,7 +29,7 @@ export class StatsComponent implements OnInit {
   availablePoints: number;
 
   constructor(private afAuth: AngularFireAuth,
-              private playerService: PlayerService,
+              private characterService: CharacterService,
               private raceService: RaceService,
               private statService: StatService,
               private router: Router) {
@@ -39,16 +39,16 @@ export class StatsComponent implements OnInit {
   ngOnInit() {
     this.user.subscribe(user => {
       if (user && user.uid) {
-        this.player = this.playerService.getPlayer(user.uid);
-        this.player.subscribe(player => {
-          if (player.character && player.character.race) {
-            this.raceService.get(player.character.race).subscribe(race => {
+        this.character = this.characterService.get(user.uid);
+        this.character.subscribe(character => {
+          if (character.race) {
+            this.raceService.get(character.race).subscribe(race => {
               this.selectedRace = race;
-              this.modifiers = this.statService.calculateModifiers(player.character, race);
+              this.modifiers = this.statService.calculateModifiers(character, race);
             });
           }
-          if (player.character.stats) {
-            this.stats = player.character.stats;
+          if (character.stats) {
+            this.stats = character.stats;
           } else {
             this.stats = new Stats();
           }
@@ -64,9 +64,9 @@ export class StatsComponent implements OnInit {
   }
 
   setAvailablePoints(): void {
-    this.player.subscribe(player => {
-      if (player.character.race) {
-        this.availablePoints = this.statService.calculateAvailable(player.character, this.stats);
+    this.character.subscribe(character => {
+      if (character.race) {
+        this.availablePoints = this.statService.calculateAvailable(character, this.stats);
       } else {
         this.availablePoints = 0;
       }
@@ -74,11 +74,8 @@ export class StatsComponent implements OnInit {
   }
 
   save(): void {
-    this.player.subscribe(player => {
-      player.character.stats = this.stats;
-      this.player.set(player).then(() => {
-        this.router.navigate(['/character/info']);
-      });
-    });
+    this.character.update({
+      stats: this.stats
+    }).then(() => this.router.navigate(['/character/info']));
   }
 }
