@@ -76,8 +76,9 @@ export class StatsComponent implements OnInit {
   save(): void {
     this.player.subscribe(player => {
       player.character.stats = this.stats;
-      this.player.update({character: player.character});
-      this.router.navigate(['/character/info']);
+      this.player.set(player).then(() => {
+        this.router.navigate(['/character/info']);
+      });
     });
   }
 }

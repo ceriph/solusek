@@ -12,11 +12,11 @@
       <h3>{{skill.value.label}}</h3>
       <p>{{skill.value.desc}}</p>
     </div>
-    <div class="footer" *ngIf="(player | async).character.race && (player | async).character.race !== selectedRace.name">
+    <div class="footer" *ngIf="(character | async).race && (character | async).race !== selectedRace.name">
       <button (click)="save()">UPDATE</button>
       <p><i>Changing your race will reset any previously made class/stat choices</i></p>
     </div>
-    <div class="footer" *ngIf="!(player | async).character.race">
+    <div class="footer" *ngIf="!(character | async).race">
       <button (click)="save()">SAVE</button>
     </div>
   </div>

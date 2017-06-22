@@ -2,13 +2,18 @@ import {Injectable} from "@angular/core";
 import {Character} from "./character";
 import {Skill} from "./skill";
 import {Class} from "./classes/class";
+import {AngularFireDatabase, FirebaseObjectObservable} from "angularfire2/database";
 
 @Injectable()
 export class CharacterService {
 
-  constructor() {}
+  constructor(private db: AngularFireDatabase) {}
 
-  static getSkills(character: Character, clazz: Class): Skill[] {
+  get(playerId: string): FirebaseObjectObservable<Character> {
+    return this.db.object('players/' + playerId + "/character");
+  }
+
+  getSkills(character: Character, clazz: Class): Skill[] {
     if(!clazz.skills)
       return [];
 

@@ -33,6 +33,7 @@ export class SummaryComponent implements OnInit {
               private playerService: PlayerService,
               private raceService: RaceService,
               private statService: StatService,
+              private characterService: CharacterService,
               private classService: ClassService) {
     this.user = afAuth.authState;
   }
@@ -47,7 +48,7 @@ export class SummaryComponent implements OnInit {
             this.stats = this.statService.calculatePrimaryStats(player.character, race);
             this.classService.get(player.character.class).subscribe(clazz => {
               this.secondaryStats = this.statService.calculateSecondaryStats(player.character, race, clazz);
-              this.skills = CharacterService.getSkills(player.character, clazz);
+              this.skills = this.characterService.getSkills(player.character, clazz);
               this.clazz = clazz;
             });
           });

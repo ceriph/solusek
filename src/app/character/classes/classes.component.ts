@@ -57,8 +57,9 @@ export class ClassesComponent implements OnInit {
       if(player.character.stats) {
         player.character.stats = null;
       }
-      this.player.set(player);
-      this.router.navigate(['/character/stats']);
+      this.player.set(player).then(() => {
+        this.router.navigate(['/character/stats']);
+      });
     });
   }
 }
