@@ -23,6 +23,7 @@ export class StatsComponent implements OnInit {
 
   selectedRace: Race;
 
+  baseStats: Stats;
   stats: Stats;
   modifiers: Stats;
 
@@ -47,6 +48,7 @@ export class StatsComponent implements OnInit {
               this.modifiers = this.statService.calculateModifiers(character, race);
             });
           }
+          this.baseStats = new Stats(); // todo if greater than level 1 then set to current
           if (character.stats) {
             this.stats = character.stats;
           } else {
@@ -61,6 +63,21 @@ export class StatsComponent implements OnInit {
 
   getMax(stat): number {
     return Math.min(5, stat + this.availablePoints);
+  }
+
+  minus(stat): void {
+    if(this.stats[stat] > this.baseStats[stat]) {
+      this.stats[stat]--;
+      this.setAvailablePoints();
+    }
+  }
+
+  plus(stat): void {
+    // todo add level-1 onto max possible
+    if(this.stats[stat] < this.getMax(this.stats[stat])) {
+      this.stats[stat]++;
+      this.setAvailablePoints();
+    }
   }
 
   setAvailablePoints(): void {
