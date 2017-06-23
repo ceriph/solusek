@@ -9,11 +9,13 @@
 
   <h3>Introduction</h3>
   <p>
-    Get the players to each make a CON saving throw. Highest roll wakes up first. Consider making the others leave the room?
+    Get the players to each make a CON saving throw. Highest roll wakes up first. Consider making the others leave the
+    room?
   </p>
   <p>
     X, you groggily open your eyes, your ears ringing and your head is pounding as try to make our your surroundings.
-    Sitting up on the hard stone floor, you realise you are in a cell, about 4 meters long and 3 meters wide, and you are
+    Sitting up on the hard stone floor, you realise you are in a cell, about 4 meters long and 3 meters wide, and you
+    are
     not alone. On the ground next to you lies an x, y and z, all of whom are unconscious. Next to your cell is a similar
     one, containing a man, woman and young girl.
   </p>
@@ -28,7 +30,8 @@
 
   <h4>Hollow Monk</h4>
   <p>
-    Human Monks, hollowed and enslaved by an unknown creature. They look old and pale, with bald heads and saggy skin, wearing
+    Human Monks, hollowed and enslaved by an unknown creature. They look old and pale, with bald heads and saggy skin,
+    wearing
     tattered, dirty robes.
     They move with slowly but seem to be surprisingly strong
   </p>
@@ -41,7 +44,8 @@
 
   <h5>Fists of Rock</h5>
   <p>
-    Passive - A monks fists are classed as 1d4+STR weapons, they may also attack with each fist separately (i.e. they can make 2 attacks per round)
+    Passive - A monks fists are classed as 1d4+STR weapons, they may also attack with each fist separately (i.e. they
+    can make 2 attacks per round)
   </p>
 
   <h5>Kick</h5>
@@ -64,13 +68,15 @@
 
   <h5>Animate bones</h5>
   <p>
-    Action - once per encounter - raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level
+    Action - once per encounter - raise a skeleton from the dead under the characters control. It has (1d4 + CON) *
+    level
     health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT damage
   </p>
 
   <h5>Life Tap</h5>
   <p>
-    Action - once per encounter - attack INT vs INT on an enemy within 10m dealing 1d6+INT <b>dark</b> damage, the necromancer
+    Action - once per encounter - attack INT vs INT on an enemy within 10m dealing 1d6+INT <b>dark</b> damage, the
+    necromancer
     gains health equal to the damage done
   </p>
 
@@ -78,4 +84,71 @@
   <p>
     Action - once per encounter - the necromancer gives 1d6+INT of their own health to a target ally
   </p>
+
+  <h2>Characters</h2>
+  <h3>Players</h3>
+  <div *ngFor="let player of players">
+    <div *ngIf="player.character && player.name !== 'Matt' && player.name !== 'Jenny'">
+      <h4>{{player.name}}</h4>
+      <h5>Basic Details</h5>
+      <p><b>Name:</b> {{player.character.info.name}}</p>
+      <p><b>Level:</b> {{player.character.level}}</p>
+      <p><b>Age:</b> {{player.character.info.age}}</p>
+      <p><b>Race:</b> {{player.character.race}}</p>
+      <p><b>Class:</b> {{player.character.class}}</p>
+      <div *ngIf="player.character.primary">
+        <h5>Base Stats</h5>
+        <table>
+          <tr>
+            <td class="top">Strength</td>
+            <td class="top">{{player.character.stats.str}}</td>
+          </tr>
+          <tr>
+            <td>Constitution</td>
+            <td>{{player.character.primary.con}}</td>
+          </tr>
+          <tr>
+            <td>Agility</td>
+            <td>{{player.character.primary.agi}}</td>
+          </tr>
+          <tr>
+            <td>Intelligence</td>
+            <td>{{player.character.primary.int}}</td>
+          </tr>
+          <tr>
+            <td>Spirit</td>
+            <td>{{player.character.primary.spi}}</td>
+          </tr>
+          <tr>
+            <td>Charisma</td>
+            <td>{{player.character.primary.cha}}</td>
+          </tr>
+        </table>
+      </div>
+      <div *ngIf="player.character.secondary">
+        <h5>Secondary Stats</h5>
+        <table>
+          <tr><td class="top">Health</td><td class="top">{{player.character.secondary.health}}</td></tr>
+          <tr><td>Movement</td><td>{{player.character.secondary.movement}}</td></tr>
+          <tr><td>Dodge</td><td>{{player.character.secondary.dodge}}</td></tr>
+          <tr><td>Armour</td><td>{{player.character.secondary.armour}}</td></tr>
+        </table>
+      </div>
+      <!--<h5>Skills</h5>-->
+      <!--<div *ngFor="let skill of skills">-->
+      <!--<h3>{{skill.label}}</h3>-->
+      <!--<p>{{skill.desc}}</p>-->
+      <!--</div>-->
+      <!--<h5>Equipment</h5>-->
+      <!--<div *ngFor="let item of player.character.equipment">-->
+      <!--<p>{{item.label}}</p>-->
+      <!--</div>-->
+      <h5>Bio</h5>
+      <p><b>Appearance:</b> {{player.character.info.appearance}}</p>
+      <p><b>Personality:</b> {{player.character.info.personality}}</p>
+      <p><b>Background:</b> {{player.character.info.background}}</p>
+      <p><b>Motivation:</b> {{player.character.info.motivation}}</p>
+      <p><b>Introduction:</b> {{player.character.info.introduction}}</p>
+    </div>
+  </div>
 </div>

@@ -10,7 +10,7 @@ export class PlayerService {
 
   constructor(private db: AngularFireDatabase) {}
 
-  getPlayers(): FirebaseListObservable<any[]> {
+  getPlayers(): FirebaseListObservable<Player[]> {
     return this.db.list(this.path);
   }
 
