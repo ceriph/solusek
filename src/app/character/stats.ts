@@ -10,6 +10,14 @@ export class Stats {
 export class SecondaryStats {
   health: number = 0;
   dodge: number = 0;
-  armour: number = 0;
+  resistanceArcane: number = 0;
+  resistanceMind: number = 0;
+  resistanceLight: number = 0;
+  resistanceDark: number = 0;
+  resistanceNature: number = 0;
+  resistancePoison: number = 0;
+  resistanceDisease: number = 0;
   movement: number = 0;
+  armour: number = 0;
+  magicReduction: number = 0;
 }

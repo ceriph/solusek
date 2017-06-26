@@ -1,0 +1,11 @@
+img {
+  width: 100%;
+  max-width: 800px;
+  float: none;
+  border: 8px solid #DDD;
+}
+
+.map {
+  margin: 0 auto;
+  text-align: center;
+}

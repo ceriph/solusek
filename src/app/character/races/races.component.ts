@@ -2,7 +2,6 @@ import {RaceService} from "./race.service";
 import {Race} from "./race";
 import {FirebaseListObservable} from "angularfire2/database/firebase_list_observable";
 import {Component, OnInit} from "@angular/core";
-import {Player} from "../../players/player";
 import {AngularFireAuth} from "angularfire2/auth";
 import {Router} from "@angular/router";
 import {Observable} from "rxjs/Observable";

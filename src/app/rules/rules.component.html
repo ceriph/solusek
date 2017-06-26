@@ -121,6 +121,15 @@
             <li><a href="rules#Other">Other</a></li>
           </ul>
         </li>
+        <li><a href="rules#Spells">Spells</a>
+          <ul>
+            <li><a href="rules#Arcane">Arcane</a></li>
+            <li><a href="rules#Mind">Mind</a></li>
+            <li><a href="rules#Light">Light</a></li>
+            <li><a href="rules#Dark">Dark</a></li>
+            <li><a href="rules#Nature">Nature</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -1165,5 +1174,121 @@
       Other items can be acquired, such as bandagesm, lockpicks, magical clothing, amulets, rings etc. These will become
       available as you progress and the benefits will be detailed on a case by case basis.
     </p>
+  </div>
+  <div class="box">
+    <h2 id="Spells">Spells</h2>
+    <p>
+      Spells come in 5 categories of magic: <b>Arcane</b>, <b>Mind</b>, <b>Light</b>, <b>Dark</b> and <b>Nature</b>.
+    </p>
+    <p>
+      With regards to spells, a character's class and level defines two things:
+    </p>
+    <p><b>Magic Type</b>: The category of magic a character has access to, for example wizards have access to <b>Arcane</b>.</p>
+    <p>
+      <b>Spell Slots</b>: The number of spells slots the character has that they can fill with spells. Each slot counts as a singly use of that spell.
+      Spells can be assigned to as many slots as there are available, in order to give a character multiple uses of a single spell. For example
+      a wizard could assign all 3 of his spells slots to Fireball, or have 2 slots with Fireball and 1 slot of Minor Shielding.
+    </p>
+    <p>
+      Each magic type has spells separated into <b>ranks</b>. Spells of a certain rank are only available to a character once he has unlocked it.
+      The level these are unlocked is dependant on class, for example Clerics unlock higher ranking <b>Light</b> magic earlier than Paladins.
+    </p>
+    <p>
+      Spell slots can be assigned/changed when a character takes a <b>Long Rest</b>.
+    </p>
+    <p>
+      Spells slots are fully refreshed on a <b>Long Rest</b>. When taking a <b>Short Rest</b>, characters gain a number of
+      slot points equal to their primary stat defined for the magic type, for example Intelligence for Arcane. These points
+      can be spent to refresh spell slots, higher rank slots costing more:
+    </p>
+    <ul>
+      <li>Rank 1 - 1 slot point</li>
+      <li>Rank 2 - 2 slot points</li>
+      <li>Rank 3 - 3 slot points</li>
+      <li>Rank 4 - 4 slot points</li>
+      <li>Rank 5 - 5 slot points</li>
+    </ul>
+
+    <h3 id="Arcane">Arcane</h3>
+    <p>
+      Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice.
+    </p>
+    <p>
+      Wizards are the only class with access to Arcane magic.
+    </p>
+    <table class="spells">
+      <tr class="header"><td colspan="2">Rank 1 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Lesser Shielding</td><td>The target receives 1 armour and 1 magic reduction</td></tr>
+      <tr><td>Burning Hands</td><td>Attack INT vs INT on a target in melee range, deals 1d8+INT fire damage</td></tr>
+      <tr><td>Crystallize</td><td>The wizard forms a crystal shell, on their next turn they are rooted but have +5 armour</td></tr>
+      <tr><td>Arcane Missiles</td><td>Fires a number of missiles equal to INT, each hitting random nearby enemies (roll a dice) for 1d4 arcane damage</td></tr>
+      <tr class="header"><td colspan="2">Rank 2 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Shielding</td><td>The target receives 1 armour and 1 magic reduction</td></tr>
+      <tr><td>Fireball</td><td>attack INT vs INT on enemy target within 10m and all enemies within 1m. On hit deals 2d4+INT fire damage</td></tr>
+      <tr><td>Frost Nova</td><td>attack INT vs INT on all enemy targets within 3m, on hit the targets take 1d4+INT damage and are rooted</td></tr>
+      <tr class="header"><td colspan="2">Rank 3 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Shielding</td><td>The target receives 1 armour and 1 magic reduction</td></tr>
+      <tr class="header"><td colspan="2">Rank 4 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Major Shielding</td><td>The target receives 1 armour and 1 magic reduction</td></tr>
+      <tr class="header"><td colspan="2">Rank 5 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Major Shielding</td><td>The target receives 1 armour and 1 magic reduction</td></tr>
+    </table>
+
+    <h3 id="Mind">Mind</h3>
+    <p>
+      Mind magic involves the manipulation of the mind and can be accessed by Enchanters. Bards have access to their own
+      forms of Mind magic via the use of <b>songs</b>.
+    </p>
+    <p>TODO</p>
+
+    <h3 id="Light">Light</h3>
+    <p>
+      Magic related to the control of holy light energy. Light magic can be accessed by Clerics and Paladins.
+    </p>
+    <table class="spells">
+      <tr class="header"><td colspan="2">Rank 1 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Lesser Healing</td><td>Heal the target for 1d4+SPI health</td></tr>
+      <tr><td>Weaken Evil</td><td>Attack SPI vs SPI on target undead or demon, on hit the target suffers -1 STR</td></tr>
+      <tr><td>Blessing</td><td>The target receives +1 on all attack rolls</td></tr>
+      <tr><td>Cure Poison</td><td>Make a saving throw (SPI) against a target characters poison, if you succeed they are no longer poisoned</td></tr>
+      <tr><td>Cure Disease</td><td>Make a saving throw (SPI) against a target characters disease, if you succeed they are no longer diseased</td></tr>
+      <tr class="header"><td colspan="2">Rank 2 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Healing</td><td>Heal the target for 2d4+SPI health</td></tr>
+      <tr><td>Symbol of Garret</td><td>Mark a friendly target with a symbol, granting them 1d6+SPI temporary health</td></tr>
+      <tr><td>Turn Undead</td><td>Attack SPI vs SPI on a target undead. Deals 1d6+SPI light damage and the target is stunned.</td></tr>
+      <tr><td>Protection</td><td>Grant a friendly target +1 dodge +1 armour and +1 magic reduction against any attacks</td></tr>
+      <tr class="header"><td colspan="2">Rank 3 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Greater Healing</td><td>Heal the target for 3d4+SPI health</td></tr>
+      <tr><td>Greater Blessing</td><td>The target receives +2 to all attack rolls (does not stack with Blessing)</td></tr>
+      <tr><td>Purge</td><td>Purge any poison or disease from the target</td></tr>
+      <tr class="header"><td colspan="2">Rank 4 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Greater Protection</td><td>Grant a friendly target +2 dodge +2 armour and +2 magic reduction against any attacks</td></tr>
+      <tr class="header"><td colspan="2">Rank 5 Spells</td></tr>
+      <tr class="header"><td>Name</td><td>Effect</td></tr>
+      <tr><td>Symbol of Gods</td><td>Mark a friendly target with a symbol, granting them 2d6+SPI temporary health</td></tr>
+      <tr><td>Angel's Fury</td><td>Attack SPI vs SPI on target enemy within 10m, deals 3d8+SPI light damage. Does an additional 1d6+SPI damage to Demons.</td></tr>
+    </table>
+
+    <h3 id="Dark">Dark</h3>
+    <p>
+      Magic related to death and darkness. Dark magic can be accessed by Necromancers and Reavers.
+    </p>
+    <p>TODO</p>
+
+    <h3 id="Nature">Nature</h3>
+    <p>
+      The power to control the weather and the spirits of nature. Nature magic can be accessed by Shamans and Rangers.
+    </p>
+
+
   </div>
 </div>
