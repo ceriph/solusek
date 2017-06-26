@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {FormsModule} from "@angular/forms";
 
 import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
@@ -41,14 +41,16 @@ import {OgreComponent} from "./character/races/ogre/ogre.component";
 import {TrollComponent} from "./character/races/troll/troll.component";
 import {IksarComponent} from "./character/races/iksar/iksar.component";
 import {DmComponent} from "./dm/dm.component";
-import { StatsComponent } from './character/stats/stats.component';
-import { InfoComponent } from './character/info/info.component';
+import {StatsComponent} from "./character/stats/stats.component";
+import {InfoComponent} from "./character/info/info.component";
 import {KeysPipe} from "./keys-pipe";
 import {ClassService} from "./character/classes/classes.service";
 import {StatService} from "./character/stats/stat.service";
-import { SummaryComponent } from './character/summary/summary.component';
+import {SummaryComponent} from "./character/summary/summary.component";
 import {CharacterService} from "./character/character.service";
 import {EquipmentService} from "./character/equipment.service";
+import {ClassComponent} from "./rules/class/class.component";
+import {RaceComponent} from "./rules/race/race.component";
 
 @NgModule({
   imports: [
@@ -68,32 +70,14 @@ import {EquipmentService} from "./character/equipment.service";
     LoreComponent,
     CharacterComponent,
     ClassesComponent,
-    WarriorComponent,
-    PaladinComponent,
-    ReaverComponent,
-    ClericComponent,
-    ShamanComponent,
-    MonkComponent,
-    RogueComponent,
-    BardComponent,
-    RangerComponent,
-    WizardComponent,
-    EnchanterComponent,
-    NecromancerComponent,
-    HumanComponent,
-    HighelfComponent,
-    WoodelfComponent,
-    DarkelfComponent,
-    DwarfComponent,
-    HalflingComponent,
-    OgreComponent,
-    TrollComponent,
-    IksarComponent,
+    ClassComponent,
     DmComponent,
     StatsComponent,
     InfoComponent,
     KeysPipe,
-    SummaryComponent
+    SummaryComponent,
+    ClassComponent,
+    RaceComponent
   ],
   providers: [
     PlayerService,

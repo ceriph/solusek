@@ -1,4 +1,4 @@
-import {Routes, RouterModule} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {PlayerDetailComponent} from "./players/player-detail.component";
 import {PlayersComponent} from "./players/players.component";
@@ -33,6 +33,8 @@ import {ClassesComponent} from "./character/classes/classes.component";
 import {StatsComponent} from "./character/stats/stats.component";
 import {InfoComponent} from "./character/info/info.component";
 import {SummaryComponent} from "./character/summary/summary.component";
+import {ClassComponent} from "./rules/class/class.component";
+import {RaceComponent} from "./rules/race/race.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -49,28 +51,9 @@ const routes: Routes = [
   {path: 'players', component: PlayersComponent},
   {path: 'players/:name', component: PlayerDetailComponent},
   {path: 'rules', component: RulesComponent},
+  {path: 'rules/class', component: ClassComponent},
+  {path: 'rules/race', component: RaceComponent},
   {path: 'lore', component: LoreComponent},
-  {path: 'races/human', component: HumanComponent},
-  {path: 'races/highelf', component: HighelfComponent},
-  {path: 'races/woodelf', component: WoodelfComponent},
-  {path: 'races/darkelf', component: DarkelfComponent},
-  {path: 'races/dwarf', component: DwarfComponent},
-  {path: 'races/halfling', component: HalflingComponent},
-  {path: 'races/ogre', component: OgreComponent},
-  {path: 'races/troll', component: TrollComponent},
-  {path: 'races/iksar', component: IksarComponent},
-  {path: 'classes/warrior', component: WarriorComponent},
-  {path: 'classes/paladin', component: PaladinComponent},
-  {path: 'classes/reaver', component: ReaverComponent},
-  {path: 'classes/cleric', component: ClericComponent},
-  {path: 'classes/shaman', component: ShamanComponent},
-  {path: 'classes/monk', component: MonkComponent},
-  {path: 'classes/bard', component: BardComponent},
-  {path: 'classes/ranger', component: RangerComponent},
-  {path: 'classes/rogue', component: RogueComponent},
-  {path: 'classes/wizard', component: WizardComponent},
-  {path: 'classes/enchanter', component: EnchanterComponent},
-  {path: 'classes/necromancer', component: NecromancerComponent},
   {path: 'dm', component: DmComponent}
 ];
 

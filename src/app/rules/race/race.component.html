@@ -1,0 +1,16 @@
+<div class="box fill" *ngIf="race">
+  <img src="/assets/races/avatar-{{race.name}}.png">
+  <div class="detail">
+    <h1>{{race.label}}</h1>
+    <p>{{race.desc}}</p>
+    <h3>Stat Modifiers</h3>
+    <p *ngIf="!race.modifiers">None</p>
+    <div *ngFor="let modifier of race.modifiers | keys">
+      <p>{{modifier.value.label}}: {{modifier.value.modifier}}</p>
+    </div>
+    <div *ngFor="let skill of race.skills | keys">
+      <h3>{{skill.value.label}}</h3>
+      <p>{{skill.value.desc}}</p>
+    </div>
+  </div>
+</div>
