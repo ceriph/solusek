@@ -645,7 +645,7 @@
         "name": "arcanemagic1",
         "label": "Arcane Magic 1",
         "level": 1,
-        "desc": "Passive - Grants access to rank 1 Arcane magic spells and 1 rank 1 spell slot (increases to 2 slots at level 2, 3 at level 3, 4 at level 4 and 5 at level 5)"
+        "desc": "Passive - Grants access to rank 1 Arcane magic spells and 2 rank 1 spell slots (increases to 3 slots at level 2, 4 at level 4 and 5 at level 5)"
       },
       {
         "name": "focus",
