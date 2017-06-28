@@ -85,7 +85,7 @@
         "name": "lesserheal",
         "label": "Lesser Heal",
         "level": 1,
-        "desc": "Action - once per encounter - channel healing spirits through your weapon, healing <weapon> health on an ally within line of sight"
+        "desc": "Action - once per short rest - channel healing spirits through your weapon, healing <weapon> health on an ally within line of sight"
       },
       {
         "name": "holylight",
@@ -131,7 +131,7 @@
         "name": "charm",
         "label": "Charm",
         "level": 1,
-        "desc": "Action - once per encounter - attack CHA vs CHA on an enemy within 10m, if it hits the enemy is charmed until the end of their next turn."
+        "desc": "Action - once per short rest - attack CHA vs CHA on an enemy within 10m, if it hits the enemy is charmed until the end of their next turn."
       }
     ]
   },
@@ -163,13 +163,13 @@
         "name": "kick",
         "label": "Kick",
         "level": 1,
-        "desc": "Action - once per encounter - attack vs dodge on a enemy within melee range, if it hits the target takes 1d8+STR damage and is knocked down."
+        "desc": "Action - once per short rest - attack vs dodge on a enemy within melee range, if it hits the target takes 1d8+STR damage and is knocked down."
       },
       {
         "name": "ignorepain",
         "label": "Ignore Pain",
         "level": 2,
-        "desc": "Action - once per encounter - the monk gains 1d4+SPI temporary hit points (increases to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20)"
+        "desc": "Action - once per short rest - the monk gains 1d4+SPI temporary hit points (increases to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20)"
       }
     ]
   },
@@ -209,7 +209,7 @@
         "name": "animatebones",
         "label": "Animate Bones",
         "level": 1,
-        "desc": "Action - once per encounter - raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT physical damage."
+        "desc": "Action - once per short rest - raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT physical damage."
       }
     ]
   },
@@ -249,7 +249,49 @@
         "name": "layonhands",
         "label": "Lay On Hands",
         "level": 1,
-        "desc": "Action - once per day - the paladin touches a friendly target (this can include themselves), healing the target to full health, the paladin then becomes exhausted."
+        "desc": "Action - once per per long rest - the paladin touches a friendly target (this can include themselves), healing the target to full health."
+      },
+      {
+        "name": "lightmagic1",
+        "label": "Light Magic 1",
+        "level": 2,
+        "desc": "Passive - Grants access to rank 1 Light magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+      },
+      {
+        "name": "divineshield",
+        "label": "Divine Shield",
+        "level": 4,
+        "desc": "Action - once per short rest - the paladin enchants his shield with magical energy, causing it to block all damage he would receive next round. Requires a shield."
+      },
+      {
+        "name": "lightmagic2",
+        "label": "Light Magic 2",
+        "level": 8,
+        "desc": "Passive - Grants access to rank 2 Light magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+      },
+      {
+        "name": "weaponmastery",
+        "label": "Weapon Mastery",
+        "level": 10,
+        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+      },
+      {
+        "name": "extraattack",
+        "label": "Extra Attack",
+        "level": 12,
+        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+      },
+      {
+        "name": "lightmagic3",
+        "label": "Light Magic 3",
+        "level": 14,
+        "desc": "Passive - Grants access to rank 3 Light magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+      },
+      {
+        "name": "lightmagic4",
+        "label": "Light Magic 4",
+        "level": 20,
+        "desc": "Passive - Grants access to rank 4 Light magic spells and 1 rank 4 spell slot."
       }
     ]
   },
@@ -297,7 +339,49 @@
         "name": "headshot",
         "label": "Headshot",
         "level": 1,
-        "desc": "Action - once per encounter - attack vs dodge using a ranged weapon, on hit it is considered critical."
+        "desc": "Action - once per short rest - perform a ranged attack as normal, on hit it is considered critical, doing maximum damage."
+      },
+      {
+        "name": "naturemagic1",
+        "label": "Nature Magic 1",
+        "level": 2,
+        "desc": "Passive - Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+      },
+      {
+        "name": "animalcompanion",
+        "label": "Animal Companion",
+        "level": 4,
+        "desc": "Passive - The ranger can charm an animal up to his level to become his companion. The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type and level of the animal and the ranger can command the companion in battle."
+      },
+      {
+        "name": "extraattack",
+        "label": "Extra Attack",
+        "level": 6,
+        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+      },
+      {
+        "name": "naturemagic2",
+        "label": "Nature Magic 2",
+        "level": 8,
+        "desc": "Passive - Grants access to rank 2 Nature magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+      },
+      {
+        "name": "weaponmastery",
+        "label": "Weapon Mastery",
+        "level": 10,
+        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+      },
+      {
+        "name": "naturemagic3",
+        "label": "Nature Magic 3",
+        "level": 14,
+        "desc": "Passive - Grants access to rank 3 Nature magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+      },
+      {
+        "name": "naturemagic4",
+        "label": "Nature Magic 4",
+        "level": 20,
+        "desc": "Passive - Grants access to rank 4 Nature magic spells and 1 rank 4 spell slot."
       }
     ]
   },
@@ -337,7 +421,7 @@
         "name": "harmtouch",
         "label": "Harm Touch",
         "level": 1,
-        "desc": "Action - once per day - attack INT vs INT on an enemy within melee range, causing 1d8 + (1d4 per level) + INT dark damage, the Reaver then becomes exhausted"
+        "desc": "Action - once per long rest - attack INT vs INT on an enemy within melee range, causing 1d8 + (1d4 per level) + INT dark damage, the Reaver then becomes exhausted"
       }
     ]
   },
@@ -386,6 +470,60 @@
         "label": "Thievery",
         "level": 1,
         "desc": "Passive - the rogue receives +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+      },
+      {
+        "name": "dualwield",
+        "label": "Dual Wield",
+        "level": 3,
+        "desc": "Passive - The character can equip a small weapon in their offhand, and may make a regular attack with it once per round, this does not consume their action."
+      },
+      {
+        "name": "applypoison",
+        "label": "Apply Poison",
+        "level": 4,
+        "desc": "Action - The rogue adds a poison to their main weapon, any characters that take damage from this weapon are poisoned with strength 1d20+INT. They must make a saving throw each turn or take 1d4 damage (increases to 2d4 at level 7, 3d4 at level 14, 4d4 at level 19."
+      },
+      {
+        "name": "throwdirt",
+        "label": "Throw Dirt",
+        "level": 6,
+        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+      },
+      {
+        "name": "tumble",
+        "label": "Tumble",
+        "level": 6,
+        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+      },
+      {
+        "name": "extraattack",
+        "label": "Extra Attack",
+        "level": 8,
+        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+      },
+      {
+        "name": "weaponmastery",
+        "label": "Weapon Mastery",
+        "level": 10,
+        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+      },
+      {
+        "name": "shadowstrike",
+        "label": "Shadow Strike",
+        "level": 12,
+        "desc": "Action - once per short rest - If the rogue has not been attacked this round, the may instantly appear behind their target and perform an attack."
+      },
+      {
+        "name": "extraattack2",
+        "label": "Extra Attack 2",
+        "level": 15,
+        "desc": "Passive - After performing an attack with their secondary weapon (via dual wield), the character may choose to make an additional regular attack with their secondary weapon."
+      },
+      {
+        "name": "assassinate",
+        "label": "Assassinate",
+        "level": 18,
+        "desc": "Action - once per long rest - make an attack from behind on a wounded enemy, if the attack hits, it counts as critical and ignores armour."
       }
     ]
   },
@@ -419,13 +557,13 @@
         "name": "lesserheal",
         "label": "Lesser Heal",
         "level": 1,
-        "desc": "Action - once per encounter - channel healing spirits through your weapon, healing <weapon>+SPI health on an ally within line of sight"
+        "desc": "Action - once per short rest - channel healing spirits through your weapon, healing <weapon>+SPI health on an ally within line of sight"
       },
       {
         "name": "lightningbolt",
         "label": "Lightning Bolt",
         "level": 1,
-        "desc": "Action - once per encounter - attack SPI vs SPI on an enemy within 10m, on hit does <weapon>+SPI light damage and the enemy is stunned."
+        "desc": "Action - once per short rest - attack SPI vs SPI on an enemy within 10m, on hit does <weapon>+SPI light damage and the enemy is stunned."
       }
     ]
   },
@@ -478,7 +616,7 @@
     ]
   },
   "wizard": {
-    "desc": "Harnessing the arcane and the elements of fire and ice, wizards unleash fury upon their foes. Their main role in combat is damage dealing.",
+    "desc": "Harnessing Arcane magic, wizards unleash fury upon their foes. They are the strongest spell casters in terms of raw damage output.",
     "equipment": [
       {
         "name": "damagedclothrobe",
@@ -504,16 +642,76 @@
     "recommendations": "Intelligence, Agility, Constitution",
     "skills": [
       {
-        "name": "magicalshield",
-        "label": "Magical Shield",
+        "name": "arcanemagic1",
+        "label": "Arcane Magic 1",
         "level": 1,
-        "desc": "Action - give a friendly target an additional 1 armour and 1 magic reduction until their next turn (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)"
+        "desc": "Passive - Grants access to rank 1 Arcane magic spells and 1 rank 1 spell slot (increases to 2 slots at level 2, 3 at level 3, 4 at level 4 and 5 at level 5)"
       },
       {
-        "name": "arcanemissiles",
-        "label": "Arcane Missiles",
-        "level": 1,
-        "desc": "Action - once per encounter - attack INT vs INT on up to 2 enemy targets within 10m, if it hits it does <weapon>+INT arcane damage to each target (number of targets increases to 3 at level 5, 4 at level 10, 5 at level 15 and 6 at level 20)."
+        "name": "focus",
+        "label": "Focus",
+        "level": 2,
+        "desc": "Passive - The wizard chooses one school of magic (Alteration, Abjuration, Conjuration, Evocation and Illusion). All spells with that tag gain a +1 to all rolls."
+      },
+      {
+        "name": "familiar",
+        "label": "Familiar",
+        "level": 3,
+        "desc": "Passive - The wizard chooses a familiar. The familiar is instantly summoned and by the wizards side at all times. It shares all stats (including health and any existing buffs) with the wizard and does 1d4+INT damage."
+      },
+      {
+        "name": "arcanemagic2",
+        "label": "Arcane Magic 2",
+        "level": 4,
+        "desc": "Passive - Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
+      },
+      {
+        "name": "clearmind",
+        "label": "Clear Mind",
+        "level": 5,
+        "desc": "Action - once per short rest - The wizard refreshes a single spent spell slot."
+      },
+      {
+        "name": "arcanemagic3",
+        "label": "Arcane Magic 3",
+        "level": 8,
+        "desc": "Passive - Grants access to rank 3 Arcane magic spells and 1 rank 3 spell slot (increases to 2 slots at level 9 and 3 at level 10)"
+      },
+      {
+        "name": "manasurge",
+        "label": "Mana Surge",
+        "level": 9,
+        "desc": "Action - once per per long rest - The wizard may cast an Evocation spell of his choice twice this turn. It only counts as a single spell slot use."
+      },
+      {
+        "name": "arcanemagic4",
+        "label": "Arcane Magic 4",
+        "level": 12,
+        "desc": "Passive - Grants access to rank 4 Arcane magic spells and 1 rank 4 spell slot (increases to 2 slots at level 13)"
+      },
+      {
+        "name": "control",
+        "label": "Control",
+        "level": 9,
+        "desc": "Action - once per short rest - The wizard may cast an area based Evocation spell as normal. If that spell would normally damage a friendly target, the damage is not dealt"
+      },
+      {
+        "name": "arcanemagic5",
+        "label": "Arcane Magic 5",
+        "level": 16,
+        "desc": "Passive - Grants access to rank 5 Arcane magic spells and 1 rank 5 spell slot (increases to 2 slots at level 18)"
+      },
+      {
+        "name": "greaterfamiliar2",
+        "label": "Greater Familiar",
+        "level": 17,
+        "desc": "Passive - The wizards familiar becomes a much stronger version of itself, gaining 2 armour and dealing 2d8+INT damage"
+      },
+      {
+        "name": "arcanemastery",
+        "label": "Arcane Mastery",
+        "level": 20,
+        "desc": "Passive - All the wizards spells gain an additional +1 to all rolls and he gains an additional 20 spell slot points on short rests."
       }
     ]
   }

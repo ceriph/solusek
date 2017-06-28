@@ -1,3 +1,9 @@
 .spells {
   width: 90%;
 }
+
+td {
+  text-align: left;
+}
+
+
