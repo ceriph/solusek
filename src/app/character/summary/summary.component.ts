@@ -48,7 +48,7 @@ export class SummaryComponent implements OnInit {
             this.stats = this.statService.calculatePrimaryStats(player.character, race);
             this.classService.get(player.character.class).subscribe(clazz => {
               this.secondaryStats = this.statService.calculateSecondaryStats(player.character, race, clazz);
-              this.skills = this.characterService.getSkills(player.character, clazz);
+              this.skills = this.characterService.getSkills(player.character.level, clazz);
               this.clazz = clazz;
             });
           });

@@ -9,6 +9,7 @@ import {FirebaseListObservable} from "angularfire2/database/firebase_list_observ
 import {RaceService} from "../character/races/race.service";
 import {StatService} from "../character/stats/stat.service";
 import {ClassService} from "../character/classes/classes.service";
+import {CharacterService} from "../character/character.service";
 
 @Component({
   selector: 'app-dm',
@@ -21,6 +22,7 @@ export class DmComponent implements OnInit {
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
+              private characterService: CharacterService,
               private raceService: RaceService,
               private classService: ClassService,
               private statService: StatService,
@@ -37,6 +39,7 @@ export class DmComponent implements OnInit {
             player.character.primary = this.statService.calculatePrimaryStats(player.character, race);
             this.classService.get(player.character.class).subscribe(clazz => {
               player.character.secondary = this.statService.calculateSecondaryStats(player.character, race, clazz);
+              player.character.skills = this.characterService.getSkills(player.character.level, clazz)
             });
           });
         }

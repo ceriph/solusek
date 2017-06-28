@@ -13,12 +13,12 @@ export class CharacterService {
     return this.db.object('players/' + playerId + "/character");
   }
 
-  getSkills(character: Character, clazz: Class): Skill[] {
+  getSkills(level: number, clazz: Class): Skill[] {
     if(!clazz.skills)
       return [];
 
     return clazz.skills.filter(skill => {
-      return skill.level <= character.level;
+      return skill.level <= level;
     })
   }
 }
