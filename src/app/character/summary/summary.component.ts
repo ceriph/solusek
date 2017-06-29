@@ -5,13 +5,16 @@ import {Observable} from "rxjs/Observable";
 import {Player} from "../../players/player";
 import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
-import {SecondaryStats, Stats} from "../stats";
+import {SecondaryStats, PrimaryStats} from "../stats";
 import {RaceService} from "../races/race.service";
 import {ClassService} from "../classes/classes.service";
 import {Class} from "../classes/class";
 import {Race} from "../races/race";
 import {Skill} from "../skill";
 import {CharacterService} from "../character.service";
+import {Character} from "../character";
+import {EquipmentService} from "../equipment.service";
+import {Equipment} from "../equipment";
 
 @Component({
   selector: 'app-summary',
@@ -19,36 +22,39 @@ import {CharacterService} from "../character.service";
   styleUrls: ['./summary.component.css']
 })
 export class SummaryComponent implements OnInit {
-  player: Player;
+
   user: Observable<firebase.User>;
 
-  stats: Stats;
-  secondaryStats: SecondaryStats;
-
+  character: Character;
   race: Race;
   clazz: Class;
-  skills: Skill[];
+  skills: Skill[] = [];
+  equipment: Equipment[] = [];
 
   constructor(private afAuth: AngularFireAuth,
-              private playerService: PlayerService,
+              private characterService: CharacterService,
               private raceService: RaceService,
               private statService: StatService,
-              private characterService: CharacterService,
-              private classService: ClassService) {
+              private classService: ClassService,
+              private equipmentService: EquipmentService) {
     this.user = afAuth.authState;
   }
 
   ngOnInit() {
     this.user.subscribe(user => {
       if (user && user.uid) {
-        this.playerService.getPlayer(user.uid).subscribe(player => {
-          this.player = player;
-          this.raceService.get(player.character.race).subscribe(race => {
+        this.characterService.get(user.uid).subscribe(character => {
+          this.character = character;
+          for(let itemName of character.equipment) {
+            this.equipmentService.get(itemName).subscribe(item => {
+              this.equipment.push(item);
+            })
+          }
+          this.raceService.get(character.race).subscribe(race => {
             this.race = race;
-            this.stats = this.statService.calculatePrimaryStats(player.character, race);
-            this.classService.get(player.character.class).subscribe(clazz => {
-              this.secondaryStats = this.statService.calculateSecondaryStats(player.character, race, clazz);
-              this.skills = this.characterService.getSkills(player.character.level, clazz);
+            this.classService.get(character.class).subscribe(clazz => {
+              this.statService.calculate(character, race, clazz);
+              this.skills = this.characterService.getSkills(character.level, clazz);
               this.clazz = clazz;
             });
           });

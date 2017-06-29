@@ -1,57 +1,58 @@
-<div *ngIf="player">
+<div *ngIf="character">
   <div class="box">
     <h2>Basic Details</h2>
-    <p><b>Name:</b> {{player.character.info.name}}</p>
-    <p><b>Level:</b> {{player.character.level}}</p>
-    <p><b>Age:</b> {{player.character.info.age}}</p>
+    <p><b>Name:</b> {{character.info.name}}</p>
+    <p><b>Level:</b> {{character.level}}</p>
+    <p><b>Age:</b> {{character.info.age}}</p>
     <p *ngIf="race"><b>Race:</b> {{race.label}}</p>
     <p *ngIf="clazz"><b>Class:</b> {{clazz.label}}</p>
   </div>
-  <div class="box" *ngIf="stats">
+  <div class="box" *ngIf="character.primaryStats">
     <h2>Primary Stats</h2>
     <table>
-      <tr><td class="top">Strength</td><td class="top">{{stats.str}}</td></tr>
-      <tr><td>Constitution</td><td>{{stats.con}}</td></tr>
-      <tr><td>Agility</td><td>{{stats.agi}}</td></tr>
-      <tr><td>Intelligence</td><td>{{stats.int}}</td></tr>
-      <tr><td>Spirit</td><td>{{stats.spi}}</td></tr>
-      <tr><td>Charisma</td><td>{{stats.cha}}</td></tr>
+      <tr><td class="top">Strength</td><td class="top">{{character.primaryStats.str}}</td></tr>
+      <tr><td>Constitution</td><td>{{character.primaryStats.con}}</td></tr>
+      <tr><td>Agility</td><td>{{character.primaryStats.agi}}</td></tr>
+      <tr><td>Intelligence</td><td>{{character.primaryStats.int}}</td></tr>
+      <tr><td>Spirit</td><td>{{character.primaryStats.spi}}</td></tr>
+      <tr><td>Charisma</td><td>{{character.primaryStats.cha}}</td></tr>
     </table>
   </div>
-  <div class="box" *ngIf="secondaryStats">
+  <div class="box" *ngIf="character.secondaryStats">
     <h2>Secondary Stats</h2>
     <table>
-      <tr><td class="top">Health</td><td class="top">{{secondaryStats.health}}</td></tr>
-      <tr><td>Movement</td><td>{{secondaryStats.movement}}</td></tr>
-      <tr><td>Dodge</td><td>{{secondaryStats.dodge}}</td></tr>
-      <tr><td>Armour</td><td>{{secondaryStats.armour}}</td></tr>
+      <tr><td class="top">Health</td><td class="top">{{character.secondaryStats.health}}</td></tr>
+      <tr><td>Movement</td><td>{{character.secondaryStats.movement}}</td></tr>
+      <tr><td>Dodge</td><td>{{character.secondaryStats.dodge}}</td></tr>
+      <tr><td>Armour</td><td>{{character.secondaryStats.armour}}</td></tr>
     </table>
   </div>
-  <div class="box" *ngIf="skills">
+  <div class="box">
     <h2>Skills</h2>
     <div *ngFor="let skill of skills">
       <h3>{{skill.label}}</h3>
       <p>{{skill.desc}}</p>
     </div>
   </div>
-  <div class="box" *ngIf="player.character.equipment">
+  <div class="box">
     <h2>Equipment</h2>
-    <div *ngFor="let item of player.character.equipment">
-      <p>{{item.label}}</p>
+    <div *ngFor="let item of equipment">
+      <h4>{{item.label}}</h4>
+      <p>{{item.desc}}</p>
     </div>
   </div>
   <div class="box">
     <h2>Bio</h2>
     <h3>Appearance</h3>
-    <p>{{player.character.info.appearance}}</p>
+    <p>{{character.info.appearance}}</p>
     <h3>Personality</h3>
-    <p>{{player.character.info.personality}}</p>
+    <p>{{character.info.personality}}</p>
     <h3>Background</h3>
-    <p>{{player.character.info.background}}</p>
+    <p>{{character.info.background}}</p>
     <h3>Motivation</h3>
-    <p>{{player.character.info.motivation}}</p>
+    <p>{{character.info.motivation}}</p>
     <h3>Introduction</h3>
     <p><i>This will be created by the DM and will explain how your character arrived at the starting point, please get in touch if you'd like to make any alterations once it's done</i></p>
-    <p>{{player.character.info.introduction}}</p>
+    <p>{{character.info.introduction}}</p>
   </div>
 </div>

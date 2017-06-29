@@ -7,12 +7,12 @@
       {
         "name": "agi",
         "label": "Agility",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "int",
         "label": "Intelligence",
-        "modifier": 2
+        "value": 2
       }
     ],
     "skills": [
@@ -31,17 +31,17 @@
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "spi",
         "label": "Spirit",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "str",
         "label": "Strength",
-        "modifier": 1
+        "value": 1
       }
     ],
     "skills": [
@@ -60,17 +60,17 @@
       {
         "name": "agi",
         "label": "Agility",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "cha",
         "label": "Charisma",
-        "modifier": 1
+        "value": 1
       }
     ],
     "skills": [
@@ -89,27 +89,27 @@
       {
         "name": "int",
         "label": "Intelligence",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "spi",
         "label": "Spirit",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "cha",
         "label": "Charisma",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "str",
         "label": "Strength",
-        "modifier": -1
+        "value": -1
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": -1
+        "value": -1
       }
     ],
     "skills": [
@@ -141,27 +141,27 @@
       {
         "name": "str",
         "label": "Strength",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "agi",
         "label": "Agility",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "int",
         "label": "Intelligence",
-        "modifier": -1
+        "value": -1
       },
       {
         "name": "cha",
         "label": "Charisma",
-        "modifier": -1
+        "value": -1
       }
     ],
     "skills": [
@@ -180,17 +180,17 @@
       {
         "name": "str",
         "label": "Strength",
-        "modifier": 3
+        "value": 3
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "int",
         "label": "Intelligence",
-        "modifier": -1
+        "value": -1
       }
     ],
     "skills": [
@@ -209,17 +209,17 @@
       {
         "name": "str",
         "label": "Strength",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "int",
         "label": "Intelligence",
-        "modifier": -1
+        "value": -1
       }
     ],
     "skills": [
@@ -238,17 +238,17 @@
       {
         "name": "agi",
         "label": "Agility",
-        "modifier": 2
+        "value": 2
       },
       {
         "name": "con",
         "label": "Constitution",
-        "modifier": 1
+        "value": 1
       },
       {
         "name": "spi",
         "label": "Spirit",
-        "modifier": 1
+        "value": 1
       }
     ],
     "skills": [

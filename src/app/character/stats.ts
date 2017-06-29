@@ -1,4 +1,4 @@
-export class Stats {
+export class PrimaryStats {
   str: number = 1;
   con: number = 1;
   agi: number = 1;

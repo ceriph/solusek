@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {SecondaryStats, Stats} from "../stats";
+import {SecondaryStats, PrimaryStats} from "../stats";
 import {Character} from "../character";
 import {Race} from "../races/race";
 import {Class} from "../classes/class";
@@ -12,7 +12,7 @@ export class StatService {
   constructor(private equipmentService: EquipmentService) {
   }
 
-  calculateAvailable(character: Character, stats: Stats): number {
+  calculateAvailable(character: Character, stats: PrimaryStats): number {
     let initial = 5;
     if (character.race === "human") {
       initial = 10;
@@ -21,35 +21,7 @@ export class StatService {
     return initial - (current - 6) + (character.level - 1);
   }
 
-  calculatePrimaryStats(character: Character, race: Race): Stats {
-    let base = new Stats();
-    base.str = character.stats.str;
-    base.con = character.stats.con;
-    base.agi = character.stats.agi;
-    base.int = character.stats.int;
-    base.spi = character.stats.spi;
-    base.cha = character.stats.cha;
-
-    let modifiers: Modifier[];
-
-    if (race.modifiers) {
-      modifiers = race.modifiers.concat(character.modifiers);
-    } else {
-      modifiers = character.modifiers
-    }
-
-    if (modifiers) {
-      for (let modifier of modifiers) {
-        if (modifier) {
-          base[modifier.name] += modifier.modifier;
-        }
-      }
-    }
-
-    return base;
-  }
-
-  calculateModifiers(character: Character, race: Race): Stats {
+  calculateModifiers(character: Character, race: Race): PrimaryStats {
     let base = {
       str: 0,
       con: 0,
@@ -64,48 +36,73 @@ export class StatService {
 
       for (let modifier of modifiers) {
         if (modifier)
-          base[modifier.name] += modifier.modifier;
+          base[modifier.name] += modifier.value;
       }
     }
 
     return base;
   }
 
-  calculateSecondaryStats(character: Character, race: Race, clazz: Class): SecondaryStats {
-    let base = new SecondaryStats();
+  calculate(character: Character, race: Race, clazz: Class) {
+    character.primaryStats = new PrimaryStats();
+    character.primaryStats.str = character.baseStats.str;
+    character.primaryStats.con = character.baseStats.con;
+    character.primaryStats.agi = character.baseStats.agi;
+    character.primaryStats.int = character.baseStats.int;
+    character.primaryStats.spi = character.baseStats.spi;
+    character.primaryStats.cha = character.baseStats.cha;
+    character.secondaryStats = new SecondaryStats();
 
-    if (character.race === "woodelf") {
-      base.movement += 2;
+    // modifiers from race
+    StatService.applyModifiers(character, race.modifiers);
+
+    // modifiers from equipment
+    for(let itemName of character.equipment) {
+      this.equipmentService.get(itemName).subscribe(item => {
+        StatService.applyModifiers(character, item.modifiers);
+      });
     }
 
-    if (character.race === "dwarf") {
-      base.health += character.level * 5;
+    // todo tidy racial passives as modifiers eventually
+
+    // health
+    let hitDice = clazz.hit;
+    if(character.race === 'dwarf') {
+      hitDice += 5;
+    }
+    character.secondaryStats.health += (hitDice + character.primaryStats.con) + ((character.level - 1) * (hitDice + character.primaryStats.con));
+
+    // dodge
+    character.secondaryStats.dodge += 10 + character.primaryStats.agi;
+    if(character.race === "halfling") {
+      character.secondaryStats.dodge += 1; // todo level increases
     }
 
-    if (character.race === "halfling") {
-      base.dodge += 1; // todo add level inc
+    // movement
+    character.secondaryStats.movement += 1 + character.primaryStats.agi;
+    if(character.race === "woodelf") {
+      character.secondaryStats.movement += 2; // todo level increases
     }
 
-    if (character.race === "iksar") {
-      base.armour += 1; // todo as above
+    // armour
+    if(character.race === "iksar") {
+      character.secondaryStats.armour += 1; // todo level increases
     }
+  }
 
-    let primary = this.calculatePrimaryStats(character, race);
-
-    base.health += (primary.con + clazz.hit) + ((character.level - 1) * (primary.con + Math.floor(clazz.hit / 2)));
-    base.dodge += 10 + primary.agi;
-    base.movement += primary.agi + 1;
-
-    if(character.equipment) {
-      for(let item of character.equipment) {
-        if(item.type === "armour") {
-          this.equipmentService.getArmour(item.subtype).subscribe(armour => {
-            base.armour += armour.base + item.bonus;
-          })
+  private static applyModifiers(character: Character, modifiers: Modifier[]) {
+    if(modifiers) {
+      for (let modifier of modifiers) {
+        if (StatService.isPrimary(modifier.name)) {
+          character.primaryStats[modifier.name] += modifier.value;
+        } else {
+          character.secondaryStats[modifier.name] += modifier.value;
         }
       }
     }
+  }
 
-    return base;
+  private static isPrimary(stat) {
+    return stat === 'str' || stat === 'con' || stat === 'agi' || stat === 'int' || stat === 'spi' || stat === 'cha';
   }
 }

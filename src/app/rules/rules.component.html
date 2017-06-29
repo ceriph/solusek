@@ -29,6 +29,7 @@
               <ul>
                 <li><a href="rules#Movement">Movement</a></li>
                 <li><a href="rules#Action">Action</a></li>
+                <li><a href="rules#Range">Range</a></li>
                 <li><a href="rules#Instant">Instant</a></li>
               </ul>
             </li>
@@ -300,7 +301,7 @@
 
     <h4 id="Action">Action</h4>
     <p>
-      For their action, characters have the choice of <b>attack</b>, <b>skill</b>, <b>stabilize</b> and <b>equip</b>.
+      For their action, characters have the choice of <b>attack</b>, <b>skill</b>, <b>spell</b>, <b>stabilize</b> and <b>equip</b>.
     </p>
 
     <h5>Attack</h5>
@@ -308,8 +309,7 @@
       The character can make a basic attack with their main weapon. This consists of the steps <b>roll attack</b>,
       <b>compare to avoidance rating</b>, if the attack is equal to or higher than avoidance then the character also
       <b>rolls for damage</b>, <b>subtracts the targets mitigation</b>, then if any damage is left over <b>health is
-      removed
-      from the target</b>.
+      removed from the target</b>.
     </p>
     <p>
       Take for example Dave the quiet warrior, he is level 1, has 3 agility and 2 strength wielding a damaged short
@@ -333,6 +333,12 @@
       described within the skill text. Many skills are also <b>attacks</b> and will follow the same process above.
     </p>
 
+    <h5>Spell</h5>
+    <p>
+      If the character has an active spell slot, they may cast the spell, having the effect described. Some spells
+      are also classed as <b>attacks</b> and will follow the process above.
+    </p>
+
     <h5>Equip</h5>
     <p>
       The character can unequip or equip something from their inventory, such as swapping out a shield for another
@@ -342,22 +348,33 @@
     <h5>Stabilize</h5>
     <p>
       The character can use bandages to attempt to stabilize a dying character. They must roll a 1d20 and on 11 or
-      above,
-      the target is considered <b>stabilized</b>.
+      above, the target is considered <b>stabilized</b>.
+    </p>
+
+    <h4 id="Range">Range</h4>
+    <p>
+      All spells, actions and weapons have a certain <b>range</b>. A range of 0 means it can only
+      reach adjacent tiles. A reach of 1 means any tile within one square. Ranges greater than 1 should be considered
+      'ranged attacks' and those attacks can exceed the given range value with a penalty. Trace the
+      the number of squares in a straight line and if it is less than or equal to the range there is no penalty, however
+      for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional
+      square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares
+      is -1 + -2 + -3 (-6) and so on.
+    </p>
+    <p>
+      Weapons weapons cannot be used against adjacent targets.
     </p>
 
     <h4 id="Instant">Instant</h4>
     <p>
       At any time during the Turns phase (not only on their own turn) characters may interrupt to perform any skills
-      they
-      have with the type 'instant'.
+      they have with the type 'instant', provided the requirements described in the skill are met.
     </p>
 
     <h3 id="CriticalHits">Critical Hits</h3>
     <p>
       When a character rolls a <b>natural</b> 20, as in their d20 roll without modifiers is 20, they score a hit
-      regardless
-      of the targets <b>avoidance</b> rating. They also do not need to roll any damage dice, assuming full damage.
+      regardless of the targets <b>avoidance</b> rating. They also do not need to roll any damage dice, assuming full damage.
     </p>
   </div>
 

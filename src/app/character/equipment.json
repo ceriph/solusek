@@ -1,19 +1,95 @@
 {
-  "armour": {
-    "cloth": {
-      "base": 2
-    },
-    "leather": {
-      "base": 3,
-      "proficiency": "lightarmour"
-    },
-    "chain": {
-      "base": 4,
-      "proficiency": "mediumarmour"
-    },
-    "plate": {
-      "base": 5,
-      "proficiency": "platearmour"
-    }
+  "clotharmour": {
+    "label": "Cloth Robe",
+    "desc": "An old, plain cloth robe",
+    "type": "armour",
+    "modifiers": []
+  },
+  "leatherarmour": {
+    "label": "Leather Tunic",
+    "desc": "An old, plain leather tunic",
+    "type": "armour",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 1
+      }
+    ]
+  },
+  "chainarmour": {
+    "label": "Chainmail Tunic",
+    "desc": "An old, plain chainmail tunic",
+    "type": "armour",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 2
+      },
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -1
+      }
+    ]
+  },
+  "platearmour": {
+    "label": "Steel Breastplate",
+    "desc": "An old, plain steel breastplate",
+    "type": "armour",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 3
+      },
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -2
+      },
+      {
+        "name": "movement",
+        "label": "Movement",
+        "value": -1
+      }
+    ]
+  },
+  "dagger": {
+    "label": "Dagger",
+    "desc": "An old, plain dagger. Does 1d4+STR piercing damage.",
+    "type": "weapon",
+    "modifiers": []
+  },
+  "shortsword": {
+    "label": "Short Sword",
+    "desc": "An old, plain short sword. Does 1d6+STR slashing damage.",
+    "type": "weapon",
+    "modifiers": []
+  },
+  "bastardsword": {
+    "label": "Bastard Sword",
+    "desc": "An old, plain bastard sword. Does 1d10+STR slashing damage.",
+    "type": "weapon",
+    "modifiers": []
+  },
+  "shortbow": {
+    "label": "Short Bow",
+    "desc": "An old, plain short bow. Does 1d6+(STR+AGI)/2 damage and has 5 range.",
+    "type": "weapon",
+    "modifiers": []
+  },
+  "magicstaffarcane": {
+    "label": "Magic Staff (Arcane)",
+    "desc": "An old, plain staff. Does 1d6+INT arcane damage and has 10 range.",
+    "type": "weapon",
+    "modifiers": []
+  },
+  "lockpick": {
+    "label": "Lockpick",
+    "desc": "An old, plain lockpick. Enables the holder to attempt to pick a lock.",
+    "type": "tool",
+    "modifiers": []
   }
 }

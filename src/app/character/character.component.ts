@@ -33,7 +33,7 @@ export class CharacterComponent implements OnInit {
             this.router.navigate(['/character/races']);
           } else if (!this.player.character.class) {
             this.router.navigate(['/character/classes']);
-          } else if (!this.player.character.stats) {
+          } else if (!this.player.character.baseStats) {
             this.router.navigate(['/character/stats']);
           } else if (!this.player.character.info) {
             this.router.navigate(['/character/info']);

@@ -5,30 +5,9 @@
     "desc": "It might not seem conventional to bring a guitar to a sword fight, but once you see a bard at work you will understand. They use their gifts of music to weave magical sonnets, bolstering their allies and weakening their foes. Rock on.",
     "hit": 8,
     "equipment": [
-      {
-        "name": "damagedleatherarmour",
-        "label": "Damaged Leather Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "leather",
-        "bonus": -2
-      },
-      {
-        "name": "damagedshortsword",
-        "label": "Damaged Short Sword",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "shortsword",
-        "bonus": -2
-      },
-      {
-        "name": "flute",
-        "label": "Flute",
-        "desc": "A musical flute",
-        "type": "tool",
-        "subtype": "flute",
-        "bonus": 0
-      }
+      "leatherarmour",
+      "shortsword",
+      "flute"
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons, Magic Weapons, Small Shields",
     "recommendations": "Charisma, Agility, Strength",
@@ -53,30 +32,9 @@
     "desc": "Clerics are devoted to helping the living stay living, and as such in combat they are focused on healing their teammates.",
     "hit": 8,
     "equipment": [
-      {
-        "name": "damagedclothrobe",
-        "label": "Damaged Cloth Robe",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "cloth",
-        "bonus": -2
-      },
-      {
-        "name": "damagedmace",
-        "label": "Damaged Mace",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "mace",
-        "bonus": -2
-      },
-      {
-        "name": "damagedroundshield",
-        "label": "Damaged Round Shield",
-        "desc": "An old, damaged shield, it has seen better days",
-        "type": "shield",
-        "subtype": "round",
-        "bonus": -2
-      }
+      "clotharmour",
+      "mace",
+      "roundshield"
     ],
     "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Small Shields",
     "recommendations": "Spirit, Constitution, Agility",
@@ -101,22 +59,8 @@
     "desc": "Enchanters are the masters of the mind, using their magical abilities to control and confuse enemies. Main roles in battle are crowd control and damage.",
     "hit": 6,
     "equipment": [
-      {
-        "name": "damagedclothrobe",
-        "label": "Damaged Cloth Robe",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "cloth",
-        "bonus": -2
-      },
-      {
-        "name": "damagedwandarcane",
-        "label": "Damaged Wand (Arcane)",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "wand",
-        "bonus": -2
-      }
+      "clotharmour",
+      "wandarcane"
     ],
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Charisma, Intelligence, Constitution",
@@ -141,14 +85,7 @@
     "desc": "Monks avoid wearing armour and wielding weapons, and rather aim to hone their body into the ultimate weapon by mastering the martial arts and harnessing their inner spirit.",
     "hit": 8,
     "equipment": [
-      {
-        "name": "damagedclothrobe",
-        "label": "Damaged Cloth Robe",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "cloth",
-        "bonus": -2
-      }
+      "clothrobe"
     ],
     "proficiencies": "Simple Weapons",
     "recommendations": "Strength, Agility, Spirit, Constitution",
@@ -179,22 +116,8 @@
     "desc": "To some, death is not something to be feared but to be harnessed for power. Necromancers study and hone their ability to control the forces of life and death directly. Their main role in combat is damage.",
     "hit": 6,
     "equipment": [
-      {
-        "name": "damagedclothrobe",
-        "label": "Damaged Cloth Robe",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "cloth",
-        "bonus": -2
-      },
-      {
-        "name": "damagedwanddark",
-        "label": "Damaged Wand (Dark)",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "wand",
-        "bonus": -2
-      }
+      "clotharmour",
+      "wanddark"
     ],
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Intelligence, Constitution, Agility",
@@ -219,22 +142,8 @@
     "desc": "A cross between a Warrior and a Cleric, Paladins combine their fighting abilities with healing spells. They are also particularly effective against undead enemies. Paladins can either focus on a tanking role, or as a healer.",
     "hit": 10,
     "equipment": [
-      {
-        "name": "damagedchainarmour",
-        "label": "Damaged Chain Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "chain",
-        "bonus": -2
-      },
-      {
-        "name": "damagedbastardsword",
-        "label": "Damaged Bastard Sword",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "bastardsword",
-        "bonus": -2
-      }
+      "chainarmour",
+      "bastardsword"
     ],
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small Shields, Medium Shields",
     "recommendations": "Constitution, Strength, Spirit",
@@ -301,30 +210,9 @@
     "desc": "Rangers are solitary characters often at one with nature. They make exceptional trackers and are proficient with ranged weapons. They can also go toe to toe with enemies if required.",
     "hit": 8,
     "equipment": [
-      {
-        "name": "damagedleatherarmour",
-        "label": "Damaged Leather Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "leather",
-        "bonus": -2
-      },
-      {
-        "name": "damagedshortsword",
-        "label": "Damaged Short Sword",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "shortsword",
-        "bonus": -2
-      },
-      {
-        "name": "damagedshortbow",
-        "label": "Damaged Short Bow",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "shortbow",
-        "bonus": -2
-      }
+      "leatherarmour",
+      "shortsword",
+      "shortbow"
     ],
     "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons, Small Shields",
     "recommendations": "Constitution, Strength, Spirit",
@@ -391,22 +279,8 @@
     "desc": "Known as 'dark paladins', Reavers are a cross between a Warrior and a Necromancer, employing a mix of physical abilities and dark magic in combat. Reavers can focus on tanking or damage roles.",
     "hit": 10,
     "equipment": [
-      {
-        "name": "damagedchainarmour",
-        "label": "Damaged Chain Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "chain",
-        "bonus": -2
-      },
-      {
-        "name": "damagedbastardsword",
-        "label": "Damaged Bastard Sword",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "bastardsword",
-        "bonus": -2
-      }
+      "chainarmour",
+      "bastardsword"
     ],
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small Shields, Medium Shields",
     "recommendations": "Constitution, Strength, Intelligence",
@@ -431,30 +305,9 @@
     "desc": "Rogues like to stay in the shadows, remaining hidden and striking enemies from behind. Thought rogues like to be up close with enemies to do large amounts of damage, they can't afford to take many hits.",
     "hit": 6,
     "equipment": [
-      {
-        "name": "damagedleatherarmour",
-        "label": "Damaged Leather Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "leather",
-        "bonus": -2
-      },
-      {
-        "name": "damageddagger",
-        "label": "Damaged Dagger",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "dagger",
-        "bonus": -2
-      },
-      {
-        "name": "lockpick",
-        "label": "Lockpick",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "tool",
-        "subtype": "lockpick",
-        "bonus": 0
-      }
+      "leatherarmour",
+      "dagger",
+      "lockpick"
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons",
     "recommendations": "Agility, Intelligence, Strength",
@@ -533,22 +386,8 @@
     "desc": "Primal and ritualistic, shamans channel the energies of their ancestors to heal and bolster their allies, as well as harness the weather to damage their enemies.",
     "hit": 8,
     "equipment": [
-      {
-        "name": "damagedleatherarmour",
-        "label": "Damaged Leather Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "leather",
-        "bonus": -2
-      },
-      {
-        "name": "damagedspear",
-        "label": "Damaged Spear",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "spear",
-        "bonus": -2
-      }
+      "leatherarmour",
+      "spear"
     ],
     "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Small Shields",
     "recommendations": "Spirit, Constitution",
@@ -570,30 +409,9 @@
   "warrior": {
     "desc": "The masters of arms, warriors are commonly found at the front of battle clad in heavy armour. They have a wide variety of available weapons, shields and armour. Warriors are one of the few classes to not directly employ magic in any way, and generally do not trust it.",
     "equipment": [
-      {
-        "name": "damagedchainarmour",
-        "label": "Damaged Chain Armour",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "chain",
-        "bonus": -2
-      },
-      {
-        "name": "damagedshortsword",
-        "label": "Damaged Short Sword",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "shortsword",
-        "bonus": -2
-      },
-      {
-        "name": "damagedroundshield",
-        "label": "Damaged Round Shield",
-        "desc": "An old, damaged shield, it has seen better days",
-        "type": "shield",
-        "subtype": "round",
-        "bonus": -2
-      }
+      "chainarmour",
+      "shortsword",
+      "roundshield"
     ],
     "hit": 12,
     "label": "Warrior",
@@ -618,22 +436,8 @@
   "wizard": {
     "desc": "Harnessing Arcane magic, wizards unleash fury upon their foes. They are the strongest spell casters in terms of raw damage output.",
     "equipment": [
-      {
-        "name": "damagedclothrobe",
-        "label": "Damaged Cloth Robe",
-        "desc": "An old, damaged piece of armour, it has seen better days",
-        "type": "armour",
-        "subtype": "cloth",
-        "bonus": -2
-      },
-      {
-        "name": "damagedmagicstaffarcane",
-        "label": "Damaged Magic Staff (Arcane)",
-        "desc": "An old, damaged weapon, it has seen better days",
-        "type": "weapon",
-        "subtype": "magicstaff",
-        "bonus": -2
-      }
+      "clothrobe",
+      "magicstaffarcane"
     ],
     "hit": 6,
     "label": "Wizard",

@@ -182,7 +182,7 @@
 <div class="box fill">
   <h1>Players</h1>
   <div *ngFor="let player of players">
-    <div *ngIf="player.character && player.name !== 'Matt' && player.name !== 'Jenny'">
+    <div *ngIf="player.character && player.name !== 'Jenny'">
       <h2>{{player.name}}</h2>
       <h3>Basic Details</h3>
       <p><b>Name:</b> {{player.character.info.name}}</p>
@@ -190,42 +190,42 @@
       <p><b>Age:</b> {{player.character.info.age}}</p>
       <p><b>Race:</b> {{player.character.race}}</p>
       <p><b>Class:</b> {{player.character.class}}</p>
-    8  <div *ngIf="player.character.primary">
-        <h3>Base Stats</h3>
+      <div *ngIf="player.character.primaryStats">
+        <h3>Primary Stats</h3>
         <table>
           <tr>
             <td class="top">Strength</td>
-            <td class="top">{{player.character.stats.str}}</td>
+            <td class="top">{{player.character.primaryStats.str}}</td>
           </tr>
           <tr>
             <td>Constitution</td>
-            <td>{{player.character.primary.con}}</td>
+            <td>{{player.character.primaryStats.con}}</td>
           </tr>
           <tr>
             <td>Agility</td>
-            <td>{{player.character.primary.agi}}</td>
+            <td>{{player.character.primaryStats.agi}}</td>
           </tr>
           <tr>
             <td>Intelligence</td>
-            <td>{{player.character.primary.int}}</td>
+            <td>{{player.character.primaryStats.int}}</td>
           </tr>
           <tr>
             <td>Spirit</td>
-            <td>{{player.character.primary.spi}}</td>
+            <td>{{player.character.primaryStats.spi}}</td>
           </tr>
           <tr>
             <td>Charisma</td>
-            <td>{{player.character.primary.cha}}</td>
+            <td>{{player.character.primaryStats.cha}}</td>
           </tr>
         </table>
       </div>
-      <div *ngIf="player.character.secondary">
+      <div *ngIf="player.character.secondaryStats">
         <h3>Secondary Stats</h3>
         <table>
-          <tr><td class="top">Health</td><td class="top">{{player.character.secondary.health}}</td></tr>
-          <tr><td>Movement</td><td>{{player.character.secondary.movement}}</td></tr>
-          <tr><td>Dodge</td><td>{{player.character.secondary.dodge}}</td></tr>
-          <tr><td>Armour</td><td>{{player.character.secondary.armour}}</td></tr>
+          <tr><td class="top">Health</td><td class="top">{{player.character.secondaryStats.health}}</td></tr>
+          <tr><td>Movement</td><td>{{player.character.secondaryStats.movement}}</td></tr>
+          <tr><td>Dodge</td><td>{{player.character.secondaryStats.dodge}}</td></tr>
+          <tr><td>Armour</td><td>{{player.character.secondaryStats.armour}}</td></tr>
         </table>
       </div>
       <h3>Skills</h3>

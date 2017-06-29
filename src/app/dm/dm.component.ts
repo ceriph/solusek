@@ -33,12 +33,11 @@ export class DmComponent implements OnInit {
   ngOnInit() {
     this.playerService.getPlayers().subscribe(players => {
       this.players = players;
-      for(let player of players) {
-        if(player.character && player.character.stats) {
+      for (let player of players) {
+        if (player.character && player.character.baseStats) {
           this.raceService.get(player.character.race).subscribe(race => {
-            player.character.primary = this.statService.calculatePrimaryStats(player.character, race);
             this.classService.get(player.character.class).subscribe(clazz => {
-              player.character.secondary = this.statService.calculateSecondaryStats(player.character, race, clazz);
+              this.statService.calculate(player.character, race, clazz);
               player.character.skills = this.characterService.getSkills(player.character.level, clazz)
             });
           });

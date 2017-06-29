@@ -6,7 +6,7 @@ import {FirebaseObjectObservable} from "angularfire2/database";
 import * as firebase from "firebase/app";
 import {RaceService} from "../races/race.service";
 import {Race} from "../races/race";
-import {Stats} from "../stats";
+import {PrimaryStats} from "../stats";
 import {StatService} from "./stat.service";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
@@ -23,9 +23,9 @@ export class StatsComponent implements OnInit {
 
   selectedRace: Race;
 
-  baseStats: Stats;
-  stats: Stats;
-  modifiers: Stats;
+  baseStats: PrimaryStats;
+  stats: PrimaryStats;
+  modifiers: PrimaryStats;
 
   availablePoints: number;
 
@@ -48,11 +48,11 @@ export class StatsComponent implements OnInit {
               this.modifiers = this.statService.calculateModifiers(character, race);
             });
           }
-          this.baseStats = new Stats(); // todo if greater than level 1 then set to current
-          if (character.stats) {
-            this.stats = character.stats;
+          this.baseStats = new PrimaryStats();
+          if (character.baseStats) {
+            this.stats = character.baseStats;
           } else {
-            this.stats = new Stats();
+            this.stats = new PrimaryStats();
           }
 
           this.setAvailablePoints();
@@ -92,7 +92,7 @@ export class StatsComponent implements OnInit {
 
   save(): void {
     this.character.update({
-      stats: this.stats
+      baseStats: this.stats
     }).then(() => this.router.navigate(['/character/info']));
   }
 }
