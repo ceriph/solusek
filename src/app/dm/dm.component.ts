@@ -10,10 +10,12 @@ import {RaceService} from "../character/races/race.service";
 import {StatService} from "../character/stats/stat.service";
 import {ClassService} from "../character/classes/classes.service";
 import {CharacterService} from "../character/character.service";
+import {EquipmentService} from "../character/equipment.service";
 
 @Component({
   selector: 'app-dm',
-  templateUrl: './dm.component.html'
+  templateUrl: './dm.component.html',
+  styleUrls: ['./dm.component.css']
 })
 export class DmComponent implements OnInit {
 
@@ -26,6 +28,7 @@ export class DmComponent implements OnInit {
               private raceService: RaceService,
               private classService: ClassService,
               private statService: StatService,
+              private equipmentService: EquipmentService,
               private router: Router) {
     this.user = afAuth.authState;
   }
@@ -38,7 +41,15 @@ export class DmComponent implements OnInit {
           this.raceService.get(player.character.race).subscribe(race => {
             this.classService.get(player.character.class).subscribe(clazz => {
               this.statService.calculate(player.character, race, clazz);
-              player.character.skills = this.characterService.getSkills(player.character.level, clazz)
+              player.character.skills = this.characterService.getSkills(player.character.level, clazz);
+              for(let itemName of player.character.equipment) {
+                this.equipmentService.get(itemName).subscribe(item => {
+                  if(!player.character.items) {
+                    player.character.items = [];
+                  }
+                  player.character.items.push(item);
+                });
+              }
             });
           });
         }

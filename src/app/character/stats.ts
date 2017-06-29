@@ -20,4 +20,5 @@ export class SecondaryStats {
   movement: number = 0;
   armour: number = 0;
   magicReduction: number = 0;
+  damage: string = "";
 }
