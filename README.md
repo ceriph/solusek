@@ -16,5 +16,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## TODO
 
-* Fix character creation status
-* Fix crash issue on stat save
+* Add character advancement functionality
+* Separate 'equipment' and 'inventory' and add equip/unequip
+  * Add 'slot' to character and equipment to allocate items 
+* Add proficiency service to calculate whether a character can use an item
+* Tidy racial passives into modifiers to remove hardcoding
+* Allow modifiers to be 'functions' that get applied - custom DSL?
+* Calculate attack damage
+  * Weapons need a 'base' die and stat modifier function 
+* Add image upload for characters

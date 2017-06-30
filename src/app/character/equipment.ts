@@ -5,6 +5,7 @@ export class Equipment {
   label: string;
   desc: string;
   type: string;
+  proficiency: string;
   subtype: string;
   modifiers: Modifier[];
 }

@@ -1,15 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {Player} from "../../players/player";
+import {Component, OnInit} from "@angular/core";
 import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
 import {Class} from "./class";
 import {Observable} from "rxjs/Observable";
 import {AngularFireAuth} from "angularfire2/auth";
-import {PlayerService} from "../../players/player.service";
 import {ClassService} from "./classes.service";
 import {Router} from "@angular/router";
 import * as firebase from "firebase/app";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
+import {EquipmentService} from "../equipment.service";
+import {Equipment} from "../equipment";
 
 @Component({
   selector: 'app-classes',
@@ -22,10 +22,12 @@ export class ClassesComponent implements OnInit {
 
   classes: FirebaseListObservable<Class[]>;
   selectedClass: Class;
+  equipment: Equipment[];
 
   constructor(private afAuth: AngularFireAuth,
               private characterService: CharacterService,
               private classService: ClassService,
+              private equipmentService: EquipmentService,
               private router: Router) {
     this.user = afAuth.authState;
   }
@@ -40,6 +42,7 @@ export class ClassesComponent implements OnInit {
           if (character.class) {
             this.classService.get(character.class).subscribe(clazz => {
               this.selectedClass = clazz;
+              this.updateEquipment(clazz);
             });
           }
         })
@@ -49,7 +52,17 @@ export class ClassesComponent implements OnInit {
 
   select(clazz: Class): void {
     this.selectedClass = clazz;
+    this.updateEquipment(clazz);
     window.scrollTo(0, 0);
+  }
+
+  updateEquipment(clazz: Class) {
+    this.equipment = [];
+    for(let itemName of clazz.equipment) {
+      this.equipmentService.get(itemName).subscribe(item => {
+        this.equipment.push(item);
+      });
+    }
   }
 
   save(): void {

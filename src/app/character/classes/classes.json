@@ -173,6 +173,12 @@
         "desc": "Action - once per short rest - the paladin enchants his shield with magical energy, causing it to block all damage he would receive next round. Requires a shield."
       },
       {
+        "name": "resistance",
+        "label": "Resistance",
+        "level": 5,
+        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+      },
+      {
         "name": "lightmagic2",
         "label": "Light Magic 2",
         "level": 8,
@@ -197,6 +203,12 @@
         "desc": "Passive - Grants access to rank 3 Light magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
       },
       {
+        "name": "avatar",
+        "label": "Avatar",
+        "level": 17,
+        "desc": "Action - once per long rest - The paladin becomes an avatar of the gods, gaining +2 to all primary stats, 1d6+SPI temporary health, 5 armour and 5 magic reduction for 3 rounds."
+      },
+      {
         "name": "lightmagic4",
         "label": "Light Magic 4",
         "level": 20,
@@ -214,7 +226,7 @@
       "shortsword",
       "shortbow"
     ],
-    "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons, Small Shields",
+    "proficiencies": "Light Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons",
     "recommendations": "Constitution, Strength, Spirit",
     "skills": [
       {
@@ -236,10 +248,22 @@
         "desc": "Passive - Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
       },
       {
+        "name": "evade",
+        "label": "Evade",
+        "level": 3,
+        "desc": "Instant - Once per short rest - When an enemy makes an attack on the ranger that misses, the ranger may immediately choose to move up to their movement value."
+      },
+      {
         "name": "animalcompanion",
         "label": "Animal Companion",
         "level": 4,
         "desc": "Passive - The ranger can charm an animal up to his level to become his companion. The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type and level of the animal and the ranger can command the companion in battle."
+      },
+      {
+        "name": "resistance",
+        "label": "Resistance",
+        "level": 5,
+        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "extraattack",
@@ -264,6 +288,12 @@
         "label": "Nature Magic 3",
         "level": 14,
         "desc": "Passive - Grants access to rank 3 Nature magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+      },
+      {
+        "name": "Nature's Furt",
+        "label": "Nature Magic 3",
+        "level": 17,
+        "desc": "Action - once per long rest - The ranger and his animal companion enter a fury state, both gaining +5 attack and +5 damage for 3 rounds."
       },
       {
         "name": "naturemagic4",
@@ -316,7 +346,7 @@
         "name": "backstab",
         "label": "Backstab",
         "level": 1,
-        "desc": "Action - make an attack from behind a target, if it hits deal weapon damage +1d4 (increases to 2d4 at level 4, 3d4 at level 8, 4d4 at level 12, and 5d4 at level 16, and 6d4 at level 20). Piercing weapon required."
+        "desc": "Action - make an attack from behind a target, if it hits the rogue deals weapon damage +1d4 and their damage stat modifier becomes (AGI+STR)/2 (increases to +2d4 at level 5, 3d4 at level 10, 4d4 at level 15, and 5d4 at level 20). Piercing weapon required."
       },
       {
         "name": "thievery",
@@ -337,10 +367,16 @@
         "desc": "Action - The rogue adds a poison to their main weapon, any characters that take damage from this weapon are poisoned with strength 1d20+INT. They must make a saving throw each turn or take 1d4 damage (increases to 2d4 at level 7, 3d4 at level 14, 4d4 at level 19."
       },
       {
-        "name": "throwdirt",
-        "label": "Throw Dirt",
-        "level": 6,
-        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+        "name": "keeneye",
+        "label": "Keen Eye",
+        "level": 5,
+        "desc": "Passive - the rogues attack rolls of 19 and 20 count as critical."
+      },
+      {
+        "name": "resistance",
+        "label": "Resistance",
+        "level": 5,
+        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "tumble",
@@ -364,13 +400,19 @@
         "name": "shadowstrike",
         "label": "Shadow Strike",
         "level": 12,
-        "desc": "Action - once per short rest - If the rogue has not been attacked this round, the may instantly appear behind their target and perform an attack."
+        "desc": "Action - once per short rest - The rogue instantly appears behind a target within their movement and performs a 'Backstab' attack."
       },
       {
         "name": "extraattack2",
         "label": "Extra Attack 2",
         "level": 15,
         "desc": "Passive - After performing an attack with their secondary weapon (via dual wield), the character may choose to make an additional regular attack with their secondary weapon."
+      },
+      {
+        "name": "keeneye2",
+        "label": "Keen Eye 2",
+        "level": 17,
+        "desc": "Passive - the rogues attack rolls of 18, 19 and 20 count as critical."
       },
       {
         "name": "assassinate",
@@ -446,6 +488,12 @@
     "recommendations": "Intelligence, Agility, Constitution",
     "skills": [
       {
+        "name": "bookworm",
+        "label": "Bookworm",
+        "level": 1,
+        "desc": "Passive - The wizard gains +1 to any knowledge checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+      },
+      {
         "name": "arcanemagic1",
         "label": "Arcane Magic 1",
         "level": 1,
@@ -470,10 +518,22 @@
         "desc": "Passive - Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
       },
       {
+        "name": "resistance",
+        "label": "Resistance",
+        "level": 5,
+        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+      },
+      {
         "name": "clearmind",
         "label": "Clear Mind",
         "level": 5,
         "desc": "Action - once per short rest - The wizard refreshes a single spent spell slot."
+      },
+      {
+        "name": "sharpmind",
+        "label": "Sharp Mind",
+        "level": 7,
+        "desc": "Passive - the wizards spell/attack rolls of 19 and 20 count as critical"
       },
       {
         "name": "arcanemagic3",
@@ -494,10 +554,10 @@
         "desc": "Passive - Grants access to rank 4 Arcane magic spells and 1 rank 4 spell slot (increases to 2 slots at level 13)"
       },
       {
-        "name": "control",
-        "label": "Control",
-        "level": 9,
-        "desc": "Action - once per short rest - The wizard may cast an area based Evocation spell as normal. If that spell would normally damage a friendly target, the damage is not dealt"
+        "name": "masterfulcontrol",
+        "label": "Masterful Control",
+        "level": 13,
+        "desc": "Action - once per short rest - The wizard may cast an area based Evocation spell as normal. Any friendly targets within that area are not affected."
       },
       {
         "name": "arcanemagic5",

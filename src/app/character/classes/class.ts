@@ -8,5 +8,5 @@ export class Class {
   hit: number;
   proficiencies: string;
   skills: Skill[];
-  equipment: Equipment[];
+  equipment: string[];
 }

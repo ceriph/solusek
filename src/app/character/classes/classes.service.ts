@@ -15,6 +15,7 @@ export class ClassService {
   }
 
   get(name: string): FirebaseObjectObservable<Class> {
+    console.log("Getting class:", name);
     return this.db.object(this.path + '/' + name);
   }
 }

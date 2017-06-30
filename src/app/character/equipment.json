@@ -9,6 +9,7 @@
     "label": "Leather Tunic",
     "desc": "An old, plain leather tunic",
     "type": "armour",
+    "proficiency": "Light Armour",
     "modifiers": [
       {
         "name": "armour",
@@ -21,6 +22,7 @@
     "label": "Chainmail Tunic",
     "desc": "An old, plain chainmail tunic",
     "type": "armour",
+    "proficiency": "Medium Armour",
     "modifiers": [
       {
         "name": "armour",
@@ -38,6 +40,7 @@
     "label": "Steel Breastplate",
     "desc": "An old, plain steel breastplate",
     "type": "armour",
+    "proficiency": "Heavy Armour",
     "modifiers": [
       {
         "name": "armour",
@@ -60,30 +63,91 @@
     "label": "Dagger",
     "desc": "An old, plain dagger. Does 1d4+STR piercing damage.",
     "type": "weapon",
+    "proficiency": "Simple Weapons",
+    "modifiers": []
+  },
+  "staff": {
+    "label": "Staff",
+    "desc": "An old, plain wooden staff. Does 1d8+STR blunt damage.",
+    "type": "weapon",
+    "proficiency": "Simple Weapons",
+    "modifiers": []
+  },
+  "rapier": {
+    "label": "Rapier",
+    "desc": "An old, plain rapier. Does 1d6+STR piercing damage.",
+    "type": "weapon",
+    "proficiency": "Small Weapons",
     "modifiers": []
   },
   "shortsword": {
     "label": "Short Sword",
     "desc": "An old, plain short sword. Does 1d6+STR slashing damage.",
     "type": "weapon",
+    "proficiency": "Small Weapons",
+    "modifiers": []
+  },
+  "mace": {
+    "label": "Mace",
+    "desc": "An old, plain mace. Does 1d6+STR blunt damage.",
+    "type": "weapon",
+    "proficiency": "Small Weapons",
+    "modifiers": []
+  },
+  "longsword": {
+    "label": "Long Sword",
+    "desc": "An old, plain long sword. Does 1d8+STR slashing damage.",
+    "type": "weapon",
+    "proficiency": "Medium Weapons",
+    "modifiers": []
+  },
+  "warhammer": {
+    "label": "Warhammer",
+    "desc": "An old, plain warhammer. Does 1d8+STR blunt damage.",
+    "type": "weapon",
+    "proficiency": "Medium Weapons",
+    "modifiers": []
+  },
+  "spear": {
+    "label": "Spear",
+    "desc": "An old, plain spear. Does 1d8+STR piercing damage.",
+    "type": "weapon",
+    "proficiency": "Medium Weapons",
     "modifiers": []
   },
   "bastardsword": {
     "label": "Bastard Sword",
     "desc": "An old, plain bastard sword. Does 1d10+STR slashing damage.",
     "type": "weapon",
+    "proficiency": "Large Weapons",
     "modifiers": []
   },
   "shortbow": {
     "label": "Short Bow",
-    "desc": "An old, plain short bow. Does 1d6+(STR+AGI)/2 damage and has 5 range.",
+    "desc": "An old, plain short bow. Does 1d6+(STR+AGI)/2 damage and has 6 range.",
     "type": "weapon",
+    "proficiency": "Ranged Weapons",
+    "modifiers": []
+  },
+  "longbow": {
+    "label": "Long Bow",
+    "desc": "An old, plain long bow. Does 1d8+(STR+AGI)/2 damage and has 10 range.",
+    "type": "weapon",
+    "proficiency": "Ranged Weapons",
+    "modifiers": []
+  },
+  "compoundbow": {
+    "label": "Compound Bow",
+    "desc": "An old, plain compound bow. Does 1d10+(STR+AGI)/2 damage and has 10 range.",
+    "type": "weapon",
+    "proficiency": "Ranged Weapons",
     "modifiers": []
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
     "desc": "An old, plain staff. Does 1d6+INT arcane damage and has 10 range.",
     "type": "weapon",
+    "proficiency": "Magic Weapons",
     "modifiers": []
   },
   "lockpick": {
@@ -91,5 +155,17 @@
     "desc": "An old, plain lockpick. Enables the holder to attempt to pick a lock.",
     "type": "tool",
     "modifiers": []
+  },
+  "roundshield": {
+    "label": "Round Shield",
+    "desc": "An old, plain round shield.",
+    "type": "tool",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 1
+      }
+    ]
   }
 }
