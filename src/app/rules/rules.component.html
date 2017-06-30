@@ -444,7 +444,9 @@
     </p>
     <p>
       When advancing in level, characters will unlock skills and spells dependant on their class. Regardless of class, on each
-      level up, characters receive one stat point to spend as they choose.
+      level up, characters receive one stat point to spend as they choose. Base stats (before race modifier adjustment)
+      at creation can only be a maximum of 5. During advancement a base stat cannot be raised above 15. It should be noted that
+      stats can be raised above 15 via race and equipment modifiers.
     </p>
     <p>
       The requirements for each level are as follows:
@@ -789,10 +791,26 @@
       meters, so a character with 5 movement is able to move 5 meters per round.
     </p>
     <p>
-      Characters have movement equal to their <b>Agility</b> stat plus any modifiers. It should be noted that heavy
+      Characters movement is affected by their <b>Agility</b> stat plus any modifiers. It should be noted that heavy
       armour
       and shields negatively affect a characters movement. A character will always have a minimum of 1 movement
-      regardless of modifiers.
+      regardless of modifiers (unless they are <b>Rooted</b>).
+    </p>
+    <p>
+      Each point of agility up to 5 movement worth 1. Each point between 6-10 is worth 1/2, each point between 11-15
+      is worth 1/3, 16-20 worth 1/4 and 21-25 worth 1/5. Remember to round down to the nearest whole number.
+    </p>
+    <p>
+      For example a character with 6 agility will have:
+    </p>
+    <p class="code">
+      Movement = 1 + 1 + 1 + 1 + 1 + 0.5 + 0.5 = 6
+    </p>
+    <p>
+      The maximum a character can have would be at 25 agility:
+    </p>
+    <p class="code">
+      Movement = 1 + 4 + 2.5 + 1.67 + 1.25 + 1.2 = 12.62 = 12
     </p>
     <p>
       Movement is also used to decide combat turn order during the <b>Initiative</b> phase.

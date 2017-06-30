@@ -57,7 +57,7 @@ export class StatService {
     StatService.applyModifiers(character, race.modifiers);
 
     // modifiers from equipment
-    for(let itemName of character.equipment) {
+    for (let itemName of character.equipment) {
       this.equipmentService.get(itemName).subscribe(item => {
         StatService.applyModifiers(character, item.modifiers);
       });
@@ -67,31 +67,48 @@ export class StatService {
 
     // health
     let hitDice = clazz.hit;
-    if(character.race === 'dwarf') {
+    if (character.race === 'dwarf') {
       hitDice += 5;
     }
     character.secondaryStats.health += (hitDice + character.primaryStats.con) + ((character.level - 1) * (hitDice + character.primaryStats.con));
 
     // dodge
     character.secondaryStats.dodge += 10 + character.primaryStats.agi;
-    if(character.race === "halfling") {
+    if (character.race === "halfling") {
       character.secondaryStats.dodge += 1; // todo level increases
     }
 
     // movement
-    character.secondaryStats.movement += 1 + character.primaryStats.agi;
-    if(character.race === "woodelf") {
+    character.secondaryStats.movement += 1;
+    let agility = character.primaryStats.agi;
+    while (agility > 0) {
+      if (character.secondaryStats.movement <= 5) {
+        character.secondaryStats.movement += 1;
+      } else if (character.secondaryStats.movement <= 10) {
+        character.secondaryStats.movement += 0.5;
+      } else if (character.secondaryStats.movement <= 15) {
+        character.secondaryStats.movement += 0.33;
+      } else if (character.secondaryStats.movement <= 20) {
+        character.secondaryStats.movement += 0.25;
+      } else if (character.secondaryStats.movement <= 25) {
+        character.secondaryStats.movement += 0.2;
+      }
+      agility--;
+    }
+    character.secondaryStats.movement = Math.floor(character.secondaryStats.movement);
+
+    if (character.race === "woodelf") {
       character.secondaryStats.movement += 2; // todo level increases
     }
 
     // armour
-    if(character.race === "iksar") {
+    if (character.race === "iksar") {
       character.secondaryStats.armour += 1; // todo level increases
     }
   }
 
   private static applyModifiers(character: Character, modifiers: Modifier[]) {
-    if(modifiers) {
+    if (modifiers) {
       for (let modifier of modifiers) {
         if (StatService.isPrimary(modifier.name)) {
           character.primaryStats[modifier.name] += modifier.value;

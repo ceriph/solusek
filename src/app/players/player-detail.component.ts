@@ -22,7 +22,7 @@ export class PlayerDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params
-      .switchMap(params => this.playerService.getPlayer(params['name']))
+      .switchMap(params => this.playerService.get(params['name']))
       .subscribe(player => this.player = player);
   }
 }

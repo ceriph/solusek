@@ -158,7 +158,7 @@
         "name": "layonhands",
         "label": "Lay On Hands",
         "level": 1,
-        "desc": "Action - once per per long rest - the paladin touches a friendly target (this can include themselves), healing the target to full health."
+        "desc": "Action - once per long rest - the paladin touches a friendly target (this can include themselves), healing the target to full health."
       },
       {
         "name": "lightmagic1",
@@ -177,6 +177,12 @@
         "label": "Resistance",
         "level": 5,
         "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+      },
+      {
+        "name": "fightingstyle",
+        "label": "Fighting Style",
+        "level": 5,
+        "desc": "Passive - The paladin selects a fighting style, either Protector (+1 armour when wielding a shield) or Avenger (+1 attack and damage when wielding a two handed weapon)."
       },
       {
         "name": "lightmagic2",
@@ -545,7 +551,7 @@
         "name": "manasurge",
         "label": "Mana Surge",
         "level": 9,
-        "desc": "Action - once per per long rest - The wizard may cast an Evocation spell of his choice twice this turn. It only counts as a single spell slot use."
+        "desc": "Action - once per long rest - The wizard may cast an Evocation spell of his choice twice this turn. It only counts as a single spell slot use."
       },
       {
         "name": "arcanemagic4",

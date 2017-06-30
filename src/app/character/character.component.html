@@ -9,6 +9,11 @@
       <a [hidden]="!player.character.baseStats" class="tab" routerLink="info" routerLinkActive="active">Info</a>
       <a [hidden]="!player.character.info || !player.character.baseStats" class="tab right" routerLink="summary" routerLinkActive="active">Summary</a>
     </div>
+    <div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'">
+      <ul>
+        <button *ngFor="let player of players | async" (click)="load(player)">{{player.name}}</button>
+      </ul>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>

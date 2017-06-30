@@ -22,7 +22,7 @@ export class PlayersComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.players = this.playerService.getPlayers();
+    this.players = this.playerService.list();
   }
 
   goToDetail(player: Player): void {

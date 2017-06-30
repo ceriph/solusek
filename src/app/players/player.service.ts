@@ -10,11 +10,11 @@ export class PlayerService {
 
   constructor(private db: AngularFireDatabase) {}
 
-  getPlayers(): FirebaseListObservable<Player[]> {
+  list(): FirebaseListObservable<Player[]> {
     return this.db.list(this.path);
   }
 
-  getPlayer(uid: string): FirebaseObjectObservable<Player> {
+  get(uid: string): FirebaseObjectObservable<Player> {
     return this.db.object(this.path + '/' + uid);
   }
 }

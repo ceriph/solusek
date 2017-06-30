@@ -15,6 +15,7 @@ import {CharacterService} from "../character.service";
 import {Character} from "../character";
 import {EquipmentService} from "../equipment.service";
 import {Equipment} from "../equipment";
+import {FirebaseListObservable} from "angularfire2/database";
 
 @Component({
   selector: 'app-summary',
@@ -25,13 +26,16 @@ export class SummaryComponent implements OnInit {
 
   user: Observable<firebase.User>;
 
+  players: FirebaseListObservable<Player[]>;
+
   character: Character;
   race: Race;
   clazz: Class;
   skills: Skill[] = [];
-  equipment: Equipment[] = [];
+  equipment: Equipment[];
 
   constructor(private afAuth: AngularFireAuth,
+              private playerService: PlayerService,
               private characterService: CharacterService,
               private raceService: RaceService,
               private statService: StatService,
@@ -44,22 +48,29 @@ export class SummaryComponent implements OnInit {
     this.user.subscribe(user => {
       if (user && user.uid) {
         this.characterService.get(user.uid).subscribe(character => {
-          this.character = character;
-          for(let itemName of character.equipment) {
-            this.equipmentService.get(itemName).subscribe(item => {
-              this.equipment.push(item);
-            })
-          }
-          this.raceService.get(character.race).subscribe(race => {
-            this.race = race;
-            this.classService.get(character.class).subscribe(clazz => {
-              this.statService.calculate(character, race, clazz);
-              this.skills = this.characterService.getSkills(character.level, clazz);
-              this.clazz = clazz;
-            });
-          });
+          this.load(character);
         });
       }
+    });
+
+    this.players = this.playerService.list();
+  }
+
+  load(character) {
+    this.character = character;
+    this.equipment = [];
+    for (let itemName of character.equipment) {
+      this.equipmentService.get(itemName).subscribe(item => {
+        this.equipment.push(item);
+      })
+    }
+    this.raceService.get(character.race).subscribe(race => {
+      this.race = race;
+      this.classService.get(character.class).subscribe(clazz => {
+        this.statService.calculate(character, race, clazz);
+        this.skills = this.characterService.getSkills(character.level, clazz);
+        this.clazz = clazz;
+      });
     });
   }
 }

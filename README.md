@@ -17,6 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## TODO
 
 * Add character advancement functionality
+  * Also add more choice to classes such as rogue/warrior
 * Separate 'equipment' and 'inventory' and add equip/unequip
   * Add 'slot' to character and equipment to allocate items 
 * Add proficiency service to calculate whether a character can use an item

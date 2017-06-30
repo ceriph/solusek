@@ -34,7 +34,7 @@ export class DmComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.playerService.getPlayers().subscribe(players => {
+    this.playerService.list().subscribe(players => {
       this.players = players;
       for (let player of players) {
         if (player.character && player.character.baseStats) {

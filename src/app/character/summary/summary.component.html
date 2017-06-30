@@ -1,3 +1,7 @@
+<div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'">
+  <button *ngFor="let player of players | async" (click)="load(player.character)">{{player.character.info.name}}</button>
+</div>
+
 <div *ngIf="character">
   <div class="box">
     <h2>Basic Details</h2>

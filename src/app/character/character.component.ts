@@ -5,6 +5,7 @@ import {AngularFireAuth} from "angularfire2/auth/auth";
 import {Observable} from "rxjs";
 import * as firebase from "firebase/app";
 import {Router} from "@angular/router";
+import {FirebaseListObservable} from "angularfire2/database";
 
 @Component({
   selector: 'character',
@@ -27,7 +28,7 @@ export class CharacterComponent implements OnInit {
   ngOnInit() {
     this.user.subscribe(user => {
       if (user && user.uid) {
-        this.playerService.getPlayer(user.uid).subscribe(player => {
+        this.playerService.get(user.uid).subscribe(player => {
           this.player = player;
           if (!this.player.character || !this.player.character.race) {
             this.router.navigate(['/character/races']);
@@ -41,7 +42,7 @@ export class CharacterComponent implements OnInit {
             this.status = "COMPLETE";
             this.router.navigate(['/character/summary']);
           }
-        })
+        });
       }
     });
   }
