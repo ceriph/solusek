@@ -166,3 +166,11 @@ button:disabled {
 .footer {
   padding-top: 30px;
 }
+
+@media print
+{
+  .no-print, .no-print *
+  {
+    display: none !important;
+  }
+}
