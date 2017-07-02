@@ -361,16 +361,16 @@
         "desc": "Passive - the rogue receives +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
       },
       {
+        "name": "poisons1",
+        "label": "Poisons 1",
+        "level": 2,
+        "desc": "Passive - The rogue now has access to rank 1 poisons and can choose to apply one of these poisons once per long rest."
+      },
+      {
         "name": "dualwield",
         "label": "Dual Wield",
         "level": 3,
         "desc": "Passive - The character can equip a small weapon in their offhand, and may make a regular attack with it once per round, this does not consume their action."
-      },
-      {
-        "name": "applypoison",
-        "label": "Apply Poison",
-        "level": 4,
-        "desc": "Action - The rogue adds a poison to their main weapon, any characters that take damage from this weapon are poisoned with strength 1d20+INT+level. They must make a saving throw each turn or take 1d4 damage (increases to 2d4 at level 7, 3d4 at level 14, 4d4 at level 19."
       },
       {
         "name": "keeneye",
@@ -391,10 +391,22 @@
         "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
       },
       {
+        "name": "poisons2",
+        "label": "Poisons 2",
+        "level": 7,
+        "desc": "Passive - The rogue now has access to rank 2 poisons and can choose to apply one of these poisons once per long rest."
+      },
+      {
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 8,
         "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+      },
+      {
+        "name": "preparedpoison",
+        "label": "Prepared Poison",
+        "level": 9,
+        "desc": "Instant - once per long rest - If the rogue has the correct ingredients, they may instantly prepare and apply a poison they have access to on their main weapon."
       },
       {
         "name": "weaponmastery",
@@ -403,28 +415,34 @@
         "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
       },
       {
-        "name": "shadowstrike",
-        "label": "Shadow Strike",
+        "name": "poisons3",
+        "label": "Poisons3",
         "level": 12,
-        "desc": "Action - once per short rest - The rogue instantly appears behind a target within their movement and performs a 'Backstab' attack."
+        "desc": "Passive - The rogue now has access to rank 3 poisons and can choose to apply one of these poisons once per long rest."
       },
       {
-        "name": "extraattack2",
-        "label": "Extra Attack 2",
-        "level": 15,
-        "desc": "Passive - After performing an attack with their secondary weapon (via dual wield), the character may choose to make an additional regular attack with their secondary weapon."
+        "name": "poisons4",
+        "label": "Poisons 4",
+        "level": 16,
+        "desc": "Passive - The rogue now has access to rank 4 poisons and can choose to apply one of these poisons once per long rest."
       },
       {
         "name": "keeneye2",
         "label": "Keen Eye 2",
-        "level": 17,
+        "level": 16,
         "desc": "Passive - the rogues attack rolls of 18, 19 and 20 count as critical."
       },
       {
-        "name": "assassinate",
-        "label": "Assassinate",
-        "level": 18,
-        "desc": "Action - once per long rest - make an attack from behind on a wounded enemy, if the attack hits, it counts as critical and ignores armour."
+        "name": "shadowwalk",
+        "label": "Shadow Walk",
+        "level": 17,
+        "desc": "Action - once per long rest - The rogue vanishes into the shadows, becoming invisible for the next 3 rounds even while attacking."
+      },
+      {
+        "name": "poisons5",
+        "label": "Poisons 5",
+        "level": 20,
+        "desc": "Passive - The rogue now has access to rank 5 poisons and can choose to apply one of these poisons once per long rest."
       }
     ]
   },
@@ -551,7 +569,7 @@
         "name": "manasurge",
         "label": "Mana Surge",
         "level": 9,
-        "desc": "Action - once per long rest - The wizard may cast an Evocation spell of his choice twice this turn. It only counts as a single spell slot use."
+        "desc": "Action - once per long rest - The wizard may cast a spell of his choice twice this turn. It only counts as a single spell slot use."
       },
       {
         "name": "arcanemagic4",
