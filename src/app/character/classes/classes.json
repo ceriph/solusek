@@ -254,10 +254,10 @@
         "desc": "Passive - Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
       },
       {
-        "name": "evade",
-        "label": "Evade",
+        "name": "naturalattunement",
+        "label": "Natural Attunement",
         "level": 3,
-        "desc": "Instant - Once per short rest - When an enemy makes an attack on the ranger that misses, the ranger may immediately choose to move up to their movement value."
+        "desc": "Passive - The ranger now uses his spirit when making perception checks"
       },
       {
         "name": "animalcompanion",
@@ -370,7 +370,7 @@
         "name": "applypoison",
         "label": "Apply Poison",
         "level": 4,
-        "desc": "Action - The rogue adds a poison to their main weapon, any characters that take damage from this weapon are poisoned with strength 1d20+INT. They must make a saving throw each turn or take 1d4 damage (increases to 2d4 at level 7, 3d4 at level 14, 4d4 at level 19."
+        "desc": "Action - The rogue adds a poison to their main weapon, any characters that take damage from this weapon are poisoned with strength 1d20+INT+level. They must make a saving throw each turn or take 1d4 damage (increases to 2d4 at level 7, 3d4 at level 14, 4d4 at level 19."
       },
       {
         "name": "keeneye",

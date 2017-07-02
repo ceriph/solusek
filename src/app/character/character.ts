@@ -1,6 +1,6 @@
 import {Skill} from "./skill";
 import {Modifier} from "./modifier";
-import {SecondaryStats, PrimaryStats} from "./stats";
+import {SecondaryStats, PrimaryStats} from "./stats/stats";
 import {Info} from "./info/info";
 import {Equipment} from "./equipment";
 

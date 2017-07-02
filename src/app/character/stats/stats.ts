@@ -19,6 +19,6 @@ export class SecondaryStats {
   resistanceDisease: number = 0;
   movement: number = 0;
   armour: number = 0;
-  magicReduction: number = 0;
+  magicreduction: number = 0;
   damage: string = "";
 }

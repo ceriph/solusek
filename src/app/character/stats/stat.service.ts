@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {SecondaryStats, PrimaryStats} from "../stats";
+import {SecondaryStats, PrimaryStats} from "./stats";
 import {Character} from "../character";
 import {Race} from "../races/race";
 import {Class} from "../classes/class";
@@ -70,7 +70,7 @@ export class StatService {
     if (character.race === 'dwarf') {
       hitDice += 5;
     }
-    character.secondaryStats.health += (hitDice + character.primaryStats.con) + ((character.level - 1) * (hitDice + character.primaryStats.con));
+    character.secondaryStats.health += Math.floor((hitDice + character.primaryStats.con) + ((character.level - 1) * ((hitDice / 2) + character.primaryStats.con)));
 
     // dodge
     character.secondaryStats.dodge += 10 + character.primaryStats.agi;

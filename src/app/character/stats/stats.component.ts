@@ -6,7 +6,7 @@ import {FirebaseObjectObservable} from "angularfire2/database";
 import * as firebase from "firebase/app";
 import {RaceService} from "../races/race.service";
 import {Race} from "../races/race";
-import {PrimaryStats} from "../stats";
+import {PrimaryStats} from "./stats";
 import {StatService} from "./stat.service";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";

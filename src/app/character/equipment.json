@@ -59,6 +59,18 @@
       }
     ]
   },
+  "ringofmagicaldeflection": {
+    "label": "Ring of Magical Deflection",
+    "desc": "A simple yet pretty silver ring. You feel an aura of protection when wearing it.",
+    "type": "ring",
+    "modifiers": [
+      {
+        "name": "magicreduction",
+        "label": "Magic Reduction",
+        "value": 1
+      }
+    ]
+  },
   "dagger": {
     "label": "Dagger",
     "desc": "An old, plain dagger. Does 1d4+STR piercing damage.",
@@ -159,12 +171,51 @@
   "roundshield": {
     "label": "Round Shield",
     "desc": "An old, plain round shield.",
-    "type": "tool",
+    "type": "shield",
     "modifiers": [
       {
         "name": "armour",
         "label": "Armour",
         "value": 1
+      }
+    ]
+  },
+  "kiteshield": {
+    "label": "Kite Shield",
+    "desc": "An old, plain kite shield.",
+    "type": "shield",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 2
+      },
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -1
+      }
+    ]
+  },
+  "towershield": {
+    "label": "Tower Shield",
+    "desc": "An old, plain tower shield.",
+    "type": "shield",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 3
+      },
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -2
+      },
+      {
+        "name": "movement",
+        "label": "Movement",
+        "value": -1
       }
     ]
   }

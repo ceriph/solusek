@@ -5,7 +5,7 @@ import {Observable} from "rxjs/Observable";
 import {Player} from "../../players/player";
 import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
-import {SecondaryStats, PrimaryStats} from "../stats";
+import {SecondaryStats, PrimaryStats} from "../stats/stats";
 import {RaceService} from "../races/race.service";
 import {ClassService} from "../classes/classes.service";
 import {Class} from "../classes/class";
