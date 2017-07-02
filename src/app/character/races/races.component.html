@@ -12,7 +12,7 @@
       <h3>{{skill.value.label}}</h3>
       <p>{{skill.value.desc}}</p>
     </div>
-    <div class="footer" *ngIf="(character | async).race && (character | async).race !== selectedRace.name">
+    <div class="footer" *ngIf="(character | async).race && (character | async).race !== selectedRace.name && (character | async).level == 1">
       <button (click)="save()">UPDATE</button>
       <p><i>Changing your race will reset any previously made class/stat choices</i></p>
     </div>

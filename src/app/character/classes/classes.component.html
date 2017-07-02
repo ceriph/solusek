@@ -18,7 +18,7 @@
     <p><b>Level</b>: {{skill.value.level}}</p>
     <p>{{skill.value.desc}}</p>
   </div>
-  <div class="footer" *ngIf="(character | async).class && (character | async).class !== selectedClass.name">
+  <div class="footer" *ngIf="(character | async).class && (character | async).class !== selectedClass.name && (character | async).level == 1">
     <button (click)="save()">UPDATE</button>
     <p><i>Changing your class will reset any previously made stat choices</i></p>
   </div>
