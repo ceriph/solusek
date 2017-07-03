@@ -4,11 +4,11 @@
     "events": [
       {
         "type": "Story",
-        "desc": "The party awakened in a dungeon under the city of Freeport. They watched helplessly as Kevnan and Holly were slaughtered."
+        "desc": "The party awakened in a dungeon under the city of Freeport. They watched helplessly as Kevnan and Holly were slaughtered as a sacrifice."
       },
       {
         "type": "Encounter",
-        "desc": "The party triggered combat while still shackled to the wall, still managing to kill 1 Hollow Necromancer and 2 Hollow Acolytes."
+        "desc": "Morden then cast arcane missiles, triggering combat while still shackled to the wall, managing to eventually get free and kill 1 Hollow Necromancer and 2 Hollow Acolytes."
       },
       {
         "type": "Story",
@@ -20,7 +20,7 @@
       },
       {
         "type": "Story",
-        "desc": "Visiting the wizards circle in Freeport, they met a pompous mage named Articus who didn't believe them. Out of nowhere appeared the old Archmage Belgarath who had been watching them on arrival of the circle."
+        "desc": "Visiting the wizard's circle in Freeport, they met a pompous mage named Articus who didn't believe them. Out of nowhere appeared the old Archmage Belgarath who had been watching them on arrival of the circle."
       },
       {
         "type": "Story",
@@ -28,7 +28,7 @@
       },
       {
         "type": "Story",
-        "desc": "Belgarath warned that the mark would erode their mind and enslave them. There was no known cure but he told them to seek The Enchantress as soon as possible and ask her to help shield against the effects."
+        "desc": "Belgarath warned the party that the mark would erode their mind and enslave them. There was no known cure but he told them to seek The Enchantress as soon as possible and ask her to help shield against the effects."
       }
     ]
   },
@@ -41,11 +41,11 @@
       },
       {
         "type": "Story",
-        "desc": "The party ventured into the enchantresses home, passing many illusions on the way."
+        "desc": "The party ventured into the home of the enchantress passing many illusions on the way."
       },
       {
         "type": "Encounter",
-        "desc": "A set of mirror images attacked the party after Fen threw a shoe at it. Sophea managed to dispel her illusion without force."
+        "desc": "A set of mirror images attacked the party after Fen threw a shoe at the mirror. Sophea managed to dispel her illusion without force."
       },
       {
         "type": "Story",
@@ -61,15 +61,15 @@
       },
       {
         "type": "Encounter",
-        "desc": "The party entered the Goblin camp and defeated 2 wolfs, 4 goblins and 1 bugbear."
+        "desc": "The party entered the Goblin camp and defeated 2 Wolves, 3 goblin archers, 1 goblin shaman and 1 bugbear."
       },
       {
         "type": "Story",
-        "desc": "Upon opening a locked room at the back of the goblin den, the party found the goblin Grubby wearing the amulet. He offered it to them but Skalath slit his throat anyway."
+        "desc": "Upon opening a locked room at the back of the goblin den, the party found the goblin leader Grubby wearing the amulet. He offered it to them but Skalath slit his throat anyway."
       },
       {
         "type": "Travel",
-        "desc": "The party returned east to the enchantresses home."
+        "desc": "The party returned east to the home of the enchantress Yiana."
       },
       {
         "type": "Story",
@@ -77,7 +77,7 @@
       },
       {
         "type": "Story",
-        "desc": "After returning the amulet to Yiana, she cast a mind protection spell on them and revealed that Sophea was a Fey."
+        "desc": "After returning the amulet to Yiana, she cast a mind protection spell on them and revealed that Sophea was a Fey. Yiana also revealed her own true image as a halfling."
       },
       {
         "type": "Travel",
@@ -94,7 +94,7 @@
     "events": [
       {
         "type": "Leisure",
-        "desc": "At the local blacksmith, Fen manages to connect with the proprietor Varden over ties to Sherriden and negotiates a discount."
+        "desc": "At the local blacksmith, Fen manages to connect with the proprietor Varden over ties to Sherridon and negotiates a discount."
       },
       {
         "type": "Leisure",
