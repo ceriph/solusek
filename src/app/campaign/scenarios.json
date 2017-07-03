@@ -1,0 +1,105 @@
+{
+  "1": {
+    "title": "Scenario 1 - Marked",
+    "events": [
+      {
+        "type": "Story",
+        "desc": "The party awakened in a dungeon under the city of Freeport. They watched helplessly as Kevnan and Holly were slaughtered."
+      },
+      {
+        "type": "Encounter",
+        "desc": "The party triggered combat while still shackled to the wall, still managing to kill 1 Hollow Necromancer and 2 Hollow Acolytes."
+      },
+      {
+        "type": "Story",
+        "desc": "An unknown demon entered the world via a rift and cast a dark spell on the party before being pulled back into the rift. Morden noted 3 Fel symbols by the altar."
+      },
+      {
+        "type": "Story",
+        "desc": "The party rescued a small elf girl named Sophea. They took her to Gregory at The Lazy Druid but he had never seen her before. They inspected her house (Kevnan and Holly's), and found some strange symbols on her door as well as journal pages saying she was delivered to them as a baby."
+      },
+      {
+        "type": "Story",
+        "desc": "Visiting the wizards circle in Freeport, they met a pompous mage named Articus who didn't believe them. Out of nowhere appeared the old Archmage Belgarath who had been watching them on arrival of the circle."
+      },
+      {
+        "type": "Story",
+        "desc": "Belgarath revealed the mark of the demon on their chests and explained it was the demon's name. Morden noted it was also the same as one of the symbols from the altar in the dungeon, and learned the other symbols were used to 'call' him."
+      },
+      {
+        "type": "Story",
+        "desc": "Belgarath warned that the mark would erode their mind and enslave them. There was no known cure but he told them to seek The Enchantress as soon as possible and ask her to help shield against the effects."
+      }
+    ]
+  },
+  "2": {
+    "title": "Scenario 2 - Enchanted",
+    "events": [
+      {
+        "type": "Travel",
+        "desc": "The party were teleported to an unknown location by Belgarath."
+      },
+      {
+        "type": "Story",
+        "desc": "The party ventured into the enchantresses home, passing many illusions on the way."
+      },
+      {
+        "type": "Encounter",
+        "desc": "A set of mirror images attacked the party after Fen threw a shoe at it. Sophea managed to dispel her illusion without force."
+      },
+      {
+        "type": "Story",
+        "desc": "The party met the 'giant' Yiana, who agreed to help them in return for their help retrieving a stolen amulet."
+      },
+      {
+        "type": "Travel",
+        "desc": "The party travelled west to the goblin camp."
+      },
+      {
+        "type": "Story",
+        "desc": "Resting on the way, the party experienced a nightmare: Visions of consuming fallen enemies in a barren landscape, followed by a giant demon morphing into Sophea, giggling, and stabbing them in the stomach."
+      },
+      {
+        "type": "Encounter",
+        "desc": "The party entered the Goblin camp and defeated 2 wolfs, 4 goblins and 1 bugbear."
+      },
+      {
+        "type": "Story",
+        "desc": "Upon opening a locked room at the back of the goblin den, the party found the goblin Grubby wearing the amulet. He offered it to them but Skalath slit his throat anyway."
+      },
+      {
+        "type": "Travel",
+        "desc": "The party returned east to the enchantresses home."
+      },
+      {
+        "type": "Story",
+        "desc": "Resting on the way, the party experienced another nightmare: More visions of consuming fallen enemies in a barren landscape followed by a giant demon morphing into Sophea and retreating, giggling, into the darkness."
+      },
+      {
+        "type": "Story",
+        "desc": "After returning the amulet to Yiana, she cast a mind protection spell on them and revealed that Sophea was a Fey."
+      },
+      {
+        "type": "Travel",
+        "desc": "Leaving the Enchantress's home, the party find Belgarath waiting down the path smoking a pipe, who teleports them back to Freeport."
+      },
+      {
+        "type": "Story",
+        "desc": "Belgarath offers to cast a 'Reveal Events' spell attempt to discover where Sophea came from, and leaves to prepare at her house."
+      }
+    ]
+  },
+  "3": {
+    "title": "Intermission",
+    "events": [
+      {
+        "type": "Leisure",
+        "desc": "At the local blacksmith, Fen manages to connect with the proprietor Varden over ties to Sherriden and negotiates a discount."
+      },
+      {
+        "type": "Leisure",
+        "desc": "At a nearby tannery, Skalath manages to intensely offend and anger the owner, Sharna."
+      }
+    ]
+  }
+}

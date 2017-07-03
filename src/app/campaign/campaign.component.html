@@ -1,0 +1,11 @@
+<div class="box fill">
+  <h1>Campaign</h1>
+  <p>
+    This page contains a record on what has happened in the campaign so far.
+  </p>
+</div>
+
+<div class="box" *ngFor="let scenario of scenarios | async">
+  <h1>{{scenario.title}}</h1>
+  <p *ngFor="let event of scenario.events"><b>{{event.type}}</b>: {{event.desc}}</p>
+</div>

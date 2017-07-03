@@ -30,6 +30,8 @@ import {CharacterService} from "./character/character.service";
 import {EquipmentService} from "./character/equipment.service";
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
+import { CampaignComponent } from './campaign/campaign.component';
+import {ScenarioService} from "./campaign/scenario.service";
 
 @NgModule({
   imports: [
@@ -56,7 +58,8 @@ import {RaceComponent} from "./rules/race/race.component";
     KeysPipe,
     SummaryComponent,
     ClassComponent,
-    RaceComponent
+    RaceComponent,
+    CampaignComponent
   ],
   providers: [
     PlayerService,
@@ -65,6 +68,7 @@ import {RaceComponent} from "./rules/race/race.component";
     StatService,
     CharacterService,
     EquipmentService,
+    ScenarioService,
     AngularFireAuth,
     LoginService
   ],

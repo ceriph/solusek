@@ -1,5 +1,6 @@
 <nav *ngIf="(user | async)?.uid" class="header no-print">
   <a routerLink="/character" routerLinkActive="active">Character</a>
+  <a routerLink="/campaign" routerLinkActive="active">Campaign</a>
   <a routerLink="/rules" routerLinkActive="active">Rules</a>
   <a routerLink="/lore" routerLinkActive="active">Lore</a>
   <a *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'" routerLink="/dm" routerLinkActive="active">DM</a>

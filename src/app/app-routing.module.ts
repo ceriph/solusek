@@ -14,6 +14,7 @@ import {InfoComponent} from "./character/info/info.component";
 import {SummaryComponent} from "./character/summary/summary.component";
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
+import {CampaignComponent} from "./campaign/campaign.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: 'rules/class', component: ClassComponent},
   {path: 'rules/race', component: RaceComponent},
   {path: 'lore', component: LoreComponent},
+  {path: 'campaign', component: CampaignComponent},
   {path: 'dm', component: DmComponent}
 ];
 
