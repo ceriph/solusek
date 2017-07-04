@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Combat",
+    "desc": "Combat in Solusek is divided up into 4 stages: <b>Suprise</b>, <b>Initiative</b>, <b>Position</b> and <b>Rounds</b>.",
+    "sections": [
+      {
+        "title": "Suprise",
+        "desc": "The DM first determines if either the players or their enemies have been caught unawares. If so, the other side will gain one free combat round before rolling initiative."
+      },
+      {
+        "title": "Initiative",
+        "desc": "Each character, including NPCs will now roll initiative. This involves rolling 1d20 and adding the character's <b>movement</b> stat. The result will determine turn order, highest going first."
+      },
+      {
+        "title": "Position",
+        "desc": "If necessary, distance and position is now determined by the DM, though it may already be evident."
+      },
+      {
+        "title": "Rounds",
+        "desc": "Each character, in initiative order, will then begin taking turns. When all characters have taken a turn then the next round starts, beginning again with the highest initiative. Rounds continue until one side surrenders or is defeated. A character, on their turn, may perform a <b>movement</b>, an <b>action</b> and one <b>bonus action</b>. These are all optional and can be performed in any order as long as it is logical.",
+        "sections": [
+          {
+            "title": "Movement",
+            "desc": "During their movement, the character may move a number of squares up to their <b>movement</b> stat. Enemy characters block movement, friendly characters do not. While <b>snared</b> or on <b>difficult terrain</b>, movement costs twice as much per square, effectively halving possible movement."
+          },
+          {
+            "title": "Action",
+            "desc": "An action consists of: a <b>basic attack</b>, casting a <b>spell</b>, using a <b>skill</b> of type 'action', or performing any other non-combat action which the DM deems to take a significant amount of time."
+          },
+          {
+            "title": "Bonus Action",
+            "desc": "The bonus action covers smaller actions such as: picking up an item, equipping a weapon, making a perception check or any other action which the DM deems to only take a small amount of time."
+          },
+          {
+            "title": "Attacking",
+            "desc": "Attacking generally covers any aggressive action which intends to affect another character. This can include a basic attack with a weapon, an attacking spell, or a skill of type 'attack' as well as any other action such as attempting to tackle or throw a character. The steps for an attack are: 'Roll to hit', 'Roll for damage', 'Subtract health",
+            "sections": [
+              {
+                "title": "Roll to Hit",
+                "desc": "Firstly the character rolls to hit versus the targets <b>avoidance</b>. This involves rolling 1d20 then adding the relevant stat, for most normal attacks this will be 'Agility', however spells and other actions may use a different stat. The resulting roll is then compared to the enemies 'avoidance', for most normal attacks this will be their 'dodge', if the attack is equal to or higher then it counts as a hit. For example, a level 2 warrior with 4 agility makes a basic attack against a goblin with a dodge of 2:",
+                "code": "Roll to hit = (1d20 + 4) vs 12 = (9 + 4) vs 12 = 13 vs 12 = hit!"
+              },
+              {
+                "title": "Roll for Damage",
+                "desc": "If the attack was considered a hit, then the attacker will need to roll for damage. The weapon, spell or skill will determine the dice and modifier used. The resulting value is then modified by the targets <b>mitigation</b>, either <b>armour</b> or <b>magic reduction</b> depending on the type of attack. For example as above, the warrior was using his short sword (1d6 + STR), has 4 strength and hit the goblin who has 1 armour:",
+                "code": "Roll for damage = 1d6 + 4 = 3 + 4 = 7 - 1 (armour) = 6 damage"
+              },
+              {
+                "title": "Subtract Health",
+                "desc": "If there is any damage leftover after <b>mitigation</b>, then that damage is applied directly to the target, subtracting that amount of health (or temporary health if applicable)."
+              },
+              {
+                "title": "Critical Hits",
+                "desc": "When a character rolls a <i>natural</i> 20, meaning their d20 roll before modifiers was 20, they score a critical hit. Critical hits count as full damage, so damage does not need to be rolled."
+              }
+            ]
+          },
+          {
+            "title": "Range",
+            "desc": "All weapons, spells and skill will have a range value. 0 and 1 are considered melee attacks, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
+          },
+          {
+            "title": "Instant",
+            "desc": "Some skills are considered <b>instant</b> and these can be used at any time, even if it is not the characters turn, provided all other requirements on the skill are me."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Death",
+    "desc": "It <i>will</i> be possible to die. The DM is responsible for making sure any death seems 'fair', however it is your responsibility as players to avoid putting your characters in situations where death is likely. It is possible to recover from death through rare magical equipment or high level <b>Cleric</b> spells, but these will be unavailable for some time.",
+    "sections": [
+      {
+        "title": "Dying",
+        "desc": "Whenever you start your turn with 0 health, you must make a special check, called a <b>death saving throw</b>, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.",
+        "sections": [
+          {
+            "desc": "<b>Roll a d20:</b> If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your <b>third</b> failure, you die. The successes and failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable."
+          },
+          {
+            "desc": "<b>Rolling 1 or 20:</b> When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point."
+          },
+          {
+            "desc": "<b>Damage at 0 Hit Points</b>: If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death."
+          },
+          {
+            "desc": " A character who is healed above 0 health is considered immediately conscious and no longer dying."
+          }
+        ]
+      },
+      {
+        "title": "Instant Death",
+        "desc": "Instant death can occur when a player takes damage which would reduce them to their maximum health below 0. This can occur on any player regardless of whether they are already dying, for example if a character with 20/20 max health gets hit for 40 damage, they would instantly be dead.",
+        "sections": [
+          {
+            "desc": "For this reason extra care should be taken with characters or creatures that are far more powerful than you. Provoking an attack from them would not be wise!"
+          }
+        ]
+      },
+      {
+        "title": "Stabilizing",
+        "desc": "When a character is stable, they are still considered unconscious and at 0 health, however they are no longer dying. Characters can be stabilised by other players through the use of bandages, and in some cases resourceful role play actions such as putting pressure on blood flow etc."
+      }
+    ]
+  }
+]

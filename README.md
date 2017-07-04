@@ -17,7 +17,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## TODO
 
 * Add character advancement functionality
-  * Also add more choice to classes such as rogue/warrior
 * Separate 'equipment' and 'inventory' and add equip/unequip
   * Add 'slot' to character and equipment to allocate items 
 * Add proficiency service to calculate whether a character can use an item
@@ -25,4 +24,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Allow modifiers to be 'functions' that get applied - custom DSL?
 * Calculate attack damage
   * Weapons need a 'base' die and stat modifier function 
-* Add image upload for characters
+* Add image upload for characters OR do artwork myself
+* Create an interactive version of the map
+* Add a monster creator
+* Change 'movement' to 'speed'?
+* Migrate page content into firebase
+  * Rules
+  * DM
+

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {Component, OnInit} from "@angular/core";
+import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
+import {Rule} from "./rule";
+import {RulesService} from "./rules.service";
 
 @Component({
   selector: 'rules',
@@ -8,13 +10,14 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class RulesComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  rules: FirebaseListObservable<Rule[]>;
+  combat: Rule;
 
-  ngOnInit() {
-    this.route.fragment.subscribe(f => {
-      const element = document.querySelector("#" + f);
-      if (element) element.scrollIntoView(element)
-    })
+  constructor(private rulesService: RulesService) {
   }
 
+  ngOnInit() {
+    this.rules = this.rulesService.list();
+    this.rulesService.get("combat").subscribe(combat => this.combat = combat);
+  }
 }

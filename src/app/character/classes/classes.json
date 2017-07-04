@@ -200,7 +200,7 @@
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 12,
-        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "lightmagic3",
@@ -275,7 +275,7 @@
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 6,
-        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "naturemagic2",
@@ -400,7 +400,7 @@
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 8,
-        "desc": "Passive - After performing an attack, the character may choose to make an additional regular attack with their main weapon."
+        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "preparedpoison",

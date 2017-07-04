@@ -32,6 +32,7 @@ import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
 import { CampaignComponent } from './campaign/campaign.component';
 import {ScenarioService} from "./campaign/scenario.service";
+import {RulesService} from "./rules/rules.service";
 
 @NgModule({
   imports: [
@@ -69,6 +70,7 @@ import {ScenarioService} from "./campaign/scenario.service";
     CharacterService,
     EquipmentService,
     ScenarioService,
+    RulesService,
     AngularFireAuth,
     LoginService
   ],

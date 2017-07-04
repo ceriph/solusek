@@ -20,14 +20,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      if(this.router.url.indexOf("#") == -1) {
-        window.scrollTo(0, 0)
-      }
-    });
   }
 
   logout() {

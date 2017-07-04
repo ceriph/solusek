@@ -1,6 +1,6 @@
 <div class="container">
   <div class="box">
-    <h1>Rules</h1>
+    <h1>Contents</h1>
     <div class="left">
       <ul>
         <li><a href="rules#Basics">Basics</a>
@@ -16,27 +16,8 @@
             <li><a href="rules#LongRest">Long Rest</a></li>
           </ul>
         </li>
-        <li><a href="rules#Combat">Combat</a>
-          <ul>
-            <li><a href="rules#Setup">Setup</a>
-              <ul>
-                <li><a href="rules#Suprise">Surprise</a></li>
-                <li><a href="rules#Initative">Initiative</a></li>
-                <li><a href="rules#Position">Position</a></li>
-              </ul>
-            </li>
-            <li><a href="rules#Turns">Turns</a>
-              <ul>
-                <li><a href="rules#Movement">Movement</a></li>
-                <li><a href="rules#Action">Action</a></li>
-                <li><a href="rules#Range">Range</a></li>
-                <li><a href="rules#Instant">Instant</a></li>
-              </ul>
-            </li>
-            <li><a href="rules#CriticalHits">Critical Hits</a></li>
-          </ul>
-        </li>
-        <li><a href="rules#Death">Death</a>
+        <li><a [routerLink]="rules" fragment="Combat">Combat</a>
+        <li><a fragment="Death">Death</a>
           <ul>
             <li><a href="rules#SavingThrows">Saving Throws</a></li>
             <li><a href="rules#InstantDeath">Instant Death</a></li>
@@ -275,189 +256,24 @@
     </p>
   </div>
 
-  <div class="box">
-    <h2 id="Combat">Combat</h2>
-    <p>
-      Combat consists of the <b>Setup</b> phase, and the <b>Turns</b> phase.
-    </p>
-    <h3 id="Setup">Setup</h3>
-    <p>
-      During setup, the players and DM determine <b>surprise</b>, <b>positions</b> and <b>initiative</b>.
-    </p>
-    <h4 id="Surprise">Surprise</h4>
-    <p>
-      The GM will decide if either side is surprised, in which case the other side gets a free round of turns before the
-      next phase begins. An example would be sneaking up on a camp of sleeping goblins.
-    </p>
-    <h4 id="Initiative">Initiative</h4>
-    <p>
-      All characters must roll initiative. To do this they roll 1d20 and add their <b>movement</b> stat. The turn order
-      is then
-      determined starting with highest initiative down to lowest.
-    </p>
-    <h4 id="Position">Position</h4>
-    <p>
-      Position on the battlefield is then determined if necessary, dependant on situation. In some cases position may
-      already be evident.
-    </p>
-
-    <h3 id="Turns">Turns</h3>
-    <p>
-      Once setup is completes the turns phase begins. Each character, in order of initiative, takes their turn. When the
-      last
-      character has taken their turn the round is over and a new one begins back with highest initiative character.
-      This process repeats until the battle is over.
-    </p>
-    <p>
-      On a characters turn, they may perform one <b>movement</b>, and one <b>action</b>. These can be in any order, so
-      the character
-      may make their attack then retreat if they wish.
-    </p>
-
-    <h4 id="Movement">Movement</h4>
-    <p>
-      When performing their movement, they may move the number of squares (meters) equal to their <b>movement</b> stat.
-      Diagonal movement is allowed. Friendly figures do not block movement, however enemy figures do block movement.
-    </p>
-
-    <h4 id="Action">Action</h4>
-    <p>
-      For their action, characters have the choice of <b>attack</b>, <b>skill</b>, <b>spell</b>, <b>stabilize</b> and
-      <b>equip</b>.
-    </p>
-
-    <h5>Attack</h5>
-    <p>
-      The character can make a basic attack with their main weapon. This consists of the steps <b>roll attack</b>,
-      <b>compare to avoidance rating</b>, if the attack is equal to or higher than avoidance then the character also
-      <b>rolls for damage</b>, <b>subtracts the targets mitigation</b>, then if any damage is left over <b>health is
-      removed from the target</b>.
-    </p>
-    <p>
-      Take for example Dave the quiet warrior, he is level 1, has 3 agility and 2 strength wielding a damaged short
-      sword,
-      and is attacking a level 1 goblin with 12 dodge, 1 armour and and 8 health:
-    </p>
-    <p class="code">
-      Attack Roll .. 1d20 + AGI .. 1d20 + 3 .. 11 + 3 .. 14<br/>
-      Compare to dodge rating .. 14 vs 12 .. hit!<br/>
-      Damage Roll .. 1d6 - 2 + 2 .. 3 - 2 + 2 .. 3<br/>
-      Subtract Armour .. 3 - 1 .. 2<br/>
-      Remove health .. 8 - 2 .. 6<br/>
-    </p>
-    <p>
-      Remember to use the correct types of <b>avoidance</b> and <b>mitigation</b> for the attack type!
-    </p>
-
-    <h5>Skill</h5>
-    <p>
-      The character can choose to use a skill of type 'action'. These will have varying effects which will be
-      described within the skill text. Many skills are also <b>attacks</b> and will follow the same process above.
-    </p>
-
-    <h5>Spell</h5>
-    <p>
-      If the character has an active spell slot, they may cast the spell, having the effect described. Some spells
-      are also classed as <b>attacks</b> and will follow the process above.
-    </p>
-
-    <h5>Equip</h5>
-    <p>
-      The character can unequip or equip something from their inventory, such as swapping out a shield for another
-      weapon.
-    </p>
-
-    <h5>Stabilize</h5>
-    <p>
-      The character can use bandages to attempt to stabilize a dying character. They must roll a 1d20 and on 11 or
-      above, the target is considered <b>stabilized</b>.
-    </p>
-
-    <h4 id="Range">Range</h4>
-    <p>
-      All spells, actions and weapons have a certain <b>range</b>. A range of 0 means it can only
-      reach adjacent tiles. A reach of 1 means any tile within one square. Ranges greater than 1 should be considered
-      'ranged attacks' and those attacks can exceed the given range value with a penalty. Trace the
-      the number of squares in a straight line and if it is less than or equal to the range there is no penalty, however
-      for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional
-      square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional
-      squares
-      is -1 + -2 + -3 (-6) and so on.
-    </p>
-    <p>
-      Weapons weapons cannot be used against adjacent targets.
-    </p>
-
-    <h4 id="Instant">Instant</h4>
-    <p>
-      At any time during the Turns phase (not only on their own turn) characters may interrupt to perform any skills
-      they have with the type 'instant', provided the requirements described in the skill are met.
-    </p>
-
-    <h3 id="CriticalHits">Critical Hits</h3>
-    <p>
-      When a character rolls a <b>natural</b> 20, as in their d20 roll without modifiers is 20, they score a hit
-      regardless of the targets <b>avoidance</b> rating. They also do not need to roll any damage dice, assuming full
-      damage.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2 id="Death">DEATH</h2>
-    <p>
-      It <i>will</i> be possible to die, as a player it is your responsibility as players to avoid putting your
-      characters in situations where death is likely. It is possible to recover from death through rare magical
-      equipment or high level <b>Cleric</b> spells, but these will be unavailable for some time.
-    </p>
-
-    <h4>Dying</h4>
-    <p>
-      Whenever you start your turn with 0 health, you must make a special check, called a <b>death saving throw</b>, to
-      determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to
-      any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances
-      of succeeding on a saving throw.
-    </p>
-    <p>
-      <b>Roll a d20:</b> If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no
-      effect by
-      itself. On your third success, you become stable (see below). On your <b>third</b> failure, you die. The successes
-      and
-      failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is
-      reset to zero when you regain any hit points or become stable.
-    </p>
-    <p>
-      <b>Rolling 1 or 20:</b> When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If
-      you
-      roll a 20 on the d20, you regain 1 hit point.
-    </p>
-    <p>
-      <b>Damage at 0 Hit Points</b>: If you take any damage while you have 0 hit points, you suffer a death saving throw
-      failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds
-      your hit point maximum, you suffer instant death.
-    </p>
-    <p>
-      A character who is healed above 0 health is considered immediately conscious and no longer dying.
-    </p>
-
-    <h4>Instant Death</h4>
-    <p>
-      Instant death can occur when a player takes damage which would reduce them to their maximum health below 0. This
-      can
-      occur on any player regardless of whether they are already dying, for example if a character with 20/20 max health
-      gets hit for 40 damage, they would instantly be dead.
-    </p>
-    <p>
-      For this reason extra care should be taken with characters or creatures that are far more powerful than you.
-      Provoking an attack from them would not be wise!
-    </p>
-
-    <h4>Stabilizing</h4>
-    <p>
-      When a character is stable, they are still considered unconscious and at 0 health, however they are no longer
-      dying.
-      Characters can be stabilised by other players through the use of bandages, and in some cases resourceful role play
-      actions such as putting pressure on blood flow etc.
-    </p>
+  <div class="box" *ngFor="let rule of rules | async">
+    <h1 id="{{rule.title}}">{{rule.title}}</h1>
+    <p [innerHTML]="rule.desc"></p>
+    <div *ngFor="let section of rule.sections">
+      <h2 *ngIf="section.title" id="{{section.title}}">{{section.title}}</h2>
+      <p *ngIf="section.desc" [innerHTML]="section.desc"></p>
+      <p class="code" *ngIf="section.code">{{section.code}}</p>
+      <div *ngFor="let subSection of section.sections">
+        <h3 *ngIf="subSection.title" id="{{subSection.title}}">{{subSection.title}}</h3>
+        <p *ngIf="subSection.desc" [innerHTML]="subSection.desc"></p>
+        <p class="code" *ngIf="subSection.code">{{subSection.code}}</p>
+        <div *ngFor="let subSubSection of subSection.sections">
+          <h4 *ngIf="subSubSection.title" id="{{subSubSection.title}}">{{subSubSection.title}}</h4>
+          <p *ngIf="subSubSection.desc" [innerHTML]="subSubSection.desc"></p>
+          <p class="code" *ngIf="subSubSection.code">{{subSubSection.code}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="box">
@@ -1388,8 +1204,9 @@
       <tr>
         <td>Invisibility</td>
         <td>Alteration</td>
-        <td>Magically vanish from sight for 1d4+INT rounds. Only creatures with 'see invisible' will be able to see you.
-          Performing any attack action with remove the invisibility.
+        <td>
+          Your target magically vanishes from sight for 1d4+INT rounds. Only creatures with 'see invisible' will be able to see them.
+          Performing any aggressive action with remove the invisibility.
         </td>
       </tr>
       <tr>

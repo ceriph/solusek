@@ -30,9 +30,12 @@ const routes: Routes = [
   },
   {path: 'players', component: PlayersComponent},
   {path: 'players/:name', component: PlayerDetailComponent},
-  {path: 'rules', component: RulesComponent},
-  {path: 'rules/class', component: ClassComponent},
-  {path: 'rules/race', component: RaceComponent},
+  {
+    path: 'rules', component: RulesComponent, children: [
+    {path: 'class', component: ClassComponent},
+    {path: 'race', component: RaceComponent}
+  ]
+  },
   {path: 'lore', component: LoreComponent},
   {path: 'campaign', component: CampaignComponent},
   {path: 'dm', component: DmComponent}
@@ -40,7 +43,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {useHash: true})
   ],
   exports: [
     RouterModule
