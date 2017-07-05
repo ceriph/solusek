@@ -31,4 +31,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Migrate page content into firebase
   * Rules
   * DM
+* Add more spells, particularly nature and light
+* Add spells for dark, mind and song
 

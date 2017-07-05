@@ -20,6 +20,10 @@
       },
       {
         "type": "Story",
+        "desc": "Sophea took an immediate liking to Ruarih, as he seemed quite protective."
+      },
+      {
+        "type": "Story",
         "desc": "Visiting the wizard's circle in Freeport, they met a pompous mage named Articus who didn't believe them. Out of nowhere appeared the old Archmage Belgarath who had been watching them on arrival of the circle."
       },
       {
@@ -29,6 +33,10 @@
       {
         "type": "Story",
         "desc": "Belgarath warned the party that the mark would erode their mind and enslave them. There was no known cure but he told them to seek The Enchantress as soon as possible and ask her to help shield against the effects."
+      },
+      {
+        "type": "Story",
+        "desc": "Sophea asked to stay with the party, as she felt safe with them and had lost everyone else she knew."
       }
     ]
   },

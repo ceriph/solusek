@@ -152,5 +152,73 @@
         "desc": "When a character is stable, they are still considered unconscious and at 0 health, however they are no longer dying. Characters can be stabilised by other players through the use of bandages, and in some cases resourceful role play actions such as putting pressure on blood flow etc."
       }
     ]
+  },
+  {
+    "title": "Character Advancement",
+    "desc": "Characters advance in level by earning experience points. These are awarded for various actions such as defeating enemies in combat, completing a quest, or exceptional feats of roleplaying."
+    "sections": [
+      {
+        "desc": "When advancing in level, characters will unlock skills and spells dependant on their class. Regardless of class, on each level up, characters receive one stat point to spend as they choose. Base stats (before race modifier adjustment) at creation can only be a maximum of 5. During advancement a base stat cannot be raised above 15. It should be noted that stats can be raised above 15 via race and equipment modifiers."
+      },
+      {
+        "desc": "The requirements for each level are as follows:"
+      },
+      {
+        "desc": "<table><tr class='header'><td><b>Character Level</b></td><td><b>Total Experience Required</b></td></tr><tr><td>1</td><td>0</td></tr><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>900</td></tr><tr><td>4</td<td>2700</td></tr><tr><td>5</td><td>6500</td></tr><tr><td>6</td><td>14000</td></tr><tr><td>7</td><td>23000</td></tr><tr><td>8</td><td>34000</td></tr><tr><td>9</td><td>48000</td></tr><tr><td>10</td><td>64000</td></tr><tr><td>11</td><td>85000</td></tr><tr><td>12</td><td>100000</td></tr><tr><td>13</td><td>120000</td></tr><tr><td>14</td><td>140000</td></tr><tr><td>15</td><td>165000</td></tr><tr><td>16</td><td>195000</td></tr><tr><td>17</td><td>225000</td></tr><tr><td>18</td><td>265000</td></tr><tr><td>19</td><td>305000</td></tr><tr><td>20</td><td>355000</td></tr></table>"
+      }
+    ]
+  },
+  {
+    "title": "Inspiration",
+    "desc": "Inspiration is a rule the game master can use to reward you for playing your character in a way that’s true to his or her personality traits, ideal, bond, and flaw. By using inspiration, you can draw on your personality trait of compassion for the downtrodden to give you an edge in negotiating with the Beggar Prince. Or inspiration can let you call on your bond to the defense of your home village to push past the effect of a spell that has been laid on you."
+    "sections": [
+      {
+        "title": "Gaining Inspiration",
+        "desc": "Your GM can choose to give you inspiration for a variety of reasons. Typically, GMs award it when you play out your personality traits, give in to the drawbacks presented by a flaw or bond, and otherwise portray your character in a compelling way. Your GM will tell you how you can earn inspiration in the game."
+      },
+      {
+        "desc": "You either have inspiration or you don’t — you can’t stockpile multiple “inspirations” for later use."
+      },
+      {
+        "title": "Using Inspiration",
+        "desc": "If you have inspiration, you can expend it when you make an Attack roll, saving throw, or ability check. Spending your inspiration gives you advantage on that roll."
+      },
+      {
+        "desc": "Additionally, if you have inspiration, you can reward another player for good roleplaying, clever thinking, or simply doing something exciting in the game. When another player character does something that really contributes to the story in a fun and interesting way, you can give up your inspiration to give that character inspiration."
+      }
+    ]
+  },
+  {
+    "title": "Advantage",
+    "desc": "Sometimes a Special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an Attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17."
+    "sections": [
+      {
+        "desc": "If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don’t roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20."
+      },
+      {
+        "desc": "If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage."
+      },
+      {
+        "desc": "You usually gain advantage or disadvantage through the use of skills or <b>inspiration</b>. The GM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result."
+      }
+    ]
+  },
+  {
+    "title": "Character Creation",
+    "desc": "Creating a character consists of <b>choosing a race</b>, <b>choosing a class</b>, <b>allocating stat points</b> and <b>filling out background information</b>."
+    "sections": [
+      {
+        "title": "Choosing a Race",
+        "desc": "Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each race also has an additional unique passive ability."
+      },
+      {
+        "desc": "Some races will be slightly better suited to certain classes at the beginning, however there are no restrictions on this choice."
+      },
+      {
+        "desc": "More detail on each race can be found here:"
+      },
+      {
+      }
+    ]
   }
-]
+}

@@ -17,6 +17,11 @@
             "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>snared</b> but <i>not</i> <b>rooted</b>."
           },
           {
+            "label": "Telekinesis",
+            "school": "Alteration",
+            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make a saving throw (INT vs INT) or be lifted for one round."
+          },
+          {
             "label": "Summon Light",
             "school": "Conjuration",
             "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed byt the caster at any time."
@@ -45,6 +50,11 @@
             "label": "Open Lock",
             "school": "Alteration",
             "desc": "The caster can make a 'lockpick' check using their INT+1."
+          },
+          {
+            "label": "Detect Magic",
+            "school": "Alteration",
+            "desc": "The caster becomes generally aware of any magic effects within 10m."
           },
           {
             "label": "Eye of Zomm",
@@ -79,7 +89,12 @@
           {
             "label": "Cancel Magic",
             "school": "Alteration",
-            "desc": "Remove 1d4 magical effects on the target (works for both beneficial effects on enemies, and negative effects on allies)"
+            "desc": "Remove 1d4 magical effects on the target (works for both beneficial effects on enemies, and negative effects on allies)."
+          },
+          {
+            "label": "Identify",
+            "school": "Alteration",
+            "desc": "The caster learns the magical properties of a chosen magic item they are touching."
           },
           {
             "label": "Summon Elemental",
@@ -117,6 +132,11 @@
             "desc": "Instantly transports the caster to a chosen previously visited location in the world."
           },
           {
+            "label": "Levitate",
+            "school": "Alteration",
+            "desc": "The caster levitates up to 1m off the ground and can move around freely for up to 1 hour."
+          },
+          {
             "label": "Flaming Weapon",
             "school": "Alteration",
             "desc": "Engulf a friendly character's weapon in flame, adding an additional <b>1d6+INT fire damage</b>."
@@ -125,6 +145,56 @@
             "label": "Blizzard",
             "school": "Evocation",
             "desc": "Rain ice at a target location of size 3mx3m, attacking INT vs dodge on all creatures within the area now and at the start of your next turn. On hit deals <b>1d8+INT ice damage</b>."
+          },
+          {
+            "label": "Chain Lightning",
+            "school": "Evocation",
+            "desc": "Attack INT vs dodge on a enemy target within 10m, on hit that character takes <b>2d8+INT arcane damage</b>. The lightning then bounces to up to 3 other enemy targets in distance order. Each enemy can only be hit once byt the chain."
+          },
+          {
+            "label": "Blur",
+            "school": "Illusion",
+            "desc": "The target becomes a blurred image, causing all attacking characters to roll with disadvantage until the casters next turn."
+          }
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          {
+            "label": "Crystalize",
+            "school": "Abjuration",
+            "desc": "Coat yourself in hard crystal, gaining 5 armour and 5 magic reduction at the cost of being rooted. Does not stack with other 'Shielding' spells."
+          },
+          {
+            "label": "Group Teleport",
+            "school": "Alteration",
+            "desc": "The caster can transport themselves and any characters they are touching to any previously visited location."
+          },
+          {
+            "label": "Enter Plane",
+            "school": "Alteration",
+            "desc": "The caster can transport themselves and any characters they are touching to another plane, if they are in the presence of a planar rift."
+          },
+          {
+            "label": "Summon Greater Elemental",
+            "school": "Conjuration",
+            "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does <b>2d8+INT damage</b> (of the elemental type). The elemental is also immune to damage of its type."
+          },
+          {
+            "label": "Arcane Sword",
+            "school": "Conjuration",
+            "desc": "The caster summons a sword made of pure arcane energy. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
+          },
+          {
+            "label": "Disintegrate",
+            "school": "Evocation",
+            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Attack INT vs INT on each character in the line, dealing <b>3d8+INT arcane damage</b> to any creatures in it's path."
+          },
+          {
+            "label": "Call Meteor",
+            "school": "Evocation",
+            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area take <b>4d6+INT fire damage</b>."
           }
         ]
       }
@@ -132,14 +202,297 @@
   },
   "dark": {
     "label": "Dark",
-    "desc": "TODO"
+    "desc": "The powers of death and reanimation, available to necromancers and reavers."
   },
   "light": {
     "label": "Light",
-    "desc": "TODO"
+    "desc": "The holy power of Marr, available to clerics and paladins.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          {
+            "label": "Lesser Protection",
+            "school": "Abjuration",
+            "desc": "Grant a friendly target +1 armour and +1 magic reduction against any attacks. Does not stack with other 'Protection' spells."
+          },
+          {
+            "label": "Lesser Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 1d4+SPI health."
+          },
+          {
+            "label": "Lesser Blessing",
+            "school": "Alteration",
+            "desc": "The target receives +1 on all checks and attack rolls for 1 hour. Does not stack with other Blessing spells."
+          },
+          {
+            "label": "Cure Poison",
+            "school": "Alteration",
+            "desc": "Purge any poison from the target character."
+          },
+          {
+            "label": "Weaken Evil",
+            "school": "Alteration",
+            "desc": "Attack SPI vs SPI on target undead or demon, on hit the target suffers -1 STR"
+          },
+          {
+            "label": "Holy Light",
+            "school": "Evocation",
+            "desc": "Attack SPI vs dodge, on hit deals 1d4+SPI damage. Deals an additional 1d6 damage against undead or demons."
+          }
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          {
+            "label": "Protection",
+            "school": "Abjuration",
+            "desc": "Grant a friendly target +2 <b>armour</b> and +2 <b>magic reduction</b>. Does not stack with other 'Protection' spells."
+          },
+          {
+            "label": "Lesser Symbol",
+            "school": "Abjuration",
+            "desc": "Mark a friendly target with a holy symbol, granting them <b>1d6+SPI temporary health</b>."
+          },
+          {
+            "label": "Cure Disease",
+            "school": "Alteration",
+            "desc": "Purge any disease from the target character."
+          },
+          {
+            "label": "Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 2d4+SPI health."
+          },
+          {
+            "label": "Turn Undead",
+            "school": "Evocation",
+            "desc": "Attack SPI vs SPI on a target undead. Deals 1d8+SPI light damage and the target is stunned."
+          }
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          {
+            "label": "Greater Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 3d4+SPI health."
+          },
+          {
+            "label": "Circle of Healing",
+            "school": "Alteration",
+            "desc": "All friendly characters within 1m are healed for 1d8+SPI health."
+          },
+          {
+            "label": "Blessing",
+            "school": "Alteration",
+            "desc": "The target receives +2 on all checks and attack rolls for 1 hour. Does not stack with other Blessing spells."
+          },
+          {
+            "label": "Purge",
+            "school": "Alteration",
+            "desc": "Purge any single negative condition from the target."
+          },
+          {
+            "label": "Equalizing Light",
+            "school": "Evocation",
+            "desc": "Creates a blast of holy energy at a target area of size 3mx3m, attack SPI vs SPI on each enemy target in the area. On hit deals <b>1d6+SPI light damage</b>. Heals all friendly characters in the blast for <b>1d6+SPI health</b>."
+          }
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          {
+            "label": "Symbol",
+            "school": "Abjuration",
+            "desc": "Mark a friendly target with a holy symbol, granting them <b>2d6+SPI temporary health</b>."
+          },
+          {
+            "label": "Revive",
+            "school": "Alteration",
+            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead. If the character died before the last short or long rest, this cannot be used."
+          },
+          {
+            "label": "Greater Protection",
+            "school": "Alteration",
+            "desc": "Grant a friendly target +3 <b>armour</b> and +3 <b>magic reduction</b>. Does not stack with other 'Protection' spells."
+          },
+          {
+            "label": "Greater Blessing",
+            "school": "Alteration",
+            "desc": "The target receives +3 on all checks and attack rolls for 1 hour. Does not stack with other 'Blessing' spells."
+          },
+          {
+            "label": "Holy Word",
+            "school": "Evocation",
+            "desc": "Attack SPI vs SPI on all enemies within earshot, on hit they take <b>2d4+INT light damage</b>. Deals an additional 1d8 to undead or demons."
+          }
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          {
+            "label": "Greater Symbol",
+            "school": "Abjuration",
+            "desc": "Mark a friendly target with a holy symbol, granting them <b>3d6+SPI temporary health</b>."
+          },
+          {
+            "label": "Angel's Fury",
+            "school": "Evocation",
+            "desc": "Attack SPI vs SPI on target enemy within 10m, deals 2d8+SPI light damage. Does an additional 1d6+SPI damage to demons and undead."
+          },
+          {
+            "label": "Marr's Vengeance",
+            "school": "Alteration",
+            "desc": "Grant divine protection to a target, the next fatal damage they would take is ignore and they can immediately make an attack against the attacking enemy."
+          },
+          {
+            "label": "Spirit Guardians",
+            "school": "Conjuration",
+            "desc": "Summon 2 protective spirits around yourself. Each spirit will block one source of damage before disappearing."
+          }
+        ]
+      }
+    }
   },
   "nature": {
     "label": "Nature",
-    "desc": "TODO"
+    "desc": "The power of the nature and weather.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          {
+            "label": "Strength of the Bear",
+            "school": "Alteration",
+            "desc": "Grant a friendly target SPI strength for their check or attack."
+          },
+          {
+            "label": "Camouflage",
+            "school": "Alteration",
+            "desc": "Your target blends into the wilderness, becoming invisible for 1d4+SPI rounds. Only works outdoors. Making any aggressive action removes it."
+          },
+          {
+            "label": "Ensnaring Roots",
+            "school": "Conjuration",
+            "desc": "Attack SPI vs dodge, on hit deals <b>1d4+SPI damage</b> and the target is <b>snared</b> for 3 rounds."
+          },
+          {
+            "label": "Call Lightning",
+            "school": "Evocation",
+            "desc": "Attack SPI vs SPI on target, on hit the target suffers <b>1d4+SPI nature damage</b> and is stunned."
+          }
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          {
+            "label": "Lesser Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 1d4+SPI health"
+          },
+          {
+            "label": "Skin Like Wood",
+            "school": "Alteration",
+            "desc": "Grant a friendly target 1 <b>armour</b> and 1 <b>magic reduction</b>."
+          },
+          {
+            "label": "Eyes of the Hawk",
+            "school": "Alteration",
+            "desc": "Grant a friendly target SPI attack on their next turn."
+          },
+          {
+            "label": "Thorny Vines",
+            "school": "Conjuration",
+            "desc": "Attack SPI vs SPI, on hit wraps the target in vines for 3 rounds, rooting and <b>1d4+SPI damage</b> at the start of it's turn."
+          },
+          {
+            "label": "Call Hurricane",
+            "school": "Evocation",
+            "desc": "Attack SPI vs dodge on all creates in a 3mx3m area, on hit deals 1d8+SPI damage and the targets are <b>knocked down</b>."
+          }
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          {
+            "label": "Speed of the Cheetah",
+            "school": "Alteration",
+            "desc": "Grant a friendly target SPI Agility for their next turn."
+          },
+          {
+            "label": "Skin Like Rock",
+            "school": "Alteration",
+            "desc": "Grant a friendly target 4 armour and 4 magic reduction, however they are also <b>snared</b>."
+          },
+          {
+            "label": "Summon Wind",
+            "school": "Alteration",
+            "desc": "Call on the winds to help you levitate off the ground for 1d4+SPI rounds."
+          },
+          {
+            "label": "Charm Animal",
+            "school": "Illusion",
+            "desc": "Attack SPI vs SPI on a target animal, if it hits, the animal is charmed next round."
+          },
+          {
+            "label": "Spider Form",
+            "school": "Illusion",
+            "desc": "Take the form of a small spider for 1d4+SPI rounds/minutes."
+          }
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          {
+            "label": "Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 2d4+SPI health"
+          },
+          {
+            "label": "Skin Like Steel",
+            "school": "Alteration",
+            "desc": "Grant a friendly target 6 armour and 6 magic reduction, however they are also <b>snared</b>."
+          },
+          {
+            "label": "Poison Cloud",
+            "school": "Evocation",
+            "desc": "Summon a cloud of poison at a target area of size 3mx3m of strength 1d20+SPI, all characters in the area must make a saving throw each turn or be damaged by the poison for 1d4+SPI nature damage."
+          },
+          {
+            "label": "Bird Form",
+            "school": "Illusion",
+            "desc": "Take the form of a small bird for 1d4+SPI rounds/minutes."
+          }
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          {
+            "label": "Greater Healing",
+            "school": "Alteration",
+            "desc": "Heal the target for 3d4+SPI health."
+          },
+          {
+            "label": "Ankh of Reversal",
+            "school": "Alteration",
+            "desc": "Mark the friendly target, the next fatal damage they would take actually heals them for that amount instead."
+          }
+        ]
+      }
+    }
+  },
+  "mind": {
+    "label": "Mind",
+    "desc": "The power to alter the mind, available to Enchanters."
   }
 }
