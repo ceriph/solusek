@@ -1,5 +1,54 @@
 [
   {
+    "title": "Basics",
+    "desc": "This custom rule set is based on DnD 5th Edition with some alterations. The alterations are based around theming, simplicity, and slightly less randomness.",
+    "sections": [
+      {
+        "title": "Dice",
+        "desc": "Dice are a large part of DnD, introducing an element of randomness and excitement. The dice used will be standard DnD dice: d4, d6, d8, d10, d12, d20, d100."
+      },
+      {
+        "title": "Rounding",
+        "desc": "When calculating a result that ends up not being a whole number, you should always <b>round down</b>."
+      },
+      {
+        "title": "Checks",
+        "desc": "When performing an arbitrary action, the character may be asked to perform a check. A check tests a character’s innate talent and training in an effort to overcome a challenge. The GM calls for an ability check when a character attempts an action (other than an attack) that has a chance of failure. When the outcome is uncertain, the dice determine the results. For every ability check, the GM decides which of the six stats is relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class. You will be informed of the general difficulty of the task before attempting to do it. The more difficult a task, the higher its DC:",
+        "sections": [
+          {
+            "desc": "<table><tr class='header'><td><b>Difficulty</b></td><td><b>DC</b></td></tr><tr><td>Trivial</td><td>5</td></tr><tr><td>Easy</td><td>10</td></tr><tr><td>Medium</td><td>20</td></tr><tr><td>Hard</td><td>30</td></tr><tr><td>Very hard</td><td>40</td></tr><tr><td>Nearly impossible</td><td>50+</td></tr></table>"
+          },
+          {
+            "desc": "To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM. Some checks may require teamwork (for example pushing a very large object), in this case, players can roll together to combine into a stronger check."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Resting",
+    "desc": "Characters can rest out of combat to gain health and refresh certain abilities. There are two types of rests:",
+    "sections": [
+      {
+        "title": "Short Rest",
+        "desc": "A short rest is considered a 1 hour break that the characters can use after combat to recover health. Shorts rests should only be taken when the characters are not currently in any immediate danger.",
+        "sections": [
+          {
+            "desc": "If the characters are not <b>exhausted</b> and have food and water, they regain health equal to their class <b>hit die</b>, plus <b>constitution</b>, times their level. For example a level 3 warrior (class hid die 1d12) with 4 CON:"
+            "code": "Regained health = (1d12 + 4) * 3 = (7 + 4) * 3 = 33"
+          },
+          {
+            "desc": "Characters can take 3 short rests per day before becoming <b>exhausted</b>."
+          }
+        ]
+      },
+      {
+        "title": "Long Rest",
+        "desc": "A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Provided the characters have access to food and water, they regain all hit points, refresh all abilities and remove any existing <b>exhausted</b> conditions."
+      }
+    ]
+  },
+  {
     "title": "Combat",
     "desc": "Combat in Solusek is divided up into 4 stages: <b>Suprise</b>, <b>Initiative</b>, <b>Position</b> and <b>Rounds</b>.",
     "sections": [
@@ -52,12 +101,12 @@
               {
                 "title": "Critical Hits",
                 "desc": "When a character rolls a <i>natural</i> 20, meaning their d20 roll before modifiers was 20, they score a critical hit. Critical hits count as full damage, so damage does not need to be rolled."
+              },
+              {
+                "title": "Range",
+                "desc": "All weapons, spells and skill will have a range value. 0 and 1 are considered melee attacks, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
               }
             ]
-          },
-          {
-            "title": "Range",
-            "desc": "All weapons, spells and skill will have a range value. 0 and 1 are considered melee attacks, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
           },
           {
             "title": "Instant",

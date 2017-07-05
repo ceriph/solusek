@@ -3,25 +3,9 @@
     <h1>Contents</h1>
     <div class="left">
       <ul>
-        <li><a href="rules#Basics">Basics</a>
-          <ul>
-            <li><a href="rules#Dice">Dice</a></li>
-            <li><a href="rules#Rounding">Rounding</a></li>
-            <li><a href="rules#Checks">Checks</a></li>
-          </ul>
-        </li>
-        <li><a href="rules#Resting">Resting</a>
-          <ul>
-            <li><a href="rules#ShortRest">Short Rest</a></li>
-            <li><a href="rules#LongRest">Long Rest</a></li>
-          </ul>
-        </li>
-        <li><a [routerLink]="rules" fragment="Combat">Combat</a>
-        <li><a fragment="Death">Death</a>
-          <ul>
-            <li><a href="rules#SavingThrows">Saving Throws</a></li>
-            <li><a href="rules#InstantDeath">Instant Death</a></li>
-            <li><a href="rules#Stablizing">Stabilizing</a></li>
+        <li *ngFor="let rule of rules | async"><a simplePageScroll href="#{{rule.title}}">{{rule.title}}</a>
+          <ul *ngIf="rule.sections">
+            <li *ngFor="let section of rule.sections"><a simplePageScroll href="#{{section.title}}">{{section.title}}</a>
           </ul>
         </li>
         <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>
@@ -137,123 +121,6 @@
         <li><a href="rules#Poisons">Poisons</a></li>
       </ul>
     </div>
-  </div>
-
-  <div class="box">
-    <h2 id="Basics">Basics</h2>
-    <p>
-      This custom rule set is based on DnD 5th Edition with some alterations. The alterations are based around theming,
-      simplicity, and slightly less randomness.
-    </p>
-
-    <h3 id="Dice">Dice</h3>
-    <p>
-      Dice are a large part of DnD, introducing an element of randomness and excitement. The dice used will be
-      standard DnD dice: d4, d6, d8, d10, d12, d20, d100. The most common usages of which are:
-    </p>
-
-    <ul>
-      <li>
-        <b>d4</b> - timers - sometimes the DM will roll a d4 to decide how long before something happens
-      </li>
-      <li>
-        <b>d4-d12</b> - damage - used for damage rolls
-      </li>
-      <li>
-        <b>d20</b> - checks/saving throws
-      </li>
-      <li>
-        <b>d100</b> - percentile checks for certain conditions such as madness
-      </li>
-    </ul>
-
-    <h3 id="Rounding">ROUNDING</h3>
-    <p>
-      When calculating a result that ends up not being a whole number, you should always round down.
-    </p>
-
-    <h3 id="Checks">CHECKS</h3>
-    <p>
-      When performing an arbitrary action, the character may be asked to perform a check.
-    </p>
-    <p>
-      A check tests a character’s innate talent and training in an effort to overcome a challenge. The GM
-      calls for an ability check when a character attempts an action (other than an attack) that has a chance
-      of failure. When the outcome is uncertain, the dice determine the results.
-    </p>
-    <p>
-      For every ability check, the GM decides which of the six stats is relevant to the task at hand and the difficulty
-      of the task, represented by a Difficulty Class. You will be informed of the general difficulty of the task before
-      attempting to do it. The more difficult a task, the higher its DC:
-    </p>
-
-    <table>
-      <tr class="header">
-        <td><b>Difficulty</b></td>
-        <td><b>DC</b></td>
-      </tr>
-      <tr>
-        <td>Trivial</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Easy</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>Medium</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td>Hard</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Very hard</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>Nearly impossible</td>
-        <td>50+</td>
-      </tr>
-    </table>
-    <p>
-      To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses
-      and
-      penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a
-      success—the
-      creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no
-      progress toward the objective or makes progress combined with a setback determined by the GM.
-
-      Some checks may require teamwork (for example pushing a very large object), in this case, players can roll
-      together to combine into a stronger check.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2 id="Resting">Resting</h2>
-    <p>Characters can rest out of combat to gain health and refresh certain abilities. There are two types of rests:</p>
-
-    <h3 id="ShortRest">Short Rest</h3>
-    <p>
-      A short rest is considered a 1 hour break that the characters can use after combat to recover health. Shorts rests
-      should only be taken when the characters are not currently in any immediate danger.
-    </p>
-    <p>
-      If the characters are not <b>exhausted</b> and have food and water, they roll their class <b>hit die</b> and gain
-      health
-      equal to the result + their <b>constitution</b> + their <b>level</b>.
-    </p>
-    <p>
-      Characters can take 3 short rests per day before becoming <b>exhausted</b>.
-    </p>
-
-    <h3 id="LongRest">Long Rest</h3>
-    <p>
-      A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Provided the characters
-      have access to food and water, they regain all hit points, refresh all abilities and remove any existing
-      <b>exhausted</b> conditions.
-    </p>
   </div>
 
   <div class="box" *ngFor="let rule of rules | async">
@@ -1102,15 +969,29 @@
       <li><b>Rank 5</b> - 5 slot points</li>
     </ul>
     <p>
-      All spells will also be one of the following types:
+      All spells will also be one of the following schools:
     </p>
     <ul>
-      <li><b>Abjuration</b> - Magic which defends and protects</li>
-      <li><b>Alteration</b> - Magic which improves and heals</li>
-      <li><b>Conjuration</b> - Magic which summons items or creaturs</li>
-      <li><b>Evocation</b> - Magic which directly damages targets</li>
-      <li><b>Illusion</b> - Magic which alters the appearance</li>
+      <li><b>Abjuration</b> - Defends and protects</li>
+      <li><b>Alteration</b> - Improves and heals</li>
+      <li><b>Conjuration</b> - Summons items or creatures</li>
+      <li><b>Evocation</b> - Directly damages targets</li>
+      <li><b>Illusion</b> - Alters the appearance and mind</li>
     </ul>
+
+    <div *ngIf="spells">
+      <div *ngFor="let group of spells">
+        <h3 id="{{group.label}}">{{group.label}}</h3>
+        <p [innerHTML]="group.desc"></p>
+        <table class="spells" *ngFor="let rank of group.ranks">
+          <span *ngIf="rank">
+            <tr class="header"><td colspan="3">Rank {{rank.rank}} Spells</td></tr>
+            <tr class="header"><td>Name</td><td>School</td><td>Effect</td></tr>
+            <tr *ngFor="let spell of rank.spells"><td>{{spell.label}}</td><td>{{spell.school}}</td><td [innerHTML]="spell.desc"></td></tr>
+          </span>
+        </table>
+      </div>
+    </div>
 
     <h3 id="Arcane">Arcane</h3>
     <p>

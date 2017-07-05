@@ -1,4 +1,4 @@
-<div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'" class="no-print">
+<div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'" class="dm-buttons no-print">
   <button *ngFor="let player of players | async" (click)="load(player.character)">{{player.character.info.name}}</button>
 </div>
 

@@ -1,0 +1,145 @@
+{
+  "arcane": {
+    "label": "Arcane",
+    "desc": "Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice. Wizards are the only class that gain access to arcane magic.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          {
+            "label": "Lesser Shielding",
+            "school": "Abjuration",
+            "desc": "The wizard receives 1 <b>armour</b> and 1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+          },
+          {
+            "label": "Blink",
+            "school": "Alteration",
+            "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>snared</b> but <i>not</i> <b>rooted</b>."
+          },
+          {
+            "label": "Summon Light",
+            "school": "Conjuration",
+            "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed byt the caster at any time."
+          },
+          {
+            "label": "Arcane Missiles",
+            "school": "Evocation",
+            "desc": "Fires a number of missiles equal to INT, each attacking (INT vs dodge) random nearby enemies for <b>1d4 arcane damage</b>."
+          },
+          {
+            "label": "Burning Hands",
+            "school": "Evocation",
+            "desc": "Attack INT vs dodge on a target in melee range, deals <b>1d8+INT fire damage</b>."
+          }
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          {
+            "label": "Shielding",
+            "school": "Abjuration",
+            "desc": "The wizard receives 1 <b>armour</b> and 1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+          },
+          {
+            "label": "Open Lock",
+            "school": "Alteration",
+            "desc": "The caster can make a 'lockpick' check using their INT+1."
+          },
+          {
+            "label": "Eye of Zomm",
+            "school": "Conjuration",
+            "desc": "Summon a floating eye which the caster can 'see' through and control. Useful for scouting, however the eye is visible to others."
+          },
+          {
+            "label": "Frost Nova",
+            "school": "Evocation",
+            "desc": "Attack INT vs INT on all enemy targets within 3m, on hit the targets take <b>1d4+INT ice damage</b> and are <b>rooted</b>."
+          },
+          {
+            "label": "Fireball",
+            "school": "Evocation",
+            "desc": "Attack INT vs dodge on a target within 10m and all characters within 1m of the target. On hit deals <b>2d4+INT fire damage</b>."
+          },
+          {
+            "label": "Mirror Image",
+            "school": "Illusion",
+            "desc": "Create INT identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+          }
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          {
+            "label": "Flame Shield",
+            "school": "Abjuration",
+            "desc": "Engulf an ally in protective flames, giving them 2 <b>magic reduction</b>. The next melee attack against that character will cause the shield to burst, dealing <b>1d8+INT fire damage</b> to the attacker."
+          },
+          {
+            "label": "Cancel Magic",
+            "school": "Alteration",
+            "desc": "Remove 1d4 magical effects on the target (works for both beneficial effects on enemies, and negative effects on allies)"
+          },
+          {
+            "label": "Summon Elemental",
+            "school": "Conjuration",
+            "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does 1d8+INT damage (of the elemental type)."
+          },
+          {
+            "label": "Choking Cloud",
+            "school": "Evocation",
+            "desc": "Create a cloud of choking gas at a target location of size 3mx3m, giving all creatures within -1 to attack and suffering <b>1d4 damage</b> when starting their turn within the cloud."
+          },
+          {
+            "label": "Icy Grasp",
+            "school": "Evocation",
+            "desc": "Attack INT vs INT on enemy target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>rooted</b>."
+          },
+          {
+            "label": "Invisibility",
+            "school": "Illusion",
+            "desc": "Your target magically vanishes from sight for 1d4+INT rounds. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
+          }
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          {
+            "label": "Major Shielding",
+            "school": "Abjuration",
+            "desc": "The wizard receives 3 <b>armour</b> and 3 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+          },
+          {
+            "label": "Teleport",
+            "school": "Alteration",
+            "desc": "Instantly transports the caster to a chosen previously visited location in the world."
+          },
+          {
+            "label": "Flaming Weapon",
+            "school": "Alteration",
+            "desc": "Engulf a friendly character's weapon in flame, adding an additional <b>1d6+INT fire damage</b>."
+          },
+          {
+            "label": "Blizzard",
+            "school": "Evocation",
+            "desc": "Rain ice at a target location of size 3mx3m, attacking INT vs dodge on all creatures within the area now and at the start of your next turn. On hit deals <b>1d8+INT ice damage</b>."
+          }
+        ]
+      }
+    }
+  },
+  "dark": {
+    "label": "Dark",
+    "desc": "TODO"
+  },
+  "light": {
+    "label": "Light",
+    "desc": "TODO"
+  },
+  "nature": {
+    "label": "Nature",
+    "desc": "TODO"
+  }
+}

@@ -33,6 +33,8 @@ import {RaceComponent} from "./rules/race/race.component";
 import { CampaignComponent } from './campaign/campaign.component';
 import {ScenarioService} from "./campaign/scenario.service";
 import {RulesService} from "./rules/rules.service";
+import {Ng2SimplePageScrollModule} from "ng2-simple-page-scroll";
+import {SpellService} from "./rules/spells/spell.service";
 
 @NgModule({
   imports: [
@@ -40,7 +42,8 @@ import {RulesService} from "./rules/rules.service";
     FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'solusek-character-creator'),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    Ng2SimplePageScrollModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -71,6 +74,7 @@ import {RulesService} from "./rules/rules.service";
     EquipmentService,
     ScenarioService,
     RulesService,
+    SpellService,
     AngularFireAuth,
     LoginService
   ],
