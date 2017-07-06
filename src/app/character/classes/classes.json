@@ -147,6 +147,20 @@
     ],
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small Shields, Medium Shields",
     "recommendations": "Constitution, Strength, Spirit",
+    "archetypes": [
+      {
+        "label": "Avenger",
+        "desc": "The paladin gains <b>Large Weapon Fighting</b> (+2 to attack and damage rolls when using a two handed weapon) and <b>Smite</b> (once per round the paladin can use his bonus action to cast a evocation spell)."
+      },
+      {
+        "label": "Protector",
+        "desc": "The paladin gains <b>Heavy Defense</b> (no longer takes the negative effects of wearing heavy armour and holding a shield) and <b>Protect</b> (once per round the paladin can use his bonus action to cast an abjuration spell)."
+      },
+      {
+        "label": "Healer",
+        "desc": "The paladin can now use Lay On Hands twice per long rest, and all his healing spells gain an additional 1d6+2."
+      }
+    ],
     "skills": [
       {
         "name": "courage",
@@ -170,7 +184,7 @@
         "name": "divineshield",
         "label": "Divine Shield",
         "level": 4,
-        "desc": "Action - once per short rest - the paladin enchants his shield with magical energy, causing it to block all damage he would receive next round. Requires a shield."
+        "desc": "Action - once per short rest - the paladin surrounds himself in holy energy, stunning him next round but blocking all damage he would receive next round."
       },
       {
         "name": "resistance",
@@ -179,10 +193,10 @@
         "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
-        "name": "fightingstyle",
-        "label": "Fighting Style",
-        "level": 5,
-        "desc": "Passive - The paladin selects a fighting style, either Protector (+1 armour when wielding a shield) or Avenger (+1 attack and damage when wielding a two handed weapon)."
+        "name": "divineweapon",
+        "label": "Divine Weapon",
+        "level": 6,
+        "desc": "Action - once per short rest - the paladin enchants his weapon with holy energy and attacks immediately, dealing weapon damage plus <b>1d6+SPI light damage</b>. Deals an additional 1d6 to undead or demons."
       },
       {
         "name": "lightmagic2",
@@ -193,8 +207,14 @@
       {
         "name": "weaponmastery",
         "label": "Weapon Mastery",
-        "level": 10,
+        "level": 9,
         "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+      },
+      {
+        "name": "choosearchetype",
+        "label": "Choose Archetype",
+        "level": 10,
+        "desc": "Passive - The Paladin chooses to specialize in an archetype, either <b>Avenger</b>, <b>Protector</b> or <b>Healer</b>."
       },
       {
         "name": "extraattack",
@@ -234,6 +254,20 @@
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons",
     "recommendations": "Constitution, Strength, Spirit",
+    "archetypes": [
+      {
+        "label": "Archer",
+        "desc": "The ranger now gains <b>Retreat</b> (once per round, the ranger can use their bonus action to move 1 space away from an enemy within melee range), they also gain +5 range when using any ranged weapon."
+      },
+      {
+        "label": "Marauder",
+        "desc": "The ranger gains <b>Advance</b> (once per round, the ranger can use their bonus action to move 1 space towards the nearest enemy) and <b>Ambidexterity</b> (the character no longer rolls with disadvantage on offhand attacks)."
+      },
+      {
+        "label": "Warg",
+        "desc": "The ranger gains <b>Project Mind</b> (once per long rest, the ranger can project his consciousness into his animal companion for 1 hour). His animal companion also becomes <b>dire</b>, gaining 1d4 health per ranger level, 2 armour, 2 magic reduction and <b>Extra Attack</b>."
+      }
+    ],
     "skills": [
       {
         "name": "tracker",
@@ -263,7 +297,7 @@
         "name": "animalcompanion",
         "label": "Animal Companion",
         "level": 4,
-        "desc": "Passive - The ranger can charm an animal up to his level to become his companion. The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type and level of the animal and the ranger can command the companion in battle."
+        "desc": "Passive - The ranger calls forth an animal companion (hawk, panther, wolf or bear). The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type of animal and level of ranger and it can be commanded in battle."
       },
       {
         "name": "resistance",
@@ -278,6 +312,12 @@
         "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
+        "name": "dualwield",
+        "label": "Dual Wield",
+        "level": 7,
+        "desc": "Passive - The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
+      },
+      {
         "name": "naturemagic2",
         "label": "Nature Magic 2",
         "level": 8,
@@ -286,8 +326,14 @@
       {
         "name": "weaponmastery",
         "label": "Weapon Mastery",
-        "level": 10,
+        "level": 9,
         "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+      },
+      {
+        "name": "choosearchetype",
+        "label": "Choose Archetype",
+        "level": 10,
+        "desc": "Passive - The Ranger chooses to specialize in an archetype, either <b>Archer</b>, <b>Marauder</b> or <b>Warg</b>."
       },
       {
         "name": "naturemagic3",
@@ -347,6 +393,20 @@
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons",
     "recommendations": "Agility, Intelligence, Strength",
+    "archetypes": [
+      {
+        "label": "Alchemist",
+        "desc": "The rogue specialises in his poisons, gaining <b>Bottled Death</b> (The rogue can create and bottle his poisons, and throw them in battle to poison enemies) as well as +1 poison prepare per rank per day and all poisons gain +2 strength."
+      },
+      {
+        "label": "Assassin",
+        "desc": "The rogue specializes in stealth, gaining <b>Improved Backstab</b> (the rogue can now use Backstab when on the side of an enemy) and a +2 to all stealth checks."
+      },
+      {
+        "label": "Fencer",
+        "desc": "The rogue specializes in his fighting abilities, gaining <b>Ambidexterity</b> (the character no longer rolls with disadvantage on offhand attacks) as well as <b>Riposte</b> (once per short rest, when the rogue dodges an attack, they may immediately make a regular attack with their main weapon against the attacker."
+      }
+    ],
     "skills": [
       {
         "name": "backstab",
@@ -367,10 +427,16 @@
         "desc": "Passive - The rogue now has access to rank 1 poisons and can choose to apply one of these poisons once per long rest."
       },
       {
+        "name": "tumble",
+        "label": "Tumble",
+        "level": 3,
+        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+      },
+      {
         "name": "dualwield",
         "label": "Dual Wield",
-        "level": 3,
-        "desc": "Passive - The character can equip a small weapon in their offhand, and may make a regular attack with it once per round, this does not consume their action."
+        "level": 4,
+        "desc": "Passive - The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
       },
       {
         "name": "keeneye",
@@ -385,10 +451,10 @@
         "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
-        "name": "tumble",
-        "label": "Tumble",
+        "name": "weaponmastery",
+        "label": "Weapon Mastery",
         "level": 6,
-        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
       },
       {
         "name": "poisons2",
@@ -409,10 +475,10 @@
         "desc": "Instant - once per long rest - If the rogue has the correct ingredients, they may instantly prepare and apply a poison they have access to on their main weapon."
       },
       {
-        "name": "weaponmastery",
-        "label": "Weapon Mastery",
+        "name": "choosearchetype",
+        "label": "Choose Archetype",
         "level": 10,
-        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "desc": "Passive - The Rogue chooses to specialize in an archetype, either <b>Alchemist</b>, <b>Assassin</b> or <b>Fencer</b>."
       },
       {
         "name": "poisons3",
@@ -433,8 +499,8 @@
         "desc": "Passive - the rogues attack rolls of 18, 19 and 20 count as critical."
       },
       {
-        "name": "shadowwalk",
-        "label": "Shadow Walk",
+        "name": "vanish",
+        "label": "Vanish",
         "level": 17,
         "desc": "Action - once per long rest - The rogue vanishes into the shadows, becoming invisible for the next 3 rounds even while attacking."
       },
@@ -510,6 +576,20 @@
     "name": "wizard",
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Intelligence, Agility, Constitution",
+    "archetypes": [
+      {
+        "label": "Archmage",
+        "desc": "Becoming a master of the arcane, the wizard gains 1 spell slot in each rank they have access to, and <b>Multicast</b> (Once per round the wizard can spend his bonus action to cast a non-evocation spell)."
+      },
+      {
+        "label": "Battlemage",
+        "desc": "The wizard gains proficiency in Medium and Heavy armours as well as Small Shields. He also gains a +1 to attack when wielding summoned magic weapons."
+      },
+      {
+        "label": "Summoner",
+        "desc": "The wizard's familiar now has it's own stats (TODO) and can be re-summoned during a long rest if it dies. All other summoned creatures also gain 1 armour, 1 magic reduction, +2 attack and 1d8 damage."
+      }
+    ],
     "skills": [
       {
         "name": "bookworm",
@@ -572,6 +652,12 @@
         "desc": "Action - once per long rest - The wizard may cast a spell of his choice twice this turn. It only counts as a single spell slot use."
       },
       {
+        "name": "choosearchetype",
+        "label": "Choose Archetype",
+        "level": 10,
+        "desc": "Passive - The Wizard chooses to specialize in an archetype, either <b>Archmage</b>, <b>Battlemage</b> or <b>Summmoner</b>."
+      },
+      {
         "name": "arcanemagic4",
         "label": "Arcane Magic 4",
         "level": 12,
@@ -588,12 +674,6 @@
         "label": "Arcane Magic 5",
         "level": 16,
         "desc": "Passive - Grants access to rank 5 Arcane magic spells and 1 rank 5 spell slot (increases to 2 slots at level 18)"
-      },
-      {
-        "name": "greaterfamiliar2",
-        "label": "Greater Familiar",
-        "level": 17,
-        "desc": "Passive - The wizards familiar becomes a much stronger version of itself, gaining 2 armour and dealing 2d8+INT damage"
       },
       {
         "name": "arcanemastery",

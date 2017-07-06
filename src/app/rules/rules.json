@@ -34,7 +34,7 @@
         "desc": "A short rest is considered a 1 hour break that the characters can use after combat to recover health. Shorts rests should only be taken when the characters are not currently in any immediate danger.",
         "sections": [
           {
-            "desc": "If the characters are not <b>exhausted</b> and have food and water, they regain health equal to their class <b>hit die</b>, plus <b>constitution</b>, times their level. For example a level 3 warrior (class hid die 1d12) with 4 CON:"
+            "desc": "If the characters are not <b>exhausted</b> and have food and water, they regain health equal to their class <b>hit die</b>, plus <b>constitution</b>, times their level. For example a level 3 warrior (class hid die 1d12) with 4 CON:",
             "code": "Regained health = (1d12 + 4) * 3 = (7 + 4) * 3 = 33"
           },
           {
@@ -74,7 +74,29 @@
           },
           {
             "title": "Action",
-            "desc": "An action consists of: a <b>basic attack</b>, casting a <b>spell</b>, using a <b>skill</b> of type 'action', or performing any other non-combat action which the DM deems to take a significant amount of time."
+            "desc": "An action consists of: a <b>basic attack</b>, casting a <b>spell</b>, using a <b>skill</b> of type 'action', using a <b>dash</b> or <b>disengage</b>, or performing any other non-combat action which the DM deems to take a significant amount of time.",
+            "sections": [
+              {
+                "title": "Basic Attack",
+                "desc": "You can make a regular attack with the weapon in your main hand, see below for more information on attacking."
+              },
+              {
+                "title": "Spell",
+                "desc": "Most spells consume your action, unless otherwise stated on the spell or via the character's special skill."
+              },
+              {
+                "title": "Skill",
+                "desc": "Skills which are of type 'Action' can be used, many of which will also be classed as an 'Attack'."
+              },
+              {
+                "title": "Dash",
+                "desc": "The character can spend their action to move an additional number of spaces up to their movement."
+              },
+              {
+                "title": "Disengage",
+                "desc": "The character can spend their action to disengage from a foe in melee range, allowing them to then move without provoking an <b>attack of opportunity</b>."
+              }
+            ]
           },
           {
             "title": "Bonus Action",
@@ -105,6 +127,10 @@
               {
                 "title": "Range",
                 "desc": "All weapons, spells and skill will have a range value. 0 and 1 are considered melee attacks, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
+              },
+              {
+                "title": "Attack of Opportunity",
+                "desc": "When a character moves out of melee range of a foe they were previously in melee range of, the foe is able to make a free <b>Basic Attack</b> against the moving character. This can avoided by the use of <b>Disengage</b>."
               }
             ]
           },
@@ -155,7 +181,7 @@
   },
   {
     "title": "Character Advancement",
-    "desc": "Characters advance in level by earning experience points. These are awarded for various actions such as defeating enemies in combat, completing a quest, or exceptional feats of roleplaying."
+    "desc": "Characters advance in level by earning experience points. These are awarded for various actions such as defeating enemies in combat, completing a quest, or exceptional feats of roleplaying.",
     "sections": [
       {
         "desc": "When advancing in level, characters will unlock skills and spells dependant on their class. Regardless of class, on each level up, characters receive one stat point to spend as they choose. Base stats (before race modifier adjustment) at creation can only be a maximum of 5. During advancement a base stat cannot be raised above 15. It should be noted that stats can be raised above 15 via race and equipment modifiers."
@@ -164,13 +190,13 @@
         "desc": "The requirements for each level are as follows:"
       },
       {
-        "desc": "<table><tr class='header'><td><b>Character Level</b></td><td><b>Total Experience Required</b></td></tr><tr><td>1</td><td>0</td></tr><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>900</td></tr><tr><td>4</td<td>2700</td></tr><tr><td>5</td><td>6500</td></tr><tr><td>6</td><td>14000</td></tr><tr><td>7</td><td>23000</td></tr><tr><td>8</td><td>34000</td></tr><tr><td>9</td><td>48000</td></tr><tr><td>10</td><td>64000</td></tr><tr><td>11</td><td>85000</td></tr><tr><td>12</td><td>100000</td></tr><tr><td>13</td><td>120000</td></tr><tr><td>14</td><td>140000</td></tr><tr><td>15</td><td>165000</td></tr><tr><td>16</td><td>195000</td></tr><tr><td>17</td><td>225000</td></tr><tr><td>18</td><td>265000</td></tr><tr><td>19</td><td>305000</td></tr><tr><td>20</td><td>355000</td></tr></table>"
+        "desc": "<table><tr class='header'><td><b>Character Level</b></td><td><b>Total Experience Required</b></td></tr><tr><td>1</td><td>0</td></tr><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>900</td></tr><tr><td>4</td><td>2700</td></tr><tr><td>5</td><td>6500</td></tr><tr><td>6</td><td>14000</td></tr><tr><td>7</td><td>23000</td></tr><tr><td>8</td><td>34000</td></tr><tr><td>9</td><td>48000</td></tr><tr><td>10</td><td>64000</td></tr><tr><td>11</td><td>85000</td></tr><tr><td>12</td><td>100000</td></tr><tr><td>13</td><td>120000</td></tr><tr><td>14</td><td>140000</td></tr><tr><td>15</td><td>165000</td></tr><tr><td>16</td><td>195000</td></tr><tr><td>17</td><td>225000</td></tr><tr><td>18</td><td>265000</td></tr><tr><td>19</td><td>305000</td></tr><tr><td>20</td><td>355000</td></tr></table>"
       }
     ]
   },
   {
     "title": "Inspiration",
-    "desc": "Inspiration is a rule the game master can use to reward you for playing your character in a way that’s true to his or her personality traits, ideal, bond, and flaw. By using inspiration, you can draw on your personality trait of compassion for the downtrodden to give you an edge in negotiating with the Beggar Prince. Or inspiration can let you call on your bond to the defense of your home village to push past the effect of a spell that has been laid on you."
+    "desc": "Inspiration is a rule the game master can use to reward you for playing your character in a way that’s true to his or her personality traits, ideal, bond, and flaw. By using inspiration, you can draw on your personality trait of compassion for the downtrodden to give you an edge in negotiating with the Beggar Prince. Or inspiration can let you call on your bond to the defense of your home village to push past the effect of a spell that has been laid on you.",
     "sections": [
       {
         "title": "Gaining Inspiration",
@@ -190,7 +216,7 @@
   },
   {
     "title": "Advantage",
-    "desc": "Sometimes a Special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an Attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17."
+    "desc": "Sometimes a Special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an Attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.",
     "sections": [
       {
         "desc": "If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don’t roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20."
@@ -205,7 +231,7 @@
   },
   {
     "title": "Character Creation",
-    "desc": "Creating a character consists of <b>choosing a race</b>, <b>choosing a class</b>, <b>allocating stat points</b> and <b>filling out background information</b>."
+    "desc": "Creating a character consists of <b>choosing a race</b>, <b>choosing a class</b>, <b>allocating stat points</b> and <b>filling out background information</b>.",
     "sections": [
       {
         "title": "Choosing a Race",
@@ -221,4 +247,4 @@
       }
     ]
   }
-}
+]

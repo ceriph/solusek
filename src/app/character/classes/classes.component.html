@@ -12,6 +12,12 @@
       <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
     </div>
   </div>
+  <h2>Archetypes</h2>
+  <p>Selectable at level 10.</p>
+  <div *ngFor="let archetype of selectedClass.archetypes">
+    <h3>{{archetype.label}}</h3>
+    <p [innerHtml]="archetype.desc"></p>
+  </div>
   <h2>Skills</h2>
   <div *ngFor="let skill of selectedClass.skills | keys">
     <h3>{{skill.value.label}}</h3>

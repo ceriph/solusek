@@ -9,4 +9,10 @@ export class Class {
   proficiencies: string;
   skills: Skill[];
   equipment: string[];
+  archetypes: Archetype[];
+}
+
+export class Archetype {
+  label: string;
+  desc: string;
 }

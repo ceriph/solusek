@@ -5,7 +5,7 @@
       <ul>
         <li *ngFor="let rule of rules | async"><a simplePageScroll href="#{{rule.title}}">{{rule.title}}</a>
           <ul *ngIf="rule.sections">
-            <li *ngFor="let section of rule.sections"><a simplePageScroll href="#{{section.title}}">{{section.title}}</a>
+            <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a simplePageScroll href="#{{section.title}}">{{section.title}}</a></li></span>
           </ul>
         </li>
         <li><a href="rules#CharacterAdvancement">Character Advancement</a></li>

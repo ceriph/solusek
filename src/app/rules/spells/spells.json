@@ -62,6 +62,16 @@
             "desc": "Summon a floating eye which the caster can 'see' through and control. Useful for scouting, however the eye is visible to others."
           },
           {
+            "label": "Magic Sword",
+            "school": "Conjuration",
+            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 3 rounds. It has a +1 modifier to attack and does <b>1d8+INT arcane damage</b>."
+          },
+          {
+            "label": "Summon Imp",
+            "school": "Conjuration",
+            "desc": "Call forth a small imp who has 3d6 hitpoints, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack and does 1d6+3 fire damage."
+          },
+          {
             "label": "Frost Nova",
             "school": "Evocation",
             "desc": "Attack INT vs INT on all enemy targets within 3m, on hit the targets take <b>1d4+INT ice damage</b> and are <b>rooted</b>."
@@ -72,9 +82,9 @@
             "desc": "Attack INT vs dodge on a target within 10m and all characters within 1m of the target. On hit deals <b>2d4+INT fire damage</b>."
           },
           {
-            "label": "Mirror Image",
+            "label": "Invisibility",
             "school": "Illusion",
-            "desc": "Create INT identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+            "desc": "Your target magically vanishes from sight for 1d4+INT rounds/minutes. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
           }
         ]
       },
@@ -102,6 +112,11 @@
             "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does 1d8+INT damage (of the elemental type)."
           },
           {
+            "label": "Icy Sword",
+            "school": "Conjuration",
+            "desc": "The caster summons a sword made of pure ice that only they can wield for 3 rounds. It has a +2 modifier to attack and does <b>1d10+INT ice damage</b>."
+          },
+          {
             "label": "Choking Cloud",
             "school": "Evocation",
             "desc": "Create a cloud of choking gas at a target location of size 3mx3m, giving all creatures within -1 to attack and suffering <b>1d4 damage</b> when starting their turn within the cloud."
@@ -112,10 +127,10 @@
             "desc": "Attack INT vs INT on enemy target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>rooted</b>."
           },
           {
-            "label": "Invisibility",
+            "label": "Mirror Image",
             "school": "Illusion",
-            "desc": "Your target magically vanishes from sight for 1d4+INT rounds. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
-          }
+            "desc": "Create INT identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+          },
         ]
       },
       "4": {
@@ -137,9 +152,9 @@
             "desc": "The caster levitates up to 1m off the ground and can move around freely for up to 1 hour."
           },
           {
-            "label": "Flaming Weapon",
-            "school": "Alteration",
-            "desc": "Engulf a friendly character's weapon in flame, adding an additional <b>1d6+INT fire damage</b>."
+            "label": "Flaming Sword",
+            "school": "Conjuration",
+            "desc": "The caster summons a sword made of pure fire that only they can wield for 3 rounds. It has a +3 modifier to attack and does <b>1d12+INT fire damage</b>."
           },
           {
             "label": "Blizzard",
@@ -184,7 +199,7 @@
           {
             "label": "Arcane Sword",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure arcane energy. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
+            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 3 rounds. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
           },
           {
             "label": "Disintegrate",
@@ -314,7 +329,7 @@
           {
             "label": "Revive",
             "school": "Alteration",
-            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead. If the character died before the last short or long rest, this cannot be used."
+            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character died before the last short or long rest, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Greater Protection",
@@ -340,6 +355,11 @@
             "label": "Greater Symbol",
             "school": "Abjuration",
             "desc": "Mark a friendly target with a holy symbol, granting them <b>3d6+SPI temporary health</b>."
+          },
+          {
+            "label": "Resurrect",
+            "school": "Alteration",
+            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character has been dead for longer than 1 year, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Angel's Fury",
@@ -375,7 +395,7 @@
           {
             "label": "Camouflage",
             "school": "Alteration",
-            "desc": "Your target blends into the wilderness, becoming invisible for 1d4+SPI rounds. Only works outdoors. Making any aggressive action removes it."
+            "desc": "The caster blends into the wilderness, becoming invisible for 1d4+SPI rounds. Only works outdoors. Making any aggressive action removes it."
           },
           {
             "label": "Ensnaring Roots",
@@ -416,6 +436,11 @@
             "label": "Call Hurricane",
             "school": "Evocation",
             "desc": "Attack SPI vs dodge on all creates in a 3mx3m area, on hit deals 1d8+SPI damage and the targets are <b>knocked down</b>."
+          },
+          {
+            "label": "Spider Form",
+            "school": "Illusion",
+            "desc": "Take the form of a small spider for 1d4+SPI rounds/minutes. While in spider form the caster is considered basically invisible."
           }
         ]
       },
@@ -443,9 +468,9 @@
             "desc": "Attack SPI vs SPI on a target animal, if it hits, the animal is charmed next round."
           },
           {
-            "label": "Spider Form",
+            "label": "Bird Form",
             "school": "Illusion",
-            "desc": "Take the form of a small spider for 1d4+SPI rounds/minutes."
+            "desc": "Take the form of a small bird for 1d4+SPI rounds/minutes. While in bird form the caster can fly."
           }
         ]
       },
@@ -468,9 +493,9 @@
             "desc": "Summon a cloud of poison at a target area of size 3mx3m of strength 1d20+SPI, all characters in the area must make a saving throw each turn or be damaged by the poison for 1d4+SPI nature damage."
           },
           {
-            "label": "Bird Form",
+            "label": "Wolf Form",
             "school": "Illusion",
-            "desc": "Take the form of a small bird for 1d4+SPI rounds/minutes."
+            "desc": "Take the form of a large wolf for 1d4+SPI rounds/minutes. While in wolf form the caster gains a +2 to STR and AGI, and rolls 2d8+STR for damage."
           }
         ]
       },
