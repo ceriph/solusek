@@ -1,0 +1,102 @@
+{
+  "1": {
+    "rank": 1,
+    "poisons": [
+      {
+        "label": "Slowing Lick",
+        "desc": "The target is <b>snared</b>",
+        "ingredients": "Nightshade"
+      },
+      {
+        "label": "Cain's Lessening",
+        "desc": "The target suffers -1 to all primary stats",
+        "ingredients": "Hemlock"
+      },
+      {
+        "label": "Snake's Kiss",
+        "desc": "The target suffers <b>1d4 poison damage</b>",
+        "ingredients": "Snakeroot"
+      }
+    ]
+  },
+  "2": {
+    "rank": 2,
+    "poisons": [
+      {
+        "label": "Unbalacing Lick",
+        "desc": "The target is <b>knocked down</b>",
+        "ingredients": "2x Nightshade"
+      },
+      {
+        "label": "Cain's Weakening",
+        "desc": "The target suffers -2 to all primary stats",
+        "ingredients": "2x Hemlock"
+      },
+      {
+        "label": "Python's Kiss",
+        "desc": "The target suffers <b>1d6+1 poison damage</b>",
+        "ingredients": "2x Snakeroot"
+      }
+    ]
+  },
+  "3": {
+    "rank": 3,
+    "poisons": [
+      {
+        "label": "Holding Lick",
+        "desc": "The target is <b>rooted</b>",
+        "ingredients": "3x Nightshade"
+      },
+      {
+        "label": "Cain's Fool",
+        "desc": "The target suffers -3 to all primary stats",
+        "ingredients": "3x Hemlock"
+      },
+      {
+        "label": "Serpent's Kiss",
+        "desc": "The target suffers <b>2d4+2 poison damage</b>",
+        "ingredients": "3x Snakeroot"
+      }
+    ]
+  },
+  "4": {
+    "rank": 4,
+    "poisons": [
+      {
+        "label": "Paralyzing Lick",
+        "desc": "The target is <b>stunned</b>",
+        "ingredients": "4x Nightshade"
+      },
+      {
+        "label": "Cain's Shame",
+        "desc": "The target suffers -4 to all primary stats",
+        "ingredients": "4x Hemlock"
+      },
+      {
+        "label": "Drake's Kiss",
+        "desc": "The target suffers <b>2d6+3 poison damage</b>",
+        "ingredients": "4x Snakeroot"
+      }
+    ]
+  },
+  "5": {
+    "rank": 5,
+    "poisons": [
+      {
+        "label": "Charming Lick",
+        "desc": "The target is <b>charmed</b>",
+        "ingredients": "5x Nightshade"
+      },
+      {
+        "label": "Cain's Debilitation",
+        "desc": "The target suffers -5 to all primary stats",
+        "ingredients": "5x Hemlock"
+      },
+      {
+        "label": "Dragons's Kiss",
+        "desc": "The target suffers <b>3d4+4 poison damage</b>",
+        "ingredients": "5x Snakeroot"
+      }
+    ]
+  }
+}

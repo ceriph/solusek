@@ -78,27 +78,27 @@ export class StatService {
       character.secondaryStats.dodge += 1; // todo level increases
     }
 
-    // movement
-    character.secondaryStats.movement += 1;
+    // speed
+    character.secondaryStats.speed += 1;
     let agility = character.primaryStats.agi;
     while (agility > 0) {
-      if (character.secondaryStats.movement <= 5) {
-        character.secondaryStats.movement += 1;
-      } else if (character.secondaryStats.movement <= 10) {
-        character.secondaryStats.movement += 0.5;
-      } else if (character.secondaryStats.movement <= 15) {
-        character.secondaryStats.movement += 0.33;
-      } else if (character.secondaryStats.movement <= 20) {
-        character.secondaryStats.movement += 0.25;
-      } else if (character.secondaryStats.movement <= 25) {
-        character.secondaryStats.movement += 0.2;
+      if (character.secondaryStats.speed <= 5) {
+        character.secondaryStats.speed += 1;
+      } else if (character.secondaryStats.speed <= 10) {
+        character.secondaryStats.speed += 0.5;
+      } else if (character.secondaryStats.speed <= 15) {
+        character.secondaryStats.speed += 0.33;
+      } else if (character.secondaryStats.speed <= 20) {
+        character.secondaryStats.speed += 0.25;
+      } else if (character.secondaryStats.speed <= 25) {
+        character.secondaryStats.speed += 0.2;
       }
       agility--;
     }
-    character.secondaryStats.movement = Math.floor(character.secondaryStats.movement);
+    character.secondaryStats.speed = Math.floor(character.secondaryStats.speed);
 
     if (character.race === "woodelf") {
-      character.secondaryStats.movement += 2; // todo level increases
+      character.secondaryStats.speed += 2; // todo level increases
     }
 
     // armour

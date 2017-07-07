@@ -135,8 +135,8 @@
             ]
           },
           {
-            "title": "Instant",
-            "desc": "Some skills are considered <b>instant</b> and these can be used at any time, even if it is not the characters turn, provided all other requirements on the skill are me."
+            "title": "Reaction",
+            "desc": "Some skills are considered <b>reactions</b> and these can be used outside of the characters turn provided all other requirements on the skill are met."
           }
         ]
       }
@@ -230,20 +230,60 @@
     ]
   },
   {
-    "title": "Character Creation",
-    "desc": "Creating a character consists of <b>choosing a race</b>, <b>choosing a class</b>, <b>allocating stat points</b> and <b>filling out background information</b>.",
+    "title": "Conditions",
+    "desc": "There are many conditions throughout the world which have both positive and usually negative effects for a given duration.",
     "sections": [
       {
-        "title": "Choosing a Race",
-        "desc": "Your race affects your appearance, how some characters judge you, and has an effect on your starting stats. Each race also has an additional unique passive ability."
+        "title": "Charmed",
+        "desc": "Charmed characters have had their mind enslaved and must obey the wishes of their master for the duration."
       },
       {
-        "desc": "Some races will be slightly better suited to certain classes at the beginning, however there are no restrictions on this choice."
+        "title": "Dead",
+        "desc": "Characters are dead when they either fail 3 <b>death saving throws</b> or suffer <b>instant death</b>. Dead characters are gone, however there are some magical artifacts and spells which can bring dead characters back to life within a short duration of their death."
       },
       {
-        "desc": "More detail on each race can be found here:"
+        "title": "Dying",
+        "desc": "Characters at 0 health which have not yet been <b>stabilized</b> are considered to be dying, and must make a <b>death saving throw</b> each turn. Dying characters are always considered <b>unconscious</b>."
       },
       {
+        "title": "Exhausted",
+        "desc": "A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b> in order to recover from the condition."
+      },
+      {
+        "title": "Invisible",
+        "desc": "Invisible characters cannot be seen or attacked, except by characters with the <b>See Invisible</b> trait."
+      },
+      {
+        "title": "Mad",
+        "desc": "Madness can affect characters in many ways ranging from a minor OCD to mistaking teammates for enemies in battle. The type and duration of madness will be defined as and when it occurs."
+      },
+      {
+        "title": "Rooted",
+        "desc": "Rooted characters are held in place by some force and cannot move for the duration. They can still perform other actions as normal."
+      },
+      {
+        "title": "Snared",
+        "desc": "Snared characters have their movement hindered in some way, and only receive half their usual speed (rounded down)."
+      },
+      {
+        "title": "Stabilized",
+        "desc": "Characters are considered stabilized if they are at 0 health but are no longer <b>dying</b>. They are still considered <b>unconscious</b>."
+      },
+      {
+        "title": "Stunned",
+        "desc": "Stunned characters suffer a -5 modifier to their <b>dodge</b> rating and cannot move or perform any actions on their turn, however they are still aware of their surroundings."
+      },
+      {
+        "title": "Poisoned",
+        "desc": "Poisoned characters take the effects of the specific poison at start of their turn, they must then make a CON saving throw against the DC described, if they succeed they are no longer poisoned."
+      },
+      {
+        "title": "Wounded",
+        "desc": "Characters are considered wounded when they are at less than 50% of their maximum health. Some abilities will only be in effect when a character or target is wounded."
+      },
+      {
+        "title": "Unconscious",
+        "desc": "Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b> rating. Unconscious characters are unaware of their surroundings and cannot move or take any actions on their turn."
       }
     ]
   }

@@ -6,6 +6,13 @@ import {Race} from "../character/races/race";
 import {Class} from "../character/classes/class";
 import {Spell, SpellGroup} from "./spells/spell";
 import {SpellService} from "./spells/spell.service";
+import {ClassService} from "../character/classes/classes.service";
+import {RaceService} from "../character/races/race.service";
+import {Equipment, EquipmentType} from "../character/equipment";
+import {EquipmentService} from "../character/equipment.service";
+import {Router} from "@angular/router";
+import {PoisonRank} from "./poisons/poison";
+import {PoisonService} from "./poisons/poison.service";
 
 @Component({
   selector: 'rules',
@@ -17,19 +24,30 @@ export class RulesComponent implements OnInit {
   rules: FirebaseListObservable<Rule[]>;
   races: FirebaseListObservable<Race[]>;
   classes: FirebaseListObservable<Class[]>;
-  spells: SpellGroup[];
-  combat: Rule;
+  spells: FirebaseListObservable<SpellGroup[]>;
+  poisons: FirebaseListObservable<PoisonRank[]>;
+  armour: FirebaseListObservable<Equipment[]>;
+  shields: FirebaseListObservable<Equipment[]>;
+  weapons: FirebaseListObservable<Equipment[]>;
+  tools: FirebaseListObservable<Equipment[]>;
 
   constructor(private rulesService: RulesService,
-              private spellService: SpellService) {
+              private classService: ClassService,
+              private raceService: RaceService,
+              private spellService: SpellService,
+              private poisonService: PoisonService,
+              private equipmentService: EquipmentService) {
   }
 
   ngOnInit() {
     this.rules = this.rulesService.list();
-    this.rulesService.get("combat").subscribe(combat => this.combat = combat);
-    this.spellService.list().subscribe(spellgroups => {
-      console.log("Got spells: ", spellgroups);
-      this.spells = spellgroups;
-    });
+    this.spells = this.spellService.list();
+    this.poisons = this.poisonService.list();
+    this.races = this.raceService.list();
+    this.classes = this.classService.list();
+    this.armour = this.equipmentService.listByType(EquipmentType.Armour);
+    this.weapons = this.equipmentService.listByType(EquipmentType.Weapon);
+    this.shields = this.equipmentService.listByType(EquipmentType.Shield);
+    this.tools = this.equipmentService.listByType(EquipmentType.Tool);
   }
 }

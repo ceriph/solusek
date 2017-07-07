@@ -19,7 +19,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Add character advancement functionality
 * Separate 'equipment' and 'inventory' and add equip/unequip
   * Add 'slot' to character and equipment to allocate items 
-* Add proficiency service to calculate whether a character can use an item
+  * Add proficiency service to calculate whether a character can use an item
+  * Add proficiencies for all items
 * Tidy racial passives into modifiers to remove hardcoding
 * Allow modifiers to be 'functions' that get applied - custom DSL?
 * Calculate attack damage
@@ -27,10 +28,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Add image upload for characters OR do artwork myself
 * Create an interactive version of the map
 * Add a monster creator
-* Change 'movement' to 'speed'?
 * Migrate page content into firebase
   * Rules
   * DM
-* Add more spells, particularly nature and light
-* Add spells for dark, mind and song
+* Add more spells for nature and light
+* Flesh out classes that aren't current being played
+  * Add spells for dark, mind and song
 

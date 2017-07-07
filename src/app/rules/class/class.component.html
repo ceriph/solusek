@@ -8,16 +8,17 @@
   <div *ngFor="let item of clazz.equipment">
     <p>{{item.label}}</p>
   </div>
+  <h2>Skills</h2>
+  <div *ngFor="let skill of clazz.skills | keys">
+    <h3>{{skill.value.label}}</h3>
+    <p><b>Level</b>: {{skill.value.level}}</p>
+    <p [innerHtml]="skill.value.desc"></p>
+  </div>
+  <p *ngIf="clazz.other" [innerHtml]="clazz.other"></p>
   <h2>Archetypes</h2>
   <p>Selectable at level 10.</p>
   <div *ngFor="let archetype of clazz.archetypes">
     <h3>{{archetype.label}}</h3>
     <p [innerHtml]="archetype.desc"></p>
-  </div>
-  <h2>Skills</h2>
-  <div *ngFor="let skill of clazz.skills | keys">
-    <h3>{{skill.value.label}}</h3>
-    <p><b>Level</b>: {{skill.value.level}}</p>
-    <p>{{skill.value.desc}}</p>
   </div>
 </div>

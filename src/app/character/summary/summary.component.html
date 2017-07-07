@@ -27,7 +27,7 @@
     <h2>Secondary Stats</h2>
     <table>
       <tr><td class="top">Health</td><td class="top">{{character.secondaryStats.health}}</td></tr>
-      <tr><td>Movement</td><td>{{character.secondaryStats.movement}}</td></tr>
+      <tr><td>Speed</td><td>{{character.secondaryStats.speed}}</td></tr>
       <tr><td>Dodge</td><td>{{character.secondaryStats.dodge}}</td></tr>
       <tr><td>Armour</td><td>{{character.secondaryStats.armour}}</td></tr>
       <tr><td>Magic Reduction</td><td>{{character.secondaryStats.magicreduction}}</td></tr>
@@ -37,6 +37,8 @@
     <h2>Skills</h2>
     <div *ngFor="let skill of skills">
       <h3>{{skill.label}}</h3>
+      <p><b>Type:</b> {{skill.type}}</p>
+      <p><b>Recovery:</b> {{skill.recovery}}</p>
       <p>{{skill.desc}}</p>
     </div>
   </div>

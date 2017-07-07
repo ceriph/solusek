@@ -12,17 +12,19 @@
       <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
     </div>
   </div>
+  <h2>Skills</h2>
+  <div *ngFor="let skill of selectedClass.skills | keys">
+    <h3>{{skill.value.label}}</h3>
+    <p><b>Level</b>: {{skill.value.level}}</p>
+    <p><b>Type:</b> {{skill.type}}</p>
+    <p><b>Recovery:</b> {{skill.recovery}}</p>
+    <p [innerHtml]="skill.value.desc"></p>
+  </div>
   <h2>Archetypes</h2>
   <p>Selectable at level 10.</p>
   <div *ngFor="let archetype of selectedClass.archetypes">
     <h3>{{archetype.label}}</h3>
     <p [innerHtml]="archetype.desc"></p>
-  </div>
-  <h2>Skills</h2>
-  <div *ngFor="let skill of selectedClass.skills | keys">
-    <h3>{{skill.value.label}}</h3>
-    <p><b>Level</b>: {{skill.value.level}}</p>
-    <p>{{skill.value.desc}}</p>
   </div>
   <div class="footer" *ngIf="(character | async).class && (character | async).class !== selectedClass.name && (character | async).level == 1">
     <button (click)="save()">UPDATE</button>

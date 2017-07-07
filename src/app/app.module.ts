@@ -30,11 +30,12 @@ import {CharacterService} from "./character/character.service";
 import {EquipmentService} from "./character/equipment.service";
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
-import { CampaignComponent } from './campaign/campaign.component';
+import {CampaignComponent} from "./campaign/campaign.component";
 import {ScenarioService} from "./campaign/scenario.service";
 import {RulesService} from "./rules/rules.service";
 import {Ng2SimplePageScrollModule} from "ng2-simple-page-scroll";
 import {SpellService} from "./rules/spells/spell.service";
+import {PoisonService} from "./rules/poisons/poison.service";
 
 @NgModule({
   imports: [
@@ -75,6 +76,7 @@ import {SpellService} from "./rules/spells/spell.service";
     ScenarioService,
     RulesService,
     SpellService,
+    PoisonService,
     AngularFireAuth,
     LoginService
   ],

@@ -17,7 +17,7 @@ export class SecondaryStats {
   resistanceNature: number = 0;
   resistancePoison: number = 0;
   resistanceDisease: number = 0;
-  movement: number = 0;
+  speed: number = 0;
   armour: number = 0;
   magicreduction: number = 0;
   damage: string = "";

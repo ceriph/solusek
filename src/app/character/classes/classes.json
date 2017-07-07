@@ -16,13 +16,9 @@
         "name": "fasthands",
         "label": "Fast Hands",
         "level": 1,
-        "desc": "Passive - Bards can inexplicably play a musical instrument in their off hand while wielding a weapon in their main hand. Even if the instrument requires two hands. Don't question it."
-      },
-      {
-        "name": "invigoratingwarsong",
-        "label": "Invigorating Warsong",
-        "level": 1,
-        "desc": "Action - song - while active, all allies within earshot gain +1 to all attack rolls. Requires an instrument."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Bards can inexplicably play a musical instrument in their off hand while wielding a weapon in their main hand. Even if the instrument requires two hands. Don't question it."
       }
     ]
   },
@@ -43,13 +39,16 @@
         "name": "lesserheal",
         "label": "Lesser Heal",
         "level": 1,
-        "desc": "Action - once per short rest - channel healing spirits through your weapon, healing <weapon> health on an ally within line of sight"
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "channel healing spirits through your weapon, healing <weapon> health on an ally within line of sight"
       },
       {
         "name": "holylight",
         "label": "Holy Light",
         "level": 1,
-        "desc": "Action - attack SPI vs SPI on an enemy within 10m, on hit does weapon + SPI light damage, does an additional 1d6 damage to undead enemies."
+        "type": "Action",
+        "desc": "Attack SPI vs SPI on an enemy within 10m, on hit does weapon + SPI light damage, does an additional 1d6 damage to undead enemies."
       }
     ]
   },
@@ -69,13 +68,17 @@
         "name": "sensemind",
         "label": "Sense Mind",
         "level": 1,
-        "desc": "Passive - the enchanter can roll a CHA check out of combat to attempt to peer into a targets mind and detect their intentions."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the enchanter can roll a CHA check out of combat to attempt to peer into a targets mind and detect their intentions."
       },
       {
         "name": "charm",
         "label": "Charm",
         "level": 1,
-        "desc": "Action - once per short rest - attack CHA vs CHA on an enemy within 10m, if it hits the enemy is charmed until the end of their next turn."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "Attack CHA vs CHA on an enemy within 10m, if it hits the enemy is charmed until the end of their next turn."
       }
     ]
   },
@@ -94,19 +97,25 @@
         "name": "fistsofrock",
         "label": "Fists Of Rock",
         "level": 1,
-        "desc": "Passive - A monks fists are classed as 1d4+STR weapons (increase to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "A monks fists are classed as 1d4+STR weapons (increase to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20"
       },
       {
         "name": "kick",
         "label": "Kick",
         "level": 1,
-        "desc": "Action - once per short rest - attack vs dodge on a enemy within melee range, if it hits the target takes 1d8+STR damage and is knocked down."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "Attack vs dodge on a enemy within melee range, if it hits the target takes 1d8+STR damage and is knocked down."
       },
       {
         "name": "ignorepain",
         "label": "Ignore Pain",
         "level": 2,
-        "desc": "Action - once per short rest - the monk gains 1d4+SPI temporary hit points (increases to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20)"
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "the monk gains 1d4+SPI temporary hit points (increases to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20)"
       }
     ]
   },
@@ -126,13 +135,17 @@
         "name": "absorb",
         "label": "Absorb",
         "level": 1,
-        "desc": "Passive - When the necromancer does dark damage to an enemy, they gain 1 health (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "When the necromancer does dark damage to an enemy, they gain 1 health (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
       },
       {
         "name": "animatebones",
         "label": "Animate Bones",
         "level": 1,
-        "desc": "Action - once per short rest - raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT physical damage."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT physical damage."
       }
     ]
   },
@@ -150,7 +163,7 @@
     "archetypes": [
       {
         "label": "Avenger",
-        "desc": "The paladin gains <b>Large Weapon Fighting</b> (+2 to attack and damage rolls when using a two handed weapon) and <b>Smite</b> (once per round the paladin can use his bonus action to cast a evocation spell)."
+        "desc": "The paladin gains <b>Large Weapon Fighting</b> (+2 to attack and damage rolls when using a two handed weapon) and <b>Smite</b> (once per round the paladin can use his bonus action to cast an evocation spell)."
       },
       {
         "label": "Protector",
@@ -166,79 +179,113 @@
         "name": "courage",
         "label": "Courage",
         "level": 1,
-        "desc": "Passive - All allies within 3m of the Paladin gain +1 to attack rolls (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "All allies within 3m of the Paladin gain +1 to attack rolls (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
       },
       {
         "name": "layonhands",
         "label": "Lay On Hands",
         "level": 1,
-        "desc": "Action - once per long rest - the paladin touches a friendly target (this can include themselves), healing the target to full health."
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "the paladin touches a friendly target (this can include themselves), healing the target to full health."
       },
       {
         "name": "lightmagic1",
         "label": "Light Magic 1",
         "level": 2,
-        "desc": "Passive - Grants access to rank 1 Light magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 1 Light magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+      },
+      {
+        "name": "sacredoath",
+        "label": "Sacred Oath",
+        "level": 3,
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The paladin takes his <b>sacred oath</b>, finally committing to a code. This can be: <b>Oath of Ancients</b> (The paladin selects one of the fathers/spirits and devotes himself to serving them, gaining <b>Divine Intervention</b> (Reaction - once per long rest - when the paladin takes damage that would reduce him to 0 health, he is instead healed for that damage), <b>Oath of Conquest</b> (The paladin revels in the glory of battle, gaining <b>Aura of Conquest</b> (Passive - the paladin and nearby allies within 1m of a defeated foe gain health equal to the foes hit die)) or <b>Oath of Justice</b> (The paladin devotes himself to the pursuit of justice for all and gains <b>Truthbringer</b> - once per short rest the paladin can compel a character to speak truthfully for SPI minutes. Unwilling characters must make a SPI saving throw vs 10+SPI)."
       },
       {
         "name": "divineshield",
         "label": "Divine Shield",
         "level": 4,
-        "desc": "Action - once per short rest - the paladin surrounds himself in holy energy, stunning him next round but blocking all damage he would receive next round."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "the paladin surrounds himself in holy energy, stunning him next round but blocking all damage he would receive next round."
       },
       {
         "name": "resistance",
         "label": "Resistance",
         "level": 5,
-        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "divineweapon",
         "label": "Divine Weapon",
         "level": 6,
-        "desc": "Action - once per short rest - the paladin enchants his weapon with holy energy and attacks immediately, dealing weapon damage plus <b>1d6+SPI light damage</b>. Deals an additional 1d6 to undead or demons."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "the paladin enchants his weapon with holy energy and attacks immediately, dealing weapon damage plus <b>1d6+SPI light damage</b>. Deals an additional 1d6 to undead or demons."
       },
       {
         "name": "lightmagic2",
         "label": "Light Magic 2",
         "level": 8,
-        "desc": "Passive - Grants access to rank 2 Light magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 2 Light magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
       },
       {
         "name": "weaponmastery",
         "label": "Weapon Mastery",
         "level": 9,
-        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
       },
       {
         "name": "choosearchetype",
         "label": "Choose Archetype",
         "level": 10,
-        "desc": "Passive - The Paladin chooses to specialize in an archetype, either <b>Avenger</b>, <b>Protector</b> or <b>Healer</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The Paladin chooses to specialize in an archetype, either <b>Avenger</b>, <b>Protector</b> or <b>Healer</b>."
       },
       {
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 12,
-        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "lightmagic3",
         "label": "Light Magic 3",
         "level": 14,
-        "desc": "Passive - Grants access to rank 3 Light magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 3 Light magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
       },
       {
         "name": "avatar",
         "label": "Avatar",
         "level": 17,
-        "desc": "Action - once per long rest - The paladin becomes an avatar of the gods, gaining +2 to all primary stats, 1d6+SPI temporary health, 5 armour and 5 magic reduction for 3 rounds."
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "The paladin becomes an avatar of the gods, gaining +2 to all primary stats, 1d6+SPI temporary health, 5 armour and 5 magic reduction for 3 rounds."
       },
       {
         "name": "lightmagic4",
         "label": "Light Magic 4",
         "level": 20,
-        "desc": "Passive - Grants access to rank 4 Light magic spells and 1 rank 4 spell slot."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 4 Light magic spells and 1 rank 4 spell slot."
       }
     ]
   },
@@ -273,85 +320,113 @@
         "name": "tracker",
         "label": "Tracker",
         "level": 1,
-        "desc": "Passive - the ranger gains +1 to perception checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the ranger gains +1 to perception checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
       },
       {
         "name": "headshot",
         "label": "Headshot",
         "level": 1,
-        "desc": "Action - once per short rest - perform a ranged attack as normal, on hit it is considered critical, doing maximum damage."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "perform a ranged attack as normal, on hit it is considered critical, doing maximum damage."
       },
       {
         "name": "naturemagic1",
         "label": "Nature Magic 1",
         "level": 2,
-        "desc": "Passive - Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
       },
       {
         "name": "naturalattunement",
         "label": "Natural Attunement",
         "level": 3,
-        "desc": "Passive - The ranger now uses his spirit when making perception checks"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The ranger now uses his spirit when making perception checks"
       },
       {
         "name": "animalcompanion",
         "label": "Animal Companion",
         "level": 4,
-        "desc": "Passive - The ranger calls forth an animal companion (hawk, panther, wolf or bear). The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type of animal and level of ranger and it can be commanded in battle."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The ranger calls forth an animal companion (hawk, panther, wolf or bear). The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type of animal and level of ranger and it can be commanded in battle."
       },
       {
         "name": "resistance",
         "label": "Resistance",
         "level": 5,
-        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 6,
-        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "dualwield",
         "label": "Dual Wield",
         "level": 7,
-        "desc": "Passive - The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
       },
       {
         "name": "naturemagic2",
         "label": "Nature Magic 2",
         "level": 8,
-        "desc": "Passive - Grants access to rank 2 Nature magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 2 Nature magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
       },
       {
         "name": "weaponmastery",
         "label": "Weapon Mastery",
         "level": 9,
-        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
       },
       {
         "name": "choosearchetype",
         "label": "Choose Archetype",
         "level": 10,
-        "desc": "Passive - The Ranger chooses to specialize in an archetype, either <b>Archer</b>, <b>Marauder</b> or <b>Warg</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The Ranger chooses to specialize in an archetype, either <b>Archer</b>, <b>Marauder</b> or <b>Warg</b>."
       },
       {
         "name": "naturemagic3",
         "label": "Nature Magic 3",
         "level": 14,
-        "desc": "Passive - Grants access to rank 3 Nature magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 3 Nature magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
       },
       {
         "name": "Nature's Furt",
         "label": "Nature Magic 3",
         "level": 17,
-        "desc": "Action - once per long rest - The ranger and his animal companion enter a fury state, both gaining +5 attack and +5 damage for 3 rounds."
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "The ranger and his animal companion enter a fury state, both gaining +5 attack and +5 damage for 3 rounds."
       },
       {
         "name": "naturemagic4",
         "label": "Nature Magic 4",
         "level": 20,
-        "desc": "Passive - Grants access to rank 4 Nature magic spells and 1 rank 4 spell slot."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 4 Nature magic spells and 1 rank 4 spell slot."
       }
     ]
   },
@@ -371,13 +446,17 @@
         "name": "fear",
         "label": "Fear",
         "level": 1,
-        "desc": "Passive - enemies within melee range of the reaver suffer -1 to attack rolls (increases to -2 at level 5, -3 at level 10, -4 at level 15 and -5 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "enemies within melee range of the reaver suffer -1 to attack rolls (increases to -2 at level 5, -3 at level 10, -4 at level 15 and -5 at level 20)"
       },
       {
         "name": "harmtouch",
         "label": "Harm Touch",
         "level": 1,
-        "desc": "Action - once per long rest - attack INT vs INT on an enemy within melee range, causing 1d8 + (1d4 per level) + INT dark damage, the Reaver then becomes exhausted"
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "Attack INT vs INT on an enemy within melee range, causing 1d8 + (1d4 per level) + INT dark damage, the Reaver then becomes exhausted"
       }
     ]
   },
@@ -396,11 +475,11 @@
     "archetypes": [
       {
         "label": "Alchemist",
-        "desc": "The rogue specialises in his poisons, gaining <b>Bottled Death</b> (The rogue can create and bottle his poisons, and throw them in battle to poison enemies) as well as +1 poison prepare per rank per day and all poisons gain +2 strength."
+        "desc": "The rogue specialises in his poisons, gaining <b>Bottled Death</b> (The rogue can bottle his poisons, and throw them in battle to poison enemies) and <b>Potent Poisons</b> (all poisons gain +3 strength)."
       },
       {
         "label": "Assassin",
-        "desc": "The rogue specializes in stealth, gaining <b>Improved Backstab</b> (the rogue can now use Backstab when on the side of an enemy) and a +2 to all stealth checks."
+        "desc": "The rogue specializes in stealth, gaining <b>Improved Backstab</b> (the rogue can now use backstab when on the side of an enemy) and a +2 to all stealth checks."
       },
       {
         "label": "Fencer",
@@ -412,103 +491,137 @@
         "name": "backstab",
         "label": "Backstab",
         "level": 1,
-        "desc": "Action - make an attack from behind a target, if it hits the rogue deals weapon damage +1d4 and their damage stat modifier becomes (AGI+STR)/2 (increases to +2d4 at level 5, 3d4 at level 10, 4d4 at level 15, and 5d4 at level 20). Piercing weapon required."
+        "type": "Action",
+        "recovery": "None",
+        "desc": "Make an attack from behind a target, if it hits the rogue deals weapon damage +1d4 and their damage stat modifier becomes (AGI+STR)/2 (increases to +2d4 at level 5, 3d4 at level 10, 4d4 at level 15, and 5d4 at level 20). Piercing weapon required."
       },
       {
         "name": "thievery",
         "label": "Thievery",
         "level": 1,
-        "desc": "Passive - the rogue receives +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the rogue receives +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
       },
       {
         "name": "poisons1",
         "label": "Poisons 1",
         "level": 2,
-        "desc": "Passive - The rogue now has access to rank 1 poisons and can choose to apply one of these poisons once per long rest."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The rogue now has access to rank 1 poisons."
+      },
+      {
+        "name": "applypoison",
+        "label": "Apply Poison",
+        "level": 2,
+        "type": "Action",
+        "recovery": "None",
+        "desc": "The rogue can apply 1 dose of poison to a weapon within reach. The poison lasts for one encounter."
       },
       {
         "name": "tumble",
         "label": "Tumble",
         "level": 3,
-        "desc": "Instant - Once per short rest - When an enemy makes an attack on the rogue, before dice are rolled, they may choose to dodge up to 1 square and avoid the attack."
+        "type": "Reaction",
+        "recovery": "ShortRest",
+        "desc": "When an enemy makes an attack on the rogue, before dice are rolled, the rogue may choose to dodge up to 1 square and avoid the attack."
       },
       {
         "name": "dualwield",
         "label": "Dual Wield",
         "level": 4,
-        "desc": "Passive - The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
       },
       {
         "name": "keeneye",
         "label": "Keen Eye",
         "level": 5,
-        "desc": "Passive - the rogues attack rolls of 19 and 20 count as critical."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the rogues attack rolls of 19 and 20 count as critical."
       },
       {
         "name": "resistance",
         "label": "Resistance",
         "level": 5,
-        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "weaponmastery",
         "label": "Weapon Mastery",
         "level": 6,
-        "desc": "Passive - The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
       },
       {
         "name": "poisons2",
         "label": "Poisons 2",
         "level": 7,
-        "desc": "Passive - The rogue now has access to rank 2 poisons and can choose to apply one of these poisons once per long rest."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The rogue now has access to rank 2 poisons."
       },
       {
         "name": "extraattack",
         "label": "Extra Attack",
         "level": 8,
-        "desc": "Passive - The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
-      },
-      {
-        "name": "preparedpoison",
-        "label": "Prepared Poison",
-        "level": 9,
-        "desc": "Instant - once per long rest - If the rogue has the correct ingredients, they may instantly prepare and apply a poison they have access to on their main weapon."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
       },
       {
         "name": "choosearchetype",
         "label": "Choose Archetype",
         "level": 10,
-        "desc": "Passive - The Rogue chooses to specialize in an archetype, either <b>Alchemist</b>, <b>Assassin</b> or <b>Fencer</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The Rogue chooses to specialize in an archetype, either <b>Alchemist</b>, <b>Assassin</b> or <b>Fencer</b>."
       },
       {
         "name": "poisons3",
         "label": "Poisons3",
         "level": 12,
-        "desc": "Passive - The rogue now has access to rank 3 poisons and can choose to apply one of these poisons once per long rest."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The rogue now has access to rank 3 poisons."
       },
       {
         "name": "poisons4",
         "label": "Poisons 4",
         "level": 16,
-        "desc": "Passive - The rogue now has access to rank 4 poisons and can choose to apply one of these poisons once per long rest."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The rogue now has access to rank 4 poisons."
       },
       {
         "name": "keeneye2",
         "label": "Keen Eye 2",
         "level": 16,
-        "desc": "Passive - the rogues attack rolls of 18, 19 and 20 count as critical."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the rogues attack rolls of 18, 19 and 20 count as critical."
       },
       {
         "name": "vanish",
         "label": "Vanish",
         "level": 17,
-        "desc": "Action - once per long rest - The rogue vanishes into the shadows, becoming invisible for the next 3 rounds even while attacking."
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "The rogue vanishes into the shadows, becoming invisible for the next 3 rounds even while attacking."
       },
       {
         "name": "poisons5",
         "label": "Poisons 5",
         "level": 20,
-        "desc": "Passive - The rogue now has access to rank 5 poisons and can choose to apply one of these poisons once per long rest."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The rogue now has access to rank 5 poisons."
       }
     ]
   },
@@ -528,13 +641,17 @@
         "name": "lesserheal",
         "label": "Lesser Heal",
         "level": 1,
-        "desc": "Action - once per short rest - channel healing spirits through your weapon, healing <weapon>+SPI health on an ally within line of sight"
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "channel healing spirits through your weapon, healing <weapon>+SPI health on an ally within line of sight"
       },
       {
         "name": "lightningbolt",
         "label": "Lightning Bolt",
         "level": 1,
-        "desc": "Action - once per short rest - attack SPI vs SPI on an enemy within 10m, on hit does <weapon>+SPI light damage and the enemy is stunned."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "Attack SPI vs SPI on an enemy within 10m, on hit does <weapon>+SPI light damage and the enemy is stunned."
       }
     ]
   },
@@ -555,13 +672,16 @@
         "name": "berserk",
         "label": "Berserk",
         "level": 1,
-        "desc": "Passive - The character enters a state of rage when wounded, dealing +1d6 damage on all attacks (increases to +2d6 at level 7, +3d6 at level 13, and +4d6 at level 19)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character enters a state of rage when wounded, dealing +1d6 damage on all attacks (increases to +2d6 at level 7, +3d6 at level 13, and +4d6 at level 19)"
       },
       {
         "name": "tauntingstrike",
         "label": "Taunting Strike",
         "level": 1,
-        "desc": "Action - attack vs dodge, if it hits deal weapon damage and the target must attack you on their next turn"
+        "type": "Action",
+        "desc": "Attack vs dodge, if it hits deal weapon damage and the target must attack you on their next turn"
       }
     ]
   },
@@ -595,91 +715,121 @@
         "name": "bookworm",
         "label": "Bookworm",
         "level": 1,
-        "desc": "Passive - The wizard gains +1 to any knowledge checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The wizard gains +1 to any knowledge checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
       },
       {
         "name": "arcanemagic1",
         "label": "Arcane Magic 1",
         "level": 1,
-        "desc": "Passive - Grants access to rank 1 Arcane magic spells and 2 rank 1 spell slots (increases to 3 slots at level 2, 4 at level 4 and 5 at level 5)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 1 Arcane magic spells and 2 rank 1 spell slots (increases to 3 slots at level 2, 4 at level 4 and 5 at level 5)"
       },
       {
         "name": "focus",
         "label": "Focus",
         "level": 2,
-        "desc": "Passive - The wizard chooses one school of magic (Alteration, Abjuration, Conjuration, Evocation and Illusion). All spells with that tag gain a +1 to all rolls."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The wizard chooses one school of magic (Alteration, Abjuration, Conjuration, Evocation and Illusion). All spells with that tag gain a +1 to all rolls."
       },
       {
         "name": "familiar",
         "label": "Familiar",
         "level": 3,
-        "desc": "Passive - The wizard chooses a familiar. The familiar is instantly summoned and by the wizards side at all times. It shares all stats (including health and any existing buffs) with the wizard and does 1d4+INT damage."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The wizard chooses a familiar. The familiar is instantly summoned and by the wizards side at all times. It shares all stats (including health and any existing buffs) with the wizard and does 1d4+INT damage."
       },
       {
         "name": "arcanemagic2",
         "label": "Arcane Magic 2",
         "level": 4,
-        "desc": "Passive - Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
       },
       {
         "name": "resistance",
         "label": "Resistance",
         "level": 5,
-        "desc": "Passive - The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
         "name": "clearmind",
         "label": "Clear Mind",
         "level": 5,
-        "desc": "Action - once per short rest - The wizard refreshes a single spent spell slot."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "The wizard refreshes a single spent spell slot."
       },
       {
         "name": "sharpmind",
         "label": "Sharp Mind",
         "level": 7,
-        "desc": "Passive - the wizards spell/attack rolls of 19 and 20 count as critical"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "the wizards spell/attack rolls of 19 and 20 count as critical"
       },
       {
         "name": "arcanemagic3",
         "label": "Arcane Magic 3",
         "level": 8,
-        "desc": "Passive - Grants access to rank 3 Arcane magic spells and 1 rank 3 spell slot (increases to 2 slots at level 9 and 3 at level 10)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 3 Arcane magic spells and 1 rank 3 spell slot (increases to 2 slots at level 9 and 3 at level 10)"
       },
       {
         "name": "manasurge",
         "label": "Mana Surge",
         "level": 9,
-        "desc": "Action - once per long rest - The wizard may cast a spell of his choice twice this turn. It only counts as a single spell slot use."
+        "type": "Action",
+        "recovery": "LongRest",
+        "desc": "The wizard may cast a spell of his choice twice this turn. It only counts as a single spell slot use."
       },
       {
         "name": "choosearchetype",
         "label": "Choose Archetype",
         "level": 10,
-        "desc": "Passive - The Wizard chooses to specialize in an archetype, either <b>Archmage</b>, <b>Battlemage</b> or <b>Summmoner</b>."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The Wizard chooses to specialize in an archetype, either <b>Archmage</b>, <b>Battlemage</b> or <b>Summmoner</b>."
       },
       {
         "name": "arcanemagic4",
         "label": "Arcane Magic 4",
         "level": 12,
-        "desc": "Passive - Grants access to rank 4 Arcane magic spells and 1 rank 4 spell slot (increases to 2 slots at level 13)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 4 Arcane magic spells and 1 rank 4 spell slot (increases to 2 slots at level 13)"
       },
       {
         "name": "masterfulcontrol",
         "label": "Masterful Control",
         "level": 13,
-        "desc": "Action - once per short rest - The wizard may cast an area based Evocation spell as normal. Any friendly targets within that area are not affected."
+        "type": "Action",
+        "recovery": "ShortRest",
+        "desc": "The wizard may cast an area based Evocation spell as normal. Any friendly targets within that area are not affected."
       },
       {
         "name": "arcanemagic5",
         "label": "Arcane Magic 5",
         "level": 16,
-        "desc": "Passive - Grants access to rank 5 Arcane magic spells and 1 rank 5 spell slot (increases to 2 slots at level 18)"
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Grants access to rank 5 Arcane magic spells and 1 rank 5 spell slot (increases to 2 slots at level 18)"
       },
       {
         "name": "arcanemastery",
         "label": "Arcane Mastery",
         "level": 20,
-        "desc": "Passive - All the wizards spells gain an additional +1 to all rolls and he gains an additional 20 spell slot points on short rests."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "All the wizards spells gain an additional +1 to all rolls and he gains an additional 20 spell slot points on short rests."
       }
     ]
   }
