@@ -13,16 +13,12 @@ export class ClassComponent implements OnInit {
   clazz: Class;
 
   constructor(private classService: ClassService,
-              private route: ActivatedRoute,
-              private router: Router) {
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      let clazz = params['class'] || "warrior";
-      this.classService.get(clazz).subscribe(result => {
-        this.clazz = result
-      });
-    })
+    this.route.params
+      .switchMap(params => this.classService.get(params['name']))
+      .subscribe(clazz => this.clazz = clazz);
   }
 }

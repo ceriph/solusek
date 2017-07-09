@@ -12,17 +12,13 @@ export class RaceComponent implements OnInit {
 
   race: Race;
 
-  constructor(private classService: RaceService,
-              private route: ActivatedRoute,
-              private router: Router) {
+  constructor(private raceService: RaceService,
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      let clazz = params['race'] || "human";
-      this.classService.get(clazz).subscribe(result => {
-        this.race = result
-      });
-    })
+    this.route.params
+      .switchMap(params => this.raceService.get(params['name']))
+      .subscribe(race => this.race = race);
   }
 }

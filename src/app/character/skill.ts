@@ -16,5 +16,6 @@ export enum SkillType {
 export enum SkillRecovery {
   ShortRest,
   LongRest,
+  Round,
   None
 }
