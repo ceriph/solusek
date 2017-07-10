@@ -10,7 +10,7 @@ export class CustomScrollService {
   private document: Document;
   private body: HTMLBodyElement;
 
-  public constructor(@Inject(DOCUMENT) document: Document) {
+  public constructor(@Inject(DOCUMENT) document: any) {
     this.document = document;
     this.body = <HTMLBodyElement>document.body;
   }
