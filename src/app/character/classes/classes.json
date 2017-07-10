@@ -525,7 +525,7 @@
         "level": 2,
         "type": "Action",
         "recovery": "None",
-        "desc": "The rogue can apply 1 dose of poison to a weapon within reach. The poison lasts for one encounter."
+        "desc": "The rogue can apply 1 dose of poison to a weapon within reach. The poison lasts for one encounter (If used out of combat, the poison will last for the next encounter unless a short or long rest is taken)."
       },
       {
         "name": "tumble",

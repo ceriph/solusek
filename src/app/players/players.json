@@ -22,7 +22,7 @@
         "name": "Test",
         "personality": "asdas"
       },
-      "level": 1,
+      "level": 2,
       "race": "dwarf"
     },
     "name": "Matt"
@@ -38,14 +38,16 @@
         "str": 2
       },
       "class": "rogue",
-      "inventory": [
-        "dagger",
-        "lockpick"
-      ],
       "equipment": [
         "leatherarmour",
         "rapier"
       ],
+      "inventory": [
+        "lockpick",
+        "bandages",
+        "dagger"
+      ],
+      "experience": 475,
       "info": {
         "age": 25,
         "appearance": "Standing almost 6 feet Tall, Skalath has dark green-grey reptilian skin covering his entire body. He has 6 horns protruding from his head in a fan-like manor. His abnormally long tail assists Skalath in keeping balance on narrow ledges and in the thralls of combat. Despite his height, Skalath is slender and light allowing him to move quickly and hide in the shadows. He has long slender fingers and toes with sharp claws.\n\nSkalath is wearing heavily stained and ripped, dark brown trousers. Holding up the trousers he wears a thick black leather belt with golden buckle. Adorning his slender fingers are golden rings he has stolen form the rich folk of Cabilis. He is wearing a silver chain necklace with another stolen ring as a pendant. Other than his ill-gotten jewellery and tattered trousers, Skalath wears little else, other than two brown leather cuffs, acting as paltry armour defence. ",
@@ -56,7 +58,6 @@
         "personality": "Iksar are known for their independence, hiding away from the other races and preferring to be amongst each other. Skarath is no different. He spends little time with folk in the city and prefers to keep to himself, even shying away from other Iksar. Choosing to keep to the shadows and canals of Cabilis, he remains mostly unseen, Skarath rarely talks to anyone and likes to live a solitary life using thievery to get by. \n\nUnlike other Iksar however, Skarath has a mild temperament. He rarely gets enraged, but when he does, he is a force to be reckoned with. This may be due to him having little to do with his race and his life of solitude. "
       },
       "level": 2,
-      "experience": 475,
       "race": "iksar"
     },
     "name": "Tom"
@@ -76,6 +77,10 @@
         "clotharmour",
         "magicstaffarcane"
       ],
+      "inventory": [
+        "bandages"
+      ],
+      "experience": 475,
       "info": {
         "age": 44,
         "appearance": "3feet tall, medium build, pale complexion, Dark Brown Hair, short/slightly scruffy mop top haircut, longer-than-short sideburns, no beard. Smartly dressed, clean looking, neat. Friendly face, no scars.",
@@ -86,7 +91,6 @@
         "personality": "Fairly quiet, polite. Kind, a little suspicious of new people. A mild air of superiority, tempered by an awkward lack of confidence (due to size). Witty, smart, does not seek to compete in strength or physical appearance. Ambitious (especially for a Halfling), seems to have something to prove. Good natured, honest, lawful."
       },
       "level": 2,
-      "experience": 475,
       "race": "halfling"
     },
     "name": "Robin"
@@ -102,15 +106,17 @@
         "str": 3
       },
       "class": "ranger",
-      "inventory": [
-        "shortsword",
-        "shortbow"
-      ],
       "equipment": [
         "leatherarmour",
         "longsword",
         "longbow"
       ],
+      "inventory": [
+        "bandages",
+        "shortsword",
+        "shortbow"
+      ],
+      "experience": 475,
       "info": {
         "age": 42,
         "appearance": "Shaggy dark brown hair and beard showing signs of grey. Just under six foot. Athletic build but showing slight signs of age. Pale skin from a northern colder kingdom.",
@@ -121,7 +127,6 @@
         "personality": "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
       },
       "level": 2,
-      "experience": 475,
       "race": "human"
     },
     "name": "Steve"
@@ -142,6 +147,10 @@
         "bastardsword",
         "ringofmagicaldeflection"
       ],
+      "inventory": [
+        "bandages"
+      ],
+      "experience": 475,
       "info": {
         "age": 110,
         "appearance": "4'8\" Ruairih was tall for a dwarf. Stocky built like a purebred should be with dark reddish hair. He was still relatively young for a dwarf but showing a few scars from the end of the war before the truce had stuck.\n\nRuairih would usually be armed to the teeth with a trusty hammer to guide the way. He always wore his family armour, painted a mix of sapphire blue and the raw iron that showed it's power. ",
@@ -152,7 +161,6 @@
         "personality": "Ruairih is always determined and resolute. Always suspicious of men and slow to trust. He's seen many serve their own interests in this war, especially after the truce held. "
       },
       "level": 2,
-      "experience": 475,
       "race": "dwarf"
     },
     "name": "Pete"

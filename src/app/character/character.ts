@@ -17,5 +17,4 @@ export class Character {
   inventory: string[];
   primaryStats: PrimaryStats; // calculated by statService
   secondaryStats: SecondaryStats; // calculated by statService
-  items: Equipment[] = []; // calculated by equipmentService
 }

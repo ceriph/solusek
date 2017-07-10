@@ -33,6 +33,7 @@ export class SummaryComponent implements OnInit {
   clazz: Class;
   skills: Skill[] = [];
   equipment: Equipment[];
+  inventory: Equipment[];
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
@@ -58,12 +59,21 @@ export class SummaryComponent implements OnInit {
 
   load(character) {
     this.character = character;
+
     this.equipment = [];
     for (let itemName of character.equipment) {
       this.equipmentService.get(itemName).subscribe(item => {
         this.equipment.push(item);
       })
     }
+
+    this.inventory = [];
+    for (let itemName of character.inventory) {
+      this.equipmentService.get(itemName).subscribe(item => {
+        this.inventory.push(item);
+      })
+    }
+
     this.raceService.get(character.race).subscribe(race => {
       this.race = race;
       this.classService.get(character.class).subscribe(clazz => {

@@ -168,6 +168,12 @@
     "type": "tool",
     "modifiers": []
   },
+  "bandages": {
+    "label": "Bandages",
+    "desc": "A single roll of bandages, can be used to stabilise a character.",
+    "type": "tool",
+    "modifiers": []
+  },
   "roundshield": {
     "label": "Round Shield",
     "desc": "An old, plain round shield.",

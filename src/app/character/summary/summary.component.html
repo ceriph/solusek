@@ -53,6 +53,16 @@
     </div>
   </div>
   <div class="box">
+    <h2>Inventory</h2>
+    <div *ngFor="let item of inventory">
+      <h4>{{item.label}}</h4>
+      <p>{{item.desc}}</p>
+      <div *ngFor="let modifier of item.modifiers">
+        <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
     <h2>Bio</h2>
     <h3>Appearance</h3>
     <p>{{character.info.appearance}}</p>
