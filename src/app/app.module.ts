@@ -33,9 +33,9 @@ import {RaceComponent} from "./rules/race/race.component";
 import {CampaignComponent} from "./campaign/campaign.component";
 import {ScenarioService} from "./campaign/scenario.service";
 import {RulesService} from "./rules/rules.service";
-import {Ng2SimplePageScrollModule} from "ng2-simple-page-scroll";
 import {SpellService} from "./rules/spells/spell.service";
 import {PoisonService} from "./rules/poisons/poison.service";
+import {CustomScroll} from "./scroll/scroll.directive";
 
 @NgModule({
   imports: [
@@ -43,8 +43,7 @@ import {PoisonService} from "./rules/poisons/poison.service";
     FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'solusek-character-creator'),
-    AngularFireDatabaseModule,
-    Ng2SimplePageScrollModule.forRoot()
+    AngularFireDatabaseModule
   ],
   declarations: [
     AppComponent,
@@ -64,7 +63,8 @@ import {PoisonService} from "./rules/poisons/poison.service";
     SummaryComponent,
     ClassComponent,
     RaceComponent,
-    CampaignComponent
+    CampaignComponent,
+    CustomScroll
   ],
   providers: [
     PlayerService,

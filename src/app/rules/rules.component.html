@@ -3,55 +3,55 @@
     <h1>Contents</h1>
     <div class="left">
       <ul>
-        <li *ngFor="let rule of rules | async"><a simplePageScroll href="#{{rule.title}}">{{rule.title}}</a>
+        <li *ngFor="let rule of rules | async"><a custom-scroll href="#{{rule.title}}">{{rule.title}}</a>
           <ul *ngIf="rule.sections">
-            <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a simplePageScroll href="#{{section.title}}">{{section.title}}</a></li></span>
+            <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a custom-scroll href="#{{section.title}}">{{section.title}}</a></li></span>
           </ul>
         </li>
       </ul>
     </div>
     <div class="left">
       <ul>
-        <li><a simplePageScroll href="#CharacterCreation">Character Creation</a>
+        <li><a custom-scroll href="#CharacterCreation">Character Creation</a>
           <ul>
-            <li><a simplePageScroll href="#Races">Races</a>
+            <li><a custom-scroll href="#Races">Races</a>
               <ul>
                 <li *ngFor="let race of races | async"><a routerLink="/rules/race/{{race.name}}" routerLinkActive="active">{{race.label}}</a></li>
               </ul>
             </li>
-            <li><a simplePageScroll href="#Classes">Classes</a>
+            <li><a custom-scroll href="#Classes">Classes</a>
               <ul>
                 <li *ngFor="let clazz of classes | async"><a routerLink="/rules/class/{{clazz.name}}" routerLinkActive="active">{{clazz.label}}</a></li>
               </ul>
             </li>
-            <li><a simplePageScroll href="#Stats">Stats</a>
+            <li><a custom-scroll href="#Stats">Stats</a>
               <ul>
-                <li><a simplePageScroll href="#Primary">Primary</a></li>
-                <li><a simplePageScroll href="#Secondary">Secondary</a></li>
+                <li><a custom-scroll href="#Primary">Primary</a></li>
+                <li><a custom-scroll href="#Secondary">Secondary</a></li>
               </ul>
             </li>
-            <li><a simplePageScroll href="#Additional">Additional Info</a></li>
+            <li><a custom-scroll href="#Additional">Additional Info</a></li>
           </ul>
         </li>
       </ul>
     </div>
     <div class="left">
       <ul>
-        <li><a simplePageScroll href="#Equipment">Equipment</a>
+        <li><a custom-scroll href="#Equipment">Equipment</a>
           <ul>
-            <li><a simplePageScroll href="#Currency">Currency</a></li>
-            <li><a simplePageScroll href="#Weapons">Weapons</a></li>
-            <li><a simplePageScroll href="#Armour">Armour</a></li>
-            <li><a simplePageScroll href="#Shields">Shields</a></li>
-            <li><a simplePageScroll href="#Tools">Tools</a></li>
+            <li><a custom-scroll href="#Currency">Currency</a></li>
+            <li><a custom-scroll href="#Weapons">Weapons</a></li>
+            <li><a custom-scroll href="#Armour">Armour</a></li>
+            <li><a custom-scroll href="#Shields">Shields</a></li>
+            <li><a custom-scroll href="#Tools">Tools</a></li>
           </ul>
         </li>
-        <li><a simplePageScroll href="#Spells">Spells</a>
+        <li><a custom-scroll href="#Spells">Spells</a>
           <ul>
-            <li *ngFor="let spell of spells | async"><a simplePageScroll href="#{{spell.label}}">{{spell.label}}</a></li>
+            <li *ngFor="let spell of spells | async"><a custom-scroll href="#{{spell.label}}">{{spell.label}}</a></li>
           </ul>
         </li>
-        <li><a simplePageScroll href="#Poisons">Poisons</a></li>
+        <li><a custom-scroll href="#Poisons">Poisons</a></li>
       </ul>
     </div>
   </div>
@@ -215,7 +215,7 @@
     </p>
     <p>
       When a character is at 0 health, they are considered <b>unconscious</b> and <b>dying</b> (unless
-      <b>stabilized</b>). For more detail see the section on <a simplePageScroll href="#Death">Death</a>.
+      <b>stabilized</b>). For more detail see the section on <a custom-scroll href="#Death">Death</a>.
     </p>
 
     <h4>Temporary Health</h4>

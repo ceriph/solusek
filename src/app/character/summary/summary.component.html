@@ -34,15 +34,6 @@
     </table>
   </div>
   <div class="box">
-    <h2>Skills</h2>
-    <div *ngFor="let skill of skills">
-      <h3>{{skill.label}}</h3>
-      <p><b>Type:</b> {{skill.type}}</p>
-      <p><b>Recovery:</b> {{skill.recovery}}</p>
-      <p>{{skill.desc}}</p>
-    </div>
-  </div>
-  <div class="box">
     <h2>Equipment</h2>
     <div *ngFor="let item of equipment">
       <h4>{{item.label}}</h4>
@@ -60,6 +51,15 @@
       <div *ngFor="let modifier of item.modifiers">
         <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
       </div>
+    </div>
+  </div>
+  <div class="box">
+    <h2>Skills</h2>
+    <div *ngFor="let skill of skills">
+      <h3>{{skill.label}}</h3>
+      <p><b>Type:</b> {{skill.type}}</p>
+      <p><b>Recovery:</b> {{skill.recovery}}</p>
+      <p>{{skill.desc}}</p>
     </div>
   </div>
   <div class="box">

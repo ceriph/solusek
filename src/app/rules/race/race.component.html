@@ -6,7 +6,7 @@
     <h3>Stat Modifiers</h3>
     <p *ngIf="!race.modifiers">None</p>
     <div *ngFor="let modifier of race.modifiers | keys">
-      <p>{{modifier.value.label}}: {{modifier.value.modifier}}</p>
+      <p>{{modifier.value.label}}: {{modifier.value.value}}</p>
     </div>
     <div *ngFor="let skill of race.skills | keys">
       <h3>{{skill.value.label}}</h3>
