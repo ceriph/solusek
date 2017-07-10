@@ -1,29 +1,57 @@
 {
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg3": {
+    "character": {
+      "baseStats": {
+        "agi": 3,
+        "cha": 3,
+        "con": 5,
+        "int": 7,
+        "spi": 3,
+        "str": 3
+      },
+      "class": "wizard",
+      "equipment": [
+        "flowingashirrobes",
+        "ringoflevitation"
+      ],
+      "info": {
+        "age": 36,
+        "appearance": "Slim man wearing intricate red robes with gold trim. Also covers his face with a white porcelain mask and likes to levitate. His familiar, a red drakeling, sits on his shoulder.",
+        "background": "Auron grew up in a family that expected much of him, and the only day he can remember any sign of pride was the day he became apprentice to the Archmage Belgarath. However that did not last long; 3 years into the 10-year-long apprentiship, Belgarath learned of Auron's cruelness and cast him out of the Wizard's circle.He had been testing some newfound spells on some servants he'd locked in the cellar. Auron was arrested and due to be executed, but he had prepared for this, and had hidden his stolen ring of levitation. The anti-magic shackles only affected spellcasting, so when it came to his hanging, he slipped on the ring and feigned his death. Since then he hasn't been see\n\nHe recently has been seen in league with the demon callers and has bargained with the Demon Lord Azaril.",
+        "motivation": "Auron despises Belgarath and the Wizard's circle, and vowed to seek power and destroy them.",
+        "name": "Auron Black",
+        "personality": "Selfish and cruel, Auron is always craving to be more powerful and would note hesitate to kill in order for self gain"
+      },
+      "level": 9,
+      "race": "human"
+    },
+    "name": "Matt"
+  },
   "Aq3nWHK9uJaVR8neIJdpGBpTMrg2": {
     "character": {
       "baseStats": {
-        "agi": 2,
+        "agi": 6,
         "cha": 1,
-        "con": 2,
-        "int": 1,
-        "spi": 3,
-        "str": 2
+        "con": 6,
+        "int": 6,
+        "spi": 1,
+        "str": 6
       },
-      "class": "paladin",
+      "class": "warrior",
       "equipment": [
-        "chainarmour",
-        "bastardsword"
+        "flowingashirrobes",
+        "ringoflevitation"
       ],
       "info": {
-        "appearance": "dasd",
-        "background": "asd",
-        "introduction": "test",
-        "motivation": "asd",
-        "name": "Test",
-        "personality": "asdas"
+        "age": 94,
+        "appearance": "",
+        "background": "",
+        "motivation": "",
+        "name": "Demon Lord Azaril",
+        "personality": ""
       },
-      "level": 2,
-      "race": "dwarf"
+      "level": 15,
+      "race": "troll"
     },
     "name": "Matt"
   },
@@ -42,11 +70,6 @@
         "leatherarmour",
         "rapier"
       ],
-      "inventory": [
-        "lockpick",
-        "bandages",
-        "dagger"
-      ],
       "experience": 475,
       "info": {
         "age": 25,
@@ -57,6 +80,11 @@
         "name": "Skalath",
         "personality": "Iksar are known for their independence, hiding away from the other races and preferring to be amongst each other. Skarath is no different. He spends little time with folk in the city and prefers to keep to himself, even shying away from other Iksar. Choosing to keep to the shadows and canals of Cabilis, he remains mostly unseen, Skarath rarely talks to anyone and likes to live a solitary life using thievery to get by. \n\nUnlike other Iksar however, Skarath has a mild temperament. He rarely gets enraged, but when he does, he is a force to be reckoned with. This may be due to him having little to do with his race and his life of solitude. "
       },
+      "inventory": [
+        "lockpick",
+        "bandages",
+        "dagger"
+      ],
       "level": 2,
       "race": "iksar"
     },
@@ -77,9 +105,6 @@
         "clotharmour",
         "magicstaffarcane"
       ],
-      "inventory": [
-        "bandages"
-      ],
       "experience": 475,
       "info": {
         "age": 44,
@@ -90,6 +115,9 @@
         "name": "Mordan",
         "personality": "Fairly quiet, polite. Kind, a little suspicious of new people. A mild air of superiority, tempered by an awkward lack of confidence (due to size). Witty, smart, does not seek to compete in strength or physical appearance. Ambitious (especially for a Halfling), seems to have something to prove. Good natured, honest, lawful."
       },
+      "inventory": [
+        "bandages"
+      ],
       "level": 2,
       "race": "halfling"
     },
@@ -111,11 +139,6 @@
         "longsword",
         "longbow"
       ],
-      "inventory": [
-        "bandages",
-        "shortsword",
-        "shortbow"
-      ],
       "experience": 475,
       "info": {
         "age": 42,
@@ -126,6 +149,11 @@
         "name": "Fen Fallstar",
         "personality": "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
       },
+      "inventory": [
+        "bandages",
+        "shortsword",
+        "shortbow"
+      ],
       "level": 2,
       "race": "human"
     },
@@ -147,9 +175,6 @@
         "bastardsword",
         "ringofmagicaldeflection"
       ],
-      "inventory": [
-        "bandages"
-      ],
       "experience": 475,
       "info": {
         "age": 110,
@@ -160,6 +185,9 @@
         "name": "Ruairih Falvond",
         "personality": "Ruairih is always determined and resolute. Always suspicious of men and slow to trust. He's seen many serve their own interests in this war, especially after the truce held. "
       },
+      "inventory": [
+        "bandages"
+      ],
       "level": 2,
       "race": "dwarf"
     },

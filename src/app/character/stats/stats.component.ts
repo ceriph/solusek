@@ -27,6 +27,7 @@ export class StatsComponent implements OnInit {
   stats: PrimaryStats;
   modifiers: PrimaryStats;
 
+  level: number;
   availablePoints: number;
 
   constructor(private afAuth: AngularFireAuth,
@@ -42,6 +43,7 @@ export class StatsComponent implements OnInit {
       if (user && user.uid) {
         this.character = this.characterService.get(user.uid);
         this.character.subscribe(character => {
+          this.level = character.level;
           if (character.race) {
             this.raceService.get(character.race).subscribe(race => {
               this.selectedRace = race;
@@ -63,7 +65,11 @@ export class StatsComponent implements OnInit {
   }
 
   getMax(stat): number {
-    return Math.min(5, stat + this.availablePoints);
+    if (!this.level) {
+      return 5;
+    }
+
+    return Math.min(5 + this.level - 1, stat + this.availablePoints);
   }
 
   minus(stat): void {

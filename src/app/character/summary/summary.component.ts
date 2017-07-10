@@ -61,17 +61,21 @@ export class SummaryComponent implements OnInit {
     this.character = character;
 
     this.equipment = [];
-    for (let itemName of character.equipment) {
-      this.equipmentService.get(itemName).subscribe(item => {
-        this.equipment.push(item);
-      })
+    if (character.equipment) {
+      for (let itemName of character.equipment) {
+        this.equipmentService.get(itemName).subscribe(item => {
+          this.equipment.push(item);
+        });
+      }
     }
 
     this.inventory = [];
-    for (let itemName of character.inventory) {
-      this.equipmentService.get(itemName).subscribe(item => {
-        this.inventory.push(item);
-      })
+    if (character.inventory) {
+      for (let itemName of character.inventory) {
+        this.equipmentService.get(itemName).subscribe(item => {
+          this.inventory.push(item);
+        });
+      }
     }
 
     this.raceService.get(character.race).subscribe(race => {

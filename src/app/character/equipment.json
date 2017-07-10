@@ -5,6 +5,35 @@
     "type": "armour",
     "modifiers": []
   },
+  "flowingashirrobes": {
+    "label": "Flowing Ashir Robes",
+    "desc": "Red robed with golden trim, created with the durable silks of the Ashir worms",
+    "type": "armour",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 2
+      },
+      {
+        "name": "magicreduction",
+        "label": "Magic Reduction",
+        "value": 2
+      }
+    ]
+  },
+  "ringoflevitation": {
+    "label": "Ring of Levitation",
+    "desc": "Gold ring with a single light blue gemstone. You feel weightless when putting it on.",
+    "type": "armour",
+    "modifiers": [
+      {
+        "name": "effect",
+        "label": "Effect",
+        "value": "The wearer can levitate at will."
+      }
+    ]
+  },
   "leatherarmour": {
     "label": "Leather Tunic",
     "desc": "An old, plain leather tunic",

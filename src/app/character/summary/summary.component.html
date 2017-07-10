@@ -59,7 +59,7 @@
       <h3>{{skill.label}}</h3>
       <p><b>Type:</b> {{skill.type}}</p>
       <p><b>Recovery:</b> {{skill.recovery}}</p>
-      <p>{{skill.desc}}</p>
+      <p [innerHtml]="skill.desc"></p>
     </div>
   </div>
   <div class="box">
