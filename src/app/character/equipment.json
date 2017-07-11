@@ -253,5 +253,27 @@
         "value": -1
       }
     ]
+  },
+  "greenleafamulet": {
+    "label": "Green Leaf Amulet",
+    "desc": "A delicate silver chain holding a pendant in the shape of a green leaf. Seems to have a subtle green glow when not looking directly at it.",
+    "type": "amulet",
+    "modifiers": [
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": 1
+      },
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 1
+      },
+      {
+        "name": "magicreduction",
+        "label": "Magic Reduction",
+        "value": 1
+      }
+    ]
   }
 }

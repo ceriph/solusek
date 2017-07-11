@@ -93,6 +93,10 @@
                 "desc": "The character can spend their action to move an additional number of spaces up to their movement."
               },
               {
+                "title": "Grapple",
+                "desc": "Characters can attempt to grapple or hold an enemy, making an attack vs Dodge to initiate the grapple. If successful the character must make a STR saving throw each turn vs a DC of 10 + the grapplers STR or be held in place."
+              },
+              {
                 "title": "Disengage",
                 "desc": "The character can spend their action to disengage from a foe in melee range, allowing them to then move without provoking an <b>attack of opportunity</b>."
               }
@@ -264,6 +268,10 @@
       {
         "title": "Snared",
         "desc": "Snared characters have their movement hindered in some way, and only receive half their usual speed (rounded down)."
+      },
+      {
+        "title": "Grappled",
+        "desc": "A character who is grappled is considered <b>rooted</b> and the only action they can make is an attempt to free themselves, making a STR check vs the grapple difficulty."
       },
       {
         "title": "Stabilized",

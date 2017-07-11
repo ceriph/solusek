@@ -57,6 +57,11 @@
             "desc": "The caster becomes generally aware of any magic effects within 10m."
           },
           {
+            "label": "Swap",
+            "school": "Alteration",
+            "desc": "The caster swaps places with another friendly character within 10m."
+          },
+          {
             "label": "Eye of Zomm",
             "school": "Conjuration",
             "desc": "Summon a floating eye which the caster can 'see' through and control. Useful for scouting, however the eye is visible to others."
@@ -107,6 +112,11 @@
             "desc": "The caster learns the magical properties of a chosen magic item they are touching."
           },
           {
+            "label": "Dimensional Door",
+            "school": "Alteration",
+            "desc": "The caster creates a dimensional hole in a wall or door for INT minutes, allowing him to pass through it temporarily. The hole can be dismissed by the caster at any time."
+          },
+          {
             "label": "Summon Elemental",
             "school": "Conjuration",
             "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does 1d8+INT damage (of the elemental type)."
@@ -115,6 +125,11 @@
             "label": "Icy Sword",
             "school": "Conjuration",
             "desc": "The caster summons a sword made of pure ice that only they can wield for 3 rounds. It has a +2 modifier to attack and does <b>1d10+INT ice damage</b>."
+          },
+          {
+            "label": "Summon Food",
+            "school": "Conjuration",
+            "desc": "Conjure a selection of food. The food is enough for roughly 4 medium sized people."
           },
           {
             "label": "Choking Cloud",
@@ -127,10 +142,15 @@
             "desc": "Attack INT vs INT on enemy target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>rooted</b>."
           },
           {
+            "label": "Black Death",
+            "school": "Evocation",
+            "desc": "Summon tendrils of black smoke to damage and hold your opponent. Attack INT vs Dodge on enemy target within 10m. On hit deals <b>1d6+INT dark damage</b> and the target is <b>grappled</b> with a strength of 10+INT. Each round the target must make STR saving throw or continue to be <b>grappled</b> and take 1d6 damage."
+          },
+          {
             "label": "Mirror Image",
             "school": "Illusion",
             "desc": "Create INT identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
-          },
+          }
         ]
       },
       "4": {
