@@ -9,3 +9,13 @@ td {
 a {
   cursor: pointer;
 }
+
+.index {
+  -webkit-columns: 66px 3; /* Chrome, Safari, Opera */
+  -moz-columns: 66px 3; /* Firefox */
+  columns: 66px 3;
+
+  -webkit-column-width: 200px;
+  -moz-column-width: 200px;
+  column-width: 200px;
+}

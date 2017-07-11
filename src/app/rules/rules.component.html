@@ -1,17 +1,13 @@
 <div class="container">
   <div class="box">
     <h1>Contents</h1>
-    <div class="left">
+    <div class="index">
       <ul>
         <li *ngFor="let rule of rules | async"><a custom-scroll href="#{{rule.title}}">{{rule.title}}</a>
           <ul *ngIf="rule.sections">
             <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a custom-scroll href="#{{section.title}}">{{section.title}}</a></li></span>
           </ul>
         </li>
-      </ul>
-    </div>
-    <div class="left">
-      <ul>
         <li><a custom-scroll href="#CharacterCreation">Character Creation</a>
           <ul>
             <li><a custom-scroll href="#Races">Races</a>
@@ -33,10 +29,6 @@
             <li><a custom-scroll href="#Additional">Additional Info</a></li>
           </ul>
         </li>
-      </ul>
-    </div>
-    <div class="left">
-      <ul>
         <li><a custom-scroll href="#Equipment">Equipment</a>
           <ul>
             <li><a custom-scroll href="#Currency">Currency</a></li>
