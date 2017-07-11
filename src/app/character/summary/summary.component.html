@@ -4,8 +4,7 @@
 
 <div *ngIf="character">
   <div class="box">
-    <h2>Basic Details</h2>
-    <p><b>Name:</b> {{character.info.name}}</p>
+    <h2>{{character.info.name}}</h2>
     <p><b>Level:</b> {{character.level}}</p>
     <p><b>Age:</b> {{character.info.age}}</p>
     <p *ngIf="race"><b>Race:</b> {{race.label}}</p>

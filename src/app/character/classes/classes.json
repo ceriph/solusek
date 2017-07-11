@@ -341,12 +341,20 @@
         "desc": "Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
       },
       {
+        "name": "favouredterrain",
+        "label": "Favoured Terrain",
+        "level": 2,
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "The ranger selects his favoured terrain (desert, forest, hills, mountains, plains or swamps). He gains +1 to his <b>speed</b> and +2 to any <b>stealth</b> checks while in this terrain."
+      },
+      {
         "name": "naturalattunement",
         "label": "Natural Attunement",
         "level": 3,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The ranger now uses his spirit when making perception checks. He also gains an additional +2 to any perception checks outdoors."
+        "desc": "The ranger now uses his spirit when making perception checks. He also gains an additional +2 to any perception checks in his <b>favoured terrain</b>."
       },
       {
         "name": "animalcompanion",
@@ -362,7 +370,7 @@
         "level": 4,
         "type": "Reaction",
         "recovery": "Round",
-        "desc": "When an enemy moves into a square next to an ally within the Rangers range, he may make a reaction attack against that enemy with disadvantage."
+        "desc": "When an enemy moves into a square next to an ally within the Rangers range, he may make a reaction attack against that enemy with disadvantage. When in his <b>favoured terrain</b>, the ranger instead rolls with advantage."
       },
       {
         "name": "resistance",

@@ -294,5 +294,34 @@
         "desc": "Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b> rating. Unconscious characters are unaware of their surroundings and cannot move or take any actions on their turn."
       }
     ]
+  },
+  {
+    "title": "Cantrips",
+    "desc": "A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster’s mind and infused the caster with the magic needed to produce the effect over and over.",
+    "sections": [
+      {
+        "desc": "Wizards, Necromancers and Enchanters have access to all cantrips from level 1 onwards."
+      },
+      {
+        "title": "Magic Hand",
+        "desc": "Create a magical hand visible only to you which you can control in order to pick up small, light objects. Lasts for up to a minute."
+      },
+      {
+        "title": "Minor Illusion",
+        "desc": "Create an illusion of your choice at a target location. It must be an illusion of something familiar to you and only lasts for a few seconds."
+      },
+      {
+        "title": "Spark",
+        "desc": "Create a small, distracting spark at a given location within line of sight. It lasts only a second or so. Can be used to start a fire if the conditions are good."
+      },
+      {
+        "title": "Far Sight",
+        "desc": "Magically extend your sight, allowing you to see slightly further (as if you were using binoculars) for a few seconds."
+      },
+      {
+        "title": "Warmth",
+        "desc": "A soothing warmth emanates from your hands, warming anything you touch for a few minutes."
+      }
+    ]
   }
 ]
