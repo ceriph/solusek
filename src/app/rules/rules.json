@@ -323,5 +323,41 @@
         "desc": "A soothing warmth emanates from your hands, warming anything you touch for a few minutes."
       }
     ]
+  },
+  {
+    "title": "Tradeskills",
+    "desc": "Characters can craft many types of items in the game, each belonging to a certain tradeskill",
+    "sections": [
+      {
+        "desc": "When crafting an item, each character can contribute 5 gold worth of item per tradeskill level per day. For example to create a suite of plate armour worth 300 gold, a group of 4 characters all at level 1 smithing would contribute 20 gold's worth per day, taking 15 days total."
+      },
+      {
+        "desc": "Characters all start at level 1 in each tradeskill, and gain 100 experience per day spent crafting. Experience required per table is the same as the one for <b>character advancement</b>."
+      },
+      {
+        "title": "Alchemy",
+        "desc": "For the crafting of potions"
+      },
+      {
+        "title": "Enchantment",
+        "desc": "For the enchanting of items to make them magical"
+      },
+      {
+        "title": "Fletching",
+        "desc": "For the crafting of arrows and bows"
+      },
+      {
+        "title": "Smithing",
+        "desc": "For the crafting of metal based armour and weapons"
+      },
+      {
+        "title": "Tailoring",
+        "desc": "For the crafting of clothing"
+      },
+      {
+        "title": "Tanning",
+        "desc": "For the crafting of leather armour"
+      }
+    ]
   }
 ]

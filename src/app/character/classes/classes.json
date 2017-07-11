@@ -354,7 +354,7 @@
         "level": 3,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The ranger now uses his spirit when making perception checks. He also gains an additional +2 to any perception checks in his <b>favoured terrain</b>."
+        "desc": "The ranger now uses his spirit when making perception checks and also rolls with advantage when in his <b>favoured terrain</b>."
       },
       {
         "name": "animalcompanion",
@@ -379,6 +379,14 @@
         "type": "Passive",
         "recovery": "None",
         "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+      },
+      {
+        "name": "huntersmark",
+        "label": "Hunter's Mark",
+        "level": 5,
+        "type": "Bonus Action",
+        "recovery": "ShortRest",
+        "desc": "The ranger marks an enemy target within line of sight. Any attacks the ranger makes on that target do an additional 1d6 damage (increases to 2d6 at level 10)."
       },
       {
         "name": "extraattack",
