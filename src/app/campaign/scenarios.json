@@ -93,20 +93,56 @@
       },
       {
         "type": "Story",
-        "desc": "Belgarath offers to cast a 'Reveal Events' spell attempt to discover where Sophea came from, and leaves to prepare at her house."
+        "desc": "Belgarath offers to cast a spell of revelation to attempt to discover where Sophea came from, and leaves to prepare at her house."
+      },
+      {
+        "type": "Shopping",
+        "desc": "At the local blacksmith, Fen manages to connect with the proprietor Varden over ties to Sherridon and negotiates a discount."
+      },
+      {
+        "type": "Shopping",
+        "desc": "At a nearby tannery, Skalath manages to intensely offend and anger the owner, Sharna."
       }
     ]
   },
   "3": {
-    "title": "Intermission",
+    "title": "Scenario 3 - Revelation",
     "events": [
       {
-        "type": "Leisure",
-        "desc": "At the local blacksmith, Fen manages to connect with the proprietor Varden over ties to Sherridon and negotiates a discount."
+        "type": "Story",
+        "desc": "Belgarath casts his spell of revelation. The party witnesses the events of Sophea's mother bringing the baby Sophea through a rift and giving her to Kevnan and Holly."
       },
       {
-        "type": "Leisure",
-        "desc": "At a nearby tannery, Skalath manages to intensely offend and anger the owner, Sharna."
+        "type": "Story",
+        "desc": "A robed man floats in and after a struggle which involve the man being badly burned, Sophea's mother is killed and her body is carried out by a large brutish man."
+      },
+      {
+        "type": "Story",
+        "desc": "Belgarath reveals that the 2 men are twin brothers, Auron and Caleb Black. Auron was once an apprentice of his but was cast out for his cruelty and selfishness. The party also find a letter, amulet and some gold left for Sophea. Belgarath seems concerned and announces he must consult the Warlock Anathus."
+      },
+      {
+        "type": "Shopping",
+        "desc": "Sophea asks Morden if he can help her buy a magic weapon, as she wants to help the party. Morden takes her to Magic Emporium and meets the Flamboyant Vitto. He manages to negotiate a discount after discovering the items are second hand. Sophea is delighted."
+      },
+      {
+        "type": "Story",
+        "desc": "After investigating the whereabouts of Auron Black, Fen and Ruairih discover from Gregory he is known to frequent a more upmarket tavern in Freeport known as The Red Dragon. The party travel there and after getting info from the terrified barkeep, manage to sneak out after Auron and Caleb arrive."
+      },
+      {
+        "type": "Story",
+        "desc": "Investing the Black residence next, the group find it to be fairly abandoned, discovering the dead body of the widow mother in the bedroom closet. Skalath and Ruairih discover a secret passage and the key, and the group heads down into a basement."
+      },
+      {
+        "type": "Encounter",
+        "desc": "The group discover 4 hollow disciples sacrificing a group of high elves, and manage to defeat 3 of them before Auron and Caleb arrive back. One of the disciples uses a black stone to raise undead before escaping through a door at the back."
+      },
+      {
+        "type": "Story",
+        "desc": "Auron challenges the groups motives, and despite Fen's convincing initial argument, cannot believe 'The Master' would not relay orders to him. Auron makes a display of strength and attacks Fen with the same dark black smoke he used to kill Sophea's mother. Skalath attempts to free some of the captives but is eventually noticed, and to prove their devotion to 'The Master', Auron orders the Skalath to kill one of them. Skalath, feeling he has no choice (and much to the disgust of Ruairih and Fen) slits one of their throats."
+      },
+      {
+        "type": "Story",
+        "desc": "Satisfied for now, Auron orders the group to leave now and return tomorrow in order to carry out a task for him. As the party leave they see Auron raise the 3 dead disciples."
       }
     ]
   }

@@ -5,11 +5,13 @@
 <div *ngIf="character">
   <div class="box">
     <h2>{{character.info.name}}</h2>
-    <p><b>Level:</b> {{character.level}}</p>
     <p><b>Age:</b> {{character.info.age}}</p>
     <p *ngIf="race"><b>Race:</b> {{race.label}}</p>
     <p *ngIf="clazz"><b>Class:</b> {{clazz.label}}</p>
     <p *ngIf="clazz"><b>Proficiencies:</b> {{clazz.proficiencies}}</p>
+    <p><b>Level:</b> {{character.level}}</p>
+    <p><b>Experience:</b> {{character.experience}}</p>
+    <p><b>Gold:</b> {{character.gold}}</p>
   </div>
   <div class="box" *ngIf="character.primaryStats">
     <h2>Primary Stats</h2>

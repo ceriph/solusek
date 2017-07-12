@@ -216,8 +216,8 @@
         "desc": "The paladin surrounds himself in holy energy, stunning him next round but blocking all damage he would receive next round."
       },
       {
-        "name": "resistance",
-        "label": "Resistance",
+        "name": "resilience",
+        "label": "Resilience",
         "level": 5,
         "type": "Passive",
         "recovery": "None",
@@ -373,8 +373,8 @@
         "desc": "When an enemy moves into a square next to an ally within the Rangers range, he may make a reaction attack against that enemy with disadvantage. When in his <b>favoured terrain</b>, the ranger instead rolls with advantage."
       },
       {
-        "name": "resistance",
-        "label": "Resistance",
+        "name": "resilience",
+        "label": "Resilience",
         "level": 5,
         "type": "Passive",
         "recovery": "None",
@@ -498,16 +498,16 @@
     "recommendations": "Agility, Intelligence, Strength",
     "archetypes": [
       {
-        "label": "Alchemist",
-        "desc": "The rogue specialises in his poisons, gaining <b>Bottled Death</b> (The rogue can bottle his poisons, and throw them in battle to poison enemies) and <b>Potent Poisons</b> (all poisons gain +3 strength)."
-      },
-      {
         "label": "Assassin",
-        "desc": "The rogue specializes in stealth, gaining <b>Improved Backstab</b> (the rogue can now use backstab when on the side of an enemy) and a +2 to all stealth checks."
+        "desc": "Gains <b>Improved Backstab</b> - the rogue can now use backstab when on the side of an enemy and <b>Master of Shadows</b> - the rogue rolls advantage on all stealth checks."
       },
       {
         "label": "Fencer",
-        "desc": "The rogue specializes in his fighting abilities, gaining <b>Ambidexterity</b> (the character no longer rolls with disadvantage on offhand attacks) as well as <b>Riposte</b> (once per short rest, when the rogue dodges an attack, they may immediately make a regular attack with their main weapon against the attacker."
+        "desc": "Gains <b>Ambidexterity</b> - the character no longer rolls with disadvantage on offhand attacks, as well as <b>Riposte</b> - When the rogue dodges a melee attack, they may immediately make a regular attack with their main weapon against the attacker."
+      },
+      {
+        "label": "Thief",
+        "desc": "Gains <b>Sleight of Hand</b> - the rogue rolls with advantage of all pickpocketing and lockpicking checks, as well as <b>Use Magic Device</."
       }
     ],
     "skills": [
@@ -517,7 +517,7 @@
         "level": 1,
         "type": "Action",
         "recovery": "None",
-        "desc": "Make an attack from behind a target, if it hits the rogue deals weapon damage +1d4 and their damage stat modifier becomes (AGI+STR)/2 (increases to +2d4 at level 5, 3d4 at level 10, 4d4 at level 15, and 5d4 at level 20). Piercing weapon required."
+        "desc": "Make an attack from behind a target, if it hits the rogue deals weapon damage +1d6 (increases to +2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16, and 6d6 at level 20). <b>Piercing weapon required</b>."
       },
       {
         "name": "thievery",
@@ -560,28 +560,28 @@
         "desc": "The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
       },
       {
-        "name": "keeneye",
-        "label": "Keen Eye",
+        "name": "choosearchetype",
+        "label": "Choose Archetype",
         "level": 5,
         "type": "Passive",
         "recovery": "None",
-        "desc": "the rogues attack rolls of 19 and 20 count as critical."
+        "desc": "The Rogue chooses to specialize in an archetype, either <b>Assassin</b>, <b>Thief</b> or <b>Fencer</b>."
       },
       {
-        "name": "resistance",
-        "label": "Resistance",
+        "name": "resilience",
+        "label": "Resilience",
         "level": 5,
         "type": "Passive",
         "recovery": "None",
         "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
-        "name": "weaponmastery",
-        "label": "Weapon Mastery",
-        "level": 6,
+        "name": "keeneye",
+        "label": "Keen Eye",
+        "level": 5,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "desc": "the rogues attack rolls of 19 and 20 count as critical."
       },
       {
         "name": "poisons2",
@@ -598,14 +598,6 @@
         "type": "Passive",
         "recovery": "None",
         "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
-      },
-      {
-        "name": "choosearchetype",
-        "label": "Choose Archetype",
-        "level": 10,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Rogue chooses to specialize in an archetype, either <b>Alchemist</b>, <b>Assassin</b> or <b>Fencer</b>."
       },
       {
         "name": "poisons3",
@@ -759,8 +751,8 @@
         "desc": "Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
       },
       {
-        "name": "resistance",
-        "label": "Resistance",
+        "name": "resilience",
+        "label": "Resilience",
         "level": 5,
         "type": "Passive",
         "recovery": "None",

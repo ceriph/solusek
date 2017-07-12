@@ -172,10 +172,21 @@
   },
   "longbow": {
     "label": "Long Bow",
-    "desc": "An old, plain long bow. Does 1d8+(STR+AGI)/2 damage and has 10 range.",
+    "desc": "An old, plain long bow.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+(STR+AGI)/2 damage"
+      },
+      {
+        "name": "range",
+        "label": "Range",
+        "value": "1d8+(STR+AGI)/2 damage"
+      }
+    ]
   },
   "compoundbow": {
     "label": "Compound Bow",
@@ -273,6 +284,57 @@
         "name": "magicreduction",
         "label": "Magic Reduction",
         "value": 1
+      }
+    ]
+  },
+  "bloodthirstydagger": {
+    "label": "Bloodthirsty Dagger",
+    "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood. Does 1d4+STR piercing damage. <b>Magical</b>. <b>Requires Attunement</b>: Gains an additional permanent +1 attack/damage modifier for every <b>killing blow</b> the wielder does up to a maximum of +3.",
+    "type": "dagger",
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d4+STR piercing + 1d4 dark damage"
+      },
+      {
+        "name": "effect",
+        "label": "Effect",
+        "value": "Upon dealing a killing blow, the wielder heals 1d4 health."
+      }
+    ]
+  },
+  "thaglanadh": {
+    "label": "Tha Ghlanadh",
+    "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This weapon is <b>cursed</b>, still haunted by the spirit of Artair.",
+    "type": "warhammer",
+    "modifiers": [
+      {
+        "name": "attack",
+        "label": "Attack",
+        "value": 3
+      },
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR+3 blunt + 1d6 dark damage"
+      }
+    ]
+  },
+  "thaglanadhblessed": {
+    "label": "Tha Ghlanadh (Blessed)",
+    "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This item has been <b>blessed</b> and is no longer haunted by the spirit of Artair.",
+    "type": "warhammer",
+    "modifiers": [
+      {
+        "name": "attack",
+        "label": "Attack",
+        "value": 4
+      },
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR+4 blunt damage + 1d8 light damage"
       }
     ]
   }

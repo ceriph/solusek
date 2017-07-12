@@ -5,8 +5,9 @@ import {Info} from "./info/info";
 import {Equipment} from "./equipment";
 
 export class Character {
-  level: number;
-  experience: number;
+  level: number = 0;
+  experience: number = 0;
+  gold: number = 0;
   class: string;
   race: string;
   baseStats: PrimaryStats;

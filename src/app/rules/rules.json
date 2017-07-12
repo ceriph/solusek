@@ -34,17 +34,21 @@
         "desc": "A short rest is considered a 1 hour break that the characters can use after combat to recover health. Shorts rests should only be taken when the characters are not currently in any immediate danger.",
         "sections": [
           {
-            "desc": "If the characters are not <b>exhausted</b> and have food and water, they regain health equal to their class <b>hit die</b>, plus <b>constitution</b>, times their level. For example a level 3 warrior (class hid die 1d12) with 4 CON:",
-            "code": "Regained health = (1d12 + 4) * 3 = (7 + 4) * 3 = 33"
+            "desc": "If the characters have food and water while taking a short rest, they can spend a number of hit dice to regain health. For each hit dice, they roll it and add their <b>constitution</b>. For example a level 3 warrior (class hid die 1d12) with 4 CON:"
           },
           {
-            "desc": "Characters can take 3 short rests per day before becoming <b>exhausted</b>."
+            "desc": "Characters can regain spent hit dice by taking a long rest as below."
           }
         ]
       },
       {
         "title": "Long Rest",
-        "desc": "A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Provided the characters have access to food and water, they regain all hit points, refresh all abilities and remove any existing <b>exhausted</b> conditions."
+        "desc": "A long rest is considered a full nights sleep taking place in a prepared camp or lodgings. Provided the characters have access to food and water, they regain all hit points, refresh all abilities and remove any existing <b>exhausted</b> conditions.",
+        "sections": [
+          {
+            "desc": "When taking a long rest, characters also regain a number of their spent hit dice equal to half their maximum number of hit dice. For example if a level 5 warrior had spent all 5 of his d12 dice, he would regain 2 of those on long rest."
+          }
+        ]
       }
     ]
   },

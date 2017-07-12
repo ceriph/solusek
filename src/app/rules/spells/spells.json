@@ -272,9 +272,9 @@
             "desc": "Attack SPI vs SPI on target undead or demon, on hit the target suffers -1 STR"
           },
           {
-            "label": "Holy Light",
+            "label": "Holy Bolt",
             "school": "Evocation",
-            "desc": "Attack SPI vs dodge, on hit deals 1d4+SPI damage. Deals an additional 1d6 damage against undead or demons."
+            "desc": "Attack SPI vs dodge, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
           }
         ]
       },
@@ -305,12 +305,22 @@
             "label": "Turn Undead",
             "school": "Evocation",
             "desc": "Attack SPI vs SPI on a target undead. Deals 1d8+SPI light damage and the target is stunned."
+          },
+          {
+            "label": "Beam of Light",
+            "school": "Evocation",
+            "desc": "Attack SPI vs SPI, on hit the target is hit with a beam of light from above dealing 1d8+SPI damage now and at the start of their next turn."
           }
         ]
       },
       "3": {
         "rank": 3,
         "spells": [
+          {
+            "label": "Resistance",
+            "school": "Abjuration",
+            "desc": "Pick one type of damage (physical, arcane, fire, cold, mind, light, dark or poison). That character now has resistance to that type of damage (takes half damage)."
+          },
           {
             "label": "Greater Healing",
             "school": "Alteration",
