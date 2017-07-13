@@ -269,7 +269,7 @@
           {
             "label": "Weaken Evil",
             "school": "Alteration",
-            "desc": "Attack SPI vs SPI on target undead or demon, on hit the target suffers -1 STR"
+            "desc": "Attack SPI vs SPI on target undead or demon, on hit the target suffers -1d4 STR"
           },
           {
             "label": "Holy Bolt",
@@ -463,6 +463,11 @@
             "desc": "Attack SPI vs SPI, on hit wraps the target in vines for 3 rounds, rooting and <b>1d4+SPI damage</b> at the start of it's turn."
           },
           {
+            "label": "Call Animal",
+            "school": "Conjuration",
+            "desc": "Summon a temporary animal companion for 1 hour (Hawk, Wolf, Panther, Bear)."
+          },
+          {
             "label": "Call Hurricane",
             "school": "Evocation",
             "desc": "Attack SPI vs dodge on all creates in a 3mx3m area, on hit deals 1d8+SPI damage and the targets are <b>knocked down</b>."
@@ -525,7 +530,7 @@
           {
             "label": "Wolf Form",
             "school": "Illusion",
-            "desc": "Take the form of a large wolf for 1d4+SPI rounds/minutes. While in wolf form the caster gains a +2 to STR and AGI, and rolls 2d8+STR for damage."
+            "desc": "Take the form of a large wolf for 1 hour. While in wolf form the caster gains a +2 to STR, AGI and <b>Haste</b>, rolls 1d8+STR for melee attack damage, and gains <b>Extra Attack</b>."
           }
         ]
       },
@@ -541,6 +546,11 @@
             "label": "Ankh of Reversal",
             "school": "Alteration",
             "desc": "Mark the friendly target, the next fatal damage they would take actually heals them for that amount instead."
+          },
+          {
+            "label": "Tree Form",
+            "school": "Illusion",
+            "desc": "Take the form of a large tree for 1 hour. While in tree form the caster cannot move, but can still cast spells and gains <b>Resistance</b> to all damage."
           }
         ]
       }

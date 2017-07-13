@@ -20,6 +20,29 @@
           },
           {
             "desc": "To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM. Some checks may require teamwork (for example pushing a very large object), in this case, players can roll together to combine into a stronger check."
+          },
+          {
+            "desc": "Certain actions will be tied to a single stat, examples are as follows:"
+          },
+          {
+            "title": "Strength",
+            "desc": "Athletics, Forcing, Grappling"
+          },
+          {
+            "title": "Agility",
+            "desc": "Acrobatics, Lockpicking, Pickpocketing, Stealth"
+          },
+          {
+            "title": "Intelligence",
+            "desc": "Knowledge, Investigation"
+          },
+          {
+            "title": "Spirit",
+            "desc": "Medicine, Perception, Survival"
+          },
+          {
+            "title": "Charisma",
+            "desc": "Deception, Intimidation, Persuasion"
           }
         ]
       }
@@ -129,6 +152,10 @@
                 "desc": "If there is any damage leftover after <b>mitigation</b>, then that damage is applied directly to the target, subtracting that amount of health (or temporary health if applicable)."
               },
               {
+                "title": "Resistance",
+                "desc": "If a character has resistance to a particular damage type, all damage they receive of that type is halved. This occurs after <b>Armour</b>/<b>Magic Reduction</b> have been applied.."
+              },
+              {
                 "title": "Critical Hits",
                 "desc": "When a character rolls a <i>natural</i> 20, meaning their d20 roll before modifiers was 20, they score a critical hit. Critical hits count as full damage, so damage does not need to be rolled."
               },
@@ -144,7 +171,7 @@
           },
           {
             "title": "Reaction",
-            "desc": "Some skills are considered <b>reactions</b> and these can be used outside of the characters turn provided all other requirements on the skill are met."
+            "desc": "Some skills are considered <b>reactions</b> and these can be used outside of the characters turn provided all other requirements on the skill are met. Each character can only use a <b>Reaction</b> once per round."
           }
         ]
       }
@@ -256,6 +283,10 @@
       {
         "title": "Exhausted",
         "desc": "A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b> in order to recover from the condition."
+      },
+      {
+        "title": "Hasted",
+        "desc": "While hasted, a character's <b>Speed</b> is doubled and they can perform 2 <b>Actions</b> on their turn."
       },
       {
         "title": "Invisible",

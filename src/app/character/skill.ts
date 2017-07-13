@@ -10,7 +10,8 @@ export class Skill {
 export enum SkillType {
   Action,
   Passive,
-  Reaction
+  Reaction,
+  Misc
 }
 
 export enum SkillRecovery {

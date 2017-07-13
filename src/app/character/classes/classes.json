@@ -303,16 +303,16 @@
     "recommendations": "Constitution, Strength, Spirit",
     "archetypes": [
       {
-        "label": "Archer",
-        "desc": "The ranger now gains <b>Retreat</b> (once per round, the ranger can use their bonus action to move 1 space away from an enemy within melee range), they also gain +5 range when using any ranged weapon."
+        "label": "Hunter",
+        "desc": "You focus your training on your perception and ranged weapon skills.<br /><br /><b>HUNTER'S MARK</b><br /> Starting at level 3, you can choose a creature you can see within 20m and mark it. You now roll with advantage when making attacks or tracking checks against that creature. The mark lasts for 1 hour or until the creature dies.<br /><br /><b>RETREAT</b><br /> Starting at level 7, when an enemy moves into a space adjacent to you, you can use your <b>Reaction</b> to make a movement up to your <b>speed</b> value.<br /><br /><b>QUICKSHOT</b><br /> Starting at level 12, when an enemy creature makes a movement within your range, you may use your <b>Reaction</b> to make an immediate attack against that creature."
       },
       {
         "label": "Marauder",
-        "desc": "The ranger gains <b>Advance</b> (once per round, the ranger can use their bonus action to move 1 space towards the nearest enemy) and <b>Ambidexterity</b> (the character no longer rolls with disadvantage on offhand attacks)."
+        "desc": "You focus your training on your melee fighting skills.<br /><br /><b>DUAL WIELDING</b><br /> Starting at level 3, you may use your <b>Bonus Action</b> to make an attack with a <b>small</b> weapon in your offhand.<br /><br /><b>ADVANCE</b><br /> Starting at level 7, you may use your <b>Bonus Action</b> to move up to half your speed.<br /><br /><b>WHIRLWIND</b><br /> Starting at level 12, you can make a melee attack against any number of creatures within range."
       },
       {
         "label": "Warg",
-        "desc": "The ranger gains <b>Project Mind</b> (once per long rest, the ranger can project his consciousness into his animal companion for 1 hour). His animal companion also becomes <b>dire</b>, gaining 1d4 health per ranger level, 2 armour, 2 magic reduction and <b>Extra Attack</b>."
+        "desc": "You focus your training on your attunement to nature.<br /><br /><b>ANIMAL COMPANION</b><br /> Starting at level 3, you may choose a permanent animal companion (Hawk - agile - flying, Wolf - strong - extra attack, Panther - agile - stealthy, Bear - strong -armoured). <br/> The animal is under your control at all times and has stats equal to a character of your level-2, dependant on the chosen animal type.<br /><br /><b>SHARED MIND</b><br />Starting at level 7, you may transfer your consciousness into your animal companion, controlling it directly for 1 hour. You must take a short/long rest before doing this again.<br /><br /><b>ENRAGE</b><br /> Starting at level 12, you can spend a bonus action to enrage you and your animal companion. You both gain: 2d6+SPI temporary health, and the next attack each of you makes gains advantage."
       }
     ],
     "skills": [
@@ -322,7 +322,7 @@
         "level": 1,
         "type": "Passive",
         "recovery": "None",
-        "desc": "+1 to perception checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
+        "desc": "You gain +1 to any <b>Perception</b> checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
       },
       {
         "name": "headshot",
@@ -338,7 +338,7 @@
         "level": 2,
         "type": "Passive",
         "recovery": "None",
-        "desc": "Grants access to rank 1 Nature magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+        "desc": "You now have access to rank 1 Nature magic and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
       },
       {
         "name": "favouredterrain",
@@ -346,23 +346,15 @@
         "level": 2,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The ranger selects his favoured terrain (desert, forest, hills, mountains, plains or swamps). He gains +1 to his <b>speed</b> and +2 to any <b>stealth</b> checks while in this terrain."
+        "desc": "You must choose a favoured terrain (desert, forest, hills, mountains, plains or swamps). You gain +1 to <b>Speed</b> and advantage on any <b>Stealth</b> or <b>Perception</b> checks while in this terrain."
       },
       {
-        "name": "naturalattunement",
-        "label": "Natural Attunement",
+        "name": "rangerarchetype",
+        "label": "Ranger Archetype",
         "level": 3,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The ranger now uses his spirit when making perception checks and also rolls with advantage when in his <b>favoured terrain</b>."
-      },
-      {
-        "name": "animalcompanion",
-        "label": "Animal Companion",
-        "level": 3,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The ranger calls forth an animal companion (hawk, panther, wolf or bear). The animal becomes the rangers companion indefinitely until the ranger chooses to change it. The companion's stats depend on the type of animal and level of ranger and it can be commanded in battle."
+        "desc": "You focus your training on a particular archetype; <b>Hunter</b>, <b>Marauder</b> or <b>Warg</b>."
       },
       {
         "name": "quickshot",
@@ -381,12 +373,12 @@
         "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
-        "name": "huntersmark",
-        "label": "Hunter's Mark",
+        "name": "improvedcritical",
+        "label": "Improved Critical",
         "level": 5,
-        "type": "Bonus Action",
-        "recovery": "ShortRest",
-        "desc": "The ranger marks an enemy target within line of sight. Any attacks the ranger makes on that target do an additional 1d6 damage (increases to 2d6 at level 10)."
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "Your weapon attacks are now critical on a roll of 19 or 20."
       },
       {
         "name": "extraattack",
@@ -395,14 +387,6 @@
         "type": "Passive",
         "recovery": "None",
         "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
-      },
-      {
-        "name": "dualwield",
-        "label": "Dual Wield",
-        "level": 7,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
       },
       {
         "name": "naturemagic2",
@@ -499,15 +483,15 @@
     "archetypes": [
       {
         "label": "Assassin",
-        "desc": "Gains <b>Improved Backstab</b> - the rogue can now use backstab when on the side of an enemy and <b>Master of Shadows</b> - the rogue rolls advantage on all stealth checks."
+        "desc": "You focus your training on stealth.<br /><br /><b>ESCAPE</b><br />Starting at level 3, you may use a <b>Bonus Action</b> in order to <b>Disengage</b> rather than an <b>Action</b>.<br /><br /><b>SHADOW VISION</b><br />Starting at level 7, you have near perfect vision even when in complete darkness.<br /><br /><b>SHADOW WALK</b><br /> Starting at level 12, during your <b>Movement</b> you are able to teleport between any shadows within line of sight. Each teleport counts as 2 points of movement. Attacks of opportunity rules apply."
       },
       {
         "label": "Fencer",
-        "desc": "Gains <b>Ambidexterity</b> - the character no longer rolls with disadvantage on offhand attacks, as well as <b>Riposte</b> - When the rogue dodges a melee attack, they may immediately make a regular attack with their main weapon against the attacker."
+        "desc": "You focus your training on melee fighting.<br /><br /><b>RIPOSTE</b> - Starting at level 3, when an enemy makes an attack on you that misses, you may spend your <b>Reaction</b> to make a counter attack.<br /><br /><b>IMPROVED BACKSTAB</b><br />Starting at level 7, you can now use your <b>Backstab</b> while at the sides of enemies.<br /><br /><b>PARRY</b><br />Starting at level 12, when an enemy makes a melee attack on you that hits, you may <br /><br />"
       },
       {
         "label": "Thief",
-        "desc": "Gains <b>Sleight of Hand</b> - the rogue rolls with advantage of all pickpocketing and lockpicking checks, as well as <b>Use Magic Device</."
+        "desc": "You focus your training on thievery. <b>TRICKSTER'S HAND</b> - Starting at level 3, you can summon and control a visible magical hand at will. The hand allows you to perform lockpicking and pickpocketing on any target within line of sight.<br /><br /><b>"
       }
     ],
     "skills": [
@@ -516,8 +500,8 @@
         "label": "Backstab",
         "level": 1,
         "type": "Action",
-        "recovery": "None",
-        "desc": "Make an attack from behind a target, if it hits the rogue deals weapon damage +1d6 (increases to +2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16, and 6d6 at level 20). <b>Piercing weapon required</b>."
+        "recovery": "Round",
+        "desc": "Perform an attack with a <b>piercing weapon</b> from <i>behind</i> a target, you do an additional +1d6 piercing damage (increases to +2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16, and 6d6 at level 20)."
       },
       {
         "name": "thievery",
@@ -525,7 +509,7 @@
         "level": 1,
         "type": "Passive",
         "recovery": "None",
-        "desc": "+1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+        "desc": "You gain +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
       },
       {
         "name": "poisons1",
@@ -544,28 +528,28 @@
         "desc": "The rogue can apply 1 dose of poison to a weapon within reach. The poison lasts for one encounter (If used out of combat, the poison will last for the next encounter unless a short or long rest is taken)."
       },
       {
-        "name": "tumble",
-        "label": "Tumble",
+        "name": "roguearchetype",
+        "label": "Rogue Archetype",
         "level": 3,
+        "type": "Passive",
+        "recovery": "None",
+        "desc": "You focus your training on a particular archetype; <b>Assassin</b>, <b>Fencer</b> or <b>Thief</b>."
+      },
+      {
+        "name": "dualwielding",
+        "label": "Dual Wielding",
+        "level": 4,
+        "type": "Misc",
+        "recovery": "None",
+        "desc": "You may use your <b>Bonus Action</b> to make an attack with a <b>small</b> weapon in your offhand."
+      },
+      {
+        "name": "uncannydodge",
+        "label": "Uncanny Dodge",
+        "level": 5,
         "type": "Reaction",
         "recovery": "ShortRest",
-        "desc": "When an enemy makes an attack on the rogue, before dice are rolled, the rogue may choose to dodge up to 1 square and avoid the attack."
-      },
-      {
-        "name": "dualwield",
-        "label": "Dual Wield",
-        "level": 4,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character can equip a small weapon in their offhand. When making an attack with their main weapon, they may also make a regular attack with their off hand <b>with disadvantage</b>."
-      },
-      {
-        "name": "choosearchetype",
-        "label": "Choose Archetype",
-        "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Rogue chooses to specialize in an archetype, either <b>Assassin</b>, <b>Thief</b> or <b>Fencer</b>."
+        "desc": "When an enemy makes a melee attack on you that does damage, you can spend your <b>Reaction</b> to take only <i>half</i> the damage and move 1m."
       },
       {
         "name": "resilience",
@@ -576,17 +560,17 @@
         "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
       },
       {
-        "name": "keeneye",
-        "label": "Keen Eye",
+        "name": "improvedcritical",
+        "label": "Improved Critical",
         "level": 5,
         "type": "Passive",
         "recovery": "None",
-        "desc": "the rogues attack rolls of 19 and 20 count as critical."
+        "desc": "Your weapon attacks are now critical on a roll of 19 or 20."
       },
       {
         "name": "poisons2",
         "label": "Poisons 2",
-        "level": 7,
+        "level": 6,
         "type": "Passive",
         "recovery": "None",
         "desc": "The rogue now has access to rank 2 poisons."
@@ -597,12 +581,12 @@
         "level": 8,
         "type": "Passive",
         "recovery": "None",
-        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
+        "desc": "You can attack twice, instead of once, whenever you take the attack action on your turn"
       },
       {
         "name": "poisons3",
         "label": "Poisons3",
-        "level": 12,
+        "level": 10,
         "type": "Passive",
         "recovery": "None",
         "desc": "The Rogue now has access to rank 3 poisons."
@@ -610,18 +594,18 @@
       {
         "name": "poisons4",
         "label": "Poisons 4",
-        "level": 16,
+        "level": 14,
         "type": "Passive",
         "recovery": "None",
         "desc": "The rogue now has access to rank 4 poisons."
       },
       {
-        "name": "keeneye2",
-        "label": "Keen Eye 2",
-        "level": 16,
+        "name": "superiorcritical",
+        "label": "Superior Critical",
+        "level": 15,
         "type": "Passive",
         "recovery": "None",
-        "desc": "Attack rolls of 18, 19 and 20 count as critical."
+        "desc": "Your weapon attacks are now critical on a roll of 18-20."
       },
       {
         "name": "vanish",
@@ -634,10 +618,18 @@
       {
         "name": "poisons5",
         "label": "Poisons 5",
-        "level": 20,
+        "level": 18,
         "type": "Passive",
         "recovery": "None",
         "desc": "The rogue now has access to rank 5 poisons."
+      },
+      {
+        "name": "strokeofluck",
+        "label": "Stroke of Luck",
+        "level": 20,
+        "type": "Passive",
+        "recovery": "ShortRest",
+        "desc": "You have an uncanny knack for succeeding when you need to. If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20."
       }
     ]
   },

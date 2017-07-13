@@ -20,7 +20,7 @@
   </div>
   <p *ngIf="clazz.other" [innerHtml]="clazz.other"></p>
   <h2>Archetypes</h2>
-  <p>Selectable at level 10.</p>
+  <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
   <div *ngFor="let archetype of clazz.archetypes">
     <h3>{{archetype.label}}</h3>
     <p [innerHtml]="archetype.desc"></p>
