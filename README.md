@@ -18,6 +18,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 * Add reference section to summary for spell attack and saving throws
 * Update spell text to include better wording and expand
+* Add spell/slot selector
+* Flesh out Archetypes for in use classes
 * Add archetype selection to character at level 3
 * Add skill types to spells.json?
 * Add character advancement functionality
@@ -35,7 +37,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Migrate page content into firebase
   * Rules
   * DM
-* Add more spells for nature and light
+* Add more spells for arcane, nature and light
 * Flesh out classes that aren't current being played
   * Add spells for dark, mind and song
 

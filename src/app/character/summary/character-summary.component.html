@@ -34,6 +34,18 @@
       <tr><td>Magic Reduction</td><td>{{character.secondaryStats.magicreduction}}</td></tr>
     </table>
   </div>
+  <div class="box" *ngIf="character.checks">
+    <h2>Checks</h2>
+    <table>
+      <tr><td class="top">Investigation</td><td class="top">+{{character.checks.investigation}}</td></tr>
+      <tr><td>Knowledge</td><td>+{{character.checks.knowledge}}</td></tr>
+      <tr><td>Lockpicking</td><td>+{{character.checks.lockpicking}}</td></tr>
+      <tr><td>Pickpocketing</td><td>+{{character.checks.pickpocketing}}</td></tr>
+      <tr><td>Perception</td><td>+{{character.checks.perception}}</td></tr>
+      <tr><td>Persuasion</td><td>+{{character.checks.persuasion}}</td></tr>
+      <tr><td>Stealth</td><td>+{{character.checks.stealth}}</td></tr>
+    </table>
+  </div>
   <div class="box">
     <h2>Equipment</h2>
     <div *ngFor="let item of equipment">

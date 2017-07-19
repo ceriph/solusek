@@ -17,14 +17,15 @@ export class Character {
   inventory: string[];
   primaryStats: PrimaryStats; // calculated by statService
   secondaryStats: SecondaryStats; // calculated by statService
-  checks: Checks
+  checks: Checks;
 }
 
 export class Checks {
-  perception: number;
-  investigation: number;
-  knowledge: number;
-  lockpicking: number;
-  pickpocketing: number;
-  stealth: number;
+  investigation: number = 0;
+  knowledge: number = 0;
+  lockpicking: number = 0;
+  perception: number = 0;
+  persuasion: number = 0;
+  pickpocketing: number = 0;
+  stealth: number = 0;
 }

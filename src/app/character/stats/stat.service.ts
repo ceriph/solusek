@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {SecondaryStats, PrimaryStats} from "./stats";
-import {Character} from "../character";
+import {Character, Checks} from "../character";
 import {Race} from "../../rules/race/race";
 import {Class} from "../../rules/class/class";
 import {Modifier} from "../modifier";
@@ -52,6 +52,7 @@ export class StatService {
     character.primaryStats.spi = character.baseStats.spi;
     character.primaryStats.cha = character.baseStats.cha;
     character.secondaryStats = new SecondaryStats();
+    character.checks = new Checks();
 
     // modifiers from race
     StatService.applyModifiers(character, race.modifiers);
@@ -62,6 +63,15 @@ export class StatService {
         StatService.applyModifiers(character, item.modifiers);
       });
     }
+
+    // checks
+    character.checks.investigation += character.primaryStats.int;
+    character.checks.knowledge += character.primaryStats.int;
+    character.checks.lockpicking += character.primaryStats.agi;
+    character.checks.pickpocketing += character.primaryStats.agi;
+    character.checks.perception += character.primaryStats.spi;
+    character.checks.persuasion += character.primaryStats.cha;
+    character.checks.stealth += character.primaryStats.agi;
 
     // todo tidy racial passives as modifiers eventually
 
@@ -112,8 +122,10 @@ export class StatService {
       for (let modifier of modifiers) {
         if (StatService.isPrimary(modifier.name)) {
           character.primaryStats[modifier.name] += modifier.value;
-        } else {
+        } else if (StatService.isSecondary(modifier.name)) {
           character.secondaryStats[modifier.name] += modifier.value;
+        } else {
+          character.checks[modifier.name] += modifier.value;
         }
       }
     }
@@ -121,5 +133,9 @@ export class StatService {
 
   private static isPrimary(stat) {
     return stat === 'str' || stat === 'con' || stat === 'agi' || stat === 'int' || stat === 'spi' || stat === 'cha';
+  }
+
+  private static isSecondary(stat) {
+    return stat === 'health' || stat === 'dodge' || stat === 'armour' || stat === 'magicreduction' || stat === 'damage';
   }
 }
