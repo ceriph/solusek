@@ -14,12 +14,12 @@
           {
             "label": "Blink",
             "school": "Alteration",
-            "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>snared</b> but <i>not</i> <b>rooted</b>."
+            "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Snared</b> but <i>not</i> <b>Rooted</b>."
           },
           {
             "label": "Telekinesis",
             "school": "Alteration",
-            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make a saving throw (INT vs INT) or be lifted for one round."
+            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an INT <b>Saving Throw</b> or be lifted for one round."
           },
           {
             "label": "Summon Light",
@@ -29,12 +29,12 @@
           {
             "label": "Arcane Missiles",
             "school": "Evocation",
-            "desc": "Fires a number of missiles equal to INT, each attacking (INT vs dodge) random nearby enemies for <b>1d4 arcane damage</b>."
+            "desc": "Fires a number of missiles equal to INT, each missile hitting random nearby enemies for <b>1d4 arcane damage</b>."
           },
           {
             "label": "Burning Hands",
             "school": "Evocation",
-            "desc": "Attack INT vs dodge on a target in melee range, deals <b>1d8+INT fire damage</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target in melee range, on hit deals <b>1d8+INT fire damage</b>."
           }
         ]
       },
@@ -49,12 +49,7 @@
           {
             "label": "Open Lock",
             "school": "Alteration",
-            "desc": "The caster can make a 'lockpick' check using their INT+1."
-          },
-          {
-            "label": "Detect Magic",
-            "school": "Alteration",
-            "desc": "The caster becomes generally aware of any magic effects within 10m."
+            "desc": "Choose a target that is locked. If that target is locked by mundane means, it is immediately unlocked. If the target is locked by magical means, the lock spell is suppressed for 1 minute."
           },
           {
             "label": "Swap",
@@ -69,17 +64,22 @@
           {
             "label": "Magic Sword",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 3 rounds. It has a +1 modifier to attack and does <b>1d8+INT arcane damage</b>."
+            "desc": "Summons a sword made of pure arcane energy that only you can wield for 3 rounds. It has a +1 modifier to attack and does <b>1d8+INT arcane damage</b>."
           },
           {
             "label": "Summon Imp",
             "school": "Conjuration",
-            "desc": "Call forth a small imp who has 3d6 hitpoints, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack and does 1d6+3 fire damage."
+            "desc": "Call forth a small imp who has 3d6 + caster level health, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack with a range of 5m and does 1d6+3 fire damage."
+          },
+          {
+            "label": "Detect Magic",
+            "school": "Divination",
+            "desc": "The caster becomes generally aware of any magic effects within 10m."
           },
           {
             "label": "Frost Nova",
             "school": "Evocation",
-            "desc": "Attack INT vs INT on all enemy targets within 3m, on hit the targets take <b>1d4+INT ice damage</b> and are <b>rooted</b>."
+            "desc": "All creatures within 2m of you must make an AGI <b>Saving Throw</b>, if they fail they take <b>1d8+INT ice damage</b> and are <b>Rooted</b>. On success they only take half damage."
           },
           {
             "label": "Fireball",
@@ -107,13 +107,8 @@
             "desc": "Remove 1d4 magical effects on the target (works for both beneficial effects on enemies, and negative effects on allies)."
           },
           {
-            "label": "Identify",
-            "school": "Alteration",
-            "desc": "The caster learns the magical properties of a chosen magic item they are touching."
-          },
-          {
             "label": "Dimensional Door",
-            "school": "Alteration",
+            "school": "Conjuration",
             "desc": "The caster creates a dimensional hole in a wall or door for INT minutes, allowing him to pass through it temporarily. The hole can be dismissed by the caster at any time."
           },
           {
@@ -130,6 +125,11 @@
             "label": "Summon Food",
             "school": "Conjuration",
             "desc": "Conjure a selection of food. The food is enough for roughly 4 medium sized people."
+          },
+          {
+            "label": "Identify",
+            "school": "Divination",
+            "desc": "The caster learns the magical properties of a chosen magic item they are touching."
           },
           {
             "label": "Choking Cloud",
@@ -175,6 +175,11 @@
             "label": "Flaming Sword",
             "school": "Conjuration",
             "desc": "The caster summons a sword made of pure fire that only they can wield for 3 rounds. It has a +3 modifier to attack and does <b>1d12+INT fire damage</b>."
+          },
+          {
+            "label": "See Invisible",
+            "school": "Conjuration",
+            "desc": "Your target is able to see invisible creatures for up to 1 hour."
           },
           {
             "label": "Blizzard",

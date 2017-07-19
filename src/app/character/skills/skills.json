@@ -1,0 +1,312 @@
+{
+  "arcane1": {
+    "desc": "you now have access to rank 1 arcane magic.",
+    "label": "Arcane 1"
+  },
+  "arcane2": {
+    "desc": "you now have access to rank 2 arcane magic.",
+    "label": "Arcane 2"
+  },
+  "arcane3": {
+    "desc": "you now have access to rank 3 arcane magic.",
+    "label": "Arcane 3"
+  },
+  "arcane4": {
+    "desc": "you now have access to rank 4 arcane magic.",
+    "label": "Arcane 4"
+  },
+  "arcane5": {
+    "desc": "you now have access to rank 5 arcane magic.",
+    "label": "Arcane 5"
+  },
+  "archetype": {
+    "desc": "you must choose to specialise in one of the available archetypes for your class.",
+    "label": "Choose Archetype"
+  },
+  "areacontrol": {
+    "desc": "you have the ability to masterfully control your area of effect spells. Any friendly targets within an area effect you cast no longer take the negative effects.",
+    "label": "Area Control"
+  },
+  "assassinate": {
+    "desc": "you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.",
+    "label": "Assassinate"
+  },
+  "auraofcourage": {
+    "desc": "you naturally inspire your allies with courage. Any ally within 3m of you gains +1 to <b>Attack</b> rolls. Increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20.",
+    "label": "Aura of Courage"
+  },
+  "auraofprotection": {
+    "desc": "you presence makes allies within 3m of you feel protected. They gain +1 on any <b>Saving Throws</b>. Increases to +2 at level 7, +3 at level 12 and +4 at level 17.",
+    "label": "Aura of Protection"
+  },
+  "backstab": {
+    "desc": "you are able to exploit weak spots when performing an <b>Attack Action</b> from behind a non-moving enemy. If your attack hits you do an additional <b>1d6 piercing damage</b>. Increases to 2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16 and 6d6 at level 20. Piercing weapon required.",
+    "label": "Backstab",
+    "recovery": "Round",
+    "type": "Action"
+  },
+  "bookworm": {
+    "desc": "your reading and studies have made you a knowledgable individual, gaining +1 to any <b>Knowledge</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
+    "label": "Bookworm"
+  },
+  "cunningaction": {
+    "desc": "you may now spend a <b>Bonus Action</b> in order to <b>Dash</b>, <b>Disengage</b> or <b>Hide</b>.",
+    "label": "Cunning Action",
+    "type": "BonusAction"
+  },
+  "disguise": {
+    "desc": "you are able to alter your appearance and voice to that of any other humanoid of a similar size. Preparation takes around an hour.",
+    "label": "Disguise"
+  },
+  "divineintervention": {
+    "desc": "when you are hit by an attack that would lower your health to 0, you may use your <b>Reaction</b> to call on your god to intervene, causing the damage to be blocked.",
+    "label": "Divine Intervention",
+    "recovery": "LongRest",
+    "type": "Reaction"
+  },
+  "divineshield": {
+    "desc": "you can call on the gods to protect you, granting you <b>Resistance</b> to all damage types until the start of your next turn.",
+    "label": "Divine Shield",
+    "recovery": "ShortRest"
+  },
+  "divinesmite": {
+    "desc": "when making an <b>Attack</b> on an enemy that hits, you may expend a spell slot to add holy light to your weapon, doing an additional 2d8 damage plus 1d8 per level of the spell slot expended.",
+    "label": "Divine Smite",
+    "recovery": "ShortRest",
+    "type": "Action"
+  },
+  "doubleattack": {
+    "desc": "when making an <b>Attack Action</b>, you may attack twice.",
+    "label": "Double Attack",
+    "type": "Action"
+  },
+  "dualwielding": {
+    "desc": "you may now add your damage modifier to attack rolls made with your off hand.",
+    "label": "Dual Wielding"
+  },
+  "elusive": {
+    "desc": "you can move around the battlefield with grace, gaining immunity to <b>Attacks of Opportunity</b>.",
+    "label": "Evasion"
+  },
+  "evasion": {
+    "desc": "you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a Blizzard spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
+    "label": "Evasion"
+  },
+  "favouredterrain": {
+    "desc": "you may choose a favoured terrain (desert, forest, hills, mountains, plains or swamps). You gain +1 to <b>Speed</b> and advantage on any <b>Stealth</b> checks while in this terrain.",
+    "label": "Favoured Terrain"
+  },
+  "duelist": {
+    "desc": "while attacking a target who is not adjacent to any characters friendly to it, you can perform <b>Backstab</b> from any side of the enemy.",
+    "label": "Duelist"
+  },
+  "escape": {
+    "desc": "when an enemy ends their movement on a space adjacent to you, you may spend your <b>Reaction</b> to move up to your speed. This does not provoke an <b>Attack of Opportunity</b>.",
+    "label": "Escape",
+    "recovery": "ShortRest",
+    "type": "Reaction"
+  },
+  "focus": {
+    "desc": "you focus your studies on a particular school of magic (Abjuration, Alteration, Conjuration, Divination, Evocation or Illusion). Spells of that school gain a +1 to all rolls.",
+    "label": "Focus"
+  },
+  "gamble": {
+    "desc": "TODO",
+    "label": "Gamble"
+  },
+  "hardy": {
+    "desc": "your experience in the wilderness makes you hardy. Gain <b>Advantage</b> on any CON saving throws.",
+    "label": "Hardy"
+  },
+  "headshot": {
+    "desc": "you may make an <b>Attack</b> on a target within range, if it hits, the attack counts as a <b>Critical Hit</b> regardless of the roll.",
+    "label": "Headshot",
+    "recovery": "ShortRest",
+    "type": "Action"
+  },
+  "improvedcritical": {
+    "desc": "you now have a keener sense of your opponents weak spots. Attack rolls of 19 and 20 count as critical.",
+    "label": "Improved Critical"
+  },
+  "improveddivinesmite": {
+    "desc": "your <b>Divine Smite</b> can now be used as many times as you wish, provided you have spells slots to expend.",
+    "label": "Improved Divine Smite"
+  },
+  "layonhands": {
+    "desc": "you can use an <b>Action</b> to place a healing hand on a friendly character within range, healing them to full health. You must take a <b>Long Rest</b> before using this skill again.",
+    "label": "Lay On Hands"
+  },
+  "light1": {
+    "desc": "you now have access to rank 1 light magic.",
+    "label": "Light 1"
+  },
+  "light2": {
+    "desc": "you now have access to rank 2 light magic.",
+    "label": "Light 2"
+  },
+  "light3": {
+    "desc": "you now have access to rank 3 light magic.",
+    "label": "Light 3"
+  },
+  "light4": {
+    "desc": "you now have access to rank 4 light magic.",
+    "label": "Light 4"
+  },
+  "light5": {
+    "desc": "you now have access to rank 5 light magic.",
+    "label": "Light 5"
+  },
+  "longshot": {
+    "desc": "your aim has become superhuman, and gain +5m <b>Range</b> on any ranged weapons.",
+    "label": "Longshot"
+  },
+  "magichand": {
+    "desc": "you gain access to the Magic Hand cantrip and are able to use it to make <b>Lockpicking</b> and <b>Pickpocketing</b> checks from a distance."
+  },
+  "magicalprotection": {
+    "desc": "your arcane knowledge grants you increased protection from enemies spells. You now roll with advantage on any spell saves.",
+    "label": "Magical Protection"
+  },
+  "meditate": {
+    "desc": "as an <b>Action</b> you may immediately refresh a number of spell slots equal to your normal short rest allowance.",
+    "label": "Meditate"
+  },
+  "mobile": {
+    "desc": "you can use a <b>Bonus Action</b> in order to <b>Dash</b>.",
+    "label": "Mobile",
+    "type": "BonusAction"
+  },
+  "nature1": {
+    "desc": "you now have access to rank 1 nature magic.",
+    "label": "Nature 1"
+  },
+  "nature2": {
+    "desc": "you now have access to rank 2 nature magic.",
+    "label": "Nature 2"
+  },
+  "nature3": {
+    "desc": "you now have access to rank 3 nature magic.",
+    "label": "Nature 3"
+  },
+  "nature4": {
+    "desc": "you now have access to rank 4 nature magic.",
+    "label": "Nature 4"
+  },
+  "nature5": {
+    "desc": "you now have access to rank 5 nature magic.",
+    "label": "Nature 5"
+  },
+  "nimblemind": {
+    "desc": "you may choose to spend an available spell slot to cast a different spell of the same rank that is not currently prepared.",
+    "label": "Nimble Mind",
+    "recovery": "LongRest",
+    "type": "Action"
+  },
+  "panache": {
+    "desc": "you have mastered the ability to charm and deceive, gaining advantage on any <b>Persuasion</b> rolls against non-magical creatures.",
+    "label": "Panache"
+  },
+  "poisons1": {
+    "desc": "you now have access to rank 1 poisons.",
+    "label": "Poisons 1"
+  },
+  "poisons2": {
+    "desc": "you now have access to rank 2 poisons.",
+    "label": "Poisons 2"
+  },
+  "poisons3": {
+    "desc": "you now have access to rank 3 poisons.",
+    "label": "Poisons 3"
+  },
+  "poisons4": {
+    "desc": "you now have access to rank 4 poisons.",
+    "label": "Poisons 4"
+  },
+  "poisons5": {
+    "desc": "you now have access to rank 5 poisons.",
+    "label": "Poisons 5"
+  },
+  "potentpoisons": {
+    "desc": "creatures now suffer <b>Disadvantage</b> when attempting to save against your poisons.",
+    "label": "Potent Poisons"
+  },
+  "relentless": {
+    "desc": "when a creature gives you an attack of opportunity, you gain your <b>Backstab</b> bonuses on that attack.",
+    "label": "Relentless"
+  },
+  "reliabletalent": {
+    "desc": "you have refined your skills until they approach perfection. Whenever you make a <b>Lockpicking</b> or <b>Pickpocketing</b>, you can treat a d20 roll of 9 or lower as a 10.",
+    "label": "Reliable Talent"
+  },
+  "resilience": {
+    "desc": "you have gained a natural toughness gaining +1 <b>Magic Reduction</b>. Increases to +2 at level 10, +3 to level 15 and +4 at level 20.",
+    "label": "Resilience"
+  },
+  "shadowwalk": {
+    "desc": "during your <b>Movement</b> you are able to teleport between any shadows within line of sight. Each teleport counts as 2 points of movement. Attacks of opportunity rules still apply.",
+    "label": "Shadow Walk"
+  },
+  "shadowstrike": {
+    "desc": "if after moving via <b>Shadow Walk</b> you are now behind an enemy, you may make spend your <b>Bonus Action</b> to perform a <b>Backstab</b>.",
+    "label": "Shadow Strike"
+  },
+  "spellmastery": {
+    "desc": "you may choose a spell on rank 3 or below. That spell is now considered a <b>Cantrip</b> and can be cast without being prepared.",
+    "label": "Spell Mastery"
+  },
+  "spellsurge": {
+    "desc": "when casting a spell that does damage, you may choose to exhaust an additional slot of the same rank in order to in order to force a critical hit (maximum damage).",
+    "label": "Spell Surge"
+  },
+  "strokeofluck": {
+    "desc": "you have an uncanny knack for succeeding when you need to. If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.",
+    "label": "Stroke of Luck",
+    "recovery": "LongRest"
+  },
+  "superiorcritical": {
+    "desc": "you have mastered the ability to exploit your opponents weak spots. Attack rolls of 18, 19 and 20 count as critical.",
+    "label": "Superior Critical"
+  },
+  "supernaturalawareness": {
+    "desc": "your heightened sences make you immune to being suprised. You now <b>always</b> attack first in combat.",
+    "label": "Supernatural Awareness"
+  },
+  "thievery": {
+    "desc": "your misspent youth has honed your thievery skills, gaining +1 to any <b>Lockpick</b> or <b>Pickpocket</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
+    "label": "Thievery"
+  },
+  "tracker": {
+    "desc": "your experience hunting has given you heightened senses, gaining +1 to <b>Perception</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
+    "label": "Tracker"
+  },
+  "tripleattack": {
+    "desc": "when making an <b>Attack Action</b>, you may attack three times.",
+    "label": "Triple Attack",
+    "type": "Action"
+  },
+  "ironwill": {
+    "desc": "you now roll with advantage against being <b>Feared</b>.",
+    "label": "Unbreakable Will"
+  },
+  "unarmedstrike": {
+    "desc": "while wielding only your fists or blunt simple weapons, your attacks do 1d4+STR damage. As a <b>Bonus Action</b> you can also perform an additional unarmed strike. Your damage increases to 1d6 at level 4, 1d8 at level 8, 1d10 at level 12 and 1d12 at level 16.",
+    "label": "Unarmed Strike",
+    "type": "BonusAction"
+  },
+  "unarmoureddefense": {
+    "desc": "while not wearing any armour, you add your SPI stat to your <b>Dodge</b> rating.",
+    "label": "Unarmoured Defense"
+  },
+  "uncannydodge": {
+    "desc": "when an attacker that you can see hits you with an <b>Attack</b>, you can use your reaction to halve the attack's damage against you.",
+    "label": "Uncanny Dodge",
+    "recovery": "ShortRest",
+    "type": "Reaction"
+  },
+  "vanish": {
+    "desc": "you can spend your <b>Bonus Action</b> to attempt to <b>Hide</b> with <b>Advantage</b>, on success you are considered invisible until your next turn.",
+    "label": "Vanish",
+    "recovery": "ShortRest",
+    "type": "Reaction"
+  }
+}

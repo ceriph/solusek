@@ -1,13 +1,10 @@
-import {Skill} from "../skill";
-import {Equipment} from "../equipment";
-
 export class Class {
   name: string;
   label: string;
   desc: string;
   hit: number;
   proficiencies: string;
-  skills: Skill[];
+  skills: ClassSkill[];
   equipment: string[];
   archetypes: Archetype[];
 }
@@ -15,4 +12,11 @@ export class Class {
 export class Archetype {
   label: string;
   desc: string;
+  skills: ClassSkill[];
 }
+
+export class ClassSkill {
+  level: number;
+  name: string;
+}
+

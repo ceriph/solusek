@@ -1,6 +1,9 @@
+import {SkillRecovery, SkillType} from "../../character/skills/skill";
 export class Spell {
   label: string;
   school: School;
+  recovery: SkillRecovery = SkillRecovery.None;
+  type: SkillType;
   desc: string;
 }
 

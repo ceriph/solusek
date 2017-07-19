@@ -165,7 +165,7 @@
               },
               {
                 "title": "Attack of Opportunity",
-                "desc": "When a character moves out of melee range of a foe they were previously in melee range of, the foe is able to make a free <b>Basic Attack</b> against the moving character. This can avoided by the use of <b>Disengage</b>."
+                "desc": "When a character moves out of a square in front of an enemy who was previously in melee range of them, the foe is able to make a free <b>Basic Attack</b> against the moving character. This can avoided by the use of <b>Disengage</b>."
               }
             ]
           },
@@ -283,6 +283,10 @@
       {
         "title": "Exhausted",
         "desc": "A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b> in order to recover from the condition."
+      },
+      {
+        "title": "Feared",
+        "desc": "While feared, your character has <b>disadvantage</b> on any attack rolls against the create which caused the fear. At the end of each turn you must make a SPI saving throw, on success you are no longer fe"
       },
       {
         "title": "Hasted",

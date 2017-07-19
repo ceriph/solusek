@@ -1,14 +1,14 @@
 export class Skill {
   name: string;
   label: string;
-  level: number;
-  type: SkillType;
-  recovery: SkillRecovery;
+  type: SkillType = SkillType.Passive;
+  recovery: SkillRecovery = SkillRecovery.None;
   desc: string;
 }
 
 export enum SkillType {
   Action,
+  BonusAction,
   Passive,
   Reaction,
   Misc

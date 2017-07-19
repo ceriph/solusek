@@ -56,11 +56,8 @@
   </div>
   <div class="box">
     <h2>Skills</h2>
-    <div *ngFor="let skill of skills">
-      <h3>{{skill.label}}</h3>
-      <p><b>Type:</b> {{skill.type}}</p>
-      <p><b>Recovery:</b> {{skill.recovery}}</p>
-      <p [innerHtml]="skill.desc"></p>
+    <div *ngFor="let skill of character.skills">
+      <skill [classSkill]="skill"></skill>
     </div>
   </div>
   <div class="box">

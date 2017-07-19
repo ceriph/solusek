@@ -34,23 +34,8 @@
     ],
     "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Small Shields",
     "recommendations": "Spirit, Constitution, Agility",
-    "skills": [
-      {
-        "name": "lesserheal",
-        "label": "Lesser Heal",
-        "level": 1,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "channel healing spirits through your weapon, healing <weapon> health on an ally within line of sight"
-      },
-      {
-        "name": "holylight",
-        "label": "Holy Light",
-        "level": 1,
-        "type": "Action",
-        "desc": "Attack SPI vs SPI on an enemy within 10m, on hit does weapon + SPI light damage, does an additional 1d6 damage to undead enemies."
-      }
-    ]
+    "archetypes": [],
+    "skills": []
   },
   "enchanter": {
     "name": "enchanter",
@@ -63,24 +48,8 @@
     ],
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Charisma, Intelligence, Constitution",
-    "skills": [
-      {
-        "name": "sensemind",
-        "label": "Sense Mind",
-        "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "the enchanter can roll a CHA check out of combat to attempt to peer into a targets mind and detect their intentions."
-      },
-      {
-        "name": "charm",
-        "label": "Charm",
-        "level": 1,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "Attack CHA vs CHA on an enemy within 10m, if it hits the enemy is charmed until the end of their next turn."
-      }
-    ]
+    "archetypes": [],
+    "skills": []
   },
   "monk": {
     "name": "monk",
@@ -92,30 +61,15 @@
     ],
     "proficiencies": "Simple Weapons",
     "recommendations": "Strength, Agility, Spirit, Constitution",
+    "archetypes": [],
     "skills": [
       {
-        "name": "fistsofrock",
-        "label": "Fists Of Rock",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "A monks fists are classed as 1d4+STR weapons (increase to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20"
+        "name": "unarmedstrike"
       },
       {
-        "name": "kick",
-        "label": "Kick",
         "level": 1,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "Attack vs dodge on a enemy within melee range, if it hits the target takes 1d8+STR damage and is knocked down."
-      },
-      {
-        "name": "ignorepain",
-        "label": "Ignore Pain",
-        "level": 2,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "the monk gains 1d4+SPI temporary hit points (increases to 2d4 at level 5, 3d4 at level 10, 4d4 at level 15 and 5d4 at level 20)"
+        "name": "unarmoureddefense"
       }
     ]
   },
@@ -130,24 +84,8 @@
     ],
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Intelligence, Constitution, Agility",
-    "skills": [
-      {
-        "name": "absorb",
-        "label": "Absorb",
-        "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "When the necromancer does dark damage to an enemy, they gain 1 health (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
-      },
-      {
-        "name": "animatebones",
-        "label": "Animate Bones",
-        "level": 1,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "raise a skeleton from the dead under the characters control. It has (1d4 + CON) * level health, 3 movement, 0 Dodge, 1 Armour, 1d20 + INT attack, and does 1d4 + INT physical damage."
-      }
-    ]
+    "archetypes": [],
+    "skills": []
   },
   "paladin": {
     "name": "paladin",
@@ -162,130 +100,82 @@
     "recommendations": "Constitution, Strength, Spirit",
     "archetypes": [
       {
-        "label": "Avenger",
-        "desc": "The paladin gains <b>Large Weapon Fighting</b> (+2 to attack and damage rolls when using a two handed weapon) and <b>Smite</b> (once per round the paladin can use his bonus action to cast an evocation spell)."
+        "label": "Oath of Justice",
+        "desc": "You make a sacred oath to protective innocents and pursue justice for all."
       },
       {
-        "label": "Protector",
-        "desc": "The paladin gains <b>Heavy Defense</b> (no longer takes the negative effects of wearing heavy armour and holding a shield) and <b>Protect</b> (once per round the paladin can use his bonus action to cast an abjuration spell)."
+        "label": "Oath of Treachery",
+        "desc": "You make a sacred oath only to yourself, vowing to pursue only what suits you."
       },
       {
-        "label": "Healer",
-        "desc": "The paladin can now use Lay On Hands twice per long rest, and all his healing spells gain an additional 1d6+2."
+        "label": "Oath of Vengeance",
+        "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary."
       }
     ],
     "skills": [
       {
-        "name": "courage",
-        "label": "Courage",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "All allies within 3m of the Paladin gain +1 to attack rolls (increases to 2 at level 5, 3 at level 10, 4 at level 15 and 5 at level 20)."
+        "name": "auraofcourage"
       },
       {
-        "name": "layonhands",
-        "label": "Lay On Hands",
         "level": 1,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "The paladin touches a friendly target (this can include themselves), healing the target to full health."
+        "name": "layonhands"
       },
       {
-        "name": "lightmagic1",
-        "label": "Light Magic 1",
         "level": 2,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 1 Light magic spells and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+        "name": "light1"
       },
       {
-        "name": "sacredoath",
-        "label": "Sacred Oath",
         "level": 3,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The paladin takes his <b>sacred oath</b>, finally committing to a code. This can be: <b>Oath of Ancients</b> (The paladin selects one of the fathers/spirits and devotes himself to serving them, gaining <b>Divine Intervention</b> (Reaction - once per long rest - when the paladin takes damage that would reduce him to 0 health, he is instead healed for that damage), <b>Oath of Conquest</b> (The paladin revels in the glory of battle, gaining <b>Aura of Conquest</b> (Passive - if the paladin is within 1m of a defeated foe, he gains health equal to the foes hit die)) or <b>Oath of Justice</b> (The paladin devotes himself to the pursuit of justice for all and gains <b>Truthbringer</b> - once per short rest the paladin can compel a character to speak truthfully for SPI minutes. Unwilling characters must make a SPI saving throw vs 10+SPI)."
+        "name": "archetype"
       },
       {
-        "name": "divineshield",
-        "label": "Divine Shield",
         "level": 4,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "The paladin surrounds himself in holy energy, stunning him next round but blocking all damage he would receive next round."
+        "name": "doubleattack"
       },
       {
-        "name": "resilience",
-        "label": "Resilience",
         "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "name": "resilience"
       },
       {
-        "name": "divineweapon",
-        "label": "Divine Weapon",
+        "level": 5,
+        "name": "auraofprotection"
+      },
+      {
         "level": 6,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "Enchant your weapon with holy energy and attack immediately, dealing weapon damage plus <b>1d6+SPI light damage</b>. Deals an additional 1d6 to undead or demons."
+        "name": "light2"
       },
       {
-        "name": "lightmagic2",
-        "label": "Light Magic 2",
         "level": 8,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 2 Light magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+        "name": "improvedcritical"
       },
       {
-        "name": "weaponmastery",
-        "label": "Weapon Mastery",
         "level": 9,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "name": "divineshield"
       },
       {
-        "name": "choosearchetype",
-        "label": "Choose Archetype",
         "level": 10,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Paladin chooses to specialize in an archetype, either <b>Avenger</b>, <b>Protector</b> or <b>Healer</b>."
+        "name": "light3"
       },
       {
-        "name": "extraattack",
-        "label": "Extra Attack",
         "level": 12,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
+        "name": "divineintervention"
       },
       {
-        "name": "lightmagic3",
-        "label": "Light Magic 3",
         "level": 14,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 3 Light magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+        "name": "light4"
       },
       {
-        "name": "avatar",
-        "label": "Avatar",
-        "level": 17,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "The paladin becomes an avatar of the gods, gaining +2 to all primary stats, 1d6+SPI temporary health, 5 armour and 5 magic reduction for 3 rounds."
+        "level": 16,
+        "name": "divinesmite"
       },
       {
-        "name": "lightmagic4",
-        "label": "Light Magic 4",
+        "level": 18,
+        "name": "ironwill"
+      },
+      {
         "level": 20,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 4 Light magic spells and 1 rank 4 spell slot."
+        "name": "improveddivinesmite"
       }
     ]
   },
@@ -304,10 +194,10 @@
     "archetypes": [
       {
         "label": "Hunter",
-        "desc": "You focus your training on your perception and ranged weapon skills.<br /><br /><b>HUNTER'S MARK</b><br /> Starting at level 3, you can choose a creature you can see within 20m and mark it. You now roll with advantage when making attacks or tracking checks against that creature. The mark lasts for 1 hour or until the creature dies.<br /><br /><b>RETREAT</b><br /> Starting at level 7, when an enemy moves into a space adjacent to you, you can use your <b>Reaction</b> to make a movement up to your <b>speed</b> value.<br /><br /><b>QUICKSHOT</b><br /> Starting at level 12, when an enemy creature makes a movement within your range, you may use your <b>Reaction</b> to make an immediate attack against that creature."
+        "desc": "You focus your training on your perception and ranged weapon skills."
       },
       {
-        "label": "Marauder",
+        "label": "Warden",
         "desc": "You focus your training on your melee fighting skills.<br /><br /><b>DUAL WIELDING</b><br /> Starting at level 3, you may use your <b>Bonus Action</b> to make an attack with a <b>small</b> weapon in your offhand.<br /><br /><b>ADVANCE</b><br /> Starting at level 7, you may use your <b>Bonus Action</b> to move up to half your speed.<br /><br /><b>WHIRLWIND</b><br /> Starting at level 12, you can make a melee attack against any number of creatures within range."
       },
       {
@@ -317,124 +207,72 @@
     ],
     "skills": [
       {
-        "name": "tracker",
-        "label": "Tracker",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You gain +1 to any <b>Perception</b> checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
+        "name": "tracker"
       },
       {
-        "name": "headshot",
-        "label": "Headshot",
         "level": 1,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "Perform a ranged attack as normal, on hit it is considered critical, doing maximum damage."
+        "name": "headshot"
       },
       {
-        "name": "naturemagic1",
-        "label": "Nature Magic 1",
         "level": 2,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You now have access to rank 1 Nature magic and 1 rank 1 spell slot (increases to 2 slots at level 3, 3 at level 5 and 4 at level 7)."
+        "name": "nature1"
       },
       {
-        "name": "favouredterrain",
-        "label": "Favoured Terrain",
         "level": 2,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You must choose a favoured terrain (desert, forest, hills, mountains, plains or swamps). You gain +1 to <b>Speed</b> and advantage on any <b>Stealth</b> or <b>Perception</b> checks while in this terrain."
+        "name": "favouredterrain"
       },
       {
-        "name": "rangerarchetype",
-        "label": "Ranger Archetype",
         "level": 3,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You focus your training on a particular archetype; <b>Hunter</b>, <b>Marauder</b> or <b>Warg</b>."
+        "name": "archetype"
       },
       {
-        "name": "quickshot",
-        "label": "Quick Shot",
         "level": 4,
-        "type": "Reaction",
-        "recovery": "Round",
-        "desc": "When an enemy moves into a square next to an ally within the Rangers range, he may make a reaction attack against that enemy with disadvantage. When in his <b>favoured terrain</b>, the ranger instead rolls with advantage."
+        "name": "doubleattack"
       },
       {
-        "name": "resilience",
-        "label": "Resilience",
         "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "name": "resilience"
       },
       {
-        "name": "improvedcritical",
-        "label": "Improved Critical",
         "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Your weapon attacks are now critical on a roll of 19 or 20."
+        "name": "escape"
       },
       {
-        "name": "extraattack",
-        "label": "Extra Attack",
         "level": 6,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character may choose to spend his 'bonus action' to make a regular attack with their main weapon, even if they already attacked this round."
+        "name": "nature2"
       },
       {
-        "name": "naturemagic2",
-        "label": "Nature Magic 2",
         "level": 8,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 2 Nature magic spells and 1 rank 2 spell slot (increases to 2 slots at level 9 and 3 at level 11)."
+        "name": "improvedcritical"
       },
       {
-        "name": "weaponmastery",
-        "label": "Weapon Mastery",
         "level": 9,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character chooses a weapon type, they now receive a +1 to all attack and damage rolls with that weapon."
+        "name": "mobile"
       },
       {
-        "name": "choosearchetype",
-        "label": "Choose Archetype",
         "level": 10,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Ranger chooses to specialize in an archetype, either <b>Archer</b>, <b>Marauder</b> or <b>Warg</b>."
+        "name": "nature3"
       },
       {
-        "name": "naturemagic3",
-        "label": "Nature Magic 3",
+        "level": 12,
+        "name": "TODO"
+      },
+      {
         "level": 14,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 3 Nature magic spells and 1 rank 3 spell slot (increases to 2 slots at level 15)."
+        "name": "nature4"
       },
       {
-        "name": "Nature's Furt",
-        "label": "Nature Magic 3",
-        "level": 17,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "The ranger and his animal companion enter a fury state, both gaining +5 attack and +5 damage for 3 rounds."
+        "level": 16,
+        "name": "supernaturalawareness"
       },
       {
-        "name": "naturemagic4",
-        "label": "Nature Magic 4",
+        "level": 18,
+        "name": "hardy"
+      },
+      {
         "level": 20,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 4 Nature magic spells and 1 rank 4 spell slot."
+        "name": "TODO"
       }
     ]
   },
@@ -449,22 +287,15 @@
     ],
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small Shields, Medium Shields",
     "recommendations": "Constitution, Strength, Intelligence",
+    "archetypes": [],
     "skills": [
       {
-        "name": "fear",
-        "label": "Fear",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "enemies within melee range of the reaver suffer -1 to attack rolls (increases to -2 at level 5, -3 at level 10, -4 at level 15 and -5 at level 20)"
+        "name": "TODO"
       },
       {
-        "name": "harmtouch",
-        "label": "Harm Touch",
         "level": 1,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "Attack INT vs INT on an enemy within melee range, causing 1d8 + (1d4 per level) + INT dark damage, the Reaver then becomes exhausted"
+        "name": "TODO"
       }
     ]
   },
@@ -483,160 +314,146 @@
     "archetypes": [
       {
         "label": "Assassin",
-        "desc": "You focus your training on stealth.<br /><br /><b>ESCAPE</b><br />Starting at level 3, you may use a <b>Bonus Action</b> in order to <b>Disengage</b> rather than an <b>Action</b>.<br /><br /><b>SHADOW VISION</b><br />Starting at level 7, you have near perfect vision even when in complete darkness.<br /><br /><b>SHADOW WALK</b><br /> Starting at level 12, during your <b>Movement</b> you are able to teleport between any shadows within line of sight. Each teleport counts as 2 points of movement. Attacks of opportunity rules apply."
+        "desc": "You focus your training on stealth, moving in the shadows and the quick killing of your enemies.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "assassinate"
+          },
+          {
+            "level": 7,
+            "name": "shadowwalk"
+          },
+          {
+            "level": 11,
+            "name": "potentpoisons"
+          },
+          {
+            "level": 15,
+            "name": "shadowstrike"
+          }
+        ]
       },
       {
-        "label": "Fencer",
-        "desc": "You focus your training on melee fighting.<br /><br /><b>RIPOSTE</b> - Starting at level 3, when an enemy makes an attack on you that misses, you may spend your <b>Reaction</b> to make a counter attack.<br /><br /><b>IMPROVED BACKSTAB</b><br />Starting at level 7, you can now use your <b>Backstab</b> while at the sides of enemies.<br /><br /><b>PARRY</b><br />Starting at level 12, when an enemy makes a melee attack on you that hits, you may <br /><br />"
+        "label": "Swashbuckler",
+        "desc": "You focus your training to develop your toe-to-toe fighting and persuasion.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "dualwielding"
+          },
+          {
+            "level": 7,
+            "name": "elusive"
+          },
+          {
+            "level": 11,
+            "name": "panache"
+          },
+          {
+            "level": 15,
+            "name": "duelist"
+          }
+        ]
       },
       {
         "label": "Thief",
-        "desc": "You focus your training on thievery. <b>TRICKSTER'S HAND</b> - Starting at level 3, you can summon and control a visible magical hand at will. The hand allows you to perform lockpicking and pickpocketing on any target within line of sight.<br /><br /><b>"
+        "desc": "You focus your training on thievery.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "magichand"
+          },
+          {
+            "level": 7,
+            "name": "cunningaction"
+          },
+          {
+            "level": 11,
+            "name": "disguise"
+          },
+          {
+            "level": 15,
+            "name": "vanish"
+          }
+        ]
       }
     ],
     "skills": [
       {
-        "name": "backstab",
-        "label": "Backstab",
         "level": 1,
-        "type": "Action",
-        "recovery": "Round",
-        "desc": "Perform an attack with a <b>piercing weapon</b> from <i>behind</i> a target, you do an additional +1d6 piercing damage (increases to +2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16, and 6d6 at level 20)."
+        "name": "backstab"
       },
       {
-        "name": "thievery",
-        "label": "Thievery",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You gain +1 to any checks relating to lockpicking or pickpocketing (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+        "name": "thievery"
       },
       {
-        "name": "poisons1",
-        "label": "Poisons 1",
         "level": 2,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The rogue now has access to rank 1 poisons."
+        "name": "poisons1"
       },
       {
-        "name": "applypoison",
-        "label": "Apply Poison",
-        "level": 2,
-        "type": "Action",
-        "recovery": "None",
-        "desc": "The rogue can apply 1 dose of poison to a weapon within reach. The poison lasts for one encounter (If used out of combat, the poison will last for the next encounter unless a short or long rest is taken)."
-      },
-      {
-        "name": "roguearchetype",
-        "label": "Rogue Archetype",
         "level": 3,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You focus your training on a particular archetype; <b>Assassin</b>, <b>Fencer</b> or <b>Thief</b>."
+        "name": "archetype"
       },
       {
-        "name": "dualwielding",
-        "label": "Dual Wielding",
         "level": 4,
-        "type": "Misc",
-        "recovery": "None",
-        "desc": "You may use your <b>Bonus Action</b> to make an attack with a <b>small</b> weapon in your offhand."
+        "name": "doubleattack"
       },
       {
-        "name": "uncannydodge",
-        "label": "Uncanny Dodge",
         "level": 5,
-        "type": "Reaction",
-        "recovery": "ShortRest",
-        "desc": "When an enemy makes a melee attack on you that does damage, you can spend your <b>Reaction</b> to take only <i>half</i> the damage and move 1m."
+        "name": "uncannydodge"
       },
       {
-        "name": "resilience",
-        "label": "Resilience",
         "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "name": "resilience"
       },
       {
-        "name": "improvedcritical",
-        "label": "Improved Critical",
-        "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Your weapon attacks are now critical on a roll of 19 or 20."
-      },
-      {
-        "name": "poisons2",
-        "label": "Poisons 2",
         "level": 6,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The rogue now has access to rank 2 poisons."
+        "name": "improvedcritical"
       },
       {
-        "name": "extraattack",
-        "label": "Extra Attack",
+        "level": 6,
+        "name": "poisons2"
+      },
+      {
         "level": 8,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "You can attack twice, instead of once, whenever you take the attack action on your turn"
+        "name": "evasion"
       },
       {
-        "name": "poisons3",
-        "label": "Poisons3",
+        "level": 9,
+        "name": "reliabletalent"
+      },
+      {
         "level": 10,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Rogue now has access to rank 3 poisons."
+        "name": "poisons3"
       },
       {
-        "name": "poisons4",
-        "label": "Poisons 4",
+        "level": 12,
+        "name": "superiorcritical"
+      },
+      {
         "level": 14,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The rogue now has access to rank 4 poisons."
+        "name": "poisons4"
       },
       {
-        "name": "superiorcritical",
-        "label": "Superior Critical",
-        "level": 15,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Your weapon attacks are now critical on a roll of 18-20."
+        "level": 16,
+        "name": "elusive"
       },
       {
-        "name": "vanish",
-        "label": "Vanish",
-        "level": 17,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "The rogue vanishes into the shadows, becoming invisible for the next 3 rounds even while attacking."
-      },
-      {
-        "name": "poisons5",
-        "label": "Poisons 5",
         "level": 18,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The rogue now has access to rank 5 poisons."
+        "name": "poisons5"
       },
       {
-        "name": "strokeofluck",
-        "label": "Stroke of Luck",
         "level": 20,
-        "type": "Passive",
-        "recovery": "ShortRest",
-        "desc": "You have an uncanny knack for succeeding when you need to. If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20."
+        "name": "strokeofluck"
       }
     ]
   },
-  "shaman": {
-    "name": "shaman",
-    "label": "Shaman",
-    "desc": "Primal and ritualistic, shamans channel the energies of their ancestors to heal and bolster their allies, as well as harness the weather to damage their enemies.",
+  "druid": {
+    "name": "druid",
+    "label": "Druid",
+    "desc": "Primal and ritualistic, druid channel the energies of nature to heal and bolster their allies, as well as harness the weather to damage their enemies.",
     "hit": 8,
     "equipment": [
       "leatherarmour",
@@ -644,6 +461,7 @@
     ],
     "proficiencies": "Light Armour, Medium Armour, Simple Weapons, Small Weapons, Medium Weapons, Small Shields",
     "recommendations": "Spirit, Constitution",
+    "archetypes": [],
     "skills": []
   },
   "warrior": {
@@ -658,23 +476,8 @@
     "name": "warrior",
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Ranged Weapons, Small Shields, Medium Shields, Large Shields",
     "recommendations": "Constitution, Strength, Agility",
-    "skills": [
-      {
-        "name": "berserk",
-        "label": "Berserk",
-        "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character enters a state of rage when wounded, dealing +1d6 damage on all attacks (increases to +2d6 at level 7, +3d6 at level 13, and +4d6 at level 19)"
-      },
-      {
-        "name": "tauntingstrike",
-        "label": "Taunting Strike",
-        "level": 1,
-        "type": "Action",
-        "desc": "Attack vs dodge, if it hits deal weapon damage and the target must attack you on their next turn"
-      }
-    ]
+    "archetypes": [],
+    "skills": []
   },
   "wizard": {
     "desc": "Harnessing Arcane magic, wizards unleash fury upon their foes. They are the strongest spell casters in terms of raw damage output.",
@@ -690,137 +493,81 @@
     "archetypes": [
       {
         "label": "Archmage",
-        "desc": "Becoming a master of the arcane, the wizard gains 1 spell slot in each rank they have access to, and <b>Multicast</b> (Once per round the wizard can spend his bonus action to cast a non-evocation spell)."
+        "desc": "You focus your training on the elements.<br /><br /><b>QUICKCAST</b> Starting at level 3, any non-evocation spell that previously cost an <b>Action</b> now only takes a <b>Bonus Action</b>.<br /><br /><b>MULTICAST</b><br /><br />Starting at level 7, after spending an <b>Action</b> to cast an evocation spell, you may spend your <b>Bonus Action</b> to cast that same spell again. This does not require or consume a spell slot.<br /><br /><b>ARCANE TORRENT</b><br />Starting at level 12, your arcane missiles do 2d4 damage and can no longer be <b>Dodged</b>."
       },
       {
         "label": "Battlemage",
-        "desc": "The wizard gains proficiency in Medium and Heavy armours as well as Small Shields. He also gains a +1 to attack when wielding summoned magic weapons."
+        "desc": "You focus your training on your melee fighting skills.<br /><br /><b>ARMOURED</b><br />Starting at level 3, you gain proficiency in <b>Light</b>, <b>Medium</b>, and <b>Heavy</b> Armour.<br /><br /><b>ARCANE TOUGHNESS</b><br />Starting at level 7, you gain 5 maximum <b>Health</b> per level.<br /><br /><b>ARCANE FLURRY</b><br />Starting at level 12, you gain <b>Extra Attack</b> when wielding a conjured magic weapon."
       },
       {
         "label": "Summoner",
-        "desc": "The wizard's familiar now has it's own stats (TODO) and can be re-summoned during a long rest if it dies. All other summoned creatures also gain 1 armour, 1 magic reduction, +2 attack and 1d8 damage."
+        "desc": "You focus your training on conjuration.<br /><br /><b>FAMILIAR</b><br />Starting at level 3, you gain a Drakeling familiar. The familiar shares stats with you  The wizard's familiar now has it's own stats (TODO) and can be re-summoned during a long rest if it dies. All other summoned creatures also gain 1 armour, 1 magic reduction, +2 attack and 1d8 damage."
       }
     ],
     "skills": [
       {
-        "name": "bookworm",
-        "label": "Bookworm",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The wizard gains +1 to any knowledge checks (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)."
+        "name": "bookworm"
       },
       {
-        "name": "arcanemagic1",
-        "label": "Arcane Magic 1",
         "level": 1,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 1 Arcane magic spells and 2 rank 1 spell slots (increases to 3 slots at level 2, 4 at level 4 and 5 at level 5)"
+        "name": "arcane1"
       },
       {
-        "name": "focus",
-        "label": "Focus",
         "level": 2,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The wizard chooses one school of magic (Alteration, Abjuration, Conjuration, Evocation and Illusion). All spells with that tag gain a +1 to all rolls."
+        "name": "focus"
       },
       {
-        "name": "familiar",
-        "label": "Familiar",
         "level": 3,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The wizard chooses a familiar. The familiar is instantly summoned and by the wizards side at all times. It shares all stats (including health and any existing buffs) with the wizard and does 1d4+INT damage."
+        "name": "archetype"
       },
       {
-        "name": "arcanemagic2",
-        "label": "Arcane Magic 2",
         "level": 4,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 2 Arcane magic spells and 1 rank 2 spell slot (increases to 2 slots at level 5, 3 at level 6, and 4 at level 7)"
+        "name": "arcane2"
       },
       {
-        "name": "resilience",
-        "label": "Resilience",
         "level": 5,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The character gains 1 point of magic reduction (increases to 2 at level 10, 3 at level 15 and 4 at level 20)"
+        "name": "spellsurge"
       },
       {
-        "name": "clearmind",
-        "label": "Clear Mind",
         "level": 5,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "Clear your mind, refreshing a single spent spell slot."
+        "name": "resilience"
       },
       {
-        "name": "sharpmind",
-        "label": "Sharp Mind",
-        "level": 7,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Spell attack rolls of 19 and 20 count as critical."
+        "level": 6,
+        "name": "improvedcritical"
       },
       {
-        "name": "arcanemagic3",
-        "label": "Arcane Magic 3",
         "level": 8,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 3 Arcane magic spells and 1 rank 3 spell slot (increases to 2 slots at level 9 and 3 at level 10)"
+        "name": "arcane3"
       },
       {
-        "name": "manasurge",
-        "label": "Mana Surge",
         "level": 9,
-        "type": "Action",
-        "recovery": "LongRest",
-        "desc": "The wizard may cast a spell of his choice twice this turn. It only counts as a single spell slot use."
+        "name": "nimblemind"
       },
       {
-        "name": "choosearchetype",
-        "label": "Choose Archetype",
         "level": 10,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "The Wizard chooses to specialize in an archetype, either <b>Archmage</b>, <b>Battlemage</b> or <b>Summmoner</b>."
+        "name": "spellmastery"
       },
       {
-        "name": "arcanemagic4",
-        "label": "Arcane Magic 4",
         "level": 12,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 4 Arcane magic spells and 1 rank 4 spell slot (increases to 2 slots at level 13)"
+        "name": "arcane4"
       },
       {
-        "name": "masterfulcontrol",
-        "label": "Masterful Control",
-        "level": 13,
-        "type": "Action",
-        "recovery": "ShortRest",
-        "desc": "The wizard may cast an area based Evocation spell as normal. Any friendly targets within that area are not affected."
+        "level": 14,
+        "name": "magicalprotection"
       },
       {
-        "name": "arcanemagic5",
-        "label": "Arcane Magic 5",
         "level": 16,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "Grants access to rank 5 Arcane magic spells and 1 rank 5 spell slot (increases to 2 slots at level 18)"
+        "name": "arcane5"
       },
       {
-        "name": "arcanemastery",
-        "label": "Arcane Mastery",
+        "level": 18,
+        "name": "TODO"
+      },
+      {
         "level": 20,
-        "type": "Passive",
-        "recovery": "None",
-        "desc": "All the wizards spells gain an additional +1 to all rolls and he gains an additional 20 spell slot points on short rests."
+        "name": "meditate"
       }
     ]
   }

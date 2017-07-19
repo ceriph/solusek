@@ -5,12 +5,10 @@ import {Observable} from "rxjs/Observable";
 import {Player} from "../../players/player";
 import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
-import {SecondaryStats, PrimaryStats} from "../stats/stats";
 import {RaceService} from "../races/race.service";
 import {ClassService} from "../classes/classes.service";
 import {Class} from "../classes/class";
 import {Race} from "../races/race";
-import {Skill} from "../skill";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
 import {EquipmentService} from "../equipment.service";
@@ -31,7 +29,6 @@ export class SummaryComponent implements OnInit {
   character: Character;
   race: Race;
   clazz: Class;
-  skills: Skill[] = [];
   equipment: Equipment[];
   inventory: Equipment[];
 
@@ -82,7 +79,7 @@ export class SummaryComponent implements OnInit {
       this.race = race;
       this.classService.get(character.class).subscribe(clazz => {
         this.statService.calculate(character, race, clazz);
-        this.skills = this.characterService.getSkills(character.level, clazz);
+        this.character.skills = this.characterService.getSkills(character.level, clazz);
         this.clazz = clazz;
       });
     });

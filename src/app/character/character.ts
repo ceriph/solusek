@@ -1,8 +1,7 @@
-import {Skill} from "./skill";
 import {Modifier} from "./modifier";
-import {SecondaryStats, PrimaryStats} from "./stats/stats";
+import {PrimaryStats, SecondaryStats} from "./stats/stats";
 import {Info} from "./info/info";
-import {Equipment} from "./equipment";
+import {ClassSkill} from "./classes/class";
 
 export class Character {
   level: number = 0;
@@ -13,9 +12,19 @@ export class Character {
   baseStats: PrimaryStats;
   info: Info;
   modifiers: Modifier[];
-  skills: Skill[];
+  skills: ClassSkill[];
   equipment: string[];
   inventory: string[];
   primaryStats: PrimaryStats; // calculated by statService
   secondaryStats: SecondaryStats; // calculated by statService
+  checks: Checks
+}
+
+export class Checks {
+  perception: number;
+  investigation: number;
+  knowledge: number;
+  lockpicking: number;
+  pickpocketing: number;
+  stealth: number;
 }
