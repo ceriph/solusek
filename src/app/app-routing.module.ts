@@ -1,17 +1,15 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
-import {PlayerDetailComponent} from "./players/player-detail.component";
-import {PlayersComponent} from "./players/players.component";
 import {LoginComponent} from "./login/login.component";
 import {RulesComponent} from "./rules/rules.component";
 import {LoreComponent} from "./lore/lore.component";
 import {CharacterComponent} from "./character/character.component";
 import {DmComponent} from "./dm/dm.component";
-import {RacesComponent} from "./character/races/races.component";
-import {ClassesComponent} from "./character/classes/classes.component";
-import {StatsComponent} from "./character/stats/stats.component";
-import {InfoComponent} from "./character/info/info.component";
-import {SummaryComponent} from "./character/summary/summary.component";
+import {CharacterRaceComponent} from "./character/race/character-race.component";
+import {CharacterClassComponent} from "./character/class/character-class.component";
+import {CharacterStatsComponent} from "./character/stats/character-stats.component";
+import {CharacterInfoComponent} from "./character/info/character-info.component";
+import {CharacterSummaryComponent} from "./character/summary/character-summary.component";
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
 import {CampaignComponent} from "./campaign/campaign.component";
@@ -21,15 +19,13 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {
     path: 'character', component: CharacterComponent, children: [
-    {path: 'races', component: RacesComponent},
-    {path: 'classes', component: ClassesComponent},
-    {path: 'stats', component: StatsComponent},
-    {path: 'info', component: InfoComponent},
-    {path: 'summary', component: SummaryComponent}
+    {path: 'races', component: CharacterRaceComponent},
+    {path: 'classes', component: CharacterClassComponent},
+    {path: 'stats', component: CharacterStatsComponent},
+    {path: 'info', component: CharacterInfoComponent},
+    {path: 'summary', component: CharacterSummaryComponent}
   ]
   },
-  {path: 'players', component: PlayersComponent},
-  {path: 'players/:name', component: PlayerDetailComponent},
   {path: 'rules', component: RulesComponent},
   {path: 'rules/class/:name', component: ClassComponent},
   {path: 'rules/race/:name', component: RaceComponent},

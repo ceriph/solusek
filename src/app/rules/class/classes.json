@@ -57,7 +57,7 @@
     "desc": "Monks avoid wearing armour and wielding weapons, and rather aim to hone their body into the ultimate weapon by mastering the martial arts and harnessing their inner spirit.",
     "hit": 8,
     "equipment": [
-      "clothrobe"
+      "clotharmour"
     ],
     "proficiencies": "Simple Weapons",
     "recommendations": "Strength, Agility, Spirit, Constitution",
@@ -482,7 +482,7 @@
   "wizard": {
     "desc": "Harnessing Arcane magic, wizards unleash fury upon their foes. They are the strongest spell casters in terms of raw damage output.",
     "equipment": [
-      "clothrobe",
+      "clotharmour",
       "magicstaffarcane"
     ],
     "hit": 6,

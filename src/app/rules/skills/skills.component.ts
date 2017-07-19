@@ -1,10 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Skill} from "./skill";
-import {ClassSkill} from "../classes/class";
+import {ClassSkill} from "../class/class";
 import {SkillService} from "./skill.service";
 
 @Component({
-  selector: 'skill',
+  selector: 'skill-card',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })

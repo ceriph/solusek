@@ -1,4 +1,4 @@
-import {Modifier} from "./modifier";
+import {Modifier} from "../../character/modifier";
 
 export class Equipment {
   name: string;

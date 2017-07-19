@@ -13,13 +13,7 @@
     </div>
   </div>
   <h2>Skills</h2>
-  <div *ngFor="let skill of selectedClass.skills | keys">
-    <h3>{{skill.value.label}}</h3>
-    <p><b>Level</b>: {{skill.value.level}}</p>
-    <p><b>Type:</b> {{skill.type}}</p>
-    <p><b>Recovery:</b> {{skill.recovery}}</p>
-    <p [innerHtml]="skill.value.desc"></p>
-  </div>
+  <skill-card *ngFor="let skill of selectedClass.skills" [classSkill]="skill"></skill-card>
   <h2>Archetypes</h2>
   <p>Selectable at level 10.</p>
   <div *ngFor="let archetype of selectedClass.archetypes">

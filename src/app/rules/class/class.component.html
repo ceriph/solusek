@@ -13,16 +13,13 @@
     </div>
   </div>
   <h2>Skills</h2>
-  <div *ngFor="let skill of clazz.skills | keys">
-    <h3>{{skill.value.label}}</h3>
-    <p><b>Level</b>: {{skill.value.level}}</p>
-    <p [innerHtml]="skill.value.desc"></p>
-  </div>
+  <skill-card *ngFor="let skill of clazz.skills" [classSkill]="skill"></skill-card>
   <p *ngIf="clazz.other" [innerHtml]="clazz.other"></p>
-  <h2>Archetypes</h2>
+  <h1>Archetypes</h1>
   <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
   <div *ngFor="let archetype of clazz.archetypes">
-    <h3>{{archetype.label}}</h3>
+    <h2>{{archetype.label}}</h2>
     <p [innerHtml]="archetype.desc"></p>
+    <skill-card *ngFor="let skill of archetype.skills" [classSkill]="skill"></skill-card>
   </div>
 </div>

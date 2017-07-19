@@ -1,9 +1,10 @@
 import {Component, OnInit} from "@angular/core";
-import {Class} from "../../character/classes/class";
-import {ActivatedRoute, Router} from "@angular/router";
-import {ClassService} from "../../character/classes/classes.service";
-import {Equipment} from "../../character/equipment";
-import {EquipmentService} from "../../character/equipment.service";
+import {Class} from "./class";
+import {ActivatedRoute} from "@angular/router";
+import {ClassService} from "./classes.service";
+import {Equipment} from "../equipment/equipment";
+import {EquipmentService} from "../equipment/equipment.service";
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-class',

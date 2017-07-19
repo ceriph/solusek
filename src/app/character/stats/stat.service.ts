@@ -1,10 +1,10 @@
 import {Injectable} from "@angular/core";
 import {SecondaryStats, PrimaryStats} from "./stats";
 import {Character} from "../character";
-import {Race} from "../races/race";
-import {Class} from "../classes/class";
+import {Race} from "../../rules/race/race";
+import {Class} from "../../rules/class/class";
 import {Modifier} from "../modifier";
-import {EquipmentService} from "../equipment.service";
+import {EquipmentService} from "../../rules/equipment/equipment.service";
 
 @Injectable()
 export class StatService {

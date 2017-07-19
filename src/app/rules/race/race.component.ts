@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Race} from "../../character/races/race";
-import {RaceService} from "../../character/races/race.service";
+import {Race} from "./race";
+import {RaceService} from "./race.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-race',

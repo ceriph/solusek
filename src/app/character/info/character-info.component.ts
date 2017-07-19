@@ -12,10 +12,10 @@ import {CharacterService} from "../character.service";
 
 @Component({
   selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.css']
+  templateUrl: './character-info.component.html',
+  styleUrls: ['./character-info.component.css']
 })
-export class InfoComponent implements OnInit {
+export class CharacterInfoComponent implements OnInit {
   character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;
 

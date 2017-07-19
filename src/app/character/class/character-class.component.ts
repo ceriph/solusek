@@ -1,22 +1,22 @@
 import {Component, OnInit} from "@angular/core";
 import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
-import {Class} from "./class";
+import {Class} from "../../rules/class/class";
 import {Observable} from "rxjs/Observable";
 import {AngularFireAuth} from "angularfire2/auth";
-import {ClassService} from "./classes.service";
+import {ClassService} from "../../rules/class/classes.service";
 import {Router} from "@angular/router";
 import * as firebase from "firebase/app";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
-import {EquipmentService} from "../equipment.service";
-import {Equipment} from "../equipment";
+import {EquipmentService} from "../../rules/equipment/equipment.service";
+import {Equipment} from "../../rules/equipment/equipment";
 
 @Component({
   selector: 'app-classes',
-  templateUrl: './classes.component.html',
-  styleUrls: ['./classes.component.css']
+  templateUrl: './character-class.component.html',
+  styleUrls: ['./character-class.component.css']
 })
-export class ClassesComponent implements OnInit {
+export class CharacterClassComponent implements OnInit {
   character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;
 

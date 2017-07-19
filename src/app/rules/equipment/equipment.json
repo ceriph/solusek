@@ -335,6 +335,11 @@
         "name": "damage",
         "label": "Damage",
         "value": "1d8+STR+4 blunt damage + 1d8 light damage"
+      },
+      {
+        "name": "effect",
+        "label": "Effect",
+        "value": "When a target undead or demon takes damage from this weapon, they must make a SPI save vs a DC of 20 or be stunned."
       }
     ]
   }

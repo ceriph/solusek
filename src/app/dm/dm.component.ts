@@ -3,14 +3,6 @@ import {Observable} from "rxjs/Observable";
 import {AngularFireAuth} from "angularfire2/auth";
 import * as firebase from "firebase/app";
 import {Router} from "@angular/router";
-import {Player} from "../players/player";
-import {PlayerService} from "../players/player.service";
-import {FirebaseListObservable} from "angularfire2/database/firebase_list_observable";
-import {RaceService} from "../character/races/race.service";
-import {StatService} from "../character/stats/stat.service";
-import {ClassService} from "../character/classes/classes.service";
-import {CharacterService} from "../character/character.service";
-import {EquipmentService} from "../character/equipment.service";
 
 @Component({
   selector: 'app-dm',

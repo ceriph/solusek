@@ -1,4 +1,4 @@
-import {SkillRecovery, SkillType} from "../../character/skills/skill";
+import {SkillRecovery, SkillType} from "../skills/skill";
 export class Spell {
   label: string;
   school: School;

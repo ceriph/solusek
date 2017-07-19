@@ -1,5 +1,5 @@
-import {RaceService} from "./race.service";
-import {Race} from "./race";
+import {RaceService} from "../../rules/race/race.service";
+import {Race} from "../../rules/race/race";
 import {FirebaseListObservable} from "angularfire2/database/firebase_list_observable";
 import {Component, OnInit} from "@angular/core";
 import {AngularFireAuth} from "angularfire2/auth";
@@ -12,10 +12,10 @@ import {Character} from "../character";
 
 @Component({
   selector: 'races',
-  templateUrl: './races.component.html',
-  styleUrls: ['./races.component.css']
+  templateUrl: './character-race.component.html',
+  styleUrls: ['./character-race.component.css']
 })
-export class RacesComponent implements OnInit {
+export class CharacterRaceComponent implements OnInit {
   character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;
 

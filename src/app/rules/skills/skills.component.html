@@ -1,0 +1,7 @@
+<div *ngIf="skill">
+  <h3>{{skill.label}}</h3>
+  <p>Starting at level {{classSkill.level}}, <span [innerHtml]="skill.desc"></span></p>
+  <p *ngIf="skill && skill.recovery === 'ShortRest'">You must take a <b>Short</b> or <b>Long Rest</b> before using this skill again.</p>
+  <p *ngIf="skill && skill.recovery === 'LongRest'">You must take a <b>Long Rest</b> before using this skill again.</p>
+  <p *ngIf="skill && skill.recovery === 'Round'">You may only use this skill once per turn.</p>
+</div>

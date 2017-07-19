@@ -4,30 +4,27 @@ import {FormsModule} from "@angular/forms";
 
 import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
-import {PlayerService} from "./players/player.service";
-import {PlayersComponent} from "./players/players.component";
-import {PlayerDetailComponent} from "./players/player-detail.component";
 import {AngularFireModule} from "angularfire2";
 import {AngularFireDatabaseModule} from "angularfire2/database/database.module";
 import {environment} from "../environments/environment";
-import {RacesComponent} from "./character/races/races.component";
-import {RaceService} from "./character/races/race.service";
+import {CharacterRaceComponent} from "./character/race/character-race.component";
+import {RaceService} from "./rules/race/race.service";
 import {LoginComponent} from "./login/login.component";
 import {RulesComponent} from "./rules/rules.component";
 import {LoreComponent} from "./lore/lore.component";
 import {CharacterComponent} from "./character/character.component";
 import {AngularFireAuth} from "angularfire2/auth/auth";
 import {LoginService} from "./login/login.service";
-import {ClassesComponent} from "./character/classes/classes.component";
+import {CharacterClassComponent} from "./character/class/character-class.component";
 import {DmComponent} from "./dm/dm.component";
-import {StatsComponent} from "./character/stats/stats.component";
-import {InfoComponent} from "./character/info/info.component";
+import {CharacterStatsComponent} from "./character/stats/character-stats.component";
+import {CharacterInfoComponent} from "./character/info/character-info.component";
 import {KeysPipe} from "./keys-pipe";
-import {ClassService} from "./character/classes/classes.service";
+import {ClassService} from "./rules/class/classes.service";
 import {StatService} from "./character/stats/stat.service";
-import {SummaryComponent} from "./character/summary/summary.component";
+import {CharacterSummaryComponent} from "./character/summary/character-summary.component";
 import {CharacterService} from "./character/character.service";
-import {EquipmentService} from "./character/equipment.service";
+import {EquipmentService} from "./rules/equipment/equipment.service";
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
 import {CampaignComponent} from "./campaign/campaign.component";
@@ -36,8 +33,9 @@ import {RulesService} from "./rules/rules.service";
 import {SpellService} from "./rules/spells/spell.service";
 import {PoisonService} from "./rules/poisons/poison.service";
 import {CustomScroll} from "./scroll/scroll.directive";
-import { SkillsComponent } from './character/skills/skills.component';
-import {SkillService} from "./character/skills/skill.service";
+import {SkillsComponent} from './rules/skills/skills.component';
+import {SkillService} from "./rules/skills/skill.service";
+import {PlayerService} from "./players/player.service";
 
 @NgModule({
   imports: [
@@ -49,20 +47,18 @@ import {SkillService} from "./character/skills/skill.service";
   ],
   declarations: [
     AppComponent,
-    PlayersComponent,
-    PlayerDetailComponent,
-    RacesComponent,
+    CharacterRaceComponent,
     LoginComponent,
     RulesComponent,
     LoreComponent,
     CharacterComponent,
-    ClassesComponent,
+    CharacterClassComponent,
     ClassComponent,
     DmComponent,
-    StatsComponent,
-    InfoComponent,
+    CharacterStatsComponent,
+    CharacterInfoComponent,
     KeysPipe,
-    SummaryComponent,
+    CharacterSummaryComponent,
     ClassComponent,
     RaceComponent,
     CampaignComponent,

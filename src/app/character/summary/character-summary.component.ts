@@ -5,22 +5,22 @@ import {Observable} from "rxjs/Observable";
 import {Player} from "../../players/player";
 import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
-import {RaceService} from "../races/race.service";
-import {ClassService} from "../classes/classes.service";
-import {Class} from "../classes/class";
-import {Race} from "../races/race";
+import {RaceService} from "../../rules/race/race.service";
+import {ClassService} from "../../rules/class/classes.service";
+import {Class} from "../../rules/class/class";
+import {Race} from "../../rules/race/race";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
-import {EquipmentService} from "../equipment.service";
-import {Equipment} from "../equipment";
+import {EquipmentService} from "../../rules/equipment/equipment.service";
+import {Equipment} from "../../rules/equipment/equipment";
 import {FirebaseListObservable} from "angularfire2/database";
 
 @Component({
   selector: 'app-summary',
-  templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.css']
+  templateUrl: './character-summary.component.html',
+  styleUrls: ['./character-summary.component.css']
 })
-export class SummaryComponent implements OnInit {
+export class CharacterSummaryComponent implements OnInit {
 
   user: Observable<firebase.User>;
 
@@ -59,7 +59,7 @@ export class SummaryComponent implements OnInit {
 
     this.equipment = [];
     if (character.equipment) {
-      for (let itemName of character.equipment) {
+      for (const itemName of character.equipment) {
         this.equipmentService.get(itemName).subscribe(item => {
           this.equipment.push(item);
         });
@@ -68,7 +68,7 @@ export class SummaryComponent implements OnInit {
 
     this.inventory = [];
     if (character.inventory) {
-      for (let itemName of character.inventory) {
+      for (const itemName of character.inventory) {
         this.equipmentService.get(itemName).subscribe(item => {
           this.inventory.push(item);
         });

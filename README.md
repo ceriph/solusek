@@ -16,8 +16,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## TODO
 
+* Add reference section to summary for spell attack and saving throws
+* Update spell text to include better wording and expand
 * Add archetype selection to character at level 3
-* Add skill types to spells.json
+* Add skill types to spells.json?
 * Add character advancement functionality
 * Separate 'equipment' and 'inventory' and add equip/unequip
   * Add 'slot' to character and equipment to allocate items 

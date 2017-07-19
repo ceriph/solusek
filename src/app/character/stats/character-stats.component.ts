@@ -4,8 +4,8 @@ import {Router} from "@angular/router";
 import {Observable} from "rxjs/Observable";
 import {FirebaseObjectObservable} from "angularfire2/database";
 import * as firebase from "firebase/app";
-import {RaceService} from "../races/race.service";
-import {Race} from "../races/race";
+import {RaceService} from "../../rules/race/race.service";
+import {Race} from "../../rules/race/race";
 import {PrimaryStats} from "./stats";
 import {StatService} from "./stat.service";
 import {CharacterService} from "../character.service";
@@ -13,10 +13,10 @@ import {Character} from "../character";
 
 @Component({
   selector: 'app-stats',
-  templateUrl: './stats.component.html',
-  styleUrls: ['./stats.component.css']
+  templateUrl: './character-stats.component.html',
+  styleUrls: ['./character-stats.component.css']
 })
-export class StatsComponent implements OnInit {
+export class CharacterStatsComponent implements OnInit {
 
   character: FirebaseObjectObservable<Character>;
   user: Observable<firebase.User>;

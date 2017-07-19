@@ -1,13 +1,12 @@
-<div *ngIf="player" class="no-print">
+<div *ngIf="character" class="no-print">
   <div class="box fill nobottom">
-    <h1>Welcome, {{player.name}}</h1>
-    <p>Character status: {{status}}</p>
+    <h1>Character status: {{status}}</h1>
     <div class="tabs">
       <a class="tab" routerLink="races" routerLinkActive="active">Race</a>
-      <a [hidden]="!player.character.race" class="tab" routerLink="classes" routerLinkActive="active">Class</a>
-      <a [hidden]="!player.character.class" class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
-      <a [hidden]="!player.character.baseStats" class="tab" routerLink="info" routerLinkActive="active">Info</a>
-      <a [hidden]="!player.character.info || !player.character.baseStats" class="tab right" routerLink="summary" routerLinkActive="active">Summary</a>
+      <a [hidden]="!character.race" class="tab" routerLink="classes" routerLinkActive="active">Class</a>
+      <a [hidden]="!character.class" class="tab" routerLink="stats" routerLinkActive="active">Stats</a>
+      <a [hidden]="!character.baseStats" class="tab" routerLink="info" routerLinkActive="active">Info</a>
+      <a [hidden]="!character.info || !character.baseStats" class="tab right" routerLink="summary" routerLinkActive="active">Summary</a>
     </div>
     <div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'">
       <ul>
