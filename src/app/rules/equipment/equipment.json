@@ -102,66 +102,120 @@
   },
   "dagger": {
     "label": "Dagger",
-    "desc": "An old, plain dagger. Does 1d4+STR piercing damage.",
+    "desc": "An old, plain dagger.",
     "type": "weapon",
     "proficiency": "Simple Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d4+STR Piercing"
+      }
+    ]
   },
-  "staff": {
-    "label": "Staff",
-    "desc": "An old, plain wooden staff. Does 1d8+STR blunt damage.",
+  "quarterstaff": {
+    "label": "Quarterstaff",
+    "desc": "An old, plain wooden staff.",
     "type": "weapon",
     "proficiency": "Simple Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR Blunt"
+      }
+    ]
   },
   "rapier": {
     "label": "Rapier",
-    "desc": "An old, plain rapier. Does 1d6+STR piercing damage.",
+    "desc": "An old, plain rapier.",
     "type": "weapon",
     "proficiency": "Small Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d6+STR Piercing"
+      }
+    ]
   },
   "shortsword": {
     "label": "Short Sword",
-    "desc": "An old, plain short sword. Does 1d6+STR slashing damage.",
+    "desc": "An old, plain short sword.",
     "type": "weapon",
     "proficiency": "Small Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d6+STR Slashing"
+      }
+    ]
   },
   "mace": {
     "label": "Mace",
-    "desc": "An old, plain mace. Does 1d6+STR blunt damage.",
+    "desc": "An old, plain mace.",
     "type": "weapon",
     "proficiency": "Small Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d6+STR Blunt"
+      }
+    ]
   },
   "longsword": {
     "label": "Long Sword",
-    "desc": "An old, plain long sword. Does 1d8+STR slashing damage.",
+    "desc": "An old, plain long sword.",
     "type": "weapon",
     "proficiency": "Medium Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR Slashing"
+      }
+    ]
   },
   "warhammer": {
     "label": "Warhammer",
-    "desc": "An old, plain warhammer. Does 1d8+STR blunt damage.",
+    "desc": "An old, plain warhammer.",
     "type": "weapon",
     "proficiency": "Medium Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR Blunt"
+      }
+    ]
   },
   "spear": {
     "label": "Spear",
-    "desc": "An old, plain spear. Does 1d8+STR piercing damage.",
+    "desc": "An old, plain spear.",
     "type": "weapon",
     "proficiency": "Medium Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d8+STR Piercing"
+      }
+    ]
   },
   "bastardsword": {
     "label": "Bastard Sword",
-    "desc": "An old, plain bastard sword. Does 1d10+STR slashing damage.",
+    "desc": "An old, plain bastard sword.",
     "type": "weapon",
     "proficiency": "Large Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d10+STR Slashing"
+      }
+    ]
   },
   "shortbow": {
     "label": "Short Bow",
@@ -322,18 +376,23 @@
   },
   "bloodthirstydagger": {
     "label": "Bloodthirsty Dagger",
-    "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood. Does 1d4+STR piercing damage. <b>Magical</b>. <b>Requires Attunement</b>: Gains an additional permanent +1 attack/damage modifier for every <b>killing blow</b> the wielder does up to a maximum of +3.",
+    "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood.",
     "type": "dagger",
     "modifiers": [
       {
         "name": "damage",
         "label": "Damage",
-        "value": "1d4+STR piercing + 1d4 dark damage"
+        "value": "1d4+STR Piercing + 1d4 Dark"
       },
       {
         "name": "effect",
         "label": "Effect",
         "value": "Upon dealing a killing blow, the wielder heals 1d4 health."
+      },
+      {
+        "name": "effect",
+        "label": "Effect",
+        "value": "<b>Requires Attunement</b>: Gains an additional permanent +1 attack/damage modifier for every <b>killing blow</b> the wielder does up to a maximum of +3."
       }
     ]
   },
@@ -350,7 +409,7 @@
       {
         "name": "damage",
         "label": "Damage",
-        "value": "1d8+STR+3 blunt + 1d6 dark damage"
+        "value": "1d8+STR+3 Blunt + 1d6 Dark"
       }
     ]
   },
@@ -367,7 +426,7 @@
       {
         "name": "damage",
         "label": "Damage",
-        "value": "1d8+STR+4 blunt damage + 1d8 light damage"
+        "value": "1d8+STR+4 Blunt damage + 1d8 Light"
       },
       {
         "name": "effect",
