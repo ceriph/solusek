@@ -165,10 +165,21 @@
   },
   "shortbow": {
     "label": "Short Bow",
-    "desc": "An old, plain short bow. Does 1d6+(STR+AGI)/2 damage and has 6 range.",
+    "desc": "An old, plain short bow.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d6+AGI"
+      },
+      {
+        "name": "range",
+        "label": "Range",
+        "value": "6m"
+      }
+    ]
   },
   "longbow": {
     "label": "Long Bow",
@@ -179,28 +190,50 @@
       {
         "name": "damage",
         "label": "Damage",
-        "value": "1d8+(STR+AGI)/2 damage"
+        "value": "1d8+AGI"
       },
       {
         "name": "range",
         "label": "Range",
-        "value": "1d8+(STR+AGI)/2 damage"
+        "value": "10m"
       }
     ]
   },
   "compoundbow": {
     "label": "Compound Bow",
-    "desc": "An old, plain compound bow. Does 1d10+(STR+AGI)/2 damage and has 10 range.",
+    "desc": "An old, plain compound bow.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d10+AGI"
+      },
+      {
+        "name": "range",
+        "label": "Range",
+        "value": "12m"
+      }
+    ]
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
-    "desc": "An old, plain staff. Does 1d6+INT arcane damage and has 10 range.",
+    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy.",
     "type": "weapon",
     "proficiency": "Magic Weapons",
-    "modifiers": []
+    "modifiers": [
+      {
+        "name": "damage",
+        "label": "Damage",
+        "value": "1d6+INT Arcane"
+      },
+      {
+        "name": "range",
+        "label": "Range",
+        "value": "10m"
+      }
+    ]
   },
   "lockpick": {
     "label": "Lockpick",
