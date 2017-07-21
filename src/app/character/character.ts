@@ -18,6 +18,7 @@ export class Character {
   primaryStats: PrimaryStats; // calculated by statService
   secondaryStats: SecondaryStats; // calculated by statService
   checks: Checks;
+  saves: Saves;
 }
 
 export class Checks {
@@ -28,4 +29,13 @@ export class Checks {
   persuasion: number = 0;
   pickpocketing: number = 0;
   stealth: number = 0;
+}
+
+export class Saves {
+  str: number = 0;
+  con: number = 0;
+  agi: number = 0;
+  int: number = 0;
+  spi: number = 0;
+  cha: number = 0;
 }

@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {SecondaryStats, PrimaryStats} from "./stats";
-import {Character, Checks} from "../character";
+import {Character, Checks, Saves} from "../character";
 import {Race} from "../../rules/race/race";
 import {Class} from "../../rules/class/class";
 import {Modifier} from "../modifier";
@@ -17,12 +17,12 @@ export class StatService {
     if (character.race === "human") {
       initial = 10;
     }
-    let current = stats.str + stats.con + stats.agi + stats.int + stats.spi + stats.cha;
+    const current = stats.str + stats.con + stats.agi + stats.int + stats.spi + stats.cha;
     return initial - (current - 6) + (character.level - 1);
   }
 
   calculateModifiers(character: Character, race: Race): PrimaryStats {
-    let base = {
+    const base = {
       str: 0,
       con: 0,
       agi: 0,
@@ -32,11 +32,12 @@ export class StatService {
     };
 
     if (race.modifiers) {
-      let modifiers = race.modifiers.concat(character.modifiers);
+      const modifiers = race.modifiers.concat(character.modifiers);
 
-      for (let modifier of modifiers) {
-        if (modifier)
+      for (const modifier of modifiers) {
+        if (modifier) {
           base[modifier.name] += modifier.value;
+        }
       }
     }
 
@@ -53,14 +54,18 @@ export class StatService {
     character.primaryStats.cha = character.baseStats.cha;
     character.secondaryStats = new SecondaryStats();
     character.checks = new Checks();
+    character.saves = new Saves();
 
     // modifiers from race
-    StatService.applyModifiers(character, race.modifiers);
+    this.applyModifiers(character, race.modifiers);
+
+    // modifiers from class skills
+    // this.applyModifiers(character, clazz.modifiers);
 
     // modifiers from equipment
-    for (let itemName of character.equipment) {
+    for (const itemName of character.equipment) {
       this.equipmentService.get(itemName).subscribe(item => {
-        StatService.applyModifiers(character, item.modifiers);
+        this.applyModifiers(character, item.modifiers);
       });
     }
 
@@ -73,12 +78,12 @@ export class StatService {
     character.checks.persuasion += character.primaryStats.cha;
     character.checks.stealth += character.primaryStats.agi;
 
-    for (let classSkill of clazz.skills) {
+    for (const classSkill of clazz.skills) {
       if (classSkill.level <= character.level) {
         const modifier = Math.ceil(character.level / 3);
         // todo think of a better way of applying these
         if (classSkill.name === "bookworm") {
-          character.checks.knowledge += modifier
+          character.checks.knowledge += modifier;
         } else if (classSkill.name === "thievery") {
           character.checks.pickpocketing += modifier;
           character.checks.lockpicking += modifier;
@@ -88,14 +93,18 @@ export class StatService {
       }
     }
 
+    // saves
+    character.saves.str += character.primaryStats.str;
+    character.saves.con += character.primaryStats.con;
+    character.saves.agi += character.primaryStats.agi;
+    character.saves.int += character.primaryStats.int;
+    character.saves.spi += character.primaryStats.spi;
+    character.saves.cha += character.primaryStats.cha;
+
     // todo tidy racial passives as modifiers eventually
 
     // health
-    let hitDice = clazz.hit;
-    if (character.race === 'dwarf') {
-      hitDice += 5;
-    }
-    character.secondaryStats.health += Math.floor((hitDice + character.primaryStats.con) + ((character.level - 1) * ((hitDice / 2) + character.primaryStats.con)));
+    character.secondaryStats.health += this.getHealth(character, clazz);
 
     // dodge
     character.secondaryStats.dodge += 10 + character.primaryStats.agi;
@@ -104,7 +113,7 @@ export class StatService {
     }
 
     // speed
-    character.secondaryStats.speed += StatService.getSpeed(character.primaryStats.agi);
+    character.secondaryStats.speed += this.getSpeed(character.primaryStats.agi);
 
     if (character.race === "woodelf") {
       character.secondaryStats.speed += 2;
@@ -118,44 +127,50 @@ export class StatService {
     // attack
     character.secondaryStats.attack += character.primaryStats.agi;
 
-    // spell attack and dc todo push the relevant spell stat into class model
-    if (character.class === "wizard" || character.class === "enchanter" || character.class === "necromancer" || character.class === "reaver" || character.class === "rogue") {
-      character.secondaryStats.spelldc += 10 + character.primaryStats.int;
-    }
-
-    if (character.class === "wizard" || character.class === "enchanter" || character.class === "necromancer" || character.class === "reaver") {
-      character.secondaryStats.spellattack += character.primaryStats.int;
-    }
-
-    if (character.class === "cleric" || character.class === "druid" || character.class === "paladin" || character.class === "ranger") {
-      character.secondaryStats.spellattack += character.primaryStats.spi;
-      character.secondaryStats.spelldc += 10 + character.primaryStats.spi;
+    // spell attack and dc
+    if (clazz.spellMod) {
+      character.secondaryStats.spelldc += 10 + character.primaryStats[clazz.spellMod];
+      if (character.class !== "rogue") {
+        character.secondaryStats.spellattack += character.primaryStats[clazz.spellMod];
+      }
     }
   }
 
-  private static applyModifiers(character: Character, modifiers: Modifier[]) {
+  private applyModifiers(character: Character, modifiers: Modifier[]) {
     if (modifiers) {
-      for (let modifier of modifiers) {
-        if (StatService.isPrimary(modifier.name)) {
+      for (const modifier of modifiers) {
+        if (this.isPrimary(modifier.name)) {
           character.primaryStats[modifier.name] += modifier.value;
-        } else if (StatService.isSecondary(modifier.name)) {
+        } else if (this.isSecondary(modifier.name)) {
           character.secondaryStats[modifier.name] += modifier.value;
-        } else {
+        } else if (this.isCheck(modifier.name)) {
           character.checks[modifier.name] += modifier.value;
+        } else if (this.isSave(modifier.name)) {
+          const stat = modifier.name.substring(3);
+          character.saves[stat] += modifier.value;
         }
       }
     }
   }
 
-  private static isPrimary(stat) {
+  private isPrimary(stat) {
     return stat === 'str' || stat === 'con' || stat === 'agi' || stat === 'int' || stat === 'spi' || stat === 'cha';
   }
 
-  private static isSecondary(stat) {
+  private isSecondary(stat) {
     return stat === 'health' || stat === 'dodge' || stat === 'armour' || stat === 'magicreduction' || stat === 'damage';
   }
 
-  private static getSpeed(agility) {
+  private isCheck(stat) {
+    return stat === 'investigation' || stat === 'knowledge' || stat === 'lockpicking' || stat === 'pickpocketing'
+      || stat === 'perception' || stat === 'persuasion' || stat === 'stealth';
+  }
+
+  private isSave(stat) {
+    return stat === 'savestr' || stat === 'savecon' || stat === 'saveagi' || stat === 'saveint' || stat === 'savespi' || stat === 'savecha';
+  }
+
+  private getSpeed(agility) {
     let speed = 1;
 
     while (agility > 0) {
@@ -174,5 +189,14 @@ export class StatService {
     }
 
     return Math.floor(speed);
+  }
+
+  private getHealth(character, clazz) {
+    let hitDice = clazz.hit;
+    if (character.race === 'dwarf') {
+      hitDice += 5;
+    }
+
+    return Math.floor((hitDice + character.primaryStats.con) + ((character.level - 1) * ((hitDice / 2) + character.primaryStats.con)));
   }
 }

@@ -4,6 +4,7 @@
     "label": "Bard",
     "desc": "It might not seem conventional to bring a guitar to a sword fight, but once you see a bard at work you will understand. They use their gifts of music to weave magical sonnets, bolstering their allies and weakening their foes. Rock on.",
     "hit": 8,
+    "spellMod": "cha",
     "equipment": [
       "leatherarmour",
       "shortsword",
@@ -27,6 +28,7 @@
     "label": "Cleric",
     "desc": "Clerics are devoted to helping the living stay living, and as such in combat they are focused on healing their teammates.",
     "hit": 8,
+    "spellMod": "spi",
     "equipment": [
       "clotharmour",
       "mace",
@@ -42,6 +44,7 @@
     "label": "Enchanter",
     "desc": "Enchanters are the masters of the mind, using their magical abilities to control and confuse enemies. Main roles in battle are crowd control and damage.",
     "hit": 6,
+    "spellMod": "cha",
     "equipment": [
       "clotharmour",
       "wandarcane"
@@ -83,6 +86,7 @@
     "label": "Necromancer",
     "desc": "To some, death is not something to be feared but to be harnessed for power. Necromancers study and hone their ability to control the forces of life and death directly. Their main role in combat is damage.",
     "hit": 6,
+    "spellMod": "int",
     "equipment": [
       "clotharmour",
       "wanddark"
@@ -97,6 +101,7 @@
     "label": "Paladin",
     "desc": "A cross between a Warrior and a Cleric, Paladins combine their fighting abilities with healing spells. They are also particularly effective against undead enemies. Paladins can either focus on a tanking role, or as a healer.",
     "hit": 10,
+    "spellMod": "spi",
     "equipment": [
       "chainarmour",
       "bastardsword"
@@ -189,6 +194,7 @@
     "label": "Ranger",
     "desc": "Rangers are solitary characters often at one with nature. They make exceptional trackers and are proficient with ranged weapons. They can also go toe to toe with enemies if required.",
     "hit": 8,
+    "spellMod": "spi",
     "equipment": [
       "leatherarmour",
       "shortsword",
@@ -286,6 +292,7 @@
     "label": "Reaver",
     "desc": "Known as 'dark paladins', Reavers are a cross between a Warrior and a Necromancer, employing a mix of physical abilities and dark magic in combat. Reavers can focus on tanking or damage roles.",
     "hit": 10,
+    "spellMod": "int",
     "equipment": [
       "chainarmour",
       "bastardsword"
@@ -309,6 +316,7 @@
     "label": "Rogue",
     "desc": "Rogues like to stay in the shadows, remaining hidden and striking enemies from behind. Thought rogues like to be up close with enemies to do large amounts of damage, they can't afford to take many hits.",
     "hit": 6,
+    "spellMod": "int",
     "equipment": [
       "leatherarmour",
       "dagger",
@@ -460,6 +468,7 @@
     "label": "Druid",
     "desc": "Primal and ritualistic, druid channel the energies of nature to heal and bolster their allies, as well as harness the weather to damage their enemies.",
     "hit": 8,
+    "spellMod": "spi",
     "equipment": [
       "leatherarmour",
       "spear"
@@ -491,6 +500,7 @@
       "magicstaffarcane"
     ],
     "hit": 6,
+    "spellMod": "int",
     "label": "Wizard",
     "name": "wizard",
     "proficiencies": "Simple Weapons, Magic Weapons",

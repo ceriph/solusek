@@ -1,11 +1,12 @@
 <div *ngIf="(user | async)?.uid === 'Aq3nWHK9uJaVR8neIJdpGBpTMrg2'" class="dm-buttons no-print">
-  <button *ngFor="let player of players | async" (click)="load(player.character)">{{player.character.info.name}}</button>
+  <button *ngFor="let player of players | async" (click)="load(player.character)">{{player.character.info.name}}
+  </button>
 </div>
 
 <div *ngIf="character">
   <div class="box fill" *ngIf="character.primaryStats">
     <h2 class="title">Primary Stats</h2>
-    <div class="group">
+    <div class="stats">
       <summary-stat [stats]="character.primaryStats" [stat]="'str'"></summary-stat>
       <summary-stat [stats]="character.primaryStats" [stat]="'con'"></summary-stat>
       <summary-stat [stats]="character.primaryStats" [stat]="'agi'"></summary-stat>
@@ -17,32 +18,48 @@
 
   <div class="box fill" *ngIf="character.secondaryStats">
     <h2 class="title">Secondary Stats</h2>
-    <div class="group">
+    <div class="stats">
       <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'speed'" [display]="'Speed'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'dodge'" [display]="'Dodge'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'armour'" [display]="'Armour'"></summary-stat>
-      <summary-stat [stats]="character.secondaryStats" [stat]="'magicreduction'" [display]="'Magic Reduction'"></summary-stat>
-      <summary-stat [stats]="character.secondaryStats" [stat]="'attack'" [display]="'Attack'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.secondaryStats" [stat]="'spellattack'" [display]="'Spell Attack'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'magicreduction'"
+                    [display]="'Magic Reduction'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'attack'" [display]="'Attack'"
+                    [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'spellattack'" [display]="'Spell Attack'"
+                    [isModifier]="true"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'spelldc'" [display]="'Spell DC'"></summary-stat>
     </div>
   </div>
 
   <div class="box fill" *ngIf="character.checks">
-    <h2 class="title">Ability Checks</h2>
-    <div class="group">
-      <summary-stat [stats]="character.checks" [stat]="'investigation'" [display]="'Investigation'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'knowledge'" [display]="'Knowledge'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'lockpicking'" [display]="'Lockpicking'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'pickpocketing'" [display]="'Pickpocketing'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'perception'" [display]="'Perception'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'persuasion'" [display]="'Persuasion'" [isModifier]="true"></summary-stat>
-      <summary-stat [stats]="character.checks" [stat]="'stealth'" [display]="'Stealth'" [isModifier]="true"></summary-stat>
+    <div class="stats">
+      <div class="checks border-right">
+        <h2 class="title">Ability Checks</h2>
+        <summary-check [checks]="character.checks" [check]="'investigation'"
+                       [display]="'Investigation'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'knowledge'" [display]="'Knowledge'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'lockpicking'" [display]="'Lockpicking'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'pickpocketing'"
+                       [display]="'Pickpocketing'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'perception'" [display]="'Perception'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'persuasion'" [display]="'Persuasion'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'stealth'" [display]="'Stealth'"></summary-check>
+      </div>
+      <div class="checks">
+        <h2 class="title">Saving Throws</h2>
+        <summary-check [checks]="character.saves" [check]="'str'"></summary-check>
+        <summary-check [checks]="character.saves" [check]="'con'"></summary-check>
+        <summary-check [checks]="character.saves" [check]="'agi'"></summary-check>
+        <summary-check [checks]="character.saves" [check]="'int'"></summary-check>
+        <summary-check [checks]="character.saves" [check]="'spi'"></summary-check>
+        <summary-check [checks]="character.saves" [check]="'cha'"></summary-check>
+      </div>
     </div>
   </div>
 
-  <div class="box">
+  <div class="box fill center">
     <h2>{{character.info.name}}</h2>
     <p><b>Age:</b> {{character.info.age}}</p>
     <p *ngIf="race"><b>Race:</b> {{race.label}}</p>
@@ -52,7 +69,8 @@
     <p><b>Experience:</b> {{character.experience}}</p>
     <p><b>Gold:</b> {{character.gold}}</p>
   </div>
-  <div class="box">
+
+  <div class="box fill">
     <h2>Equipment</h2>
     <div *ngFor="let item of equipment">
       <h4>{{item.label}}</h4>
@@ -62,7 +80,7 @@
       </div>
     </div>
   </div>
-  <div class="box">
+  <div class="box fill">
     <h2>Inventory</h2>
     <div *ngFor="let item of inventory">
       <h4>{{item.label}}</h4>
@@ -72,11 +90,11 @@
       </div>
     </div>
   </div>
-  <div class="box">
+  <div class="box fill">
     <h2>Skills</h2>
     <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
   </div>
-  <div class="box">
+  <div class="box fill">
     <h2>Bio</h2>
     <h3>Appearance</h3>
     <p>{{character.info.appearance}}</p>
@@ -87,7 +105,8 @@
     <h3>Motivation</h3>
     <p>{{character.info.motivation}}</p>
     <h3>Introduction</h3>
-    <p><i>This will be created by the DM and will explain how your character arrived at the starting point, please get in touch if you'd like to make any alterations once it's done</i></p>
+    <p><i>This will be created by the DM and will explain how your character arrived at the starting point, please get
+      in touch if you'd like to make any alterations once it's done</i></p>
     <p>{{character.info.introduction}}</p>
   </div>
 </div>

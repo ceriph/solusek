@@ -3,6 +3,7 @@ export class Class {
   label: string;
   desc: string;
   hit: number;
+  spellMod: string;
   proficiencies: string;
   skills: ClassSkill[];
   equipment: string[];

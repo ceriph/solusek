@@ -1,6 +1,5 @@
 .stat {
   text-align: center;
-  margin-right: 40px;
   display: inline-block;
 }
 
@@ -11,7 +10,6 @@
 .stat-value {
   font-weight: bold;
   font-size: x-large;
-
 }
 
 .stat-icon {

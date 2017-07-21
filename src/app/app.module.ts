@@ -37,6 +37,7 @@ import {SkillService} from "./rules/skills/skill.service";
 import {PlayerService} from "./players/player.service";
 import {SummaryStatComponent} from './character/summary/summary-stat/summary-stat.component';
 import {SkillCardComponent} from "./rules/skills/skill-card.component";
+import {SummaryCheckComponent} from './character/summary/summary-check/summary-check.component';
 
 @NgModule({
   imports: [
@@ -65,7 +66,8 @@ import {SkillCardComponent} from "./rules/skills/skill-card.component";
     CampaignComponent,
     CustomScroll,
     SkillCardComponent,
-    SummaryStatComponent
+    SummaryStatComponent,
+    SummaryCheckComponent
   ],
   providers: [
     PlayerService,

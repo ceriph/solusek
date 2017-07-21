@@ -48,7 +48,7 @@ body {
   float: left;
   width: 92%;
 
-  background-color: white;
+  background-color: #FAFAFA;
 
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -167,10 +167,12 @@ button:disabled {
   padding-top: 30px;
 }
 
-@media print
-{
-  .no-print, .no-print *
-  {
+@media print {
+  .no-print, .no-print * {
     display: none !important;
+  }
+
+  body {
+    background-color: white;
   }
 }

@@ -18,12 +18,13 @@ export class SummaryStatComponent implements OnInit {
   display: string;
 
   @Input()
-  isModifier: boolean = false;
+  isModifier = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
-    if(!this.display) {
+    if (!this.display) {
       this.display = this.stat.toUpperCase();
     }
   }
@@ -31,7 +32,7 @@ export class SummaryStatComponent implements OnInit {
   getValue() {
     let value = this.stats[this.stat];
 
-    if(this.isModifier) {
+    if (this.isModifier) {
       value = "+" + this.stats[this.stat];
     }
 
