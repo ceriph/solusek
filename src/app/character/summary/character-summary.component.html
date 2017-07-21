@@ -29,6 +29,19 @@
     </div>
   </div>
 
+  <div class="box fill" *ngIf="character.checks">
+    <h2 class="title">Ability Checks</h2>
+    <div class="group">
+      <summary-stat [stats]="character.checks" [stat]="'investigation'" [display]="'Investigation'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'knowledge'" [display]="'Knowledge'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'lockpicking'" [display]="'Lockpicking'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'pickpocketing'" [display]="'Pickpocketing'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'perception'" [display]="'Perception'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'persuasion'" [display]="'Persuasion'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.checks" [stat]="'stealth'" [display]="'Stealth'" [isModifier]="true"></summary-stat>
+    </div>
+  </div>
+
   <div class="box">
     <h2>{{character.info.name}}</h2>
     <p><b>Age:</b> {{character.info.age}}</p>
@@ -38,18 +51,6 @@
     <p><b>Level:</b> {{character.level}}</p>
     <p><b>Experience:</b> {{character.experience}}</p>
     <p><b>Gold:</b> {{character.gold}}</p>
-  </div>
-  <div class="box" *ngIf="character.checks">
-    <h2>Checks</h2>
-    <table>
-      <tr><td class="top">Investigation</td><td class="top">+{{character.checks.investigation}}</td></tr>
-      <tr><td>Knowledge</td><td>+{{character.checks.knowledge}}</td></tr>
-      <tr><td>Lockpicking</td><td>+{{character.checks.lockpicking}}</td></tr>
-      <tr><td>Pickpocketing</td><td>+{{character.checks.pickpocketing}}</td></tr>
-      <tr><td>Perception</td><td>+{{character.checks.perception}}</td></tr>
-      <tr><td>Persuasion</td><td>+{{character.checks.persuasion}}</td></tr>
-      <tr><td>Stealth</td><td>+{{character.checks.stealth}}</td></tr>
-    </table>
   </div>
   <div class="box">
     <h2>Equipment</h2>
