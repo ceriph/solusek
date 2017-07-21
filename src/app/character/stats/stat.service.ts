@@ -73,6 +73,21 @@ export class StatService {
     character.checks.persuasion += character.primaryStats.cha;
     character.checks.stealth += character.primaryStats.agi;
 
+    for (let classSkill of clazz.skills) {
+      if (classSkill.level <= character.level) {
+        const modifier = Math.ceil(character.level / 3);
+        // todo think of a better way of applying these
+        if (classSkill.name === "bookworm") {
+          character.checks.knowledge += modifier
+        } else if (classSkill.name === "thievery") {
+          character.checks.pickpocketing += modifier;
+          character.checks.lockpicking += modifier;
+        } else if (classSkill.name === "tracker") {
+          character.checks.perception += modifier;
+        }
+      }
+    }
+
     // todo tidy racial passives as modifiers eventually
 
     // health
@@ -85,35 +100,36 @@ export class StatService {
     // dodge
     character.secondaryStats.dodge += 10 + character.primaryStats.agi;
     if (character.race === "halfling") {
-      character.secondaryStats.dodge += 1; // todo level increases
+      character.secondaryStats.dodge += 1; // todo level increases?
     }
 
     // speed
-    character.secondaryStats.speed += 1;
-    let agility = character.primaryStats.agi;
-    while (agility > 0) {
-      if (character.secondaryStats.speed <= 5) {
-        character.secondaryStats.speed += 1;
-      } else if (character.secondaryStats.speed <= 10) {
-        character.secondaryStats.speed += 0.5;
-      } else if (character.secondaryStats.speed <= 15) {
-        character.secondaryStats.speed += 0.33;
-      } else if (character.secondaryStats.speed <= 20) {
-        character.secondaryStats.speed += 0.25;
-      } else if (character.secondaryStats.speed <= 25) {
-        character.secondaryStats.speed += 0.2;
-      }
-      agility--;
-    }
-    character.secondaryStats.speed = Math.floor(character.secondaryStats.speed);
+    character.secondaryStats.speed += StatService.getSpeed(character.primaryStats.agi);
 
     if (character.race === "woodelf") {
-      character.secondaryStats.speed += 2; // todo level increases
+      character.secondaryStats.speed += 2;
     }
 
     // armour
     if (character.race === "iksar") {
-      character.secondaryStats.armour += 1; // todo level increases
+      character.secondaryStats.armour += 1; // todo level increases?
+    }
+
+    // attack
+    character.secondaryStats.attack += character.primaryStats.agi;
+
+    // spell attack and dc todo push the relevant spell stat into class model
+    if (character.class === "wizard" || character.class === "enchanter" || character.class === "necromancer" || character.class === "reaver" || character.class === "rogue") {
+      character.secondaryStats.spelldc += 10 + character.primaryStats.int;
+    }
+
+    if (character.class === "wizard" || character.class === "enchanter" || character.class === "necromancer" || character.class === "reaver") {
+      character.secondaryStats.spellattack += character.primaryStats.int;
+    }
+
+    if (character.class === "cleric" || character.class === "druid" || character.class === "paladin" || character.class === "ranger") {
+      character.secondaryStats.spellattack += character.primaryStats.spi;
+      character.secondaryStats.spelldc += 10 + character.primaryStats.spi;
     }
   }
 
@@ -137,5 +153,26 @@ export class StatService {
 
   private static isSecondary(stat) {
     return stat === 'health' || stat === 'dodge' || stat === 'armour' || stat === 'magicreduction' || stat === 'damage';
+  }
+
+  private static getSpeed(agility) {
+    let speed = 1;
+
+    while (agility > 0) {
+      if (speed <= 5) {
+        speed += 1;
+      } else if (speed <= 10) {
+        speed += 0.5;
+      } else if (speed <= 15) {
+        speed += 0.33;
+      } else if (speed <= 20) {
+        speed += 0.25;
+      } else if (speed <= 25) {
+        speed += 0.2;
+      }
+      agility--;
+    }
+
+    return Math.floor(speed);
   }
 }

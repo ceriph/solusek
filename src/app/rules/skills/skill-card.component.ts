@@ -5,10 +5,10 @@ import {SkillService} from "./skill.service";
 
 @Component({
   selector: 'skill-card',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  templateUrl: './skill-card.component.html',
+  styleUrls: ['./skill-card.component.css']
 })
-export class SkillsComponent implements OnInit {
+export class SkillCardComponent implements OnInit {
 
   @Input()
   classSkill: ClassSkill;

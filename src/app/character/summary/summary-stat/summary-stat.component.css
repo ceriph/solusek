@@ -1,0 +1,25 @@
+.stat {
+  text-align: center;
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.stat-label {
+  font-size: 23px;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: x-large;
+
+}
+
+.stat-icon {
+  float: none;
+  margin: 0 auto;
+}
+
+.stat-icon, .stat-label, .stat-value {
+  text-align: center;
+  display: block;
+}

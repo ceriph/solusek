@@ -49,7 +49,12 @@
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Charisma, Intelligence, Constitution",
     "archetypes": [],
-    "skills": []
+    "skills": [
+      {
+        "level": 1,
+        "name": "bookworm"
+      }
+    ]
   },
   "monk": {
     "name": "monk",

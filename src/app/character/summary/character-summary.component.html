@@ -3,6 +3,32 @@
 </div>
 
 <div *ngIf="character">
+  <div class="box fill" *ngIf="character.primaryStats">
+    <h2 class="title">Primary Stats</h2>
+    <div class="group">
+      <summary-stat [stats]="character.primaryStats" [stat]="'str'"></summary-stat>
+      <summary-stat [stats]="character.primaryStats" [stat]="'con'"></summary-stat>
+      <summary-stat [stats]="character.primaryStats" [stat]="'agi'"></summary-stat>
+      <summary-stat [stats]="character.primaryStats" [stat]="'int'"></summary-stat>
+      <summary-stat [stats]="character.primaryStats" [stat]="'spi'"></summary-stat>
+      <summary-stat [stats]="character.primaryStats" [stat]="'cha'"></summary-stat>
+    </div>
+  </div>
+
+  <div class="box fill" *ngIf="character.secondaryStats">
+    <h2 class="title">Secondary Stats</h2>
+    <div class="group">
+      <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'speed'" [display]="'Speed'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'dodge'" [display]="'Dodge'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'armour'" [display]="'Armour'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'magicreduction'" [display]="'Magic Reduction'"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'attack'" [display]="'Attack'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'spellattack'" [display]="'Spell Attack'" [isModifier]="true"></summary-stat>
+      <summary-stat [stats]="character.secondaryStats" [stat]="'spelldc'" [display]="'Spell DC'"></summary-stat>
+    </div>
+  </div>
+
   <div class="box">
     <h2>{{character.info.name}}</h2>
     <p><b>Age:</b> {{character.info.age}}</p>
@@ -12,27 +38,6 @@
     <p><b>Level:</b> {{character.level}}</p>
     <p><b>Experience:</b> {{character.experience}}</p>
     <p><b>Gold:</b> {{character.gold}}</p>
-  </div>
-  <div class="box" *ngIf="character.primaryStats">
-    <h2>Primary Stats</h2>
-    <table>
-      <tr><td class="top">Strength</td><td class="top">{{character.primaryStats.str}}</td></tr>
-      <tr><td>Constitution</td><td>{{character.primaryStats.con}}</td></tr>
-      <tr><td>Agility</td><td>{{character.primaryStats.agi}}</td></tr>
-      <tr><td>Intelligence</td><td>{{character.primaryStats.int}}</td></tr>
-      <tr><td>Spirit</td><td>{{character.primaryStats.spi}}</td></tr>
-      <tr><td>Charisma</td><td>{{character.primaryStats.cha}}</td></tr>
-    </table>
-  </div>
-  <div class="box" *ngIf="character.secondaryStats">
-    <h2>Secondary Stats</h2>
-    <table>
-      <tr><td class="top">Health</td><td class="top">{{character.secondaryStats.health}}</td></tr>
-      <tr><td>Speed</td><td>{{character.secondaryStats.speed}}</td></tr>
-      <tr><td>Dodge</td><td>{{character.secondaryStats.dodge}}</td></tr>
-      <tr><td>Armour</td><td>{{character.secondaryStats.armour}}</td></tr>
-      <tr><td>Magic Reduction</td><td>{{character.secondaryStats.magicreduction}}</td></tr>
-    </table>
   </div>
   <div class="box" *ngIf="character.checks">
     <h2>Checks</h2>

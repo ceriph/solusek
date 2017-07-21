@@ -13,5 +13,8 @@ export class SecondaryStats {
   speed: number = 0;
   armour: number = 0;
   magicreduction: number = 0;
+  attack: number = 0;
+  spellattack: number = 0;
+  spelldc: number = 0;
   damage: string = "";
 }

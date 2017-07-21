@@ -33,9 +33,10 @@ import {RulesService} from "./rules/rules.service";
 import {SpellService} from "./rules/spells/spell.service";
 import {PoisonService} from "./rules/poisons/poison.service";
 import {CustomScroll} from "./scroll/scroll.directive";
-import {SkillsComponent} from './rules/skills/skills.component';
 import {SkillService} from "./rules/skills/skill.service";
 import {PlayerService} from "./players/player.service";
+import {SummaryStatComponent} from './character/summary/summary-stat/summary-stat.component';
+import {SkillCardComponent} from "./rules/skills/skill-card.component";
 
 @NgModule({
   imports: [
@@ -63,7 +64,8 @@ import {PlayerService} from "./players/player.service";
     RaceComponent,
     CampaignComponent,
     CustomScroll,
-    SkillsComponent
+    SkillCardComponent,
+    SummaryStatComponent
   ],
   providers: [
     PlayerService,

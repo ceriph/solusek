@@ -15,3 +15,7 @@ td {
 .dm-buttons {
   margin-left: 4%;
 }
+
+.title, .box, .group {
+  text-align: center;
+}
