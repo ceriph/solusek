@@ -72,10 +72,42 @@ export class StatService {
     });
 
     // modifiers from equipment
-    for (const itemName of character.equipment) {
-      this.equipmentService.get(itemName).subscribe(item => {
+    if (character.equipment.head) {
+      this.equipmentService.get(character.equipment.head).subscribe(item => {
         this.applyModifiers(character, item.modifiers);
       });
+    }
+    if (character.equipment.body) {
+      this.equipmentService.get(character.equipment.body).subscribe(item => {
+        this.applyModifiers(character, item.modifiers);
+      });
+    }
+    if (character.equipment.feet) {
+      this.equipmentService.get(character.equipment.feet).subscribe(item => {
+        this.applyModifiers(character, item.modifiers);
+      });
+    }
+    if (character.equipment.hands) {
+      this.equipmentService.get(character.equipment.hands).subscribe(item => {
+        this.applyModifiers(character, item.modifiers);
+      });
+    }
+    if (character.equipment.lefthand) {
+      this.equipmentService.get(character.equipment.lefthand).subscribe(item => {
+        this.applyModifiers(character, item.modifiers);
+      });
+    }
+    if (character.equipment.righthand) {
+      this.equipmentService.get(character.equipment.righthand).subscribe(item => {
+        this.applyModifiers(character, item.modifiers);
+      });
+    }
+    if (character.equipment.jewellery) {
+      for (const itemName of character.equipment.jewellery) {
+        this.equipmentService.get(itemName).subscribe(item => {
+          this.applyModifiers(character, item.modifiers);
+        });
+      }
     }
 
     // checks

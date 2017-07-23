@@ -8,7 +8,7 @@ import {Spell, SpellGroup} from "./spells/spell";
 import {SpellService} from "./spells/spell.service";
 import {ClassService} from "./class/classes.service";
 import {RaceService} from "./race/race.service";
-import {Equipment, EquipmentType} from "./equipment/equipment";
+import {Item, ItemType} from "./equipment/equipment";
 import {EquipmentService} from "./equipment/equipment.service";
 import {Router} from "@angular/router";
 import {PoisonRank} from "./poisons/poison";
@@ -26,10 +26,10 @@ export class RulesComponent implements OnInit {
   classes: FirebaseListObservable<Class[]>;
   spells: FirebaseListObservable<SpellGroup[]>;
   poisons: FirebaseListObservable<PoisonRank[]>;
-  armour: FirebaseListObservable<Equipment[]>;
-  shields: FirebaseListObservable<Equipment[]>;
-  weapons: FirebaseListObservable<Equipment[]>;
-  tools: FirebaseListObservable<Equipment[]>;
+  armour: FirebaseListObservable<Item[]>;
+  shields: FirebaseListObservable<Item[]>;
+  weapons: FirebaseListObservable<Item[]>;
+  tools: FirebaseListObservable<Item[]>;
 
   constructor(private rulesService: RulesService,
               private classService: ClassService,
@@ -45,9 +45,9 @@ export class RulesComponent implements OnInit {
     this.poisons = this.poisonService.list();
     this.races = this.raceService.list();
     this.classes = this.classService.list();
-    this.armour = this.equipmentService.listByType(EquipmentType.Armour);
-    this.weapons = this.equipmentService.listByType(EquipmentType.Weapon);
-    this.shields = this.equipmentService.listByType(EquipmentType.Shield);
-    this.tools = this.equipmentService.listByType(EquipmentType.Tool);
+    this.armour = this.equipmentService.listByType(ItemType.Armour);
+    this.weapons = this.equipmentService.listByType(ItemType.Weapon);
+    this.shields = this.equipmentService.listByType(ItemType.Shield);
+    this.tools = this.equipmentService.listByType(ItemType.Tool);
   }
 }

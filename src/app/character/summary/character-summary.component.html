@@ -46,7 +46,7 @@
 
   <div class="box fill" *ngIf="character.checks">
     <div class="stats">
-      <div class="checks border-right">
+      <div class="card">
         <h2 class="title">Ability Checks</h2>
         <summary-check [checks]="character.checks" [check]="'investigation'"
                        [display]="'Investigation'"></summary-check>
@@ -56,7 +56,7 @@
         <summary-check [checks]="character.checks" [check]="'stealth'" [display]="'Stealth'"></summary-check>
         <summary-check [checks]="character.checks" [check]="'thievery'" [display]="'Thievery'"></summary-check>
       </div>
-      <div class="checks">
+      <div class="card">
         <h2 class="title">Saving Throws</h2>
         <summary-check [checks]="character.saves" [check]="'str'"></summary-check>
         <summary-check [checks]="character.saves" [check]="'con'"></summary-check>
@@ -69,15 +69,12 @@
   </div>
 
   <div class="box fill">
-    <h2>Equipment</h2>
-    <div *ngFor="let item of equipment">
-      <h4>{{item.label}}</h4>
-      <p>{{item.desc}}</p>
-      <div *ngFor="let modifier of item.modifiers">
-        <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
-      </div>
+    <h2 class="title">Equipment</h2>
+    <div class="wrapper">
+      <summary-equipment [equipment]="character.equipment"></summary-equipment>
     </div>
   </div>
+
   <div class="box fill">
     <h2>Inventory</h2>
     <div *ngFor="let item of inventory">

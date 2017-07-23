@@ -1,0 +1,8 @@
+<div *ngIf="item">
+  <h3>{{item.label}}</h3>
+  <p><i>Slot: {{item.slot}}</i></p>
+  <p>{{item.desc}}</p>
+  <div *ngIf="item.modifiers">
+    <p *ngFor="let modifier of item.modifiers"><b>{{modifier.label}}</b>: {{modifier.value}}</p>
+  </div>
+</div>

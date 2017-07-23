@@ -24,7 +24,7 @@ td {
   margin-bottom: 15px;
 }
 
-.checks {
+.card {
   display: inline-block;
   vertical-align: top;
   padding-right: 20px;
@@ -35,8 +35,10 @@ summary-stat + summary-stat {
   margin-left: 40px;
 }
 
-.border-right {
-  border-right: 1px solid #EEE;
+.card + .card {
+  border-left: 1px solid #DDD;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .info {

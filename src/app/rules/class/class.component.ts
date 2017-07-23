@@ -2,7 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Class} from "./class";
 import {ActivatedRoute} from "@angular/router";
 import {ClassService} from "./classes.service";
-import {Equipment} from "../equipment/equipment";
+import {Item} from "../equipment/equipment";
 import {EquipmentService} from "../equipment/equipment.service";
 import 'rxjs/add/operator/switchMap';
 
@@ -14,7 +14,7 @@ import 'rxjs/add/operator/switchMap';
 export class ClassComponent implements OnInit {
 
   clazz: Class;
-  equipment: Equipment[];
+  equipment: Item[];
 
   constructor(private classService: ClassService,
               private equipmentService: EquipmentService,

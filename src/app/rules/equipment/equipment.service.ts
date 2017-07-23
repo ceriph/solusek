@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
-import {Equipment, EquipmentType} from "./equipment";
+import {Item, ItemType} from "./equipment";
 
 @Injectable()
 export class EquipmentService {
@@ -9,12 +9,12 @@ export class EquipmentService {
 
   constructor(private db: AngularFireDatabase) {}
 
-  list(): FirebaseListObservable<Equipment[]> {
+  list(): FirebaseListObservable<Item[]> {
     return this.db.list(this.path);
   }
 
-  listByType(type: EquipmentType): FirebaseListObservable<Equipment[]> {
-    let typeString = EquipmentType[type].toLowerCase(); // crazy typescript enums!
+  listByType(type: ItemType): FirebaseListObservable<Item[]> {
+    let typeString = ItemType[type].toLowerCase(); // crazy typescript enums!
     console.log("Searching for equipment with type:", typeString);
     return this.db.list(this.path, {
         query: {
@@ -23,7 +23,7 @@ export class EquipmentService {
         }});
   }
 
-  get(name: string): FirebaseObjectObservable<Equipment> {
+  get(name: string): FirebaseObjectObservable<Item> {
     console.log("Getting equipment:", name);
     return this.db.object(this.path + '/' + name);
   }

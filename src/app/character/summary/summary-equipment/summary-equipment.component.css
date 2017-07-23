@@ -1,0 +1,16 @@
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  max-width: 300px;
+}
+
+.card + .card {
+  border-left: 1px solid #DDD;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.card p {
+  text-align: left;
+}

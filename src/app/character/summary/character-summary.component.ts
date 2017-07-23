@@ -12,7 +12,7 @@ import {Race} from "../../rules/race/race";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
-import {Equipment} from "../../rules/equipment/equipment";
+import {Item} from "../../rules/equipment/equipment";
 import {FirebaseListObservable} from "angularfire2/database";
 
 @Component({
@@ -29,8 +29,8 @@ export class CharacterSummaryComponent implements OnInit {
   character: Character;
   race: Race;
   clazz: Class;
-  equipment: Equipment[];
-  inventory: Equipment[];
+  equipment: Item[];
+  inventory: Item[];
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
@@ -56,15 +56,6 @@ export class CharacterSummaryComponent implements OnInit {
 
   load(character) {
     this.character = character;
-
-    this.equipment = [];
-    if (character.equipment) {
-      for (const itemName of character.equipment) {
-        this.equipmentService.get(itemName).subscribe(item => {
-          this.equipment.push(item);
-        });
-      }
-    }
 
     this.inventory = [];
     if (character.inventory) {

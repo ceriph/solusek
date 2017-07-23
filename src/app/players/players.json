@@ -1,223 +1,222 @@
 {
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2": {
-    "character": {
-      "baseStats": {
-        "agi": 3,
-        "cha": 3,
-        "con": 2,
-        "int": 1,
-        "spi": 1,
-        "str": 1
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 3,
+        "cha" : 3,
+        "con" : 2,
+        "int" : 1,
+        "spi" : 1,
+        "str" : 1
       },
-      "class": "enchanter",
-      "equipment": [
-        "greenleafamulet"
-      ],
-      "info": {
-        "age": 8,
-        "appearance": "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
-        "background": "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
-        "motivation": "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
-        "name": "Sophea Torvaris",
-        "personality": "Good natured and inquisitive, Sophea is curious of the world and people in it."
+      "class" : "enchanter",
+      "equipment" : {
+        "righthand" : "bluewand",
+        "jewellery" : [
+          "greenleafamulet"
+        ]
       },
-      "level": 1,
-      "race": "highelf"
+      "experience" : 150,
+      "gold" : 0,
+      "info" : {
+        "age" : 8,
+        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
+        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
+        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
+        "name" : "Sophea Torvaris",
+        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
+      },
+      "level" : 1,
+      "race" : "highelf"
     },
-    "name": "Matt"
+    "name" : "Matt"
   },
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg3": {
-    "character": {
-      "baseStats": {
-        "agi": 3,
-        "cha": 3,
-        "con": 5,
-        "int": 7,
-        "spi": 3,
-        "str": 3
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg3" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 3,
+        "cha" : 3,
+        "con" : 5,
+        "int" : 7,
+        "spi" : 3,
+        "str" : 3
       },
-      "class": "wizard",
-      "equipment": [
-        "flowingashirrobes",
-        "ringoflevitation"
-      ],
-      "info": {
-        "age": 36,
-        "appearance": "Slim man wearing intricate red robes with gold trim. Once an attractive man with blonde hair and a strong jaw, he now covers his face with a white porcelain mask and likes to levitate. His familiar, a red drakeling, sits on his shoulder.",
-        "background": "Auron grew up in a family that expected much of him, and the only day he can remember any sign of pride was the day he became apprentice to the Archmage Belgarath. However that did not last long; 3 years into the 10-year-long apprentiship, Belgarath learned of Auron's cruelness and cast him out of the Wizard's circle.He had been testing some newfound spells on some servants he'd locked in the cellar. Auron was arrested and due to be executed, but he had prepared for this, and had hidden his stolen ring of levitation. The anti-magic shackles only affected spellcasting, so when it came to his hanging, he slipped on the ring and feigned his death. Since then he hasn't been see\n\nHe recently has been seen in league with the demon callers and has bargained with the Demon Lord Azaril.",
-        "motivation": "Auron despises Belgarath and the Wizard's circle, and vowed to seek power and destroy them.",
-        "name": "Auron Black",
-        "personality": "Selfish and cruel, Auron is always craving to be more powerful and would note hesitate to kill in order for self gain"
+      "class" : "wizard",
+      "equipment" : {
+        "body": "flowingashirrobes",
+        "jewellery": [
+          "ringoflevitation"
+        ]
       },
-      "level": 9,
-      "race": "human"
+      "info" : {
+        "age" : 36,
+        "appearance" : "Slim man wearing intricate red robes with gold trim. Once an attractive man with blonde hair and a strong jaw, he now covers his face with a white porcelain mask and likes to levitate. His familiar, a red drakeling, sits on his shoulder.",
+        "background" : "Auron grew up in a family that expected much of him, and the only day he can remember any sign of pride was the day he became apprentice to the Archmage Belgarath. However that did not last long; 3 years into the 10-year-long apprentiship, Belgarath learned of Auron's cruelness and cast him out of the Wizard's circle.He had been testing some newfound spells on some servants he'd locked in the cellar. Auron was arrested and due to be executed, but he had prepared for this, and had hidden his stolen ring of levitation. The anti-magic shackles only affected spellcasting, so when it came to his hanging, he slipped on the ring and feigned his death. Since then he hasn't been see\n\nHe recently has been seen in league with the demon callers and has bargained with the Demon Lord Azaril.",
+        "motivation" : "Auron despises Belgarath and the Wizard's circle, and vowed to seek power and destroy them.",
+        "name" : "Auron Black",
+        "personality" : "Selfish and cruel, Auron is always craving to be more powerful and would note hesitate to kill in order for self gain"
+      },
+      "level" : 9,
+      "race" : "human"
     },
-    "name": "Matt"
+    "name" : "Matt"
   },
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg4": {
-    "character": {
-      "baseStats": {
-        "agi": 6,
-        "cha": 1,
-        "con": 6,
-        "int": 6,
-        "spi": 1,
-        "str": 6
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg4" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 6,
+        "cha" : 1,
+        "con" : 6,
+        "int" : 6,
+        "spi" : 1,
+        "str" : 6
       },
-      "class": "warrior",
-      "equipment": [
-        "flowingashirrobes",
-        "ringoflevitation"
-      ],
-      "info": {
-        "age": 94,
-        "appearance": "",
-        "background": "",
-        "motivation": "",
-        "name": "Demon Lord Azaril",
-        "personality": ""
+      "class" : "warrior",
+      "equipment" : {
       },
-      "level": 15,
-      "race": "troll"
+      "info" : {
+        "age" : 94,
+        "appearance" : "",
+        "background" : "",
+        "motivation" : "",
+        "name" : "Demon Lord Azaril",
+        "personality" : ""
+      },
+      "level" : 15,
+      "race" : "troll"
     },
-    "name": "Matt"
+    "name" : "Matt"
   },
-  "DU5wAvij3JaAvQjtnkDkaothcoS2": {
-    "character": {
-      "baseStats": {
-        "agi": 4,
-        "cha": 1,
-        "con": 2,
-        "int": 2,
-        "spi": 1,
-        "str": 2
+  "DU5wAvij3JaAvQjtnkDkaothcoS2" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 4,
+        "cha" : 1,
+        "con" : 2,
+        "int" : 2,
+        "spi" : 1,
+        "str" : 2
       },
-      "class": "rogue",
-      "equipment": [
-        "leatherarmour",
-        "rapier"
-      ],
-      "experience": 475,
-      "info": {
-        "age": 25,
-        "appearance": "Standing almost 6 feet Tall, Skalath has dark green-grey reptilian skin covering his entire body. He has 6 horns protruding from his head in a fan-like manor. His abnormally long tail assists Skalath in keeping balance on narrow ledges and in the thralls of combat. Despite his height, Skalath is slender and light allowing him to move quickly and hide in the shadows. He has long slender fingers and toes with sharp claws.\n\nSkalath is wearing heavily stained and ripped, dark brown trousers. Holding up the trousers he wears a thick black leather belt with golden buckle. Adorning his slender fingers are golden rings he has stolen form the rich folk of Cabilis. He is wearing a silver chain necklace with another stolen ring as a pendant. Other than his ill-gotten jewellery and tattered trousers, Skalath wears little else, other than two brown leather cuffs, acting as paltry armour defence. ",
-        "background": "Skalath was born in the city of Cabilis in the depths of the dark and dirty canals that run maze-like throughout the city. He emerged from his underwater egg amongst hundreds of other sibling Iskar, swimming to the surface to start their tough life. Skalath knows nothing of his parental origin, like his siblings, Iksar are left to fend for themselves and very few live to maturity. Skalath chose to take to the shadows of Cabilis and keep alive by pilfering gold and food to stay alive. \n\nAs Skalath grew, he became more independent, shying away from his more brutish and evil brethren. He lives close to one of the canals in a secret drainage room that is unknown to any other in Cabilis. Here, he lives alone and keeps his stolen items from the people of the city. His habitat is warm and comfortable. Skalath likes nothing better than enjoying his solitary in his home. Due to his chosen occupation, Skalath has often been involved in fights and had to fend for himself. He has many battle scars form his younger days, but as he has grown older, he has learnt to improve his thievery and mostly stays out of trouble.\n",
-        "introduction": "Getting caught stealing from the city guards was a great way to make you a wanted Iksar; Skalath had pushed his luck one too many times and didn't have much choice but to leave his home of Cabilis and find somewhere else to make a living. He had visited Freeport a few years back and the city was too busy for his tastes, however the more people the more pockets there were to pick, so he left immediately with the guards on his ...tail.  It didn't take long for Skalath to lose the guards in the shadows surrounding Cabilis, and he made certain the rest of the journey to Freeport was uneventful, avoiding contact with any passers-by on the way.  After only 2 days of light pickpocketing in Freeport, Skalath had heard whisperings of a job, a job that paid well. That's all he needed to pique his interests, and even though it did sound rather suspicious, he figured he'd be able to make a quick escape if anything did go awry. Skalath considered how wrong he had been, as he lay on the cold stone floor of the alley, vision black and his ears ringing.",
-        "motivation": "Skalath is driven by gold. He steals what he can and whenever he can. He is opportunistic and skilled to pick locks and pick pockets. ",
-        "name": "Skalath",
-        "personality": "Iksar are known for their independence, hiding away from the other races and preferring to be amongst each other. Skarath is no different. He spends little time with folk in the city and prefers to keep to himself, even shying away from other Iksar. Choosing to keep to the shadows and canals of Cabilis, he remains mostly unseen, Skarath rarely talks to anyone and likes to live a solitary life using thievery to get by. \n\nUnlike other Iksar however, Skarath has a mild temperament. He rarely gets enraged, but when he does, he is a force to be reckoned with. This may be due to him having little to do with his race and his life of solitude. "
+      "class" : "rogue",
+      "equipment" : {
+        "body": "leatherarmour",
+        "righthand": "rapier"
       },
-      "inventory": [
-        "lockpick",
-        "bandages",
-        "dagger"
-      ],
-      "level": 2,
-      "race": "iksar"
+      "experience" : 625,
+      "gold" : 33,
+      "info" : {
+        "age" : 25,
+        "appearance" : "Standing almost 6 feet Tall, Skalath has dark green-grey reptilian skin covering his entire body. He has 6 horns protruding from his head in a fan-like manor. His abnormally long tail assists Skalath in keeping balance on narrow ledges and in the thralls of combat. Despite his height, Skalath is slender and light allowing him to move quickly and hide in the shadows. He has long slender fingers and toes with sharp claws.\n\nSkalath is wearing heavily stained and ripped, dark brown trousers. Holding up the trousers he wears a thick black leather belt with golden buckle. Adorning his slender fingers are golden rings he has stolen form the rich folk of Cabilis. He is wearing a silver chain necklace with another stolen ring as a pendant. Other than his ill-gotten jewellery and tattered trousers, Skalath wears little else, other than two brown leather cuffs, acting as paltry armour defence. ",
+        "background" : "Skalath was born in the city of Cabilis in the depths of the dark and dirty canals that run maze-like throughout the city. He emerged from his underwater egg amongst hundreds of other sibling Iskar, swimming to the surface to start their tough life. Skalath knows nothing of his parental origin, like his siblings, Iksar are left to fend for themselves and very few live to maturity. Skalath chose to take to the shadows of Cabilis and keep alive by pilfering gold and food to stay alive. \n\nAs Skalath grew, he became more independent, shying away from his more brutish and evil brethren. He lives close to one of the canals in a secret drainage room that is unknown to any other in Cabilis. Here, he lives alone and keeps his stolen items from the people of the city. His habitat is warm and comfortable. Skalath likes nothing better than enjoying his solitary in his home. Due to his chosen occupation, Skalath has often been involved in fights and had to fend for himself. He has many battle scars form his younger days, but as he has grown older, he has learnt to improve his thievery and mostly stays out of trouble.\n",
+        "introduction" : "Getting caught stealing from the city guards was a great way to make you a wanted Iksar; Skalath had pushed his luck one too many times and didn't have much choice but to leave his home of Cabilis and find somewhere else to make a living. He had visited Freeport a few years back and the city was too busy for his tastes, however the more people the more pockets there were to pick, so he left immediately with the guards on his ...tail.  It didn't take long for Skalath to lose the guards in the shadows surrounding Cabilis, and he made certain the rest of the journey to Freeport was uneventful, avoiding contact with any passers-by on the way.  After only 2 days of light pickpocketing in Freeport, Skalath had heard whisperings of a job, a job that paid well. That's all he needed to pique his interests, and even though it did sound rather suspicious, he figured he'd be able to make a quick escape if anything did go awry. Skalath considered how wrong he had been, as he lay on the cold stone floor of the alley, vision black and his ears ringing.",
+        "motivation" : "Skalath is driven by gold. He steals what he can and whenever he can. He is opportunistic and skilled to pick locks and pick pockets. ",
+        "name" : "Skalath",
+        "personality" : "Iksar are known for their independence, hiding away from the other races and preferring to be amongst each other. Skarath is no different. He spends little time with folk in the city and prefers to keep to himself, even shying away from other Iksar. Choosing to keep to the shadows and canals of Cabilis, he remains mostly unseen, Skarath rarely talks to anyone and likes to live a solitary life using thievery to get by. \n\nUnlike other Iksar however, Skarath has a mild temperament. He rarely gets enraged, but when he does, he is a force to be reckoned with. This may be due to him having little to do with his race and his life of solitude. "
+      },
+      "inventory" : [ "lockpick", "bandages", "dagger" ],
+      "level" : 2,
+      "race" : "iksar"
     },
-    "name": "Tom"
+    "name" : "Tom"
   },
-  "JCnCSku2qiOPIezTB1MOuJvn7ir2": {
-    "character": {
-      "baseStats": {
-        "agi": 1,
-        "cha": 1,
-        "con": 2,
-        "int": 5,
-        "spi": 2,
-        "str": 1
+  "JCnCSku2qiOPIezTB1MOuJvn7ir2" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 1,
+        "cha" : 1,
+        "con" : 2,
+        "int" : 5,
+        "spi" : 2,
+        "str" : 1
       },
-      "class": "wizard",
-      "equipment": [
-        "clotharmour",
-        "magicstaffarcane"
-      ],
-      "experience": 475,
-      "info": {
-        "age": 44,
-        "appearance": "3feet tall, medium build, pale complexion, Dark Brown Hair, short/slightly scruffy mop top haircut, longer-than-short sideburns, no beard. Smartly dressed, clean looking, neat. Friendly face, no scars.",
-        "background": "Born to an average halfling family, Mordan’s upbringing was fairly typical. Like his friends, he would have seemed destined to work in the family cake shop. But it was in his teenage years that his intelligence and talents started to show. Having been born after the Great War, there was a lot of opportunity around him for change. The old rules seemed to no longer apply, so he started to develop his interest in magic. \n \nIt was not easy at first. His parents could not afford him to be away and his training would be expensive. So much of Mordan’s first magical experiences were simple tricks and enchantments for fairs and local shows. He learnt what he could at home and by talking with travellers and elders. \n \nEventually he earned enough money to fund his own journey to a small magic school. It was nothing spectacular, but it gave him access to books in the library. There would also be more travellers and diverse people than at home. So he moved away from home when his was 23 to spend most of the next 20 years studying and learning. \n \nWhen he felt he could learn no more without the experiences of the real world, Mordan decided it was time to set out and seek his destiny. Mordan always felt that he could be more than he was. Perhaps with different parents and in a different race this would have been easy for him - but his whole life has been one of self-determined ambition. He no longer wanted to be the halfling trickster people assumed him to be. He knew he could become a powerful wizard.\n \nMordan has spent the last two summers running small local errands, helping protect trade caravans and earning a small income using his skills. But, he is always on the lookout for something more and an opportunity for greatness.\n",
-        "introduction": "'I deserve more than this', Mordan thought as he took the payment for the caravan run. It had been ambushed by bandits and he had singlehandedly fought them off with his magic. The caravaner barely thanked him as he handed over the rather light pouch of coins. 'Not worth causing a fuss though', he decided, 'The man probably can't afford more, and I need a change anyway'.   He had been trying to gain an audience with the council of wizards in Freeport for almost a week now, but he'd had no luck. Despite his talent with magic the council was notoriously selective and the fact that he was a halfling did not help when trying to be taken seriously. As much as he hated to admit it, the wealthier he was the more chance they'd accept him into their circle. As luck would have it he'd caught wind of a job which paid very well. There wasn't a lot of detail but Mordan figured he'd at least try to find out more and if it was not to his liking he'd move on.  He knew as soon as he saw the dark elf standing in the darkness of the ally that the job was not for him, but it had been to late by then. Mordan wasn't sure what had happened, but his head certainly hurt after the cold stone of the floor came up to meet it.",
-        "motivation": "Fulfill his own expectations and exceed those of the people around him. Do good and be known for doing good. To obtain very rare and exotic treasures (the quantity and value are secondary). Become more powerful - perhaps, the most powerful halfling mage in the land.",
-        "name": "Mordan",
-        "personality": "Fairly quiet, polite. Kind, a little suspicious of new people. A mild air of superiority, tempered by an awkward lack of confidence (due to size). Witty, smart, does not seek to compete in strength or physical appearance. Ambitious (especially for a Halfling), seems to have something to prove. Good natured, honest, lawful."
+      "class" : "wizard",
+      "equipment" : {
+        "body": "clotharmour",
+        "righthand": "magicstaffarcane"
       },
-      "inventory": [
-        "bandages"
-      ],
-      "level": 2,
-      "race": "halfling"
+      "experience" : 625,
+      "gold" : 0,
+      "info" : {
+        "age" : 44,
+        "appearance" : "3feet tall, medium build, pale complexion, Dark Brown Hair, short/slightly scruffy mop top haircut, longer-than-short sideburns, no beard. Smartly dressed, clean looking, neat. Friendly face, no scars.",
+        "background" : "Born to an average halfling family, Mordan’s upbringing was fairly typical. Like his friends, he would have seemed destined to work in the family cake shop. But it was in his teenage years that his intelligence and talents started to show. Having been born after the Great War, there was a lot of opportunity around him for change. The old rules seemed to no longer apply, so he started to develop his interest in magic. \n \nIt was not easy at first. His parents could not afford him to be away and his training would be expensive. So much of Mordan’s first magical experiences were simple tricks and enchantments for fairs and local shows. He learnt what he could at home and by talking with travellers and elders. \n \nEventually he earned enough money to fund his own journey to a small magic school. It was nothing spectacular, but it gave him access to books in the library. There would also be more travellers and diverse people than at home. So he moved away from home when his was 23 to spend most of the next 20 years studying and learning. \n \nWhen he felt he could learn no more without the experiences of the real world, Mordan decided it was time to set out and seek his destiny. Mordan always felt that he could be more than he was. Perhaps with different parents and in a different race this would have been easy for him - but his whole life has been one of self-determined ambition. He no longer wanted to be the halfling trickster people assumed him to be. He knew he could become a powerful wizard.\n \nMordan has spent the last two summers running small local errands, helping protect trade caravans and earning a small income using his skills. But, he is always on the lookout for something more and an opportunity for greatness.\n",
+        "introduction" : "'I deserve more than this', Mordan thought as he took the payment for the caravan run. It had been ambushed by bandits and he had singlehandedly fought them off with his magic. The caravaner barely thanked him as he handed over the rather light pouch of coins. 'Not worth causing a fuss though', he decided, 'The man probably can't afford more, and I need a change anyway'.   He had been trying to gain an audience with the council of wizards in Freeport for almost a week now, but he'd had no luck. Despite his talent with magic the council was notoriously selective and the fact that he was a halfling did not help when trying to be taken seriously. As much as he hated to admit it, the wealthier he was the more chance they'd accept him into their circle. As luck would have it he'd caught wind of a job which paid very well. There wasn't a lot of detail but Mordan figured he'd at least try to find out more and if it was not to his liking he'd move on.  He knew as soon as he saw the dark elf standing in the darkness of the ally that the job was not for him, but it had been to late by then. Mordan wasn't sure what had happened, but his head certainly hurt after the cold stone of the floor came up to meet it.",
+        "motivation" : "Fulfill his own expectations and exceed those of the people around him. Do good and be known for doing good. To obtain very rare and exotic treasures (the quantity and value are secondary). Become more powerful - perhaps, the most powerful halfling mage in the land.",
+        "name" : "Mordan",
+        "personality" : "Fairly quiet, polite. Kind, a little suspicious of new people. A mild air of superiority, tempered by an awkward lack of confidence (due to size). Witty, smart, does not seek to compete in strength or physical appearance. Ambitious (especially for a Halfling), seems to have something to prove. Good natured, honest, lawful."
+      },
+      "inventory" : [ "bandages" ],
+      "level" : 2,
+      "race" : "halfling"
     },
-    "name": "Robin"
+    "name" : "Robin"
   },
-  "K4Z3CVrXNwW9W92qJxxB7rkKpa43": {
-    "character": {
-      "baseStats": {
-        "agi": 4,
-        "cha": 2,
-        "con": 3,
-        "int": 2,
-        "spi": 3,
-        "str": 3
+  "K4Z3CVrXNwW9W92qJxxB7rkKpa43" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 4,
+        "cha" : 2,
+        "con" : 3,
+        "int" : 2,
+        "spi" : 3,
+        "str" : 3
       },
-      "class": "ranger",
-      "equipment": [
-        "leatherarmour",
-        "longsword",
-        "longbow"
-      ],
-      "experience": 475,
-      "info": {
-        "age": 42,
-        "appearance": "Shaggy dark brown hair and beard showing signs of grey. Just under six foot. Athletic build but showing slight signs of age. Pale skin from a northern colder kingdom.",
-        "background": "The Stone Guard was the oldest institution of the Kingdom of Sherridon. Known to the people of the former Kingdom as the 'Greys' due to the grey cloaks they wore. Their charge, to patrol the vast forests that made up the Kingdoms northern border, to keep the Dark Elves at bay. \n\nFor more than 500 years they succeeded in this mission, until they were betrayed by one of their own. A betrayal that saw thousands of the guard slaughtered in what the records came to know as 'the night of the long knives'.\n\nNow the Guard are history, the Kingdom of Sherridon is no more. Dark Elves rule where man once prospered.\n\nFen is... was the commander of the Stone Guard, the only survivor of the last battle with the Dark Elves. His final service was to deliver the last successor to the throne of Sherridon to safety in a neighbouring human Kingdom. His new path… who knows.\n\n",
-        "introduction": "'What is the point?', thought Fen as he ignored the two men fighting at the bar and took another sip of his ale. He couldn't shake the feeling that he no longer had a purpose. A city full of people and no one even knew who he, or the Stone Guard were anymore. He wasn't even really enjoying the ale and decided it was a good time to leave; the fight was growing and it didn't seem worth getting involved.   As he slipped out into the night he noticed a man wearing a hooded black robe passing the street. As the man approached the alley he turned to look around before entering the darkness. Even in the darkness Fen could tell he was looking at a dark elf, and a suspicious one at that. 'Just because he's a dark elf, doesn't mean he's evil', Fen told himself not for the first time, but something didn't feel right. Something in him felt the need to investigate and with one hand on his short sword, he crept toward the ally.  Upon reaching the alley, he found it empty. 'Quick little devil, must have gone out the other end', he thought. Fen moved quickly down the alley but suddenly he felt dizzy, the darkness seemed to be reaching out to him and before he could react he'd been engulfed by it completely.",
-        "motivation": "On a bit of a soul searching exercise after the catastrophic events that led to Sherridons downfall. Feels somewhat lost. ",
-        "name": "Fen Fallstar",
-        "personality": "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
+      "class" : "ranger",
+      "equipment" : {
+        "body": "leatherarmour",
+        "righthand": "longsword",
+        "lefthand": "longbow"
       },
-      "inventory": [
-        "bandages",
-        "shortsword",
-        "shortbow"
-      ],
-      "level": 2,
-      "race": "human"
+      "experience" : 625,
+      "gold" : 7,
+      "info" : {
+        "age" : 42,
+        "appearance" : "Shaggy dark brown hair and beard showing signs of grey. Just under six foot. Athletic build but showing slight signs of age. Pale skin from a northern colder kingdom.",
+        "background" : "The Stone Guard was the oldest institution of the Kingdom of Sherridon. Known to the people of the former Kingdom as the 'Greys' due to the grey cloaks they wore. Their charge, to patrol the vast forests that made up the Kingdoms northern border, to keep the Dark Elves at bay. \n\nFor more than 500 years they succeeded in this mission, until they were betrayed by one of their own. A betrayal that saw thousands of the guard slaughtered in what the records came to know as 'the night of the long knives'.\n\nNow the Guard are history, the Kingdom of Sherridon is no more. Dark Elves rule where man once prospered.\n\nFen is... was the commander of the Stone Guard, the only survivor of the last battle with the Dark Elves. His final service was to deliver the last successor to the throne of Sherridon to safety in a neighbouring human Kingdom. His new path… who knows.\n\n",
+        "introduction" : "'What is the point?', thought Fen as he ignored the two men fighting at the bar and took another sip of his ale. He couldn't shake the feeling that he no longer had a purpose. A city full of people and no one even knew who he, or the Stone Guard were anymore. He wasn't even really enjoying the ale and decided it was a good time to leave; the fight was growing and it didn't seem worth getting involved.   As he slipped out into the night he noticed a man wearing a hooded black robe passing the street. As the man approached the alley he turned to look around before entering the darkness. Even in the darkness Fen could tell he was looking at a dark elf, and a suspicious one at that. 'Just because he's a dark elf, doesn't mean he's evil', Fen told himself not for the first time, but something didn't feel right. Something in him felt the need to investigate and with one hand on his short sword, he crept toward the ally.  Upon reaching the alley, he found it empty. 'Quick little devil, must have gone out the other end', he thought. Fen moved quickly down the alley but suddenly he felt dizzy, the darkness seemed to be reaching out to him and before he could react he'd been engulfed by it completely.",
+        "motivation" : "On a bit of a soul searching exercise after the catastrophic events that led to Sherridons downfall. Feels somewhat lost. ",
+        "name" : "Fen Fallstar",
+        "personality" : "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
+      },
+      "inventory" : [ "bandages", "shortsword", "shortbow", "whiskey" ],
+      "level" : 2,
+      "race" : "human"
     },
-    "name": "Steve"
+    "name" : "Steve"
   },
-  "m3pwFglXwmaYIdtHlQhdaTrlz5u1": {
-    "character": {
-      "baseStats": {
-        "agi": 2,
-        "cha": 1,
-        "con": 2,
-        "int": 1,
-        "spi": 3,
-        "str": 3
+  "m3pwFglXwmaYIdtHlQhdaTrlz5u1" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 2,
+        "cha" : 1,
+        "con" : 2,
+        "int" : 1,
+        "spi" : 3,
+        "str" : 3
       },
-      "class": "paladin",
-      "equipment": [
-        "chainarmour",
-        "bastardsword",
-        "ringofmagicaldeflection"
-      ],
-      "experience": 475,
-      "info": {
-        "age": 110,
-        "appearance": "4'8\" Ruairih was tall for a dwarf. Stocky built like a purebred should be with dark reddish hair. He was still relatively young for a dwarf but showing a few scars from the end of the war before the truce had stuck.\n\nRuairih would usually be armed to the teeth with a trusty hammer to guide the way. He always wore his family armour, painted a mix of sapphire blue and the raw iron that showed it's power. ",
-        "background": "Ruairih comes from a long line of dwarf royalty. The Falvond family has been exceptionally powerful for a dwarf family. He'd never be king but he is smart and has seen duty beyond the borders of his families own self interest. \n\nRuairih fought in his youth at end of the war (as we know it). It was a lot to take for a young dwarf but needs must. His family had kept him comfortable, but he had never let himself become complacent and saw a land outside their own that he felt needed more than serving his families self interest.\n\nHe isn't hugely welcome back home. His family expecting him to further their financial interests and consolidating of power but he does enough drinking to forget. ",
-        "introduction": "Ruairih yawned. He’d never liked these events, too many rich dwarfs boasting about how rich they were. However, the ale and wine were flowing so he’d made his appearance.  Ruairih had never really got on with his family, or at least they never got on with him, and only journeyed back to the Iron Mountain from time to time to see how they were. He’d been somewhat disappointed, though unsurprised, to find out nothing had changed and this visit was certainly coming to a swift end. He’d always liked the variety of people in Freeport, and decided to head back there with a batch of Dwarven ale; he knew a tavern owner who would owe him a few favours for it. On immediate return to Freeport, Ruairih stopped by at The Lazy Druid to hand over the gift. “Ruairih my friend! You don’t know how long I’ve waited for this, I owe you big time”, Gregory said with a smile, followed by a pause as the smile was replaced with a frown, “However I must ask you another favour…you see, a close friend of mine, Kevnan, has gone missing, his wife too”. Gregory was almost always jolly, so to see him like this conveyed the seriousness of the matter to Ruairih. “The worst part, they were last seen here, in my tavern!”. After consoling Gregory, Ruairih agreed to help and after some asking around, discovered Kevnan was last seen with his wife and a small child being escorted down the alley opposite the tavern by a dark elf. Upon investigating the alley, Ruairih discovered an open basement entrance to one of the buildings, out of which was pouring the unmistakable (to Ruairih) stench of evil. Feeling more alive than he had in a long time Ruairih slowly stepped into the darkness of the basement. His training as a Paladin had heightened his senses and as he descended into the basement the stench of evil was overwhelming. He wanted to turn back but as he began to, tendrils of darkness began wrapping around his legs. He struggled with all his might but it was not enough, and the darkness quickly engulfed him before he could mutter the holy words of protection.",
-        "motivation": "Coming from money he has never wanted after it. Strange for a dwarf but war had changed him. He's never trusted others and works to earn trade, relationships and arms should the need ever arise and bring the kind of honour he thinks he must earn.\n\nMany taverns across the land know him and the skills he can bring. Loyal to those who know him well.",
-        "name": "Ruairih Falvond",
-        "personality": "Ruairih is always determined and resolute. Always suspicious of men and slow to trust. He's seen many serve their own interests in this war, especially after the truce held. "
+      "class" : "paladin",
+      "equipment" : {
+        "body": "chainarmour",
+        "righthand": "bastardsword",
+        "jewellery": [
+          "ringofmagicaldeflection"
+        ]
       },
-      "inventory": [
-        "bandages"
-      ],
-      "level": 2,
-      "race": "dwarf"
+      "experience" : 625,
+      "gold" : 23,
+      "info" : {
+        "age" : 110,
+        "appearance" : "4'8\" Ruairih was tall for a dwarf. Stocky built like a purebred should be with dark reddish hair. He was still relatively young for a dwarf but showing a few scars from the end of the war before the truce had stuck.\n\nRuairih would usually be armed to the teeth with a trusty hammer to guide the way. He always wore his family armour, painted a mix of sapphire blue and the raw iron that showed it's power. ",
+        "background" : "Ruairih comes from a long line of dwarf royalty. The Falvond family has been exceptionally powerful for a dwarf family. He'd never be king but he is smart and has seen duty beyond the borders of his families own self interest. \n\nRuairih fought in his youth at end of the war (as we know it). It was a lot to take for a young dwarf but needs must. His family had kept him comfortable, but he had never let himself become complacent and saw a land outside their own that he felt needed more than serving his families self interest.\n\nHe isn't hugely welcome back home. His family expecting him to further their financial interests and consolidating of power but he does enough drinking to forget. ",
+        "introduction" : "Ruairih yawned. He’d never liked these events, too many rich dwarfs boasting about how rich they were. However, the ale and wine were flowing so he’d made his appearance.  Ruairih had never really got on with his family, or at least they never got on with him, and only journeyed back to the Iron Mountain from time to time to see how they were. He’d been somewhat disappointed, though unsurprised, to find out nothing had changed and this visit was certainly coming to a swift end. He’d always liked the variety of people in Freeport, and decided to head back there with a batch of Dwarven ale; he knew a tavern owner who would owe him a few favours for it. On immediate return to Freeport, Ruairih stopped by at The Lazy Druid to hand over the gift. “Ruairih my friend! You don’t know how long I’ve waited for this, I owe you big time”, Gregory said with a smile, followed by a pause as the smile was replaced with a frown, “However I must ask you another favour…you see, a close friend of mine, Kevnan, has gone missing, his wife too”. Gregory was almost always jolly, so to see him like this conveyed the seriousness of the matter to Ruairih. “The worst part, they were last seen here, in my tavern!”. After consoling Gregory, Ruairih agreed to help and after some asking around, discovered Kevnan was last seen with his wife and a small child being escorted down the alley opposite the tavern by a dark elf. Upon investigating the alley, Ruairih discovered an open basement entrance to one of the buildings, out of which was pouring the unmistakable (to Ruairih) stench of evil. Feeling more alive than he had in a long time Ruairih slowly stepped into the darkness of the basement. His training as a Paladin had heightened his senses and as he descended into the basement the stench of evil was overwhelming. He wanted to turn back but as he began to, tendrils of darkness began wrapping around his legs. He struggled with all his might but it was not enough, and the darkness quickly engulfed him before he could mutter the holy words of protection.",
+        "motivation" : "Coming from money he has never wanted after it. Strange for a dwarf but war had changed him. He's never trusted others and works to earn trade, relationships and arms should the need ever arise and bring the kind of honour he thinks he must earn.\n\nMany taverns across the land know him and the skills he can bring. Loyal to those who know him well.",
+        "name" : "Ruairih Falvond",
+        "personality" : "Ruairih is always determined and resolute. Always suspicious of men and slow to trust. He's seen many serve their own interests in this war, especially after the truce held. "
+      },
+      "inventory" : [ "bandages" ],
+      "level" : 2,
+      "race" : "dwarf"
     },
-    "name": "Pete"
+    "name" : "Pete"
   }
 }

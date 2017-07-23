@@ -9,7 +9,7 @@ import * as firebase from "firebase/app";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
-import {Equipment} from "../../rules/equipment/equipment";
+import {Item} from "../../rules/equipment/equipment";
 
 @Component({
   selector: 'app-classes',
@@ -22,7 +22,7 @@ export class CharacterClassComponent implements OnInit {
 
   classes: FirebaseListObservable<Class[]>;
   selectedClass: Class;
-  equipment: Equipment[];
+  equipment: Item[];
 
   constructor(private afAuth: AngularFireAuth,
               private characterService: CharacterService,

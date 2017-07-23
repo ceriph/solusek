@@ -38,6 +38,8 @@ import {PlayerService} from "./players/player.service";
 import {SummaryStatComponent} from './character/summary/summary-stat/summary-stat.component';
 import {SkillCardComponent} from "./rules/skills/skill-card.component";
 import {SummaryCheckComponent} from './character/summary/summary-check/summary-check.component';
+import { SummaryEquipmentComponent } from './character/summary/summary-equipment/summary-equipment.component';
+import { ItemCardComponent } from './rules/equipment/item-card/item-card.component';
 
 @NgModule({
   imports: [
@@ -67,7 +69,9 @@ import {SummaryCheckComponent} from './character/summary/summary-check/summary-c
     CustomScroll,
     SkillCardComponent,
     SummaryStatComponent,
-    SummaryCheckComponent
+    SummaryCheckComponent,
+    SummaryEquipmentComponent,
+    ItemCardComponent
   ],
   providers: [
     PlayerService,

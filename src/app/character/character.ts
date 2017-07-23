@@ -13,12 +13,22 @@ export class Character {
   info: Info;
   modifiers: Modifier[];
   skills: ClassSkill[];
-  equipment: string[];
+  equipment: Equipment;
   inventory: string[];
   primaryStats: PrimaryStats; // calculated by statService
   secondaryStats: SecondaryStats; // calculated by statService
   checks: Checks;
   saves: Saves;
+}
+
+export class Equipment {
+  head: string;
+  body: string;
+  feet: string;
+  hands: string;
+  jewellery: string[];
+  lefthand: string;
+  righthand: string;
 }
 
 export class Checks {

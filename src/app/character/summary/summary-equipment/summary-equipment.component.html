@@ -1,0 +1,7 @@
+<item-card class="card" *ngIf="equipment.head" [itemName]="equipment.head"></item-card>
+<item-card class="card" *ngIf="equipment.body" [itemName]="equipment.body"></item-card>
+<item-card class="card" *ngIf="equipment.feet" [itemName]="equipment.feet"></item-card>
+<item-card class="card" *ngIf="equipment.hands" [itemName]="equipment.hands"></item-card>
+<item-card class="card" *ngIf="equipment.lefthand" [itemName]="equipment.lefthand"></item-card>
+<item-card class="card" *ngIf="equipment.righthand" [itemName]="equipment.righthand"></item-card>
+<item-card class="card" *ngFor="let item of equipment.jewellery" [itemName]="item"></item-card>
