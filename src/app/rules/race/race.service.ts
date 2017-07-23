@@ -6,7 +6,7 @@ import {Race} from "./race";
 @Injectable()
 export class RaceService {
 
-  path = 'races';
+  path = 'rules/races';
 
   constructor(private db: AngularFireDatabase) {}
 

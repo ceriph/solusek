@@ -6,7 +6,7 @@ import {Class} from "./class";
 @Injectable()
 export class ClassService {
 
-  path = 'classes';
+  path = 'rules/classes';
 
   constructor(private db: AngularFireDatabase) {}
 

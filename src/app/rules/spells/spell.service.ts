@@ -1,11 +1,11 @@
-import {Injectable, OnInit} from "@angular/core";
+import {Injectable} from "@angular/core";
 import {AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
 import {Spell, SpellGroup} from "./spell";
 
 @Injectable()
 export class SpellService {
 
-  path = "spells";
+  path = "rules/spells";
 
   constructor(private db: AngularFireDatabase) {}
 

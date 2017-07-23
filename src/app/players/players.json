@@ -178,7 +178,7 @@
         "name" : "Fen Fallstar",
         "personality" : "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
       },
-      "inventory" : [ "bandages", "shortsword", "shortbow", "whiskey" ],
+      "inventory" : [ "bandages", "shortsword", "shortbow", "whiskey", "sackoftrinkets" ],
       "level" : 2,
       "race" : "human"
     },

@@ -457,5 +457,9 @@
   "largeironkey": {
     "label": "Large Iron Key",
     "desc": "Found in the Black residence."
+  },
+  "sackoftrinkets": {
+    "label": "Sack of Trinkets",
+    "desc": "A collection of ornaments that look relatively valuable."
   }
 }

@@ -1,7 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from "@angular/core";
 import {Item} from "../equipment";
 import {EquipmentService} from "../equipment.service";
-import {FirebaseObjectObservable} from "angularfire2/database";
 
 @Component({
   selector: 'item-card',
@@ -21,5 +20,4 @@ export class ItemCardComponent implements OnInit {
   ngOnInit() {
     this.equipmentService.get(this.itemName).subscribe(item => this.item = item);
   }
-
 }

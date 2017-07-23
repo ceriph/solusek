@@ -5,7 +5,7 @@ import {Item, ItemType} from "./equipment";
 @Injectable()
 export class EquipmentService {
 
-  path = 'equipment';
+  path = 'rules/equipment';
 
   constructor(private db: AngularFireDatabase) {}
 
@@ -14,7 +14,7 @@ export class EquipmentService {
   }
 
   listByType(type: ItemType): FirebaseListObservable<Item[]> {
-    let typeString = ItemType[type].toLowerCase(); // crazy typescript enums!
+    const typeString = ItemType[type].toLowerCase(); // crazy typescript enums!
     console.log("Searching for equipment with type:", typeString);
     return this.db.list(this.path, {
         query: {

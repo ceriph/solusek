@@ -5,7 +5,7 @@ import {Skill} from "./skill";
 @Injectable()
 export class SkillService {
 
-  path = "skills";
+  path = "rules/skills";
 
   constructor(private db: AngularFireDatabase) {}
 

@@ -5,15 +5,16 @@ import {Rule} from "./rule";
 @Injectable()
 export class RulesService {
 
-  path = "rules";
+  path = "rules/rules";
 
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private db: AngularFireDatabase) {
+  }
 
   list(): FirebaseListObservable<Rule[]> {
     return this.db.list(this.path);
   }
 
-  get(name):FirebaseObjectObservable<Rule> {
+  get(name): FirebaseObjectObservable<Rule> {
     return this.db.object(this.path + "/" + name);
   }
 }
