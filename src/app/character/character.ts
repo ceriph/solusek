@@ -27,7 +27,7 @@ export class Checks {
   lockpicking: number = 0;
   perception: number = 0;
   persuasion: number = 0;
-  pickpocketing: number = 0;
+  thievery: number = 0;
   stealth: number = 0;
 }
 

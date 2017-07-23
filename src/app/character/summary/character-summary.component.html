@@ -4,6 +4,17 @@
 </div>
 
 <div *ngIf="character">
+  <div class="box fill center">
+    <h2 class="title">{{character.info.name}}</h2>
+    <p class="info" *ngIf="clazz">Level {{character.level}} <span *ngIf="race">{{race.label}}</span> <span
+      *ngIf="clazz">{{clazz.label}}</span></p>
+    <p class="info" *ngIf="clazz"><b>Proficiencies:</b> {{clazz.proficiencies}}</p>
+    <div class="wrapper">
+      <span class="inline"><b>Experience:</b> {{character.experience}}</span>
+      <span class="inline"><b>Gold:</b> {{character.gold}}</span>
+    </div>
+  </div>
+
   <div class="box fill" *ngIf="character.primaryStats">
     <h2 class="title">Primary Stats</h2>
     <div class="stats">
@@ -40,12 +51,10 @@
         <summary-check [checks]="character.checks" [check]="'investigation'"
                        [display]="'Investigation'"></summary-check>
         <summary-check [checks]="character.checks" [check]="'knowledge'" [display]="'Knowledge'"></summary-check>
-        <summary-check [checks]="character.checks" [check]="'lockpicking'" [display]="'Lockpicking'"></summary-check>
-        <summary-check [checks]="character.checks" [check]="'pickpocketing'"
-                       [display]="'Pickpocketing'"></summary-check>
         <summary-check [checks]="character.checks" [check]="'perception'" [display]="'Perception'"></summary-check>
         <summary-check [checks]="character.checks" [check]="'persuasion'" [display]="'Persuasion'"></summary-check>
         <summary-check [checks]="character.checks" [check]="'stealth'" [display]="'Stealth'"></summary-check>
+        <summary-check [checks]="character.checks" [check]="'thievery'" [display]="'Thievery'"></summary-check>
       </div>
       <div class="checks">
         <h2 class="title">Saving Throws</h2>
@@ -57,17 +66,6 @@
         <summary-check [checks]="character.saves" [check]="'cha'"></summary-check>
       </div>
     </div>
-  </div>
-
-  <div class="box fill center">
-    <h2>{{character.info.name}}</h2>
-    <p><b>Age:</b> {{character.info.age}}</p>
-    <p *ngIf="race"><b>Race:</b> {{race.label}}</p>
-    <p *ngIf="clazz"><b>Class:</b> {{clazz.label}}</p>
-    <p *ngIf="clazz"><b>Proficiencies:</b> {{clazz.proficiencies}}</p>
-    <p><b>Level:</b> {{character.level}}</p>
-    <p><b>Experience:</b> {{character.experience}}</p>
-    <p><b>Gold:</b> {{character.gold}}</p>
   </div>
 
   <div class="box fill">

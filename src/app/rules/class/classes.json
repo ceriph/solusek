@@ -111,15 +111,69 @@
     "archetypes": [
       {
         "label": "Oath of Justice",
-        "desc": "You make a sacred oath to protective innocents and pursue justice for all."
+        "desc": "You make a sacred oath to protect innocents and pursue justice for all.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "truthbringer"
+          },
+          {
+            "level": 7,
+            "name": "vowofpeace"
+          },
+          {
+            "level": 11,
+            "name": "protect"
+          },
+          {
+            "level": 15,
+            "name": "improvedlayonhands"
+          }
+        ]
       },
       {
         "label": "Oath of Treachery",
-        "desc": "You make a sacred oath only to yourself, vowing to pursue only what suits you."
+        "desc": "You make a sacred oath only to yourself, vowing to pursue only what suits you.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "deceiver"
+          },
+          {
+            "level": 7,
+            "name": "vowofgreed"
+          },
+          {
+            "level": 11,
+            "name": "defensive"
+          },
+          {
+            "level": 15,
+            "name": "shadowcaller"
+          }
+        ]
       },
       {
         "label": "Oath of Vengeance",
-        "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary."
+        "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "bloodfury"
+          },
+          {
+            "level": 7,
+            "name": "vowofenmity"
+          },
+          {
+            "level": 11,
+            "name": "whirlwind"
+          },
+          {
+            "level": 15,
+            "name": "executioner"
+          }
+        ]
       }
     ],
     "skills": [
@@ -204,16 +258,70 @@
     "recommendations": "Constitution, Strength, Spirit",
     "archetypes": [
       {
+        "label": "Beastmaster",
+        "desc": "You focus your training on the control of animals.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "animalcompanion"
+          },
+          {
+            "level": 7,
+            "name": "sharedmind"
+          },
+          {
+            "level": 11,
+            "name": "enrage"
+          },
+          {
+            "level": 15,
+            "name": "sharedbody"
+          }
+        ]
+      },
+      {
         "label": "Hunter",
-        "desc": "You focus your training on your perception and ranged weapon skills."
+        "desc": "You focus your training on your perception and archery skills.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "huntersmark"
+          },
+          {
+            "level": 7,
+            "name": "evasion"
+          },
+          {
+            "level": 11,
+            "name": "volley"
+          },
+          {
+            "level": 15,
+            "name": "longshot"
+          }
+        ]
       },
       {
         "label": "Warden",
-        "desc": "You focus your training on your melee fighting skills.<br /><br /><b>DUAL WIELDING</b><br /> Starting at level 3, you may use your <b>Bonus Action</b> to make an attack with a <b>small</b> weapon in your offhand.<br /><br /><b>ADVANCE</b><br /> Starting at level 7, you may use your <b>Bonus Action</b> to move up to half your speed.<br /><br /><b>WHIRLWIND</b><br /> Starting at level 12, you can make a melee attack against any number of creatures within range."
-      },
-      {
-        "label": "Warg",
-        "desc": "You focus your training on your attunement to nature.<br /><br /><b>ANIMAL COMPANION</b><br /> Starting at level 3, you may choose a permanent animal companion (Hawk - agile - flying, Wolf - strong - extra attack, Panther - agile - stealthy, Bear - strong -armoured). <br/> The animal is under your control at all times and has stats equal to a character of your level-2, dependant on the chosen animal type.<br /><br /><b>SHARED MIND</b><br />Starting at level 7, you may transfer your consciousness into your animal companion, controlling it directly for 1 hour. You must take a short/long rest before doing this again.<br /><br /><b>ENRAGE</b><br /> Starting at level 12, you can spend a bonus action to enrage you and your animal companion. You both gain: 2d6+SPI temporary health, and the next attack each of you makes gains advantage."
+        "desc": "You focus your training on your melee combat skills.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "dualwielding"
+          },
+          {
+            "level": 7,
+            "name": "defensive"
+          },
+          {
+            "level": 11,
+            "name": "whirlwind"
+          },
+          {
+            "level": 15,
+            "name": "advance"
+          }
+        ]
       }
     ],
     "skills": [
@@ -267,7 +375,7 @@
       },
       {
         "level": 12,
-        "name": "TODO"
+        "name": "eagleeye"
       },
       {
         "level": 14,
@@ -283,7 +391,7 @@
       },
       {
         "level": 20,
-        "name": "TODO"
+        "name": "quickshot"
       }
     ]
   },
@@ -507,16 +615,70 @@
     "recommendations": "Intelligence, Agility, Constitution",
     "archetypes": [
       {
-        "label": "Archmage",
-        "desc": "You focus your training on the elements.<br /><br /><b>QUICKCAST</b> Starting at level 3, any non-evocation spell that previously cost an <b>Action</b> now only takes a <b>Bonus Action</b>.<br /><br /><b>MULTICAST</b><br /><br />Starting at level 7, after spending an <b>Action</b> to cast an evocation spell, you may spend your <b>Bonus Action</b> to cast that same spell again. This does not require or consume a spell slot.<br /><br /><b>ARCANE TORRENT</b><br />Starting at level 12, your arcane missiles do 2d4 damage and can no longer be <b>Dodged</b>."
+        "label": "Arcanist",
+        "desc": "You focus your training on the pure control of arcane energy.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "areacontrol"
+          },
+          {
+            "level": 7,
+            "name": "imbueelement"
+          },
+          {
+            "level": 11,
+            "name": "arcanetorrent"
+          },
+          {
+            "level": 15,
+            "name": "multicast"
+          }
+        ]
       },
       {
         "label": "Battlemage",
-        "desc": "You focus your training on your melee fighting skills.<br /><br /><b>ARMOURED</b><br />Starting at level 3, you gain proficiency in <b>Light</b>, <b>Medium</b>, and <b>Heavy</b> Armour.<br /><br /><b>ARCANE TOUGHNESS</b><br />Starting at level 7, you gain 5 maximum <b>Health</b> per level.<br /><br /><b>ARCANE FLURRY</b><br />Starting at level 12, you gain <b>Extra Attack</b> when wielding a conjured magic weapon."
+        "desc": "You focus your training on close combat.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "armoured"
+          },
+          {
+            "level": 7,
+            "name": "arcaneswordsman"
+          },
+          {
+            "level": 11,
+            "name": "arcaneshield"
+          },
+          {
+            "level": 15,
+            "name": "protect"
+          }
+        ]
       },
       {
         "label": "Summoner",
-        "desc": "You focus your training on conjuration.<br /><br /><b>FAMILIAR</b><br />Starting at level 3, you gain a Drakeling familiar. The familiar shares stats with you  The wizard's familiar now has it's own stats (TODO) and can be re-summoned during a long rest if it dies. All other summoned creatures also gain 1 armour, 1 magic reduction, +2 attack and 1d8 damage."
+        "desc": "You focus your training on conjuration.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "elementalfamiliar"
+          },
+          {
+            "level": 7,
+            "name": "prodigy"
+          },
+          {
+            "level": 11,
+            "name": "detonate"
+          },
+          {
+            "level": 15,
+            "name": "arcaneelemental"
+          }
+        ]
       }
     ],
     "skills": [
@@ -575,10 +737,6 @@
       {
         "level": 16,
         "name": "arcane5"
-      },
-      {
-        "level": 18,
-        "name": "TODO"
       },
       {
         "level": 20,

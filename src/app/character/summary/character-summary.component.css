@@ -38,3 +38,18 @@ summary-stat + summary-stat {
 .border-right {
   border-right: 1px solid #EEE;
 }
+
+.info {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.inline + .inline {
+  padding-right: 10px;
+  border-right: 1px solid #EEE;
+  padding-left: 10px;
+}

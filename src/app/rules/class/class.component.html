@@ -14,7 +14,6 @@
   </div>
   <h2>Skills</h2>
   <skill-card *ngFor="let skill of clazz.skills" [classSkill]="skill"></skill-card>
-  <p *ngIf="clazz.other" [innerHtml]="clazz.other"></p>
   <h1>Archetypes</h1>
   <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
   <div *ngFor="let archetype of clazz.archetypes">

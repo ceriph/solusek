@@ -19,7 +19,7 @@
           {
             "label": "Telekinesis",
             "school": "Alteration",
-            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an INT <b>Saving Throw</b> or be lifted for one round."
+            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an <b>Intelligence</b> <b>Saving Throw</b> or be lifted for one round."
           },
           {
             "label": "Summon Light",
@@ -29,7 +29,7 @@
           {
             "label": "Arcane Missiles",
             "school": "Evocation",
-            "desc": "Fires a number of missiles equal to INT, each missile hitting random nearby enemies for <b>1d4 arcane damage</b>."
+            "desc": "Fires a number of missiles equal to <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 arcane damage</b>."
           },
           {
             "label": "Burning Hands",
@@ -79,17 +79,22 @@
           {
             "label": "Frost Nova",
             "school": "Evocation",
-            "desc": "All creatures within 2m of you must make an AGI <b>Saving Throw</b>, if they fail they take <b>1d8+INT ice damage</b> and are <b>Rooted</b>. On success they only take half damage."
+            "desc": "All creatures within 2m of you must make an <b>Agility</b> <b>Saving Throw</b>, if they fail they take <b>1d8+INT ice damage</b> and are <b>Rooted</b>. On success they only take half damage."
+          },
+          {
+            "label": "Icebolt",
+            "school": "Evocation",
+            "desc": "Make a spell attack on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>."
           },
           {
             "label": "Fireball",
             "school": "Evocation",
-            "desc": "Attack INT vs dodge on a target within 10m and all characters within 1m of the target. On hit deals <b>2d4+INT fire damage</b>."
+            "desc": "Choose an area 3mx3m within 10m. All characters within the area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>2d8+INT Fire damage</b>. On success they take half damage."
           },
           {
             "label": "Invisibility",
             "school": "Illusion",
-            "desc": "Your target magically vanishes from sight for 1d4+INT rounds/minutes. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
+            "desc": "Your target magically vanishes from sight for 1d4+INT minutes. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
           }
         ]
       },
@@ -109,7 +114,7 @@
           {
             "label": "Dimensional Door",
             "school": "Conjuration",
-            "desc": "The caster creates a dimensional hole in a wall or door for INT minutes, allowing him to pass through it temporarily. The hole can be dismissed by the caster at any time."
+            "desc": "The caster creates a dimensional hole in a wall or door for <b>Intelligence</b> minutes, allowing him to pass through it temporarily. The hole can be dismissed by the caster at any time."
           },
           {
             "label": "Summon Elemental",
@@ -139,17 +144,12 @@
           {
             "label": "Icy Grasp",
             "school": "Evocation",
-            "desc": "Attack INT vs INT on enemy target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>rooted</b>."
-          },
-          {
-            "label": "Black Death",
-            "school": "Evocation",
-            "desc": "Summon tendrils of black smoke to damage and hold your opponent. Attack INT vs Dodge on enemy target within 10m. On hit deals <b>1d6+INT dark damage</b> and the target is <b>grappled</b> with a strength of 10+INT. Each round the target must make STR saving throw or continue to be <b>grappled</b> and take 1d6 damage."
+            "desc": " Make a spell attack on a target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>Rooted</b>."
           },
           {
             "label": "Mirror Image",
             "school": "Illusion",
-            "desc": "Create INT identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+            "desc": "Create <b>Intelligence</b> identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
           }
         ]
       },
@@ -184,17 +184,17 @@
           {
             "label": "Blizzard",
             "school": "Evocation",
-            "desc": "Rain ice at a target location of size 3mx3m, attacking INT vs dodge on all creatures within the area now and at the start of your next turn. On hit deals <b>1d8+INT ice damage</b>."
+            "desc": "Choose a target area of size 3m x 3m within 10m, summoning a storm for up to 1 minute (requires concentration). All creatures within that area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>3d8+INT ice damage</b>. On save success it does half damage."
           },
           {
             "label": "Chain Lightning",
             "school": "Evocation",
-            "desc": "Attack INT vs dodge on a enemy target within 10m, on hit that character takes <b>2d8+INT arcane damage</b>. The lightning then bounces to up to 3 other enemy targets in distance order. Each enemy can only be hit once byt the chain."
+            "desc": "Make a spell attack on a creature within 10m. On hit the creature takes <b>3d8+INT arcane damage</b>. The lightning then bounces to up to 3 other enemy targets, making a spell attack on each and doing <b>2d8 Arcane damage</b>. If one of the attacks misses then the chain ends."
           },
           {
             "label": "Blur",
             "school": "Illusion",
-            "desc": "The target becomes a blurred image, causing all attacking characters to roll with disadvantage until the casters next turn."
+            "desc": "Choose a target friendly character, that character becomes a blurred image for 1 minute, causing all attacking characters to roll with disadvantage when attacking that character."
           }
         ]
       },
@@ -224,17 +224,17 @@
           {
             "label": "Arcane Sword",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 3 rounds. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
+            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 1 minute. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
           },
           {
             "label": "Disintegrate",
             "school": "Evocation",
-            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Attack INT vs INT on each character in the line, dealing <b>3d8+INT arcane damage</b> to any creatures in it's path."
+            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an AGi <b>Saving Throw</b> or take <b>4d8+INT Arcane damage</b>."
           },
           {
             "label": "Call Meteor",
             "school": "Evocation",
-            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area take <b>4d6+INT fire damage</b>."
+            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area take <b>5d8+INT Fire damage</b>."
           }
         ]
       }
@@ -274,12 +274,12 @@
           {
             "label": "Weaken Evil",
             "school": "Alteration",
-            "desc": "Attack SPI vs SPI on target undead or demon, on hit the target suffers -1d4 STR"
+            "desc": "All undead or demons within earshot must make a <b>Spirit</b> <b>Saving Throw</b>, on failure they are weakened, forcing their next attack roll to be made with <b>Disadvantage</b>"
           },
           {
             "label": "Holy Bolt",
             "school": "Evocation",
-            "desc": "Attack SPI vs dodge, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
+            "desc": "Make a spell attack vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
           }
         ]
       },
@@ -297,6 +297,11 @@
             "desc": "Mark a friendly target with a holy symbol, granting them <b>1d6+SPI temporary health</b>."
           },
           {
+            "label": "Calm",
+            "school": "Abjuration",
+            "desc": "Calms a friendly target for 1 hour, they now roll with <b>Advantage</b> on any <b>Saving Throw</b>s."
+          },
+          {
             "label": "Cure Disease",
             "school": "Alteration",
             "desc": "Purge any disease from the target character."
@@ -309,12 +314,12 @@
           {
             "label": "Turn Undead",
             "school": "Evocation",
-            "desc": "Attack SPI vs SPI on a target undead. Deals 1d8+SPI light damage and the target is stunned."
+            "desc": "A target undead within 10m must make a <b>Spirit</b> <b>Saving Throw</b>. On save failure deals 2d8+SPI light damage and the target is stunned. On success it just deals half damage."
           },
           {
             "label": "Beam of Light",
             "school": "Evocation",
-            "desc": "Attack SPI vs SPI, on hit the target is hit with a beam of light from above dealing 1d8+SPI damage now and at the start of their next turn."
+            "desc": "Make a spell attack on a target and any targets in a line, on hit deals 2d8+SPI Light damage to each target in the line."
           }
         ]
       },
@@ -324,7 +329,7 @@
           {
             "label": "Resistance",
             "school": "Abjuration",
-            "desc": "Pick one type of damage (physical, arcane, fire, cold, mind, light, dark or poison). That character now has resistance to that type of damage (takes half damage)."
+            "desc": "Pick one type of damage (physical, arcane, fire, cold, mind, light, dark or poison). That character now has <b>Resistance</b> to that type of damage (takes half damage)."
           },
           {
             "label": "Greater Healing",
@@ -334,7 +339,7 @@
           {
             "label": "Circle of Healing",
             "school": "Alteration",
-            "desc": "All friendly characters within 1m are healed for 1d8+SPI health."
+            "desc": "All friendly characters within 2m are healed for 1d8+SPI health."
           },
           {
             "label": "Blessing",
@@ -347,9 +352,9 @@
             "desc": "Purge any single negative condition from the target."
           },
           {
-            "label": "Equalizing Light",
-            "school": "Evocation",
-            "desc": "Creates a blast of holy energy at a target area of size 3mx3m, attack SPI vs SPI on each enemy target in the area. On hit deals <b>1d6+SPI light damage</b>. Heals all friendly characters in the blast for <b>1d6+SPI health</b>."
+            "label": "Bountiful Light",
+            "school": "Alteration",
+            "desc": "All allies within 5m are blessed with light for 1 hour. Any heals on them now heal for the full die amount and do not need to be rolled."
           }
         ]
       },
@@ -364,7 +369,7 @@
           {
             "label": "Revive",
             "school": "Alteration",
-            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character died before the last short or long rest, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
+            "desc": "Make a <b>Spirit</b> <b>Saving Throw</b> vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character died before the last short or long rest, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Greater Protection",
@@ -379,7 +384,7 @@
           {
             "label": "Holy Word",
             "school": "Evocation",
-            "desc": "Attack SPI vs SPI on all enemies within earshot, on hit they take <b>2d4+INT light damage</b>. Deals an additional 1d8 to undead or demons."
+            "desc": "All enemies within earshot must make a <b>Spirit</b> <b>Saving Throw</b>. On a failed save they take <b>4d8+SPI Light damage</b>. Deals an additional 1d8 to undead or demons."
           }
         ]
       },
@@ -394,12 +399,12 @@
           {
             "label": "Resurrect",
             "school": "Alteration",
-            "desc": "Make a SPI saving throw vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character has been dead for longer than 1 year, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
+            "desc": "Make a <b>Spirit</b> <b>Saving Throw</b> vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character has been dead for longer than 1 year, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Angel's Fury",
             "school": "Evocation",
-            "desc": "Attack SPI vs SPI on target enemy within 10m, deals 2d8+SPI light damage. Does an additional 1d6+SPI damage to demons and undead."
+            "desc": "Make a spell attack on a target enemy within 10m, deals 5d8+SPI light damage. Does an additional 2d8 damage to demons and undead."
           },
           {
             "label": "Marr's Vengeance",
@@ -409,7 +414,7 @@
           {
             "label": "Spirit Guardians",
             "school": "Conjuration",
-            "desc": "Summon 2 protective spirits around yourself. Each spirit will block one source of damage before disappearing."
+            "desc": "Summon 3 protective spirits around yourself which each add 1 to your dodge. When you take damage 1 spirit is removed."
           }
         ]
       }
@@ -425,22 +430,22 @@
           {
             "label": "Strength of the Bear",
             "school": "Alteration",
-            "desc": "Grant a friendly target SPI strength for their check or attack."
+            "desc": "Grant a friendly target additional <b>Strength</b> equal to your <b>Spirit</b> for their next check or attack."
           },
           {
             "label": "Camouflage",
             "school": "Alteration",
-            "desc": "The caster blends into the wilderness, becoming invisible for 1d4+SPI rounds. Only works outdoors. Making any aggressive action removes it."
+            "desc": "The caster blends into the wilderness, becoming invisible for 1 hour. Only works outdoors. Making any aggressive action removes it."
           },
           {
             "label": "Ensnaring Roots",
             "school": "Conjuration",
-            "desc": "Attack SPI vs dodge, on hit deals <b>1d4+SPI damage</b> and the target is <b>snared</b> for 3 rounds."
+            "desc": "Choose an enemy within 10m, that creature must make a <b>Strength</b> <b>Saving Throw</b> or be wrapped with small roots causing <b>1d4+SPI Blunt damage</b> and <b>Snaring</b> them. They must attempt the saving throw each turn to see if they break free."
           },
           {
             "label": "Call Lightning",
             "school": "Evocation",
-            "desc": "Attack SPI vs SPI on target, on hit the target suffers <b>1d4+SPI nature damage</b> and is stunned."
+            "desc": "Make a spell attack on a target within 10m, on hit the target suffers <b>1d4+SPI Fire damage</b> and is <b>Stunned</b>."
           }
         ]
       },
@@ -455,17 +460,17 @@
           {
             "label": "Skin Like Wood",
             "school": "Alteration",
-            "desc": "Grant a friendly target 1 <b>armour</b> and 1 <b>magic reduction</b>."
+            "desc": "Grant a friendly target 1 <b>armour</b> and 1 <b>magic reduction</b> for 1 minute."
           },
           {
             "label": "Eyes of the Hawk",
             "school": "Alteration",
-            "desc": "Grant a friendly target SPI attack on their next turn."
+            "desc": "Grant a friendly target <b>Spirit</b> attack on their next turn."
           },
           {
             "label": "Thorny Vines",
             "school": "Conjuration",
-            "desc": "Attack SPI vs SPI, on hit wraps the target in vines for 3 rounds, rooting and <b>1d4+SPI damage</b> at the start of it's turn."
+            "desc": "Choose a target within 10m to make a <b>Strength</b> <b>Saving Throw</b>, on failure they are wrapped in vines for 3 rounds, rooting and dealing <b>1d4+SPI damage</b> at the start of it's turn until they break free."
           },
           {
             "label": "Call Animal",
@@ -475,12 +480,12 @@
           {
             "label": "Call Hurricane",
             "school": "Evocation",
-            "desc": "Attack SPI vs dodge on all creates in a 3mx3m area, on hit deals 1d8+SPI damage and the targets are <b>knocked down</b>."
+            "desc": "Choose a target area 3m x 3m within range. All creatures in that range must make an <b>Agility</b> <b>Saving Throw</b> or take <b>2d8+SPI Blunt damage</b> and be <b>knocked down</b>."
           },
           {
             "label": "Spider Form",
             "school": "Illusion",
-            "desc": "Take the form of a small spider for 1d4+SPI rounds/minutes. While in spider form the caster is considered basically invisible."
+            "desc": "Take the form of a small spider for 1 hour. While in spider form the caster is considered basically invisible."
           }
         ]
       },
@@ -490,27 +495,27 @@
           {
             "label": "Speed of the Cheetah",
             "school": "Alteration",
-            "desc": "Grant a friendly target SPI Agility for their next turn."
+            "desc": "Grant a friendly target Agility equal to your <b>Spirit</b> for 1 minute."
           },
           {
             "label": "Skin Like Rock",
             "school": "Alteration",
-            "desc": "Grant a friendly target 4 armour and 4 magic reduction, however they are also <b>snared</b>."
+            "desc": "Grant a friendly target 4 armour and 4 magic reduction for 1 minute, however they are also <b>Snared</b>."
           },
           {
             "label": "Summon Wind",
             "school": "Alteration",
-            "desc": "Call on the winds to help you levitate off the ground for 1d4+SPI rounds."
+            "desc": "Call on the winds to help you levitate off the ground for 1 hour."
           },
           {
             "label": "Charm Animal",
             "school": "Illusion",
-            "desc": "Attack SPI vs SPI on a target animal, if it hits, the animal is charmed next round."
+            "desc": "Choose an animal within range to make a <b>Charisma</b> <b>Saving Throw</b>. On failure animal is <b>Charmed</b>. The creature rolls with <b>advantage</b> if it is in combat."
           },
           {
             "label": "Bird Form",
             "school": "Illusion",
-            "desc": "Take the form of a small bird for 1d4+SPI rounds/minutes. While in bird form the caster can fly."
+            "desc": "Take the form of a small bird for 1 hour. While in bird form the caster can fly."
           }
         ]
       },
@@ -525,17 +530,17 @@
           {
             "label": "Skin Like Steel",
             "school": "Alteration",
-            "desc": "Grant a friendly target 6 armour and 6 magic reduction, however they are also <b>snared</b>."
+            "desc": "Grant a friendly target 6 armour and 6 magic reduction for 1 minute, however they are also <b>snared</b>."
           },
           {
             "label": "Poison Cloud",
             "school": "Evocation",
-            "desc": "Summon a cloud of poison at a target area of size 3mx3m of strength 1d20+SPI, all characters in the area must make a saving throw each turn or be damaged by the poison for 1d4+SPI nature damage."
+            "desc": "Summon a cloud of poison at a target area of size 3m x 3m. All characters in the area must make a <b>Constitution</b> <b>Saving Throw</b> now and at the start of their turn or take <b>2d8+SPI Poison damage</b>."
           },
           {
             "label": "Wolf Form",
             "school": "Illusion",
-            "desc": "Take the form of a large wolf for 1 hour. While in wolf form the caster gains a +2 to STR, AGI and <b>Haste</b>, rolls 1d8+STR for melee attack damage, and gains <b>Extra Attack</b>."
+            "desc": "Take the form of a large wolf for 1 hour. While in wolf form the caster gains a +3 to <b>Strength</b> and <b>Agility</b>, has <b>Haste</b>, and rolls 1d8+STR for melee attack damage."
           }
         ]
       },
@@ -555,7 +560,12 @@
           {
             "label": "Tree Form",
             "school": "Illusion",
-            "desc": "Take the form of a large tree for 1 hour. While in tree form the caster cannot move, but can still cast spells and gains <b>Resistance</b> to all damage."
+            "desc": "Take the form of a large tree for 1 hour. While in tree form the caster cannot move, but can still cast spells and gains <b>Resistance</b> to all damage types."
+          },
+          {
+            "label": "Thunderstorm",
+            "school": "Evocation",
+            "desc": "Choose an area 3m x 3m within range, all creatures within that area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>5d8+SPI Fire damage</b>. On save success they take half damage."
           }
         ]
       }

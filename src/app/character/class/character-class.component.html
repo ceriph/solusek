@@ -14,11 +14,12 @@
   </div>
   <h2>Skills</h2>
   <skill-card *ngFor="let skill of selectedClass.skills" [classSkill]="skill"></skill-card>
-  <h2>Archetypes</h2>
-  <p>Selectable at level 10.</p>
+  <h1>Archetypes</h1>
+  <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
   <div *ngFor="let archetype of selectedClass.archetypes">
-    <h3>{{archetype.label}}</h3>
+    <h2>{{archetype.label}}</h2>
     <p [innerHtml]="archetype.desc"></p>
+    <skill-card *ngFor="let skill of archetype.skills" [classSkill]="skill"></skill-card>
   </div>
   <div class="footer" *ngIf="(character | async).class && (character | async).class !== selectedClass.name && (character | async).level == 1">
     <button (click)="save()">UPDATE</button>

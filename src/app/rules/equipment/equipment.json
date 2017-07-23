@@ -434,5 +434,16 @@
         "value": "When a target undead or demon takes damage from this weapon, they must make a SPI save vs a DC of 20 or be stunned."
       }
     ]
+  },
+  "whiskey": {
+    "label": "Whiskey",
+    "desc": "A fairly standard bottle of whiskey.",
+    "type": "misc"
+  },
+  "largeironkey": {
+    "label": "Large Iron Key",
+    "desc": "Found in the Black residence.",
+    "type": "misc"
   }
+
 }

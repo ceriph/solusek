@@ -5,11 +5,14 @@ import {Race} from "../../rules/race/race";
 import {Class} from "../../rules/class/class";
 import {Modifier} from "../modifier";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
+import {SkillService} from "../../rules/skills/skill.service";
+import {SkillType} from "../../rules/skills/skill";
 
 @Injectable()
 export class StatService {
 
-  constructor(private equipmentService: EquipmentService) {
+  constructor(private equipmentService: EquipmentService,
+              private skillService: SkillService) {
   }
 
   calculateAvailable(character: Character, stats: PrimaryStats): number {
@@ -60,7 +63,13 @@ export class StatService {
     this.applyModifiers(character, race.modifiers);
 
     // modifiers from class skills
-    // this.applyModifiers(character, clazz.modifiers);
+    clazz.skills.filter(classSkill => classSkill.level <= character.level).forEach(classSkill => {
+      this.skillService.get(classSkill.name).subscribe(skill => {
+        if (skill.modifiers) {
+          this.applyModifiers(character, skill.modifiers);
+        }
+      });
+    });
 
     // modifiers from equipment
     for (const itemName of character.equipment) {
@@ -72,26 +81,10 @@ export class StatService {
     // checks
     character.checks.investigation += character.primaryStats.int;
     character.checks.knowledge += character.primaryStats.int;
-    character.checks.lockpicking += character.primaryStats.agi;
-    character.checks.pickpocketing += character.primaryStats.agi;
+    character.checks.thievery += character.primaryStats.agi;
     character.checks.perception += character.primaryStats.spi;
     character.checks.persuasion += character.primaryStats.cha;
     character.checks.stealth += character.primaryStats.agi;
-
-    for (const classSkill of clazz.skills) {
-      if (classSkill.level <= character.level) {
-        const modifier = Math.ceil(character.level / 3);
-        // todo think of a better way of applying these
-        if (classSkill.name === "bookworm") {
-          character.checks.knowledge += modifier;
-        } else if (classSkill.name === "thievery") {
-          character.checks.pickpocketing += modifier;
-          character.checks.lockpicking += modifier;
-        } else if (classSkill.name === "tracker") {
-          character.checks.perception += modifier;
-        }
-      }
-    }
 
     // saves
     character.saves.str += character.primaryStats.str;
@@ -162,7 +155,7 @@ export class StatService {
   }
 
   private isCheck(stat) {
-    return stat === 'investigation' || stat === 'knowledge' || stat === 'lockpicking' || stat === 'pickpocketing'
+    return stat === 'investigation' || stat === 'knowledge' || stat === 'thievery'
       || stat === 'perception' || stat === 'persuasion' || stat === 'stealth';
   }
 

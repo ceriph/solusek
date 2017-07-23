@@ -28,7 +28,7 @@
     "label": "Area Control"
   },
   "assassinate": {
-    "desc": "you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.",
+    "desc": "you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is <b>surprised</b> is a critical hit.",
     "label": "Assassinate"
   },
   "auraofcourage": {
@@ -46,8 +46,14 @@
     "type": "Action"
   },
   "bookworm": {
-    "desc": "your reading and studies have made you a knowledgable individual, gaining +1 to any <b>Knowledge</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
-    "label": "Bookworm"
+    "desc": "your reading and studies have made you a knowledgeable individual, gaining +2 to any <b>Knowledge</b> checks.",
+    "label": "Bookworm",
+    "modifiers": [
+      {
+        "name": "knowledge",
+        "value": 2
+      }
+    ]
   },
   "cunningaction": {
     "desc": "you may now spend a <b>Bonus Action</b> in order to <b>Dash</b>, <b>Disengage</b> or <b>Hide</b>.",
@@ -101,7 +107,7 @@
     "label": "Duelist"
   },
   "escape": {
-    "desc": "when an enemy ends their movement on a space adjacent to you, you may spend your <b>Reaction</b> to move up to your speed. This does not provoke an <b>Attack of Opportunity</b>.",
+    "desc": "when an enemy ends their movement on a space adjacent to you, you may spend your <b>Reaction</b> to move up to your speed, provoking an <b>Attack of Opportunity</b> if applicable.",
     "label": "Escape",
     "recovery": "ShortRest",
     "type": "Reaction"
@@ -110,9 +116,9 @@
     "desc": "you focus your studies on a particular school of magic (Abjuration, Alteration, Conjuration, Divination, Evocation or Illusion). Spells of that school gain a +1 to all rolls.",
     "label": "Focus"
   },
-  "gamble": {
-    "desc": "TODO",
-    "label": "Gamble"
+  "quickshot": {
+    "desc": "when an enemy creature comes within range, you may make an <b>Attack of Opportunity</b> as your <b>Reaction</b>.",
+    "label": "Quickshot"
   },
   "hardy": {
     "desc": "your experience in the wilderness makes you hardy. Gain <b>Advantage</b> on any CON saving throws.",
@@ -161,7 +167,7 @@
     "label": "Longshot"
   },
   "magichand": {
-    "desc": "you gain access to the Magic Hand cantrip and are able to use it to make <b>Lockpicking</b> and <b>Pickpocketing</b> checks from a distance."
+    "desc": "you gain access to the Magic Hand cantrip and are able to use it to perform actions such as lockpicking and pickpocketing from a distance."
   },
   "magicalprotection": {
     "desc": "your arcane knowledge grants you increased protection from enemies spells. You now roll with advantage on any spell saves.",
@@ -235,12 +241,18 @@
     "label": "Relentless"
   },
   "reliabletalent": {
-    "desc": "you have refined your skills until they approach perfection. Whenever you make a <b>Lockpicking</b> or <b>Pickpocketing</b>, you can treat a d20 roll of 9 or lower as a 10.",
+    "desc": "you have refined your skills until they approach perfection. Whenever you make a <b>Thievery</b>, you can treat a d20 roll of 9 or lower as a 10.",
     "label": "Reliable Talent"
   },
   "resilience": {
-    "desc": "you have gained a natural toughness gaining +1 <b>Magic Reduction</b>. Increases to +2 at level 10, +3 to level 15 and +4 at level 20.",
-    "label": "Resilience"
+    "desc": "you have gained a natural toughness gaining +1 <b>Magic Reduction</b>.",
+    "label": "Resilience",
+    "modifiers": [
+      {
+        "name": "magicreduction",
+        "value": 1
+      }
+    ]
   },
   "shadowwalk": {
     "desc": "during your <b>Movement</b> you are able to teleport between any shadows within line of sight. Each teleport counts as 2 points of movement. Attacks of opportunity rules still apply.",
@@ -268,16 +280,28 @@
     "label": "Superior Critical"
   },
   "supernaturalawareness": {
-    "desc": "your heightened sences make you immune to being suprised. You now <b>always</b> attack first in combat.",
+    "desc": "your heightened senses make you ready for combat. You now attack first in combat unless you are <b>surprised</b>.",
     "label": "Supernatural Awareness"
   },
   "thievery": {
-    "desc": "your misspent youth has honed your thievery skills, gaining +1 to any <b>Lockpick</b> or <b>Pickpocket</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
-    "label": "Thievery"
+    "desc": "your misspent youth has honed your thievery skills, gaining +2 to any <b>Thievery</b> checks.",
+    "label": "Criminal",
+    "modifiers": [
+      {
+        "name": "thievery",
+        "value": 2
+      }
+    ]
   },
   "tracker": {
-    "desc": "your experience hunting has given you heightened senses, gaining +1 to <b>Perception</b> checks. Increases to +2 at level 3, +3 at level 6, +4 at level 9, +5 at level 12, +6 at level 15 and +7 at level 18.",
-    "label": "Tracker"
+    "desc": "your experience hunting has given you heightened senses, gaining +1 to <b>Perception</b> checks.",
+    "label": "Tracker",
+    "modifiers": [
+      {
+        "name": "perception",
+        "value": 2
+      }
+    ]
   },
   "tripleattack": {
     "desc": "when making an <b>Attack Action</b>, you may attack three times.",
@@ -308,5 +332,158 @@
     "label": "Vanish",
     "recovery": "ShortRest",
     "type": "Reaction"
+  },
+  "animalcompanion": {
+    "label": "Animal Companion",
+    "desc": "you may select an animal to become a permanent companion (hawk, panther, wolf, or bear). The animal has stats roughly equal to a character of your level -1, and dependant on the type selected."
+  },
+  "sharedmind": {
+    "label": "Shared Mind",
+    "desc": "you may transfer your consciousness into your animal companion, taking full control for up to 1 hour.",
+    "recovery": "ShortRest",
+    "type": "Action"
+  },
+  "enrage": {
+    "label": "Enrage",
+    "desc": "you may spend your <b>Bonus Action</b> for you and your animal companion to enter a rage. Gaining 1d8+SPI temporary health and all attacks that hit do an additional 1d8 damage.",
+    "recovery": "ShortRest",
+    "type": "BonusAction"
+  },
+  "sharedbody": {
+    "label": "Shared Body",
+    "desc": "any beneficial effects that affect either you or your animal companion now affect both of you, including healing."
+  },
+  "huntersmark": {
+    "label": "Hunter's Mark",
+    "desc": "you may spend your <b>Bonus Action</b> marking a target you can see. You now deal an additional 1d6 damage when hitting that target and have <b>Advantage</b> on any <b>Perception</b> rolls when trying to find it.",
+    "type": "BonusAction"
+  },
+  "volley": {
+    "label": "Volley",
+    "desc": "as an <b>Action</b>, you may make a ranged attack on a point within range. Roll an attack against all enemy creatures within 2m of that point.",
+    "type": "Action"
+  },
+  "whirlwind": {
+    "label": "Whirlwind",
+    "desc": "as an <b>Action</b>, you may make a melee attack against any creatures within range. Roll an attack for each.",
+    "type": "Action"
+  },
+  "defensive": {
+    "label": "Defensive Stance",
+    "desc": "as your <b>Bonus Action</b>, you may enter a defensive stance. All attacks made against you have <b>Disadvantage</b>, however you also have <b>Disadvantage</b> on your attacks if there is more than 1 enemy within melee range.",
+    "type": "BonusAction"
+  },
+  "advance": {
+    "label": "Advance",
+    "desc": "you may now use the <b>Dash</b> action as your <b>Bonus Action</b>, however this movement must move <i>towards</i> an enemy creature.",
+    "type": "BonusAction"
+  },
+  "eagleeye": {
+    "label": "Eagle Eye",
+    "desc": "you gain +2 to attack and +2 to perception",
+    "modifiers": [
+      {
+        "name": "attack",
+        "value": 2
+      },
+      {
+        "name": "perception",
+        "value": 2
+      }
+    ]
+  },
+  "imbueelement": {
+    "label": "Imbue Element",
+    "desc": "when casting a spell that does <b>Arcane</b> damage, you may inbue it with wither fire or cold, doing an additional 1d8 damage of that type."
+  },
+  "arcanetorrent": {
+    "label": "Arcane Torrent",
+    "desc": "your <b>Arcane Missiles</b> spell now does 2d4 per missile."
+  },
+  "multicast": {
+    "label": "Multicast",
+    "desc": "as your <b>Action</b>, you may cast a spell you have prepared twice. This only consumes one spell slot.",
+    "recovery": "LongRest",
+    "type": "Action"
+  },
+  "armoured": {
+    "label": "Armoured",
+    "desc": "you are now proficient with light, medium and heavy armour, as well as small shields."
+  },
+  "arcaneswordsman": {
+    "label": "Arcane Swordsman",
+    "desc": "while wielding a conjured weapon, you gain +3 to your <b>Attack</b> modifier and <b>Double Attack</b>."
+  },
+  "arcaneshield": {
+    "label": "Arcane Shield",
+    "desc": "as a <b>Bonus Action</b>, you may spend a spell slot to imbue your shield. Your shield gains <b>Armour</b> and <b>Magic Reduction</b> equal to the rank of the spell slot used until your next turn",
+    "type": "BonusAction",
+    "recovery": "LongRest"
+  },
+  "protect": {
+    "label": "Protect",
+    "desc": "when an ally within melee range is being attacked, you may spend your <b>Reaction</b> in order to impose <b>Disadvantage</b> on the attack.",
+    "type": "Reaction"
+  },
+  "elementalfamiliar": {
+    "label": "Elemental Familiar",
+    "desc": "you may choose a permanent drakeling familiar (wither fire or ice). That familiar shares all stats with you, including health, and does 1d4+INT damage of the chosen type."
+  },
+  "prodigy": {
+    "label": "Prodigy",
+    "desc": "your familiar is now capable of casting <b>Cantrips</b>."
+  },
+  "detonate": {
+    "label": "Detonate",
+    "desc": "as an <b>Action</b> you may command your familiar to detonate. All creatures within 2m must make an AGI saving throw or take 2d8+INT damage of the familiars type. On save success the damage is halved. You then take 2d8 <b>Mind</b> damage and the familiar reappears beside you.",
+    "type": "Action"
+  },
+  "arcaneelemental": {
+    "label": "Arcane Elemental",
+    "desc": "your conjure elemental spells now have a 3rd option: <b>Arcane</b>, which does an additional 1d8 damage."
+  },
+  "truthbringer": {
+    "label": "Truthbringer",
+    "desc": "you may attempt to compel another humanoid creature to speak the truth. The target must succeed at a SPI <b>Saving Throw</b> vs your <b>Spell DC</b> or be compelled to speak truthfully for 1 minute.",
+    "type": "Action",
+    "recovery": "ShortRest"
+  },
+  "deceiver": {
+    "label": "Deceiver",
+    "desc": "you gain <b>Advantage</b> on any <b>Persuasion</b> checks in which you are lying."
+  },
+  "bloodfury": {
+    "label": "Bloodfury",
+    "desc": "when a nearby enemy dies in combat, you gain 1d6 temporary health."
+  },
+  "vowofpeace": {
+    "label": "Vow of Peace",
+    "desc": "you may, as your <b>Bonus Action</b>, speak a word on an enemy within 2m. That creature now rolls with <b>Disadvantage</b> when making attacks against you for 1 minute.",
+    "type": "BonusAction",
+    "recovery": "ShortRest"
+  },
+  "vowofself": {
+    "label": "Vow of Self",
+    "desc": "you may, as your <b>Bonus Action</b>, speak a word on an enemy within 2m. That creature is forced to attack the nearest target that is not you on it's next turn.",
+    "type": "BonusAction",
+    "recovery": "ShortRest"
+  },
+  "vowofenmity": {
+    "label": "Vow of Enmity",
+    "desc": "you may, as your <b>Bonus Action</b>, speak a word on an enemy within 2m. All of your attacks on that creature now have <b>Advantage</b> for 1 minute.",
+    "type": "BonusAction",
+    "recovery": "ShortRest"
+  },
+  "improvedlayonhands": {
+    "label": "Improved Lay on Hands",
+    "desc": "your <b>Lay on Hands</b> now has a pool of health that can be used each day, equal to half your maximum health. Lay on Hands no longer requires a rest between uses and you can choose how much health to heal on each touch."
+  },
+  "shadowcaller": {
+    "label": "Shadowcaller",
+    "desc": "your spells that do <b>Light</b> damage now do an additional <b>1d8 Dark damage</b>."
+  },
+  "executioner": {
+    "label": "Executioner",
+    "desc": "your melee attacks now do an additional 1d8 damage when attacking <b>Wounded</b> targets."
   }
 }
