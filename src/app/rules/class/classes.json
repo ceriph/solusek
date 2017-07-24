@@ -55,7 +55,11 @@
     "skills": [
       {
         "level": 1,
-        "name": "bookworm"
+        "name": "charmer"
+      },
+      {
+        "level": 1,
+        "name": "mind1"
       }
     ]
   },

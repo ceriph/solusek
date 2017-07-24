@@ -528,5 +528,36 @@
         "value": 2
       }
     ]
+  },
+  "charmer": {
+    "label": "Charmer",
+    "desc": "You have a natural aura of friendliness about you, granting you +2 to <b>Persuasion Checks</b>.",
+    "modifiers": [
+      {
+        "name": "persuasion",
+        "value": 2
+      }
+    ]
+  },
+  "mind1": {
+    "desc": "you now have access to rank 1 mind magic.",
+    "label": "Mind 1"
+  },
+  "mind2": {
+    "desc": "you now have access to rank 2 mind magic.",
+    "label": "Mind 2"
+  },
+  "mind3": {
+    "desc": "you now have access to rank 3 mind magic.",
+    "label": "Mind 3"
+  },
+  "mind4": {
+    "desc": "you now have access to rank 4 mind magic.",
+    "label": "Mind 4"
+  },
+  "mind5": {
+    "desc": "you now have access to rank 5 mind magic.",
+    "label": "Mind 5"
   }
+
 }

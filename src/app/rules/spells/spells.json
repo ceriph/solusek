@@ -578,6 +578,38 @@
   },
   "mind": {
     "label": "Mind",
-    "desc": "The power to alter the mind, available to Enchanters."
+    "desc": "The power to alter the mind, available to Enchanters.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          {
+            "label": "Enhance Mind",
+            "school": "Alteration",
+            "desc": "Grant your target enhanced <b>Intelligence</b> for 1 hour. That character has <b>Advantage</b> on all <b>Intelligence Checks</b> for the duration."
+          },
+          {
+            "label": "Wrack Mind",
+            "school": "Evocation",
+            "desc": "Choose a creature within 10m, that creature must make an <b>Intelligence Saving Throw</b> or take <b>1d6+CHA Mind damage</b>"
+          },
+          {
+            "label": "Mirage",
+            "school": "Illusion",
+            "desc": "Surround a friendly target in a mirage for 1 minute. All creatures attacking must make an <b>Intelligence Saving Throw</b> or their attack will have <b>Disadvantage</b>."
+          },
+          {
+            "label": "Lovesick",
+            "school": "Illusion",
+            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> or it will be unable to attack you for 1 minute."
+          },
+          {
+            "label": "Lesser Charm",
+            "school": "Illusion",
+            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> with <b>Advantage</b> or it will be <b>Charmed</b> until the end of it's next turn."
+          }
+        ]
+      }
+    }
   }
 }

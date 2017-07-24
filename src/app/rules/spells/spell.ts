@@ -18,6 +18,11 @@ export class SpellRank {
   spells: Spell[];
 }
 
+export enum CastTime {
+  Action,
+  BonusAction
+}
+
 export enum School {
   Abjuration,
   Alteration,
