@@ -48,7 +48,7 @@ body {
   float: left;
   width: 92%;
 
-  background-color: #FAFAFA;
+  background-color: white;
 
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -175,4 +175,13 @@ button:disabled {
   body {
     background-color: white;
   }
+
+  .box {
+    background-color: #FAFAFA;
+  }
+}
+
+.inline {
+  display: inline-block;
+  width: auto;
 }

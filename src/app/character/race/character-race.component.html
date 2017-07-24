@@ -1,24 +1,12 @@
-<div class="box fill" *ngIf="selectedRace">
-  <img src="/assets/races/avatar-{{selectedRace.name}}.png">
-  <div class="detail">
-    <h1>{{selectedRace.label}}</h1>
-    <p>{{selectedRace.desc}}</p>
-    <h3>Stat Modifiers</h3>
-    <p *ngIf="!selectedRace.modifiers">None</p>
-    <div *ngFor="let modifier of selectedRace.modifiers">
-      <p>{{modifier.label}}: {{modifier.value}}</p>
-    </div>
-    <div *ngFor="let skill of selectedRace.skills | keys">
-      <h3>{{skill.value.label}}</h3>
-      <p>{{skill.value.desc}}</p>
-    </div>
-    <div class="footer" *ngIf="(character | async).race && (character | async).race !== selectedRace.name && (character | async).level == 1">
-      <button (click)="save()">UPDATE</button>
-      <p><i>Changing your race will reset any previously made class/stat choices</i></p>
-    </div>
-    <div class="footer" *ngIf="!(character | async).race">
-      <button (click)="save()">SAVE</button>
-    </div>
+<div *ngIf="selectedRace">
+  <app-race [race]="selectedRace"></app-race>
+  <div class="box fill footer"
+       *ngIf="(character | async).race && (character | async).race !== selectedRace.name && (character | async).level == 1">
+    <button (click)="save()">UPDATE</button>
+    <p><i>Changing your race will reset any previously made class/stat choices</i></p>
+  </div>
+  <div class="box fill footer" *ngIf="!(character | async).race">
+    <button (click)="save()">SAVE</button>
   </div>
 </div>
 

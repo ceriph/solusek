@@ -1,22 +1,30 @@
-<div class="box fill" *ngIf="clazz">
-  <img src="/assets/classes/{{clazz.name}}.png">
-  <h1>{{clazz.label}}</h1>
-  <p>{{clazz.desc}}</p>
-  <h2>Hit Die</h2>
-  <p>{{clazz.hit}}</p>
-  <h2>Equipment</h2>
-  <div *ngFor="let item of equipment">
-    <h4>{{item.label}}</h4>
-    <p>{{item.desc}}</p>
-    <div *ngFor="let modifier of item.modifiers">
-      <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
+<div *ngIf="clazz">
+  <div class="box fill">
+    <img src="/assets/classes/{{clazz.name}}.png">
+    <h1>{{clazz.label}}</h1>
+    <p>{{clazz.desc}}</p>
+    <p><b>Hit Die:</b> {{clazz.hit}}</p>
+
+  </div>
+  <div class="box fill">
+    <h2>Starting Equipment</h2>
+    <div *ngFor="let item of equipment">
+      <h4>{{item.label}}</h4>
+      <p>{{item.desc}}</p>
+      <div *ngFor="let modifier of item.modifiers">
+        <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
+      </div>
     </div>
   </div>
-  <h2>Skills</h2>
-  <skill-card *ngFor="let skill of clazz.skills" [classSkill]="skill"></skill-card>
-  <h1>Archetypes</h1>
-  <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
-  <div *ngFor="let archetype of clazz.archetypes">
+  <div class="box fill">
+    <h2>Skills</h2>
+    <skill-card *ngFor="let skill of clazz.skills" [classSkill]="skill"></skill-card>
+  </div>
+  <div class="box fill">
+    <h1>Archetypes</h1>
+    <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
+  </div>
+  <div class="box fill" *ngFor="let archetype of clazz.archetypes">
     <h2>{{archetype.label}}</h2>
     <p [innerHtml]="archetype.desc"></p>
     <skill-card *ngFor="let skill of archetype.skills" [classSkill]="skill"></skill-card>

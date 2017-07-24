@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from "@angular/core";
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from "@angular/core";
 import {Item} from "../equipment";
 import {EquipmentService} from "../equipment.service";
 
@@ -7,7 +7,7 @@ import {EquipmentService} from "../equipment.service";
   templateUrl: './item-card.component.html',
   styleUrls: ['./item-card.component.css']
 })
-export class ItemCardComponent implements OnInit {
+export class ItemCardComponent implements OnChanges {
 
   @Input()
   itemName: string;
@@ -17,7 +17,7 @@ export class ItemCardComponent implements OnInit {
   constructor(private equipmentService: EquipmentService) {
   }
 
-  ngOnInit() {
-    this.equipmentService.get(this.itemName).subscribe(item => this.item = item);
+  ngOnChanges(changes: SimpleChanges): void {
+    this.equipmentService.get(changes.itemName.currentValue).subscribe(item => this.item = item);
   }
 }

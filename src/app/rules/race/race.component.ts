@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Race} from "./race";
 import {RaceService} from "./race.service";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -11,6 +11,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class RaceComponent implements OnInit {
 
+  @Input()
   race: Race;
 
   constructor(private raceService: RaceService,
@@ -18,8 +19,10 @@ export class RaceComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.params
-      .switchMap(params => this.raceService.get(params['name']))
-      .subscribe(race => this.race = race);
+    if(!this.race) {
+      this.route.params
+        .switchMap(params => this.raceService.get(params['name']))
+        .subscribe(race => this.race = race);
+    }
   }
 }

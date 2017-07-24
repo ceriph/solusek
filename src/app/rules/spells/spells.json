@@ -9,7 +9,7 @@
           {
             "label": "Lesser Shielding",
             "school": "Abjuration",
-            "desc": "The wizard receives 1 <b>armour</b> and 1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+            "desc": "The wizard receives +1 <b>armour</b> and +1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
           },
           {
             "label": "Blink",
@@ -27,14 +27,19 @@
             "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed byt the caster at any time."
           },
           {
+            "label": "Fire Bolt",
+            "school": "Evocation",
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>1d8+INT Fire damage</b>."
+          },
+          {
             "label": "Arcane Missiles",
             "school": "Evocation",
-            "desc": "Fires a number of missiles equal to <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 arcane damage</b>."
+            "desc": "Fire a number of missiles equal to your <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 Arcane damage</b>."
           },
           {
             "label": "Burning Hands",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target in melee range, on hit deals <b>1d8+INT fire damage</b>."
+            "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d4+INT Fire damage</b>."
           }
         ]
       },
@@ -44,7 +49,7 @@
           {
             "label": "Shielding",
             "school": "Abjuration",
-            "desc": "The wizard receives 1 <b>armour</b> and 1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+            "desc": "The wizard receives +2 <b>armour</b> and +2 <b>magic reduction</b> for 1 minute. Does not stack with other 'Shielding' spells."
           },
           {
             "label": "Open Lock",
@@ -64,7 +69,7 @@
           {
             "label": "Magic Sword",
             "school": "Conjuration",
-            "desc": "Summons a sword made of pure arcane energy that only you can wield for 3 rounds. It has a +1 modifier to attack and does <b>1d8+INT arcane damage</b>."
+            "desc": "Summon a sword made of pure arcane energy that only you can wield for 1 minute. It has a +1 modifier to <b>Attack</b> and does <b>2d4+INT+1 Arcane damage</b>."
           },
           {
             "label": "Summon Imp",
@@ -82,9 +87,9 @@
             "desc": "All creatures within 2m of you must make an <b>Agility</b> <b>Saving Throw</b>, if they fail they take <b>1d8+INT ice damage</b> and are <b>Rooted</b>. On success they only take half damage."
           },
           {
-            "label": "Icebolt",
+            "label": "Ice Bolt",
             "school": "Evocation",
-            "desc": "Make a spell attack on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>."
           },
           {
             "label": "Fireball",
@@ -122,9 +127,9 @@
             "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does 1d8+INT damage (of the elemental type)."
           },
           {
-            "label": "Icy Sword",
+            "label": "Icy Spear",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure ice that only they can wield for 3 rounds. It has a +2 modifier to attack and does <b>1d10+INT ice damage</b>."
+            "desc": "Summon a spear made of pure ice that only you can wield for 1 minute. It has a range of 2, +2 modifier to <b>Attack</b> and does <b>2d4+INT+2 ice damage</b>."
           },
           {
             "label": "Summon Food",
@@ -144,7 +149,7 @@
           {
             "label": "Icy Grasp",
             "school": "Evocation",
-            "desc": " Make a spell attack on a target within 10m. On hit deals <b>3d4+INT ice damage</b> and the target is <b>Rooted</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit deals <b>3d4+INT Ice damage</b> and the target is <b>Rooted</b> on their next turn."
           },
           {
             "label": "Mirror Image",
@@ -159,7 +164,7 @@
           {
             "label": "Major Shielding",
             "school": "Abjuration",
-            "desc": "The wizard receives 3 <b>armour</b> and 3 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+            "desc": "The wizard receives +3 <b>armour</b> and +3 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
           },
           {
             "label": "Teleport",
@@ -174,7 +179,7 @@
           {
             "label": "Flaming Sword",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure fire that only they can wield for 3 rounds. It has a +3 modifier to attack and does <b>1d12+INT fire damage</b>."
+            "desc": "The caster imbues a weapon within 10m with flames, adding <b>1d4+INT Fire damage</b> to that weapon for 1 minute."
           },
           {
             "label": "See Invisible",
@@ -189,7 +194,7 @@
           {
             "label": "Chain Lightning",
             "school": "Evocation",
-            "desc": "Make a spell attack on a creature within 10m. On hit the creature takes <b>3d8+INT arcane damage</b>. The lightning then bounces to up to 3 other enemy targets, making a spell attack on each and doing <b>2d8 Arcane damage</b>. If one of the attacks misses then the chain ends."
+            "desc": "Make a <b>Spell Attack</b> on a creature within 10m. On hit the creature takes <b>3d8+INT Energy damage</b>. The lightning then bounces to up to 3 other enemy targets, making a <b>Spell Attack</b> on each and doing <b>2d8 Energy damage</b>. If one of the attacks misses then the chain ends."
           },
           {
             "label": "Blur",
@@ -204,7 +209,7 @@
           {
             "label": "Crystalize",
             "school": "Abjuration",
-            "desc": "Coat yourself in hard crystal, gaining 5 armour and 5 magic reduction at the cost of being rooted. Does not stack with other 'Shielding' spells."
+            "desc": "Coat yourself in hard crystal for 1 minute, gaining +5 <b>armour</b> and +5 <b>magic reduction</b> at the cost of being <b>Rooted</b>. Does not stack with other 'Shielding' spells."
           },
           {
             "label": "Group Teleport",
@@ -222,19 +227,19 @@
             "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does <b>2d8+INT damage</b> (of the elemental type). The elemental is also immune to damage of its type."
           },
           {
-            "label": "Arcane Sword",
+            "label": "Arcane Greatsword",
             "school": "Conjuration",
-            "desc": "The caster summons a sword made of pure arcane energy that only they can wield for 1 minute. It has a +5 modifier to attack and does <b>2d8+INT arcane damage</b>."
+            "desc": "The caster summons a huge sword made of pure arcane energy that only they can wield for 1 minute. It has a range of 2, +5 modifier to attack and does <b>1d8+INT+5 Arcane damage</b>."
           },
           {
             "label": "Disintegrate",
             "school": "Evocation",
-            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an AGi <b>Saving Throw</b> or take <b>4d8+INT Arcane damage</b>."
+            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an <b>Agility Saving Throw</b> or take <b>4d8+INT Arcane damage</b>. On save success the damage is halved."
           },
           {
             "label": "Call Meteor",
             "school": "Evocation",
-            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area take <b>5d8+INT Fire damage</b>."
+            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area must make an <b>Agility Saving Throw</b> or take take <b>8d8+INT Fire damage</b>. On save success the damage is halved."
           }
         ]
       }
@@ -279,7 +284,7 @@
           {
             "label": "Holy Bolt",
             "school": "Evocation",
-            "desc": "Make a spell attack vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
+            "desc": "Make a <b>Spell Attack</b> vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
           }
         ]
       },
@@ -319,7 +324,7 @@
           {
             "label": "Beam of Light",
             "school": "Evocation",
-            "desc": "Make a spell attack on a target and any targets in a line, on hit deals 2d8+SPI Light damage to each target in the line."
+            "desc": "Make a <b>Spell Attack</b> on a target and any targets in a line, on hit deals 2d8+SPI Light damage to each target in the line."
           }
         ]
       },
@@ -404,7 +409,7 @@
           {
             "label": "Angel's Fury",
             "school": "Evocation",
-            "desc": "Make a spell attack on a target enemy within 10m, deals 5d8+SPI light damage. Does an additional 2d8 damage to demons and undead."
+            "desc": "Make a <b>Spell Attack</b> on a target enemy within 10m, deals 5d8+SPI light damage. Does an additional 2d8 damage to demons and undead."
           },
           {
             "label": "Marr's Vengeance",
@@ -445,7 +450,7 @@
           {
             "label": "Call Lightning",
             "school": "Evocation",
-            "desc": "Make a spell attack on a target within 10m, on hit the target suffers <b>1d4+SPI Fire damage</b> and is <b>Stunned</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m, on hit the target suffers <b>1d4+SPI Energy damage</b> and is <b>Stunned</b>."
           }
         ]
       },
@@ -510,7 +515,7 @@
           {
             "label": "Charm Animal",
             "school": "Illusion",
-            "desc": "Choose an animal within range to make a <b>Charisma</b> <b>Saving Throw</b>. On failure animal is <b>Charmed</b>. The creature rolls with <b>advantage</b> if it is in combat."
+            "desc": "Choose an animal within range to make a <b>Charisma Saving Throw</b>. On failure animal is <b>Charmed</b>. The creature rolls with <b>Advantage</b> if it is in combat."
           },
           {
             "label": "Bird Form",
@@ -565,7 +570,7 @@
           {
             "label": "Thunderstorm",
             "school": "Evocation",
-            "desc": "Choose an area 3m x 3m within range, all creatures within that area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>5d8+SPI Fire damage</b>. On save success they take half damage."
+            "desc": "Choose an area 3m x 3m within range, all creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage."
           }
         ]
       }

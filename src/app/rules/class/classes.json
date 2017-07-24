@@ -127,7 +127,7 @@
           },
           {
             "level": 15,
-            "name": "improvedlayonhands"
+            "name": "divineshield"
           }
         ]
       },
@@ -141,7 +141,7 @@
           },
           {
             "level": 7,
-            "name": "vowofgreed"
+            "name": "vowofself"
           },
           {
             "level": 11,
@@ -215,7 +215,7 @@
       },
       {
         "level": 9,
-        "name": "divineshield"
+        "name": "strengthofspirit"
       },
       {
         "level": 10,
@@ -367,7 +367,7 @@
       },
       {
         "level": 9,
-        "name": "mobile"
+        "name": "strengthofspirit"
       },
       {
         "level": 10,
@@ -543,7 +543,7 @@
       },
       {
         "level": 9,
-        "name": "reliabletalent"
+        "name": "strengthofbody"
       },
       {
         "level": 10,
@@ -551,7 +551,7 @@
       },
       {
         "level": 12,
-        "name": "superiorcritical"
+        "name": "reliabletalent"
       },
       {
         "level": 14,
@@ -720,7 +720,7 @@
       },
       {
         "level": 9,
-        "name": "nimblemind"
+        "name": "strengthofmind"
       },
       {
         "level": 10,
@@ -737,6 +737,10 @@
       {
         "level": 16,
         "name": "arcane5"
+      },
+      {
+        "level": 18,
+        "name": "nimblemind"
       },
       {
         "level": 20,

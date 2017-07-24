@@ -171,7 +171,7 @@ export class StatService {
         } else if (this.isCheck(modifier.name)) {
           character.checks[modifier.name] += modifier.value;
         } else if (this.isSave(modifier.name)) {
-          const stat = modifier.name.substring(3);
+          const stat = modifier.name.substring(4);
           character.saves[stat] += modifier.value;
         }
       }

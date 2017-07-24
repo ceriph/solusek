@@ -8,8 +8,6 @@ import {Router} from "@angular/router";
 import * as firebase from "firebase/app";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
-import {EquipmentService} from "../../rules/equipment/equipment.service";
-import {Item} from "../../rules/equipment/equipment";
 
 @Component({
   selector: 'app-classes',
@@ -22,12 +20,10 @@ export class CharacterClassComponent implements OnInit {
 
   classes: FirebaseListObservable<Class[]>;
   selectedClass: Class;
-  equipment: Item[];
 
   constructor(private afAuth: AngularFireAuth,
               private characterService: CharacterService,
               private classService: ClassService,
-              private equipmentService: EquipmentService,
               private router: Router) {
     this.user = afAuth.authState;
   }
@@ -42,7 +38,6 @@ export class CharacterClassComponent implements OnInit {
           if (character.class) {
             this.classService.get(character.class).subscribe(clazz => {
               this.selectedClass = clazz;
-              this.updateEquipment(clazz);
             });
           }
         })
@@ -52,17 +47,7 @@ export class CharacterClassComponent implements OnInit {
 
   select(clazz: Class): void {
     this.selectedClass = clazz;
-    this.updateEquipment(clazz);
     window.scrollTo(0, 0);
-  }
-
-  updateEquipment(clazz: Class) {
-    this.equipment = [];
-    for(let itemName of clazz.equipment) {
-      this.equipmentService.get(itemName).subscribe(item => {
-        this.equipment.push(item);
-      });
-    }
   }
 
   save(): void {

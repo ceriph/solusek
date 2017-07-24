@@ -21,7 +21,10 @@ td {
 }
 
 .title {
-  margin-bottom: 15px;
+  margin: 5px;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .card {
@@ -32,13 +35,7 @@ td {
 }
 
 summary-stat + summary-stat {
-  margin-left: 40px;
-}
-
-.card + .card {
-  border-left: 1px solid #DDD;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 5%;
 }
 
 .info {
@@ -54,4 +51,11 @@ summary-stat + summary-stat {
   padding-right: 10px;
   border-right: 1px solid #EEE;
   padding-left: 10px;
+}
+
+@media print {
+  .card + .card {
+    border-left: 1px solid #DDD;
+    padding-left: 20px;
+  }
 }

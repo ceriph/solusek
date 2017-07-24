@@ -206,7 +206,7 @@
   },
   "bastardsword": {
     "label": "Bastard Sword",
-    "desc": "An old, plain bastard sword.",
+    "desc": "An old, plain bastard sword. Requires both hands.",
     "slot": "hand",
     "proficiency": "Large Weapons",
     "modifiers": [
@@ -219,7 +219,7 @@
   },
   "shortbow": {
     "label": "Short Bow",
-    "desc": "An old, plain short bow.",
+    "desc": "An old, plain short bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
     "modifiers": [
@@ -237,7 +237,7 @@
   },
   "longbow": {
     "label": "Long Bow",
-    "desc": "An old, plain long bow.",
+    "desc": "An old, plain long bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
     "modifiers": [
@@ -255,7 +255,7 @@
   },
   "compoundbow": {
     "label": "Compound Bow",
-    "desc": "An old, plain compound bow.",
+    "desc": "An old, plain compound bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
     "modifiers": [
@@ -273,7 +273,7 @@
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
-    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy.",
+    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands.",
     "slot": "hand",
     "proficiency": "Magic Weapons",
     "modifiers": [

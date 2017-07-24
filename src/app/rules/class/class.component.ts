@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from "@angular/core";
 import {Class} from "./class";
 import {ActivatedRoute} from "@angular/router";
 import {ClassService} from "./classes.service";
@@ -11,9 +11,11 @@ import 'rxjs/add/operator/switchMap';
   templateUrl: './class.component.html',
   styleUrls: ['./class.component.css']
 })
-export class ClassComponent implements OnInit {
+export class ClassComponent implements OnInit, OnChanges {
 
+  @Input()
   clazz: Class;
+
   equipment: Item[];
 
   constructor(private classService: ClassService,
@@ -22,16 +24,25 @@ export class ClassComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.params
-      .switchMap(params => this.classService.get(params['name']))
-      .subscribe(clazz => {
-        this.clazz = clazz;
-        this.equipment = [];
-        for(let itemName of clazz.equipment) {
-          this.equipmentService.get(itemName).subscribe(item => {
-            this.equipment.push(item);
-          });
-        }
+    if(!this.clazz) {
+      this.route.params
+        .switchMap(params => this.classService.get(params['name']))
+        .subscribe(clazz => {
+          this.clazz = clazz;
+        });
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.loadEquipment(changes.clazz.currentValue)
+  }
+
+  loadEquipment(clazz: Class) {
+    this.equipment = [];
+    for (let itemName of clazz.equipment) {
+      this.equipmentService.get(itemName).subscribe(item => {
+        this.equipment.push(item);
       });
+    }
   }
 }

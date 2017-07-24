@@ -92,7 +92,7 @@
   },
   "elusive": {
     "desc": "you can move around the battlefield with grace, gaining immunity to <b>Attacks of Opportunity</b>.",
-    "label": "Evasion"
+    "label": "Elusive"
   },
   "evasion": {
     "desc": "you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a Blizzard spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
@@ -245,7 +245,7 @@
     "label": "Reliable Talent"
   },
   "resilience": {
-    "desc": "you have gained a natural toughness gaining +1 <b>Magic Reduction</b>.",
+    "desc": "you have gained a natural toughness, granting you +1 <b>Magic Reduction</b>.",
     "label": "Resilience",
     "modifiers": [
       {
@@ -255,11 +255,12 @@
     ]
   },
   "shadowwalk": {
-    "desc": "during your <b>Movement</b> you are able to teleport between any shadows within line of sight. Each teleport counts as 2 points of movement. Attacks of opportunity rules still apply.",
-    "label": "Shadow Walk"
+    "desc": "during your <b>Movement</b> you are able to teleport between any shadows within your line of sight. The teleport counts as 2 points of movement. Attacks of opportunity rules still apply.",
+    "label": "Shadow Walk",
+    "recovery": "ShortRest"
   },
   "shadowstrike": {
-    "desc": "if after moving via <b>Shadow Walk</b> you are now behind an enemy, you may make spend your <b>Bonus Action</b> to perform a <b>Backstab</b>.",
+    "desc": "if after moving via <b>Shadow Walk</b> you are now behind an enemy, you may make spend your <b>Bonus Action</b> to perform an immediate <b>Backstab</b>.",
     "label": "Shadow Strike"
   },
   "spellmastery": {
@@ -454,7 +455,7 @@
   },
   "bloodfury": {
     "label": "Bloodfury",
-    "desc": "when a nearby enemy dies in combat, you gain 1d6 temporary health."
+    "desc": "when an enemy within 5m of you dies, you gain 1d6 temporary health."
   },
   "vowofpeace": {
     "label": "Vow of Peace",
@@ -485,5 +486,47 @@
   "executioner": {
     "label": "Executioner",
     "desc": "your melee attacks now do an additional 1d8 damage when attacking <b>Wounded</b> targets."
+  },
+  "strengthofmind": {
+    "label": "Strength of Mind",
+    "desc": "Grants you +2 to <b>Intelligence</b> and <b>Charisma</b> Saving Throws.",
+    "modifiers": [
+      {
+        "name": "saveint",
+        "value": 2
+      },
+      {
+        "name": "savecha",
+        "value": 2
+      }
+    ]
+  },
+  "strengthofspirit": {
+    "label": "Strength of Spirit",
+    "desc": "Grants you +2 to <b>Spirit</b> and <b>Constitution</b> Saving Throws.",
+    "modifiers": [
+      {
+        "name": "savecon",
+        "value": 2
+      },
+      {
+        "name": "savespi",
+        "value": 2
+      }
+    ]
+  },
+  "strengthofbody": {
+    "label": "Strength of Body",
+    "desc": "Grants you +2 to <b>Strength</b> and <b>Agility</b> Saving Throws.",
+    "modifiers": [
+      {
+        "name": "savestr",
+        "value": 2
+      },
+      {
+        "name": "saveagi",
+        "value": 2
+      }
+    ]
   }
 }
