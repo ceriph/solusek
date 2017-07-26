@@ -7,50 +7,45 @@
         "rank": 1,
         "spells": [
           {
-            "label": "Lesser Shielding",
+            "label": "Shielding",
             "school": "Abjuration",
-            "desc": "The wizard receives +1 <b>armour</b> and +1 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
+            "desc": "Choose a friendly target within 10m to receive +1 <b>spell armour</b>. Adds an additional +1 for each additional rank above 1"
           },
           {
             "label": "Blink",
             "school": "Alteration",
-            "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Snared</b> but <i>not</i> <b>Rooted</b>."
+            "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Snared</b> but <i>not</i> <b>Rooted</b>. Adds 1 point of movement range for each rank above 1."
           },
           {
             "label": "Telekinesis",
             "school": "Alteration",
-            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an <b>Intelligence</b> <b>Saving Throw</b> or be lifted for one round."
+            "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an <b>Strength Saving Throw</b> or be lifted and slammed into the ground taking <b>1d4+INT Blunt damage</b> and become <b>Knocked down</b>. On save success they take half damage and are not knocked down. Does an additional 1d4 damage for each rank above 1."
           },
           {
             "label": "Summon Light",
             "school": "Conjuration",
-            "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed byt the caster at any time."
+            "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed by the caster at any time."
           },
           {
             "label": "Fire Bolt",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>1d8+INT Fire damage</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>1d8+INT Fire damage</b>. Does an additional 1d8 damage for each rank above 1."
           },
           {
             "label": "Arcane Missiles",
             "school": "Evocation",
-            "desc": "Fire a number of missiles equal to your <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 Arcane damage</b>."
+            "desc": "Fire a number of missiles equal to your <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 Arcane damage</b>. Does an additional 1 damage per missile for each rank above 1."
           },
           {
             "label": "Burning Hands",
             "school": "Evocation",
-            "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d4+INT Fire damage</b>."
+            "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d6+INT Fire damage</b>. On save success they take half damage. Does an additional 1d6 damage for each rank above 1."
           }
         ]
       },
       "2": {
         "rank": 2,
         "spells": [
-          {
-            "label": "Shielding",
-            "school": "Abjuration",
-            "desc": "The wizard receives +2 <b>armour</b> and +2 <b>magic reduction</b> for 1 minute. Does not stack with other 'Shielding' spells."
-          },
           {
             "label": "Open Lock",
             "school": "Alteration",
@@ -74,7 +69,7 @@
           {
             "label": "Summon Imp",
             "school": "Conjuration",
-            "desc": "Call forth a small imp who has 3d6 + caster level health, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack with a range of 5m and does 1d6+3 fire damage."
+            "desc": "Call forth a small imp who has 3d6 + caster level health, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack with a range of 5m and does 1d6+3 fire damage. The imp has an additional 1d6 health and 1 damage for each rank above 2."
           },
           {
             "label": "Detect Magic",
@@ -84,22 +79,22 @@
           {
             "label": "Frost Nova",
             "school": "Evocation",
-            "desc": "All creatures within 2m of you must make an <b>Agility</b> <b>Saving Throw</b>, if they fail they take <b>1d8+INT ice damage</b> and are <b>Rooted</b>. On success they only take half damage."
+            "desc": "All creatures within 2m of you must make an <b>Constitution</b> <b>Saving Throw</b>, if they fail they take <b>3d6+INT ice damage</b> and are <b>Rooted</b>. On save success they take half damage and are not rooted."
           },
           {
             "label": "Ice Bolt",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>. Does an additional 1d8 damage for each rank above 2."
           },
           {
             "label": "Fireball",
             "school": "Evocation",
-            "desc": "Choose an area 3mx3m within 10m. All characters within the area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>2d8+INT Fire damage</b>. On success they take half damage."
+            "desc": "Choose an area 3mx3m within 10m. All characters within the area must make an <b>Agility Saving Throw</b> or take <b>2d8+INT Fire damage</b>. On success they take half damage. Does an additional 1d8 damage for each rank above 2."
           },
           {
             "label": "Invisibility",
             "school": "Illusion",
-            "desc": "Your target magically vanishes from sight for 1d4+INT minutes. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action with remove the invisibility."
+            "desc": "Your target magically vanishes from sight for 1 hour. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action will remove the invisibility. For each rank above 2, this can affect 1 additional target."
           }
         ]
       },
@@ -109,22 +104,22 @@
           {
             "label": "Flame Shield",
             "school": "Abjuration",
-            "desc": "Engulf an ally in protective flames, giving them 2 <b>magic reduction</b>. The next melee attack against that character will cause the shield to burst, dealing <b>1d8+INT fire damage</b> to the attacker."
+            "desc": "Engulf an ally in protective flames for 1 minute. Any characters hitting that target in melee combat take <b>3d4+INT Fire damage</b>. Does an additional 1d4 damage for each rank above 3"
           },
           {
             "label": "Cancel Magic",
             "school": "Alteration",
-            "desc": "Remove 1d4 magical effects on the target (works for both beneficial effects on enemies, and negative effects on allies)."
+            "desc": "Remove a single magical effect on a target within 10m (works for both beneficial effects on enemies, and negative effects on allies). May affects an additional magical effect for each rank above 3."
           },
           {
             "label": "Dimensional Door",
             "school": "Conjuration",
-            "desc": "The caster creates a dimensional hole in a wall or door for <b>Intelligence</b> minutes, allowing him to pass through it temporarily. The hole can be dismissed by the caster at any time."
+            "desc": "The caster creates a dimensional hole for 1 minute at their current location and another location within 100m that they can either see or visualise. The hole allows anyone to travel through and can be dismissed by the caster at any time."
           },
           {
             "label": "Summon Elemental",
             "school": "Conjuration",
-            "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does 1d8+INT damage (of the elemental type)."
+            "desc": "Summon an elemental of your choice (fire or ice), the elemental has 5d8+10 health, 6 speed, 20 dodge and does 2d8+INT damage (of the elemental type). The <b>Fire</b> elemental has a permanent rank 3 <b>Flame Shield</b>. The <b>Ice</b> version can cast a rank 3 <b>Icy Grasp</b> once with the same DC as the caster."
           },
           {
             "label": "Icy Spear",
@@ -132,9 +127,9 @@
             "desc": "Summon a spear made of pure ice that only you can wield for 1 minute. It has a range of 2, +2 modifier to <b>Attack</b> and does <b>2d4+INT+2 ice damage</b>."
           },
           {
-            "label": "Summon Food",
+            "label": "Summon Feast",
             "school": "Conjuration",
-            "desc": "Conjure a selection of food. The food is enough for roughly 4 medium sized people."
+            "desc": "Conjure a great selection of food for up to 10 people. Anyone who consumes the food during a <b>Short or Long Rest</b> gains +2 to all saving throws and immunity to <b>Fear</b> for 12 hours."
           },
           {
             "label": "Identify",
@@ -149,23 +144,23 @@
           {
             "label": "Icy Grasp",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit deals <b>3d4+INT Ice damage</b> and the target is <b>Rooted</b> on their next turn."
+            "desc": "Touch a creature within melee range, that creature must make a <b>Strength Saving Throw</b> or take <b>3d6+INT Ice damage</b> and be encased in ice, <b>Stunned</b>. On save success they take half damage and are not stunned. They must make a <b>Strength Saving Throw</b> at the start of their turn to see if they break free. Does an additional 1d6 damage for each rank above 3."
           },
           {
             "label": "Mirror Image",
             "school": "Illusion",
-            "desc": "Create <b>Intelligence</b> identical copies of yourself, confusing enemy creatures. Each enemy attacking the caster must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+            "desc": "Create a number of identical copies of yourself equal to your <b>Intelligence</b>, confusing enemy creatures. Each enemy attacking you must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
+          },
+          {
+            "label": "Scry",
+            "school": "Illusion",
+            "desc": "Using a <b>Scrying Gem</b>, you can focus on a creature or location you are familiar with and be presented with a present vision of that target. If the target is a creature, it must make a <b>Spirit Saving Throw</b> to see whether it resists the scry."
           }
         ]
       },
       "4": {
         "rank": 4,
         "spells": [
-          {
-            "label": "Major Shielding",
-            "school": "Abjuration",
-            "desc": "The wizard receives +3 <b>armour</b> and +3 <b>magic reduction</b>. Does not stack with other 'Shielding' spells."
-          },
           {
             "label": "Teleport",
             "school": "Alteration",
@@ -189,12 +184,12 @@
           {
             "label": "Blizzard",
             "school": "Evocation",
-            "desc": "Choose a target area of size 3m x 3m within 10m, summoning a storm for up to 1 minute (requires concentration). All creatures within that area must make an <b>Agility</b> <b>Saving Throw</b> or take <b>3d8+INT ice damage</b>. On save success it does half damage."
+            "desc": "Choose a target area of size 3m x 3m within 10m, summoning a storm. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+INT Ice damage</b>. On save success it does half damage. Does an additional 1d8 damage for each rank above 4."
           },
           {
             "label": "Chain Lightning",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a creature within 10m. On hit the creature takes <b>3d8+INT Energy damage</b>. The lightning then bounces to up to 3 other enemy targets, making a <b>Spell Attack</b> on each and doing <b>2d8 Energy damage</b>. If one of the attacks misses then the chain ends."
+            "desc": "Make a <b>Spell Attack</b> on a creature within 10m. On hit the creature takes <b>3d8+INT Energy damage</b>. The lightning then bounces to up to 3 other enemy targets, making a <b>Spell Attack</b> on each and doing <b>2d8 Energy damage</b>. If one of the attacks misses then the chain ends. Each hit does an additional 1d8 damage for each rank above 4."
           },
           {
             "label": "Blur",
@@ -209,22 +204,17 @@
           {
             "label": "Crystalize",
             "school": "Abjuration",
-            "desc": "Coat yourself in hard crystal for 1 minute, gaining +5 <b>armour</b> and +5 <b>magic reduction</b> at the cost of being <b>Rooted</b>. Does not stack with other 'Shielding' spells."
+            "desc": "Coat yourself in hard crystal for 1 minute, gaining 4d6 temporary health. While you have this temporary health you are <b>Snared</b>."
           },
           {
-            "label": "Group Teleport",
+            "label": "Open Portal",
             "school": "Alteration",
-            "desc": "The caster can transport themselves and any characters they are touching to any previously visited location."
+            "desc": "You can transport yourself up to 9 other characters you are touching to any previously visited location."
           },
           {
-            "label": "Enter Plane",
+            "label": "Open Rift",
             "school": "Alteration",
-            "desc": "The caster can transport themselves and any characters they are touching to another plane, if they are in the presence of a planar rift."
-          },
-          {
-            "label": "Summon Greater Elemental",
-            "school": "Conjuration",
-            "desc": "Summon an elemental of your choice (fire or ice), the elemental has health, dodge and armour equal to the caster and does <b>2d8+INT damage</b> (of the elemental type). The elemental is also immune to damage of its type."
+            "desc": "You can open a rift when at a rift tear location. The rift lasts for up to 1 hour and can be dismissed at any time by you."
           },
           {
             "label": "Arcane Greatsword",
@@ -234,12 +224,12 @@
           {
             "label": "Disintegrate",
             "school": "Evocation",
-            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an <b>Agility Saving Throw</b> or take <b>4d8+INT Arcane damage</b>. On save success the damage is halved."
+            "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an <b>Agility Saving Throw</b> or take <b>3d8+INT Arcane damage</b> and <b>3d8+INT Fire damage</b>. On save success the damage is halved."
           },
           {
             "label": "Call Meteor",
             "school": "Evocation",
-            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. At the start of the casters next turn, any characters within the area must make an <b>Agility Saving Throw</b> or take take <b>8d8+INT Fire damage</b>. On save success the damage is halved."
+            "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. Any characters within the area must make an <b>Agility Saving Throw</b> or take take <b>5d6+INT Fire damage</b> and <b>5d6+INT Blunt damage</b>. On save success the damage is halved."
           }
         ]
       }
@@ -257,34 +247,34 @@
         "rank": 1,
         "spells": [
           {
-            "label": "Lesser Protection",
+            "label": "Protection",
             "school": "Abjuration",
-            "desc": "Grant a friendly target +1 armour and +1 magic reduction against any attacks. Does not stack with other 'Protection' spells."
+            "desc": "Grant a friendly target +1 armour against any attacks for 1 minute. Increases by 1 armour for each rank above 1."
           },
           {
-            "label": "Lesser Healing",
+            "label": "Heal",
             "school": "Alteration",
-            "desc": "Heal the target for 1d4+SPI health."
+            "desc": "Heal a target within 1m for 1d6+SPI health. Increases by 1d6 for each rank above 1."
           },
           {
-            "label": "Lesser Blessing",
+            "label": "Blessing",
             "school": "Alteration",
-            "desc": "The target receives +1 on all checks and attack rolls for 1 hour. Does not stack with other Blessing spells."
+            "desc": "The target receives +1 on all checks and attack rolls for 1 minute. Increases by +1 for each rank above 1."
           },
           {
             "label": "Cure Poison",
             "school": "Alteration",
-            "desc": "Purge any poison from the target character."
+            "desc": "Purge a single poison from the target character. May purge an additional poison for each rank above 1."
           },
           {
             "label": "Weaken Evil",
             "school": "Alteration",
-            "desc": "All undead or demons within earshot must make a <b>Spirit</b> <b>Saving Throw</b>, on failure they are weakened, forcing their next attack roll to be made with <b>Disadvantage</b>"
+            "desc": "All undead or demons within earshot must make a <b>Spirit Saving Throw</b>, on failure they are weakened, forcing their next attack roll to be made with <b>Disadvantage</b>"
           },
           {
             "label": "Holy Bolt",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons."
+            "desc": "Make a <b>Spell Attack</b> vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons. Does an additional 1d6 damage for each rank above 1. "
           }
         ]
       },
@@ -292,39 +282,39 @@
         "rank": 2,
         "spells": [
           {
-            "label": "Protection",
+            "label": "Symbol",
             "school": "Abjuration",
-            "desc": "Grant a friendly target +2 <b>armour</b> and +2 <b>magic reduction</b>. Does not stack with other 'Protection' spells."
+            "desc": "Mark a friendly target within 10m with a holy symbol, granting them <b>1d6+SPI temporary health</b>. Increases by 1 for each rank above 2."
           },
           {
-            "label": "Lesser Symbol",
-            "school": "Abjuration",
-            "desc": "Mark a friendly target with a holy symbol, granting them <b>1d6+SPI temporary health</b>."
+            "label": "Focus",
+            "school": "Alteration",
+            "desc": "Grant a friendly target within 10m focus for 1 hour, they now roll with <b>Advantage</b> on any <b>Saving Throw</b>s."
           },
           {
             "label": "Calm",
-            "school": "Abjuration",
-            "desc": "Calms a friendly target for 1 hour, they now roll with <b>Advantage</b> on any <b>Saving Throw</b>s."
+            "school": "Alteration",
+            "desc": "Calm a target, removing any <b>Fear</b> and granting you <b>Advantage</b> on any <b>Persuasion</b> checks against that character. Unwilling targets must make a <b>Charisma Saving Throw</b> to attempt to resist the affect."
           },
           {
             "label": "Cure Disease",
             "school": "Alteration",
-            "desc": "Purge any disease from the target character."
+            "desc": "Purge a single disease from the target character. May purge an additional disease for each rank above 2."
           },
           {
-            "label": "Healing",
+            "label": "Flash Heal",
             "school": "Alteration",
-            "desc": "Heal the target for 2d4+SPI health."
+            "desc": "Use a <b>Bonus Action</b> to heal the target for 1d4+SPI health. Increases by 1d4 for each rank above 2."
           },
           {
             "label": "Turn Undead",
             "school": "Evocation",
-            "desc": "A target undead within 10m must make a <b>Spirit</b> <b>Saving Throw</b>. On save failure deals 2d8+SPI light damage and the target is stunned. On success it just deals half damage."
+            "desc": "A target undead within 10m must make a <b>Spirit Saving Throw</b>. On save failure deals <b>2d8+SPI Light damage</b> and the target is <b>Stunned</b>. On success it just deals half damage and no stun. Does an additional 1d8 damage for each rank above 2."
           },
           {
             "label": "Beam of Light",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target and any targets in a line, on hit deals 2d8+SPI Light damage to each target in the line."
+            "desc": "Make a <b>Spell Attack</b> on a target and any targets in that line, on hit deals <b>2d8+SPI Light damage</b> to each target in the line. Does an additional 1d8 damage from each rank above 2."
           }
         ]
       },
@@ -334,32 +324,32 @@
           {
             "label": "Resistance",
             "school": "Abjuration",
-            "desc": "Pick one type of damage (physical, arcane, fire, cold, mind, light, dark or poison). That character now has <b>Resistance</b> to that type of damage (takes half damage)."
+            "desc": "Pick one type of damage (physical, arcane, fire, cold, mind, light, dark or poison). That character now has <b>Resistance</b> to that type of damage for 1 minute."
           },
           {
-            "label": "Greater Healing",
+            "label": "Revive",
             "school": "Alteration",
-            "desc": "Heal the target for 3d4+SPI health."
+            "desc": "Choose a character to resurrect who has been dead for less than 1 minute. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms (making additional checks to lower the DC). Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
+          },
+          {
+            "label": "Cancel Magic",
+            "school": "Alteration",
+            "desc": "Remove a single magical effect on a target within 10m (works for both beneficial effects on enemies, and negative effects on allies). May affects an additional magical effect for each rank above 3."
           },
           {
             "label": "Circle of Healing",
             "school": "Alteration",
-            "desc": "All friendly characters within 2m are healed for 1d8+SPI health."
-          },
-          {
-            "label": "Blessing",
-            "school": "Alteration",
-            "desc": "The target receives +2 on all checks and attack rolls for 1 hour. Does not stack with other Blessing spells."
-          },
-          {
-            "label": "Purge",
-            "school": "Alteration",
-            "desc": "Purge any single negative condition from the target."
+            "desc": "All friendly characters within 2m are healed for 1d8+SPI health. Increases by 1d8 for each rank above 3."
           },
           {
             "label": "Bountiful Light",
             "school": "Alteration",
             "desc": "All allies within 5m are blessed with light for 1 hour. Any heals on them now heal for the full die amount and do not need to be rolled."
+          },
+          {
+            "label": "Scry",
+            "school": "Illusion",
+            "desc": "Using a <b>Scrying Gem</b>, you can focus on a creature or location you are familiar with and be presented with a present vision of that target. If the target is a creature, it must make a <b>Spirit Saving Throw</b> to see whether it resists the scry."
           }
         ]
       },
@@ -367,29 +357,19 @@
         "rank": 4,
         "spells": [
           {
-            "label": "Symbol",
-            "school": "Abjuration",
-            "desc": "Mark a friendly target with a holy symbol, granting them <b>2d6+SPI temporary health</b>."
-          },
-          {
-            "label": "Revive",
-            "school": "Alteration",
-            "desc": "Make a <b>Spirit</b> <b>Saving Throw</b> vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character died before the last short or long rest, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
-          },
-          {
-            "label": "Greater Protection",
-            "school": "Alteration",
-            "desc": "Grant a friendly target +3 <b>armour</b> and +3 <b>magic reduction</b>. Does not stack with other 'Protection' spells."
-          },
-          {
-            "label": "Greater Blessing",
-            "school": "Alteration",
-            "desc": "The target receives +3 on all checks and attack rolls for 1 hour. Does not stack with other 'Blessing' spells."
-          },
-          {
             "label": "Holy Word",
             "school": "Evocation",
-            "desc": "All enemies within earshot must make a <b>Spirit</b> <b>Saving Throw</b>. On a failed save they take <b>4d8+SPI Light damage</b>. Deals an additional 1d8 to undead or demons."
+            "desc": "All enemies within earshot must make a <b>Spirit Saving Throw</b>. On a failed save they take <b>4d8+SPI Light damage</b>. Deals an additional 1d8 to undead or demons."
+          },
+          {
+            "label": "Spirit Guardians",
+            "school": "Conjuration",
+            "desc": "Summon 3 protective spirits around yourself which each add 1 to your dodge. When you take damage 1 spirit is removed."
+          },
+          {
+            "label": "Flash of Light",
+            "school": "Evocation",
+            "desc": "All enemies that can see you are blinded by a flash of light, they must make a <b>Constitution Saving Throw</b> or be <b>Blinded</b>."
           }
         ]
       },
@@ -397,14 +377,9 @@
         "rank": 5,
         "spells": [
           {
-            "label": "Greater Symbol",
-            "school": "Abjuration",
-            "desc": "Mark a friendly target with a holy symbol, granting them <b>3d6+SPI temporary health</b>."
-          },
-          {
-            "label": "Resurrect",
+            "label": "True Resurrection",
             "school": "Alteration",
-            "desc": "Make a <b>Spirit</b> <b>Saving Throw</b> vs a DC of 10 plus the target characters level. On a success the character is brought back from the dead at their previous level -1. If the character has been dead for longer than 1 year, this cannot be used. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
+            "desc": "Choose a character to resurrect who has been dead for less than 1 year. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Angel's Fury",
@@ -412,14 +387,9 @@
             "desc": "Make a <b>Spell Attack</b> on a target enemy within 10m, deals 5d8+SPI light damage. Does an additional 2d8 damage to demons and undead."
           },
           {
-            "label": "Marr's Vengeance",
+            "label": "Vengeance",
             "school": "Alteration",
-            "desc": "Grant divine protection to a target, the next fatal damage they would take is ignore and they can immediately make an attack against the attacking enemy."
-          },
-          {
-            "label": "Spirit Guardians",
-            "school": "Conjuration",
-            "desc": "Summon 3 protective spirits around yourself which each add 1 to your dodge. When you take damage 1 spirit is removed."
+            "desc": "Grant divine protection to a target, the next fatal damage they would take is ignored and they can immediately make an attack against the attacking enemy."
           }
         ]
       }
@@ -443,14 +413,14 @@
             "desc": "The caster blends into the wilderness, becoming invisible for 1 hour. Only works outdoors. Making any aggressive action removes it."
           },
           {
-            "label": "Ensnaring Roots",
+            "label": "Thorny Vines",
             "school": "Conjuration",
-            "desc": "Choose an enemy within 10m, that creature must make a <b>Strength</b> <b>Saving Throw</b> or be wrapped with small roots causing <b>1d4+SPI Blunt damage</b> and <b>Snaring</b> them. They must attempt the saving throw each turn to see if they break free."
+            "desc": "Choose an enemy within 10m, that creature must make a <b>Strength Saving Throw</b> or be wrapped with small roots causing <b>1d4+SPI Blunt damage</b> and <b>Rooting</b> them. On save success they take damage but are not rooted. On fail they must attempt the saving throw at the start of each turn to see if they break free or take further damage and remain rooted. Does an additional 1d4 damage for each rank above 1."
           },
           {
             "label": "Call Lightning",
             "school": "Evocation",
-            "desc": "Make a <b>Spell Attack</b> on a target within 10m, on hit the target suffers <b>1d4+SPI Energy damage</b> and is <b>Stunned</b>."
+            "desc": "Make a <b>Spell Attack</b> on a target within 10m, on hit the target suffers <b>1d6+SPI Energy damage</b> and is <b>Stunned</b>. Does an additional 1d6 damage for each rank above 1."
           }
         ]
       },
@@ -458,24 +428,19 @@
         "rank": 2,
         "spells": [
           {
-            "label": "Lesser Healing",
+            "label": "Healing Wind",
             "school": "Alteration",
-            "desc": "Heal the target for 1d4+SPI health"
+            "desc": "Heal a target within 1m for 1d6+SPI health. Increases by 1d6 for each rank above 2."
           },
           {
-            "label": "Skin Like Wood",
+            "label": "Barkskin",
             "school": "Alteration",
-            "desc": "Grant a friendly target 1 <b>armour</b> and 1 <b>magic reduction</b> for 1 minute."
+            "desc": "Grant a friendly target within 10m +1 <b>armour</b> and +1 <b>magic reduction</b> for 1 minute. Grants an additional +1 for each rank above 2."
           },
           {
             "label": "Eyes of the Hawk",
             "school": "Alteration",
             "desc": "Grant a friendly target <b>Spirit</b> attack on their next turn."
-          },
-          {
-            "label": "Thorny Vines",
-            "school": "Conjuration",
-            "desc": "Choose a target within 10m to make a <b>Strength</b> <b>Saving Throw</b>, on failure they are wrapped in vines for 3 rounds, rooting and dealing <b>1d4+SPI damage</b> at the start of it's turn until they break free."
           },
           {
             "label": "Call Animal",
@@ -485,7 +450,7 @@
           {
             "label": "Call Hurricane",
             "school": "Evocation",
-            "desc": "Choose a target area 3m x 3m within range. All creatures in that range must make an <b>Agility</b> <b>Saving Throw</b> or take <b>2d8+SPI Blunt damage</b> and be <b>knocked down</b>."
+            "desc": "Choose a target area 3m x 3m within range. All creatures in that range must make a <b>Constitution Saving Throw</b> or take <b>2d8+SPI Blunt damage</b> and be <b>knocked down</b>. On save success they take half damage and are not knocked down. Does an additional 1d8 damage for each rank above 2."
           },
           {
             "label": "Spider Form",
@@ -503,24 +468,24 @@
             "desc": "Grant a friendly target Agility equal to your <b>Spirit</b> for 1 minute."
           },
           {
-            "label": "Skin Like Rock",
-            "school": "Alteration",
-            "desc": "Grant a friendly target 4 armour and 4 magic reduction for 1 minute, however they are also <b>Snared</b>."
-          },
-          {
             "label": "Summon Wind",
             "school": "Alteration",
-            "desc": "Call on the winds to help you levitate off the ground for 1 hour."
+            "desc": "Call on the winds to help you levitate off the ground for up to 1 hour."
           },
           {
             "label": "Charm Animal",
             "school": "Illusion",
-            "desc": "Choose an animal within range to make a <b>Charisma Saving Throw</b>. On failure animal is <b>Charmed</b>. The creature rolls with <b>Advantage</b> if it is in combat."
+            "desc": "Choose an animal within range to make a <b>Charisma Saving Throw</b> or be <b>Charmed</b>. The creature rolls with <b>Advantage</b> if it is in combat."
           },
           {
             "label": "Bird Form",
             "school": "Illusion",
             "desc": "Take the form of a small bird for 1 hour. While in bird form the caster can fly."
+          },
+          {
+            "label": "Scry",
+            "school": "Illusion",
+            "desc": "Using a <b>Scrying Gem</b>, you can focus on a creature or location you are familiar with and be presented with a present vision of that target. If the target is a creature, it must make a <b>Spirit Saving Throw</b> to see whether it resists the scry."
           }
         ]
       },
@@ -528,14 +493,14 @@
         "rank": 4,
         "spells": [
           {
-            "label": "Healing",
+            "label": "Treestride",
             "school": "Alteration",
-            "desc": "Heal the target for 2d4+SPI health"
+            "desc": "Instantly transports the caster and up to 9 other people from one tree to another tree that the caster is aware of."
           },
           {
-            "label": "Skin Like Steel",
+            "label": "Revive",
             "school": "Alteration",
-            "desc": "Grant a friendly target 6 armour and 6 magic reduction for 1 minute, however they are also <b>snared</b>."
+            "desc": "Choose a character to resurrect who has been dead for less than 1 minute. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms (making additional checks to lower the DC). Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
           },
           {
             "label": "Poison Cloud",
@@ -553,11 +518,6 @@
         "rank": 5,
         "spells": [
           {
-            "label": "Greater Healing",
-            "school": "Alteration",
-            "desc": "Heal the target for 3d4+SPI health."
-          },
-          {
             "label": "Ankh of Reversal",
             "school": "Alteration",
             "desc": "Mark the friendly target, the next fatal damage they would take actually heals them for that amount instead."
@@ -570,7 +530,7 @@
           {
             "label": "Thunderstorm",
             "school": "Evocation",
-            "desc": "Choose an area 3m x 3m within range, all creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage."
+            "desc": "Choose an area 3m x 3m within range to create a storm that you can maintain with <b>Concentration</b> for up to 1 minute. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage."
           }
         ]
       }

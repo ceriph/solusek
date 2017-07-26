@@ -269,6 +269,10 @@
     "desc": "There are many conditions throughout the world which have both positive and usually negative effects for a given duration.",
     "sections": [
       {
+        "title": "Blinded",
+        "desc": "Blinded characters have their movement halved and make any attack rolls with <b>Disadvantage</b>."
+      },
+      {
         "title": "Charmed",
         "desc": "Charmed characters have had their mind enslaved and must obey the wishes of their master for the duration."
       },
