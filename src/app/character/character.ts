@@ -19,6 +19,7 @@ export class Character {
   secondaryStats: SecondaryStats; // calculated by statService
   checks: Checks;
   saves: Saves;
+  spellSlots: SpellSlot[];
 }
 
 export class Equipment {
@@ -34,7 +35,6 @@ export class Equipment {
 export class Checks {
   investigation: number = 0;
   knowledge: number = 0;
-  lockpicking: number = 0;
   perception: number = 0;
   persuasion: number = 0;
   thievery: number = 0;
@@ -48,4 +48,9 @@ export class Saves {
   int: number = 0;
   spi: number = 0;
   cha: number = 0;
+}
+
+export class SpellSlot {
+  rank: number;
+  spell: string;
 }

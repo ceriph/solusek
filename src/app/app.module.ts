@@ -40,6 +40,7 @@ import {SkillCardComponent} from "./rules/skills/skill-card.component";
 import {SummaryCheckComponent} from './character/summary/summary-check/summary-check.component';
 import { SummaryEquipmentComponent } from './character/summary/summary-equipment/summary-equipment.component';
 import { ItemCardComponent } from './rules/equipment/item-card/item-card.component';
+import { SummarySpellsComponent } from './character/summary/summary-spells/summary-spells.component';
 
 @NgModule({
   imports: [
@@ -71,7 +72,8 @@ import { ItemCardComponent } from './rules/equipment/item-card/item-card.compone
     SummaryStatComponent,
     SummaryCheckComponent,
     SummaryEquipmentComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    SummarySpellsComponent
   ],
   providers: [
     PlayerService,

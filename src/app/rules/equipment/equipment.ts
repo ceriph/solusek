@@ -5,8 +5,11 @@ export class Item {
   label: string;
   desc: string;
   slot: ItemSlot = ItemSlot.None;
+  rarity: Rarity = Rarity.Common;
   proficiency: string;
   subtype: string;
+  damage: string;
+  range: number;
   modifiers: Modifier[];
 }
 
@@ -25,4 +28,12 @@ export enum ItemSlot {
   Jewellery,
   Hand,
   None
+}
+
+export enum Rarity {
+  Common,
+  Uncommon,
+  Rare,
+  Epic,
+  Legendary
 }

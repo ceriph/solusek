@@ -69,26 +69,24 @@
   </div>
 
   <div class="box fill">
-    <h2 class="title">Equipment</h2>
+    <h2>Skills</h2>
+    <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
+  </div>
+
+  <div class="box fill">
+    <h2 class="title">Equipped</h2>
     <div class="wrapper">
       <summary-equipment [equipment]="character.equipment"></summary-equipment>
     </div>
   </div>
 
   <div class="box fill">
-    <h2>Inventory</h2>
-    <div *ngFor="let item of inventory">
-      <h4>{{item.label}}</h4>
-      <p>{{item.desc}}</p>
-      <div *ngFor="let modifier of item.modifiers">
-        <p><b>{{modifier.label}}</b>: {{modifier.value}}</p>
-      </div>
+    <h2 class="title">Inventory</h2>
+    <div class="wrapper" *ngFor="let item of character.inventory">
+      <item-card class="card" [itemName]="item"></item-card>
     </div>
   </div>
-  <div class="box fill">
-    <h2>Skills</h2>
-    <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
-  </div>
+
   <div class="box fill">
     <h2>Bio</h2>
     <h3>Appearance</h3>

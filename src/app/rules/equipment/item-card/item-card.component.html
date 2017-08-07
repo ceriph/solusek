@@ -1,8 +1,9 @@
-<div *ngIf="item">
-  <h3>{{item.label}}</h3>
-  <p><i>Slot: {{item.slot}}</i></p>
-  <p>{{item.desc}}</p>
-  <div *ngIf="item.modifiers">
-    <p *ngFor="let modifier of item.modifiers"><b>{{modifier.label}}</b>: {{modifier.value}}</p>
+<div *ngIf="item" class="itemCard">
+  <h3 class="itemTitle" [ngClass]="{'common': item.rarity=='common', 'uncommon': item.rarity=='uncommon', 'rare': item.rarity=='rare', 'epic': item.rarity=='epic', 'legendary': item.rarity=='legendary'}">{{item.label}}</h3>
+  <p class="itemSubtitle"><i>Slot: {{item.slot}}, {{item.rarity}}</i></p>
+  <p class="itemDesc" [innerHtml]="item.desc"></p>
+  <p class="itemDesc"><span *ngIf="item.damage"><b>Damage:</b> {{item.damage}}</span><span *ngIf="item.range">, <b>Range:</b> {{item.range}}m</span></p>
+  <div *ngIf="item.modifiers && item.modifiers.length > 0">
+    <p class="itemDesc"><b>Modifiers: </b><span *ngFor="let modifier of item.modifiers">+{{modifier.value}} {{modifier.label}} </span></p>
   </div>
 </div>

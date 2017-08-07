@@ -105,11 +105,6 @@
         "name": "str",
         "label": "Strength",
         "value": -1
-      },
-      {
-        "name": "con",
-        "label": "Constitution",
-        "value": -1
       }
     ],
     "skills": [
@@ -168,7 +163,7 @@
       {
         "name": "scaled",
         "label": "Scaled",
-        "desc": "Passive - +1 to armour (increases to +2 at level 5, +3 at level 10, +4 at level 15 and +5 at level 20)"
+        "desc": "Passive - +1 to armour"
       }
     ]
   },
@@ -185,7 +180,7 @@
       {
         "name": "con",
         "label": "Constitution",
-        "value": 1
+        "value": 2
       },
       {
         "name": "int",
@@ -197,7 +192,7 @@
       {
         "name": "bigboned",
         "label": "Big-boned",
-        "desc": "Passive - +5 to any saving throws vs stun or knockdown"
+        "desc": "Passive - +5 to any saving throws vs stun, push or knockdown"
       }
     ]
   },
@@ -214,7 +209,7 @@
       {
         "name": "con",
         "label": "Constitution",
-        "value": 2
+        "value": 3
       },
       {
         "name": "int",
@@ -226,7 +221,7 @@
       {
         "name": "regeneration",
         "label": "Regeneration",
-        "desc": "Passive - Regenerate 1 health at the end of each combat round (increases to 2 at level 3, 3 at level 6, 4 at level 9, 5 at level 12, 6 at level 15, and 7 at level 18)"
+        "desc": "Passive - Regenerate 1 health at the end of each combat round"
       }
     ]
   },

@@ -52,10 +52,3 @@ summary-stat + summary-stat {
   border-right: 1px solid #EEE;
   padding-left: 10px;
 }
-
-@media print {
-  .card + .card {
-    border-left: 1px solid #DDD;
-    padding-left: 20px;
-  }
-}

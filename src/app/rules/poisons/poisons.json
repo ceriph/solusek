@@ -4,7 +4,7 @@
     "poisons": [
       {
         "label": "Slowing Lick",
-        "desc": "The target is <b>snared</b>",
+        "desc": "The target is <b>Slowed</b>",
         "ingredients": "Nightshade"
       },
       {
@@ -23,8 +23,8 @@
     "rank": 2,
     "poisons": [
       {
-        "label": "Unbalacing Lick",
-        "desc": "The target is <b>knocked down</b>",
+        "label": "Dizzy Lick",
+        "desc": "The target is <b>Knocked Down</b>",
         "ingredients": "2x Nightshade"
       },
       {
@@ -43,8 +43,8 @@
     "rank": 3,
     "poisons": [
       {
-        "label": "Holding Lick",
-        "desc": "The target is <b>rooted</b>",
+        "label": "Freezing Lick",
+        "desc": "The target is <b>Rooted</b>",
         "ingredients": "3x Nightshade"
       },
       {
@@ -64,7 +64,7 @@
     "poisons": [
       {
         "label": "Paralyzing Lick",
-        "desc": "The target is <b>stunned</b>",
+        "desc": "The target is <b>Stunned</b>",
         "ingredients": "4x Nightshade"
       },
       {
@@ -84,7 +84,7 @@
     "poisons": [
       {
         "label": "Charming Lick",
-        "desc": "The target is <b>charmed</b>",
+        "desc": "The target is <b>Charmed</b>",
         "ingredients": "5x Nightshade"
       },
       {

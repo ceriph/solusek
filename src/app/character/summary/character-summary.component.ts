@@ -29,16 +29,13 @@ export class CharacterSummaryComponent implements OnInit {
   character: Character;
   race: Race;
   clazz: Class;
-  equipment: Item[];
-  inventory: Item[];
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
               private characterService: CharacterService,
               private raceService: RaceService,
               private statService: StatService,
-              private classService: ClassService,
-              private equipmentService: EquipmentService) {
+              private classService: ClassService) {
     this.user = afAuth.authState;
   }
 
@@ -56,15 +53,6 @@ export class CharacterSummaryComponent implements OnInit {
 
   load(character) {
     this.character = character;
-
-    this.inventory = [];
-    if (character.inventory) {
-      for (const itemName of character.inventory) {
-        this.equipmentService.get(itemName).subscribe(item => {
-          this.inventory.push(item);
-        });
-      }
-    }
 
     this.raceService.get(character.race).subscribe(race => {
       this.race = race;

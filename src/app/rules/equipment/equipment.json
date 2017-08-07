@@ -3,22 +3,29 @@
     "label": "Cloth Robe",
     "desc": "An old, plain cloth robe",
     "slot": "body",
+    "rarity": "common",
     "modifiers": []
   },
   "flowingashirrobes": {
     "label": "Flowing Ashir Robes",
     "desc": "Red robed with golden trim, created with the durable silks of the Ashir worms",
     "slot": "body",
+    "rarity": "rare",
     "modifiers": [
       {
         "name": "armour",
         "label": "Armour",
-        "value": 2
+        "value": 1
       },
       {
         "name": "magicreduction",
-        "label": "Magic Reduction",
-        "value": 2
+        "label": "Spell Armour",
+        "value": 1
+      },
+      {
+        "name": "cha",
+        "label": "Charisma",
+        "value": 1
       }
     ]
   },
@@ -26,6 +33,7 @@
     "label": "Ring of Levitation",
     "desc": "Gold ring with a single light blue gemstone. You feel weightless when putting it on.",
     "slot": "jewellery",
+    "rarity": "rare",
     "modifiers": [
       {
         "name": "effect",
@@ -39,6 +47,7 @@
     "desc": "An old, plain leather tunic",
     "slot": "body",
     "proficiency": "Light Armour",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -52,6 +61,7 @@
     "desc": "An old, plain chainmail tunic",
     "slot": "body",
     "proficiency": "Medium Armour",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -70,6 +80,7 @@
     "desc": "An old, plain steel breastplate",
     "slot": "body",
     "proficiency": "Heavy Armour",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -92,10 +103,11 @@
     "label": "Ring of Magical Deflection",
     "desc": "A simple yet pretty silver ring. You feel an aura of protection when wearing it.",
     "slot": "jewellery",
+    "rarity": "uncommon",
     "modifiers": [
       {
         "name": "magicreduction",
-        "label": "Magic Reduction",
+        "label": "Spell Armour",
         "value": 1
       }
     ]
@@ -105,204 +117,141 @@
     "desc": "An old, plain dagger.",
     "slot": "hand",
     "proficiency": "Simple Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d4+STR Piercing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d4+STR Piercing",
+    "modifiers": []
   },
   "quarterstaff": {
     "label": "Quarterstaff",
     "desc": "An old, plain wooden staff.",
     "slot": "hand",
     "proficiency": "Simple Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR Blunt"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d8+STR Blunt",
+    "modifiers": []
   },
   "rapier": {
     "label": "Rapier",
     "desc": "An old, plain rapier.",
     "slot": "hand",
     "proficiency": "Small Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d6+STR Piercing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d6+STR Piercing",
+    "modifiers": []
   },
   "shortsword": {
     "label": "Short Sword",
     "desc": "An old, plain short sword.",
     "slot": "hand",
     "proficiency": "Small Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d6+STR Slashing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d6+STR Slashing",
+    "modifiers": []
   },
   "mace": {
     "label": "Mace",
     "desc": "An old, plain mace.",
     "slot": "hand",
     "proficiency": "Small Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d6+STR Blunt"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d6+STR Blunt",
+    "modifiers": []
   },
   "longsword": {
     "label": "Long Sword",
     "desc": "An old, plain long sword.",
     "slot": "hand",
     "proficiency": "Medium Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR Slashing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d8+STR Slashing",
+    "modifiers": []
   },
   "warhammer": {
     "label": "Warhammer",
     "desc": "An old, plain warhammer.",
     "slot": "hand",
     "proficiency": "Medium Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR Blunt"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d8+STR Blunt",
+    "modifiers": []
   },
   "spear": {
     "label": "Spear",
     "desc": "An old, plain spear.",
     "slot": "hand",
     "proficiency": "Medium Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR Piercing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d8+STR Piercing",
+    "modifiers": []
   },
   "bastardsword": {
     "label": "Bastard Sword",
     "desc": "An old, plain bastard sword. Requires both hands.",
     "slot": "hand",
     "proficiency": "Large Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d10+STR Slashing"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d10+STR Slashing",
+    "modifiers": []
   },
   "shortbow": {
     "label": "Short Bow",
     "desc": "An old, plain short bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d6+AGI"
-      },
-      {
-        "name": "range",
-        "label": "Range",
-        "value": "6m"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d6+(STR+AGI)/2",
+    "range": 10,
+    "modifiers": []
   },
   "longbow": {
     "label": "Long Bow",
     "desc": "An old, plain long bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+AGI"
-      },
-      {
-        "name": "range",
-        "label": "Range",
-        "value": "10m"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d8+(STR+AGI)/2",
+    "range": 15,
+    "modifiers": []
   },
   "compoundbow": {
     "label": "Compound Bow",
     "desc": "An old, plain compound bow. Requires both hands.",
     "slot": "hand",
     "proficiency": "Ranged Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d10+AGI"
-      },
-      {
-        "name": "range",
-        "label": "Range",
-        "value": "12m"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d10+(STR+AGI)/2",
+    "range": 15,
+    "modifiers": []
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
     "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands.",
     "slot": "hand",
     "proficiency": "Magic Weapons",
-    "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d6+INT Arcane"
-      },
-      {
-        "name": "range",
-        "label": "Range",
-        "value": "10m"
-      }
-    ]
+    "rarity": "common",
+    "damage": "1d6+INT Arcane",
+    "range": 10,
+    "modifiers": []
   },
   "lockpick": {
     "label": "Lockpick",
     "desc": "An old, plain lockpick. Enables the holder to attempt to pick a lock.",
+    "rarity": "common",
+    "slot": "none",
     "modifiers": []
   },
   "bandages": {
     "label": "Bandages",
     "desc": "A single roll of bandages, can be used to stabilise a character.",
+    "rarity": "common",
+    "slot": "none",
     "modifiers": []
   },
   "roundshield": {
     "label": "Round Shield",
     "desc": "An old, plain round shield.",
     "slot": "hand",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -315,6 +264,7 @@
     "label": "Kite Shield",
     "desc": "An old, plain kite shield.",
     "slot": "hand",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -332,6 +282,7 @@
     "label": "Tower Shield",
     "desc": "An old, plain tower shield.",
     "slot": "hand",
+    "rarity": "common",
     "modifiers": [
       {
         "name": "armour",
@@ -354,6 +305,7 @@
     "label": "Green Leaf Amulet",
     "desc": "A delicate silver chain holding a pendant in the shape of a green leaf. Seems to have a subtle green glow when not looking directly at it.",
     "slot": "jewellery",
+    "rarity": "epic",
     "modifiers": [
       {
         "name": "dodge",
@@ -376,12 +328,9 @@
     "label": "Bloodthirsty Dagger",
     "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood.",
     "slot": "hand",
+    "rarity": "rare",
+    "damage": "1d4+STR Piercing + 1d4 Dark",
     "modifiers": [
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d4+STR Piercing + 1d4 Dark"
-      },
       {
         "name": "effect",
         "label": "Effect",
@@ -396,18 +345,15 @@
   },
   "thaglanadh": {
     "label": "Tha Ghlanadh",
-    "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This weapon is <b>cursed</b>, still haunted by the spirit of Artair.",
+    "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who - according to legend - lost his mind after killing the inhabitants of an entire diseased town to stop the spread. The guilt turned him to madness and eventually suicide. This weapon is <b>cursed</b>, still haunted by the twisted spirit of Artair.<br /><br /> <b>Curse:</b> The wielder is plagued by the spirit of Artair, who will occasionally attempt to compel the wielder to attack nearby targets. The wielder must make a <b>Spirit Saving Throw</b> against a DC of 15 to avoid this. The curse can be broken by blessing the weapon.",
     "slot": "hand",
+    "rarity": "epic",
+    "damage": "1d8+STR+3 Blunt + 1d6 Dark",
     "modifiers": [
       {
         "name": "attack",
         "label": "Attack",
         "value": 3
-      },
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR+3 Blunt + 1d6 Dark"
       }
     ]
   },
@@ -415,16 +361,14 @@
     "label": "Blue Wand",
     "desc": "A pretty looking wand with simple carvings on the handle, has seen a fair bit of use but still works well.",
     "slot": "hand",
+    "rarity": "uncommon",
+    "damage": "1d4+CHA+1 Mind",
+    "range": 6,
     "modifiers": [
       {
         "name": "attack",
         "label": "Attack",
         "value": 1
-      },
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d4+CHA+1 Mind"
       }
     ]
   },
@@ -432,16 +376,13 @@
     "label": "Tha Ghlanadh (Blessed)",
     "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This item has been <b>blessed</b> and is no longer haunted by the spirit of Artair.",
     "slot": "hand",
+    "rarity": "epic",
+    "damage": "1d8+STR+3 Blunt damage + 1d8 Light",
     "modifiers": [
       {
         "name": "attack",
         "label": "Attack",
-        "value": 4
-      },
-      {
-        "name": "damage",
-        "label": "Damage",
-        "value": "1d8+STR+4 Blunt damage + 1d8 Light"
+        "value": 3
       },
       {
         "name": "effect",
@@ -452,14 +393,20 @@
   },
   "whiskey": {
     "label": "Whiskey",
-    "desc": "A fairly standard bottle of whiskey."
+    "desc": "A fairly standard bottle of whiskey.",
+    "slot": "none",
+    "rarity": "common"
   },
   "largeironkey": {
     "label": "Large Iron Key",
-    "desc": "Found in the Black residence."
+    "desc": "Found in the Black residence.",
+    "slot": "none",
+    "rarity": "common"
   },
   "sackoftrinkets": {
     "label": "Sack of Trinkets",
-    "desc": "A collection of ornaments that look relatively valuable."
+    "desc": "A collection of ornaments that look relatively valuable.",
+    "slot": "none",
+    "rarity": "uncommon"
   }
 }
