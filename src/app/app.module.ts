@@ -41,6 +41,7 @@ import {SummaryCheckComponent} from './character/summary/summary-check/summary-c
 import { SummaryEquipmentComponent } from './character/summary/summary-equipment/summary-equipment.component';
 import { ItemCardComponent } from './rules/equipment/item-card/item-card.component';
 import { SummarySpellsComponent } from './character/summary/summary-spells/summary-spells.component';
+import { SpellCardComponent } from './rules/spells/spell-card/spell-card.component';
 
 @NgModule({
   imports: [
@@ -73,7 +74,8 @@ import { SummarySpellsComponent } from './character/summary/summary-spells/summa
     SummaryCheckComponent,
     SummaryEquipmentComponent,
     ItemCardComponent,
-    SummarySpellsComponent
+    SummarySpellsComponent,
+    SpellCardComponent
   ],
   providers: [
     PlayerService,

@@ -82,8 +82,8 @@
 
   <div class="box fill">
     <h2 class="title">Inventory</h2>
-    <div class="wrapper" *ngFor="let item of character.inventory">
-      <item-card class="card" [itemName]="item"></item-card>
+    <div class="wrapper">
+      <item-card *ngFor="let item of character.inventory" class="card" [itemName]="item"></item-card>
     </div>
   </div>
 

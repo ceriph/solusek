@@ -27,6 +27,7 @@ export enum School {
   Abjuration,
   Alteration,
   Conjuration,
+  Divination,
   Evocation,
   Illusion
 }

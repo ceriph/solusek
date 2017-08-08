@@ -1,0 +1,49 @@
+.spellCard {
+  border: 1px solid #555;
+}
+
+.spellTitle {
+  margin: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+
+  color: white;
+  font-weight: normal;
+}
+
+.spellSubtitle {
+  padding: 2px 0;
+  text-align: center;
+  width: 100%;
+
+  background-color: #EEE;
+}
+
+.spellDesc {
+  font-size: smaller;
+}
+
+.abjuration {
+  background-color: #8E8E8E;
+}
+
+.divination {
+  background-color: #72A880;
+}
+
+.alteration {
+  background-color: #6293BC;
+}
+
+.illusion {
+  background-color: #6866AF;
+}
+
+.evocation {
+  background-color: #D8A05F;
+}
+
+.conjuration {
+  background-color: #DDD577;
+}

@@ -5,19 +5,22 @@
       <ul>
         <li *ngFor="let rule of rules | async"><a custom-scroll href="#{{rule.title}}">{{rule.title}}</a>
           <ul *ngIf="rule.sections">
-            <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a custom-scroll href="#{{section.title}}">{{section.title}}</a></li></span>
+            <span *ngFor="let section of rule.sections"><li *ngIf="section.title"><a custom-scroll
+                                                                                     href="#{{section.title}}">{{section.title}}</a></li></span>
           </ul>
         </li>
         <li><a custom-scroll href="#CharacterCreation">Character Creation</a>
           <ul>
             <li><a custom-scroll href="#Races">Races</a>
               <ul>
-                <li *ngFor="let race of races | async"><a routerLink="/rules/race/{{race.name}}" routerLinkActive="active">{{race.label}}</a></li>
+                <li *ngFor="let race of races | async"><a routerLink="/rules/race/{{race.name}}"
+                                                          routerLinkActive="active">{{race.label}}</a></li>
               </ul>
             </li>
             <li><a custom-scroll href="#Classes">Classes</a>
               <ul>
-                <li *ngFor="let clazz of classes | async"><a routerLink="/rules/class/{{clazz.name}}" routerLinkActive="active">{{clazz.label}}</a></li>
+                <li *ngFor="let clazz of classes | async"><a routerLink="/rules/class/{{clazz.name}}"
+                                                             routerLinkActive="active">{{clazz.label}}</a></li>
               </ul>
             </li>
             <li><a custom-scroll href="#Stats">Stats</a>
@@ -93,7 +96,8 @@
       More detail on each race can be found here:
     </p>
     <ul>
-      <li *ngFor="let race of races | async"><a routerLink="/rules/race/{{race.name}}" routerLinkActive="active">{{race.label}}</a></li>
+      <li *ngFor="let race of races | async"><a routerLink="/rules/race/{{race.name}}" routerLinkActive="active">{{race.label}}</a>
+      </li>
     </ul>
 
     <h2 id="Classes">CLASSES</h2>
@@ -107,7 +111,8 @@
     </p>
     <p>Individual classes details can be found here:</p>
     <ul>
-      <li *ngFor="let clazz of classes | async"><a routerLink="/rules/class" routerLinkActive="active" [queryParams]="{ class: clazz.name}">{{clazz.label}}</a></li>
+      <li *ngFor="let clazz of classes | async"><a routerLink="/rules/class" routerLinkActive="active"
+                                                   [queryParams]="{ class: clazz.name}">{{clazz.label}}</a></li>
     </ul>
 
     <h2 id="Stats">STATS</h2>
@@ -242,7 +247,8 @@
       regardless of modifiers (unless they are <b>Rooted</b>).
     </p>
     <p>
-      Each point of agility up to 5 speed is worth 1 speed. Each point between 6-10 is worth 1/2, each point between 11-15
+      Each point of agility up to 5 speed is worth 1 speed. Each point between 6-10 is worth 1/2, each point between
+      11-15
       is worth 1/3, 16-20 worth 1/4 and 21-25 worth 1/5. Remember to round down to the nearest whole number.
     </p>
     <p>
@@ -443,12 +449,15 @@
       Spell slots can be assigned/changed when a character takes a <b>Long Rest</b>.
     </p>
     <p>
-      The number of spells slots a character has is based on their class and level. Spells can be assigned to as many slots
-      as there are available, in order to give a character multiple uses of a single spell. For example a wizard could assign all
+      The number of spells slots a character has is based on their class and level. Spells can be assigned to as many
+      slots
+      as there are available, in order to give a character multiple uses of a single spell. For example a wizard could
+      assign all
       3 of his rank 2 spell slots to Fireball, or have 2 slots with Fireball and 1 slot of Frost Nova.
     </p>
     <p>
-      Spells can be assigned to spell slots of their rank <i>or higher</i>. If a spell is assigned to a rank higher than that
+      Spells can be assigned to spell slots of their rank <i>or higher</i>. If a spell is assigned to a rank higher than
+      that
       of the spell, it may gain bonuses as described.
     </p>
     <h3>Casters</h3>
@@ -456,54 +465,349 @@
       Casters covers Wizards, Enchanters, Necromancers, Clerics and Druids.
     </p>
     <table class="wide">
-      <tr class="header"><td>Character Level</td><td>Rank 1 Slots</td><td>Rank 2 Slots</td><td>Rank 3 Slots</td><td>Rank 4 Slots</td><td>Rank 5 Slots</td></tr>
-      <tr><td>1</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>2</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>3</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>4</td><td>5</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>5</td><td>5</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>7</td><td>5</td><td>4</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>8</td><td>5</td><td>4</td><td>1</td><td>-</td><td>-</td></tr>
-      <tr><td>9</td><td>5</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
-      <tr><td>10</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
-      <tr><td>11</td><td>5</td><td>4</td><td>4</td><td>-</td><td>-</td></tr>
-      <tr><td>12</td><td>5</td><td>4</td><td>4</td><td>1</td><td>-</td></tr>
-      <tr><td>13</td><td>5</td><td>4</td><td>4</td><td>2</td><td>-</td></tr>
-      <tr><td>14</td><td>5</td><td>4</td><td>4</td><td>3</td><td>-</td></tr>
-      <tr><td>15</td><td>5</td><td>4</td><td>4</td><td>3</td><td>-</td></tr>
-      <tr><td>16</td><td>5</td><td>4</td><td>4</td><td>3</td><td>1</td></tr>
-      <tr><td>17</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td></tr>
-      <tr><td>18</td><td>5</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
-      <tr><td>19</td><td>5</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
-      <tr><td>20</td><td>5</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+      <tr class="header">
+        <td>Character Level</td>
+        <td>Rank 1 Slots</td>
+        <td>Rank 2 Slots</td>
+        <td>Rank 3 Slots</td>
+        <td>Rank 4 Slots</td>
+        <td>Rank 5 Slots</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>5</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>5</td>
+        <td>4</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>5</td>
+        <td>4</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
     </table>
     <h3>Hybrids</h3>
     <p>
-      Hybrids covers Paladins, Rangers and Reavers. They have less overall spell slots than casters and do not gain access to rank 5 spells.
+      Hybrids covers Paladins, Rangers and Reavers. They have less overall spell slots than casters and do not gain
+      access to rank 5 spells.
     </p>
     <table class="wide">
-      <tr class="header"><td>Character Level</td><td>Rank 1 Slots</td><td>Rank 2 Slots</td><td>Rank 3 Slots</td><td>Rank 4 Slots</td><td>Rank 5 Slots</td></tr>
-      <tr><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>5</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>6</td><td>4</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>7</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>8</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>9</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>10</td><td>4</td><td>3</td><td>1</td><td>-</td><td>-</td></tr>
-      <tr><td>11</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr>
-      <tr><td>12</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
-      <tr><td>13</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
-      <tr><td>14</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr>
-      <tr><td>15</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-      <tr><td>16</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-      <tr><td>17</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-      <tr><td>18</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-      <tr><td>19</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-      <tr><td>20</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
+      <tr class="header">
+        <td>Character Level</td>
+        <td>Rank 1 Slots</td>
+        <td>Rank 2 Slots</td>
+        <td>Rank 3 Slots</td>
+        <td>Rank 4 Slots</td>
+        <td>Rank 5 Slots</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>4</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+      </tr>
     </table>
     <p>
       Spells slots are fully refreshed on a <b>Long Rest</b>. When taking a <b>Short Rest</b>, characters gain a number
@@ -533,13 +837,14 @@
     <div *ngFor="let group of spells | async">
       <h4 id="{{group.label}}">{{group.label}}</h4>
       <p [innerHTML]="group.desc"></p>
-      <table class="wide" *ngFor="let rank of group.ranks">
-        <span *ngIf="rank">
-          <tr class="header"><td colspan="3">Rank {{rank.rank}} Spells</td></tr>
-          <tr class="header"><td>Name</td><td>School</td><td>Effect</td></tr>
-          <tr *ngFor="let spell of rank.spells"><td>{{spell.label}}</td><td>{{spell.school}}</td><td [innerHTML]="spell.desc"></td></tr>
-        </span>
-      </table>
+      <span *ngFor="let rank of group.ranks">
+        <div *ngIf="rank">
+          <h5>Rank {{rank.rank}} Spells</h5>
+          <div class="centered">
+            <spell-card *ngFor="let spell of rank.spells | keys" class="card" [spell]="spell.value"></spell-card>
+          </div>
+        </div>
+      </span>
     </div>
   </div>
 
@@ -556,7 +861,8 @@
     </p>
     <p>
       When a poisoned weapon damages another creature, that creature must make a CON saving throw vs
-      the poison strength. The poison strength is decided on poison application and will be 1d20+INT. If their saving throw
+      the poison strength. The poison strength is decided on poison application and will be 1d20+INT. If their saving
+      throw
       is not greater than the strength, they will become poisoned.
     </p>
     <p>
@@ -564,13 +870,24 @@
       saving throw to see whether the poison has run its course or if it persists for another turn.
     </p>
     <p>
-      Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and will
+      Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and
+      will
       be consumed when the poison is applied.
     </p>
     <table *ngFor="let poisonRank of poisons | async" class="wide">
-      <tr class="header"><td colspan="3">Rank {{poisonRank.rank}} Poisons</td></tr>
-      <tr class="header"><td>Name</td><td>Effect</td><td>Ingredient</td></tr>
-      <tr *ngFor="let poison of poisonRank.poisons"><td>{{poison.label}}</td><td [innerHtml]="poison.desc"></td><td>{{poison.ingredients}}</td></tr>
+      <tr class="header">
+        <td colspan="3">Rank {{poisonRank.rank}} Poisons</td>
+      </tr>
+      <tr class="header">
+        <td>Name</td>
+        <td>Effect</td>
+        <td>Ingredient</td>
+      </tr>
+      <tr *ngFor="let poison of poisonRank.poisons">
+        <td>{{poison.label}}</td>
+        <td [innerHtml]="poison.desc"></td>
+        <td>{{poison.ingredients}}</td>
+      </tr>
     </table>
   </div>
 </div>

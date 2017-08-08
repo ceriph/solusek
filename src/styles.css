@@ -191,6 +191,7 @@ button:disabled {
   vertical-align: top;
   width: 300px;
   padding-right: 15px;
+  margin-bottom: 10px;
 }
 
 .card p {
