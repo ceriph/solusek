@@ -73,14 +73,14 @@
     <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
   </div>
 
-  <div class="box fill">
+  <div class="fill">
     <h2 class="title">Equipped</h2>
     <div class="wrapper">
       <summary-equipment [equipment]="character.equipment"></summary-equipment>
     </div>
   </div>
 
-  <div class="box fill">
+  <div class="fill">
     <h2 class="title">Inventory</h2>
     <div class="wrapper">
       <item-card *ngFor="let item of character.inventory" class="card" [itemName]="item"></item-card>
