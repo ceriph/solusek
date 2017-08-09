@@ -4,6 +4,7 @@ export class Spell {
   school: School;
   recovery: SkillRecovery = SkillRecovery.None;
   type: SkillType;
+  duration: string;
   desc: string;
 }
 

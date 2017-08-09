@@ -49,37 +49,46 @@
           "openlock": {
             "label": "Open Lock",
             "school": "Alteration",
-            "desc": "Choose a target that is locked. If that target is locked by mundane means, it is immediately unlocked. If the target is locked by magical means, the lock spell is suppressed for 1 minute. This spell creates a loud humming sound."
+            "desc": "Choose a target that is locked. If that target is locked by mundane means, it is immediately unlocked. If the target is locked by magical means, the lock spell is suppressed for the duration. This spell creates a loud humming sound.",
+            "duration": "1 minute"
           },
           "swap": {
             "label": "Swap",
             "school": "Alteration",
-            "desc": "The caster swaps places with another friendly character within 10m."
+            "desc": "Instantly swap places with another friendly character within 10m. This does not provoke an attack of opportunity."
           },
           "eyeofzom": {
             "label": "Eye of Zomm",
             "school": "Conjuration",
-            "desc": "Summon a floating eye which the caster can 'see' through and control. Useful for scouting, however the eye is visible to others."
+            "desc": "Summon a floating eye with a speed of 10 which you can control. For the duration your vision is that of the eye, leaving you incapacitated at your current location.",
+            "duration": "1 minute"
           },
           "magicsword": {
             "label": "Magic Sword",
             "school": "Conjuration",
-            "desc": "Summon a sword made of pure arcane energy that only you can wield for 1 minute. It has a +1 modifier to <b>Attack</b> and does <b>2d4+INT+1 Arcane damage</b>."
+            "desc": "Summon a sword made of pure arcane energy that only you can wield for the duration. It has a +1 modifier to <b>Attack</b> and does <b>2d4+INT+1 Arcane damage</b>. Gains +1 attack and +1 damage for each rank above 2.",
+            "duration": "1 minute"
           },
           "summonimp": {
             "label": "Summon Imp",
             "school": "Conjuration",
-            "desc": "Call forth a small imp who has 3d6 + caster level health, 0 armour, 1 magic reduction, 15 dodge, 1d20+4 attack with a range of 5m and does 1d6+3 fire damage. The imp has an additional 1d6 health and 1 damage for each rank above 2."
+            "desc": "Call forth a small imp who has 3d6 (11) health, 0 armour, 1 magic reduction, 15 dodge, an attack of +4 with a range of 5m, doing <b>1d6+3 Fire damage</b>. The imp has an additional 1d6 health and 1 damage for each rank above 2.",
+            "duration": "1 hour"
           },
           "detectmagic": {
             "label": "Detect Magic",
             "school": "Divination",
             "desc": "The caster becomes generally aware of any magic effects within 10m."
           },
+          "whisper": {
+            "label": "Whisper",
+            "school": "Divination",
+            "desc": "You concentrate on someone you have met before for a few seconds. If the target is on the same world, is not dead or unconscious and there is no magic blocking the effect, you are able to directly send a short whispered message which they will hear within their mind. Unwilling targets make a <b>Charisma Saving Throw</b> vs the spell DC to see whether the message is blocked."
+          },
           "frostnova": {
             "label": "Frost Nova",
             "school": "Evocation",
-            "desc": "All creatures within 2m of you must make an <b>Constitution</b> <b>Saving Throw</b>, if they fail they take <b>3d6+INT ice damage</b> and are <b>Rooted</b>. On save success they take half damage and are not rooted."
+            "desc": "All creatures within 2m of you must make an <b>Constitution</b> <b>Saving Throw</b>, if they fail they take <b>3d6+INT Ice damage</b> and are <b>Rooted</b>. On save success they take half damage and are not rooted."
           },
           "icebolt": {
             "label": "Ice Bolt",
@@ -94,7 +103,8 @@
           "invisibility": {
             "label": "Invisibility",
             "school": "Illusion",
-            "desc": "Your target magically vanishes from sight for 1 hour. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action will remove the invisibility. For each rank above 2, this can affect 1 additional target."
+            "desc": "Your target magically vanishes from sight for the duration. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action will remove the invisibility. For each rank above 2, this can affect 1 additional target.",
+            "duration": "1 minute"
           }
         }
       },
@@ -104,27 +114,30 @@
           "flameshield": {
             "label": "Flame Shield",
             "school": "Abjuration",
-            "desc": "Engulf an ally in protective flames for 1 minute. Any characters hitting that target in melee combat take <b>3d4+INT Fire damage</b>. Does an additional 1d4 damage for each rank above 3"
+            "desc": "Engulf an ally in protective flames for the duration. Any characters hitting that target in melee combat take <b>3d4+INT Fire damage</b>. Does an additional 1d4 damage for each rank above 3",
+            "duration": "1 minute"
           },
           "cancelmagic": {
             "label": "Cancel Magic",
             "school": "Alteration",
             "desc": "Remove a single magical effect on a target within 10m (works for both beneficial effects on enemies, and negative effects on allies). May affects an additional magical effect for each rank above 3."
           },
+          "flamingsword": {
+            "label": "Flaming Sword",
+            "school": "Conjuration",
+            "desc": "Engulf a weapon within reach with flames, adding <b>1d6+INT Fire damage</b> to that weapon for the duration. Increases by 1d6 damage for each rank above 3.",
+            "duration": "1 minute"
+          },
           "dimensionaldoor": {
             "label": "Dimensional Door",
             "school": "Conjuration",
-            "desc": "The caster creates a dimensional hole for 1 minute at their current location and another location within 100m that they can either see or visualise. The hole allows anyone to travel through and can be dismissed by the caster at any time."
+            "desc": "The caster creates a dimensional hole for the duration at their current location and another location within 100m that they can either see or visualise. The hole allows anyone to travel through and can be dismissed by the caster at any time.",
+            "duration": "1 minute"
           },
           "summonelemental": {
             "label": "Summon Elemental",
             "school": "Conjuration",
             "desc": "Summon an elemental of your choice (fire or ice), the elemental has 5d8+10 health, 6 speed, 20 dodge and does 2d8+INT damage (of the elemental type). The <b>Fire</b> elemental has a permanent rank 3 <b>Flame Shield</b>. The <b>Ice</b> version can cast a rank 3 <b>Icy Grasp</b> once with the same DC as the caster."
-          },
-          "icyspear": {
-            "label": "Icy Spear",
-            "school": "Conjuration",
-            "desc": "Summon a spear made of pure ice that only you can wield for 1 minute. It has a range of 2, +2 modifier to <b>Attack</b> and does <b>2d4+INT+2 ice damage</b>."
           },
           "summonfeast": {
             "label": "Summon Feast",
@@ -134,7 +147,7 @@
           "identify": {
             "label": "Identify",
             "school": "Divination",
-            "desc": "The caster learns the magical properties of a chosen magic item they are touching."
+            "desc": "You instantly learn the magical properties of a magical item you are touching. If the item is not magical, the spell will have no effect."
           },
           "chokingcloud": {
             "label": "Choking Cloud",
@@ -171,11 +184,6 @@
             "school": "Alteration",
             "desc": "The caster levitates up to 1m off the ground and can move around freely for up to 1 hour."
           },
-          "flamingsword": {
-            "label": "Flaming Sword",
-            "school": "Conjuration",
-            "desc": "The caster imbues a weapon within 10m with flames, adding <b>1d6+INT Fire damage</b> to that weapon for 1 minute. Increases by 1d6 for each rank above 4."
-          },
           "seeinvisible": {
             "label": "See Invisible",
             "school": "Conjuration",
@@ -194,7 +202,8 @@
           "blur": {
             "label": "Blur",
             "school": "Illusion",
-            "desc": "Choose a target friendly character, that character becomes a blurred image for 1 minute, causing all attacking characters to roll with disadvantage when attacking that character."
+            "desc": "Choose a target friendly character, that character becomes a blurred image for the duration, causing all attacking characters to roll with disadvantage when attacking that character.",
+            "duration": "1 minute"
           }
         }
       },
@@ -204,7 +213,7 @@
           "crystallize": {
             "label": "Crystallize",
             "school": "Abjuration",
-            "desc": "Coat yourself in hard crystal for 1 minute, gaining 4d6 temporary health. While you have this temporary health you are <b>Slowed</b>."
+            "desc": "Coat yourself in hard crystal, gaining 4d6+INT temporary health. While you have this temporary health you are considered <b>Stunned</b>."
           },
           "openportal": {
             "label": "Open Portal",
@@ -219,7 +228,8 @@
           "arcanegreatsword": {
             "label": "Arcane Greatsword",
             "school": "Conjuration",
-            "desc": "The caster summons a huge sword made of pure arcane energy that only they can wield for 1 minute. It has a range of 2, +5 modifier to attack and does <b>1d8+INT+5 Arcane damage</b>."
+            "desc": "Conjure a huge sword made of pure arcane energy that only you can wield for the duration. The sword requires both hands, has a +6 modifier to attack and does <b>2d8+INT+6 Arcane damage</b>.",
+            "duration": "1 minute"
           },
           "disintegrate": {
             "label": "Disintegrate",
@@ -249,17 +259,19 @@
           "protection": {
             "label": "Protection",
             "school": "Abjuration",
-            "desc": "Grant a friendly target +1 armour against any attacks for 1 minute. Increases by 1 armour for each rank above 1."
+            "desc": "Grant a friendly target a bonus to any <b>Saving Throws</b> equal to your <b>Spirit</b> for the duration. For each rank above 1 it can apply to an additional target.",
+            "duration": "1 minute"
           },
           "heal": {
             "label": "Heal",
             "school": "Alteration",
-            "desc": "Heal a target within 1m for 1d6+SPI health. Increases by 1d6 for each rank above 1."
+            "desc": "Heal a target within 10m for 1d6+SPI health. Increases by 1d6 for each rank above 1."
           },
           "blessing": {
             "label": "Blessing",
             "school": "Alteration",
-            "desc": "The target receives +1 on all checks and attack rolls for 1 minute. Increases by +1 for each rank above 1."
+            "desc": "Grant a friendly target a bonus to all <b>Attack Rolls</b> equal to your <b>Spirit</b> for the duration. For each rank above 1 it can apply to an additional target.",
+            "duration": "1 minute"
           },
           "curepoison": {
             "label": "Cure Poison",
@@ -286,10 +298,17 @@
             "school": "Abjuration",
             "desc": "Mark a friendly target within 10m with a holy symbol, granting them <b>1d6+SPI temporary health</b>. Increases by 1 for each rank above 2."
           },
+          "protection": {
+            "label": "Shielding",
+            "school": "Abjuration",
+            "desc": "Grant a friendly target +1 armour against any attacks for the duration. Increases by 1 armour for each rank above 2.",
+            "duration": "1 minute"
+          },
           "focus": {
             "label": "Focus",
             "school": "Alteration",
-            "desc": "Grant a friendly target within 10m focus for 1 hour, they now roll with <b>Advantage</b> on any <b>Saving Throw</b>s."
+            "desc": "Grant a friendly target within 10m <b>Advantage</b> on any <b>Checks</b> for the duration. For each rank above 2 it can apply to an additional target.",
+            "duration": "1 hour"
           },
           "calm": {
             "label": "Calm",
@@ -304,7 +323,8 @@
           "flashheal": {
             "label": "Flash Heal",
             "school": "Alteration",
-            "desc": "Use a <b>Bonus Action</b> to heal the target for 1d4+SPI health. Increases by 1d4 for each rank above 2."
+            "desc": "Heal a target within 10m for 1d4+SPI health. Increases by 1d4 for each rank above 2.",
+            "type": "BonusAction"
           },
           "turnundead": {
             "label": "Turn Undead",
@@ -465,22 +485,25 @@
           "regenerate": {
             "label": "Regenerate",
             "school": "Alteration",
-            "desc": "Grant regeneration to a friendly target within 10m for 1 minute. At the start of it's turn that character heals 2d4 health."
+            "desc": "Grant regeneration to a friendly target within 10m for the duration. At the start of it's turn that character gains 2d4 health.",
+            "duration": "1 minute"
           },
           "stoneskin": {
             "label": "Stoneskin",
             "school": "Abjuration",
-            "desc": "Grant a friendly target within 10m <b>Resistance</b> to <b>Blunt, Slashing and Piercing</b> damage for 1 minute."
+            "desc": "Grant a friendly target within 10m <b>Resistance</b> to <b>Blunt, Slashing and Piercing</b> damage for the duration.",
+            "duration": "1 minute"
           },
           "speedofthecheetah": {
             "label": "Speed of the Cheetah",
             "school": "Alteration",
-            "desc": "Grant a friendly target within 10m <b>Haste</b> for 1 minute."
+            "desc": "Grant a friendly target within 10m <b>Haste</b> for the duration.",
+            "duration": "1 minute"
           },
           "summonwind": {
             "label": "Summon Wind",
             "school": "Alteration",
-            "desc": "Call on the winds to help you levitate off the ground for up to 1 hour."
+            "desc": "Call on the winds, granting you levitate off the ground for  1 hour."
           },
           "charmanimal": {
             "label": "Charm Animal",
@@ -545,7 +568,8 @@
           "thunderstorm": {
             "label": "Thunderstorm",
             "school": "Evocation",
-            "desc": "Choose an area 3m x 3m within range to create a storm that you can maintain with <b>Concentration</b> for up to 1 minute. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage."
+            "desc": "Choose an area 3m x 3m within range to create a storm that you can maintain with <b>Concentration</b> for the duration. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage.",
+            "duration": "1 minute"
           }
         }
       }
@@ -561,27 +585,25 @@
           "enhancemind": {
             "label": "Enhance Mind",
             "school": "Alteration",
-            "desc": "Grant your target enhanced mind for 1 hour. That character has <b>Advantage</b> on all <b>Intelligence Checks</b> for the duration."
+            "desc": "Grant your target enhanced mind for the duration. That character has <b>Advantage</b> on all <b>Intelligence/Charisma Checks</b> for the duration.",
+            "duration": "1 hour"
           },
           "wrackmind": {
             "label": "Wrack Mind",
             "school": "Evocation",
             "desc": "Choose a creature within 10m, that creature must make an <b>Intelligence Saving Throw</b> or take <b>1d6+CHA Mind damage</b>"
           },
-          "mirage": {
-            "label": "Mirage",
-            "school": "Illusion",
-            "desc": "Surround a friendly target in a mirage for 1 minute. All creatures attacking must make an <b>Intelligence Saving Throw</b> or their attack will have <b>Disadvantage</b>."
-          },
           "lovesick": {
             "label": "Lovesick",
             "school": "Illusion",
-            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> or it will be unable to attack you for 1 minute."
+            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> or it will make any attacks against you with <b>Disadvantage</b>",
+            "duration": "1 hour"
           },
-          "lessercharm": {
-            "label": "Lesser Charm",
+          "charm": {
+            "label": "Charm",
             "school": "Illusion",
-            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> with <b>Advantage</b> or it will be <b>Charmed</b> until the end of it's next turn."
+            "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> (during combat it has <b>Advantage</b>) or it will be <b>Charmed</b> for the duration. It must then make another save at the end of each turn to see if it breaks free from the charm. When the effect ends, the creature knows it was charmed by you.",
+            "duration": "1 hour"
           }
         }
       }
