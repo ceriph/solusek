@@ -145,5 +145,46 @@
         "desc": "Satisfied for now, Auron orders the group to leave now and return tomorrow in order to carry out a task for him. As the party leave they see Auron raise the 3 dead disciples."
       }
     ]
+  },
+  "4": {
+    "title": "Scenario 4 - Working for the Enemy",
+    "events": [
+      {
+        "type": "Story",
+        "desc": "The group try to track down Belgarath however are told by Articus - who seems to be warming to the group a little - at the Wizards Circle."
+      },
+      {
+        "type": "Shopping",
+        "desc": "While attempting to purchase some poison ingredients, Fen and Skalath manages to pull off some questionable theft of the poor herbalist Carril."
+      },
+      {
+        "type": "Story",
+        "desc": "The group travel back to the Black Residence (without Sophea) to meet Auron, and after attempting to sneak down make their way into a large underground cavern where they are immediately seen by Auron. They see and learn of a large rift in construction, and are given a task by Auron to retrieve a 'diamond', 'giant bones', and 'high elf pure-blood'"
+      },
+      {
+        "type": "Story",
+        "desc": "Upon inspecting the trinkets found in the Black Residence, group notice there are 5, each with a name inscribed: Auron, Caleb, Miranda, Jarred and Eldarin. Eldarin is the only name they couldn't identify. The group choose to hold onto the items."
+      },
+      {
+        "type": "Story",
+        "desc": "After explaining the situation to Sophea, the group decide to leave Freeport for the High Elf city of Lunathil. Before leaving they ask Articus to send a 'whisper' to Belgarath, however later learn the whisper does not reach him for an unknown reason."
+      },
+      {
+        "type": "Story",
+        "desc": "5 hours into their journey the group stumble upon some giant tracks, but decide it is prudent to leave them for now."
+      },
+      {
+        "type": "Story",
+        "desc": "1 hour further the group find many goblin tracks across the road, leading to what seems like an under-hill home to some goblins who appear to have been robbing travelers on the road."
+      },
+      {
+        "type": "Encounter",
+        "desc": "The group swiftly defeat 4 of the 5 goblins inside, the 5th being held under the magical charm of Sophea."
+      },
+      {
+        "type": "Story",
+        "desc": "Upon further inspection, the goblin hovel seems to lead further into an old underground ruin of some kind containing a statue of a minotaur-like creature wearing ornate bracers. The wall are surrounded in tapestries that depict what Ruairih recognises as some sort of Paladin order."
+      }
+    ]
   }
 }

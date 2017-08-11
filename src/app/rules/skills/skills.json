@@ -40,7 +40,7 @@
     "label": "Aura of Protection"
   },
   "backstab": {
-    "desc": "you are able to exploit weak spots when performing an <b>Attack Action</b> from behind a non-moving enemy. If your attack hits you do an additional <b>1d6 piercing damage</b>. Increases to 2d6 at level 4, 3d6 at level 8, 4d6 at level 12, 5d6 at level 16 and 6d6 at level 20. Piercing weapon required.",
+    "desc": "you are able to exploit weak spots when performing an <b>Attack Action</b> with a <b>Piercing</b> weapon from behind a non-moving enemy. If your attack hits you do an additional <b>1d6 piercing damage</b>. Damage increases to 2d6 at level 3, 3d6 at level 5, 4d6 at level 7, 5d6 at level 9, 6d6 at level 11, 7d6 at level 13, 8d6 at level 15, 9d6 at level 17, 10d6 at level 19.",
     "label": "Backstab",
     "recovery": "Round",
     "type": "Action"
@@ -209,7 +209,7 @@
     "type": "Action"
   },
   "panache": {
-    "desc": "you have mastered the ability to charm and deceive, gaining advantage on any <b>Persuasion</b> rolls against non-magical creatures.",
+    "desc": "you have mastered the ability to charm and deceive, gaining <b>Advantage</b> on any <b>Persuasion</b> rolls against non-magical creatures.",
     "label": "Panache"
   },
   "poisons1": {
@@ -395,11 +395,12 @@
   },
   "imbueelement": {
     "label": "Imbue Element",
-    "desc": "when casting a spell that does <b>Arcane</b> damage, you may inbue it with wither fire or cold, doing an additional 1d8 damage of that type."
+    "desc": "when casting a spell that does <b>Arcane</b> damage, you may imbue it with either fire or cold, doing an additional 1d8 damage of that type.",
+    "recovery": "Round"
   },
   "arcanetorrent": {
     "label": "Arcane Torrent",
-    "desc": "your <b>Arcane Missiles</b> spell now does 2d4 per missile."
+    "desc": "your <b>Arcane Missiles</b> spell now does 2d4 per missile and you have full control over which targets the missiles hit."
   },
   "multicast": {
     "label": "Multicast",
@@ -559,5 +560,4 @@
     "desc": "you now have access to rank 5 mind magic.",
     "label": "Mind 5"
   }
-
 }

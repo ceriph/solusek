@@ -32,3 +32,7 @@ export enum School {
   Evocation,
   Illusion
 }
+
+export class SpellSlots {
+
+}

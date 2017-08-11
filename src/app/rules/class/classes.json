@@ -4,6 +4,7 @@
     "label": "Bard",
     "desc": "It might not seem conventional to bring a guitar to a sword fight, but once you see a bard at work you will understand. They use their gifts of music to weave magical sonnets, bolstering their allies and weakening their foes. Rock on.",
     "hit": 8,
+    "type": "Hybrid",
     "spellMod": "cha",
     "equipment": [
       "leatherarmour",
@@ -28,6 +29,7 @@
     "label": "Cleric",
     "desc": "Clerics are devoted to helping the living stay living, and as such in combat they are focused on healing their teammates.",
     "hit": 8,
+    "type": "Caster",
     "spellMod": "spi",
     "equipment": [
       "clotharmour",
@@ -44,6 +46,7 @@
     "label": "Enchanter",
     "desc": "Enchanters are the masters of the mind, using their magical abilities to control and confuse enemies. Main roles in battle are crowd control and damage.",
     "hit": 6,
+    "type": "Caster",
     "spellMod": "cha",
     "equipment": [
       "clotharmour",
@@ -68,6 +71,7 @@
     "label": "Monk",
     "desc": "Monks avoid wearing armour and wielding weapons, and rather aim to hone their body into the ultimate weapon by mastering the martial arts and harnessing their inner spirit.",
     "hit": 8,
+    "type": "Skill",
     "equipment": [
       "clotharmour"
     ],
@@ -90,6 +94,7 @@
     "label": "Necromancer",
     "desc": "To some, death is not something to be feared but to be harnessed for power. Necromancers study and hone their ability to control the forces of life and death directly. Their main role in combat is damage.",
     "hit": 6,
+    "type": "Caster",
     "spellMod": "int",
     "equipment": [
       "clotharmour",
@@ -105,6 +110,7 @@
     "label": "Paladin",
     "desc": "A cross between a Warrior and a Cleric, Paladins combine their fighting abilities with healing spells. They are also particularly effective against undead enemies. Paladins can either focus on a tanking role, or as a healer.",
     "hit": 10,
+    "type": "Hybrid",
     "spellMod": "spi",
     "equipment": [
       "chainarmour",
@@ -136,28 +142,6 @@
         ]
       },
       {
-        "label": "Oath of Treachery",
-        "desc": "You make a sacred oath only to yourself, vowing to pursue only what suits you.",
-        "skills": [
-          {
-            "level": 3,
-            "name": "deceiver"
-          },
-          {
-            "level": 7,
-            "name": "vowofself"
-          },
-          {
-            "level": 11,
-            "name": "defensive"
-          },
-          {
-            "level": 15,
-            "name": "shadowcaller"
-          }
-        ]
-      },
-      {
         "label": "Oath of Vengeance",
         "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary.",
         "skills": [
@@ -176,6 +160,28 @@
           {
             "level": 15,
             "name": "executioner"
+          }
+        ]
+      },
+      {
+        "label": "Oathbreaker",
+        "desc": "You choose not to take up an oath, vowing to pursue only what suits you.",
+        "skills": [
+          {
+            "level": 3,
+            "name": "deceiver"
+          },
+          {
+            "level": 7,
+            "name": "vowofself"
+          },
+          {
+            "level": 11,
+            "name": "defensive"
+          },
+          {
+            "level": 15,
+            "name": "shadowcaller"
           }
         ]
       }
@@ -252,6 +258,7 @@
     "label": "Ranger",
     "desc": "Rangers are solitary characters often at one with nature. They make exceptional trackers and are proficient with ranged weapons. They can also go toe to toe with enemies if required.",
     "hit": 8,
+    "type": "Hybrid",
     "spellMod": "spi",
     "equipment": [
       "leatherarmour",
@@ -404,6 +411,7 @@
     "label": "Reaver",
     "desc": "Known as 'dark paladins', Reavers are a cross between a Warrior and a Necromancer, employing a mix of physical abilities and dark magic in combat. Reavers can focus on tanking or damage roles.",
     "hit": 10,
+    "type": "Hybrid",
     "spellMod": "int",
     "equipment": [
       "chainarmour",
@@ -428,6 +436,7 @@
     "label": "Rogue",
     "desc": "Rogues like to stay in the shadows, remaining hidden and striking enemies from behind. Thought rogues like to be up close with enemies to do large amounts of damage, they can't afford to take many hits.",
     "hit": 6,
+    "type": "Skill",
     "spellMod": "int",
     "equipment": [
       "leatherarmour",
@@ -580,6 +589,7 @@
     "label": "Druid",
     "desc": "Primal and ritualistic, druid channel the energies of nature to heal and bolster their allies, as well as harness the weather to damage their enemies.",
     "hit": 8,
+    "type": "Caster",
     "spellMod": "spi",
     "equipment": [
       "leatherarmour",
@@ -591,13 +601,14 @@
     "skills": []
   },
   "warrior": {
-    "desc": "The masters of arms, warriors are commonly found at the front of battle clad in heavy armour. They have a wide variety of available weapons, shields and armour. Warriors are one of the few classes to not directly employ magic in any way, and generally do not trust it.",
+    "desc": "Masters of armed combat, warriors are commonly found at the front of battle clad in heavy armour. They have a wide variety of available weapons, shields and armour. Warriors are one of the few classes to not directly employ magic in any way, and generally do not trust it.",
     "equipment": [
       "chainarmour",
       "shortsword",
       "roundshield"
     ],
     "hit": 12,
+    "type": "Skill",
     "label": "Warrior",
     "name": "warrior",
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Ranged Weapons, Small Shields, Medium Shields, Large Shields",
@@ -612,6 +623,7 @@
       "magicstaffarcane"
     ],
     "hit": 6,
+    "type": "Caster",
     "spellMod": "int",
     "label": "Wizard",
     "name": "wizard",

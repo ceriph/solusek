@@ -68,6 +68,16 @@
     </div>
   </div>
 
+  <div *ngIf="hasSpells()" class="box fill">
+    <h2>Spell Slots</h2>
+    <div *ngIf="getSpellSlots(1).length > 0" class="wrapper">
+      <h3>Rank 1</h3>
+      <div *ngFor="let item of getSpellSlots(1)">
+        <div class="spellSlot"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="box fill">
     <h2>Skills</h2>
     <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
@@ -87,7 +97,7 @@
     </div>
   </div>
 
-  <div class="box fill">
+  <div class="box fill no-print">
     <h2>Bio</h2>
     <h3>Appearance</h3>
     <p>{{character.info.appearance}}</p>

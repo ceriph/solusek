@@ -7,7 +7,7 @@ import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
 import {RaceService} from "../../rules/race/race.service";
 import {ClassService} from "../../rules/class/classes.service";
-import {Class} from "../../rules/class/class";
+import {Class, Type} from "../../rules/class/class";
 import {Race} from "../../rules/race/race";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
@@ -42,9 +42,8 @@ export class CharacterSummaryComponent implements OnInit {
   ngOnInit() {
     this.user.subscribe(user => {
       if (user && user.uid) {
-        this.characterService.get(user.uid).subscribe(character => {
-          this.load(character);
-        });
+        this.characterService.get(user.uid)
+          .subscribe(character => this.load(character));
       }
     });
 
@@ -62,5 +61,41 @@ export class CharacterSummaryComponent implements OnInit {
         this.clazz = clazz;
       });
     });
+  }
+
+  getSpellSlots(rank: number): number[] {
+    return this.getSpells()[rank - 1];
+  }
+
+  hasSpells(): boolean {
+    const spells = this.getSpells().reduce((a, b) => a + b.length, 0);
+    console.log("has spells: ", spells);
+    return spells > 0;
+  }
+
+  getSpells(): number[][] {
+    if (this.clazz) {
+      if (this.clazz.type === Type[Type.Caster]) {
+        return [
+          Array(Math.max(0, Math.min(this.character.level + 1, 5))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 3, 4))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 7, 4))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 11, 3))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 15, 3))).fill(1)
+        ]
+      } else if (this.clazz.type === Type[Type.Hybrid]) {
+        return [
+          Array(Math.max(0, Math.min(this.character.level - 1, 5))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 5, 4))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 9, 3))).fill(1),
+          Array(Math.max(0, Math.min(this.character.level - 13, 2))).fill(1),
+          []
+        ]
+      } else {
+        return [];
+      }
+    } else {
+      return [];
+    }
   }
 }
