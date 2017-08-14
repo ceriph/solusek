@@ -25,6 +25,7 @@ td {
   width: 100%;
   padding-top: 0;
   padding-bottom: 10px;
+  font-weight: normal;
 }
 
 .card {
@@ -53,8 +54,22 @@ summary-stat + summary-stat {
   padding-left: 10px;
 }
 
-.spellSlot {
+.checkbox {
   border: 1px solid #8E8E8E;
-  width: 20px;
-  height: 20px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+
+  background-color: white;
+}
+
+
+.checkbox + .checkbox {
+  margin-left: 2px;
+}
+
+.checkbox p {
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
 }
