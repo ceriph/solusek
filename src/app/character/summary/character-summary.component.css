@@ -57,7 +57,7 @@ summary-stat + summary-stat {
 
 .inline + .inline {
   padding-right: 10px;
-  border-right: 1px solid #EEE;
+  border-left: 1px solid #EEE;
   padding-left: 10px;
 }
 
