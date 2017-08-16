@@ -20,8 +20,15 @@ td {
   text-align: center;
 }
 
+.box {
+  padding: 1%;
+  margin: 1%;
+  width: 96%;
+}
+
 .title {
-  margin: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   width: 100%;
   padding-top: 0;
   padding-bottom: 10px;
@@ -59,10 +66,10 @@ summary-stat + summary-stat {
   min-height: 40px;
   min-width: 40px;
   display: inline-block;
+  padding: 2px;
 
   background-color: white;
 }
-
 
 .checkbox + .checkbox {
   margin-left: 2px;
