@@ -12,12 +12,15 @@
           "summonlight",
           "firebolt",
           "arcanemissiles",
-          "burninghands"
+          "burninghands",
+          "identify",
+          "sleep"
         ]
       },
       "2": {
         "rank": 2,
         "spells": [
+          "arcanelock",
           "openlock",
           "swap",
           "eyeofzom",
@@ -28,7 +31,10 @@
           "frostnova",
           "icebolt",
           "fireball",
-          "invisibility"
+          "invisibility",
+          "scry",
+          "fogcloud",
+          "levitate"
         ]
       },
       "3": {
@@ -40,18 +46,15 @@
           "dimensionaldoor",
           "summonelemental",
           "summonfeast",
-          "identify",
           "chokingcloud",
           "icygrasp",
           "mirrorimage",
-          "scry"
+          "fly"
         ]
       },
       "4": {
         "rank": 4,
         "spells": [
-          "teleport",
-          "levitate",
           "seeinvisible",
           "blizzard",
           "chainlightning",
@@ -61,12 +64,33 @@
       "5": {
         "rank": 5,
         "spells": [
-          "crystallize",
-          "openportal",
-          "openrift",
           "arcanegreatsword",
           "disintegrate",
           "callmeteor"
+        ]
+      },
+      "6": {
+        "rank": 6,
+        "spells": [
+          "crystallize",
+          "teleport"
+        ]
+      },
+      "7": {
+        "rank": 7,
+        "spells": [
+          "openportal",
+          "openrift"
+        ]
+      },
+      "8": {
+        "rank": 8,
+        "spells": [
+        ]
+      },
+      "9": {
+        "rank": 9,
+        "spells": [
         ]
       }
     }
@@ -100,7 +124,8 @@
           "curedisease",
           "flashheal",
           "turnundead",
-          "beamoflight"
+          "beamoflight",
+          "scry"
         ]
       },
       "3": {
@@ -110,8 +135,7 @@
           "revive",
           "cancelmagic",
           "circleofhealing",
-          "bountifullight",
-          "scry"
+          "bountifullight"
         ]
       },
       "4": {
@@ -142,7 +166,8 @@
           "strengthofthebear",
           "camouflage",
           "thornyvines",
-          "calllightning"
+          "calllightning",
+          "heal"
         ]
       },
       "2": {
@@ -153,7 +178,9 @@
           "eyesofthehawk",
           "callanimal",
           "callhurricane",
-          "spiderform"
+          "spiderform",
+          "scry",
+          "levitate"
         ]
       },
       "3": {

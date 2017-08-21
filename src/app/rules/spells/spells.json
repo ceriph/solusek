@@ -3,12 +3,15 @@
     "group": "Arcane",
     "label": "Shielding",
     "school": "Abjuration",
-    "desc": "Choose a friendly target within 10m to receive +1 <b>spell armour</b>. Adds an additional +1 for each additional rank above 1"
+    "desc": "Choose a friendly target within 10m to receive +1 <b>spell armour</b>. Adds an additional +1 for each additional rank above 1",
+    "duration": "1 minute",
+    "castTime": "BonusAction"
   },
   "blink": {
     "label": "Blink",
     "school": "Alteration",
-    "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Slowed</b> but <i>not</i> <b>Rooted</b>. Adds 1 point of movement range for each rank above 1."
+    "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Slowed</b> but <i>not</i> <b>Rooted</b>. This does <i>not</i> provoke an <b>Attack of Opportunity</b>. Adds 1 point of movement range for each rank above 1.",
+    "castTime": "BonusAction"
   },
   "telekinesis": {
     "label": "Telekinesis",
@@ -41,6 +44,11 @@
     "desc": "Choose a target that is locked. If that target is locked by mundane means, it is immediately unlocked. If the target is locked by magical means, the lock spell is suppressed for the duration. This spell creates a loud humming sound.",
     "duration": "1 minute"
   },
+  "locateobject": {
+    "label": "Locate Object",
+    "school": "Divination",
+    "desc": "You can attempt to locate an object familiar to you. If the object is within 1000 metres and not blocked by magical means, you will sense the general direction of the item. For the item to be classes as familiar, you must have seen it before from been within 10m."
+  },
   "swap": {
     "label": "Swap",
     "school": "Alteration",
@@ -58,16 +66,27 @@
     "desc": "Summon a sword made of pure arcane energy that only you can wield for the duration. It has a +1 modifier to <b>Attack</b> and does <b>2d4+INT+1 Arcane damage</b>. Gains +1 attack and +1 damage for each rank above 2.",
     "duration": "1 minute"
   },
+  "arcanelock": {
+    "label": "Arcane Lock",
+    "school": "Abjuration",
+    "desc": "You cast a magical lock on a door, window, gate or chest which prevents anyone from opening it other than you and anyone you designate.",
+    "duration": "Until dispelled"
+  },
   "summonimp": {
     "label": "Summon Imp",
     "school": "Conjuration",
-    "desc": "Call forth a small imp who has 3d6 (11) health, 0 armour, 1 magic reduction, 15 dodge, an attack of +4 with a range of 5m, doing <b>1d6+3 Fire damage</b>. The imp has an additional 1d6 health and 1 damage for each rank above 2.",
-    "duration": "1 hour"
+    "desc": "Call forth a small imp who has 3d6 (11) health, 0 armour, 1 magic reduction, 15 dodge, an attack of +4 with a range of 5m with does doing <b>1d6+3 Fire damage</b>. The imp has an additional 1d6 health and 1 damage for each rank above 2.",
+    "duration": "1 day"
+  },
+  "fogcloud": {
+    "label": "Fog Cloud",
+    "school": "Divination",
+    "desc": "You summon a fog cloud at a point within 10m. The cloud expands to cover a 3m cube, obscuring the area."
   },
   "detectmagic": {
     "label": "Detect Magic",
     "school": "Divination",
-    "desc": "The caster becomes generally aware of any magic effects within 10m."
+    "desc": "You become generally aware of any magic effects within 10m."
   },
   "whisper": {
     "label": "Whisper",
@@ -161,7 +180,14 @@
   "levitate": {
     "label": "Levitate",
     "school": "Alteration",
-    "desc": "The caster levitates up to 1m off the ground and can move around freely for up to 1 hour."
+    "desc": "You touch a willing creature, causing it to levitate up to 1m off the ground and can move around freely for the duration.",
+    "duration": "1 hour"
+  },
+  "sleep": {
+    "label": "Sleep",
+    "school": "Alteration",
+    "desc": "Select a point within 10m, causing 5d8 health worth of creatures within a 3m cube originating at the chosen point to fall unconscious. For each rank above 1, this spell affects an additional 2d8 health worth of creatures."
+
   },
   "seeinvisible": {
     "label": "See Invisible",
@@ -428,6 +454,12 @@
     "school": "Illusion",
     "desc": "Take the form of a small bird for 1 hour. While in bird form the caster can fly."
   },
+  "fly": {
+    "label": "Fly",
+    "school": "Alteration",
+    "desc": "You touch a willing creature, granting it a flying speed of 10m for the duration. For each rank above 3, the spell can affect one additional creature.",
+    "duration": "10 minutes"
+  }
   "scry": {
     "label": "Scry",
     "school": "Illusion",

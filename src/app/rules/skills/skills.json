@@ -109,9 +109,9 @@
     "label": "Hardy"
   },
   "headshot": {
-    "desc": "you may make an <b>Attack</b> on a target within range, if it hits, the attack counts as a <b>Critical Hit</b> regardless of the roll.",
+    "desc": "you may make an <b>Attack</b> on a target within range, the attack suffers a -5 to hit, but ignores up to 3/4 cover and if it hits it counts as a <b>Critical</b> regardless of the roll.",
     "label": "Headshot",
-    "recovery": "ShortRest",
+    "recovery": "None",
     "type": "Action"
   },
   "improvedcritical": {
@@ -123,8 +123,10 @@
     "label": "Improved Divine Smite"
   },
   "layonhands": {
-    "desc": "you can use an <b>Action</b> to place a healing hand on a friendly character within range, healing them to full health. You must take a <b>Long Rest</b> before using this skill again.",
-    "label": "Lay On Hands"
+    "desc": "you can use an <b>Action</b> to place a healing hand on a friendly character within range, healing them to full health, you then suffer one point of <b>Exhaustion</b>.",
+    "label": "Lay On Hands",
+    "recovery": "LongRest",
+    "type": "Action"
   },
   "light": {
     "desc": "you have access to <b>Light</b> magic.",

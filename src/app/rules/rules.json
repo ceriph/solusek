@@ -285,12 +285,32 @@
         "desc": "Characters at 0 health which have not yet been <b>stabilized</b> are considered to be dying, and must make a <b>death saving throw</b> each turn. Dying characters are always considered <b>unconscious</b>."
       },
       {
-        "title": "Exhausted",
-        "desc": "A character who is exhausted can no longer gain the benefits of a <b>short rest</b> and must take a <b>long rest</b> in order to recover from the condition."
+        "title": "Exhaustion",
+        "desc": "A character who is suffering from exhaustion takes an effect depending on the number of points of exhaustion they have, the effects are cumulative, so for example a character with 3 points of exhaustion would suffer the 1, 2 and 3 point effects. When taking a <b>Long Rest</b>, the character removes one point of exhaustion.",
+        "sections": [
+          {
+            "desc": "<b>1</b> - <b>Disadvantage</b> on all <b>Checks</b>."
+          },
+          {
+            "desc": "<b>2</b> - <b>Speed</b> is halved."
+          },
+          {
+            "desc": "<b>3</b> - <b>Disadvantage</b> on all <b>Attacks</b> and <b>Saving Throws</b>."
+          },
+          {
+            "desc": "<b>4</b> - Maximum <b>Health</b> is halved."
+          },
+          {
+            "desc": "<b>5</b> - <b>Speed</b> is reduced to 0."
+          },
+          {
+            "desc": "<b>6</b> - Death."
+          }
+        ]
       },
       {
         "title": "Feared",
-        "desc": "While feared, your character has <b>disadvantage</b> on any attack rolls against the create which caused the fear. At the end of each turn you must make a SPI saving throw, on success you are no longer fe"
+        "desc": "While feared, you have <b>disadvantage</b> on any attack rolls against the creature which caused the fear, and you cannot willingly move towards them. At the end of each turn you must make a SPI saving throw, on success you are no longer fe"
       },
       {
         "title": "Hasted",
