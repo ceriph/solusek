@@ -3,8 +3,8 @@ import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/dat
 import {Rule} from "./rule";
 import {RulesService} from "./rules.service";
 import {Race} from "./race/race";
-import {Class} from "./class/class";
-import {Spell, SpellGroup} from "./spells/spell";
+import {Class, Type} from "./class/class";
+import {Slots, Spell, SpellGroup} from "./spells/spell";
 import {SpellService} from "./spells/spell.service";
 import {ClassService} from "./class/classes.service";
 import {RaceService} from "./race/race.service";
@@ -13,6 +13,8 @@ import {EquipmentService} from "./equipment/equipment.service";
 import {Router} from "@angular/router";
 import {PoisonRank} from "./poisons/poison";
 import {PoisonService} from "./poisons/poison.service";
+import {SpellGroupService} from "./spells/spell-group.service";
+import {SpellSlotService} from "./spells/spell-slot.service";
 
 @Component({
   selector: 'rules',
@@ -30,18 +32,23 @@ export class RulesComponent implements OnInit {
   shields: FirebaseListObservable<Item[]>;
   weapons: FirebaseListObservable<Item[]>;
   tools: FirebaseListObservable<Item[]>;
+  levels: number[];
+  casterSpellSlots: FirebaseListObservable<Slots[]>;
+  hybridSpellSlots: FirebaseListObservable<Slots[]>;
 
   constructor(private rulesService: RulesService,
               private classService: ClassService,
               private raceService: RaceService,
-              private spellService: SpellService,
+              private spellGroupService: SpellGroupService,
               private poisonService: PoisonService,
-              private equipmentService: EquipmentService) {
+              private equipmentService: EquipmentService,
+              private spellSlotService: SpellSlotService) {
   }
 
   ngOnInit() {
+    this.levels = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
     this.rules = this.rulesService.list();
-    this.spells = this.spellService.list();
+    this.spells = this.spellGroupService.list();
     this.poisons = this.poisonService.list();
     this.races = this.raceService.list();
     this.classes = this.classService.list();
@@ -49,5 +56,7 @@ export class RulesComponent implements OnInit {
     this.weapons = this.equipmentService.listByType(ItemType.Weapon);
     this.shields = this.equipmentService.listByType(ItemType.Shield);
     this.tools = this.equipmentService.listByType(ItemType.Tool);
+    this.casterSpellSlots = this.spellSlotService.list(Type.Caster);
+    this.hybridSpellSlots = this.spellSlotService.list(Type.Hybrid);
   }
 }

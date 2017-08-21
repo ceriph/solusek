@@ -22,15 +22,16 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Add archetype selection to character at level 3
 * Add character levelup
 * Add equip/unequip
-  * Add 'slot' to character and equipment to allocate items 
   * Add proficiency service to calculate whether a character can use an item
   * Add proficiencies for all items
 * Add 'combat' section to summary including attack damage
   * Weapons need a 'base' die and stat modifier function
 * Add a monster creator
+* Simplify equipment/inventory/skills to create single page character sheet
 
 ### Refactoring
 
+* Change slots to be item 'types'
 * Enrich spell object and structure for cross-class spell support
 * Tidy racial passives into modifiers to remove hardcoding
 * Allow modifiers to be 'functions' that get applied - custom DSL?
@@ -41,6 +42,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Content
 
+* Address spell Action vs Bonus Action
+* Review current archetypes
 * Add more spells for arcane, nature and light
 * Flesh out classes that aren't current being played
   * Add spells for dark, mind and song

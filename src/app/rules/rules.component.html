@@ -466,172 +466,28 @@
     </p>
     <table class="wide">
       <tr class="header">
-        <td>Character Level</td>
-        <td>Rank 1 Slots</td>
-        <td>Rank 2 Slots</td>
-        <td>Rank 3 Slots</td>
-        <td>Rank 4 Slots</td>
-        <td>Rank 5 Slots</td>
+        <td>Level</td>
+        <td>Rank 1</td>
+        <td>Rank 2</td>
+        <td>Rank 3</td>
+        <td>Rank 4</td>
+        <td>Rank 5</td>
+        <td>Rank 6</td>
+        <td>Rank 7</td>
+        <td>Rank 8</td>
+        <td>Rank 9</td>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>4</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>4</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>4</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>1</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
+      <tr *ngFor="let level of levels">
+        <td>{{level}}</td>
+        <td>{{casterSpellSlots[level].value[0]}}</td>
+        <td>{{casterSpellSlots[level].value[1]}}</td>
+        <td>{{casterSpellSlots[level].value[2]}}</td>
+        <td>{{casterSpellSlots[level].value[3]}}</td>
+        <td>{{casterSpellSlots[level].value[4]}}</td>
+        <td>{{casterSpellSlots[level].value[5]}}</td>
+        <td>{{casterSpellSlots[level].value[6]}}</td>
+        <td>{{casterSpellSlots[level].value[7]}}</td>
+        <td>{{casterSpellSlots[level].value[8]}}</td>
       </tr>
     </table>
     <h3>Hybrids</h3>
@@ -641,172 +497,19 @@
     </p>
     <table class="wide">
       <tr class="header">
-        <td>Character Level</td>
-        <td>Rank 1 Slots</td>
-        <td>Rank 2 Slots</td>
-        <td>Rank 3 Slots</td>
-        <td>Rank 4 Slots</td>
-        <td>Rank 5 Slots</td>
+        <td>Level</td>
+        <td>Rank 1</td>
+        <td>Rank 2</td>
+        <td>Rank 3</td>
+        <td>Rank 4</td>
+        <td>Rank 5</td>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>4</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>5</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>5</td>
-        <td>4</td>
-        <td>1</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>5</td>
-        <td>4</td>
-        <td>2</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>-</td>
+      <tr *ngFor="let slots of hybridSpellSlots | keys">
+        <td>{{slots.value['0']}}</td>
+        <td>{{slots.value['1']}}</td>
+        <td>{{slots.value['2']}}</td>
+        <td>{{slots.value['3']}}</td>
+        <td>{{slots.value['4']}}</td>
       </tr>
     </table>
     <p>
@@ -839,9 +542,9 @@
       <p [innerHTML]="group.desc"></p>
       <span *ngFor="let rank of group.ranks">
         <div *ngIf="rank">
-          <h5>Rank {{rank.rank}} Spells</h5>
+          <h5>Rank {{rank.rank}}</h5>
           <div class="centered">
-            <spell-card *ngFor="let spell of rank.spells | keys" class="card" [spell]="spell.value"></spell-card>
+            <spell-card *ngFor="let spell of rank.spells" class="card" [spellName]="spell"></spell-card>
           </div>
         </div>
       </span>
@@ -851,19 +554,18 @@
   <div class="box">
     <h1 id="Poisons">Poisons</h1>
     <p>
-      When a character has access to poisons, he can choose to apply the poison to one of his, or his allies, weapons.
-      For each rank of poisons a character has access to, they will be able to apply a poison from that rank once per
-      day if they have the correct ingredients.
+      When a character has access to poisons, he can craft them during a short rest provided
+      he has access to the ingredients and a way of storing the poisons. Alternatively the poison can be directly applied to a
+      physical weapon at the time of crafting.
     </p>
     <p>
-      Once poisons have been applied to a weapon, they last for one encounter. Poisons must be applied before combat
-      starts, unless the character has the ability "Prepared Poison".
+      If a character has access to a poisons prepared previously in a vial, they may spell an <b>Action</b> in combat to apply it to a
+      weapon they are holding.
     </p>
     <p>
       When a poisoned weapon damages another creature, that creature must make a CON saving throw vs
       the poison strength. The poison strength is decided on poison application and will be 1d20+INT. If their saving
-      throw
-      is not greater than the strength, they will become poisoned.
+      throw is not greater than the strength, they will become poisoned.
     </p>
     <p>
       At the start of a characters turn, if they are poisoned, they take the effects of the poison then make another CON
@@ -871,8 +573,7 @@
     </p>
     <p>
       Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and
-      will
-      be consumed when the poison is applied.
+      will be consumed when the poison is applied.
     </p>
     <table *ngFor="let poisonRank of poisons | async" class="wide">
       <tr class="header">

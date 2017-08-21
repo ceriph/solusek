@@ -1,64 +1,4 @@
 {
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2" : {
-    "character" : {
-      "baseStats" : {
-        "agi" : 3,
-        "cha" : 3,
-        "con" : 2,
-        "int" : 1,
-        "spi" : 1,
-        "str" : 1
-      },
-      "class" : "enchanter",
-      "equipment" : {
-        "jewellery" : [ "greenleafamulet" ],
-        "righthand" : "bluewand"
-      },
-      "experience" : 150,
-      "gold" : 0,
-      "info" : {
-        "age" : 8,
-        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
-        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
-        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
-        "name" : "Sophea Torvaris",
-        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
-      },
-      "level" : 1,
-      "race" : "highelf"
-    },
-    "name" : "Matt"
-  },
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg5" : {
-    "character" : {
-      "baseStats" : {
-        "agi" : 3,
-        "cha" : 3,
-        "con" : 2,
-        "int" : 1,
-        "spi" : 1,
-        "str" : 1
-      },
-      "class" : "enchanter",
-      "equipment" : {
-        "jewellery" : [ "greenleafamulet" ],
-        "righthand" : "bluewand"
-      },
-      "experience" : 150,
-      "gold" : 0,
-      "info" : {
-        "age" : 8,
-        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
-        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
-        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
-        "name" : "Sophea Torvaris",
-        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
-      },
-      "level" : 1,
-      "race" : "highelf"
-    },
-    "name" : "Matt"
-  },
   "Aq3nWHK9uJaVR8neIJdpGBpTMrg3" : {
     "character" : {
       "baseStats" : {
@@ -111,6 +51,36 @@
     },
     "name" : "Matt"
   },
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 3,
+        "cha" : 3,
+        "con" : 2,
+        "int" : 1,
+        "spi" : 1,
+        "str" : 1
+      },
+      "class" : "enchanter",
+      "equipment" : {
+        "jewellery" : [ "greenleafamulet" ],
+        "righthand" : "bluewand"
+      },
+      "experience" : 388,
+      "gold" : 0,
+      "info" : {
+        "age" : 8,
+        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
+        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
+        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
+        "name" : "Sophea Torvaris",
+        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
+      },
+      "level" : 2,
+      "race" : "highelf"
+    },
+    "name" : "Matt"
+  },
   "DU5wAvij3JaAvQjtnkDkaothcoS2" : {
     "character" : {
       "baseStats" : {
@@ -126,7 +96,7 @@
         "body" : "leatherarmour",
         "righthand" : "rapier"
       },
-      "experience" : 625,
+      "experience" : 675,
       "gold" : 33,
       "info" : {
         "age" : 25,
@@ -138,7 +108,7 @@
         "personality" : "Iksar are known for their independence, hiding away from the other races and preferring to be amongst each other. Skarath is no different. He spends little time with folk in the city and prefers to keep to himself, even shying away from other Iksar. Choosing to keep to the shadows and canals of Cabilis, he remains mostly unseen, Skarath rarely talks to anyone and likes to live a solitary life using thievery to get by. \n\nUnlike other Iksar however, Skarath has a mild temperament. He rarely gets enraged, but when he does, he is a force to be reckoned with. This may be due to him having little to do with his race and his life of solitude. "
       },
       "inventory" : [ "lockpick", "bandages", "dagger", "sackoftrinkets" ],
-      "level" : 2,
+      "level" : 3,
       "race" : "iksar"
     },
     "name" : "Tom"
@@ -158,7 +128,7 @@
         "body" : "clotharmour",
         "righthand" : "magicstaffarcane"
       },
-      "experience" : 625,
+      "experience" : 913,
       "gold" : 0,
       "info" : {
         "age" : 44,
@@ -170,7 +140,7 @@
         "personality" : "Fairly quiet, polite. Kind, a little suspicious of new people. A mild air of superiority, tempered by an awkward lack of confidence (due to size). Witty, smart, does not seek to compete in strength or physical appearance. Ambitious (especially for a Halfling), seems to have something to prove. Good natured, honest, lawful."
       },
       "inventory" : [ "bandages" ],
-      "level" : 2,
+      "level" : 3,
       "race" : "halfling"
     },
     "name" : "Robin"
@@ -191,7 +161,7 @@
         "lefthand" : "longbow",
         "righthand" : "longsword"
       },
-      "experience" : 625,
+      "experience" : 913,
       "gold" : 7,
       "info" : {
         "age" : 42,
@@ -203,7 +173,7 @@
         "personality" : "Fen is an excellent woodsman, his knowledge of forestry and wilderness survival was un-paralleled in the old Kingdom. He is a no-nonsense type, used to leading rather than being led. He is proficient with a long bow, short sword and hatchet. He has a distaste for Dark Elves.\n\nFollows Sek as a god. Growth in all things. "
       },
       "inventory" : [ "bandages", "shortsword", "shortbow", "whiskey" ],
-      "level" : 2,
+      "level" : 3,
       "race" : "human"
     },
     "name" : "Steve"
@@ -222,9 +192,9 @@
       "equipment" : {
         "body" : "chainarmour",
         "jewellery" : [ "ringofmagicaldeflection" ],
-        "righthand" : "bastardsword"
+        "righthand" : "thaglanadh"
       },
-      "experience" : 625,
+      "experience" : 913,
       "gold" : 23,
       "info" : {
         "age" : 110,
@@ -235,8 +205,8 @@
         "name" : "Ruairih Falvond",
         "personality" : "Ruairih is always determined and resolute. Always suspicious of men and slow to trust. He's seen many serve their own interests in this war, especially after the truce held. "
       },
-      "inventory" : [ "bandages" ],
-      "level" : 2,
+      "inventory" : [ "bandages", "bastardsword" ],
+      "level" : 3,
       "race" : "dwarf"
     },
     "name" : "Pete"

@@ -42,6 +42,8 @@ import { SummaryEquipmentComponent } from './character/summary/summary-equipment
 import { ItemCardComponent } from './rules/equipment/item-card/item-card.component';
 import { SummarySpellsComponent } from './character/summary/summary-spells/summary-spells.component';
 import { SpellCardComponent } from './rules/spells/spell-card/spell-card.component';
+import {SpellGroupService} from "./rules/spells/spell-group.service";
+import {SpellSlotService} from "./rules/spells/spell-slot.service";
 
 @NgModule({
   imports: [
@@ -87,6 +89,8 @@ import { SpellCardComponent } from './rules/spells/spell-card/spell-card.compone
     ScenarioService,
     RulesService,
     SpellService,
+    SpellGroupService,
+    SpellSlotService,
     SkillService,
     PoisonService,
     AngularFireAuth,

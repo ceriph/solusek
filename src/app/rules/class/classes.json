@@ -197,7 +197,7 @@
       },
       {
         "level": 2,
-        "name": "light1"
+        "name": "light"
       },
       {
         "level": 3,
@@ -216,10 +216,6 @@
         "name": "auraofprotection"
       },
       {
-        "level": 6,
-        "name": "light2"
-      },
-      {
         "level": 8,
         "name": "improvedcritical"
       },
@@ -228,16 +224,8 @@
         "name": "strengthofspirit"
       },
       {
-        "level": 10,
-        "name": "light3"
-      },
-      {
         "level": 12,
         "name": "divineintervention"
-      },
-      {
-        "level": 14,
-        "name": "light4"
       },
       {
         "level": 16,
@@ -346,7 +334,7 @@
       },
       {
         "level": 2,
-        "name": "nature1"
+        "name": "nature"
       },
       {
         "level": 2,
@@ -369,10 +357,6 @@
         "name": "escape"
       },
       {
-        "level": 6,
-        "name": "nature2"
-      },
-      {
         "level": 8,
         "name": "improvedcritical"
       },
@@ -381,16 +365,8 @@
         "name": "strengthofspirit"
       },
       {
-        "level": 10,
-        "name": "nature3"
-      },
-      {
         "level": 12,
         "name": "eagleeye"
-      },
-      {
-        "level": 14,
-        "name": "nature4"
       },
       {
         "level": 16,
@@ -703,20 +679,12 @@
         "name": "bookworm"
       },
       {
-        "level": 1,
-        "name": "arcane1"
-      },
-      {
         "level": 2,
         "name": "focus"
       },
       {
         "level": 3,
         "name": "archetype"
-      },
-      {
-        "level": 4,
-        "name": "arcane2"
       },
       {
         "level": 5,
@@ -731,10 +699,6 @@
         "name": "improvedcritical"
       },
       {
-        "level": 8,
-        "name": "arcane3"
-      },
-      {
         "level": 9,
         "name": "strengthofmind"
       },
@@ -743,16 +707,8 @@
         "name": "spellmastery"
       },
       {
-        "level": 12,
-        "name": "arcane4"
-      },
-      {
         "level": 14,
         "name": "magicalprotection"
-      },
-      {
-        "level": 16,
-        "name": "arcane5"
       },
       {
         "level": 18,

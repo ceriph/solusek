@@ -72,17 +72,15 @@
       <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
     </div>
     <h2 class="title">Hit Dice</h2>
-    <div class="wrapper" *ngIf="character && clazz">
+    <div class="wrapper" *ngIf="character && character.primaryStats && clazz">
       <div *ngFor="let item of getHitDie()" class="checkbox"><p>d{{item}}+{{character.primaryStats.con}}</p></div>
     </div>
     <div *ngIf="hasSpells()">
       <h2 class="title">Spell Slots</h2>
       <div class="wrapper">
-        <div *ngFor="let item of getSpellSlots(1)" class="checkbox"><p>{{item}}</p></div>
-        <div *ngFor="let item of getSpellSlots(2)" class="checkbox"><p>{{item}}</p></div>
-        <div *ngFor="let item of getSpellSlots(3)" class="checkbox"><p>{{item}}</p></div>
-        <div *ngFor="let item of getSpellSlots(4)" class="checkbox"><p>{{item}}</p></div>
-        <div *ngFor="let item of getSpellSlots(5)" class="checkbox"><p>{{item}}</p></div>
+        <span *ngFor="let rank of spellSlots">
+          <div *ngFor="let slot of rank" class="checkbox"><p>{{slot}}</p></div>
+        </span>
       </div>
     </div>
   </div>

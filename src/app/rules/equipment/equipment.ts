@@ -26,7 +26,7 @@ export enum ItemSlot {
   Feet,
   Hands,
   Jewellery,
-  Hand,
+  Weapon,
   None
 }
 

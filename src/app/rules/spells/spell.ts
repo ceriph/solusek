@@ -3,7 +3,9 @@ export class Spell {
   label: string;
   school: School;
   recovery: SkillRecovery = SkillRecovery.None;
-  type: SkillType;
+  group: SpellClass;
+  rank: number;
+  castTime: SkillType;
   duration: string;
   desc: string;
 }
@@ -11,17 +13,20 @@ export class Spell {
 export class SpellGroup {
   label: string;
   desc: string;
-  ranks: SpellRank[];
+  ranks: Rank[];
 }
 
-export class SpellRank {
+export enum SpellClass {
+  Arcane,
+  Dark,
+  Light,
+  Mind,
+  Nature
+}
+
+export class Rank {
   rank: number;
   spells: Spell[];
-}
-
-export enum CastTime {
-  Action,
-  BonusAction
 }
 
 export enum School {
@@ -33,6 +38,14 @@ export enum School {
   Illusion
 }
 
-export class SpellSlots {
-
+export class Slots {
+  0: number;
+  1: number;
+  2: number;
+  3: number;
+  4: number;
+  5: number;
+  6: number;
+  7: number;
+  8: number;
 }

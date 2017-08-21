@@ -14,6 +14,7 @@ import {Character} from "../character";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
 import {Item} from "../../rules/equipment/equipment";
 import {FirebaseListObservable} from "angularfire2/database";
+import {SpellSlotService} from "../../rules/spells/spell-slot.service";
 
 @Component({
   selector: 'app-summary',
@@ -29,13 +30,15 @@ export class CharacterSummaryComponent implements OnInit {
   character: Character;
   race: Race;
   clazz: Class;
+  spellSlots: number[][];
 
   constructor(private afAuth: AngularFireAuth,
               private playerService: PlayerService,
               private characterService: CharacterService,
               private raceService: RaceService,
               private statService: StatService,
-              private classService: ClassService) {
+              private classService: ClassService,
+              private spellSlotService: SpellSlotService) {
     this.user = afAuth.authState;
   }
 
@@ -59,44 +62,34 @@ export class CharacterSummaryComponent implements OnInit {
         this.statService.calculate(character, race, clazz);
         this.character.skills = this.characterService.getSkills(character.level, clazz);
         this.clazz = clazz;
+        this.spellSlotService.get(this.clazz, this.character.level).subscribe(slots => {
+          if(slots) {
+            this.spellSlots = [
+              Array(slots[0]).fill(1),
+              Array(slots[1]).fill(2),
+              Array(slots[2]).fill(3),
+              Array(slots[3]).fill(4),
+              Array(slots[4]).fill(5),
+              Array(slots[5]).fill(6),
+              Array(slots[6]).fill(7),
+              Array(slots[7]).fill(8),
+              Array(slots[8]).fill(9)
+            ]
+          } else {
+            this.spellSlots = [];
+          }
+        });
       });
     });
   }
 
-  getSpellSlots(rank: number): number[] {
-    return this.getSpells()[rank - 1];
-  }
-
   hasSpells(): boolean {
-    const spells = this.getSpells().reduce((a, b) => a + b.length, 0);
-    console.log("has spells: ", spells);
-    return spells > 0;
-  }
-
-  getSpells(): number[][] {
-    if (this.clazz) {
-      if (this.clazz.type === Type[Type.Caster]) {
-        return [
-          Array(Math.max(0, Math.min(this.character.level + 1, 5))).fill(1),
-          Array(Math.max(0, Math.min(this.character.level - 3, 4))).fill(2),
-          Array(Math.max(0, Math.min(this.character.level - 7, 4))).fill(3),
-          Array(Math.max(0, Math.min(this.character.level - 11, 3))).fill(4),
-          Array(Math.max(0, Math.min(this.character.level - 15, 3))).fill(5)
-        ]
-      } else if (this.clazz.type === Type[Type.Hybrid]) {
-        return [
-          Array(Math.max(0, Math.min(this.character.level - 1, 5))).fill(1),
-          Array(Math.max(0, Math.min(this.character.level - 5, 4))).fill(2),
-          Array(Math.max(0, Math.min(this.character.level - 9, 3))).fill(3),
-          Array(Math.max(0, Math.min(this.character.level - 13, 2))).fill(4),
-          []
-        ]
-      } else {
-        return [];
-      }
-    } else {
-      return [];
+    if(this.spellSlots) {
+      const spells = this.spellSlots.reduce((a, b) => a + b.length, 0);
+      return spells > 0;
     }
+
+    return false;
   }
 
   getHitDie(): number[] {

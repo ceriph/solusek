@@ -1,0 +1,206 @@
+{
+  "arcane": {
+    "label": "Arcane",
+    "desc": "Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice. Wizards are the only class that gain access to arcane magi",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          "shielding",
+          "blink",
+          "telekinesis",
+          "summonlight",
+          "firebolt",
+          "arcanemissiles",
+          "burninghands"
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          "openlock",
+          "swap",
+          "eyeofzom",
+          "magicsword",
+          "summonimp",
+          "detectmagic",
+          "whisper",
+          "frostnova",
+          "icebolt",
+          "fireball",
+          "invisibility"
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          "flameshield",
+          "cancelmagic",
+          "flamingsword",
+          "dimensionaldoor",
+          "summonelemental",
+          "summonfeast",
+          "identify",
+          "chokingcloud",
+          "icygrasp",
+          "mirrorimage",
+          "scry"
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          "teleport",
+          "levitate",
+          "seeinvisible",
+          "blizzard",
+          "chainlightning",
+          "blur"
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          "crystallize",
+          "openportal",
+          "openrift",
+          "arcanegreatsword",
+          "disintegrate",
+          "callmeteor"
+        ]
+      }
+    }
+  },
+  "dark": {
+    "label": "Dark",
+    "desc": "The powers of death and reanimation, available to necromancers and reavers."
+  },
+  "light": {
+    "label": "Light",
+    "desc": "The holy power of Marr, available to clerics and paladins.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          "protection",
+          "heal",
+          "blessing",
+          "curepoison",
+          "weakeningword",
+          "holybolt"
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          "symbol",
+          "protection",
+          "focus",
+          "calm",
+          "curedisease",
+          "flashheal",
+          "turnundead",
+          "beamoflight"
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          "resistance",
+          "revive",
+          "cancelmagic",
+          "circleofhealing",
+          "bountifullight",
+          "scry"
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          "holyword",
+          "spiritguardians",
+          "flashoflight"
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          "trueresurrection",
+          "angelsfury",
+          "vengeance"
+        ]
+      }
+    }
+  },
+  "nature": {
+    "label": "Nature",
+    "desc": "The power of the nature and weather.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          "strengthofthebear",
+          "camouflage",
+          "thornyvines",
+          "calllightning"
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          "healingwind",
+          "barkskin",
+          "eyesofthehawk",
+          "callanimal",
+          "callhurricane",
+          "spiderform"
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          "regenerate",
+          "stoneskin",
+          "speedofthecheetah",
+          "summonwind",
+          "charmanimal",
+          "birdform",
+          "scry"
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          "treestride",
+          "diamondskin",
+          "revive",
+          "poisoncloud",
+          "wolfform"
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          "ankhofreversal",
+          "treeform",
+          "thunderstorm"
+        ]
+      }
+    }
+  },
+  "mind": {
+    "label": "Mind",
+    "desc": "The power to alter the mind, available to Enchanters.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          "enhancemind",
+          "mindstab",
+          "lovesick",
+          "charm"
+        ]
+      }
+    }
+  }
+}

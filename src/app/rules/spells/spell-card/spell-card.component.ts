@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from "@angular/core";
 import {Spell} from "../spell";
+import {SpellService} from "../spell.service";
 
 @Component({
   selector: 'spell-card',
@@ -9,9 +10,13 @@ import {Spell} from "../spell";
 export class SpellCardComponent implements OnInit {
 
   @Input()
+  spellName: string;
+
   spell: Spell;
 
-  constructor() { }
+  constructor(private spellService: SpellService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.spellService.get(this.spellName).subscribe(sp => this.spell = sp);
+  }
 }

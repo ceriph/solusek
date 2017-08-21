@@ -115,7 +115,7 @@
   "dagger": {
     "label": "Dagger",
     "desc": "An old, plain dagger.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Simple Weapons",
     "rarity": "common",
     "damage": "1d4+STR Piercing",
@@ -124,7 +124,7 @@
   "quarterstaff": {
     "label": "Quarterstaff",
     "desc": "An old, plain wooden staff.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Simple Weapons",
     "rarity": "common",
     "damage": "1d8+STR Blunt",
@@ -133,7 +133,7 @@
   "rapier": {
     "label": "Rapier",
     "desc": "An old, plain rapier.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Small Weapons",
     "rarity": "common",
     "damage": "1d6+STR Piercing",
@@ -142,7 +142,7 @@
   "shortsword": {
     "label": "Short Sword",
     "desc": "An old, plain short sword.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Small Weapons",
     "rarity": "common",
     "damage": "1d6+STR Slashing",
@@ -151,7 +151,7 @@
   "mace": {
     "label": "Mace",
     "desc": "An old, plain mace.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Small Weapons",
     "rarity": "common",
     "damage": "1d6+STR Blunt",
@@ -160,7 +160,7 @@
   "longsword": {
     "label": "Long Sword",
     "desc": "An old, plain long sword.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Medium Weapons",
     "rarity": "common",
     "damage": "1d8+STR Slashing",
@@ -169,7 +169,7 @@
   "warhammer": {
     "label": "Warhammer",
     "desc": "An old, plain warhammer.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Medium Weapons",
     "rarity": "common",
     "damage": "1d8+STR Blunt",
@@ -178,7 +178,7 @@
   "spear": {
     "label": "Spear",
     "desc": "An old, plain spear.",
-    "slot": "hand",
+    "slot": "weapon",
     "proficiency": "Medium Weapons",
     "rarity": "common",
     "damage": "1d8+STR Piercing",
@@ -186,8 +186,8 @@
   },
   "bastardsword": {
     "label": "Bastard Sword",
-    "desc": "An old, plain bastard sword. Requires both hands.",
-    "slot": "hand",
+    "desc": "An old, plain bastard sword. Requires both weapons.",
+    "slot": "weapon",
     "proficiency": "Large Weapons",
     "rarity": "common",
     "damage": "1d10+STR Slashing",
@@ -195,8 +195,8 @@
   },
   "shortbow": {
     "label": "Short Bow",
-    "desc": "An old, plain short bow. Requires both hands.",
-    "slot": "hand",
+    "desc": "An old, plain short bow. Requires both weapons.",
+    "slot": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
     "damage": "1d6+(STR+AGI)/2",
@@ -205,8 +205,8 @@
   },
   "longbow": {
     "label": "Long Bow",
-    "desc": "An old, plain long bow. Requires both hands.",
-    "slot": "hand",
+    "desc": "An old, plain long bow. Requires both weapons.",
+    "slot": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
     "damage": "1d8+(STR+AGI)/2",
@@ -215,8 +215,8 @@
   },
   "compoundbow": {
     "label": "Compound Bow",
-    "desc": "An old, plain compound bow. Requires both hands.",
-    "slot": "hand",
+    "desc": "An old, plain compound bow. Requires both weapons.",
+    "slot": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
     "damage": "1d10+(STR+AGI)/2",
@@ -225,8 +225,8 @@
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
-    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands.",
-    "slot": "hand",
+    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both weapons.",
+    "slot": "weapon",
     "proficiency": "Magic Weapons",
     "rarity": "common",
     "damage": "1d6+INT Arcane",
@@ -250,7 +250,7 @@
   "roundshield": {
     "label": "Round Shield",
     "desc": "An old, plain round shield.",
-    "slot": "hand",
+    "slot": "weapon",
     "rarity": "common",
     "modifiers": [
       {
@@ -263,7 +263,7 @@
   "kiteshield": {
     "label": "Kite Shield",
     "desc": "An old, plain kite shield.",
-    "slot": "hand",
+    "slot": "weapon",
     "rarity": "common",
     "modifiers": [
       {
@@ -281,7 +281,7 @@
   "towershield": {
     "label": "Tower Shield",
     "desc": "An old, plain tower shield.",
-    "slot": "hand",
+    "slot": "weapon",
     "rarity": "common",
     "modifiers": [
       {
@@ -327,7 +327,7 @@
   "bloodthirstydagger": {
     "label": "Bloodthirsty Dagger",
     "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood.",
-    "slot": "hand",
+    "slot": "weapon",
     "rarity": "rare",
     "damage": "1d4+STR Piercing + 1d4 Dark",
     "modifiers": [
@@ -345,8 +345,8 @@
   },
   "thaglanadh": {
     "label": "Tha Ghlanadh",
-    "desc": "An ancient dwarvish warhammer known as Tha Glanadh (The Purge). A long metal haft expertly wrapped in fine leathers sewn with ornate patterns, ending in a large squared off hammer with dwarvish script carved into either side that says 'For the greater good, all may be sacrificed'. The hammer was wielded by the fallen paladin Artair Deòiridh who - according to legend - carried out the killing of an entire diseased town to prevent the spread. The guilt turned him to madness and eventually suicide. This weapon is <b>cursed</b>, still haunted by the twisted spirit of Artair.<br /><br /> <b>Curse:</b> The wielder is plagued by the spirit of Artair, who will occasionally attempt to compel the wielder to attack nearby targets. The wielder must make a <b>Spirit Saving Throw</b> against a DC of 15 to avoid this. The curse can be broken by blessing the weapon.<br /><br /> This weapon is <b>Versatile</b> and can be wielded in one hand or two. When wielded in two it does 1d10 damage instead of 1d8.",
-    "slot": "hand",
+    "desc": "An ancient dwarvish warhammer known as Tha Glanadh (The Purge). A long metal haft expertly wrapped in fine leathers sewn with ornate patterns, ending in a large squared off hammer with dwarvish script carved into either side that says 'For the greater good, all may be sacrificed'. The hammer was wielded by the fallen paladin Artair Deòiridh who - according to legend - carried out the killing of an entire diseased town to prevent the spread. The guilt turned him to madness and eventually suicide. This weapon is <b>cursed</b>, still haunted by the twisted spirit of Artair.<br /><br /> <b>Curse:</b> The wielder is plagued by the spirit of Artair, who will occasionally attempt to compel the wielder to attack nearby targets. The wielder must make a <b>Spirit Saving Throw</b> against a DC of 15 to avoid this. The curse can be broken by blessing the weapon.<br /><br /> This weapon is <b>Versatile</b> and can be wielded in one weapon or two. When wielded in two it does 1d10 damage instead of 1d8.",
+    "slot": "weapon",
     "rarity": "epic",
     "damage": "1d8+STR+3 Blunt + 1d6 Dark",
     "modifiers": [
@@ -359,8 +359,8 @@
   },
   "bluewand": {
     "label": "Blue Wand",
-    "desc": "A pretty looking wand with simple carvings on the handle, has seen a fair bit of use but still works well.",
-    "slot": "hand",
+    "desc": "A pretty looking wand with simple carvings on the weaponle, has seen a fair bit of use but still works well.",
+    "slot": "weapon",
     "rarity": "uncommon",
     "damage": "1d4+CHA+1 Mind",
     "range": 6,
@@ -375,7 +375,7 @@
   "thaglanadhblessed": {
     "label": "Tha Ghlanadh (Blessed)",
     "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This item has been <b>blessed</b> and is no longer haunted by the spirit of Artair.",
-    "slot": "hand",
+    "slot": "weapon",
     "rarity": "epic",
     "damage": "1d8+STR+3 Blunt damage + 1d8 Light",
     "modifiers": [

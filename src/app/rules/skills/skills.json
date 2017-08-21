@@ -1,23 +1,7 @@
 {
-  "arcane1": {
-    "desc": "you now have access to rank 1 arcane magic.",
-    "label": "Arcane 1"
-  },
-  "arcane2": {
-    "desc": "you now have access to rank 2 arcane magic.",
-    "label": "Arcane 2"
-  },
-  "arcane3": {
-    "desc": "you now have access to rank 3 arcane magic.",
-    "label": "Arcane 3"
-  },
-  "arcane4": {
-    "desc": "you now have access to rank 4 arcane magic.",
-    "label": "Arcane 4"
-  },
-  "arcane5": {
-    "desc": "you now have access to rank 5 arcane magic.",
-    "label": "Arcane 5"
+  "arcane": {
+    "desc": "you now have access to <b>Arcane</b> magic.",
+    "label": "Arcane Spellcaster"
   },
   "archetype": {
     "desc": "you must choose to specialise in one of the available archetypes for your class.",
@@ -142,25 +126,9 @@
     "desc": "you can use an <b>Action</b> to place a healing hand on a friendly character within range, healing them to full health. You must take a <b>Long Rest</b> before using this skill again.",
     "label": "Lay On Hands"
   },
-  "light1": {
-    "desc": "you now have access to rank 1 light magic.",
-    "label": "Light 1"
-  },
-  "light2": {
-    "desc": "you now have access to rank 2 light magic.",
-    "label": "Light 2"
-  },
-  "light3": {
-    "desc": "you now have access to rank 3 light magic.",
-    "label": "Light 3"
-  },
-  "light4": {
-    "desc": "you now have access to rank 4 light magic.",
-    "label": "Light 4"
-  },
-  "light5": {
-    "desc": "you now have access to rank 5 light magic.",
-    "label": "Light 5"
+  "light": {
+    "desc": "you have access to <b>Light</b> magic.",
+    "label": "Divine Spellcaster"
   },
   "longshot": {
     "desc": "your aim has become superhuman, and gain +5m <b>Range</b> on any ranged weapons.",
@@ -182,25 +150,9 @@
     "label": "Mobile",
     "type": "BonusAction"
   },
-  "nature1": {
-    "desc": "you now have access to rank 1 nature magic.",
-    "label": "Nature 1"
-  },
-  "nature2": {
-    "desc": "you now have access to rank 2 nature magic.",
-    "label": "Nature 2"
-  },
-  "nature3": {
-    "desc": "you now have access to rank 3 nature magic.",
-    "label": "Nature 3"
-  },
-  "nature4": {
-    "desc": "you now have access to rank 4 nature magic.",
-    "label": "Nature 4"
-  },
-  "nature5": {
-    "desc": "you now have access to rank 5 nature magic.",
-    "label": "Nature 5"
+  "nature": {
+    "desc": "you now have access to <b>Nature</b> magic.",
+    "label": "Natural Spellcaster"
   },
   "nimblemind": {
     "desc": "you may choose to spend an available spell slot to cast a different spell of the same rank that is not currently prepared.",
