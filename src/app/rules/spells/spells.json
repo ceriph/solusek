@@ -421,6 +421,11 @@
     "school": "Illusion",
     "desc": "Take the form of a small spider for 1 hour. While in spider form the caster is considered basically invisible."
   },
+  "removecurse": {
+    "label": "Remove Curse",
+    "school": "Abjuration",
+    "desc": "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded."
+  },
   "regenerate": {
     "label": "Regenerate",
     "school": "Alteration",
@@ -459,7 +464,7 @@
     "school": "Alteration",
     "desc": "You touch a willing creature, granting it a flying speed of 10m for the duration. For each rank above 3, the spell can affect one additional creature.",
     "duration": "10 minutes"
-  }
+  },
   "scry": {
     "label": "Scry",
     "school": "Illusion",
@@ -484,6 +489,12 @@
     "label": "Poison Cloud",
     "school": "Evocation",
     "desc": "Summon a cloud of poison at a target area of size 3m x 3m. All characters in the area must make a <b>Constitution</b> <b>Saving Throw</b> now and at the start of their turn or take <b>2d8+SPI Poison damage</b>."
+  },
+  "flamingsphere": {
+    "label": "Flaming Sphere",
+    "school": "Conjuration",
+    "desc": "Summon a ball of flame roughly 1m in diameter at a point within 10m. Creatures that touch the sphere or end their turn next to it must make a <b>Dexterity Saving Throw</b> or take <b>2d8 fire damage</b>. On save success they take half damage. On your turn, as a <b>Bonus Action</b> you may move the sphere up to 6m. The sphere does an additional 1d8 damage for each rank above 2.",
+    "duration": "1 minute"
   },
   "wolfform": {
     "label": "Wolf Form",
@@ -512,7 +523,7 @@
     "desc": "Grant your target enhanced mind for the duration. That character has <b>Advantage</b> on all <b>Intelligence/Charisma Checks</b> for the duration.",
     "duration": "1 hour"
   },
-  "wrackmind": {
+  "mindstab": {
     "label": "Mind Stab",
     "school": "Evocation",
     "desc": "Choose a creature within 10m, that creature must make an <b>Intelligence Saving Throw</b> or take <b>1d6+CHA Mind damage</b>"

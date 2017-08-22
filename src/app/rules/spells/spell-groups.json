@@ -29,6 +29,7 @@
           "detectmagic",
           "whisper",
           "frostnova",
+          "flamingsphere",
           "icebolt",
           "fireball",
           "invisibility",
@@ -49,7 +50,8 @@
           "chokingcloud",
           "icygrasp",
           "mirrorimage",
-          "fly"
+          "fly",
+          "removecurse"
         ]
       },
       "4": {
@@ -135,7 +137,8 @@
           "revive",
           "cancelmagic",
           "circleofhealing",
-          "bountifullight"
+          "bountifullight",
+          "removecurse"
         ]
       },
       "4": {
@@ -192,7 +195,8 @@
           "summonwind",
           "charmanimal",
           "birdform",
-          "scry"
+          "scry",
+          "removecurse"
         ]
       },
       "4": {
