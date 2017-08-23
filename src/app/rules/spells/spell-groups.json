@@ -6,15 +6,15 @@
       "1": {
         "rank": 1,
         "spells": [
-          "shielding",
-          "blink",
-          "telekinesis",
-          "summonlight",
-          "firebolt",
           "arcanemissiles",
           "burninghands",
+          "colourspray",
+          "fogcloud",
+          "magearmour",
           "identify",
-          "sleep"
+          "sleep",
+          "thunderwave",
+          "firebolt"
         ]
       },
       "2": {
@@ -26,7 +26,6 @@
           "eyeofzom",
           "magicsword",
           "summonimp",
-          "detectmagic",
           "whisper",
           "frostnova",
           "flamingsphere",
@@ -34,55 +33,32 @@
           "fireball",
           "invisibility",
           "scry",
-          "fogcloud",
           "levitate"
         ]
       },
       "3": {
         "rank": 3,
         "spells": [
-          "flameshield",
-          "cancelmagic",
-          "flamingsword",
-          "dimensionaldoor",
-          "summonelemental",
-          "summonfeast",
-          "chokingcloud",
-          "icygrasp",
-          "mirrorimage",
-          "fly",
-          "removecurse"
         ]
       },
       "4": {
         "rank": 4,
         "spells": [
-          "seeinvisible",
-          "blizzard",
-          "chainlightning",
-          "blur"
         ]
       },
       "5": {
         "rank": 5,
         "spells": [
-          "arcanegreatsword",
-          "disintegrate",
-          "callmeteor"
         ]
       },
       "6": {
         "rank": 6,
         "spells": [
-          "crystallize",
-          "teleport"
         ]
       },
       "7": {
         "rank": 7,
         "spells": [
-          "openportal",
-          "openrift"
         ]
       },
       "8": {
@@ -133,28 +109,16 @@
       "3": {
         "rank": 3,
         "spells": [
-          "resistance",
-          "revive",
-          "cancelmagic",
-          "circleofhealing",
-          "bountifullight",
-          "removecurse"
         ]
       },
       "4": {
         "rank": 4,
         "spells": [
-          "holyword",
-          "spiritguardians",
-          "flashoflight"
         ]
       },
       "5": {
         "rank": 5,
         "spells": [
-          "trueresurrection",
-          "angelsfury",
-          "vengeance"
         ]
       }
     }
@@ -189,32 +153,16 @@
       "3": {
         "rank": 3,
         "spells": [
-          "regenerate",
-          "stoneskin",
-          "speedofthecheetah",
-          "summonwind",
-          "charmanimal",
-          "birdform",
-          "scry",
-          "removecurse"
         ]
       },
       "4": {
         "rank": 4,
         "spells": [
-          "treestride",
-          "diamondskin",
-          "revive",
-          "poisoncloud",
-          "wolfform"
         ]
       },
       "5": {
         "rank": 5,
         "spells": [
-          "ankhofreversal",
-          "treeform",
-          "thunderstorm"
         ]
       }
     }

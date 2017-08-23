@@ -1,4 +1,15 @@
 {
+  "arcanemissiles": {
+    "label": "Arcane Missiles",
+    "school": "Evocation",
+    "desc": "Fire a number of missiles equal to your <b>Intelligence</b> at nearby enemies for <b>1d4 Arcane damage</b>. You can direct the missiles at will, splitting them between multiple targets or focusing. Does an additional 1 damage per missile for each rank above 1."
+  },
+  "burninghands": {
+    "label": "Burning Hands",
+    "school": "Evocation",
+    "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d6+INT Fire damage</b>. On save success they take half damage. Does an additional 1d6 damage for each rank above 1."
+  },
+
   "shielding": {
     "group": "Arcane",
     "label": "Shielding",
@@ -28,16 +39,11 @@
     "school": "Evocation",
     "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>1d8+INT Fire damage</b>. Does an additional 1d8 damage for each rank above 1."
   },
-  "arcanemissiles": {
-    "label": "Arcane Missiles",
-    "school": "Evocation",
-    "desc": "Fire a number of missiles equal to your <b>Intelligence</b>, each missile hitting random nearby enemies for <b>1d4 Arcane damage</b>. Does an additional 1 damage per missile for each rank above 1."
-  },
-  "burninghands": {
-    "label": "Burning Hands",
-    "school": "Evocation",
-    "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d6+INT Fire damage</b>. On save success they take half damage. Does an additional 1d6 damage for each rank above 1."
-  },
+
+
+
+
+
   "openlock": {
     "label": "Open Lock",
     "school": "Alteration",

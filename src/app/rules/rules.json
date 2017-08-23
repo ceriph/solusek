@@ -384,6 +384,10 @@
       {
         "title": "Warmth",
         "desc": "A soothing warmth emanates from your hands, warming anything you touch for a few minutes."
+      },
+      {
+        "title": "Light",
+        "desc": "You touch one object that is no larger than 2m in any dimension. Until the spell ends, the object sheds bright light in a 5m radius and dim light for an additional 5m."
       }
     ]
   },
