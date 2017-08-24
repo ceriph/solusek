@@ -1,12 +1,11 @@
-import {SkillRecovery, SkillType} from "../skills/skill";
 export class Spell {
   label: string;
   school: School;
-  recovery: SkillRecovery = SkillRecovery.None;
-  group: SpellClass;
+  groups: SpellClass[];
   rank: number;
-  castTime: SkillType;
+  castTime: string;
   duration: string;
+  range: string;
   desc: string;
 }
 

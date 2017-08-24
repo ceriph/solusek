@@ -2,548 +2,381 @@
   "arcanemissiles": {
     "label": "Arcane Missiles",
     "school": "Evocation",
-    "desc": "Fire a number of missiles equal to your <b>Intelligence</b> at nearby enemies for <b>1d4 Arcane damage</b>. You can direct the missiles at will, splitting them between multiple targets or focusing. Does an additional 1 damage per missile for each rank above 1."
-  },
-  "burninghands": {
-    "label": "Burning Hands",
-    "school": "Evocation",
-    "desc": "Spray fire in a cone area in front of you with a range of 3m. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>2d6+INT Fire damage</b>. On save success they take half damage. Does an additional 1d6 damage for each rank above 1."
-  },
-
-  "shielding": {
-    "group": "Arcane",
-    "label": "Shielding",
-    "school": "Abjuration",
-    "desc": "Choose a friendly target within 10m to receive +1 <b>spell armour</b>. Adds an additional +1 for each additional rank above 1",
-    "duration": "1 minute",
-    "castTime": "BonusAction"
+    "desc": "Fire a number of arcane missiles equal to your <b>Intelligence</b> outward from you, each missile hitting a random enemy within range for <b>1d4 Arcane damage</b>. Does an additional 1 damage per missile for each rank above 1.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
   "blink": {
     "label": "Blink",
     "school": "Alteration",
-    "desc": "Immediately move to any spot within range of your movement <i>and</i> line of sight. Can be used while <b>Slowed</b> but <i>not</i> <b>Rooted</b>. This does <i>not</i> provoke an <b>Attack of Opportunity</b>. Adds 1 point of movement range for each rank above 1.",
-    "castTime": "BonusAction"
+    "desc": "Immediately move to any spot within range of your speed <i>and</i> line of sight. Can be used while <b>Slowed</b> but <i>not</i> <b>Rooted</b>. This does <i>not</i> provoke an <b>Attack of Opportunity</b>. Adds 1 point of movement range for each rank above 1.",
+    "castTime": "Bonus Action",
+    "range": "Your speed",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
-  "telekinesis": {
-    "label": "Telekinesis",
-    "school": "Alteration",
-    "desc": "The caster can lift, with the power of their mind, a creature or object under 200KG. Enemy creatures must make an <b>Strength Saving Throw</b> or be lifted and slammed into the ground taking <b>1d4+INT Blunt damage</b> and become <b>Knocked down</b>. On save success they take half damage and are not knocked down. Does an additional 1d4 damage for each rank above 1."
-  },
-  "summonlight": {
-    "label": "Summon Light",
-    "school": "Conjuration",
-    "desc": "Summon a magical light which follows the caster for up to 1 hour. Can be dismissed by the caster at any time."
-  },
-  "firebolt": {
-    "label": "Fire Bolt",
+  "burninghands": {
+    "label": "Burning Hands",
     "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>1d8+INT Fire damage</b>. Does an additional 1d8 damage for each rank above 1."
+    "desc": "Spray fire in a 3m <b>cone</b> in front of you, all creatures within that area must make an <b>Agility Saving Throw</b> or take <b>3d6+INT Fire damage</b>. On save success they take half damage. Does an additional 1d6 damage for each rank above 1.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
-
-
-
-
-
-  "openlock": {
-    "label": "Open Lock",
-    "school": "Alteration",
-    "desc": "Choose a target that is locked. If that target is locked by mundane means, it is immediately unlocked. If the target is locked by magical means, the lock spell is suppressed for the duration. This spell creates a loud humming sound.",
-    "duration": "1 minute"
-  },
-  "locateobject": {
-    "label": "Locate Object",
-    "school": "Divination",
-    "desc": "You can attempt to locate an object familiar to you. If the object is within 1000 metres and not blocked by magical means, you will sense the general direction of the item. For the item to be classes as familiar, you must have seen it before from been within 10m."
-  },
-  "swap": {
-    "label": "Swap",
-    "school": "Alteration",
-    "desc": "Instantly swap places with another friendly character within 10m. This does not provoke an attack of opportunity."
-  },
-  "eyeofzom": {
-    "label": "Eye of Zomm",
+  "colourspray": {
+    "label": "Colour Spray",
     "school": "Conjuration",
-    "desc": "Summon a floating eye with a speed of 10 which you can control. For the duration your vision is that of the eye, leaving you incapacitated at your current location.",
-    "duration": "1 minute"
-  },
-  "magicsword": {
-    "label": "Magic Sword",
-    "school": "Conjuration",
-    "desc": "Summon a sword made of pure arcane energy that only you can wield for the duration. It has a +1 modifier to <b>Attack</b> and does <b>2d4+INT+1 Arcane damage</b>. Gains +1 attack and +1 damage for each rank above 2.",
-    "duration": "1 minute"
-  },
-  "arcanelock": {
-    "label": "Arcane Lock",
-    "school": "Abjuration",
-    "desc": "You cast a magical lock on a door, window, gate or chest which prevents anyone from opening it other than you and anyone you designate.",
-    "duration": "Until dispelled"
-  },
-  "summonimp": {
-    "label": "Summon Imp",
-    "school": "Conjuration",
-    "desc": "Call forth a small imp who has 3d6 (11) health, 0 armour, 1 magic reduction, 15 dodge, an attack of +4 with a range of 5m with does doing <b>1d6+3 Fire damage</b>. The imp has an additional 1d6 health and 1 damage for each rank above 2.",
-    "duration": "1 day"
-  },
-  "fogcloud": {
-    "label": "Fog Cloud",
-    "school": "Divination",
-    "desc": "You summon a fog cloud at a point within 10m. The cloud expands to cover a 3m cube, obscuring the area."
+    "desc": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many 'health' of creatures this spell can effect. Creatures in a 3m cone originating from you are affected in ascending order of their current hit points (ignoring <b>Unconscious</b> creatures and creatures that can't see).<br /><br />Starting with the creature that has the lowest current hit points, each creature affected by this spell is Blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest health. A creature's health must be equal to or less than the remaining total for the creature to be affected. For each rank above 1, the spell affects 2d10 health more creatures.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "1 round",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
   "detectmagic": {
     "label": "Detect Magic",
     "school": "Divination",
-    "desc": "You become generally aware of any magic effects within 10m."
+    "desc": "For the duration, you become generally aware of any magic effects within range and the school that they belong to.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": ["Arcane", "Light", "Nature"]
   },
-  "whisper": {
-    "label": "Whisper",
+  "firebolt": {
+    "label": "Fire Bolt",
+    "school": "Evocation",
+    "desc": "Make a <b>Spell Attack</b> on a target within range. On hit they take <b>1d8+INT Fire damage</b>. Does an additional 1d8 damage for each rank above 1.",
+    "castTime": "Action",
+    "range": "20m",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane"]
+  },
+  "fogcloud": {
+    "label": "Fog Cloud",
     "school": "Divination",
-    "desc": "You concentrate on someone you have met before for a few seconds. If the target is on the same world, is not dead or unconscious and there is no magic blocking the effect, you are able to directly send a short whispered message which they will hear within their mind. Unwilling targets make a <b>Charisma Saving Throw</b> vs the spell DC to see whether the message is blocked."
+    "desc": "You summon a fog cloud originating at a point within range and spreading to cover a 3m cube, obscuring the area.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": ["Arcane", "Nature"]
   },
-  "frostnova": {
-    "label": "Frost Nova",
-    "school": "Evocation",
-    "desc": "All creatures within 2m of you must make an <b>Constitution</b> <b>Saving Throw</b>, if they fail they take <b>3d6+INT Ice damage</b> and are <b>Rooted</b>. On save success they take half damage and are not rooted."
-  },
-  "icebolt": {
-    "label": "Ice Bolt",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target within 10m. On hit they take <b>3d8+INT Ice damage</b>. Does an additional 1d8 damage for each rank above 2."
-  },
-  "fireball": {
-    "label": "Fireball",
-    "school": "Evocation",
-    "desc": "Choose an area 3mx3m within 10m. All characters within the area must make an <b>Agility Saving Throw</b> or take <b>2d8+INT Fire damage</b>. On success they take half damage. Does an additional 1d8 damage for each rank above 2."
-  },
-  "invisibility": {
-    "label": "Invisibility",
-    "school": "Illusion",
-    "desc": "Your target magically vanishes from sight for the duration. Only creatures with 'see invisible' will be able to see them. Performing any aggressive action will remove the invisibility. For each rank above 2, this can affect 1 additional target.",
-    "duration": "1 minute"
-  },
-  "flameshield": {
-    "label": "Flame Shield",
+  "magearmour": {
+    "label": "Mage Armour",
     "school": "Abjuration",
-    "desc": "Engulf an ally in protective flames for the duration. Any characters hitting that target in melee combat take <b>3d4+INT Fire damage</b>. Does an additional 1d4 damage for each rank above 3",
-    "duration": "1 minute"
-  },
-  "cancelmagic": {
-    "label": "Cancel Magic",
-    "school": "Alteration",
-    "desc": "Remove a single magical effect on a target within 10m (works for both beneficial effects on enemies, and negative effects on allies). May affects an additional magical effect for each rank above 3."
-  },
-  "flamingsword": {
-    "label": "Flaming Sword",
-    "school": "Conjuration",
-    "desc": "Engulf a weapon within reach with flames, adding <b>1d6+INT Fire damage</b> to that weapon for the duration. Increases by 1d6 damage for each rank above 3.",
-    "duration": "1 minute"
-  },
-  "dimensionaldoor": {
-    "label": "Dimensional Door",
-    "school": "Conjuration",
-    "desc": "The caster creates a dimensional hole for the duration at their current location and another location within 100m that they can either see or visualise. The hole allows anyone to travel through and can be dismissed by the caster at any time.",
-    "duration": "1 minute"
-  },
-  "summonelemental": {
-    "label": "Summon Elemental",
-    "school": "Conjuration",
-    "desc": "Summon an elemental of your choice (fire or ice), the elemental has 5d8+10 health, 6 speed, 20 dodge and does 2d8+INT damage (of the elemental type). The <b>Fire</b> elemental has a permanent rank 3 <b>Flame Shield</b>. The <b>Ice</b> version can cast a rank 3 <b>Icy Grasp</b> once with the same DC as the caster."
-  },
-  "summonfeast": {
-    "label": "Summon Feast",
-    "school": "Conjuration",
-    "desc": "Conjure a great selection of food for up to 10 people. Anyone who consumes the food during a <b>Short or Long Rest</b> gains +2 to all saving throws and immunity to <b>Fear</b> for 12 hours."
+    "desc": "Touch a willing creature, granting it +2 <b>Armour</b> and +2 <b>Spell armour</b>.",
+    "castTime": "Bonus Action",
+    "range": "Touch",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
   "identify": {
     "label": "Identify",
     "school": "Divination",
-    "desc": "You instantly learn the magical properties of a magical item you are touching. If the item is not magical, the spell will have no effect."
-  },
-  "chokingcloud": {
-    "label": "Choking Cloud",
-    "school": "Evocation",
-    "desc": "Create a cloud of choking gas at a target location of size 3mx3m, giving all creatures within -1 to attack and suffering <b>1d4 damage</b> when starting their turn within the cloud."
-  },
-  "icygrasp": {
-    "label": "Icy Grasp",
-    "school": "Evocation",
-    "desc": "Touch a creature within melee range, that creature must make a <b>Strength Saving Throw</b> or take <b>3d6+INT Ice damage</b> and be encased in ice, <b>Stunned</b>. On save success they take half damage and are not stunned. They must make a <b>Strength Saving Throw</b> at the start of their turn to see if they break free. Does an additional 1d6 damage for each rank above 3."
-  },
-  "mirrorimage": {
-    "label": "Mirror Image",
-    "school": "Illusion",
-    "desc": "Create a number of identical copies of yourself equal to your <b>Intelligence</b>, confusing enemy creatures. Each enemy attacking you must roll 1d20, on 10 or below their attack will target a mirror image. Images die after taking any damage."
-  },
-  "scry": {
-    "label": "Scry",
-    "school": "Illusion",
-    "desc": "Using a <b>Scrying Gem</b>, you can focus on a creature or location you are familiar with and be presented with a present vision of that target. If the target is a creature, it must make a <b>Spirit Saving Throw</b> to see whether it resists the scry."
-  },
-  "teleport": {
-    "label": "Teleport",
-    "school": "Alteration",
-    "desc": "Instantly transports the caster to a chosen previously visited location in the world."
-  },
-  "levitate": {
-    "label": "Levitate",
-    "school": "Alteration",
-    "desc": "You touch a willing creature, causing it to levitate up to 1m off the ground and can move around freely for the duration.",
-    "duration": "1 hour"
+    "desc": "You instantly learn the magical properties of a magical item you are touching. If the item is not magical, the spell will have no effect.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane"]
   },
   "sleep": {
     "label": "Sleep",
     "school": "Alteration",
-    "desc": "Select a point within 10m, causing 5d8 health worth of creatures within a 3m cube originating at the chosen point to fall unconscious. For each rank above 1, this spell affects an additional 2d8 health worth of creatures."
+    "desc": "Select a point within range, causing 5d8 health worth of creatures within a 3m cube originating at the chosen point to fall unconscious. For each rank above 1, this spell affects an additional 2d8 health worth of creatures.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Arcane"]
+  },
+  "thunderwave": {
+    "label": "Thunderwave",
+    "school": "Evocation",
+    "desc": "Generate a thunderous wave of energy from yourself in a 3m cube. Each creature within the area must make a <b>Constitution Saving Throw</b> or take <b>2d6 Bludgeoning damage</b> and be pushed back 2m. On success they take half damage and are not pushed. Does an additional 1d6 damage for each rank above 1.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Arcane", "Nature"]
+  },
 
-  },
-  "seeinvisible": {
-    "label": "See Invisible",
-    "school": "Conjuration",
-    "desc": "Your target is able to see invisible creatures for up to 1 hour."
-  },
-  "blizzard": {
-    "label": "Blizzard",
+
+  "acidarrow": {
+    "label": "Acid Arrow",
     "school": "Evocation",
-    "desc": "Choose a target area of size 3m x 3m within 10m, summoning a storm. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+INT Ice damage</b>. On save success it does half damage. Does an additional 1d8 damage for each rank above 4."
+    "desc": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a <b>Ranged Spell Attack</b> against the target. On a hit, the target takes <b>4d4+INT acid damage</b> immediately and <b>2d4 acid damage</b> at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn. Does an additional 1d4 damage (both initial and later) for each rank above 2.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "chainlightning": {
-    "label": "Chain Lightning",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a creature within 10m. On hit the creature takes <b>3d8+INT Energy damage</b>. The lightning then bounces to up to 3 other enemy targets, making a <b>Spell Attack</b> on each and doing <b>2d8 Energy damage</b>. If one of the attacks misses then the chain ends. Each hit does an additional 1d8 damage for each rank above 4."
+  "arcanelock": {
+    "label": "Arcane Lock",
+    "school": "Alteration",
+    "desc": "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 1m of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.<br /><br /> While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "Until Dispelled",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
   "blur": {
     "label": "Blur",
     "school": "Illusion",
-    "desc": "Choose a target friendly character, that character becomes a blurred image for the duration, causing all attacking characters to roll with disadvantage when attacking that character.",
-    "duration": "1 minute"
+    "desc": "Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has <b>Disadvantage</b> on Attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with <b>Blindsight</b>, or can see through illusions, as with <b>Truesight</b>.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "1 minute",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "crystallize": {
-    "label": "Crystallize",
-    "school": "Abjuration",
-    "desc": "Coat yourself in hard crystal, gaining 4d6+INT temporary health. While you have this temporary health you are considered <b>Stunned</b>."
-  },
-  "openportal": {
-    "label": "Open Portal",
+  "darkvision": {
+    "label": "Darkvision",
     "school": "Alteration",
-    "desc": "You can transport yourself up to 9 other characters you are touching to any previously visited location."
+    "desc": "You touch a willing creature to grant it the ability to see in the dark. For the Duration, that creature has darkvision out to a range of 15m.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "8 hours",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "openrift": {
-    "label": "Open Rift",
+  "enlargereduce": {
+    "label": "Enlarge Reduce",
     "school": "Alteration",
-    "desc": "You can open a rift when at a rift tear location. The rift lasts for up to 1 hour and can be dismissed at any time by you."
-  },
-  "arcanegreatsword": {
-    "label": "Arcane Greatsword",
-    "school": "Conjuration",
-    "desc": "Conjure a huge sword made of pure arcane energy that only you can wield for the duration. The sword requires both hands, has a +6 modifier to attack and does <b>2d8+INT+6 Arcane damage</b>.",
-    "duration": "1 minute"
-  },
-  "disintegrate": {
-    "label": "Disintegrate",
-    "school": "Evocation",
-    "desc": "Create a beam of devastating energy originating at the caster and 10m in length. Each character in the line must make an <b>Agility Saving Throw</b> or take <b>3d8+INT Arcane damage</b> and <b>3d8+INT Fire damage</b>. On save success the damage is halved."
-  },
-  "callmeteor": {
-    "label": "Call Meteor",
-    "school": "Evocation",
-    "desc": "Calls down a burning meteor from the sky on a target area 3mx3m. Any characters within the area must make an <b>Agility Saving Throw</b> or take take <b>5d6+INT Fire damage</b> and <b>5d6+INT Blunt damage</b>. On save success the damage is halved."
-  },
-  "protection": {
-    "label": "Protection",
-    "school": "Abjuration",
-    "desc": "Grant a friendly target a bonus to any <b>Saving Throws</b> equal to your <b>Spirit</b> for the duration. For each rank above 1 it can apply to an additional target.",
-    "duration": "1 minute"
-  },
-  "heal": {
-    "label": "Heal",
-    "school": "Alteration",
-    "desc": "Heal a target within 10m for 1d6+SPI health. Increases by 1d6 for each rank above 1."
-  },
-  "blessing": {
-    "label": "Blessing",
-    "school": "Alteration",
-    "desc": "Grant a friendly target a bonus to all <b>Attack Rolls</b> equal to your <b>Spirit</b> for the duration. For each rank above 1 it can apply to an additional target.",
-    "duration": "1 minute"
-  },
-  "curepoison": {
-    "label": "Cure Poison",
-    "school": "Alteration",
-    "desc": "Purge a single poison from the target character. May purge an additional poison for each rank above 1."
-  },
-  "weakeningword": {
-    "label": "Weakening Word",
-    "school": "Alteration",
-    "desc": "All enemies within earshot must make a <b>Spirit Saving Throw</b>, on failure they are weakened, forcing their next attack roll to be made with <b>Disadvantage</b>"
-  },
-  "holybolt": {
-    "label": "Holy Bolt",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> vs a target within 10m, on hit deals 1d6+SPI damage. Deals an additional 1d6 damage against undead or demons. Does an additional 1d6 damage for each rank above 1. "
-  },
-  "symbol": {
-    "label": "Symbol",
-    "school": "Abjuration",
-    "desc": "Mark a friendly target within 10m with a holy symbol, granting them <b>1d6+SPI temporary health</b>. Increases by 1 for each rank above 2."
-  },
-  "protection": {
-    "label": "Shielding",
-    "school": "Abjuration",
-    "desc": "Grant a friendly target +1 armour against any attacks for the duration. Increases by 1 armour for each rank above 2.",
-    "duration": "1 minute"
-  },
-  "focus": {
-    "label": "Focus",
-    "school": "Alteration",
-    "desc": "Grant a friendly target within 10m <b>Advantage</b> on any <b>Checks</b> for the duration. For each rank above 2 it can apply to an additional target.",
-    "duration": "1 hour"
-  },
-  "calm": {
-    "label": "Calm",
-    "school": "Alteration",
-    "desc": "Calm a target, removing any <b>Fear</b> and granting you <b>Advantage</b> on any <b>Persuasion</b> checks against that character. Unwilling targets must make a <b>Charisma Saving Throw</b> to attempt to resist the affect."
-  },
-  "curedisease": {
-    "label": "Cure Disease",
-    "school": "Alteration",
-    "desc": "Purge a single disease from the target character. May purge an additional disease for each rank above 2."
-  },
-  "flashheal": {
-    "label": "Flash Heal",
-    "school": "Alteration",
-    "desc": "Heal a target within 10m for 1d4+SPI health. Increases by 1d4 for each rank above 2.",
-    "castTime": "BonusAction"
-  },
-  "turnundead": {
-    "label": "Turn Undead",
-    "school": "Evocation",
-    "desc": "A target undead within 10m must make a <b>Spirit Saving Throw</b>. On save failure deals <b>2d8+SPI Light damage</b> and the target is <b>Stunned</b>. On success it just deals half damage and no stun. Does an additional 1d8 damage for each rank above 2."
-  },
-  "beamoflight": {
-    "label": "Beam of Light",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target and any targets in that line, on hit deals <b>2d8+SPI Light damage</b> to each target in the line. Does an additional 1d8 damage from each rank above 2."
-  },
-  "resistance": {
-    "label": "Resistance",
-    "school": "Abjuration",
-    "desc": "Pick one type of damage (<b>Blunt, Slashing, Piercing, Arcane, Fire, Poison, Ice, Mind, Light, Energy, or Dark</b>). That character now has <b>Resistance</b> to that type of damage for 10 minutes. For each rank above 3, an additional target can be affected by the spell."
-  },
-  "revive": {
-    "label": "Revive",
-    "school": "Alteration",
-    "desc": "Choose a character to resurrect who has been dead for less than 1 minute. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms (making additional checks to lower the DC). Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
-  },
-  "cancelmagic": {
-    "label": "Cancel Magic",
-    "school": "Alteration",
-    "desc": "Remove a single magical effect on a target within 10m (works for both beneficial effects on enemies, and negative effects on allies). May affects an additional magical effect for each rank above 3."
-  },
-  "circleofhealing": {
-    "label": "Circle of Healing",
-    "school": "Alteration",
-    "desc": "All friendly characters within 2m are healed for 1d8+SPI health. Increases by 1d8 for each rank above 3."
-  },
-  "bountifullight": {
-    "label": "Bountiful Light",
-    "school": "Alteration",
-    "desc": "All allies within 5m are blessed with light for 1 hour. Any heals on them now heal for the full die amount and do not need to be rolled."
-  },
-  "holyword": {
-    "label": "Holy Word",
-    "school": "Evocation",
-    "desc": "All enemies within earshot must make a <b>Spirit Saving Throw</b>. On a failed save they take <b>4d8+SPI Light damage</b>. Deals an additional 1d8 to undead or demons."
-  },
-  "spiritguardians": {
-    "label": "Spirit Guardians",
-    "school": "Conjuration",
-    "desc": "Summon 3 protective spirits around yourself which each add 1 to your dodge. When you take damage 1 spirit is removed."
-  },
-  "flashoflight": {
-    "label": "Flash of Light",
-    "school": "Evocation",
-    "desc": "All enemies that can see you are blinded by a flash of light, they must make a <b>Constitution Saving Throw</b> or be <b>Blinded</b>."
-  },
-  "trueresurrection": {
-    "label": "True Resurrection",
-    "school": "Alteration",
-    "desc": "Choose a character to resurrect who has been dead for less than 1 year. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms. Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
-  },
-  "angelsfury": {
-    "label": "Angel's Fury",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target enemy within 10m, deals 5d8+SPI light damage. Does an additional 2d8 damage to demons and undead."
-  },
-  "vengeance": {
-    "label": "Vengeance",
-    "school": "Alteration",
-    "desc": "Grant divine protection to a target, the next fatal damage they would take is ignored and they can immediately make an attack against the attacking enemy."
-  },
-  "strengthofthebear": {
-    "label": "Strength of the Bear",
-    "school": "Alteration",
-    "desc": "Grant a friendly target additional <b>Strength</b> equal to your <b>Spirit</b> for their next check or attack."
-  },
-  "camouflage": {
-    "label": "Camouflage",
-    "school": "Alteration",
-    "desc": "The caster blends into the wilderness, becoming invisible for 1 hour. Only works outdoors. Making any aggressive action removes it."
-  },
-  "thornyvines": {
-    "label": "Thorny Vines",
-    "school": "Conjuration",
-    "desc": "Choose an enemy within 10m, that creature must make a <b>Strength Saving Throw</b> or be <b>Grappled</b> by them and take 1d4 damage, they must then attempt the saving throw at the start of each turn to see if they break free or remain grappled and take a further 1d4 damage. Deals an additional 1d4 damage for each rank above 1."
-  },
-  "calllightning": {
-    "label": "Call Lightning",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target within 10m, on hit the target suffers <b>1d6+SPI Energy damage</b> and is <b>Stunned</b>. Does an additional 1d6 damage for each rank above 1."
-  },
-  "healingwind": {
-    "label": "Healing Wind",
-    "school": "Alteration",
-    "desc": "Heal a target within 1m for 1d6+SPI health. Increases by 1d6 for each rank above 2."
-  },
-  "barkskin": {
-    "label": "Barkskin",
-    "school": "Abjuration",
-    "desc": "Grant a friendly target within 10m +1 <b>armour</b> and +1 <b>magic reduction</b> for 1 minute. Grants an additional +1 for each rank above 2."
-  },
-  "eyesofthehawk": {
-    "label": "Eyes of the Hawk",
-    "school": "Alteration",
-    "desc": "Grant a friendly target <b>Spirit</b> attack on their next turn."
-  },
-  "callanimal": {
-    "label": "Call Animal",
-    "school": "Conjuration",
-    "desc": "Summon a temporary animal companion for 1 hour (Hawk, Wolf, Panther, Bear)."
-  },
-  "callhurricane": {
-    "label": "Call Hurricane",
-    "school": "Evocation",
-    "desc": "Choose a target area 3m x 3m within range. All creatures in that range must make a <b>Constitution Saving Throw</b> or take <b>2d8+SPI Blunt damage</b> and be <b>knocked down</b>. On save success they take half damage and are not knocked down. Does an additional 1d8 damage for each rank above 2."
-  },
-  "spiderform": {
-    "label": "Spider Form",
-    "school": "Illusion",
-    "desc": "Take the form of a small spider for 1 hour. While in spider form the caster is considered basically invisible."
-  },
-  "removecurse": {
-    "label": "Remove Curse",
-    "school": "Abjuration",
-    "desc": "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded."
-  },
-  "regenerate": {
-    "label": "Regenerate",
-    "school": "Alteration",
-    "desc": "Grant regeneration to a friendly target within 10m for the duration. At the start of it's turn that character gains 2d4 health.",
-    "duration": "1 minute"
-  },
-  "stoneskin": {
-    "label": "Stoneskin",
-    "school": "Abjuration",
-    "desc": "Grant a friendly target within 10m <b>Resistance</b> to <b>Blunt, Slashing and Piercing</b> damage for the duration.",
-    "duration": "1 minute"
-  },
-  "speedofthecheetah": {
-    "label": "Speed of the Cheetah",
-    "school": "Alteration",
-    "desc": "Grant a friendly target within 10m <b>Haste</b> for the duration.",
-    "duration": "1 minute"
-  },
-  "summonwind": {
-    "label": "Summon Wind",
-    "school": "Alteration",
-    "desc": "Call on the winds, granting you levitate off the ground for  1 hour."
-  },
-  "charmanimal": {
-    "label": "Charm Animal",
-    "school": "Illusion",
-    "desc": "Choose an animal within range to make a <b>Charisma Saving Throw</b> or be <b>Charmed</b>. The creature rolls with <b>Advantage</b> if it is in combat."
-  },
-  "birdform": {
-    "label": "Bird Form",
-    "school": "Illusion",
-    "desc": "Take the form of a small bird for 1 hour. While in bird form the caster can fly."
-  },
-  "fly": {
-    "label": "Fly",
-    "school": "Alteration",
-    "desc": "You touch a willing creature, granting it a flying speed of 10m for the duration. For each rank above 3, the spell can affect one additional creature.",
-    "duration": "10 minutes"
-  },
-  "scry": {
-    "label": "Scry",
-    "school": "Illusion",
-    "desc": "Using a <b>Scrying Gem</b>, you can focus on a creature or location you are familiar with and be presented with a present vision of that target. If the target is a creature, it must make a <b>Spirit Saving Throw</b> to see whether it resists the scry."
-  },
-  "treestride": {
-    "label": "Treestride",
-    "school": "Alteration",
-    "desc": "Instantly transports the caster and up to 9 other people from one tree to another tree that the caster is aware of."
-  },
-  "diamondskin": {
-    "label": "Diamondskin",
-    "school": "Abjuration",
-    "desc": "Grant a friendly target within 10m <b>Resistance</b> to <b>Arcane, Fire, Ice, Light, Dark, Energy and Mind</b> damage for 1 minute."
-  },
-  "revive": {
-    "label": "Revive",
-    "school": "Alteration",
-    "desc": "Choose a character to resurrect who has been dead for less than 1 minute. Make a <b>Spirit Saving Throw</b> vs a DC of 10 plus the target characters level. The DC increases by 1 for each time the character has been previously resurrected (including failed attempts). Other characters may assist in various forms (making additional checks to lower the DC). Casting this spell exhausts all the casters spell slots and leaves them <b>exhausted</b>."
-  },
-  "poisoncloud": {
-    "label": "Poison Cloud",
-    "school": "Evocation",
-    "desc": "Summon a cloud of poison at a target area of size 3m x 3m. All characters in the area must make a <b>Constitution</b> <b>Saving Throw</b> now and at the start of their turn or take <b>2d8+SPI Poison damage</b>."
+    "desc": "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.<br /><br /><b>Enlarge:</b> The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category - from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength Checks and Strength saving throws. The target's Weapons also grow to match its new size. While these Weapons are enlarged, the target's Attack with them deal 1d4 extra damage.<br /><br /><b>Reduce:</b>The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category - from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength Checks and Strength saving throws. The target's Weapons also shrink to match its new size. While these Weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).",
+    "castTime": "Action",
+    "range": "5m",
+    "duration": "1 minute",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
   "flamingsphere": {
     "label": "Flaming Sphere",
     "school": "Conjuration",
-    "desc": "Summon a ball of flame roughly 1m in diameter at a point within 10m. Creatures that touch the sphere or end their turn next to it must make a <b>Dexterity Saving Throw</b> or take <b>2d8 fire damage</b>. On save success they take half damage. On your turn, as a <b>Bonus Action</b> you may move the sphere up to 6m. The sphere does an additional 1d8 damage for each rank above 2.",
-    "duration": "1 minute"
+    "desc": "A 1m diameter Sphere of fire appears in an unoccupied space of your choice within range and lasts for the Duration. Any creature that ends its turn within 1m of the Sphere must make an <b>Agility Saving Throw</b>. The creature takes <b>2d6+INT fire damage</b> on a failed save, or half as much damage on a successful one.<br /><br />As a <b>Bonus Action</b>, you can move the Sphere up to 5m. If you ram the Sphere into a creature, that creature must make the saving throw against the sphere's damage, and the Sphere stops moving this turn. The sphere does an additional 1d6 damage for each rank above 2.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "wolfform": {
-    "label": "Wolf Form",
+  "invisibility": {
+    "label": "Invisibility",
     "school": "Illusion",
-    "desc": "Take the form of a large wolf for 1 hour. While in wolf form the caster gains a +3 to <b>Strength</b> and <b>Agility</b>, has <b>Haste</b>, and rolls 1d8+STR for melee attack damage."
+    "desc": "A creature you touch becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell. For each rank above 2, the spell can affect an additional target.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "1 hour",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "ankhofreversal": {
-    "label": "Ankh of Reversal",
+  "knock": {
+    "label": "Knock",
     "school": "Alteration",
-    "desc": "Mark the friendly target, the next fatal damage they would take actually heals them for that amount instead."
+    "desc": "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of Manacles, a padlock, or another object that contains a mundane or magical means that prevents access.<br /><br />A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.<br /><br />If you choose a target that is held shut with Arcane Lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.<br /><br />When you cast the spell, a loud knock, audible from as far away as 100m, emanates from the target object.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "treeform": {
-    "label": "Tree Form",
-    "school": "Illusion",
-    "desc": "Take the form of a large tree for 1 hour. While in tree form the caster cannot move, but can still cast spells and gains <b>Resistance</b> to all damage types."
-  },
-  "thunderstorm": {
-    "label": "Thunderstorm",
-    "school": "Evocation",
-    "desc": "Choose an area 3m x 3m within range to create a storm that you can maintain with <b>Concentration</b> for the duration. All creatures within that area must make an <b>Agility Saving Throw</b> or take <b>5d8+SPI Energy damage</b>. On save success they take half damage.",
-    "duration": "1 minute"
-  },
-  "enhancemind": {
-    "label": "Enhance Mind",
+  "levitate": {
+    "label": "Levitate",
     "school": "Alteration",
-    "desc": "Grant your target enhanced mind for the duration. That character has <b>Advantage</b> on all <b>Intelligence/Charisma Checks</b> for the duration.",
-    "duration": "1 hour"
+    "desc": "One creature or object of your choice that you can see within range rises vertically, up to 1m, and remains suspended there for the Duration. The spell can levitate a target that weighs up to 200kg. An unwilling creature that succeeds on a <b>Constitution Saving Throw</b> is unaffected.<br /><br />The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. Otherwise, you can use your action to move the target, which must remain within the spell's range.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "10 minutes",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "mindstab": {
-    "label": "Mind Stab",
+  "locateobject": {
+    "label": "Locate Object",
+    "school": "Divination",
+    "desc": "Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1km of you. If the object is in motion, you know the direction of its Movement.<br /><br />The spell can locate a specific object known to you, as long as you have seen it up close (within 10m) at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.<br /><br />This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "10 minutes",
+    "rank": 2,
+    "groups": ["Arcane"]
+  },
+  "magicweapon": {
+    "label": "Magic Weapon",
+    "school": "Alteration",
+    "desc": "You touch a nonmagical weapon. Until the spell ends, that weapon is considered a magic weapon with a +1 bonus to <b>Attack</b> rolls and <b>Damage</b> Rolls. For every 2 ranks above 2, the effect is increased by an addition +1.",
+    "castTime": "Bonus Action",
+    "range": "Touch",
+    "duration": "1 minutes",
+    "rank": 2,
+    "groups": ["Arcane"]
+  },
+  "scorchingray": {
+    "label": "Scorching Ray",
     "school": "Evocation",
-    "desc": "Choose a creature within 10m, that creature must make an <b>Intelligence Saving Throw</b> or take <b>1d6+CHA Mind damage</b>"
+    "desc": "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.<br /><br />Make a <b>Ranged Spell Attack</b> for each ray. On a hit, the target takes <b>2d6+INT fire damage</b>. For each rank above 2, an additional ray is created.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "lovesick": {
-    "label": "Lovesick",
-    "school": "Illusion",
-    "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> or it will make any attacks against you with <b>Disadvantage</b>",
-    "duration": "1 hour"
+  "seeinvisible": {
+    "label": "See Invisible",
+    "school": "Divination",
+    "desc": "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "1 hour",
+    "rank": 2,
+    "groups": ["Arcane"]
   },
-  "charm": {
-    "label": "Charm",
-    "school": "Illusion",
-    "desc": "Choose a creature within 10m, that creature must make a <b>Charisma Saving Throw</b> (during combat it has <b>Advantage</b>) or it will be <b>Charmed</b> for the duration. It must then make another save at the end of each turn to see if it breaks free from the charm. When the effect ends, the creature knows it was charmed by you.",
-    "duration": "1 hour"
+  "shatter": {
+    "label": "Shatter",
+    "school": "Evocation",
+    "desc": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 3m cube centered on that point must make a <b>Constitution Saving Throw</b>. A creature takes <b>3d8+INT Bludgeoning damage</b> on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br /><br />A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area. For each rank above 2, the spell does an additional 1d8 damage.",
+    "castTime": "Action",
+    "range": "Self",
+    "duration": "Instant",
+    "rank": 2,
+    "groups": ["Arcane"]
+  },
+
+  "bane": {
+    "label": "Bane",
+    "school": "Alteration",
+    "desc": "Up to three creatures of your choice that you can see within range must make <b>Charisma Saving Throws</b>. Whenever a target that fails this saving throw makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target must subtract 1d4 from their roll. For each rank above 1, the spell can affect an additional target.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Light"]
+  },
+  "bless": {
+    "label": "Bless",
+    "school": "Alteration",
+    "desc": "Up to three friendly creatures of your choice that you can see within range are blessed for the duration. Whenever a target makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target can add 1d4 to their roll. For each rank above 1, the spell can affect an additional target.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Light"]
+  },
+  "heal": {
+    "label": "Heal",
+    "school": "Alteration",
+    "desc": "A creature within range gains 1d8+SPI health. For each spell slot above 1, it heals an additional 1d8 health.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Light", "Nature"]
+  },
+  "detectpoisonanddisease": {
+    "label": "Detect Poison and Disease",
+    "school": "Divination",
+    "desc": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 10m of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": ["Light", "Nature"]
+  },
+  "guidingbolt": {
+    "label": "Guiding Bolt",
+    "school": "Evocation",
+    "desc": "You fire a shimmering bolt of light at a target enemy within range. Make a <b>Ranged Spell Attack</b>, if it hits the target takes <b>3d6+SPI light damage</b> and the next attack roll against this creature gains <b>Advantage</b>. For each rank above 1, the target takes an additional 1d6 damage.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Light"]
+  },
+  "purify": {
+    "label": "Purify",
+    "school": "Alteration",
+    "desc": "All nonmagical food and drink within a 2m cube centered on a point of your choice within range is purified and rendered free of poison and disease.",
+    "castTime": "Action",
+    "range": "5m",
+    "duration": "Instant",
+    "rank": 1,
+    "groups": ["Light", "Nature"]
+  },
+  "protection": {
+    "label": "Protection",
+    "school": "Abjuration",
+    "desc": "You grant an aura of holy protection to a friendly creature within range, that target gains +2 to <b>Dodge</b> for the duration.",
+    "castTime": "Bonus Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Light"]
+  },
+  "sanctuary": {
+    "label": "Sanctuary",
+    "school": "Abjuration",
+    "desc": "You ward a friendly creature within range, any creatures attacking your target must make a <b>Spirit Saving Throw</b> vs your spell DC. If they fail, their attack is prevented. If your target is affected by any attacks, the ward is removed.",
+    "castTime": "Bonus Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Light"]
+  },
+
+
+  "animalfriendship": {
+    "label": "Animal Friendship",
+    "school": "Alteration",
+    "desc": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range, that can also see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a <b>Charisma Saving Throw</b> or be <b>Charmed</b> by you for the spell's duration. If you or one of your companions harms the target, the spells ends.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "24 hours",
+    "rank": 1,
+    "groups": ["Nature"]
+  },
+  "entangle": {
+    "label": "Entangle",
+    "school": "Conjuration",
+    "desc": "Grasping weeds and vines sprout from the ground in a 5m square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.<br /><br />A creature in the area when you cast the spell must succeed on a <b>Strength Saving Throw</b> or be <b>Restrained</b> by the entangling plants until the spell ends. A creature <b>Restrained</b> by the plants can use its action to make a <b>Strength Check</b> against your <b>Spell DC</b>. On a success, it frees itself.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Nature"]
+  },
+  "faeriefire": {
+    "label": "Faerie Fire",
+    "school": "Evocation",
+    "desc": "Each object in a 5m cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails an <b>Agility Saving Throw</b>. For the duration, objects and affected creatures shed dim light in a 2m radius.<br /><br />Any Attack roll against an affected creature or object has <b>Advantage</b> if the attacker can see it, and the affected creature or object can't benefit from being <b>Invisible</b>.",
+    "castTime": "Bonus Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": ["Nature"]
+  },
+  "speakwithanimals": {
+    "label": "Speak With Animals",
+    "school": "Divination",
+    "desc": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their <b>Intelligence</b>, but at minimum, beasts can give you information about nearby locations and Monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.",
+    "castTime": "Bonus Action",
+    "range": "Self",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": ["Nature"]
   }
 }
+
+
+
+
+

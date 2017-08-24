@@ -31,7 +31,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Refactoring
 
-* Change slots to be item 'types'
 * Enrich spell object and structure for cross-class spell support
 * Tidy racial passives into modifiers to remove hardcoding
 * Allow modifiers to be 'functions' that get applied - custom DSL?
@@ -39,15 +38,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
   * Rules
   * DM
 
-
 ### Content
 
-* Address spell Action vs Bonus Action
 * Review current archetypes
 * Add more spells for arcane, nature and light
+* Create a digital/interactive version of the map
 * Flesh out classes that aren't current being played
   * Add spells for dark, mind and song
-* Create a digital/interactive version of the map
 
 
 

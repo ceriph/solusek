@@ -5,7 +5,6 @@ export class Item {
   label: string;
   desc: string;
   type: ItemType;
-  slot: ItemSlot = ItemSlot.None;
   rarity: Rarity = Rarity.Common;
   proficiency: string;
   subtype: string;
@@ -25,16 +24,6 @@ export enum ItemType {
   Gloves,
   Headgear,
   Misc
-}
-
-export enum ItemSlot {
-  Head,
-  Body,
-  Feet,
-  Hands,
-  Jewellery,
-  Weapon,
-  None
 }
 
 export enum Rarity {

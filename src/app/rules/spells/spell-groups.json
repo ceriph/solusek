@@ -1,14 +1,16 @@
 {
   "arcane": {
     "label": "Arcane",
-    "desc": "Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice. Wizards are the only class that gain access to arcane magi",
+    "desc": "Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice. Wizards are the only class that gain access to arcane magic.",
     "ranks": {
       "1": {
         "rank": 1,
         "spells": [
           "arcanemissiles",
+          "blink",
           "burninghands",
           "colourspray",
+          "firebolt",
           "fogcloud",
           "magearmour",
           "identify",
@@ -20,55 +22,20 @@
       "2": {
         "rank": 2,
         "spells": [
+          "acidarrow",
           "arcanelock",
-          "openlock",
-          "swap",
-          "eyeofzom",
-          "magicsword",
-          "summonimp",
-          "whisper",
-          "frostnova",
+          "blur",
+          "darkvision",
+          "enlargereduce",
           "flamingsphere",
-          "icebolt",
-          "fireball",
           "invisibility",
-          "scry",
-          "levitate"
-        ]
-      },
-      "3": {
-        "rank": 3,
-        "spells": [
-        ]
-      },
-      "4": {
-        "rank": 4,
-        "spells": [
-        ]
-      },
-      "5": {
-        "rank": 5,
-        "spells": [
-        ]
-      },
-      "6": {
-        "rank": 6,
-        "spells": [
-        ]
-      },
-      "7": {
-        "rank": 7,
-        "spells": [
-        ]
-      },
-      "8": {
-        "rank": 8,
-        "spells": [
-        ]
-      },
-      "9": {
-        "rank": 9,
-        "spells": [
+          "knock",
+          "levitate",
+          "locateobject",
+          "magicweapon",
+          "scorchingray",
+          "seeinvisibile",
+          "shatter"
         ]
       }
     }
@@ -84,41 +51,15 @@
       "1": {
         "rank": 1,
         "spells": [
-          "protection",
+          "bane",
+          "bless",
+          "detectmagic",
+          "detectpoisonanddisease",
+          "guidingbolt",
           "heal",
-          "blessing",
-          "curepoison",
-          "weakeningword",
-          "holybolt"
-        ]
-      },
-      "2": {
-        "rank": 2,
-        "spells": [
-          "symbol",
+          "purify",
           "protection",
-          "focus",
-          "calm",
-          "curedisease",
-          "flashheal",
-          "turnundead",
-          "beamoflight",
-          "scry"
-        ]
-      },
-      "3": {
-        "rank": 3,
-        "spells": [
-        ]
-      },
-      "4": {
-        "rank": 4,
-        "spells": [
-        ]
-      },
-      "5": {
-        "rank": 5,
-        "spells": [
+          "sanctuary"
         ]
       }
     }
@@ -130,39 +71,16 @@
       "1": {
         "rank": 1,
         "spells": [
-          "strengthofthebear",
-          "camouflage",
-          "thornyvines",
-          "calllightning",
-          "heal"
-        ]
-      },
-      "2": {
-        "rank": 2,
-        "spells": [
-          "healingwind",
-          "barkskin",
-          "eyesofthehawk",
-          "callanimal",
-          "callhurricane",
-          "spiderform",
-          "scry",
-          "levitate"
-        ]
-      },
-      "3": {
-        "rank": 3,
-        "spells": [
-        ]
-      },
-      "4": {
-        "rank": 4,
-        "spells": [
-        ]
-      },
-      "5": {
-        "rank": 5,
-        "spells": [
+          "animalfriendship",
+          "detectmagic",
+          "detectpoisonanddisease",
+          "entangle",
+          "faeriefire",
+          "fogcloud",
+          "heal",
+          "purify",
+          "speakwithanimals",
+          "thunderwave"
         ]
       }
     }
@@ -174,10 +92,6 @@
       "1": {
         "rank": 1,
         "spells": [
-          "enhancemind",
-          "mindstab",
-          "lovesick",
-          "charm"
         ]
       }
     }

@@ -33,8 +33,8 @@ export class RulesComponent implements OnInit {
   weapons: FirebaseListObservable<Item[]>;
   tools: FirebaseListObservable<Item[]>;
   levels: number[];
-  casterSpellSlots: FirebaseListObservable<Slots[]>;
-  hybridSpellSlots: FirebaseListObservable<Slots[]>;
+  casterSpellSlots: Slots[];
+  hybridSpellSlots: Slots[];
 
   constructor(private rulesService: RulesService,
               private classService: ClassService,
@@ -56,7 +56,11 @@ export class RulesComponent implements OnInit {
     this.weapons = this.equipmentService.listByType(ItemType.Weapon);
     this.shields = this.equipmentService.listByType(ItemType.Shield);
     this.tools = this.equipmentService.listByType(ItemType.Tool);
-    this.casterSpellSlots = this.spellSlotService.list(Type.Caster);
-    this.hybridSpellSlots = this.spellSlotService.list(Type.Hybrid);
+    this.spellSlotService.list(Type.Caster).subscribe(slots => {
+      this.casterSpellSlots = slots;
+    });
+    this.spellSlotService.list(Type.Hybrid).subscribe(slots => {
+      this.hybridSpellSlots = slots;
+    })
   }
 }

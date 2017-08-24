@@ -1,5 +1,7 @@
 <div *ngIf="spell" class="spellCard">
   <h3 class="spellTitle" [ngClass]="{'abjuration': spell.school=='Abjuration', 'alteration': spell.school=='Alteration', 'conjuration': spell.school=='Conjuration', 'divination': spell.school=='Divination', 'evocation': spell.school=='Evocation', 'illusion': spell.school=='Illusion'}">{{spell.label}}</h3>
-  <p class="spellSubtitle"><i>{{spell.school}}, <span *ngIf="spell.type">{{spell.type}}</span><span *ngIf="!spell.type">Action</span></i></p>
+  <p class="spellSubtitle"><i>{{spell.school}}, {{spell.castTime}}</i></p>
   <p class="spellDesc" [innerHtml]="spell.desc"></p>
+  <p class="spellDesc"><b>Range:</b> {{spell.range}}</p>
+  <p class="spellDesc"><b>Duration:</b> {{spell.duration}}</p>
 </div>

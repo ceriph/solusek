@@ -5,7 +5,7 @@ import {Spell} from "./spell";
 @Injectable()
 export class SpellService {
 
-  path = "rules/spells2";
+  path = "rules/spells";
 
   constructor(private db: AngularFireDatabase) {}
 

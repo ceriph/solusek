@@ -251,6 +251,7 @@
     "label": "Round Shield",
     "desc": "An old, plain round shield.",
     "type": "shield",
+    "proficiency": "Small Shields",
     "rarity": "common",
     "modifiers": [
       {
@@ -264,6 +265,7 @@
     "label": "Kite Shield",
     "desc": "An old, plain kite shield.",
     "type": "shield",
+    "proficiency": "Medium Shields",
     "rarity": "common",
     "modifiers": [
       {
@@ -281,7 +283,8 @@
   "towershield": {
     "label": "Tower Shield",
     "desc": "An old, plain tower shield.",
-    "type": "weapon",
+    "type": "shield",
+    "proficiency": "Large Shields",
     "rarity": "common",
     "modifiers": [
       {
@@ -304,7 +307,7 @@
   "greenleafamulet": {
     "label": "Green Leaf Amulet",
     "desc": "A delicate silver chain holding a pendant in the shape of a green leaf. Seems to have a subtle green glow when not looking directly at it.",
-    "slot": "jewellery",
+    "type": "jewellery",
     "rarity": "epic",
     "modifiers": [
       {

@@ -44,6 +44,7 @@ import { SummarySpellsComponent } from './character/summary/summary-spells/summa
 import { SpellCardComponent } from './rules/spells/spell-card/spell-card.component';
 import {SpellGroupService} from "./rules/spells/spell-group.service";
 import {SpellSlotService} from "./rules/spells/spell-slot.service";
+import { SpellBookComponent } from './rules/spells/spell-book/spell-book.component';
 
 @NgModule({
   imports: [
@@ -77,7 +78,8 @@ import {SpellSlotService} from "./rules/spells/spell-slot.service";
     SummaryEquipmentComponent,
     ItemCardComponent,
     SummarySpellsComponent,
-    SpellCardComponent
+    SpellCardComponent,
+    SpellBookComponent
   ],
   providers: [
     PlayerService,

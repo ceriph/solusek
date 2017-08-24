@@ -13,6 +13,7 @@ import {CharacterSummaryComponent} from "./character/summary/character-summary.c
 import {ClassComponent} from "./rules/class/class.component";
 import {RaceComponent} from "./rules/race/race.component";
 import {CampaignComponent} from "./campaign/campaign.component";
+import {SpellBookComponent} from "./rules/spells/spell-book/spell-book.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'rules', component: RulesComponent},
   {path: 'rules/class/:name', component: ClassComponent},
   {path: 'rules/race/:name', component: RaceComponent},
+  {path: 'rules/spell-book/:name', component: SpellBookComponent},
   {path: 'lore', component: LoreComponent},
   {path: 'campaign', component: CampaignComponent},
   {path: 'dm', component: DmComponent}

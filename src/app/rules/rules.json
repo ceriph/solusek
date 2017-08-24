@@ -161,7 +161,7 @@
               },
               {
                 "title": "Range",
-                "desc": "All weapons, spells and skill will have a range value. 0 and 1 are considered melee attacks, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
+                "desc": "All weapons, spells and skill will have a range value. 1 (or 2 with **Reach**) is considered a melee attack, anything higher is considered a ranged attack. To determine ranged attacks trace a straight line from source to target to see if the range is met; if the distance is less than or equal to the range there is no penalty, however for each additional square, a penalty is added to the attack accuracy. The effect is cumulative, so 1 additional square is a penalty of -1, 2 additional squares is the previous -1 plus an additional -2 (so -3), 3 additional squares is -1 + -2 + -3 (-6) and so on."
               },
               {
                 "title": "Attack of Opportunity",
