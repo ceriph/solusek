@@ -1,4 +1,58 @@
 {
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 1,
+        "cha" : 1,
+        "con" : 1,
+        "int" : 1,
+        "spi" : 1,
+        "str" : 1
+      },
+      "class" : "enchanter",
+      "equipment" : {
+        "body" : "platearmour",
+        "righthand" : "bastardsword"
+      },
+      "experience" : 238,
+      "gold" : 1000,
+      "info" : {
+      },
+      "level" : 1,
+      "race" : "human"
+    },
+    "name" : "Matt"
+  },
+  "Aq3nWHK9uJaVR8neIJdpGBpTMrgSOPH" : {
+    "character" : {
+      "baseStats" : {
+        "agi" : 3,
+        "cha" : 3,
+        "con" : 3,
+        "int" : 1,
+        "spi" : 1,
+        "str" : 1
+      },
+      "class" : "enchanter",
+      "equipment" : {
+        "jewellery" : [ "greenleafamulet" ],
+        "righthand" : "bluewand"
+      },
+      "experience" : 388,
+      "gold" : 0,
+      "info" : {
+        "age" : 8,
+        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
+        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
+        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
+        "name" : "Sophea Torvaris",
+        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
+      },
+      "level" : 2,
+      "race" : "highelf"
+    },
+    "name" : "Matt"
+  },
   "Aq3nWHK9uJaVR8neIJdpGBpTMrg3" : {
     "character" : {
       "baseStats" : {
@@ -51,36 +105,6 @@
     },
     "name" : "Matt"
   },
-  "Aq3nWHK9uJaVR8neIJdpGBpTMrg2" : {
-    "character" : {
-      "baseStats" : {
-        "agi" : 3,
-        "cha" : 3,
-        "con" : 2,
-        "int" : 1,
-        "spi" : 1,
-        "str" : 1
-      },
-      "class" : "enchanter",
-      "equipment" : {
-        "jewellery" : [ "greenleafamulet" ],
-        "righthand" : "bluewand"
-      },
-      "experience" : 388,
-      "gold" : 0,
-      "info" : {
-        "age" : 8,
-        "appearance" : "Small and skinny, Sophea stands only slightly taller than Morden. She has pale skin, pointy ears and long black hair. Her eyes are a very bright green.",
-        "background" : "Growing up with Kevnan and Holly, Sophea did not get out much, however they made sure she was well educated. Very protective, Holly never let Sophea out, until one day Sophea decided she wanted to see the outside, and decided to venture out. Quite the mistake as it led to her, Kevnan and Holly being captured.",
-        "motivation" : "Feels responsible for the death of Kevnan and Holly, wants to make up for it and find out where she came from.",
-        "name" : "Sophea Torvaris",
-        "personality" : "Good natured and inquisitive, Sophea is curious of the world and people in it."
-      },
-      "level" : 2,
-      "race" : "highelf"
-    },
-    "name" : "Matt"
-  },
   "DU5wAvij3JaAvQjtnkDkaothcoS2" : {
     "character" : {
       "baseStats" : {
@@ -96,7 +120,7 @@
         "body" : "leatherarmour",
         "righthand" : "rapier"
       },
-      "experience" : 675,
+      "experience" : 913,
       "gold" : 33,
       "info" : {
         "age" : 25,
@@ -180,8 +204,9 @@
   },
   "m3pwFglXwmaYIdtHlQhdaTrlz5u1" : {
     "character" : {
+      "archetype" : "oathofvengeance",
       "baseStats" : {
-        "agi" : 2,
+        "agi" : 3,
         "cha" : 1,
         "con" : 2,
         "int" : 1,

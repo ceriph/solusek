@@ -590,7 +590,9 @@
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Ranged Weapons, Small Shields, Medium Shields, Large Shields",
     "recommendations": "Constitution, Strength, Agility",
     "archetypes": [],
-    "skills": []
+    "skills": [
+      "fightingstyle"
+    ]
   },
   "wizard": {
     "desc": "Harnessing Arcane magic, wizards unleash fury upon their foes. They are the strongest spell casters in terms of raw damage output.",

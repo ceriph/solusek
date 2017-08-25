@@ -10,6 +10,7 @@ export class Item {
   subtype: string;
   damage: string;
   range: number;
+  attunement = false;
   modifiers: Modifier[];
 }
 

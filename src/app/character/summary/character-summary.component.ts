@@ -84,12 +84,7 @@ export class CharacterSummaryComponent implements OnInit {
   }
 
   hasSpells(): boolean {
-    if(this.spellSlots) {
-      const spells = this.spellSlots.reduce((a, b) => a + b.length, 0);
-      return spells > 0;
-    }
-
-    return false;
+    return this.clazz.type === Type[Type.Caster] || this.clazz.type === Type[Type.Hybrid];
   }
 
   getHitDie(): number[] {

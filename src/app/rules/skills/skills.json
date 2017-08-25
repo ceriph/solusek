@@ -354,6 +354,10 @@
     "label": "Imbue Element",
     "desc": "when casting a spell that does <b>Arcane</b> damage, you may choose to add an addition damage die to that spell's damage. The additional die does either fire or ice damage as you choose.<br /><br />For example, when casting <b>Arcane Missiles</b>, you would spawn another missile doing another 1d4 damage of either fire or ice."
   },
+  "fightingstyle": {
+    "label": "Fighting Style",
+    "desc": "you may select a fighting style to specialise in."
+  },
   "arcanetorrent": {
     "label": "Arcane Torrent",
     "desc": "your <b>Arcane Missiles</b> spell now does 1d8 per missile and you have full control over which targets the missiles hit."

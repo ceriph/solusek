@@ -1,9 +1,10 @@
 <div *ngIf="item" class="itemCard">
   <h3 class="itemTitle" [ngClass]="{'common': item.rarity=='common', 'uncommon': item.rarity=='uncommon', 'rare': item.rarity=='rare', 'epic': item.rarity=='epic', 'legendary': item.rarity=='legendary'}">{{item.label}}</h3>
-  <p class="itemSubtitle"><i>Type: {{item.type}}, {{item.rarity}}</i></p>
+  <p class="itemSubtitle"><i>{{item.type}}, {{item.rarity}}<span *ngIf="item.attunement">, requires attunement</span></i></p>
   <p class="itemDesc" [innerHtml]="item.desc"></p>
+  <p class="itemDesc" *ngIf="item.proficiency">Requires '{{item.proficiency}}' proficiency</p>
   <p class="itemDesc"><span *ngIf="item.damage"><b>Damage:</b> {{item.damage}}</span><span *ngIf="item.range">, <b>Range:</b> {{item.range}}m</span></p>
   <div *ngIf="item.modifiers && item.modifiers.length > 0">
-    <p class="itemDesc"><b>Modifiers: </b><span *ngFor="let modifier of item.modifiers">+{{modifier.value}} {{modifier.label}} </span></p>
+    <p class="itemDesc"><b>Modifiers: </b><span *ngFor="let modifier of item.modifiers; let isLast=last"><span *ngIf="modifier.value > 0">+</span>{{modifier.value}} {{modifier.label}}{{isLast ? '' : ', '}}</span></p>
   </div>
 </div>

@@ -93,8 +93,8 @@
         "value": -2
       },
       {
-        "name": "movement",
-        "label": "Movement",
+        "name": "speed",
+        "label": "Speed",
         "value": -1
       }
     ]
@@ -298,8 +298,8 @@
         "value": -2
       },
       {
-        "name": "movement",
-        "label": "Movement",
+        "name": "speed",
+        "label": "Speed",
         "value": -1
       }
     ]
@@ -308,6 +308,7 @@
     "label": "Green Leaf Amulet",
     "desc": "A delicate silver chain holding a pendant in the shape of a green leaf. Seems to have a subtle green glow when not looking directly at it.",
     "type": "jewellery",
+    "attunement": true,
     "rarity": "epic",
     "modifiers": [
       {
@@ -322,7 +323,7 @@
       },
       {
         "name": "magicreduction",
-        "label": "Magic Reduction",
+        "label": "Spell Armour",
         "value": 1
       }
     ]
@@ -332,6 +333,8 @@
     "desc": "A wicked looking curved dagger with veins of dark red paint. Seems to glow when it comes in contact with blood.",
     "type": "weapon",
     "rarity": "rare",
+    "proficiency": "Simple Weapons",
+    "attunement": true,
     "damage": "1d4+STR Piercing + 1d4 Dark",
     "modifiers": [
       {
@@ -342,15 +345,17 @@
       {
         "name": "effect",
         "label": "Effect",
-        "value": "<b>Requires Attunement</b>: Gains an additional permanent +1 attack/damage modifier for every <b>killing blow</b> the wielder does up to a maximum of +3."
+        "value": "Gains an additional permanent +1 attack/damage modifier for every <b>killing blow</b> the wielder does up to a maximum of +3."
       }
     ]
   },
   "thaglanadh": {
     "label": "Tha Ghlanadh",
-    "desc": "An ancient dwarvish warhammer known as Tha Glanadh (The Purge). A long metal haft expertly wrapped in fine leathers sewn with ornate patterns, ending in a large squared off hammer with dwarvish script carved into either side that says 'For the greater good, all may be sacrificed'. The hammer was wielded by the fallen paladin Artair Deòiridh who - according to legend - carried out the killing of an entire diseased town to prevent the spread. The guilt turned him to madness and eventually suicide. This weapon is <b>cursed</b>, still haunted by the twisted spirit of Artair.<br /><br /> <b>Curse:</b> The wielder is plagued by the spirit of Artair, who will occasionally attempt to compel the wielder to attack nearby targets. The wielder must make a <b>Spirit Saving Throw</b> against a DC of 15 to avoid this. The curse can be broken by blessing the weapon.<br /><br /> This weapon is <b>Versatile</b> and can be wielded in one weapon or two. When wielded in two it does 1d10 damage instead of 1d8.",
+    "desc": "An ancient dwarvish warhammer known as Tha Glanadh (The Purge). A long metal haft expertly wrapped in fine leathers sewn with ornate patterns, ending in a large squared off hammer with dwarvish script carved into either side that says 'For the greater good, all may be sacrificed'. The hammer was wielded by the fallen paladin Artair Deòiridh who - according to legend - carried out the killing of an entire diseased town to prevent the spread. The guilt turned him to madness and eventually suicide. This weapon is <b>cursed</b>, still haunted by the twisted spirit of Artair.<br /><br /> <b>Curse:</b> The wielder is plagued by the spirit of Artair, who will occasionally attempt to compel the wielder to attack nearby targets. The wielder must make a <b>Spirit Saving Throw</b> against a DC of 15 to avoid this. The curse can be broken by blessing the weapon.<br /><br /> This weapon is <b>Versatile</b> and can be wielded in one hand or two. When wielded in two it does 1d10 damage instead of 1d8.",
     "type": "weapon",
     "rarity": "epic",
+    "proficiency": "Medium Weapons",
+    "attunement": true,
     "damage": "1d8+STR+3 Blunt + 1d6 Dark",
     "modifiers": [
       {
@@ -362,9 +367,10 @@
   },
   "bluewand": {
     "label": "Blue Wand",
-    "desc": "A pretty looking wand with simple carvings on the weaponle, has seen a fair bit of use but still works well.",
+    "desc": "A pretty looking wand with simple carvings, has seen a fair bit of use but still works well.",
     "type": "weapon",
     "rarity": "uncommon",
+    "proficiency": "Magic Weapons",
     "damage": "1d4+CHA+1 Mind",
     "range": 6,
     "modifiers": [
@@ -377,20 +383,22 @@
   },
   "thaglanadhblessed": {
     "label": "Tha Ghlanadh (Blessed)",
-    "desc": "An ancient dwarvish warhammer known as The Purge, it was wielded by the fallen paladin Artair Deòiridh who carried out the killing of a diseased village in order to stop the spread, and lost his mind, eventually turning to suicide. This item has been <b>blessed</b> and is no longer haunted by the spirit of Artair.",
+    "desc": "The once cursed warhammer glows with a soft shimmer of holy energy, now loyal to the wielder who removed the curse.<br/><br/><b>Throwable</b>: This weapon can be thrown up to 6m, making a ranged attack, it them immediately returns to the hand of the wielder.<br /><br /><b>Versatile</b>: This weapon can be wielded in one hand or two; when wielded in two it does 1d10 damage instead of 1d8.",
     "type": "weapon",
     "rarity": "epic",
-    "damage": "1d8+STR+3 Blunt damage + 1d8 Light",
+    "attunement": true,
+    "proficiency": "Medium Weapons",
+    "damage": "1d8+STR+1 Blunt + 1d6 Light",
     "modifiers": [
       {
         "name": "attack",
         "label": "Attack",
-        "value": 3
+        "value": 1
       },
       {
-        "name": "effect",
-        "label": "Effect",
-        "value": "When a target undead or demon takes damage from this weapon, they must make a SPI save vs a DC of 20 or be stunned."
+        "name": "crit",
+        "label": "Crit",
+        "value": "Additional 1d6 Light damage"
       }
     ]
   },

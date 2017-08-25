@@ -6,8 +6,11 @@
 <div *ngIf="character">
   <div class="box fill center">
     <h2 class="title">{{character.info.name}}</h2>
-    <p class="info" *ngIf="clazz">Level {{character.level}} <span *ngIf="race">{{race.label}}</span> <span
-      *ngIf="clazz">{{clazz.label}}</span></p>
+    <p class="info" *ngIf="clazz">Level {{character.level}}
+      <span *ngIf="race">{{race.label}}</span>
+      <span *ngIf="clazz">{{clazz.label}}</span>
+      <span *ngIf="clazz && character.archetype">({{clazz.archetypes[character.archetype].label}})</span>
+    </p>
     <p class="info" *ngIf="clazz"><b>Proficiencies:</b> {{clazz.proficiencies}}</p>
     <div class="wrapper">
       <span class="inline"><b>Experience:</b> {{character.experience}}</span>
@@ -87,7 +90,9 @@
 
   <div class="box fill">
     <h2>Skills</h2>
-    <skill-card *ngFor="let skill of character.skills" [classSkill]="skill"></skill-card>
+    <span *ngFor="let skill of character.skills">
+      <skill-card *ngIf="skill.name != 'archetype' || !character.archetype" [classSkill]="skill"></skill-card>
+    </span>
   </div>
 
   <div class="box-display fill">
