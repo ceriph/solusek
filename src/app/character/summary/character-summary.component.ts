@@ -60,7 +60,7 @@ export class CharacterSummaryComponent implements OnInit {
       this.race = race;
       this.classService.get(character.class).subscribe(clazz => {
         this.statService.calculate(character, race, clazz);
-        this.character.skills = this.characterService.getSkills(character.level, clazz);
+        this.character.skills = this.characterService.getSkills(character, clazz);
         this.clazz = clazz;
         this.spellSlotService.get(this.clazz, this.character.level).subscribe(slots => {
           if(slots) {

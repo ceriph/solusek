@@ -118,8 +118,8 @@
     ],
     "proficiencies": "Light Armour, Medium Armour, Heavy Armour, Simple Weapons, Small Weapons, Medium Weapons, Large Weapons, Small Shields, Medium Shields",
     "recommendations": "Constitution, Strength, Spirit",
-    "archetypes": [
-      {
+    "archetypes": {
+      "oathofjustice": {
         "label": "Oath of Justice",
         "desc": "You make a sacred oath to protect innocents and pursue justice for all.",
         "skills": [
@@ -141,7 +141,7 @@
           }
         ]
       },
-      {
+      "oathofvengeance": {
         "label": "Oath of Vengeance",
         "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary.",
         "skills": [
@@ -163,7 +163,7 @@
           }
         ]
       },
-      {
+      "oathbreaker": {
         "label": "Oathbreaker",
         "desc": "You choose not to take up an oath, vowing to pursue only what suits you.",
         "skills": [
@@ -185,7 +185,7 @@
           }
         ]
       }
-    ],
+    },
     "skills": [
       {
         "level": 1,
@@ -255,8 +255,8 @@
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons, Medium Weapons, Ranged Weapons",
     "recommendations": "Constitution, Strength, Spirit",
-    "archetypes": [
-      {
+    "archetypes": {
+      "beastmaster": {
         "label": "Beastmaster",
         "desc": "You focus your training on the control of animals.",
         "skills": [
@@ -278,7 +278,7 @@
           }
         ]
       },
-      {
+      "hunter": {
         "label": "Hunter",
         "desc": "You focus your training on your perception and archery skills.",
         "skills": [
@@ -300,7 +300,7 @@
           }
         ]
       },
-      {
+      "warden": {
         "label": "Warden",
         "desc": "You focus your training on your melee combat skills.",
         "skills": [
@@ -322,7 +322,7 @@
           }
         ]
       }
-    ],
+    },
     "skills": [
       {
         "level": 1,
@@ -421,8 +421,8 @@
     ],
     "proficiencies": "Light Armour, Simple Weapons, Small Weapons",
     "recommendations": "Agility, Intelligence, Strength",
-    "archetypes": [
-      {
+    "archetypes": {
+      "assassin": {
         "label": "Assassin",
         "desc": "You focus your training on stealth, moving in the shadows and the quick killing of your enemies.",
         "skills": [
@@ -444,7 +444,7 @@
           }
         ]
       },
-      {
+      "swashbuckler": {
         "label": "Swashbuckler",
         "desc": "You focus your training to develop your toe-to-toe fighting and persuasion.",
         "skills": [
@@ -466,7 +466,7 @@
           }
         ]
       },
-      {
+      "thief": {
         "label": "Thief",
         "desc": "You focus your training on thievery.",
         "skills": [
@@ -488,7 +488,7 @@
           }
         ]
       }
-    ],
+    },
     "skills": [
       {
         "level": 1,
@@ -605,8 +605,8 @@
     "name": "wizard",
     "proficiencies": "Simple Weapons, Magic Weapons",
     "recommendations": "Intelligence, Agility, Constitution",
-    "archetypes": [
-      {
+    "archetypes": {
+      "arcanist": {
         "label": "Arcanist",
         "desc": "You focus your training on the pure control of arcane energy.",
         "skills": [
@@ -628,9 +628,9 @@
           }
         ]
       },
-      {
+      "battlemage": {
         "label": "Battlemage",
-        "desc": "You focus your training on close combat.",
+        "desc": "You focus your training on close combat spell casting in battle.",
         "skills": [
           {
             "level": 3,
@@ -650,9 +650,9 @@
           }
         ]
       },
-      {
+      "summoner": {
         "label": "Summoner",
-        "desc": "You focus your training on conjuration.",
+        "desc": "You focus your training on the conjuration and nurturing of a familiar.",
         "skills": [
           {
             "level": 3,
@@ -672,7 +672,7 @@
           }
         ]
       }
-    ],
+    },
     "skills": [
       {
         "level": 1,

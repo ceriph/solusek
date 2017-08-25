@@ -13,9 +13,17 @@ export class CharacterService {
     return this.db.object('players/' + playerId + "/character");
   }
 
-  getSkills(level: number, clazz: Class): ClassSkill[] {
-    return clazz.skills.filter(skill => { // todo add archetype skills
-      return skill.level <= level;
+  getSkills(character: Character, clazz: Class): ClassSkill[] {
+    const skills = clazz.skills.filter(skill => {
+      return skill.level <= character.level;
     });
+
+    if (character.archetype) {
+      return skills.concat(clazz.archetypes[character.archetype].skills.filter(skill => {
+        return skill.level <= character.level;
+      }));
+    } else {
+      return skills;
+    }
   }
 }

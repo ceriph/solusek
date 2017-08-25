@@ -8,6 +8,7 @@ export class Character {
   experience: number = 0;
   gold: number = 0;
   class: string;
+  archetype: string;
   race: string;
   baseStats: PrimaryStats;
   info: Info;
