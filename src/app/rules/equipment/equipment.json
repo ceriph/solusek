@@ -186,16 +186,16 @@
   },
   "bastardsword": {
     "label": "Bastard Sword",
-    "desc": "An old, plain bastard sword. Requires both weapons.",
+    "desc": "An old, plain bastard sword.<br /><br /><b>Versatile</b>: This weapon can be wielded in one or two hands. When wielded in 2 hands it does 1d10 damage instead of 1d8.",
     "type": "weapon",
-    "proficiency": "Large Weapons",
+    "proficiency": "Medium Weapons",
     "rarity": "common",
-    "damage": "1d10+STR Slashing",
+    "damage": "1d8+STR Slashing",
     "modifiers": []
   },
   "shortbow": {
     "label": "Short Bow",
-    "desc": "An old, plain short bow. Requires both weapons.",
+    "desc": "An old, plain short bow. Requires both hands.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
@@ -205,7 +205,7 @@
   },
   "longbow": {
     "label": "Long Bow",
-    "desc": "An old, plain long bow. Requires both weapons.",
+    "desc": "An old, plain long bow. Requires both hands.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
@@ -215,7 +215,7 @@
   },
   "compoundbow": {
     "label": "Compound Bow",
-    "desc": "An old, plain compound bow. Requires both weapons.",
+    "desc": "An old, plain compound bow. Requires both hands.",
     "type": "weapon",
     "proficiency": "Ranged Weapons",
     "rarity": "common",
@@ -225,7 +225,7 @@
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
-    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both weapons.",
+    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands.",
     "type": "weapon",
     "proficiency": "Magic Weapons",
     "rarity": "common",
