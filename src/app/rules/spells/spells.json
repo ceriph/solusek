@@ -13,7 +13,7 @@
     "label": "Blink",
     "school": "Alteration",
     "desc": "Immediately move to any spot within range of your speed <i>and</i> line of sight. Can be used while <b>Slowed</b> but <i>not</i> <b>Rooted</b>. This does <i>not</i> provoke an <b>Attack of Opportunity</b>. Adds 1 point of movement range for each rank above 1.",
-    "castTime": "Bonus Action",
+    "castTime": "Action",
     "range": "Your speed",
     "duration": "Instant",
     "rank": 1,

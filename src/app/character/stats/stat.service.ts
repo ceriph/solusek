@@ -154,9 +154,11 @@ export class StatService {
 
     // spell attack and dc
     if (clazz.spellMod) {
-      character.secondaryStats.spelldc += 10 + character.primaryStats[clazz.spellMod];
+      character.secondaryStats.spelldc += 8 + character.primaryStats[clazz.spellMod];
       if (character.class !== "rogue") {
         character.secondaryStats.spellattack += character.primaryStats[clazz.spellMod];
+      } else {
+        character.secondaryStats.spelldc += 2;
       }
     }
   }

@@ -8,11 +8,11 @@
     "label": "Choose Archetype"
   },
   "areacontrol": {
-    "desc": "you have the ability to masterfully control your area of effect spells. Any friendly targets within an area effect you cast no longer take the negative effects.",
+    "desc": "you have the ability to masterfully control your area of effect spells. You may choose a number of targets up to the spell level + 1 within an area of effect spell you cast, those characters are unaffected by the spell.",
     "label": "Area Control"
   },
   "assassinate": {
-    "desc": "you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is <b>surprised</b> is a critical hit.",
+    "desc": "you are at your deadliest when you get the drop on your enemies. You have <b>Advantage</b> on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is <b>Surprised</b> is a <b>Critical</b> hit.",
     "label": "Assassinate"
   },
   "auraofcourage": {
@@ -24,7 +24,7 @@
     "label": "Aura of Protection"
   },
   "backstab": {
-    "desc": "you are able to exploit weak spots when performing an <b>Attack Action</b> with a <b>Piercing</b> weapon from behind a non-moving enemy. If your attack hits you do an additional <b>1d6 piercing damage</b>. Damage increases to 2d6 at level 3, 3d6 at level 5, 4d6 at level 7, 5d6 at level 9, 6d6 at level 11, 7d6 at level 13, 8d6 at level 15, 9d6 at level 17, 10d6 at level 19.",
+    "desc": "you are able to exploit weak spots when performing an <b>Attack</b> with a <b>Piercing</b> weapon from behind a non-moving enemy. If your attack hits you do an additional <b>1d6 piercing damage</b>. Damage increases to 2d6 at level 3, 3d6 at level 5, 4d6 at level 7, 5d6 at level 9, 6d6 at level 11, 7d6 at level 13, 8d6 at level 15, 9d6 at level 17, 10d6 at level 19.",
     "label": "Backstab",
     "recovery": "Round",
     "type": "Action"
@@ -109,7 +109,7 @@
     "label": "Hardy"
   },
   "headshot": {
-    "desc": "you may make an <b>Attack</b> on a target within range, the attack suffers a -5 to hit, but ignores up to 3/4 cover and if it hits it counts as a <b>Critical</b> regardless of the roll.",
+    "desc": "when making an <b>Attack</b>, you may choose to focus a particular point on an enemy. The attack suffers a <b>-5 to hit</b>, but gains 10m range, ignores up to 3/4 cover and if it hits deals an additional 10 damage.",
     "label": "Headshot",
     "recovery": "None",
     "type": "Action"
@@ -133,11 +133,12 @@
     "label": "Divine Spellcaster"
   },
   "longshot": {
-    "desc": "your aim has become superhuman, and gain +5m <b>Range</b> on any ranged weapons.",
+    "desc": "when using a ranged weapon, you are capable of shooting it at double the range without any penalty.",
     "label": "Longshot"
   },
   "magichand": {
-    "desc": "you gain access to the Magic Hand cantrip and are able to use it to perform actions such as lockpicking and pickpocketing from a distance."
+    "label": "Mage Hand",
+    "desc": "you gain access to the <b>Mage Hand</b> cantrip and are able to use it to perform actions such as lockpicking and pickpocketing from a distance."
   },
   "magicalprotection": {
     "desc": "your arcane knowledge grants you increased protection from enemies spells. You now roll with advantage on any spell saves.",
@@ -187,12 +188,14 @@
     "label": "Poisons 5"
   },
   "potentpoisons": {
-    "desc": "creatures now suffer <b>Disadvantage</b> when attempting to save against your poisons.",
-    "label": "Potent Poisons"
-  },
-  "relentless": {
-    "desc": "when a creature gives you an attack of opportunity, you gain your <b>Backstab</b> bonuses on that attack.",
-    "label": "Relentless"
+    "desc": "the strength of your poisons is increased by 2.",
+    "label": "Potent Poisons",
+    "modifiers": [
+      {
+        "name": "spelldc",
+        "value": 2
+      }
+    ]
   },
   "reliabletalent": {
     "desc": "you have refined your skills until they approach perfection. Whenever you make a <b>Thievery</b>, you can treat a d20 roll of 9 or lower as a 10.",
@@ -209,7 +212,7 @@
     ]
   },
   "shadowwalk": {
-    "desc": "during your <b>Movement</b> you are able to teleport between any shadows within your line of sight. The teleport counts as 2 points of movement. Attacks of opportunity rules still apply.",
+    "desc": "during your <b>Movement</b> you are able to teleport between any shadows within your line of sight. Moving through shadows this way counts as 2 points of movement.",
     "label": "Shadow Walk",
     "recovery": "ShortRest"
   },
@@ -283,14 +286,14 @@
     "type": "Reaction"
   },
   "vanish": {
-    "desc": "you can spend your <b>Bonus Action</b> to attempt to <b>Hide</b> with <b>Advantage</b>, on success you are considered invisible until your next turn.",
+    "desc": "you can spend your <b>Bonus Action</b> to attempt to <b>Hide</b> even when in plain sight. Roll a <b>Stealth</b> check with <b>Advantage</b>, all creatures that can see you must make an opposed <b>Perception</b> check. You are considered invisible to any creatures that fail the check for up to 1 minute. Making an attack removes the invisibility.",
     "label": "Vanish",
     "recovery": "ShortRest",
     "type": "Reaction"
   },
   "animalcompanion": {
     "label": "Animal Companion",
-    "desc": "you may select an animal to become a permanent companion (hawk, panther, wolf, or bear). The animal has stats roughly equal to a character of your level -1, and dependant on the type selected."
+    "desc": "you may select an animal to become a permanent companion (hawk, panther, wolf, or bear). Your companion follows you and generally understands any simple orders you give it. The animal has stats roughly equal to a character 2 levels below you distributed dependant on the type selected (hawk - agile & can fly, panther - agile & stealthy, wolf - strong & agile, bear - strong & hardy)."
   },
   "sharedmind": {
     "label": "Shared Mind",
@@ -310,7 +313,7 @@
   },
   "huntersmark": {
     "label": "Hunter's Mark",
-    "desc": "you may spend your <b>Bonus Action</b> marking a target you can see. You now deal an additional 1d6 damage when hitting that target and have <b>Advantage</b> on any <b>Perception</b> rolls when trying to find it.",
+    "desc": "you may spend your <b>Bonus Action</b> to mark a target you can see within 20m. You now deal an additional 1d6 damage when hitting that target and have <b>Advantage</b> on any <b>Perception</b> rolls when trying to find it.",
     "type": "BonusAction"
   },
   "volley": {
@@ -349,26 +352,25 @@
   },
   "imbueelement": {
     "label": "Imbue Element",
-    "desc": "when casting a spell that does <b>Arcane</b> damage, you may imbue it with either fire or cold, doing an additional 1d8 damage of that type.",
-    "recovery": "Round"
+    "desc": "when casting a spell that does <b>Arcane</b> damage, you may choose to add an addition damage die to that spell's damage. The additional die does either fire or ice damage as you choose.<br /><br />For example, when casting <b>Arcane Missiles</b>, you would spawn another missile doing another 1d4 damage of either fire or ice."
   },
   "arcanetorrent": {
     "label": "Arcane Torrent",
-    "desc": "your <b>Arcane Missiles</b> spell now does 2d4 per missile and you have full control over which targets the missiles hit."
+    "desc": "your <b>Arcane Missiles</b> spell now does 1d8 per missile and you have full control over which targets the missiles hit."
   },
   "multicast": {
     "label": "Multicast",
-    "desc": "as your <b>Action</b>, you may cast a spell you have prepared twice. This only consumes one spell slot.",
+    "desc": "when casting a spell, you may choose to cast that spell twice, consuming an additional spell slot. The second cast must be at the same rank as the first.",
     "recovery": "LongRest",
     "type": "Action"
   },
   "armoured": {
     "label": "Armoured",
-    "desc": "you are now proficient with light, medium and heavy armour, as well as small shields."
+    "desc": "you are now proficient with light, medium and heavy armour, as well as small and medium shields."
   },
-  "arcaneswordsman": {
-    "label": "Arcane Swordsman",
-    "desc": "while wielding a conjured weapon, you gain +3 to your <b>Attack</b> modifier and <b>Double Attack</b>."
+  "unfaltering": {
+    "label": "Unfaltering",
+    "desc": "when rolling a <b>Concentration</b> check to maintain a spell after taking damage, you make the roll with <b>Advantage</b>."
   },
   "arcaneshield": {
     "label": "Arcane Shield",
@@ -382,21 +384,21 @@
     "type": "Reaction"
   },
   "elementalfamiliar": {
-    "label": "Elemental Familiar",
-    "desc": "you may choose a permanent drakeling familiar (wither fire or ice). That familiar shares all stats with you, including health, and does 1d4+INT damage of the chosen type."
+    "label": "Call Familiar",
+    "desc": "you choose a permanent Drakeling familiar as a companion (either fire or ice) which you are able to control. That familiar shares all stats with you, including health, and does 1d4+INT damage of the chosen type. If it dies you take damage equal to half your maximum health and cannot be re-summoned until your next long rest."
   },
   "prodigy": {
-    "label": "Prodigy",
+    "label": "Apprentice",
     "desc": "your familiar is now capable of casting <b>Cantrips</b>."
   },
   "detonate": {
-    "label": "Detonate",
-    "desc": "as an <b>Action</b> you may command your familiar to detonate. All creatures within 2m must make an AGI saving throw or take 2d8+INT damage of the familiars type. On save success the damage is halved. You then take 2d8 <b>Mind</b> damage and the familiar reappears beside you.",
+    "label": "Adept",
+    "desc": "your familiar is now capable of casting spells that you have prepared up to rank 2, and has its own spell slots equal to a level 3 wizard.",
     "type": "Action"
   },
   "arcaneelemental": {
-    "label": "Arcane Elemental",
-    "desc": "your conjure elemental spells now have a 3rd option: <b>Arcane</b>, which does an additional 1d8 damage."
+    "label": "Prodigy",
+    "desc": "your familiar is now capable of casting spells that you have prepared up to rank 4, and has its own spell slots equal to a level 7 wizard."
   },
   "truthbringer": {
     "label": "Truthbringer",
@@ -410,7 +412,7 @@
   },
   "bloodfury": {
     "label": "Bloodfury",
-    "desc": "when an enemy within 5m of you dies, you gain 1d6 temporary health."
+    "desc": "when an enemy within 5m of you dies, you gain <b>1d6 temporary health</b>."
   },
   "vowofpeace": {
     "label": "Vow of Peace",
@@ -444,7 +446,7 @@
   },
   "strengthofmind": {
     "label": "Strength of Mind",
-    "desc": "Grants you +2 to <b>Intelligence</b> and <b>Charisma</b> Saving Throws.",
+    "desc": "you gain +2 to <b>Intelligence</b> and <b>Charisma</b> Saving Throws.",
     "modifiers": [
       {
         "name": "saveint",
@@ -458,7 +460,7 @@
   },
   "strengthofspirit": {
     "label": "Strength of Spirit",
-    "desc": "Grants you +2 to <b>Spirit</b> and <b>Constitution</b> Saving Throws.",
+    "desc": "you gain +2 to <b>Spirit</b> and <b>Constitution</b> Saving Throws.",
     "modifiers": [
       {
         "name": "savecon",
@@ -472,7 +474,7 @@
   },
   "strengthofbody": {
     "label": "Strength of Body",
-    "desc": "Grants you +2 to <b>Strength</b> and <b>Agility</b> Saving Throws.",
+    "desc": "you gain +2 to <b>Strength</b> and <b>Agility</b> Saving Throws.",
     "modifiers": [
       {
         "name": "savestr",
