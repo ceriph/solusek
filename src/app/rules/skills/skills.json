@@ -389,7 +389,7 @@
   },
   "elementalfamiliar": {
     "label": "Call Familiar",
-    "desc": "you choose a permanent Drakeling familiar as a companion (either fire or ice) which you are able to control. That familiar shares all stats with you, including health, and does 1d4+INT damage of the chosen type. If it dies you take damage equal to half your maximum health and cannot be re-summoned until your next long rest."
+    "desc": "you choose a permanent elemental familiar as a companion (either fire or ice) which you are able to control. The familiar takes on a physical manifestation of your choosing (drakeling, hawk, spider, weasel, bat, or cat) however this only affects it's visual appearance as its stats are shared with you, including health. On your turn, as a <b>Bonus Action</b> you can order the familiar to either move up to your speed, or make a <b>Ranged Spell Attack</b> for 1d4+INT damage of the chosen type."
   },
   "prodigy": {
     "label": "Apprentice",

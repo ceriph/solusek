@@ -258,7 +258,7 @@
     "archetypes": {
       "beastmaster": {
         "label": "Beastmaster",
-        "desc": "You focus your training on the control of animals.",
+        "desc": "You focus your training on your kinship with an animal companion.",
         "skills": [
           {
             "level": 3,
@@ -610,7 +610,7 @@
     "archetypes": {
       "arcanist": {
         "label": "Arcanist",
-        "desc": "You focus your training on the pure control of arcane energy.",
+        "desc": "You focus your training on the pure control of arcane and elemental energy.",
         "skills": [
           {
             "level": 3,
@@ -654,7 +654,7 @@
       },
       "summoner": {
         "label": "Summoner",
-        "desc": "You focus your training on the conjuration and nurturing of a familiar.",
+        "desc": "You focus your training on the conjuration and evolution of an elemental familiar.",
         "skills": [
           {
             "level": 3,

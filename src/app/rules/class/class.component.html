@@ -24,9 +24,9 @@
     <h1>Archetypes</h1>
     <p>Starting at level 3, a character can decide to specialise in one of the following 3 archetypes:</p>
   </div>
-  <div class="box fill" *ngFor="let archetype of clazz.archetypes">
-    <h2>{{archetype.label}}</h2>
-    <p [innerHtml]="archetype.desc"></p>
-    <skill-card *ngFor="let skill of archetype.skills" [classSkill]="skill"></skill-card>
+  <div class="box fill" *ngFor="let archetype of clazz.archetypes | keys">
+    <h2>{{archetype.value.label}}</h2>
+    <p [innerHtml]="archetype.value.desc"></p>
+    <skill-card *ngFor="let skill of archetype.value.skills" [classSkill]="skill"></skill-card>
   </div>
 </div>
