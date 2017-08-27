@@ -225,12 +225,10 @@
   },
   "magicstaffarcane": {
     "label": "Magic Staff (Arcane)",
-    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands.",
+    "desc": "An old, mundane staff of wood which glows with a slight aura of arcane energy. Requires both hands. Can be used as a <b>Magic Focus</b>",
     "type": "weapon",
     "proficiency": "Magic Weapons",
     "rarity": "common",
-    "damage": "1d6+INT Arcane",
-    "range": 10,
     "modifiers": []
   },
   "lockpick": {
@@ -367,16 +365,14 @@
   },
   "bluewand": {
     "label": "Blue Wand",
-    "desc": "A pretty looking wand with simple carvings, has seen a fair bit of use but still works well.",
+    "desc": "A pretty looking wand with simple carvings, has seen a fair bit of use but still works well. Can be used as a <b>Magic Focus</b>",
     "type": "weapon",
     "rarity": "uncommon",
     "proficiency": "Magic Weapons",
-    "damage": "1d4+CHA+1 Mind",
-    "range": 6,
     "modifiers": [
       {
-        "name": "attack",
-        "label": "Attack",
+        "name": "spellattack",
+        "label": "Spell Attack",
         "value": 1
       }
     ]

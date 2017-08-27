@@ -1,4 +1,107 @@
 {
+  "acidsplash": {
+    "label": "Acid Splash",
+    "school": "Evocation",
+    "desc": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 1m of each other. A target must succeed on an <b>Agility Saving Throw</b> or take 1d6 acid damage.<br/ ><br />This spells damage increases by 1d6 when you reach 5th Level (2d6), 11th level (3d6) and 17th level (4d6).",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "firebolt": {
+    "label": "Fire Bolt",
+    "school": "Evocation",
+    "desc": "You hurl a mote of fire at a creature or object within range. Make a <b>Ranged Spell Attack</b> against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.<br /><br />This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+    "castTime": "Action",
+    "range": "20m",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "light": {
+    "label": "Light",
+    "school": "Conjuration",
+    "desc": "You touch one object that is no larger than 2m in any dimension. Until the spell ends, the object sheds bright light in a 5m radius and dim light for an additional 5m. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.<br/><br/>If you target an object held or worn by a hostile creature, that creature must succeed on an <b>Agility Saving Throw</b> to avoid the spell.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "1 hour",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "magehand": {
+    "label": "Mage Hand",
+    "school": "Conjuration",
+    "desc" : "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 10m away from you or if you cast this spell again.<br/><br/>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 10m each time you use it.<br /><br />The hand can't Attack, activate magical items, or carry more than 5kg.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 minute",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "mending": {
+    "label": "Mending",
+    "school": "Alteration",
+    "desc" : "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn clack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.<br/><br/>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "minorillusion": {
+    "label": "Minor Illusion",
+    "school": "Illusion",
+    "desc" : "You create a sound or an image of an object within range that lasts for the duration. The Illusion also ends if you dismiss it as an action or cast this spell again.<br/></br/>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the Duration, or you can make discrete sounds at different times before the spell ends.<br/><br/>If you create an image of an object - such as a chair, muddy footprints, or a small chest - it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an Illusion, because things can pass through it.<br/></br/>If a creature uses its action to examine the sound or image, the creature can determine that it is an Illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the Illusion for what it is, the Illusion becomes faint to the creature.",
+    "castTime": "Action",
+    "range": "5m",
+    "duration": "1 minute",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "poisonspray": {
+    "label": "Poison Spray",
+    "school": "Evocation",
+    "desc" : "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a <b>Constitution Saving Throw</b> or take 1d12 poison damage.<br/><br/>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+    "castTime": "Action",
+    "range": "3m",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "prestidigitation": {
+    "label": "Prestidigitation",
+    "school": "Conjuration",
+    "desc" : "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range.<br/><br/>• You create an Instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br /><br/>• You instantaneously light or snuff out a Candle, a torch, or a small campfire.<br/><br/>• You instantaneously clean or soil an object no larger than 1 cubic foot.<br/><br/>• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br/></br/>• You make a color, a small mark, or a Symbol appear on an object or a surface for 1 hour.<br/><br/>• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.<br/><br/>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+    "castTime": "Action",
+    "range": "3m",
+    "duration": "1 hour",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "rayoffrost": {
+    "label": "Ray of Frost",
+    "school": "Evocation",
+    "desc" : "A frigid beam of blue-white light streaks toward a creature within range. Make a <b>Ranged Spell Attack</b> against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 2 until the start of your next turn.<br/><br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+  "shockinggrasp": {
+    "label": "Shocking Grasp",
+    "school": "Evocation",
+    "desc": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a <b>Melee Spell Attack</b> against the target. You have <b>Advantage</b> on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.<br/><br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "Instant",
+    "rank": 0,
+    "groups": ["wizard"]
+  },
+
+
+
   "arcanemissiles": {
     "label": "Arcane Missiles",
     "school": "Evocation",
@@ -7,7 +110,7 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "blink": {
     "label": "Blink",
@@ -17,7 +120,7 @@
     "range": "Your speed",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "burninghands": {
     "label": "Burning Hands",
@@ -27,17 +130,17 @@
     "range": "Self",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "colourspray": {
     "label": "Colour Spray",
     "school": "Conjuration",
-    "desc": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many 'health' of creatures this spell can effect. Creatures in a 3m cone originating from you are affected in ascending order of their current hit points (ignoring <b>Unconscious</b> creatures and creatures that can't see).<br /><br />Starting with the creature that has the lowest current hit points, each creature affected by this spell is Blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest health. A creature's health must be equal to or less than the remaining total for the creature to be affected. For each rank above 1, the spell affects 2d10 health more creatures.",
+    "desc": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many 'health' of creatures this spell can effect. Creatures in a 3m cone originating from you are affected in ascending order of their current hit points (ignoring <b>Unconscious</b> creatures and creatures that can't see).<br /><br />Starting with the creature that has the lowest current hit points, each creature affected by this spell is Blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest health. A creature's health must be equal to or less than the remaining total for the creature to be affected.<br/><br/>For each rank above 1, the spell affects 2d10 health more creatures.",
     "castTime": "Action",
     "range": "Self",
     "duration": "1 round",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "detectmagic": {
     "label": "Detect Magic",
@@ -48,16 +151,6 @@
     "duration": "10 minutes",
     "rank": 1,
     "groups": ["Arcane", "Light", "Nature"]
-  },
-  "firebolt": {
-    "label": "Fire Bolt",
-    "school": "Evocation",
-    "desc": "Make a <b>Spell Attack</b> on a target within range. On hit they take <b>1d8+INT Fire damage</b>. Does an additional 1d8 damage for each rank above 1.",
-    "castTime": "Action",
-    "range": "20m",
-    "duration": "Instant",
-    "rank": 1,
-    "groups": ["Arcane"]
   },
   "fogcloud": {
     "label": "Fog Cloud",
@@ -77,7 +170,7 @@
     "range": "Touch",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "identify": {
     "label": "Identify",
@@ -87,27 +180,27 @@
     "range": "Touch",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "sleep": {
     "label": "Sleep",
     "school": "Alteration",
-    "desc": "Select a point within range, causing 5d8 health worth of creatures within a 3m cube originating at the chosen point to fall unconscious. For each rank above 1, this spell affects an additional 2d8 health worth of creatures.",
+    "desc": "Select a point within range, causing 5d8 health worth of creatures within a 3m cube originating at the chosen point to fall unconscious.<br/><br/>For each rank above 1, this spell affects an additional 2d8 health worth of creatures.",
     "castTime": "Action",
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "thunderwave": {
     "label": "Thunderwave",
     "school": "Evocation",
-    "desc": "Generate a thunderous wave of energy from yourself in a 3m cube. Each creature within the area must make a <b>Constitution Saving Throw</b> or take <b>2d6 Bludgeoning damage</b> and be pushed back 2m. On success they take half damage and are not pushed. Does an additional 1d6 damage for each rank above 1.",
+    "desc": "Generate a thunderous wave of energy from yourself in a 3m cube. Each creature within the area must make a <b>Constitution Saving Throw</b> or take <b>2d6+INT Thunder damage</b> and be pushed back 2m. On success they take half damage and are not pushed. Does an additional 1d6 damage for each rank above 1.",
     "castTime": "Action",
     "range": "Self",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Arcane", "Nature"]
+    "groups": ["wizard", "druid"]
   },
 
 
@@ -119,7 +212,7 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "arcanelock": {
     "label": "Arcane Lock",
@@ -129,7 +222,7 @@
     "range": "Touch",
     "duration": "Until Dispelled",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "blur": {
     "label": "Blur",
@@ -139,7 +232,7 @@
     "range": "Self",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "darkvision": {
     "label": "Darkvision",
@@ -149,7 +242,7 @@
     "range": "Touch",
     "duration": "8 hours",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "enlargereduce": {
     "label": "Enlarge Reduce",
@@ -159,7 +252,7 @@
     "range": "5m",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "flamingsphere": {
     "label": "Flaming Sphere",
@@ -169,17 +262,17 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "invisibility": {
     "label": "Invisibility",
     "school": "Illusion",
-    "desc": "A creature you touch becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell. For each rank above 2, the spell can affect an additional target.",
+    "desc": "A creature you touch becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.<br/><br/>For each rank above 2, the spell can affect an additional target.",
     "castTime": "Action",
     "range": "Touch",
     "duration": "1 hour",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "knock": {
     "label": "Knock",
@@ -189,7 +282,7 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "levitate": {
     "label": "Levitate",
@@ -199,7 +292,7 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "locateobject": {
     "label": "Locate Object",
@@ -209,7 +302,7 @@
     "range": "Self",
     "duration": "10 minutes",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "magicweapon": {
     "label": "Magic Weapon",
@@ -219,17 +312,17 @@
     "range": "Touch",
     "duration": "1 minutes",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "scorchingray": {
     "label": "Scorching Ray",
     "school": "Evocation",
-    "desc": "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.<br /><br />Make a <b>Ranged Spell Attack</b> for each ray. On a hit, the target takes <b>2d6+INT fire damage</b>. For each rank above 2, an additional ray is created.",
+    "desc": "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.<br /><br />Make a <b>Ranged Spell Attack</b> for each ray. On a hit, the target takes <b>2d6+INT fire damage</b>.<br/><br/>For each rank above 2, an additional ray is created.",
     "castTime": "Action",
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "seeinvisible": {
     "label": "See Invisible",
@@ -239,48 +332,48 @@
     "range": "Self",
     "duration": "1 hour",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
   "shatter": {
     "label": "Shatter",
     "school": "Evocation",
-    "desc": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 3m cube centered on that point must make a <b>Constitution Saving Throw</b>. A creature takes <b>3d8+INT Bludgeoning damage</b> on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br /><br />A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area. For each rank above 2, the spell does an additional 1d8 damage.",
+    "desc": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 3m cube centered on that point must make a <b>Constitution Saving Throw</b>. A creature takes <b>3d8+INT Bludgeoning damage</b> on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.<br /><br />A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.<br/><br/>For each rank above 2, the spell does an additional 1d8 damage.",
     "castTime": "Action",
     "range": "Self",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["Arcane"]
+    "groups": ["wizard"]
   },
 
   "bane": {
     "label": "Bane",
     "school": "Alteration",
-    "desc": "Up to three creatures of your choice that you can see within range must make <b>Charisma Saving Throws</b>. Whenever a target that fails this saving throw makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target must subtract 1d4 from their roll. For each rank above 1, the spell can affect an additional target.",
+    "desc": "Up to three creatures of your choice that you can see within range must make <b>Charisma Saving Throws</b>. Whenever a target that fails this saving throw makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target must subtract 1d4 from their roll.<br/><br/>For each rank above 1, the spell can affect an additional target.",
     "castTime": "Action",
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Light"]
+    "groups": ["cleric"]
   },
   "bless": {
     "label": "Bless",
     "school": "Alteration",
-    "desc": "Up to three friendly creatures of your choice that you can see within range are blessed for the duration. Whenever a target makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target can add 1d4 to their roll. For each rank above 1, the spell can affect an additional target.",
+    "desc": "Up to three friendly creatures of your choice that you can see within range are blessed for the duration. Whenever a target makes an <b>Attack</b> roll or a <b>Saving Throw</b> before the spell ends, the target can add 1d4 to their roll.<br/><br/>For each rank above 1, the spell can affect an additional target.",
     "castTime": "Action",
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Light"]
+    "groups": ["paladin"]
   },
-  "heal": {
-    "label": "Heal",
+  "curewounds": {
+    "label": "Cure Wounds",
     "school": "Alteration",
-    "desc": "A creature within range gains 1d8+SPI health. For each spell slot above 1, it heals an additional 1d8 health.",
+    "desc": "A creature you touch regains health equal to 1d8 + your Spirit. For each spell slot above 1, it heals an additional 1d8 health.",
     "castTime": "Action",
-    "range": "10m",
+    "range": "Touch",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Light", "Nature"]
+    "groups": ["paladin", "ranger"]
   },
   "detectpoisonanddisease": {
     "label": "Detect Poison and Disease",
@@ -290,17 +383,17 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["Light", "Nature"]
+    "groups": ["paladin", "ranger"]
   },
   "guidingbolt": {
     "label": "Guiding Bolt",
     "school": "Evocation",
-    "desc": "You fire a shimmering bolt of light at a target enemy within range. Make a <b>Ranged Spell Attack</b>, if it hits the target takes <b>3d6+SPI light damage</b> and the next attack roll against this creature gains <b>Advantage</b>. For each rank above 1, the target takes an additional 1d6 damage.",
+    "desc": "You fire a shimmering bolt of light at a target enemy within range. Make a <b>Ranged Spell Attack</b>, if it hits the target takes <b>3d6+SPI light damage</b> and the next attack roll against this creature gains <b>Advantage</b>.<br/><br/>For each rank above 1, the target takes an additional 1d6 damage.",
     "castTime": "Action",
     "range": "10m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Light"]
+    "groups": ["cleric"]
   },
   "purify": {
     "label": "Purify",
@@ -310,7 +403,7 @@
     "range": "5m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["Light", "Nature"]
+    "groups": ["paladin", "ranger"]
   },
   "protection": {
     "label": "Protection",
@@ -320,7 +413,7 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Light"]
+    "groups": ["paladin"]
   },
   "sanctuary": {
     "label": "Sanctuary",
@@ -330,10 +423,59 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Light"]
+    "groups": ["cleric"]
+  },
+  "thunderoussmite": {
+    "label": "Thunderous Smite",
+    "school": "Evocation",
+    "desc": "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 100m of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a <b>Strength Saving Throw</b> or be pushed 2m away from you and knocked prone.",
+    "castTime": "BonusAction",
+    "range": "Self",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["paladin"]
+  },
+  "wrathfulsmite": {
+    "label": "Wrathful Smite",
+    "school": "Evocation",
+    "desc": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1D6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a <b>Spirit Saving Throw</b> against your spell save DC to end this spell.",
+    "castTime": "BonusAction",
+    "range": "Self",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["paladin"]
+  },
+  "divinefavour": {
+    "label": "Divine Favour",
+    "school": "Evocation",
+    "desc": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
+    "castTime": "BonusAction",
+    "range": "Self",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["paladin"]
+  },
+  "heroism": {
+    "label": "Heroism",
+    "school": "Alteration",
+    "desc": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.<br/><br/>For each rank above 1, this spell can affect an additional target",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["paladin"]
   },
 
-
+  "absorbelements": {
+    "label": "Absorb Elements",
+    "school": "Abjuration",
+    "desc": "When you take acid, ice, fire, lightning or thunder damage, the spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.<br/><br/>For each rank above 1, the spell damage is increased by 1d6.",
+    "castTime": "Reaction",
+    "range": "Self",
+    "duration": "1 round",
+    "rank": 1,
+    "groups": ["ranger"]
+  },
   "animalfriendship": {
     "label": "Animal Friendship",
     "school": "Alteration",
@@ -342,7 +484,27 @@
     "range": "10m",
     "duration": "24 hours",
     "rank": 1,
-    "groups": ["Nature"]
+    "groups": ["ranger"]
+  },
+  "ensnaringstrike": {
+    "label": "Ensnaring Strike",
+    "school": "Conjuration",
+    "desc": "The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away.<br/><br/>While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed. <br/><br/>For each rank above 1, the damage increased by 1d6.",
+    "castTime": "BonusAction",
+    "range": "Self",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["ranger"]
+  },
+  "hailofthorns": {
+    "label": "Hail Strike",
+    "school": "Conjuration",
+    "desc": "The next time you hit a creature with a ranged weapon attack before the spell ends, this spell creates a rain of thorns that sprouts from your ranged weapon or ammunition. In addition to the normal effect of the attack, the target of the attack and each creature within 1m of it must make an <b>Agility Saving Throw</b>. A creature takes 1d10 piercing damage on a failed save, or half as much damage on a successful one.<br/><br/>For each rank above 1, the damage is increased by 1d10.",
+    "castTime": "BonusAction",
+    "range": "Self",
+    "duration": "Concentration, 1 minute",
+    "rank": 1,
+    "groups": ["ranger"]
   },
   "entangle": {
     "label": "Entangle",
@@ -352,7 +514,7 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Nature"]
+    "groups": ["druid"]
   },
   "faeriefire": {
     "label": "Faerie Fire",
@@ -362,7 +524,7 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["Nature"]
+    "groups": ["druid"]
   },
   "speakwithanimals": {
     "label": "Speak With Animals",
@@ -372,7 +534,7 @@
     "range": "Self",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["Nature"]
+    "groups": ["ranger"]
   }
 }
 

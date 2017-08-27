@@ -197,7 +197,7 @@
       },
       {
         "level": 2,
-        "name": "light"
+        "name": "lightpaladin"
       },
       {
         "level": 3,
@@ -334,7 +334,7 @@
       },
       {
         "level": 2,
-        "name": "nature"
+        "name": "natureranger"
       },
       {
         "level": 2,
@@ -679,6 +679,10 @@
       {
         "level": 1,
         "name": "bookworm"
+      },
+      {
+        "level": 1,
+        "name": "arcane"
       },
       {
         "level": 2,

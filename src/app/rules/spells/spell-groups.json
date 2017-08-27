@@ -1,8 +1,22 @@
 {
-  "arcane": {
-    "label": "Arcane",
-    "desc": "Arcane magic is the purest form of magic, concerned with the control of raw magical energy itself as well as mastering the elements of fire and ice. Wizards are the only class that gain access to arcane magic.",
+  "wizard": {
+    "label": "Wizard",
     "ranks": {
+      "0": {
+        "rank": 0,
+        "spells": [
+          "acidsplash",
+          "firebolt",
+          "light",
+          "magehand",
+          "mending",
+          "minorillusion",
+          "poisonspray",
+          "prestidigitation",
+          "rayoffrost",
+          "shockinggrasp"
+        ]
+      },
       "1": {
         "rank": 1,
         "spells": [
@@ -10,7 +24,6 @@
           "blink",
           "burninghands",
           "colourspray",
-          "firebolt",
           "fogcloud",
           "magearmour",
           "identify",
@@ -40,44 +53,41 @@
       }
     }
   },
-  "dark": {
-    "label": "Dark",
-    "desc": "The powers of death and reanimation, available to necromancers and reavers."
-  },
-  "light": {
-    "label": "Light",
-    "desc": "The holy power of Marr, available to clerics and paladins.",
+  "paladin": {
+    "label": "Paladin",
     "ranks": {
       "1": {
         "rank": 1,
         "spells": [
-          "bane",
           "bless",
+          "curewounds",
           "detectmagic",
           "detectpoisonanddisease",
-          "guidingbolt",
-          "heal",
+          "divinefavour",
+          "heroism",
           "purify",
           "protection",
-          "sanctuary"
+          "thunderoussmite",
+          "wrathfulsmite"
         ]
       }
     }
   },
-  "nature": {
-    "label": "Nature",
+  "ranger": {
+    "label": "Ranger",
     "desc": "The power of the nature and weather.",
     "ranks": {
       "1": {
         "rank": 1,
         "spells": [
+          "absorbelements",
           "animalfriendship",
+          "curewounds",
           "detectmagic",
           "detectpoisonanddisease",
-          "entangle",
-          "faeriefire",
+          "ensnaringstrike",
           "fogcloud",
-          "heal",
+          "hailofthorns",
           "purify",
           "speakwithanimals",
           "thunderwave"
@@ -85,8 +95,8 @@
       }
     }
   },
-  "mind": {
-    "label": "Mind",
+  "enchanter": {
+    "label": "Enchanter",
     "desc": "The power to alter the mind, available to Enchanters.",
     "ranks": {
       "1": {

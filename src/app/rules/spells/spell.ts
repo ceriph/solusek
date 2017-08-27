@@ -1,7 +1,7 @@
 export class Spell {
   label: string;
   school: School;
-  groups: SpellClass[];
+  classes: string[]
   rank: number;
   castTime: string;
   duration: string;
@@ -13,14 +13,6 @@ export class SpellGroup {
   label: string;
   desc: string;
   ranks: Rank[];
-}
-
-export enum SpellClass {
-  Arcane,
-  Dark,
-  Light,
-  Mind,
-  Nature
 }
 
 export class Rank {

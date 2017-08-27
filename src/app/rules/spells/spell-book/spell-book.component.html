@@ -1,6 +1,5 @@
 <div class="box fill" *ngIf="spellGroup">
   <h1 id="{{spellGroup.label}}">Spellbook - {{spellGroup.label}}</h1>
-  <p [innerHTML]="spellGroup.desc"></p>
 </div>
 <div *ngFor="let rank of spellGroup.ranks">
   <div class="box fill" *ngIf="rank">
