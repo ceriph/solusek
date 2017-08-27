@@ -328,7 +328,7 @@
   },
   "defensive": {
     "label": "Defensive Stance",
-    "desc": "as your <b>Bonus Action</b>, you may enter a defensive stance. All attacks made against you have <b>Disadvantage</b>, however you also have <b>Disadvantage</b> on your attacks if there is more than 1 enemy within melee range.",
+    "desc": "as your <b>Bonus Action</b> you may enter a defensive stance. All attacks made against you have <b>Disadvantage</b>, and all attacks you make have <b>Disadvantage</b>.<br /><br />While in this stance, when an enemy makes an attack on a friendly character within 1m of you, you may use your <b>Reaction</b> to impose <b>Disadvantage</b> on that attack as well.",
     "type": "BonusAction"
   },
   "advance": {
