@@ -14,9 +14,17 @@ export class SpellCardComponent implements OnInit {
 
   spell: Spell;
 
-  constructor(private spellService: SpellService) { }
+  @Input()
+  showDetail = false;
+
+  constructor(private spellService: SpellService) {
+  }
 
   ngOnInit() {
     this.spellService.get(this.spellName).subscribe(sp => this.spell = sp);
+  }
+
+  toggleDetail() {
+    this.showDetail = !this.showDetail;
   }
 }

@@ -12,6 +12,8 @@ export class SpellBookComponent implements OnInit {
 
   spellGroup: SpellGroup;
 
+  showAll = false;
+
   constructor(private spellGroupService: SpellGroupService,
               private route: ActivatedRoute) {
   }
@@ -22,5 +24,13 @@ export class SpellBookComponent implements OnInit {
       .subscribe(spellGroup => {
         this.spellGroup = spellGroup;
       });
+  }
+
+  hideAllDetail() {
+    this.showAll = false;
+  }
+
+  showAllDetail() {
+    this.showAll = true;
   }
 }
