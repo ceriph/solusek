@@ -393,7 +393,7 @@
   },
   "prodigy": {
     "label": "Apprentice",
-    "desc": "your familiar is now capable of casting <b>Cantrips</b>."
+    "desc": "your familiar can now, instead of moving or attacking, cast spells, though only has access to rank 0 (cantrips) wizard spells."
   },
   "detonate": {
     "label": "Adept",
