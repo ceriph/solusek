@@ -25,25 +25,25 @@
 }
 
 .abjuration {
-  background-color: #8E8E8E;
-}
-
-.divination {
-  background-color: #72A880;
+  background-color: #3DC656;
 }
 
 .alteration {
-  background-color: #6293BC;
-}
-
-.illusion {
-  background-color: #6866AF;
-}
-
-.evocation {
-  background-color: #D8A05F;
+  background-color: #009EDC;
 }
 
 .conjuration {
-  background-color: #DDD577;
+  background-color: #FFC857;
+}
+
+.divination {
+  background-color: #0C0A3E;
+}
+
+.illusion {
+  background-color: #713E5A;
+}
+
+.evocation {
+  background-color: #D9443F;
 }

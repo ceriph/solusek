@@ -12,7 +12,7 @@ export class SpellBookComponent implements OnInit {
 
   spellGroup: SpellGroup;
 
-  showAll = false;
+  showAll = true;
 
   constructor(private spellGroupService: SpellGroupService,
               private route: ActivatedRoute) {
