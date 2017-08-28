@@ -550,20 +550,5 @@
       Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and
       will be consumed when the poison is applied.
     </p>
-    <table *ngFor="let poisonRank of poisons | async" class="wide">
-      <tr class="header">
-        <td colspan="3">Rank {{poisonRank.rank}} Poisons</td>
-      </tr>
-      <tr class="header">
-        <td>Name</td>
-        <td>Effect</td>
-        <td>Ingredient</td>
-      </tr>
-      <tr *ngFor="let poison of poisonRank.poisons">
-        <td>{{poison.label}}</td>
-        <td [innerHtml]="poison.desc"></td>
-        <td>{{poison.ingredients}}</td>
-      </tr>
-    </table>
   </div>
 </div>

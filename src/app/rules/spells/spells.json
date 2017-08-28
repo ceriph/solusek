@@ -7,7 +7,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "firebolt": {
     "label": "Fire Bolt",
@@ -17,7 +19,9 @@
     "range": "20m",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "light": {
     "label": "Light",
@@ -27,67 +31,81 @@
     "range": "Touch",
     "duration": "1 hour",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "magehand": {
     "label": "Mage Hand",
     "school": "Conjuration",
-    "desc" : "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 10m away from you or if you cast this spell again.<br/><br/>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 10m each time you use it.<br /><br />The hand can't Attack, activate magical items, or carry more than 5kg.",
+    "desc": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 10m away from you or if you cast this spell again.<br/><br/>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 10m each time you use it.<br /><br />The hand can't Attack, activate magical items, or carry more than 5kg.",
     "castTime": "Action",
     "range": "10m",
     "duration": "1 minute",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "mending": {
     "label": "Mending",
     "school": "Alteration",
-    "desc" : "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn clack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.<br/><br/>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
+    "desc": "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn clack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.<br/><br/>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
     "castTime": "Action",
     "range": "Touch",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "minorillusion": {
     "label": "Minor Illusion",
     "school": "Illusion",
-    "desc" : "You create a sound or an image of an object within range that lasts for the duration. The Illusion also ends if you dismiss it as an action or cast this spell again.<br/></br/>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the Duration, or you can make discrete sounds at different times before the spell ends.<br/><br/>If you create an image of an object - such as a chair, muddy footprints, or a small chest - it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an Illusion, because things can pass through it.<br/></br/>If a creature uses its action to examine the sound or image, the creature can determine that it is an Illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the Illusion for what it is, the Illusion becomes faint to the creature.",
+    "desc": "You create a sound or an image of an object within range that lasts for the duration. The Illusion also ends if you dismiss it as an action or cast this spell again.<br/></br/>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the Duration, or you can make discrete sounds at different times before the spell ends.<br/><br/>If you create an image of an object - such as a chair, muddy footprints, or a small chest - it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an Illusion, because things can pass through it.<br/></br/>If a creature uses its action to examine the sound or image, the creature can determine that it is an Illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the Illusion for what it is, the Illusion becomes faint to the creature.",
     "castTime": "Action",
     "range": "5m",
     "duration": "1 minute",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "poisonspray": {
     "label": "Poison Spray",
     "school": "Evocation",
-    "desc" : "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a <b>Constitution Saving Throw</b> or take 1d12 poison damage.<br/><br/>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+    "desc": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a <b>Constitution Saving Throw</b> or take 1d12 poison damage.<br/><br/>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
     "castTime": "Action",
     "range": "3m",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "prestidigitation": {
     "label": "Prestidigitation",
     "school": "Conjuration",
-    "desc" : "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range.<br/><br/>• You create an Instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br /><br/>• You instantaneously light or snuff out a Candle, a torch, or a small campfire.<br/><br/>• You instantaneously clean or soil an object no larger than 1 cubic foot.<br/><br/>• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br/></br/>• You make a color, a small mark, or a Symbol appear on an object or a surface for 1 hour.<br/><br/>• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.<br/><br/>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+    "desc": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range.<br/><br/>• You create an Instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.<br /><br/>• You instantaneously light or snuff out a Candle, a torch, or a small campfire.<br/><br/>• You instantaneously clean or soil an object no larger than 1 cubic foot.<br/><br/>• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.<br/></br/>• You make a color, a small mark, or a Symbol appear on an object or a surface for 1 hour.<br/><br/>• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.<br/><br/>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
     "castTime": "Action",
     "range": "3m",
     "duration": "1 hour",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "rayoffrost": {
     "label": "Ray of Frost",
     "school": "Evocation",
-    "desc" : "A frigid beam of blue-white light streaks toward a creature within range. Make a <b>Ranged Spell Attack</b> against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 2 until the start of your next turn.<br/><br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "desc": "A frigid beam of blue-white light streaks toward a creature within range. Make a <b>Ranged Spell Attack</b> against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 2 until the start of your next turn.<br/><br/>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
     "castTime": "Action",
     "range": "10m",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "shockinggrasp": {
     "label": "Shocking Grasp",
@@ -97,11 +115,10 @@
     "range": "Touch",
     "duration": "Instant",
     "rank": 0,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
-
-
-
   "arcanemissiles": {
     "label": "Arcane Missiles",
     "school": "Evocation",
@@ -110,7 +127,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "blink": {
     "label": "Blink",
@@ -120,7 +139,9 @@
     "range": "Your speed",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "burninghands": {
     "label": "Burning Hands",
@@ -130,7 +151,9 @@
     "range": "Self",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "colourspray": {
     "label": "Colour Spray",
@@ -140,7 +163,9 @@
     "range": "Self",
     "duration": "1 round",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "detectmagic": {
     "label": "Detect Magic",
@@ -150,7 +175,11 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["Arcane", "Light", "Nature"]
+    "groups": [
+      "Arcane",
+      "Light",
+      "Nature"
+    ]
   },
   "fogcloud": {
     "label": "Fog Cloud",
@@ -160,7 +189,10 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["Arcane", "Nature"]
+    "groups": [
+      "Arcane",
+      "Nature"
+    ]
   },
   "magearmour": {
     "label": "Mage Armour",
@@ -170,7 +202,9 @@
     "range": "Touch",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "identify": {
     "label": "Identify",
@@ -180,7 +214,9 @@
     "range": "Touch",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "sleep": {
     "label": "Sleep",
@@ -190,7 +226,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "thunderwave": {
     "label": "Thunderwave",
@@ -200,10 +238,11 @@
     "range": "Self",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["wizard", "druid"]
+    "groups": [
+      "wizard",
+      "druid"
+    ]
   },
-
-
   "acidarrow": {
     "label": "Acid Arrow",
     "school": "Evocation",
@@ -212,7 +251,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "arcanelock": {
     "label": "Arcane Lock",
@@ -222,7 +263,9 @@
     "range": "Touch",
     "duration": "Until Dispelled",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "blur": {
     "label": "Blur",
@@ -232,7 +275,9 @@
     "range": "Self",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "darkvision": {
     "label": "Darkvision",
@@ -242,7 +287,9 @@
     "range": "Touch",
     "duration": "8 hours",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "enlargereduce": {
     "label": "Enlarge Reduce",
@@ -252,7 +299,9 @@
     "range": "5m",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "flamingsphere": {
     "label": "Flaming Sphere",
@@ -262,7 +311,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "invisibility": {
     "label": "Invisibility",
@@ -272,7 +323,9 @@
     "range": "Touch",
     "duration": "1 hour",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "knock": {
     "label": "Knock",
@@ -282,7 +335,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "levitate": {
     "label": "Levitate",
@@ -292,7 +347,9 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "locateobject": {
     "label": "Locate Object",
@@ -302,7 +359,9 @@
     "range": "Self",
     "duration": "10 minutes",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "magicweapon": {
     "label": "Magic Weapon",
@@ -312,7 +371,9 @@
     "range": "Touch",
     "duration": "1 minutes",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "scorchingray": {
     "label": "Scorching Ray",
@@ -322,7 +383,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "seeinvisible": {
     "label": "See Invisible",
@@ -332,7 +395,9 @@
     "range": "Self",
     "duration": "1 hour",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
   "shatter": {
     "label": "Shatter",
@@ -342,9 +407,10 @@
     "range": "Self",
     "duration": "Instant",
     "rank": 2,
-    "groups": ["wizard"]
+    "groups": [
+      "wizard"
+    ]
   },
-
   "bane": {
     "label": "Bane",
     "school": "Alteration",
@@ -353,7 +419,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["cleric"]
+    "groups": [
+      "cleric"
+    ]
   },
   "bless": {
     "label": "Bless",
@@ -363,7 +431,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
   "curewounds": {
     "label": "Cure Wounds",
@@ -373,7 +443,10 @@
     "range": "Touch",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["paladin", "ranger"]
+    "groups": [
+      "paladin",
+      "ranger"
+    ]
   },
   "detectpoisonanddisease": {
     "label": "Detect Poison and Disease",
@@ -383,7 +456,10 @@
     "range": "10m",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["paladin", "ranger"]
+    "groups": [
+      "paladin",
+      "ranger"
+    ]
   },
   "guidingbolt": {
     "label": "Guiding Bolt",
@@ -393,7 +469,9 @@
     "range": "10m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["cleric"]
+    "groups": [
+      "cleric"
+    ]
   },
   "purify": {
     "label": "Purify",
@@ -403,7 +481,10 @@
     "range": "5m",
     "duration": "Instant",
     "rank": 1,
-    "groups": ["paladin", "ranger"]
+    "groups": [
+      "paladin",
+      "ranger"
+    ]
   },
   "protection": {
     "label": "Protection",
@@ -413,7 +494,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
   "sanctuary": {
     "label": "Sanctuary",
@@ -423,7 +506,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["cleric"]
+    "groups": [
+      "cleric"
+    ]
   },
   "thunderoussmite": {
     "label": "Thunderous Smite",
@@ -433,7 +518,9 @@
     "range": "Self",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
   "wrathfulsmite": {
     "label": "Wrathful Smite",
@@ -443,7 +530,9 @@
     "range": "Self",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
   "divinefavour": {
     "label": "Divine Favour",
@@ -453,7 +542,9 @@
     "range": "Self",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
   "heroism": {
     "label": "Heroism",
@@ -463,9 +554,10 @@
     "range": "Touch",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["paladin"]
+    "groups": [
+      "paladin"
+    ]
   },
-
   "absorbelements": {
     "label": "Absorb Elements",
     "school": "Abjuration",
@@ -474,7 +566,9 @@
     "range": "Self",
     "duration": "1 round",
     "rank": 1,
-    "groups": ["ranger"]
+    "groups": [
+      "ranger"
+    ]
   },
   "animalfriendship": {
     "label": "Animal Friendship",
@@ -484,7 +578,9 @@
     "range": "10m",
     "duration": "24 hours",
     "rank": 1,
-    "groups": ["ranger"]
+    "groups": [
+      "ranger"
+    ]
   },
   "ensnaringstrike": {
     "label": "Ensnaring Strike",
@@ -494,7 +590,9 @@
     "range": "Self",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["ranger"]
+    "groups": [
+      "ranger"
+    ]
   },
   "hailofthorns": {
     "label": "Hail Strike",
@@ -504,7 +602,9 @@
     "range": "Self",
     "duration": "Concentration, 1 minute",
     "rank": 1,
-    "groups": ["ranger"]
+    "groups": [
+      "ranger"
+    ]
   },
   "entangle": {
     "label": "Entangle",
@@ -514,7 +614,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["druid"]
+    "groups": [
+      "druid"
+    ]
   },
   "faeriefire": {
     "label": "Faerie Fire",
@@ -524,7 +626,9 @@
     "range": "10m",
     "duration": "1 minute",
     "rank": 1,
-    "groups": ["druid"]
+    "groups": [
+      "druid"
+    ]
   },
   "speakwithanimals": {
     "label": "Speak With Animals",
@@ -534,7 +638,159 @@
     "range": "Self",
     "duration": "10 minutes",
     "rank": 1,
-    "groups": ["ranger"]
+    "groups": [
+      "ranger"
+    ]
+  },
+  "atrophy": {
+    "label": "Atrophy",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, their <b>Speed</b> is halved.<br/><br/><b>Cost per dose</b>: 5 gold.",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "weaken": {
+    "label": "Weaken",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, their physical attacks do -2 damage and make any <b>Strength</b> checks or saving throws with <b>Disadvantage</b>.<br/><br/><b>Cost per dose</b>: 5 gold.",
+    "duration": "10 minutes",
+    "rank": 1,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "snakeskiss": {
+    "label": "Snake's Kiss",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they take <b>1d4+1 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 5 gold.",
+    "duration": "1 minute",
+    "rank": 1,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "dizzyingdraught": {
+    "label": "Dizzying Draught",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they are <b>Knocked Down</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 50 gold.",
+    "duration": "1 minute",
+    "rank": 2,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "thefool": {
+    "label": "The Fool",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they make any <b>Intelligence</b> and <b>Charisma</b> checks or saving throws with <b>Disadvantage</b>.<br/><br/><b>Cost per dose</b>: 25 gold.",
+    "duration": "10 minutes",
+    "rank": 2,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "drakeskiss": {
+    "label": "Drake's Kiss",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they take <b>2d4+2 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 50 gold.",
+    "duration": "1 minute",
+    "rank": 2,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "frozenfeet": {
+    "label": "Frozen Feet",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they have 0 <b>Speed</b>.<br/><br/><b>Cost per dose</b>: 150 gold.",
+    "duration": "1 minute",
+    "rank": 3,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "burningblood": {
+    "label": "Burning Blood",
+    "school": "Poison",
+    "desc": "When the target is infected with this poison, they take <b>3d6 fire damage</b>, followed by <b>1d6 fire damage</b> at the start of each turn.<br/><br/><b>Cost per dose</b>: 200 gold.",
+    "duration": "1 minute",
+    "rank": 3,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "wyrmskiss": {
+    "label": "Wyrm's Kiss",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they take <b3d4+3 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 200 gold.",
+    "duration": "1 minute",
+    "rank": 3,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "basilisksstare": {
+    "label": "Basilisk's Stare",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they are <b>Stunned</b>.<br/><br/><b>Cost per dose</b>: 500 gold.",
+    "duration": "1 minute",
+    "rank": 4,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "vulnerablevenom": {
+    "label": "Vulnerable Venom",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they roll with <b>Disadvantage</b> on all <b>Saving Throws</b>.<br/><br/><b>Cost per dose</b>: 500 gold.",
+    "duration": "1 minute",
+    "rank": 4,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "wyvernskiss": {
+    "label": "Wyvern's Kiss",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they take <b>4d4+4 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 400 gold.",
+    "duration": "1 minute",
+    "rank": 4,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "deepslumber": {
+    "label": "Deep Slumber",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they are <b>Unconscious</b>.<br/><br/><b>Cost per dose</b>: 1500 gold.",
+    "duration": "1 minute",
+    "rank": 5,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "unluckyday": {
+    "label": "Unlucky Day",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they roll with <b>Disadvantage</b> on all rolls.<br/><br/><b>Cost per dose</b>: 1200 gold.",
+    "duration": "24 hours",
+    "rank": 5,
+    "groups": [
+      "rogue"
+    ]
+  },
+  "dragonskiss": {
+    "label": "Basilisk's Stare",
+    "school": "Poison",
+    "desc": "While the target suffers from this poison, they take <b>5d4+5 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 800 gold.",
+    "duration": "1 minute",
+    "rank": 5,
+    "groups": [
+      "rogue"
+    ]
   }
 }
 

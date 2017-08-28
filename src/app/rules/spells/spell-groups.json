@@ -104,5 +104,51 @@
         ]
       }
     }
+  },
+  "rogue": {
+    "label": "Rogue",
+    "desc": "The ability to create and inflict poisons on your foes.",
+    "ranks": {
+      "1": {
+        "rank": 1,
+        "spells": [
+          "atrophy",
+          "weaken",
+          "snakeskiss"
+        ]
+      },
+      "2": {
+        "rank": 2,
+        "spells": [
+          "dizzyingdraught",
+          "thefool",
+          "drakeskiss"
+        ]
+      },
+      "3": {
+        "rank": 3,
+        "spells": [
+          "frozenfeet",
+          "burningblood",
+          "wyrmskiss"
+        ]
+      },
+      "4": {
+        "rank": 4,
+        "spells": [
+          "basilisksstare",
+          "vulnerablevenom",
+          "wyvernskiss"
+        ]
+      },
+      "5": {
+        "rank": 5,
+        "spells": [
+          "deepslumber",
+          "unluckyday",
+          "dragonskiss"
+        ]
+      }
+    }
   }
 }
