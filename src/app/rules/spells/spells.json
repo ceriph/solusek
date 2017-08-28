@@ -645,7 +645,7 @@
   "atrophy": {
     "label": "Atrophy",
     "school": "Poison",
-    "desc": "While the target suffers from this poison, their <b>Speed</b> is halved.<br/><br/><b>Cost per dose</b>: 5 gold.",
+    "desc": "While the target suffers from this poison, their <b>Speed</b> is halved.<br/><br/><b>Cost per dose</b>: 10 gold.",
     "duration": "10 minutes",
     "rank": 1,
     "groups": [
