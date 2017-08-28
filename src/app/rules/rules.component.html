@@ -418,7 +418,7 @@
   <div class="box">
     <h1 id="Spells">Spells</h1>
     <p>
-      Spells come in 6 categories: <b>Arcane</b>, <b>Mind</b>, <b>Light</b>, <b>Dark</b>, <b>Nature</b>, <b>Song</b>.
+      Spells come in 6 groups: <b>Arcane</b>, <b>Mind</b>, <b>Light</b>, <b>Dark</b>, <b>Nature</b>, <b>Song</b>.
     </p>
     <p>
       With regards to spells, a character's class and level defines two things:
@@ -426,8 +426,11 @@
     <p><b>Magic Type</b>: The category of magic a character has access to, for example wizards have access to
       <b>Arcane</b>.</p>
     <p>
-      <b>Spell Slots</b>: The number of spells slots the character has that they can fill with spells. Each slot counts
-      as a single use of the spell.
+      <b>Spell Slots</b>: Spell slots are effectively the number of spell usages a character has before needing to rest.
+    </p>
+    <p>
+      <b>Preparation</b>: Dependant on the level and class, a caster will have a number of spells they can 'prepare' from their list
+      of known spells. During a long rest the character chooses which spells they prepare for the day.
     </p>
     <p>
       Each magic type has spells separated into <b>ranks</b>. Spells of a certain rank are only available to a character
@@ -437,19 +440,15 @@
     </p>
     <h2>Spell Slots</h2>
     <p>
-      Spell slots can be assigned/changed when a character takes a <b>Long Rest</b>.
+      Spell slots are based on the character class and level, and can be seen in the tables below.
     </p>
     <p>
-      The number of spells slots a character has is based on their class and level. Spells can be assigned to as many
-      slots
-      as there are available, in order to give a character multiple uses of a single spell. For example a wizard could
-      assign all
-      3 of his rank 2 spell slots to Fireball, or have 2 slots with Fireball and 1 slot of Frost Nova.
+      Spells do not need to be assigned to specific slots, but when casting a spell, a slot of that rank or higher must be spent. If a higher ranking
+      slot is used, the spell may gain additional boosts in power as described.
     </p>
     <p>
-      Spells can be assigned to spell slots of their rank <i>or higher</i>. If a spell is assigned to a rank higher than
-      that
-      of the spell, it may gain bonuses as described.
+      Spell slots can be recovered fully during a <b>Long Rest</b>. Some classes also have the ability to recover a limited number of slots during a
+      short rest.
     </p>
     <h3>Casters</h3>
     <p>
@@ -505,27 +504,15 @@
       </tr>
     </table>
     <p>
-      Spells slots are fully refreshed on a <b>Long Rest</b>. When taking a <b>Short Rest</b>, characters gain a number
-      of slot points equal to their primary stat defined for the magic type, for example Intelligence for Arcane. These
-      points can be spent to refresh spell slots, higher ranking slots costing more:
-    </p>
-    <ul>
-      <li><b>Rank 1</b> - 1 slot point</li>
-      <li><b>Rank 2</b> - 2 slot points</li>
-      <li><b>Rank 3</b> - 3 slot points</li>
-      <li><b>Rank 4</b> - 4 slot points</li>
-      <li><b>Rank 5</b> - 5 slot points</li>
-    </ul>
-    <p>
       All spells will also be one of the following schools:
     </p>
     <ul>
-      <li><b>Abjuration</b> - Defends and protects</li>
-      <li><b>Alteration</b> - Improves and heals</li>
-      <li><b>Conjuration</b> - Summons items or creatures</li>
+      <li><b>Abjuration</b> - Strengthen and defend</li>
+      <li><b>Alteration</b> - Improve and heal</li>
+      <li><b>Conjuration</b> - Summons magical items or creatures</li>
       <li><b>Divination</b> - Sight or knowledge based magic</li>
-      <li><b>Evocation</b> - Directly damages targets</li>
-      <li><b>Illusion</b> - Alters the appearance and mind</li>
+      <li><b>Evocation</b> - Most direct damage spells</li>
+      <li><b>Illusion</b> - Alter the appearance and the mind</li>
     </ul>
 
     <h3>Spellbooks</h3>
@@ -541,22 +528,23 @@
     <p>
       When a character has access to poisons, he can craft them during a short rest provided
       he has access to the ingredients and a way of storing the poisons. Alternatively the poison can be directly
-      applied to a
-      physical weapon at the time of crafting.
+      applied to a physical weapon at the time of crafting.
     </p>
     <p>
-      If a character has access to a poisons prepared previously in a vial, they may spell an <b>Action</b> in combat to
-      apply it to a
-      weapon they are holding.
+      If a character has access to a poison prepared previously in a vial, they may spell an <b>Action</b> in combat to
+      apply it to a weapon they are holding.
     </p>
     <p>
-      When a poisoned weapon damages another creature, that creature must make a CON saving throw vs
-      the poison strength. The poison strength is decided on poison application and will be 1d20+INT. If their saving
-      throw is not greater than the strength, they will become poisoned.
+      Poisons, once applied to a weapon, last for 1 hour.
     </p>
     <p>
-      At the start of a characters turn, if they are poisoned, they take the effects of the poison then make another CON
-      saving throw to see whether the poison has run its course or if it persists for another turn.
+      When a poisoned weapon damages another creature, that creature must make a <b>Constitution Saving Throw</b> vs
+      the poison strength (determined by the crafters spell DC). If their saving throw is not greater than the strength,
+      they will become poisoned.
+    </p>
+    <p>
+      At the start of a characters turn, if they are poisoned, they take the effects of the poison then make another <b>Constitution Saving Throw</b>
+      to see whether the poison has run its course or if it persists for another turn.
     </p>
     <p>
       Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and

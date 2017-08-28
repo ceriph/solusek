@@ -1,6 +1,6 @@
 {
   "arcane": {
-    "desc": "you have access to <b>Arcane</b> magic spells, including <b>Cantrips</b> (rank 0).<br /><br />You have a <b>Spellbook</b> with which you can scribe and learn spells. You may select 6 spells to learn from the available spells (rank 0 and 1). Each level after 1 you may choose 2 additional spells to learn from the ranks available (see the table for when you gain access to additional ranks).<br /><br />During a long rest, you can select a number of spells to prepare from your spellbook equal to your <b>Intelligence</b> plus level. Prepared spells can then be cast by spending spell slots of the appropriate rank.<br/><br/>When taking a short rest, you can recover spells slots of a combined rank up to your Intelligence.",
+    "desc": "you have access to <b>Arcane</b> magic spells, including <b>Cantrips</b> (rank 0).<br /><br /><b>Spellbook:</b> You have a <b>Spellbook</b> with which you can scribe and learn spells. You may select 6 spells to learn from the available spells (rank 0 and 1). Each level after 1 you may choose 2 additional spells to learn from the ranks available (see the table for when you gain access to additional ranks).<br /><br /><b>Preparing Spells</b>: During a long rest, you can select a number of spells to prepare from your spellbook equal to your <b>Intelligence</b> plus half your level (rounded down).<br/><br/><b>Casting Spells</b>: Prepared spells can then be cast by spending spell slots of the appropriate rank.<br/><br/><b>Arcane Recovery</b>: When taking a short rest, you can recover spell slots of a combined rank up to half your level (rounded down).",
     "label": "Arcane Spellcaster"
   },
   "archetype": {
@@ -129,7 +129,7 @@
     "type": "Action"
   },
   "lightpaladin": {
-    "desc": "you now have access to <b>Light</b> magic as per the list of <b>Paladin</b> spells.<br /><br />During a long rest, you can select a number of spells to prepare equal to your <b>Spirit</b>. Prepared spells can then be cast by spending spell slots of the appropriate rank.",
+    "desc": "you now have access to <b>Light</b> magic as per the list of <b>Paladin</b> spells.<br /><br /><b>Prepared Spells</b>: During a long rest, you can select a number of spells to prepare equal to your <b>Spirit</b> plus half your level (rounded down).<br/><br/><b>Casting Spells</b>: Prepared spells can then be cast by spending spell slots of the appropriate rank.",
     "label": "Divine Spellcaster"
   },
   "longshot": {
@@ -154,7 +154,7 @@
     "type": "BonusAction"
   },
   "natureranger": {
-    "desc": "you now have access to <b>Nature</b> magic as per the list of <b>Ranger</b> spells.<br /><br />During a long rest, you can select a number of spells to prepare equal to your <b>Spirit</b>. Prepared spells can then be cast by spending spell slots of the appropriate rank.",
+    "desc": "you now have access to <b>Nature</b> magic as per the list of <b>Ranger</b> spells.<br /><br /><b>Prepared Spells</b>: During a long rest, you can select a number of spells to prepare equal to your <b>Spirit</b> plus half your level.<br/><br/><b>Casting Spells</b>: Prepared spells can then be cast by spending spell slots of the appropriate rank.",
     "label": "Natural Spellcaster"
   },
   "nimblemind": {
@@ -202,7 +202,7 @@
     "label": "Reliable Talent"
   },
   "resilience": {
-    "desc": "you have gained a natural toughness, granting you +1 <b>Magic Reduction</b>.",
+    "desc": "you have gained a natural toughness, granting you +1 <b>Spell Armour</b>.",
     "label": "Resilience",
     "modifiers": [
       {

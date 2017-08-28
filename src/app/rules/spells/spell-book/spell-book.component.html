@@ -3,7 +3,7 @@
 </div>
 <div *ngFor="let rank of spellGroup.ranks">
   <div class="box fill" *ngIf="rank">
-    <h1>Rank {{rank.rank}}</h1>
+    <h1 class="centered">Rank {{rank.rank}}</h1>
     <div class="centered">
       <spell-card *ngFor="let spell of rank.spells" class="card" [spellName]="spell"></spell-card>
     </div>

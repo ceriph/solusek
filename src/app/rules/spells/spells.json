@@ -145,7 +145,7 @@
   "detectmagic": {
     "label": "Detect Magic",
     "school": "Divination",
-    "desc": "For the duration, you become generally aware of any magic effects within range and the school that they belong to.",
+    "desc": "For the duration, you become generally aware of any magic effects within range and the school that they belong to. If there are any magical effects within your sight, they will appear as a translucent aura around the source.",
     "castTime": "Action",
     "range": "10m",
     "duration": "10 minutes",
