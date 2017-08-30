@@ -24,7 +24,8 @@ export enum ItemType {
   Amulet,
   Gloves,
   Headgear,
-  Misc
+  Misc,
+  Cloak
 }
 
 export enum Rarity {

@@ -59,6 +59,7 @@
         "rank": 1,
         "spells": [
           "bless",
+          "command",
           "curewounds",
           "detectmagic",
           "detectpoisonanddisease",
@@ -86,6 +87,7 @@
           "detectpoisonanddisease",
           "ensnaringstrike",
           "fogcloud",
+          "goodberry",
           "hailofthorns",
           "purify",
           "speakwithanimals",

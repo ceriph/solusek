@@ -401,19 +401,38 @@
   "whiskey": {
     "label": "Whiskey",
     "desc": "A fairly standard bottle of whiskey.",
-    "slot": "none",
+    "type": "misc",
     "rarity": "common"
   },
   "largeironkey": {
     "label": "Large Iron Key",
     "desc": "Found in the Black residence.",
-    "slot": "none",
+    "type": "misc",
     "rarity": "common"
   },
   "sackoftrinkets": {
     "label": "Sack of Trinkets",
     "desc": "A collection of ornaments that look relatively valuable.",
-    "slot": "none",
+    "type": "misc",
     "rarity": "uncommon"
+  },
+  "displacerbeastpelt": {
+    "label": "Displacer Beast Pelt",
+    "desc": "The bluey black pelt of a slain Displacer Beast.",
+    "type": "misc",
+    "rarity": "uncommon"
+  },
+  "cloakofdisplacement": {
+    "label": "Cloak of Displacement",
+    "desc": "While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have <b>Disadvantage</b> on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn.<br/><br/>This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.",
+    "type": "cloak",
+    "rarity": "rare",
+    "attunement": true
+  },
+  "purplescarf": {
+    "label": "Purple Scarf",
+    "desc": "A fine silk purple scarf. Makes you look fabulous.",
+    "type": "misc",
+    "rarity": "common"
   }
 }

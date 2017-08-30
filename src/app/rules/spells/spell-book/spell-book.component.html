@@ -1,8 +1,8 @@
 <div class="box fill" *ngIf="spellGroup">
   <h1 id="{{spellGroup.label}}">Spellbook - {{spellGroup.label}}</h1>
   <p>
-    <button class="button clickable" (click)="showAllDetail()">Detail Mode</button>
-    <button class="button clickable" (click)="hideAllDetail()">List Mode</button>
+    <button class="button clickable no-print" (click)="showAllDetail()">Detail Mode</button>
+    <button class="button clickable no-print" (click)="hideAllDetail()">List Mode</button>
   </p>
   <div *ngFor="let rank of spellGroup.ranks">
     <div *ngIf="rank">

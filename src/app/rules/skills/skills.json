@@ -123,9 +123,8 @@
     "label": "Improved Divine Smite"
   },
   "layonhands": {
-    "desc": "you can use an <b>Action</b> to place a healing hand on a friendly character within range, healing them to full health, you then suffer one point of <b>Exhaustion</b>.",
+    "desc": "your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a <b>Long Rest</b>. With that pool, you can restore a total number of health equal to your <b>Spirit</b> plus (level x 5).<br/><br/>As an <b>Action</b>, you can touch a creature and draw power from the pool to restore a number of health to that creature, up to the maximum amount remaining in your pool.<br/><br/>Alternatively, you can expend 5 hit points from your pool to cure the target of one disease or poison affecting it. You can cure multiple diseases/poisons with a single use of Lay on Hands, expending health separately for each one.",
     "label": "Lay On Hands",
-    "recovery": "LongRest",
     "type": "Action"
   },
   "lightpaladin": {

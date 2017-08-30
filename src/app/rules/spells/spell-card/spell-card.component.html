@@ -4,7 +4,7 @@
   <div *ngIf="showDetail">
     <p class="spellSubtitle clickable" (click)="toggleDetail()" *ngIf="spell.school !== 'Poison'"><i>{{spell.school}}, {{spell.castTime}}</i></p>
     <p class="spellDesc" [innerHtml]="spell.desc"></p>
-    <p class="spellDesc"><b>Range:</b> {{spell.range}}</p>
+    <p class="spellDesc" *ngIf="spell.range"><b>Range:</b> {{spell.range}}</p>
     <p class="spellDesc"><b>Duration:</b> {{spell.duration}}</p>
   </div>
 </div>

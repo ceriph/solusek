@@ -461,6 +461,20 @@
       "ranger"
     ]
   },
+  "command": {
+    "label": "Command",
+    "school": "Illusion",
+    "desc": "You speak a one-word command to a creature you can see within range. The target must succeed on a <b>Spirit Saving Throw</b> or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is <i>directly harmful</i> to it.<br/><br/>Some typical commands would be 'approach', 'drop', 'flee', 'grovel' or 'halt'. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends.",
+    "castTime": "Action",
+    "range": "10m",
+    "duration": "1 round",
+    "rank": 1,
+    "groups": [
+      "paladin",
+      "enchanter"
+    ]
+  },
+
   "guidingbolt": {
     "label": "Guiding Bolt",
     "school": "Evocation",
@@ -525,7 +539,7 @@
   "wrathfulsmite": {
     "label": "Wrathful Smite",
     "school": "Evocation",
-    "desc": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1D6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a <b>Spirit Saving Throw</b> against your spell save DC to end this spell.",
+    "desc": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1D6 psychic damage. Additionally, if the target is a creature, it must make a <b>Spirit Saving Throw</b> or be frightened of you until the spell ends. As an action, the creature can make a <b>Spirit Saving Throw</b> against your spell save DC to end this spell.",
     "castTime": "BonusAction",
     "range": "Self",
     "duration": "Concentration, 1 minute",
@@ -637,6 +651,18 @@
     "castTime": "Bonus Action",
     "range": "Self",
     "duration": "10 minutes",
+    "rank": 1,
+    "groups": [
+      "ranger"
+    ]
+  },
+  "goodberry": {
+    "label": "Goodberry",
+    "school": "Conjuration",
+    "desc": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 health, and the berry provides enough nourishment to sustain a creature for one day.<br/><br/>The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
+    "castTime": "Action",
+    "range": "Touch",
+    "duration": "24 hours",
     "rank": 1,
     "groups": [
       "ranger"
