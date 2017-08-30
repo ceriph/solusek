@@ -74,9 +74,10 @@
     <div class="wrapper" *ngIf="character.secondaryStats">
       <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
     </div>
-    <h2 class="title">Hit Dice</h2>
+    <h2 class="title" *ngIf="clazz">Hit Dice</h2>
+    <p class="subtitle">(1d{{clazz.hit}}+{{character.primaryStats.con}})</p>
     <div class="wrapper" *ngIf="character && character.primaryStats && clazz">
-      <div *ngFor="let item of getHitDie()" class="checkbox"><p>d{{item}}+{{character.primaryStats.con}}</p></div>
+      <div *ngFor="let item of getHitDie()" class="checkbox"></div>
     </div>
     <div *ngIf="hasSpells()">
       <h2 class="title">Spell Slots</h2>

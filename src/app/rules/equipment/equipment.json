@@ -379,7 +379,7 @@
   },
   "thaglanadhblessed": {
     "label": "Tha Ghlanadh (Blessed)",
-    "desc": "The once cursed warhammer glows with a soft shimmer of holy energy, now loyal to the wielder who removed the curse.<br/><br/><b>Throwable</b>: This weapon can be thrown up to 6m, making a ranged attack, it them immediately returns to the hand of the wielder.<br /><br /><b>Versatile</b>: This weapon can be wielded in one hand or two; when wielded in two it does 1d10 damage instead of 1d8.",
+    "desc": "The once cursed warhammer glows with a soft shimmer of holy energy, now loyal to the wielder who removed the curse.<br/><br/><b>Throwable</b>: This weapon can be thrown up to 6m, making a ranged attack, it then immediately returns to the hand of the wielder.<br /><br /><b>Versatile</b>: This weapon can be wielded in one hand or two; when wielded in two it does 1d10 damage instead of 1d8.",
     "type": "weapon",
     "rarity": "epic",
     "attunement": true,
