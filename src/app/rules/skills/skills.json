@@ -8,7 +8,7 @@
     "label": "Choose Archetype"
   },
   "areacontrol": {
-    "desc": "you have the ability to masterfully control your area of effect spells. You may choose a number of targets up to the spell level + 1 within an area of effect spell you cast, those characters are unaffected by the spell.",
+    "desc": "you have the ability to masterfully control your area of effect spells. When you cast an <b>Evocation</b> spell that affects multiple creatures, you can choose a number of targets up to the spell's rank + 1, those characters are unaffected by the spell.",
     "label": "Area Control"
   },
   "assassinate": {
@@ -45,7 +45,7 @@
     "type": "BonusAction"
   },
   "disguise": {
-    "desc": "you are able to alter your appearance and voice to that of any other humanoid of a similar size. Preparation takes around an hour.",
+    "desc": "you are able to make yourself, including your clothing, armor, weapons, and other belongings on your person, look different for up to 1 hour. This can take around 1 hour of preparation depending on the level of complexity.<br/><br/>You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your general body type, so you must remain a humanoid figure with the same number of limbs. Otherwise, the extent of the illusion is up to you.<br/><br/>To discern that you are disguised, a suspicious creature can use its <b>Action</b> to inspect your appearance and must succeed on an <b>Investigation check</b> against your spell DC + 2.",
     "label": "Disguise"
   },
   "divineintervention": {
@@ -139,9 +139,9 @@
     "label": "Mage Hand",
     "desc": "you gain access to the <b>Mage Hand</b> cantrip and are able to use it to perform actions such as lockpicking and pickpocketing from a distance."
   },
-  "magicalprotection": {
-    "desc": "your arcane knowledge grants you increased protection from enemies spells. You now roll with advantage on any spell saves.",
-    "label": "Magical Protection"
+  "potentcantrip": {
+    "desc": "when a creature succeeds on a <b>Saving Throw</b> against one of your <b>Cantrips</b>, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.",
+    "label": "Potent Cantrip"
   },
   "meditate": {
     "desc": "as an <b>Action</b> you may immediately refresh a number of spell slots equal to your normal short rest allowance.",
@@ -223,9 +223,9 @@
     "desc": "you may choose a spell on rank 3 or below. That spell is now considered a <b>Cantrip</b> and can be cast without being prepared.",
     "label": "Spell Mastery"
   },
-  "spellsurge": {
-    "desc": "when casting a spell that does damage, you may choose to exhaust an additional slot of the same rank in order to in order to force a critical hit (maximum damage).",
-    "label": "Spell Surge"
+  "overchannel": {
+    "desc": "when casting a spell at rank 5 or below that does damage, you can choose to force a <b>Critical Hit</b> (maximum damage). The first time you do so, you suffer no adverse affect. If you use this again before you finish a <b>Long Rest</b>, you take <b>2d12 Mind damage</b> for each rank of the spell. This damage ignores <b>Resistance</b> and <b>Immunity</b>.",
+    "label": "Overchannel"
   },
   "strokeofluck": {
     "desc": "you have an uncanny knack for succeeding when you need to. If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.",

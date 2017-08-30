@@ -689,7 +689,7 @@
     ]
   },
   "snakeskiss": {
-    "label": "Snake's Kiss",
+    "label": "Snake's Bite",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>1d4+1 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 5 gold.",
     "duration": "1 minute",
@@ -719,7 +719,7 @@
     ]
   },
   "drakeskiss": {
-    "label": "Drake's Kiss",
+    "label": "Drake's Lick",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>2d4+2 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 50 gold.",
     "duration": "1 minute",
@@ -749,7 +749,7 @@
     ]
   },
   "wyrmskiss": {
-    "label": "Wyrm's Kiss",
+    "label": "Wyrm's Touch",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>3d4+3 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 200 gold.",
     "duration": "1 minute",
@@ -779,7 +779,7 @@
     ]
   },
   "wyvernskiss": {
-    "label": "Wyvern's Kiss",
+    "label": "Wyvern's Caress",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>4d4+4 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 400 gold.",
     "duration": "1 minute",
@@ -809,7 +809,7 @@
     ]
   },
   "dragonskiss": {
-    "label": "Dragon's Stare",
+    "label": "Dragon's Kiss",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>5d4+5 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 800 gold.",
     "duration": "1 minute",
