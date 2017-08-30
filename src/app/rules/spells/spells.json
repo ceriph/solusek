@@ -751,7 +751,7 @@
   "wyrmskiss": {
     "label": "Wyrm's Kiss",
     "school": "Poison",
-    "desc": "While the target suffers from this poison, they take <b3d4+3 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 200 gold.",
+    "desc": "While the target suffers from this poison, they take <b>3d4+3 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 200 gold.",
     "duration": "1 minute",
     "rank": 3,
     "groups": [
@@ -809,7 +809,7 @@
     ]
   },
   "dragonskiss": {
-    "label": "Basilisk's Stare",
+    "label": "Dragon's Stare",
     "school": "Poison",
     "desc": "While the target suffers from this poison, they take <b>5d4+5 poison damage</b> at the start of their turn.<br/><br/><b>Cost per dose</b>: 800 gold.",
     "duration": "1 minute",
