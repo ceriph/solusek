@@ -120,7 +120,7 @@
     "recommendations": "Constitution, Strength, Spirit",
     "archetypes": {
       "oathofjustice": {
-        "label": "Archetype - Oath of Justice",
+        "label": "Oath of Justice",
         "desc": "You make a sacred oath to protect innocents and pursue justice for all.",
         "skills": [
           {
@@ -142,7 +142,7 @@
         ]
       },
       "oathofvengeance": {
-        "label": "Archetype - Oath of Vengeance",
+        "label": "Oath of Vengeance",
         "desc": "You make a sacred oath to conquer and destroy all evil by any means necessary.",
         "skills": [
           {
@@ -164,7 +164,7 @@
         ]
       },
       "oathbreaker": {
-        "label": "Archetype - Oathbreaker",
+        "label": "Oathbreaker",
         "desc": "You choose not to take up an oath, vowing to pursue only what suits you.",
         "skills": [
           {
@@ -257,7 +257,7 @@
     "recommendations": "Constitution, Strength, Spirit",
     "archetypes": {
       "beastmaster": {
-        "label": "Archetype - Beastmaster",
+        "label": "Beastmaster",
         "desc": "You focus your training on your kinship with an animal companion.",
         "skills": [
           {
@@ -279,7 +279,7 @@
         ]
       },
       "hunter": {
-        "label": "Archetype - Hunter",
+        "label": "Hunter",
         "desc": "You focus your training on your perception and archery skills.",
         "skills": [
           {
@@ -301,7 +301,7 @@
         ]
       },
       "warden": {
-        "label": "Archetype - Warden",
+        "label": "Warden",
         "desc": "You focus your training on your melee combat skills.",
         "skills": [
           {
@@ -423,7 +423,7 @@
     "recommendations": "Agility, Intelligence, Strength",
     "archetypes": {
       "assassin": {
-        "label": "Archetype - Assassin",
+        "label": "Assassin",
         "desc": "You focus your training on stealth, moving in the shadows and the killing of your enemies.",
         "skills": [
           {
@@ -445,7 +445,7 @@
         ]
       },
       "swashbuckler": {
-        "label": "Archetype - Swashbuckler",
+        "label": "Swashbuckler",
         "desc": "You focus your training to develop your toe-to-toe fighting and persuasion.",
         "skills": [
           {
@@ -467,7 +467,7 @@
         ]
       },
       "thief": {
-        "label": "Archetype - Thief",
+        "label": "Thief",
         "desc": "You focus your training on guile and thievery.",
         "skills": [
           {
@@ -609,7 +609,7 @@
     "recommendations": "Intelligence, Agility, Constitution",
     "archetypes": {
       "arcanist": {
-        "label": "Archetype - Arcanist",
+        "label": "Arcanist",
         "desc": "You focus your training on the pure control of arcane and elemental energy.",
         "skills": [
           {
@@ -631,7 +631,7 @@
         ]
       },
       "battlemage": {
-        "label": "Archetype - Battlemage",
+        "label": "Battlemage",
         "desc": "You focus your training on close combat spell casting in battle.",
         "skills": [
           {
@@ -653,7 +653,7 @@
         ]
       },
       "summoner": {
-        "label": "Archetype - Summoner",
+        "label": "Summoner",
         "desc": "You focus your training on the conjuration and evolution of an elemental familiar.",
         "skills": [
           {

@@ -46,7 +46,26 @@
     </div>
   </div>
 
-  <div class="box fill" *ngIf="character.checks">
+  <div class="box fill">
+    <div class="wrapper" *ngIf="character.secondaryStats">
+      <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
+    </div>
+    <h2 class="title" *ngIf="clazz">Hit Dice</h2>
+    <p class="subtitle">(1d{{clazz.hit}}+{{character.primaryStats.con}})</p>
+    <div class="wrapper" *ngIf="character && character.primaryStats && clazz">
+      <div *ngFor="let item of getHitDie()" class="checkbox"></div>
+    </div>
+    <div *ngIf="hasSpells()">
+      <h2 class="title">Spell Slots</h2>
+      <div class="wrapper">
+        <span *ngFor="let rank of spellSlots">
+          <div *ngFor="let slot of rank" class="checkbox"><p>{{slot}}</p></div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="box fill breakAfter" *ngIf="character.checks">
     <div class="stats">
       <div class="card">
         <h2 class="title">Ability Checks</h2>
@@ -66,25 +85,6 @@
         <summary-check [checks]="character.saves" [check]="'int'"></summary-check>
         <summary-check [checks]="character.saves" [check]="'spi'"></summary-check>
         <summary-check [checks]="character.saves" [check]="'cha'"></summary-check>
-      </div>
-    </div>
-  </div>
-
-  <div class="box fill">
-    <div class="wrapper" *ngIf="character.secondaryStats">
-      <summary-stat [stats]="character.secondaryStats" [stat]="'health'" [display]="'Health'"></summary-stat>
-    </div>
-    <h2 class="title" *ngIf="clazz">Hit Dice</h2>
-    <p class="subtitle">(1d{{clazz.hit}}+{{character.primaryStats.con}})</p>
-    <div class="wrapper" *ngIf="character && character.primaryStats && clazz">
-      <div *ngFor="let item of getHitDie()" class="checkbox"></div>
-    </div>
-    <div *ngIf="hasSpells()">
-      <h2 class="title">Spell Slots</h2>
-      <div class="wrapper">
-        <span *ngFor="let rank of spellSlots">
-          <div *ngFor="let slot of rank" class="checkbox"><p>{{slot}}</p></div>
-        </span>
       </div>
     </div>
   </div>

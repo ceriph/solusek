@@ -434,5 +434,17 @@
     "desc": "A fine silk purple scarf. Makes you look fabulous.",
     "type": "misc",
     "rarity": "common"
+  },
+  "potionofhealing": {
+    "label": "Potion of Healing",
+    "desc": "A glimmering red liquid in a bottle. Heals 2d4+2 health when consumed.",
+    "type": "potion",
+    "rarity": "common"
+  },
+  "potionofgreaterhealing": {
+    "label": "Potion of Greater Healing",
+    "desc": "A glimmering red liquid in a bottle. Heals 4d4+4 health when consumed.",
+    "type": "potion",
+    "rarity": "uncommon"
   }
 }

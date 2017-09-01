@@ -5,6 +5,8 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+
+  overflow:visible;
 }
 
 .content {
@@ -171,24 +173,6 @@ button:disabled {
   padding-top: 30px;
 }
 
-@media print {
-  .no-print, .no-print * {
-    display: none !important;
-  }
-
-  body {
-    background-color: white;
-  }
-
-  .box {
-    background-color: #EEE;
-  }
-
-  .box-display {
-    background-color: white;
-  }
-}
-
 .inline {
   display: inline-block;
   width: auto;
@@ -204,4 +188,43 @@ button:disabled {
 
 .card p {
   text-align: left;
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box + .box, .box + .box-display, .box-display + .box-display, .box-display + .box {
+    border-top: 2px solid #01A7C2;
+  }
+
+  .box-display {
+    background-color: white;
+  }
+
+  .breakAfter {
+    page-break-after: always;
+    break-after: always;
+
+  }
+
+  .breakBefore {
+    page-break-before: always;
+    break-before: always;
+  }
+
+  body, div {
+    float:none !important;
+  }
 }
