@@ -1,6 +1,6 @@
 {
   "1": {
-    "title": "Scenario 1 - Marked",
+    "title": "Session 1 - Marked",
     "events": [
       {
         "type": "Story",
@@ -41,7 +41,7 @@
     ]
   },
   "2": {
-    "title": "Scenario 2 - Enchanted",
+    "title": "Session 2 - Enchanted",
     "events": [
       {
         "type": "Travel",
@@ -106,7 +106,7 @@
     ]
   },
   "3": {
-    "title": "Scenario 3 - Revelation",
+    "title": "Session 3 - Revelation",
     "events": [
       {
         "type": "Story",
@@ -147,7 +147,7 @@
     ]
   },
   "4": {
-    "title": "Scenario 4 - Working for the Enemy",
+    "title": "Session 4 - Working for the Enemy",
     "events": [
       {
         "type": "Story",
@@ -163,7 +163,7 @@
       },
       {
         "type": "Story",
-        "desc": "Upon inspecting the trinkets found in the Black Residence, group notice there are 5, each with a name inscribed: Auron, Caleb, Miranda, Jarred and Eldarin. Eldarin is the only name they couldn't identify. The group choose to hold onto the items."
+        "desc": "Upon inspecting the trinkets found in the Black Residence, group notice there are 5, each with a name inscribed: Auron, Caleb, Miranda, Jarred and Eldin. Eldin is the only name they couldn't identify. The group choose to hold onto the items."
       },
       {
         "type": "Story",
@@ -184,6 +184,39 @@
       {
         "type": "Story",
         "desc": "Upon further inspection, the goblin hovel seems to lead further into an old underground ruin of some kind containing a statue of a minotaur-like creature wearing ornate bracers. The wall are surrounded in tapestries that depict what Ruairih recognises as some sort of Paladin order."
+      }
+    ]
+  },
+  "5": {
+    "title": "Session 5 - The Order of Morne (part 1)",
+    "events": [
+      {
+        "type": "Story",
+        "desc": "The part find and speak the tenets of Morne (Strength, Honour and Valour), opening up the entrance. Upon opening, a blonde armoured knight and a younger boy rush out. The party is then introduced to Sir Reginald von Darkmoor and Squire Dodric Pallon."
+      },
+      {
+        "type": "Story",
+        "desc": "Along with the two new party members the group venture into the old order, where there seems to be a creature stalking them and an odd hum preventing the use of any magic."
+      },
+      {
+        "type": "Story",
+        "desc": "Upon arriving into a large banquet hall (barred from the outside) the party discover a large number of long dead corpses and the source of the hum, a bluey-black stone placed in from of a dwarven skeleton."
+      },
+      {
+        "type": "Story",
+        "desc": "After inspecting the stone, Morden discovers a rather ornate looking warhammer by the skeleton and hands it to Ruairih. Unfortunately the hammer seems to be under some sort of curse and it fuses itself into Ruairih's grip. A note indicates the warhammer and the magical stone both are remnants of an old Paladin names Artair Deorden who, in his madness, set a beast free to massacre the order."
+      },
+      {
+        "type": "Story",
+        "desc": "Morden attempts to destroy the stone with his staff, causing a the creature that has been stalking them to be revealed; a Displacer Beast."
+      },
+      {
+        "type": "Encounter",
+        "desc": "With the somewhat limited assistance of Sir Reginald, the group manage to kill the Displacer Beast, Squire Dod almost dying in the process."
+      },
+      {
+        "type": "Story",
+        "desc": "After the fight, Skalath skins the beast with the hopes of expanding his wardrobe, and the group decide to rest. As Ruairih feels himself attune to the warhammer, a sinister dwarven voice whispers in his mind, 'Well hello, lad!'"
       }
     ]
   }
