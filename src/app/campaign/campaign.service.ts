@@ -1,15 +1,15 @@
 import {Injectable} from "@angular/core";
-import {AngularFireDatabase, FirebaseListObservable} from "angularfire2/database";
+import {AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
 import {Scenario} from "./scenario";
 
 @Injectable()
-export class ScenarioService {
+export class CampaignService {
 
-  path = 'scenarios';
+  path = 'campaign';
 
   constructor(private db: AngularFireDatabase) {}
 
-  list(): FirebaseListObservable<Scenario[]> {
-    return this.db.list(this.path);
+  get(): FirebaseObjectObservable<StoryElement> {
+    return this.db.object(this.path);
   }
 }

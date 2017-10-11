@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {ScenarioService} from "./scenario.service";
-import {FirebaseListObservable} from "angularfire2/database";
-import {Scenario} from "./scenario";
+import {Component, OnInit} from "@angular/core";
+import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
+import {CampaignService} from "./campaign.service";
 
 @Component({
   selector: 'app-campaign',
@@ -10,11 +9,11 @@ import {Scenario} from "./scenario";
 })
 export class CampaignComponent implements OnInit {
 
-  scenarios: FirebaseListObservable<Scenario[]>;
+  campaign: FirebaseObjectObservable<StoryElement>;
 
-  constructor(private scenarioService: ScenarioService) { }
+  constructor(private campaignService: CampaignService) { }
 
   ngOnInit() {
-    this.scenarios = this.scenarioService.list();
+    this.campaign = this.campaignService.get();
   }
 }

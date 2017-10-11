@@ -1,0 +1,71 @@
+{
+  "type": "ARC",
+  "name": "Mark of the Demon",
+  "description": "The tone of this campaign is dark fantasy and is set around multiple demon lords attempting to assert control over the material world and ultimately enter it.<br/><br/>The adventurers will be marked as the slaves of one demon and must either find a cure, destroy the demon, or attempt to work with it in some way to prevent bringing destruction to the world.",
+  "children": [
+    {
+      "type": "GROUP",
+      "children": [
+        {
+          "type": "PLAYER",
+          "name": "Fen Fallstar",
+          "description": "A rugged Human Ranger from the forgotten Greycloaks. Hates dark elves."
+        },
+        {
+          "type": "PLAYER",
+          "name": "Mordan",
+          "description": "A charming Halfling Wizard. Wants to prove himself and be known/respected."
+        },
+        {
+          "type": "PLAYER",
+          "name": "Ruairih Falvond",
+          "description": "A loyal Dwarf Paladin. Wants to be honourable and help others where he can."
+        },
+        {
+          "type": "PLAYER",
+          "name": "Skalath",
+          "description": "A slender Iksar Rogue from the sewers of Cabilis. Likes gold."
+        }
+      ]
+    },
+    {
+      "type": "LOCATION",
+      "name": "Freeport"
+    },
+    {
+      "type": "GROUP",
+      "children": [
+        {
+          "type": "MILESTONE",
+          "name": "Marked",
+          "description": "Waking up chained to a wall in a dungeon, the group witness 2 humans - one male and one female - sacrificed on an altar.<br /><br />The group manage to escape and fight their way out, however a large demon crawls out through some sort of rift and curses them before being pulled back into its world.<br/><br/>Another prisoner, a small elf girl around the age of 12, also escapes with them and the group learn her name is <b>Sophea</b> and the two people who were killed were het foster parents.<br/><br/> Taking the girl with them, the group head first to the <b>Lazy Druid Inn</b> to speak to <b>Gregory</b>, then to the <b>Freeport Wizard's Circle</b> where they meet <b>Articus</b> and <b>Belgarath</b>.<br/><br/>Belgarath reveals the curse to be that of a demon's mark, which will slowly ebb away at their sanity until it finally takes control of them."
+        },
+        {
+          "type": "VILLAIN",
+          "name": "Unknown",
+          "description": "A large demon entity roughly 7' tall hunched over, bat like wings spreading from its back and 2 horns protruding from its head."
+        },
+        {
+          "type": "ALLY",
+          "name": "Sophea",
+          "description": "An elven-looking girl. Roughly 12 years old and has dark black hair and pale skin."
+        },
+        {
+          "type": "ALLY",
+          "name": "Gregory",
+          "description": "A friendly, thick-set man with a dark brown beard. Owner of The Lazy Druid inn and friend to Ruairih."
+        },
+        {
+          "type": "ACQUAINTANCE",
+          "name": "Articus",
+          "description": "A stuffy old wizard and bookkeeper at the Freeport Wizard's Circle."
+        },
+        {
+          "type": "ALLY",
+          "name": "Belgarath",
+          "description": "An old human wizard. Known and respected across the land for his part in negotiating peace and ending the war."
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 import {Component, OnInit} from "@angular/core";
 import {FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
-import {Class} from "../../rules/class/class";
+import {Class} from "../../rules/classes/class";
 import {Observable} from "rxjs/Observable";
 import {AngularFireAuth} from "angularfire2/auth";
-import {ClassService} from "../../rules/class/classes.service";
+import {ClassService} from "../../rules/classes/classes.service";
 import {Router} from "@angular/router";
 import * as firebase from "firebase/app";
 import {CharacterService} from "../character.service";

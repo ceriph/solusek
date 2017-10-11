@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Skill} from "./skill";
-import {ClassSkill} from "../class/class";
+import {ClassSkill} from "../classes/class";
 import {SkillService} from "./skill.service";
 
 @Component({

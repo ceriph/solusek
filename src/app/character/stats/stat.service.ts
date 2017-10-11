@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
 import {SecondaryStats, PrimaryStats} from "./stats";
 import {Character, Checks, Saves} from "../character";
-import {Race} from "../../rules/race/race";
-import {Class} from "../../rules/class/class";
+import {Race} from "../../rules/races/race";
+import {Class} from "../../rules/classes/class";
 import {Modifier} from "../modifier";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
 import {SkillService} from "../../rules/skills/skill.service";
@@ -185,11 +185,11 @@ export class StatService {
   }
 
   private isSecondary(stat) {
-    return stat === 'health' || stat === 'dodge' || stat === 'armour' || stat === 'magicreduction' || stat === 'damage';
+    return stat === 'health' || stat === 'dodge' || stat === 'armour' || stat === 'spellarmour' || stat === 'attack' || stat === 'spellattack' || stat === 'spelldc' || stat === 'damage';
   }
 
   private isCheck(stat) {
-    return stat === 'investigation' || stat === 'knowledge' || stat === 'thievery'
+    return stat === 'investigation' || stat === 'knowledge'  || stat === 'thievery'
       || stat === 'perception' || stat === 'persuasion' || stat === 'stealth';
   }
 

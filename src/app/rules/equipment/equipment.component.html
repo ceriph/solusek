@@ -1,3 +1,22 @@
-<p>
-  equipment works!
-</p>
+<div class="box fill">
+  <h1>Equipment</h1>
+  <div class="center">
+    <label>Filter type:</label><select (change)="filterItems($event.target.value)">
+      <option value="all">All</option>
+      <option value="Weapon">Weapons</option>
+      <option value="Armour">Armour</option>
+      <option value="Potion">Potions</option>
+      <option value="Gloves">Gloves</option>
+      <option value="Footwear">Footwear</option>
+      <option value="Headgear">Headgear</option>
+      <option value="Jewellery">Jewellery</option>
+      <option value="Cloak">Cloaks</option>
+      <option value="Tool">Tools</option>
+      <option value="Misc">Misc</option>
+    </select>
+  </div>
+</div>
+
+<div class="box fill">
+  <item-card *ngFor="let item of equipment | async" class="card" [item]="item"></item-card>
+</div>

@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Character} from "./character";
-import {Class, ClassSkill} from "../rules/class/class";
+import {Class, ClassSkill} from "../rules/classes/class";
 import {AngularFireDatabase, FirebaseObjectObservable} from "angularfire2/database";
 
 @Injectable()

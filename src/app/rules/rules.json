@@ -226,6 +226,10 @@
       },
       {
         "desc": "<table><tr class='header'><td><b>Character Level</b></td><td><b>Total Experience Required</b></td></tr><tr><td>1</td><td>0</td></tr><tr><td>2</td><td>300</td></tr><tr><td>3</td><td>900</td></tr><tr><td>4</td><td>2700</td></tr><tr><td>5</td><td>6500</td></tr><tr><td>6</td><td>14000</td></tr><tr><td>7</td><td>23000</td></tr><tr><td>8</td><td>34000</td></tr><tr><td>9</td><td>48000</td></tr><tr><td>10</td><td>64000</td></tr><tr><td>11</td><td>85000</td></tr><tr><td>12</td><td>100000</td></tr><tr><td>13</td><td>120000</td></tr><tr><td>14</td><td>140000</td></tr><tr><td>15</td><td>165000</td></tr><tr><td>16</td><td>195000</td></tr><tr><td>17</td><td>225000</td></tr><tr><td>18</td><td>265000</td></tr><tr><td>19</td><td>305000</td></tr><tr><td>20</td><td>355000</td></tr></table>"
+      },
+      {
+        "title": "Feats",
+        "desc": "At 4th, 8th and 12th level, characters are able to learn a feat from the list that they meet the requirements for. See the page"
       }
     ]
   },
@@ -342,7 +346,7 @@
       },
       {
         "title": "Stabilized",
-        "desc": "Characters are considered stabilized if they are at 0 health but are no longer <b>dying</b>. They are still considered <b>unconscious</b>."
+        "desc": "Characters are considered stabilized if they are at 0 health but are no longer <b>Dying</b>. They are still considered <b>Unconscious</b>."
       },
       {
         "title": "Stunned",
@@ -350,7 +354,7 @@
       },
       {
         "title": "Poisoned",
-        "desc": "Poisoned characters take the effects of the specific poison at start of their turn, they must then make a CON saving throw against the DC described, if they succeed they are no longer poisoned."
+        "desc": "Poisoned characters take the effects of the specific poison at start of their turn, they must then make a <b>Constitution Saving Throw</b> against the DC described, if they succeed they are no longer poisoned. For more detail see the specific section on poisons."
       },
       {
         "title": "Wounded",
@@ -358,7 +362,7 @@
       },
       {
         "title": "Unconscious",
-        "desc": "Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>dodge</b> rating. Unconscious characters are unaware of their surroundings and cannot move or take any actions on their turn."
+        "desc": "Characters are considered unconscious when their health is at 0, and they suffer a -5 to their <b>Dodge</b> rating. Unconscious characters are unaware of their surroundings and cannot move or take any actions on their turn."
       }
     ]
   },
@@ -395,6 +399,27 @@
       {
         "title": "Tanning",
         "desc": "For the crafting of leather armour"
+      }
+    ]
+  },
+  {
+    "title": "Poison",
+    "desc": "When a character has access to poisons, he can craft them (for a specified cost) during a short rest, provides he has a way of safely storing the poison. Alternatively the poison can be directly applied to a physical weapon at the time of crafting.",
+    "sections": [
+      {
+        "desc": "During combat, if a character has access to a poison prepared previously in a vial, they may spend an <b>Action</b> to apply it to a weapon they are holding."
+      },
+      {
+        "desc": "Only one type of poison can be applied to a weapon at any one time, and once applied a poison will remain on that weapon for 1 hour."
+      },
+      {
+        "desc": "When a poisoned weapon damages another creature, that creature must make a <b>Constitution Saving Throw</b> vs the poison strength (determined by the crafter's spell DC). If their saving throw is not greater than the strength, they will become poisoned."
+      },
+      {
+        "desc": "At the start of a characters turn, if they are poisoned, they take the effects of the poison then make another <b>Constitution Saving Throw</b> to see whether the poison has run its course or if it persists for another turn. This will continue each round until either the creature makes a saving throw, or the poison reaches the end of its duration."
+      },
+      {
+        "desc": "During combat, if a character has access to a poison prepared previously in a vial, they may spend an <b>Action</b> to apply it to a weapon they are holding."
       }
     ]
   }

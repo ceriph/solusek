@@ -18,7 +18,7 @@
         "value": 1
       },
       {
-        "name": "magicreduction",
+        "name": "spellarmour",
         "label": "Spell Armour",
         "value": 1
       },
@@ -31,20 +31,14 @@
   },
   "ringoflevitation": {
     "label": "Ring of Levitation",
-    "desc": "Gold ring with a single light blue gemstone. You feel weightless when putting it on.",
+    "desc": "Gold ring with a single light blue gemstone. While this ring is equipped, once per <b>Long Rest</b>, you can cast <b>Fly</b> at 3rd rank on yourself.",
     "slot": "jewellery",
-    "rarity": "rare",
-    "modifiers": [
-      {
-        "name": "effect",
-        "label": "Effect",
-        "value": "The wearer can levitate at will."
-      }
-    ]
+    "attunement": true,
+    "rarity": "rare"
   },
   "leatherarmour": {
     "label": "Leather Tunic",
-    "desc": "An old, plain leather tunic",
+    "desc": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
     "type": "armour",
     "proficiency": "Light Armour",
     "rarity": "common",
@@ -56,9 +50,23 @@
       }
     ]
   },
+  "studdedleatherarmour": {
+    "label": "Studded Leather Tunic",
+    "desc": "A leather tunic studded with steel.",
+    "type": "armour",
+    "proficiency": "Light Armour",
+    "rarity": "common",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 2
+      }
+    ]
+  },
   "chainarmour": {
     "label": "Chainmail Tunic",
-    "desc": "An old, plain chainmail tunic",
+    "desc": "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.",
     "type": "armour",
     "proficiency": "Medium Armour",
     "rarity": "common",
@@ -75,9 +83,28 @@
       }
     ]
   },
-  "platearmour": {
+  "steelbreastplate": {
     "label": "Steel Breastplate",
-    "desc": "An old, plain steel breastplate",
+    "desc": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.",
+    "type": "armour",
+    "proficiency": "Medium Armour",
+    "rarity": "common",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 3
+      },
+      {
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -1
+      }
+    ]
+  },
+  "halfplate": {
+    "label": "Half Plate",
+    "desc": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.<br /><br />While wearing this armour, you have <b>Disadvantage</b> on any <b>Stealth Checks</b>.",
     "type": "armour",
     "proficiency": "Heavy Armour",
     "rarity": "common",
@@ -91,11 +118,25 @@
         "name": "dodge",
         "label": "Dodge",
         "value": -2
+      }
+    ]
+  },
+  "fullplatearmour": {
+    "label": "Full Plate",
+    "desc": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.<br /><br />While wearing this armour, you have <b>Disadvantage</b> on any <b>Stealth Checks</b>.",
+    "type": "armour",
+    "proficiency": "Heavy Armour",
+    "rarity": "common",
+    "modifiers": [
+      {
+        "name": "armour",
+        "label": "Armour",
+        "value": 5
       },
       {
-        "name": "speed",
-        "label": "Speed",
-        "value": -1
+        "name": "dodge",
+        "label": "Dodge",
+        "value": -2
       }
     ]
   },
@@ -104,9 +145,10 @@
     "desc": "A simple yet pretty silver ring. You feel an aura of protection when wearing it.",
     "type": "ring",
     "rarity": "uncommon",
+    "attunement": true,
     "modifiers": [
       {
-        "name": "magicreduction",
+        "name": "spellarmour",
         "label": "Spell Armour",
         "value": 1
       }
@@ -320,7 +362,7 @@
         "value": 1
       },
       {
-        "name": "magicreduction",
+        "name": "spellarmour",
         "label": "Spell Armour",
         "value": 1
       }
@@ -378,8 +420,8 @@
     ]
   },
   "thaglanadhblessed": {
-    "label": "Tha Ghlanadh (Blessed)",
-    "desc": "The once cursed warhammer glows with a soft shimmer of holy energy, now loyal to the wielder who removed the curse.<br/><br/><b>Throwable</b>: This weapon can be thrown up to 6m, making a ranged attack, it then immediately returns to the hand of the wielder.<br /><br /><b>Versatile</b>: This weapon can be wielded in one hand or two; when wielded in two it does 1d10 damage instead of 1d8.",
+    "label": "Tha Ghlanadh",
+    "desc": "The once cursed warhammer glows with a soft shimmer of holy energy, now loyal to the wielder who removed the curse and returned it to its former divine glory.<br/><br/><br /><br /><b>Versatile</b>: This weapon can be wielded in one hand or two; when wielded in two it does 1d10 damage instead of 1d8.<br /><br /><b>Enhanced Healing</b>: When healing a character while you have this weapon equipped, you may <i>either</i> add 1 to each dice rolled, or remove a single <b>poison</b> or <b>disease</b> from the target.",
     "type": "weapon",
     "rarity": "epic",
     "attunement": true,
@@ -390,11 +432,6 @@
         "name": "attack",
         "label": "Attack",
         "value": 1
-      },
-      {
-        "name": "crit",
-        "label": "Crit",
-        "value": "Additional 1d6 Light damage"
       }
     ]
   },
@@ -446,5 +483,32 @@
     "desc": "A glimmering red liquid in a bottle. Heals 4d4+4 health when consumed.",
     "type": "potion",
     "rarity": "uncommon"
+  },
+  "slippersofspiderclimbing": {
+    "label": "Slippers of Spider Climbing",
+    "desc": "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.",
+    "type": "Footwear",
+    "rarity": "uncommon",
+    "attunement": true
+  },
+  "flametonguedagger": {
+    "label": "Flametongue Dagger",
+    "desc": "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.",
+    "type": "weapon",
+    "rarity": "rare",
+    "attunement": true
+  },
+  "stoneofanimatedead": {
+    "label": "Stone of Animate Dead",
+    "desc": "This black pebble is imbued with one charge of <b>Animate Dead</b>. As an <b>Action</b>, the stone cane be thrown at the bones or corpse of a medium or small humanoid creature, the spell is released and will animates a Skeleton or Zombie loyal to the caster for up to 24 hours.",
+    "type": "Misc",
+    "rarity": "uncommon"
+  },
+  "moonstone": {
+    "label": "Moonstone",
+    "desc": "This translucent orb shimmers with a soft bluish-white light. The orb can store up to 5 ranks of spells cast into it at a time, holding the spells indefinitely until the attuned creature releases them.<br/><br/><br/><br/><b>Imbue</b>: Any creature can cast a spell of 1st through 5th level into the orb by touching the orb as the spell is cast. The spell has no effect, other than to be stored in the ring. If the orb can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.<br/><br/><b>Release</b>: While holding this orb, as an <b>Action</b>, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the orb is no longer stored in it, freeing up space.",
+    "type": "weapon",
+    "rarity": "rare",
+    "attunement": true
   }
 }

@@ -1,0 +1,61 @@
+.elementGroup {
+  float: left;
+  clear: both;
+}
+
+.elementGroupItem {
+  float: left;
+}
+
+.elementGroupSpacer {
+  float: left;
+}
+
+.elementWrapper {
+  float: none;
+  clear: both;
+  background-color: white;
+
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+  margin-bottom: 20px;
+  max-width: 550px;
+}
+
+.elementHeader {
+  background-color: #8E8E8E;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.elementHeader img, .elementHeader p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.elementHeader p {
+  font-size: medium;
+  width: auto;
+}
+
+.elementBody {
+  padding: 10px;
+}
+
+.elementBody p {
+  font-size: small;
+  text-align: left;
+  width: auto;
+}
+
+.location {
+  border: none !important;
+  background-color: #01A7C2;
+  color: white;
+
+  padding: 5px;
+  width: fit-content;
+}

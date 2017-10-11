@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable} from "angularfire2/database";
 import {Slots, SpellGroup} from "./spell";
-import {Class, Type} from "../class/class";
+import {Class, Type} from "../classes/class";
 
 @Injectable()
 export class SpellSlotService {

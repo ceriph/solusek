@@ -1,0 +1,10 @@
+<div class="box fill">
+  <h1>Feats</h1>
+  <p>At 4th, 8th and 12th level characters can learn a feat from the following list provided they meet the requirements</p>
+
+  <div *ngFor="let feat of feats">
+    <h2>{{feat.label}}</h2>
+    <p [innerHtml]="feat.desc"></p>
+    <p>Requirements: {{feat.requirements}}</p>
+  </div>
+</div>

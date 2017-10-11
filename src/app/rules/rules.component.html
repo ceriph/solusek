@@ -32,14 +32,8 @@
             <li><a custom-scroll href="#Additional">Additional Info</a></li>
           </ul>
         </li>
-        <li><a custom-scroll href="#Equipment">Equipment</a>
-          <ul>
-            <li><a custom-scroll href="#Currency">Currency</a></li>
-            <li><a custom-scroll href="#Weapons">Weapons</a></li>
-            <li><a custom-scroll href="#Armour">Armour</a></li>
-            <li><a custom-scroll href="#Shields">Shields</a></li>
-            <li><a custom-scroll href="#Tools">Tools</a></li>
-          </ul>
+        <li><a routerLink="/rules/equipment"
+               routerLinkActive="active">Equipment</a>
         </li>
         <li><a custom-scroll href="#Spells">Spells</a>
           <ul>
@@ -319,101 +313,6 @@
     </p>
   </div>
 
-  <div class="box">
-    <h1 id="Equipment">Equipment</h1>
-    <p>
-      This section contains details on all the basic equipment available to the characters. In addition to the
-      equipment stated on their selected <b>class</b>, all characters start with a set of <b>bandages</b> each, as well
-      as 5 units of food and water each.
-    </p>
-    <p>
-      Equipment can be bought, acquired via gifts for completed quests, or hunting treasure.
-    </p>
-
-    <h2 id="Currency">Currency</h2>
-    <p>
-      The unit of currency in Solusek is gold coins. For this campaign, the characters always start with no gold coins,
-      so it is in their interest to pursue avenues of income.
-    </p>
-    <p>
-      Gold can be obtained by completing quests, stealing, killing, or hunting and selling treasure.
-    </p>
-
-    <h2 id="Weapons">Weapons</h2>
-    <p>
-      Weapons are used to perform attack actions and must be equipped. Each weapon has a <b>proficiency</b> requirement
-      which must be met in order to wield it.
-    </p>
-    <table class="wide">
-      <tr class="header">
-        <td>Name</td>
-        <td>Subtype</td>
-        <td>Proficiency Required</td>
-        <td>Modifiers</td>
-      </tr>
-      <tr *ngFor="let weapon of weapons | async">
-        <td>{{weapon.label}}</td>
-        <td>{{weapon.subtype}}</td>
-        <td>{{weapon.proficiency}}</td>
-        <td><p *ngFor="let modifier of weapon.modifiers"><b>{{modifier.label}}:</b> {{modifier.value}}<br/></p></td>
-      </tr>
-    </table>
-
-    <h2 id="Armour">Armour</h2>
-    <p>
-      Armour is used to protect the body from physical damage and comes in the following forms:
-    </p>
-    <table class="wide">
-      <tr class="header">
-        <td>Name</td>
-        <td>Subtype</td>
-        <td>Proficiency Required</td>
-        <td>Modifiers</td>
-      </tr>
-      <tr *ngFor="let armourItem of armour | async">
-        <td>{{armourItem.label}}</td>
-        <td>{{armourItem.subtype}}</td>
-        <td>{{armourItem.proficiency}}</td>
-        <td><p *ngFor="let modifier of armourItem.modifiers"><b>{{modifier.label}}:</b> {{modifier.value}}<br/></p></td>
-      </tr>
-    </table>
-
-    <h2 id="Shields">Shields</h2>
-    <p>
-      Shields can be equipped in a characters offhand to provide additional armour.
-    </p>
-    <table class="wide">
-      <tr class="header">
-        <td>Name</td>
-        <td>Subtype</td>
-        <td>Proficiency Required</td>
-        <td>Modifiers</td>
-      </tr>
-      <tr *ngFor="let shield of shields | async">
-        <td>{{shield.label}}</td>
-        <td>{{shield.subtype}}</td>
-        <td>{{shield.proficiency}}</td>
-        <td><p *ngFor="let modifier of shield.modifiers"><b>{{modifier.label}}:</b> {{modifier.value}}<br/></p></td>
-      </tr>
-    </table>
-
-    <h2 id="Tools">Tools</h2>
-    <p>
-      Other items can be acquired, such as bandages and lockpicks. These will become
-      available as you progress and the benefits will be detailed on a case by case basis.
-    </p>
-    <table class="wide">
-      <tr class="header">
-        <td>Name</td>
-        <td>Desc</td>
-      </tr>
-      <tr *ngFor="let tool of tools | async">
-        <td>{{tool.label}}</td>
-        <td>{{tool.desc}}</td>
-        <td><p *ngFor="let modifier of tool.modifiers"><b>{{modifier.label}}:</b> {{modifier.value}}<br/></p></td>
-      </tr>
-    </table>
-
   </div>
   <div class="box">
     <h1 id="Spells">Spells</h1>
@@ -520,35 +419,4 @@
       <li *ngFor="let group of spells | async"><a routerLink="/rules/spell-book/{{group.label}}"
                                                   routerLinkActive="active">{{group.label}}</a></li>
     </ul>
-
-  </div>
-
-  <div class="box">
-    <h1 id="Poisons">Poisons</h1>
-    <p>
-      When a character has access to poisons, he can craft them during a short rest provided
-      he has access to the ingredients and a way of storing the poisons. Alternatively the poison can be directly
-      applied to a physical weapon at the time of crafting.
-    </p>
-    <p>
-      If a character has access to a poison prepared previously in a vial, they may spell an <b>Action</b> in combat to
-      apply it to a weapon they are holding.
-    </p>
-    <p>
-      Poisons, once applied to a weapon, last for 1 hour.
-    </p>
-    <p>
-      When a poisoned weapon damages another creature, that creature must make a <b>Constitution Saving Throw</b> vs
-      the poison strength (determined by the crafters spell DC). If their saving throw is not greater than the strength,
-      they will become poisoned.
-    </p>
-    <p>
-      At the start of a characters turn, if they are poisoned, they take the effects of the poison then make another <b>Constitution Saving Throw</b>
-      to see whether the poison has run its course or if it persists for another turn.
-    </p>
-    <p>
-      Each poison takes a certain type and number of ingredients to apply. These ingredients can be bought or found, and
-      will be consumed when the poison is applied.
-    </p>
-  </div>
 </div>

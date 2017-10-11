@@ -1,0 +1,20 @@
+<span *ngIf="storyElement.type !== 'GROUP' && storyElement.type !== 'LOCATION'">
+  <div class="elementWrapper">
+    <div class="elementHeader" (click)="toggleDetail()">
+      <img src="/assets/campaign/arc.png">
+      <p>{{storyElement.name}}</p>
+    </div>
+    <div class="elementBody" *ngIf="showDetail">
+      <p [innerHtml]="storyElement.description"></p>
+    </div>
+  </div>
+  <story-element *ngFor="let child of storyElement.children" [storyElement]="child"></story-element>
+</span>
+<span *ngIf="storyElement.type === 'LOCATION'">
+  <div class="elementWrapper location">{{storyElement.name}}</div>
+</span>
+<span *ngIf="storyElement.type === 'GROUP'">
+  <div class="elementGroup">
+    <story-element class="elementGroupItem" *ngFor="let child of storyElement.children" [storyElement]="child"></story-element>
+  </div>
+</span>

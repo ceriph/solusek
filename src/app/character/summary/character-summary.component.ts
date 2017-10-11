@@ -5,10 +5,10 @@ import {Observable} from "rxjs/Observable";
 import {Player} from "../../players/player";
 import * as firebase from "firebase/app";
 import {StatService} from "../stats/stat.service";
-import {RaceService} from "../../rules/race/race.service";
-import {ClassService} from "../../rules/class/classes.service";
-import {Class, Type} from "../../rules/class/class";
-import {Race} from "../../rules/race/race";
+import {RaceService} from "../../rules/races/race.service";
+import {ClassService} from "../../rules/classes/classes.service";
+import {Class, Type} from "../../rules/classes/class";
+import {Race} from "../../rules/races/race";
 import {CharacterService} from "../character.service";
 import {Character} from "../character";
 import {EquipmentService} from "../../rules/equipment/equipment.service";
@@ -84,7 +84,11 @@ export class CharacterSummaryComponent implements OnInit {
   }
 
   hasSpells(): boolean {
-    return this.clazz.type === Type[Type.Caster] || this.clazz.type === Type[Type.Hybrid];
+    if(this.clazz) {
+      return this.clazz.type === Type[Type.Caster] || this.clazz.type === Type[Type.Hybrid];
+    } else {
+      return false;
+    }
   }
 
   getHitDie(): number[] {

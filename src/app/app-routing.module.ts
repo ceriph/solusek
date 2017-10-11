@@ -10,10 +10,11 @@ import {CharacterClassComponent} from "./character/class/character-class.compone
 import {CharacterStatsComponent} from "./character/stats/character-stats.component";
 import {CharacterInfoComponent} from "./character/info/character-info.component";
 import {CharacterSummaryComponent} from "./character/summary/character-summary.component";
-import {ClassComponent} from "./rules/class/class.component";
-import {RaceComponent} from "./rules/race/race.component";
+import {ClassComponent} from "./rules/classes/class.component";
+import {RacesComponent} from "./rules/races/race.component";
 import {CampaignComponent} from "./campaign/campaign.component";
 import {SpellBookComponent} from "./rules/spells/spell-book/spell-book.component";
+import {EquipmentComponent} from "./rules/equipment/equipment.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -29,8 +30,9 @@ const routes: Routes = [
   },
   {path: 'rules', component: RulesComponent},
   {path: 'rules/class/:name', component: ClassComponent},
-  {path: 'rules/race/:name', component: RaceComponent},
+  {path: 'rules/race/:name', component: RacesComponent},
   {path: 'rules/spell-book/:name', component: SpellBookComponent},
+  {path: 'rules/equipment', component: EquipmentComponent},
   {path: 'lore', component: LoreComponent},
   {path: 'campaign', component: CampaignComponent},
   {path: 'dm', component: DmComponent}

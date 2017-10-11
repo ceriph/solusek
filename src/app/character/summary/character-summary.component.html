@@ -11,6 +11,7 @@
       <span *ngIf="clazz">{{clazz.label}}</span>
       <span *ngIf="clazz && character.archetype">({{clazz.archetypes[character.archetype].label}})</span>
     </p>
+    <p class="info" *ngIf="character.languages"><b>Languages:</b> {{character.languages}}</p>
     <p class="info" *ngIf="clazz"><b>Proficiencies:</b> {{clazz.proficiencies}}</p>
     <div class="wrapper">
       <span class="inline"><b>Experience:</b> {{character.experience}}</span>
@@ -36,7 +37,7 @@
       <summary-stat [stats]="character.secondaryStats" [stat]="'speed'" [display]="'Speed'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'dodge'" [display]="'Dodge'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'armour'" [display]="'Armour'"></summary-stat>
-      <summary-stat [stats]="character.secondaryStats" [stat]="'magicreduction'"
+      <summary-stat [stats]="character.secondaryStats" [stat]="'spellarmour'"
                     [display]="'Spell Armour'"></summary-stat>
       <summary-stat [stats]="character.secondaryStats" [stat]="'attack'" [display]="'Attack'"
                     [isModifier]="true"></summary-stat>

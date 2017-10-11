@@ -369,7 +369,7 @@
     "desc": "You touch a nonmagical weapon. Until the spell ends, that weapon is considered a magic weapon with a +1 bonus to <b>Attack</b> rolls and <b>Damage</b> Rolls. For every 2 ranks above 2, the effect is increased by an addition +1.",
     "castTime": "Bonus Action",
     "range": "Touch",
-    "duration": "1 minutes",
+    "duration": "1 minute",
     "rank": 2,
     "groups": [
       "wizard"

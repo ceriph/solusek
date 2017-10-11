@@ -1,0 +1,120 @@
+{
+  "alert": {
+    "label": "Alert",
+    "desc": "You make all <b>Initiative</b> rolls with <b>Advantage</b>. When you normally would be <b>Surprised</b>, as your <b>Reaction</b> you may also make a <b>Perception</b> check vs a DC designated by the DM, on a success you are not surprised.",
+    "requirement": "Intelligence or Spirit 5 or higher"
+  },
+  "brawler": {
+    "label": "Brawler",
+    "desc": "Your unarmed strikes now to 1d6 damage (as opposed to 1) plus your <b>Strength</b>, and whenever you hit an opponent with an unarmed strike, you can use your <b>Bonus Action</b> to attempt to grapple the target.",
+    "requirement": "Strength 5 or higher"
+  },
+  "charger": {
+    "label": "Charger",
+    "desc": "After using the <b>Dash</b> action, you may spend your <b>Bonus Action</b> to make a regular melee attack.",
+    "requirement": "Strength or Agility 5 or higher"
+  },
+  "closecombatarcher": {
+    "label": "Close Combat Archer",
+    "desc": "You no longer roll with <b>Disadvantage</b> when attacking targets within melee range with your ranged weapons. When an enemy makes a melee attack on you while you have your bow equipped",
+    "requirement": "Proficiency in Ranged Weapons. Agility 4 or higher"
+  },
+  "dualwielder": {
+    "label": "Dual Wielder",
+    "desc": "You gain +1 to <b>Dodge</b> while wielding a melee weapon in each hand. You may also add your damage modifier to any hits with your offhand.",
+    "requirement": "Strength or Agility 5 or higher"
+  },
+  "dungeoneer": {
+    "label": "Dungeoneer",
+    "desc": "You gain <b>Advantage</b> on any <b>Perception</b> or <b>Investigation</b> checks made to detect the presence of secret doors or traps.<br/><br/> You also gain <b>Advantage</b> on any savings throws made to avoid or resist the effects of traps.",
+    "requirement": "Strength or Agility 5 or higher"
+  },
+  "durable": {
+    "label": "Durable",
+    "desc": "You gain +1 to all hit die rolls when taking a short rest. In addition, you may also re-roll any 1's on these rolls.",
+    "requirement": "Constitution 4 or higher"
+  },
+  "armourmasterlight": {
+    "label": "Light Armour Master",
+    "desc": "While wearing medium armour, any penalties to <b>Dodge</b> are removed.",
+    "requirement": "Proficiency in Medium Armour"
+  },
+  "armourmastermedium": {
+    "label": "Medium Armour Master",
+    "desc": "While wearing medium armour, any penalties to <b>Dodge</b> are removed.",
+    "requirement": "Proficiency in Medium Armour"
+  },
+  "armourmasterheavy": {
+    "label": "Heavy Armour Master",
+    "desc": "While wearing heavy armour, any penalties to <b>Dodge</b> are reduced by 1 and all penalties to <b>Speed</b> are removed.",
+    "requirement": "Proficiency in Heavy Armour"
+  },
+  "diplomat": {
+    "label": "Diplomat",
+    "desc": "You gain <b>Advantage</b> on any <b>Persuasion</b> checks on non-hostile enemies. In addition, if you spend 1 minute talking to a creature who can understand you, you can make a <b>Persuasion</b> check contested by the creature’s <b>Perception</b> check. If you check succeeds, the target is <b>Charmed</b> for up to 1 minute.",
+    "requirement": "Charisma 3 or higher"
+  },
+  "inspiringleader": {
+    "label": "Inspiring Leader",
+    "desc": "You may spend 10 minutes inspiring your companions via a speech or other means. When you do so, up to 6 allies (including yourself) gain temporary health equal to your level plus <b>Charisma</b>. ",
+    "requirement": "Charisma 4 or higher"
+  },
+  "intelligentdefense": {
+    "label": "Intelligent Defense",
+    "desc": "When an enemy is attacking you, you may spend your <b>Reaction</b> to add your <b>Intelligence</b> to your <b>Dodge</b>.",
+    "requirement": "Intelligence and Agility 4 or higher"
+  },
+  "gourmand": {
+    "label": "Gourmand",
+    "desc": "While taking a long rest, you can create a meal that helps you and up to 5 allies recover, provided you have access to supplies. For the following day, those that ate the meal have <b>Advantage</b> on all <b>Constitution Saving Throws</b> and <b>Resistance</b> to <b>Poison</b> damage.<br/><br/>You are also able to determine if a food or drink is poisoned provided you can see and smell it.",
+    "requirement": "None"
+  },
+  "greatweaponmaster": {
+    "label": "Great Weapon Master",
+    "desc": "When making an attack with a large weapon, you may choose to take a -5 to the attack roll. If it hits, the attack deals +10 damage.<br/><br/>In addition, whenever you score a critical hit or reduce an enemy to 0 health, you may spend your <b>Bonus Action</b> to make an additional melee attack.",
+    "requirement": "Proficiency in Large Weapons"
+  },
+  "resilience": {
+    "label": "Resilience",
+    "desc": "You gain +1 to your <b>Armour</b>.",
+    "requirement": "None"
+  },
+  "linguist": {
+    "label": "Linguist",
+    "desc": "You become fluent in 3 languages of your choice from the following list: <i>Abyssal, Celestial, Deep Speech, Draconic, Dwarvish, Elvish, Giant, Gnoll, Goblin, Halfling, Infernal, Ogre, Oshan, Primordial, Troll, Undercommon</i>.",
+    "requirement": "Intelligence 3 or above."
+  },
+  "lucky": {
+    "label": "Lucky",
+    "desc": "You have inexplicable luck that seems to kick in at just the right moment. You have 3 luck points that you can spend to reroll an attack, ability check or saving throw, You regain expended luck points on a <b>Long Rest</b>.",
+    "requirement": "Intelligence 3 or above."
+  },
+  "magicalresilience": {
+    "label": "Magical Resilience",
+    "desc": "You gain +1 to your <b>Spell Armour</b>.",
+    "requirement": "None"
+  },
+  "survivalist": {
+    "label": "Survivalist",
+    "desc": "Your hit point maximum increases by an amount equal to twice your current level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
+    "requirement": "Spirit 4 or higher"
+  },
+  "tough": {
+    "label": "Tough",
+    "desc": "Your hit point maximum increases by an amount equal to twice your current character <b>level</b> when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
+    "requirement": "None"
+  },
+  "theshortadvantage": {
+    "label": "The Short Advantage",
+    "desc": "Your speed increases by 1. In addition, any <i>taller<i> enemies who are trying to perceive you while you are being stealthy roll with <b>Disadvantage</b>.",
+    "requirement": "Dwarf or Halfling"
+  },
+  "skilled": {
+    "label": "Skilled",
+    "desc": "You gain +2 in any 3 <b>Ability Checks</b> of your choice (such as <b>Investigation</b>, <b>Knowledge</b> or <b>Perception</b>)."
+  },
+  "weaponspecialist": {
+    "label": "Weapon Specialist",
+    "desc": "You may select 3 weapon types to specialist in (such as longswords, greataxes, etc.). When wielding those weapons you gain +1 to <b>Dodge</b> and +1 to <b>Attack</b> and damage rolls with weapons of that type."
+  }
+}

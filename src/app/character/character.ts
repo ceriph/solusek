@@ -1,7 +1,7 @@
 import {Modifier} from "./modifier";
 import {PrimaryStats, SecondaryStats} from "./stats/stats";
 import {Info} from "./info/info";
-import {ClassSkill} from "../rules/class/class";
+import {ClassSkill} from "../rules/classes/class";
 
 export class Character {
   level: number = 0;
@@ -21,6 +21,7 @@ export class Character {
   checks: Checks;
   saves: Saves;
   spellSlots: SpellSlot[];
+  languages: string;
 }
 
 export class Equipment {

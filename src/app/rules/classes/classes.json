@@ -205,11 +205,11 @@
       },
       {
         "level": 4,
-        "name": "doubleattack"
+        "name": "choosefeat"
       },
       {
         "level": 5,
-        "name": "resilience"
+        "name": "doubleattack"
       },
       {
         "level": 5,
@@ -346,11 +346,11 @@
       },
       {
         "level": 4,
-        "name": "doubleattack"
+        "name": "choosefeat"
       },
       {
         "level": 5,
-        "name": "resilience"
+        "name": "doubleattack"
       },
       {
         "level": 5,
@@ -508,15 +508,11 @@
       },
       {
         "level": 4,
-        "name": "doubleattack"
+        "name": "choosefeat"
       },
       {
         "level": 5,
         "name": "uncannydodge"
-      },
-      {
-        "level": 5,
-        "name": "resilience"
       },
       {
         "level": 6,
@@ -694,11 +690,11 @@
       },
       {
         "level": 5,
-        "name": "potentcantrip"
+        "name": "choosefeat"
       },
       {
         "level": 5,
-        "name": "resilience"
+        "name": "potentcantrip"
       },
       {
         "level": 6,

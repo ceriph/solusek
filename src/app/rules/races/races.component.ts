@@ -5,11 +5,11 @@ import {ActivatedRoute, Router} from "@angular/router";
 import 'rxjs/add/operator/switchMap';
 
 @Component({
-  selector: 'app-race',
-  templateUrl: './race.component.html',
-  styleUrls: ['./race.component.css']
+  selector: 'app-races',
+  templateUrl: './races.component.html',
+  styleUrls: ['./races.component.css']
 })
-export class RaceComponent implements OnInit {
+export class RacesComponent implements OnInit {
 
   @Input()
   race: Race;

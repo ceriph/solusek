@@ -1,5 +1,5 @@
-import {RaceService} from "../../rules/race/race.service";
-import {Race} from "../../rules/race/race";
+import {RaceService} from "../../rules/races/race.service";
+import {Race} from "../../rules/races/race";
 import {FirebaseListObservable} from "angularfire2/database/firebase_list_observable";
 import {Component, OnInit} from "@angular/core";
 import {AngularFireAuth} from "angularfire2/auth";

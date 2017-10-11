@@ -46,8 +46,8 @@
     ],
     "skills": [
       {
-        "name": "limitless",
-        "label": "Limitless",
+        "name": "tough",
+        "label": "Tough",
         "desc": "Passive - +5 to health per level"
       }
     ]

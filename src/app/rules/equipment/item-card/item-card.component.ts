@@ -12,12 +12,15 @@ export class ItemCardComponent implements OnChanges {
   @Input()
   itemName: string;
 
+  @Input()
   item: Item;
 
   constructor(private equipmentService: EquipmentService) {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.equipmentService.get(changes.itemName.currentValue).subscribe(item => this.item = item);
+    if(!this.item && this.itemName) {
+      this.equipmentService.get(changes.itemName.currentValue).subscribe(item => this.item = item);
+    }
   }
 }
